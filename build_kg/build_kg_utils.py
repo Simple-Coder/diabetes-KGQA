@@ -5,11 +5,17 @@ Created by xiedong
 import json
 
 from tqdm import tqdm
-import os
+from py2neo import Graph
 
 
 class DiabetesExtractor():
     def __init__(self):
+        self.graph = Graph(
+            host="127.0.0.1",
+            http_port=7474,
+            user="neo4j",
+            password="123456")
+
         # 18类节点
         self.diseases = []  # 疾病
         self.classes = []  # 疾病分期类型
@@ -187,6 +193,21 @@ class DiabetesExtractor():
                             self.ade_disease.append([head_entity_name, "ADE_Disease", tail_entity_name])
                 print()
 
+    def write_nodes(self, entities, entities_type):
+        print("写入 {0} 实体".format(entities_type))
+        for node in tqdm(set(entities)):
+            cql = """MERGE(n:{label}{{name:'{entity_name}'}})""".format(
+                label=entities_type, entity_name=node.replace("'", "")
+            )
+            try:
+                self.graph.run(cql)
+            except Exception as e:
+                print(e)
+                print(cql)
+
+    def create_entities(self):
+        self.write_nodes(self.diseases, '疾病')
+
 
 if __name__ == '__main__':
     # cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
@@ -197,6 +218,8 @@ if __name__ == '__main__':
     extractor = DiabetesExtractor()
     extractor.extract_triples(data_path)
 
+    # 创建实体节点
+    extractor.create_entities()
     print()
 '''
 发现实体记录：{"Drug":"Drug","ADE":"ADE","Disease":"Disease","Pathogenesis":"Pathogenesis","Amount":"Amount","Duration":"Duration","Method":"Method","Operation":"Operation","Anatomy":"Anatomy","Reason":"Reason","Treatment":"Treatment","Test":"Test","Frequency":"Frequency","Class":"Class","Level":"Level","Test_Value":"Test_Value","Symptom":"Symptom","Test_items":"Test_items"}
