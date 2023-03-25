@@ -59,11 +59,69 @@ class DiabetesExtractor():
                 for sentence in sentences:
                     # 实体集合
                     entities = sentence['entities']
-                    # for entity in entities:
+                    for entity in entities:
 
+                        entity_type_ = entity['entity_type']
+                        entity_id_ = entity['entity_id']
+                        entity_name_ = entity['entity']
+
+                        # 疾病实体
+                        if "Disease" == entity_type_:
+                            self.diseases.append(entity_name_)
+                        # 药物名称
+                        if "Drug" == entity_type_:
+                            self.drugs.append(entity_name_)
+                        # 不良反应
+                        if "ADE" == entity_type_:
+                            self.ades.append(entity_name_)
+                        # 发病机制
+                        if "Pathogenesis" == entity_type_:
+                            self.pathogenesis.append(entity_name_)
+                        # 用药剂量
+                        if "Amount" == entity_type_:
+                            self.amounts.append(entity_name_)
+                        # 持续时间
+                        if "Duration" == entity_type_:
+                            self.duration.append(entity_name_)
+                        # 用药方法
+                        if "Method" == entity_type_:
+                            self.methods.append(entity_name_)
+                        # 手术
+                        if "Operation" == entity_type_:
+                            self.operations.append(entity_name_)
+                        # 部位
+                        if "Anatomy" == entity_type_:
+                            self.anatomys.append(entity_name_)
+                        # 病因
+                        if "Reason" == entity_type_:
+                            self.reasons.append(entity_name_)
+                        # 非药治疗
+                        if "Treatment" == entity_type_:
+                            self.treatments.append(entity_name_)
+                        # 检查方法
+                        if "Test" == entity_type_:
+                            self.tests.append(entity_name_)
+                        # 用药频率
+                        if "Frequency" == entity_type_:
+                            self.frequency.append(entity_name_)
+                        # 疾病分期类型
+                        if "Class" == entity_type_:
+                            self.classes.append(entity_name_)
+                        # 程度
+                        if "Level" == entity_type_:
+                            self.levels.append(entity_name_)
+                        # 检查指标值
+                        if "Test_Value" == entity_type_:
+                            self.test_values.append(entity_name_)
+                        # 临床表现
+                        if "Symptom" == entity_type_:
+                            self.symptoms.append(entity_name_)
+                        # 检查指标
+                        if "Test_items" == entity_type_:
+                            self.test_items.append(entity_name_)
 
                     # 关系集合
-                    relations = sentence['relations']
+                    # relations = sentence['relations']
 
                     print()
 
