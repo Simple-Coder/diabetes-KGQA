@@ -47,6 +47,8 @@ class DiabetesExtractor():
         self.amount_drug = []  # 用药剂量->药品名称
         self.method_drug = []  # 用药方法->药品名称
         self.ade_drug = []  # 不良反应->药品名称
+        # 本人写增，未定义
+        self.ade_disease = []  # 不良反应->疾病
 
     def extract_triples(self, data_path):
         print("从json文件中转换抽取三元组")
@@ -59,11 +61,14 @@ class DiabetesExtractor():
                 for sentence in sentences:
                     # 实体集合
                     entities = sentence['entities']
+                    entiDict = {}
                     for entity in entities:
 
                         entity_type_ = entity['entity_type']
                         entity_id_ = entity['entity_id']
                         entity_name_ = entity['entity']
+
+                        entiDict[entity_id_] = entity_name_
 
                         # 疾病实体
                         if "Disease" == entity_type_:
@@ -121,9 +126,66 @@ class DiabetesExtractor():
                             self.test_items.append(entity_name_)
 
                     # 关系集合
-                    # relations = sentence['relations']
-
-                    print()
+                    relations = sentence['relations']
+                    for relation in relations:
+                        relation_type_ = relation['relation_type']
+                        head_entity_id = relation['head_entity_id']
+                        tail_entity_id = relation['tail_entity_id']
+                        head_entity_name = entiDict[head_entity_id]
+                        tail_entity_name = entiDict[tail_entity_id]
+                        # 药品名称->疾病
+                        if "Drug_Disease" == relation_type_:
+                            self.drug_disease.append([head_entity_name, "Drug_Disease", tail_entity_name])
+                        # 分期类型->疾病
+                        if "Class_Disease" == relation_type_:
+                            self.class_disease.append([head_entity_name, "Class_Disease", tail_entity_name])
+                        # 用药剂量->药品名称
+                        if "Amount_Drug" == relation_type_:
+                            self.amount_drug.append([head_entity_name, "Amount_Drug", tail_entity_name])
+                        # 持续时间->药品名称
+                        if "Duration_Drug" == relation_type_:
+                            self.duration_drug.append([head_entity_name, "Duration_Drug", tail_entity_name])
+                        # 检查方法->疾病
+                        if "Test_Disease" == relation_type_:
+                            self.test_disease.append([head_entity_name, "Test_Disease", tail_entity_name])
+                        # 用药方法->药品名称
+                        if "Method_Drug" == relation_type_:
+                            self.method_drug.append([head_entity_name, "Method_Drug", tail_entity_name])
+                        # 部位->疾病
+                        if "Anatomy_Disease" == relation_type_:
+                            self.anatomy_disease.append([head_entity_name, "Anatomy_Disease", tail_entity_name])
+                        # 部位->疾病
+                        if "Operation_Disease" == relation_type_:
+                            self.operation_disease.append([head_entity_name, "Operation_Disease", tail_entity_name])
+                        # 不良反应->药品名称
+                        if "ADE_Drug" == relation_type_:
+                            self.ade_drug.append([head_entity_name, "ADE_Drug", tail_entity_name])
+                        # 病因->疾病
+                        if "Reason_Disease" == relation_type_:
+                            self.reason_disease.append([head_entity_name, "Reason_Disease", tail_entity_name])
+                            # 发病机制->疾病
+                        if "Pathogenesis_Disease" == relation_type_:
+                            self.pathogenesis_disease.append(
+                                [head_entity_name, "Pathogenesis_Disease", tail_entity_name])
+                        # 非药治疗->疾病
+                        if "Treatment_Disease" == relation_type_:
+                            self.treatment_disease.append([head_entity_name, "Treatment_Disease", tail_entity_name])
+                        # 药品名称->疾病
+                        if "Drug_Disease" == relation_type_:
+                            self.drug_disease.append([head_entity_name, "Drug_Disease", tail_entity_name])
+                        # 用药频率->药品名称
+                        if "Frequency_Drug" == relation_type_:
+                            self.frequency_drug.append([head_entity_name, "Frequency_Drug", tail_entity_name])
+                        # 检查指标->疾病
+                        if "Test_items_Disease" == relation_type_:
+                            self.test_items_disease.append([head_entity_name, "Test_items_Disease", tail_entity_name])
+                        # 临床表现->疾病
+                        if "Symptom_Disease" == relation_type_:
+                            self.symptom_disease.append([head_entity_name, "Symptom_Disease", tail_entity_name])
+                        # 不良反应->疾病
+                        if "ADE_Disease" == relation_type_:
+                            self.ade_disease.append([head_entity_name, "ADE_Disease", tail_entity_name])
+                print()
 
 
 if __name__ == '__main__':
@@ -135,6 +197,7 @@ if __name__ == '__main__':
     extractor = DiabetesExtractor()
     extractor.extract_triples(data_path)
 
+    print()
 '''
 发现实体记录：{"Drug":"Drug","ADE":"ADE","Disease":"Disease","Pathogenesis":"Pathogenesis","Amount":"Amount","Duration":"Duration","Method":"Method","Operation":"Operation","Anatomy":"Anatomy","Reason":"Reason","Treatment":"Treatment","Test":"Test","Frequency":"Frequency","Class":"Class","Level":"Level","Test_Value":"Test_Value","Symptom":"Symptom","Test_items":"Test_items"}
 发现关系记录：{"Amount_Drug":"Amount_Drug","Duration_Drug":"Duration_Drug","Test_Disease":"Test_Disease","Method_Drug":"Method_Drug","Anatomy_Disease":"Anatomy_Disease","Operation_Disease":"Operation_Disease","ADE_Drug":"ADE_Drug","Reason_Disease":"Reason_Disease","Pathogenesis_Disease":"Pathogenesis_Disease","ADE_Disease":"ADE_Disease","Treatment_Disease":"Treatment_Disease","Drug_Disease":"Drug_Disease","Frequency_Drug":"Frequency_Drug","Test_items_Disease":"Test_items_Disease","Symptom_Disease":"Symptom_Disease","Class_Disease":"Class_Disease"}
