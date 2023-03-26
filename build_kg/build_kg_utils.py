@@ -191,7 +191,6 @@ class DiabetesExtractor():
                         # 不良反应->疾病
                         if "ADE_Disease" == relation_type_:
                             self.ade_disease.append([head_entity_name, "ADE_Disease", tail_entity_name])
-                print()
 
     def write_nodes(self, entities, entities_type):
         print("写入 {0} 实体".format(entities_type))
@@ -199,6 +198,20 @@ class DiabetesExtractor():
             cql = """MERGE(n:{label}{{name:'{entity_name}'}})""".format(
                 label=entities_type, entity_name=node.replace("'", "")
             )
+            try:
+                self.graph.run(cql)
+            except Exception as e:
+                print(e)
+                print(cql)
+
+    def write_edges(self, triples, head_type, tail_type):
+        print("写入{0}关系".format(triples[0][1]))
+        for head, relation, tail in tqdm(triples):
+            cql = """MATCH(p:{head_type}),(q:{tail_type})
+            WHERE p.name='{head}' AND q.name='{tail}'
+            MERGE (p)-[r:{relation}]->(q)""".format(
+                head_type=head_type, tail_type=tail_type, head=head.replace("'", ""),
+                tail=tail.replace("'", ""), relation=relation)
             try:
                 self.graph.run(cql)
             except Exception as e:
@@ -225,6 +238,27 @@ class DiabetesExtractor():
         self.write_nodes(self.levels, '程度')
         self.write_nodes(self.duration, '持续时间')
 
+    def create_relations(self):
+        self.write_edges(self.test_disease, '检查方法', '疾病')  # 检查方法->疾病
+        self.write_edges(self.symptom_disease, '临床表现', '疾病')  # 临床表现->疾病
+        self.write_edges(self.treatment_disease, '非药治疗', '疾病')  # 非药治疗->疾病
+        self.write_edges(self.drug_disease, '药品名称', '疾病')  # 药品名称->疾病
+        self.write_edges(self.anatomy_disease, '部位', '疾病')  # 部位->疾病
+        self.write_edges(self.reason_disease, '病因', '疾病')  # 检查方法->疾病
+        self.write_edges(self.pathogenesis_disease, '发病机制', '疾病')  # 发病机制->疾病
+        self.write_edges(self.operation_disease, '手术', '疾病')  # 检查方法->疾病
+        self.write_edges(self.class_disease, '分期类型', '疾病')  # 分期类型->疾病
+        self.write_edges(self.test_items_disease, '检查指标', '疾病')  # 检查指标->疾病
+
+        self.write_edges(self.frequency_drug, '用药频率', '药品名称')  # 用药频率->药品名称
+        self.write_edges(self.duration_drug, '持续时间', '药品名称')  # 持续时间->药品名称
+        self.write_edges(self.amount_drug, '用药剂量', '药品名称')  # 用药剂量->药品名称
+        self.write_edges(self.method_drug, '用药方法', '药品名称')  # 用药方法->药品名称
+        self.write_edges(self.ade_drug, '不良反应', '药品名称')  # 不良反应->药品名称
+
+
+# self.write_edges(self.rels_department, '科室', '科室')
+
 
 if __name__ == '__main__':
     # cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
@@ -237,6 +271,10 @@ if __name__ == '__main__':
 
     # 创建实体节点
     extractor.create_entities()
+
+    # 创建关系
+    extractor.create_relations()
+
     print()
 '''
 发现实体记录：{"Drug":"Drug","ADE":"ADE","Disease":"Disease","Pathogenesis":"Pathogenesis","Amount":"Amount","Duration":"Duration","Method":"Method","Operation":"Operation","Anatomy":"Anatomy","Reason":"Reason","Treatment":"Treatment","Test":"Test","Frequency":"Frequency","Class":"Class","Level":"Level","Test_Value":"Test_Value","Symptom":"Symptom","Test_items":"Test_items"}
