@@ -207,6 +207,23 @@ class DiabetesExtractor():
 
     def create_entities(self):
         self.write_nodes(self.diseases, '疾病')
+        self.write_nodes(self.classes, '疾病分期类型')
+        self.write_nodes(self.reasons, '病因')
+        self.write_nodes(self.pathogenesis, '发病机制')
+        self.write_nodes(self.symptoms, '临床表现')
+        self.write_nodes(self.tests, '检查方法')
+        self.write_nodes(self.test_items, '检查指标')
+        self.write_nodes(self.test_values, '检查指标值')
+        self.write_nodes(self.drugs, '药物名称')
+        self.write_nodes(self.frequency, '用药频率')
+        self.write_nodes(self.amounts, '用药剂量')
+        self.write_nodes(self.methods, '用药方法')
+        self.write_nodes(self.treatments, '非药治疗')
+        self.write_nodes(self.operations, '手术')
+        self.write_nodes(self.ades, '不良反应')
+        self.write_nodes(self.anatomys, '部位')
+        self.write_nodes(self.levels, '程度')
+        self.write_nodes(self.duration, '持续时间')
 
 
 if __name__ == '__main__':
