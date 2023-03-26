@@ -244,9 +244,9 @@ class DiabetesExtractor():
         self.write_edges(self.treatment_disease, '非药治疗', '疾病')  # 非药治疗->疾病
         self.write_edges(self.drug_disease, '药品名称', '疾病')  # 药品名称->疾病
         self.write_edges(self.anatomy_disease, '部位', '疾病')  # 部位->疾病
-        self.write_edges(self.reason_disease, '病因', '疾病')  # 检查方法->疾病
+        self.write_edges(self.reason_disease, '病因', '疾病')  # 病因->疾病
         self.write_edges(self.pathogenesis_disease, '发病机制', '疾病')  # 发病机制->疾病
-        self.write_edges(self.operation_disease, '手术', '疾病')  # 检查方法->疾病
+        self.write_edges(self.operation_disease, '手术', '疾病')  # 手术->疾病
         self.write_edges(self.class_disease, '分期类型', '疾病')  # 分期类型->疾病
         self.write_edges(self.test_items_disease, '检查指标', '疾病')  # 检查指标->疾病
 
