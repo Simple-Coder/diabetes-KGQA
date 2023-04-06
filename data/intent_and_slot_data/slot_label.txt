@@ -1,0 +1,7 @@
+PAD
+UNK
+O
+B-Disease
+I-Disease
+B-Symptom
+I-Symptom
