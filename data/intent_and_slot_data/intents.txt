@@ -1,6 +1,7 @@
 greet
 goodbye
 deny
+isbot
 检查方法
 临床表现
 非药治疗
