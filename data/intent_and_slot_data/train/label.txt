@@ -130,3 +130,4 @@ accept
 accept
 accept
 accept
+symptom_disease
