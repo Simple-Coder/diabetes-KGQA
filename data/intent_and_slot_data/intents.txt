@@ -2,6 +2,7 @@ greet
 goodbye
 deny
 isbot
+accept
 检查方法
 临床表现
 非药治疗
