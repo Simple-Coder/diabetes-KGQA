@@ -51,6 +51,21 @@ def train_test_split(ratio=0.8):
         json.dump(test_data, fp, ensure_ascii=False)
 
 
+def generate_test():
+    test_file = './test_process.json'
+    test_data_file = []
+    with open(test_file, 'r') as fp:
+        test_data = eval(fp.read())
+        for t in test_data:
+            print(t)
+            sentence = {'text': t['text']}
+            test_data_file.append(sentence)
+
+    with open('test.json', 'w') as fp:
+        json.dump(test_data_file, fp, ensure_ascii=False)
+
+
 if __name__ == '__main__':
-    get_data()
-    train_test_split()
+    # get_data()
+    # train_test_split()
+    generate_test()
