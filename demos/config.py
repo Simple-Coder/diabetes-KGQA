@@ -2,6 +2,7 @@
 Created by xiedong
 @Date: 2023/4/9 18:44
 """
+import torch
 
 
 class Args:
@@ -15,6 +16,8 @@ class Args:
     intent_label_file = 'intent_label.txt'
     # 槽位标签文件名
     slot_label_file = 'slot_label.txt'
+    # bert模型
+    bert_dir = 'bert-base-uncased'
 
     do_train = True
     do_eval = False
@@ -22,7 +25,7 @@ class Args:
     do_save = True
     do_predict = True
     load_model = False
-    device = None
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     # 批处理大小
     train_batch_size = 32
