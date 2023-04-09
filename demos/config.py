@@ -16,6 +16,14 @@ class Args:
     # 槽位标签文件名
     slot_label_file = 'slot_label.txt'
 
+    do_train = True
+    do_eval = False
+    do_test = False
+    do_save = True
+    do_predict = True
+    load_model = False
+    device = None
+
     # 批处理大小
     train_batch_size = 32
     eval_batch_size = 64
