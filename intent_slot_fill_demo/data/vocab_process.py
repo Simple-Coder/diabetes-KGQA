@@ -21,7 +21,7 @@ def vocab_process(data_dir):
     # 原始意图表
     train_label_path = os.path.join(train_dir, 'label')
     # 处理后的意图set集合
-    train_label_distinct_path = os.path.join(train_dir, intent_label_vocab)
+    train_label_distinct_path = os.path.join(data_dir, intent_label_vocab)
     with open(train_label_path, 'r', encoding='utf-8') as f_r, open(train_label_distinct_path, 'w',
                                                                     encoding='utf-8') as f_w:
         # 声明意图定义集合
@@ -40,3 +40,38 @@ def vocab_process(data_dir):
         for intent in intent_vocab:
             f_w.write(intent + "\n")
 
+    '''
+    2、槽位处理
+    建立槽位表字典
+    '''
+    # 原始槽位表
+    train_slot_path = os.path.join(train_dir, 'seq.out')
+    # 处理后的槽位表
+    train_slot_distinct_path = os.path.join(data_dir, slot_label_vocab)
+    with open(train_slot_path, 'r', encoding='utf-8') as f_r, open(train_slot_distinct_path, 'w',
+                                                                   encoding='utf-8') as f_w:
+        # 声明槽位集合
+        slot_vocab = set()
+
+        for line in f_r:
+            line = line.strip()
+            # 按空格切分
+            slots = line.split()
+            for slot in slots:
+                slot_vocab.add(slot)
+
+        # 意图处理
+        slot_vocab = sorted(list(slot_vocab), key=lambda x: (x[2:], x[2:]))
+
+        # 写入文件
+        additional_tokens = ["PAD", "UNK"]
+        for token in additional_tokens:
+            f_w.write(token + "\n")
+
+        for slot in slot_vocab:
+            f_w.write(slot + "\n")
+
+
+if __name__ == '__main__':
+    vocab_process('atis')
+    vocab_process('snips')
