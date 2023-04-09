@@ -3,12 +3,14 @@ Created by xiedong
 @Date: 2023/4/9 16:37
 """
 import argparse
-from utils import init_logger
+from utils import init_logger, set_seed
 
 
 def main(args):
     # 初始化日志记录
     init_logger()
+    # 设置随机数种子
+    set_seed(args)
 
 
 if __name__ == '__main__':
