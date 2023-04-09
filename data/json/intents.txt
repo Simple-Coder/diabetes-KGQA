@@ -1,0 +1,6 @@
+accept
+goodbye
+deny
+isbot
+symptom_disease
+greet

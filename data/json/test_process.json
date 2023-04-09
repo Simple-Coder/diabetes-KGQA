@@ -1,0 +1,164 @@
+[
+  {
+    "text": "not",
+    "slots": {},
+    "intent": "deny",
+    "domain": "app"
+  },
+  {
+    "text": "good morning",
+    "slots": {},
+    "intent": "greet",
+    "domain": "app"
+  },
+  {
+    "text": "你是谁呢",
+    "slots": {},
+    "intent": "isbot",
+    "domain": "app"
+  },
+  {
+    "text": "好",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "是的呢",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "先这样吧",
+    "slots": {},
+    "intent": "goodbye",
+    "domain": "app"
+  },
+  {
+    "text": "good evening",
+    "slots": {},
+    "intent": "greet",
+    "domain": "app"
+  },
+  {
+    "text": "答错了",
+    "slots": {},
+    "intent": "deny",
+    "domain": "app"
+  },
+  {
+    "text": "你搞错了",
+    "slots": {},
+    "intent": "deny",
+    "domain": "app"
+  },
+  {
+    "text": "睡在",
+    "slots": {},
+    "intent": "isbot",
+    "domain": "app"
+  },
+  {
+    "text": "对",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "你叫什么名字啊",
+    "slots": {},
+    "intent": "isbot",
+    "domain": "app"
+  },
+  {
+    "text": "你有时间吗",
+    "slots": {},
+    "intent": "greet",
+    "domain": "app"
+  },
+  {
+    "text": "对了",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "哈喽",
+    "slots": {},
+    "intent": "greet",
+    "domain": "app"
+  },
+  {
+    "text": "可以的",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "shia",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "好的",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "nishishui",
+    "slots": {},
+    "intent": "isbot",
+    "domain": "app"
+  },
+  {
+    "text": "不错",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "你误会了",
+    "slots": {},
+    "intent": "deny",
+    "domain": "app"
+  },
+  {
+    "text": "你是哪个？？",
+    "slots": {},
+    "intent": "isbot",
+    "domain": "app"
+  },
+  {
+    "text": "hello",
+    "slots": {},
+    "intent": "greet",
+    "domain": "app"
+  },
+  {
+    "text": "好啊",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "ok",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  },
+  {
+    "text": "您好",
+    "slots": {},
+    "intent": "greet",
+    "domain": "app"
+  },
+  {
+    "text": "是这样的",
+    "slots": {},
+    "intent": "accept",
+    "domain": "app"
+  }
+]
