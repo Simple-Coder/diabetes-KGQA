@@ -8,16 +8,18 @@ import torch
 class Args:
     # 数据集类型：atis or snips
     task = 'atis'
-    # 模型加载与保存的路径: atis_model 、snips_model
-    model_dir = 'atis_model'
     # 数据存放路径
     data_dir = '../intent_slot_fill_demo/data'
+
+
     # 意图标签文件名
     intent_label_file = 'intent_label.txt'
     # 槽位标签文件名
     slot_label_file = 'slot_label.txt'
     # bert模型
     bert_dir = 'bert-base-uncased'
+    # 模型加载与保存的路径: atis_model 、snips_model
+    model_dir = 'atis_model'
 
     do_train = True
     do_eval = False
