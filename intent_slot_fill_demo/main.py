@@ -5,7 +5,7 @@ Created by xiedong
 import argparse
 from intent_slot_fill_demo.utils import init_logger, set_seed, load_tokenizer, MODEL_CLASSES, MODEL_PATH_MAP
 from data_loader import load_and_cache_examples
-
+from trainer import Trainer
 
 def main(args):
     # 初始化日志记录
@@ -21,6 +21,15 @@ def main(args):
     dev_dataset = load_and_cache_examples(args, tokenizer, mode="dev")
     test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
 
+    # 训练
+    trainer = Trainer(args, train_dataset, dev_dataset, test_dataset)
+
+    if args.do_train:
+        trainer.train()
+
+    if args.do_eval:
+        trainer.load_model()
+        trainer.evaluate("test")
     print()
 
 
