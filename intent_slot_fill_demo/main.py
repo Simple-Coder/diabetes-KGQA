@@ -4,6 +4,7 @@ Created by xiedong
 """
 import argparse
 from intent_slot_fill_demo.utils import init_logger, set_seed, load_tokenizer, MODEL_CLASSES, MODEL_PATH_MAP
+from data_loader import load_and_cache_examples
 
 
 def main(args):
@@ -14,6 +15,11 @@ def main(args):
 
     # 加载tokenizer
     tokenizer = load_tokenizer(args)
+
+    # 加载对应数据集
+    train_dataset = load_and_cache_examples(args, tokenizer, mode="train")
+    dev_dataset = load_and_cache_examples(args, tokenizer, mode="dev")
+    test_dataset = load_and_cache_examples(args, tokenizer, mode="test")
 
     print()
 

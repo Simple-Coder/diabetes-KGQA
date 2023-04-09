@@ -39,3 +39,13 @@ def set_seed(args):
 
 def load_tokenizer(args):
     return MODEL_CLASSES[args.model_type][2].from_pretrained(args.model_name_or_path)
+
+
+def get_intent_labels(args):
+    return [label.strip() for label in
+            open(os.path.join(args.data_dir, args.task, args.intent_label_file), 'r', encoding='utf-8')]
+
+
+def get_slot_labels(args):
+    return [label.strip() for label in
+            open(os.path.join(args.data_dir, args.task, args.slot_label_file), 'r', encoding='utf-8')]
