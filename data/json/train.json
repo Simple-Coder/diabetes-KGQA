@@ -1,801 +1,1065 @@
 [
   {
     "text": "hi",
-    "slots": {},
+    "slots": {
+      "name": "hi"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "你好呀",
-    "slots": {},
+    "slots": {
+      "name": "你好呀"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "哈喽",
-    "slots": {},
+    "slots": {
+      "name": "哈喽"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "hello",
-    "slots": {},
+    "slots": {
+      "name": "hello"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "早上好呀",
-    "slots": {},
+    "slots": {
+      "name": "早上好呀"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "晚上好",
-    "slots": {},
+    "slots": {
+      "name": "晚上好"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "下午好啊",
-    "slots": {},
+    "slots": {
+      "name": "下午好啊"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "很高心见到你",
-    "slots": {},
+    "slots": {
+      "name": "很高心见到你"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "可以问你问题吗",
-    "slots": {},
+    "slots": {
+      "name": "可以问你问题吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "你有时间吗",
-    "slots": {},
+    "slots": {
+      "name": "你有时间吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "有人吗",
-    "slots": {},
+    "slots": {
+      "name": "有人吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "打扰了",
-    "slots": {},
+    "slots": {
+      "name": "打扰了"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "hai",
-    "slots": {},
+    "slots": {
+      "name": "hai"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "嗨",
-    "slots": {},
+    "slots": {
+      "name": "嗨"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "hey",
-    "slots": {},
+    "slots": {
+      "name": "hey"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "嘿",
-    "slots": {},
+    "slots": {
+      "name": "嘿"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "嘿嘿嘿",
-    "slots": {},
+    "slots": {
+      "name": "嘿嘿嘿"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "morning",
-    "slots": {},
+    "slots": {
+      "name": "morning"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "nihao",
-    "slots": {},
+    "slots": {
+      "name": "nihao"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "你好啊",
-    "slots": {},
+    "slots": {
+      "name": "你好啊"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "打扰一下",
-    "slots": {},
+    "slots": {
+      "name": "打扰一下"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "有人工服务吗",
-    "slots": {},
+    "slots": {
+      "name": "有人工服务吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "现在营业吗",
-    "slots": {},
+    "slots": {
+      "name": "现在营业吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "你有药吗",
-    "slots": {},
+    "slots": {
+      "name": "你有药吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "您好",
-    "slots": {},
+    "slots": {
+      "name": "您好"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "有个问题请教",
-    "slots": {},
+    "slots": {
+      "name": "有个问题请教"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "你好",
-    "slots": {},
+    "slots": {
+      "name": "你好"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "能问诊吗",
-    "slots": {},
+    "slots": {
+      "name": "能问诊吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "现在能看病吗",
-    "slots": {},
+    "slots": {
+      "name": "现在能看病吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "现在有医生吗",
-    "slots": {},
+    "slots": {
+      "name": "现在有医生吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "有人值班吗",
-    "slots": {},
+    "slots": {
+      "name": "有人值班吗"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "good morning",
-    "slots": {},
+    "slots": {
+      "name": "good morning"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "good evening",
-    "slots": {},
+    "slots": {
+      "name": "good evening"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "good afternoon",
-    "slots": {},
+    "slots": {
+      "name": "good afternoon"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "good night",
-    "slots": {},
+    "slots": {
+      "name": "good night"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "what up",
-    "slots": {},
+    "slots": {
+      "name": "what up"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "hey men",
-    "slots": {},
+    "slots": {
+      "name": "hey men"
+    },
     "intent": "greet",
     "domain": "app"
   },
   {
     "text": "再见",
-    "slots": {},
+    "slots": {
+      "name": "再见"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "goodbye",
-    "slots": {},
+    "slots": {
+      "name": "goodbye"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "bye",
-    "slots": {},
+    "slots": {
+      "name": "bye"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "再见咯",
-    "slots": {},
+    "slots": {
+      "name": "再见咯"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "再见啦，下次聊",
-    "slots": {},
+    "slots": {
+      "name": "再见啦，下次聊"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "回见",
-    "slots": {},
+    "slots": {
+      "name": "回见"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "拜拜",
-    "slots": {},
+    "slots": {
+      "name": "拜拜"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "拜拜咯",
-    "slots": {},
+    "slots": {
+      "name": "拜拜咯"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "先这样吧",
-    "slots": {},
+    "slots": {
+      "name": "先这样吧"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "不聊了",
-    "slots": {},
+    "slots": {
+      "name": "不聊了"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "我去忙了",
-    "slots": {},
+    "slots": {
+      "name": "我去忙了"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "忙事情去了",
-    "slots": {},
+    "slots": {
+      "name": "忙事情去了"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "下次见",
-    "slots": {},
+    "slots": {
+      "name": "下次见"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "bye",
-    "slots": {},
+    "slots": {
+      "name": "bye"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "不用了，谢谢",
-    "slots": {},
+    "slots": {
+      "name": "不用了，谢谢"
+    },
     "intent": "goodbye",
     "domain": "app"
   },
   {
     "text": "不是",
-    "slots": {},
+    "slots": {
+      "name": "不是"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "搞错了",
-    "slots": {},
+    "slots": {
+      "name": "搞错了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不问了",
-    "slots": {},
+    "slots": {
+      "name": "不问了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "答错了",
-    "slots": {},
+    "slots": {
+      "name": "答错了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不是这样啊",
-    "slots": {},
+    "slots": {
+      "name": "不是这样啊"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "你搞错了",
-    "slots": {},
+    "slots": {
+      "name": "你搞错了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不可以",
-    "slots": {},
+    "slots": {
+      "name": "不可以"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不能",
-    "slots": {},
+    "slots": {
+      "name": "不能"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不对",
-    "slots": {},
+    "slots": {
+      "name": "不对"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不行",
-    "slots": {},
+    "slots": {
+      "name": "不行"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "not",
-    "slots": {},
+    "slots": {
+      "name": "not"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "no",
-    "slots": {},
+    "slots": {
+      "name": "no"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "你错了",
-    "slots": {},
+    "slots": {
+      "name": "你错了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不是这样的",
-    "slots": {},
+    "slots": {
+      "name": "不是这样的"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "你误会了",
-    "slots": {},
+    "slots": {
+      "name": "你误会了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "真不是这个意思",
-    "slots": {},
+    "slots": {
+      "name": "真不是这个意思"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "不是这样的",
-    "slots": {},
+    "slots": {
+      "name": "不是这样的"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "猜错了",
-    "slots": {},
+    "slots": {
+      "name": "猜错了"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "你是谁",
-    "slots": {},
+    "slots": {
+      "name": "你是谁"
+    },
     "intent": "deny",
     "domain": "app"
   },
   {
     "text": "怎么称呼",
-    "slots": {},
+    "slots": {
+      "name": "怎么称呼"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是人吗？",
-    "slots": {},
+    "slots": {
+      "name": "你是人吗？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是人类吗？",
-    "slots": {},
+    "slots": {
+      "name": "你是人类吗？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是机器人吗",
-    "slots": {},
+    "slots": {
+      "name": "你是机器人吗"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是人还是机器人",
-    "slots": {},
+    "slots": {
+      "name": "你是人还是机器人"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你叫什么名字啊",
-    "slots": {},
+    "slots": {
+      "name": "你叫什么名字啊"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你的名字？",
-    "slots": {},
+    "slots": {
+      "name": "你的名字？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是？",
-    "slots": {},
+    "slots": {
+      "name": "你是？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "怎么称呼你啊？",
-    "slots": {},
+    "slots": {
+      "name": "怎么称呼你啊？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是哪位",
-    "slots": {},
+    "slots": {
+      "name": "你是哪位"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你的名字是什么",
-    "slots": {},
+    "slots": {
+      "name": "你的名字是什么"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你叫什么",
-    "slots": {},
+    "slots": {
+      "name": "你叫什么"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你叫什么啊",
-    "slots": {},
+    "slots": {
+      "name": "你叫什么啊"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是谁呢",
-    "slots": {},
+    "slots": {
+      "name": "你是谁呢"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "谁啊",
-    "slots": {},
+    "slots": {
+      "name": "谁啊"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "谁呢",
-    "slots": {},
+    "slots": {
+      "name": "谁呢"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "睡在",
-    "slots": {},
+    "slots": {
+      "name": "睡在"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "谁在呢",
-    "slots": {},
+    "slots": {
+      "name": "谁在呢"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是哪个？？",
-    "slots": {},
+    "slots": {
+      "name": "你是哪个？？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "what your name?",
-    "slots": {},
+    "slots": {
+      "name": "what your name?"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "机器人？",
-    "slots": {},
+    "slots": {
+      "name": "机器人？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "报上名来",
-    "slots": {},
+    "slots": {
+      "name": "报上名来"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "来者何人",
-    "slots": {},
+    "slots": {
+      "name": "来者何人"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是小智吗",
-    "slots": {},
+    "slots": {
+      "name": "你是小智吗"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是谁",
-    "slots": {},
+    "slots": {
+      "name": "你是谁"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你到底是哪个",
-    "slots": {},
+    "slots": {
+      "name": "你到底是哪个"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "nishishui",
-    "slots": {},
+    "slots": {
+      "name": "nishishui"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "你是谁啊？",
-    "slots": {},
+    "slots": {
+      "name": "你是谁啊？"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "who are you",
-    "slots": {},
+    "slots": {
+      "name": "who are you"
+    },
     "intent": "isbot",
     "domain": "app"
   },
   {
     "text": "是的",
-    "slots": {},
+    "slots": {
+      "name": "是的"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "对的",
-    "slots": {},
+    "slots": {
+      "name": "对的"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "是啊",
-    "slots": {},
+    "slots": {
+      "name": "是啊"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "你怎么知道",
-    "slots": {},
+    "slots": {
+      "name": "你怎么知道"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "你猜对了",
-    "slots": {},
+    "slots": {
+      "name": "你猜对了"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "bingo",
-    "slots": {},
+    "slots": {
+      "name": "bingo"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "真厉害，这都知道",
-    "slots": {},
+    "slots": {
+      "name": "真厉害，这都知道"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "厉害呀",
-    "slots": {},
+    "slots": {
+      "name": "厉害呀"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "嗯嗯",
-    "slots": {},
+    "slots": {
+      "name": "嗯嗯"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "嗯",
-    "slots": {},
+    "slots": {
+      "name": "嗯"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "可以",
-    "slots": {},
+    "slots": {
+      "name": "可以"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "不错",
-    "slots": {},
+    "slots": {
+      "name": "不错"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "好",
-    "slots": {},
+    "slots": {
+      "name": "好"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "好的",
-    "slots": {},
+    "slots": {
+      "name": "好的"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "点赞",
-    "slots": {},
+    "slots": {
+      "name": "点赞"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "对了",
-    "slots": {},
+    "slots": {
+      "name": "对了"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "听你的",
-    "slots": {},
+    "slots": {
+      "name": "听你的"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "说得对",
-    "slots": {},
+    "slots": {
+      "name": "说得对"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "shia",
-    "slots": {},
+    "slots": {
+      "name": "shia"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "是啊",
-    "slots": {},
+    "slots": {
+      "name": "是啊"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "是",
-    "slots": {},
+    "slots": {
+      "name": "是"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "yes",
-    "slots": {},
+    "slots": {
+      "name": "yes"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "可以的",
-    "slots": {},
+    "slots": {
+      "name": "可以的"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "对啊",
-    "slots": {},
+    "slots": {
+      "name": "对啊"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "很好",
-    "slots": {},
+    "slots": {
+      "name": "很好"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "好啊",
-    "slots": {},
+    "slots": {
+      "name": "好啊"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "是啊",
-    "slots": {},
+    "slots": {
+      "name": "是啊"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "是的呢",
-    "slots": {},
+    "slots": {
+      "name": "是的呢"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "是这样的",
-    "slots": {},
+    "slots": {
+      "name": "是这样的"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "ok",
-    "slots": {},
+    "slots": {
+      "name": "ok"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "对",
-    "slots": {},
+    "slots": {
+      "name": "对"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "行",
-    "slots": {},
+    "slots": {
+      "name": "行"
+    },
     "intent": "accept",
     "domain": "app"
   },
   {
     "text": "请问二型糖尿病的临床表现是什么",
     "slots": {
-      "Disease": "二型糖尿病",
-      "Symptom": "临床表现"
+      "Symptom": "临床表现",
+      "Disease": "二型糖尿病"
     },
     "intent": "symptom_disease",
     "domain": "app"
