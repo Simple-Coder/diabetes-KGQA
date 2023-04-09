@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/4/9 16:37
 """
 import argparse
-from utils import init_logger, set_seed
+from intent_slot_fill_demo.utils import init_logger, set_seed, load_tokenizer, MODEL_CLASSES, MODEL_PATH_MAP
 
 
 def main(args):
@@ -11,6 +11,11 @@ def main(args):
     init_logger()
     # 设置随机数种子
     set_seed(args)
+
+    # 加载tokenizer
+    tokenizer = load_tokenizer(args)
+
+    print()
 
 
 if __name__ == '__main__':
@@ -63,6 +68,5 @@ if __name__ == '__main__':
                         help="Pad token for slot label pad (to be ignore when calculate loss)")
 
     args = parser.parse_args()
-    args.model_name_or_path = 'bert-base-uncased'
-    # args.model_name_or_path = MODEL_PATH_MAP[args.model_type]
+    args.model_name_or_path = MODEL_PATH_MAP[args.model_type]
     main(args)
