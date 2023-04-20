@@ -17,6 +17,9 @@ class Args:
     # 槽位labels
     token_labels_path = '../data/intent_and_slot_data/slot_label.txt'
 
+    load_model = False
+
+
     seqlabel2id = {}
     id2seqlabel = {}
     with open(seq_labels_path, 'r', encoding='utf-8') as fp:
