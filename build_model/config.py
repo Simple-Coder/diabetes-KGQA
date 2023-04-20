@@ -32,6 +32,7 @@ class Args:
     id2tokenlabel = {}
     with open(token_labels_path, 'r', encoding='utf-8') as fp:
         token_labels = fp.read().split('\n')
+        token_labels = list(filter(lambda x: x != '', token_labels))
         for i, label in enumerate(token_labels):
             if label == '':
                 continue
@@ -57,3 +58,4 @@ if __name__ == '__main__':
     print(args.seq_labels)
     print(args.seqlabel2id)
     print(args.tokenlabel2id)
+    print(args.token_labels)
