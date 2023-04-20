@@ -18,7 +18,12 @@ class Args:
     token_labels_path = '../data/intent_and_slot_data/slot_label.txt'
 
     load_model = False
-
+    do_train = True
+    do_eval = False
+    do_test = False
+    do_save = True
+    do_predict = False
+    device = None
 
     seqlabel2id = {}
     id2seqlabel = {}
