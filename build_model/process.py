@@ -33,23 +33,27 @@ class InputFeature:
 
 class Processor:
     @classmethod
-    def get_examples(cls, path, set_type):
+    def get_examples(cls, texts, intents, slots, set_type):
         raw_examples = []
-        with open(path, 'r', encoding='utf-8') as fp:
-            data = eval(fp.read())
-        for i, d in enumerate(data):
-            text = d['text']
-            seq_label = d['intent']
-            token_label = d['slots']
+        for i, (text, intent, slot) in enumerate(zip(texts, intents, slots)):
             raw_examples.append(
                 InputExample(
                     set_type,
                     text,
-                    seq_label,
-                    token_label
+                    intent,
+                    slot
                 )
             )
         return raw_examples
+
+    @classmethod
+    def read_file(cls, input_file):
+        """Reads a tab separated value file."""
+        with open(input_file, "r", encoding="utf-8") as f:
+            lines = []
+            for line in f:
+                lines.append(line.strip())
+            return lines
 
 
 def convert_example_to_feature(ex_idx, example, tokenizer, config):
@@ -120,7 +124,12 @@ def get_features(raw_examples, tokenizer, args):
 
 if __name__ == '__main__':
     args = Args()
-    raw_examples = Processor.get_examples('./data/test_process.json', 'test')
-    tokenizer = BertTokenizer.from_pretrained('./chinese-bert-wwm-ext/')
+
+    texts = Processor.read_file('../data/intent_and_slot_data/train/seq.in')
+    intents = Processor.read_file('../data/intent_and_slot_data/train/label')
+    slots = Processor.read_file('../data/intent_and_slot_data/train/seq.out')
+
+    raw_examples = Processor.get_examples(texts, intents, slots, 'train')
+    tokenizer = BertTokenizer.from_pretrained('../chinese-bert-wwm-ext/')
     features = get_features(raw_examples, tokenizer, args)
     print("")
