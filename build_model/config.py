@@ -52,6 +52,11 @@ class Args:
             tokenlabel2id[label] = i
             id2tokenlabel[i] = label
 
+    # 意图数量
+    seq_num_labels = len(seq_labels)
+    # 槽位数量
+    token_num_labels = len(token_labels)
+
     # 隐层大小
     hidden_size = 768
     # 最大支持长度
