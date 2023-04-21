@@ -2,6 +2,7 @@
 Created by xiedong
 @Date: 2023/4/19 22:12
 """
+import torch
 
 
 class Args:
@@ -27,7 +28,7 @@ class Args:
     do_test = False
     do_save = True
     do_predict = False
-    device = None
+    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     seqlabel2id = {}
     id2seqlabel = {}
