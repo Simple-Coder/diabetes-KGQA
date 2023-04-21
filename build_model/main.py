@@ -12,6 +12,7 @@ from process import Processor, get_features
 from dataset import BertDataset
 
 if __name__ == '__main__':
+
     args = Args()
     tokenizer = BertTokenizer.from_pretrained(args.bert_dir)
 
@@ -28,3 +29,4 @@ if __name__ == '__main__':
         train_features = get_features(raw_examples, tokenizer, args)
         train_dataset = BertDataset(train_features)
         train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
+        trainer.train(train_loader)
