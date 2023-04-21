@@ -27,7 +27,7 @@ class BertForIntentClassificationAndSlotFilling(nn.Module):
                 token_type_ids,
                 ):
         bert_output = self.bert(input_ids, attention_mask, token_type_ids)
-        print("bertOutput", bert_output)
+        # print("bertOutput", bert_output)
         pooler_output = bert_output[1]  # CLS
         token_output = bert_output[0]
         seq_output = self.sequence_classification(pooler_output)
