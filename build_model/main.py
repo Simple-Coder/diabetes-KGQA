@@ -29,7 +29,9 @@ if __name__ == '__main__':
 
     # 是否训练
     if args.do_train:
-        raw_examples = Processor.get_examples(args.train_texts, args.train_intents, args.train_slots, 'train')
+        raw_examples = Processor.get_examples(Processor.read_file(args.train_texts),
+                                              Processor.read_file(args.train_intents),
+                                              Processor.read_file(args.train_slots), 'train')
         train_features = get_features(raw_examples, tokenizer, args)
         train_dataset = BertDataset(train_features)
         train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)

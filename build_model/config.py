@@ -62,7 +62,7 @@ class Args:
     # 最大支持长度
     max_len = 32
     # 批处理大小
-    batchsize = 64
+    batchsize = 2
     # 学习率
     lr = 2e-5
     # 训练轮数
