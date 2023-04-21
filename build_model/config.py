@@ -22,12 +22,12 @@ class Args:
     train_intents = '../data/intent_and_slot_data/train/label'
     train_slots = '../data/intent_and_slot_data/train/seq.out'
 
-    load_model = False
-    do_train = True
+    load_model = True
+    do_train = False
     do_eval = False
     do_test = False
     do_save = True
-    do_predict = False
+    do_predict = True
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     seqlabel2id = {}
