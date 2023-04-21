@@ -17,12 +17,9 @@ class Args:
     # 槽位labels
     token_labels_path = '../data/intent_and_slot_data/slot_label.txt'
 
-
-
-    train_texts = Processor.read_file('../data/intent_and_slot_data/train/seq.in')
-    intents = Processor.read_file('../data/intent_and_slot_data/train/label')
-    slots = Processor.read_file('../data/intent_and_slot_data/train/seq.out')
-
+    train_texts = '../data/intent_and_slot_data/train/seq.in'
+    train_intents = '../data/intent_and_slot_data/train/label'
+    train_slots = '../data/intent_and_slot_data/train/seq.out'
 
     load_model = False
     do_train = True

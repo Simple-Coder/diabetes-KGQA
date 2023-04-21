@@ -26,19 +26,7 @@ if __name__ == '__main__':
     trainer = Trainer(model, args)
 
     if args.do_train:
-        raw_examples = Processor.get_examples(args.train_path, 'train')
+        raw_examples = Processor.get_examples(args.train_texts, args.train_intents, args.train_slots, 'train')
         train_features = get_features(raw_examples, tokenizer, args)
         train_dataset = BertDataset(train_features)
         train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
-
-    if args.do_eval:
-        raw_examples = Processor.get_examples(args.test_path, 'test')
-        test_features = get_features(raw_examples, tokenizer, args)
-        test_dataset = BertDataset(test_features)
-        test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=True)
-
-    if args.do_test:
-        raw_examples = Processor.get_examples(args.test_path, 'test')
-        test_features = get_features(raw_examples, tokenizer, args)
-        test_dataset = BertDataset(test_features)
-        test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=True)
