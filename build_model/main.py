@@ -36,3 +36,7 @@ if __name__ == '__main__':
         train_dataset = BertDataset(train_features)
         train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
         trainer.train(train_loader)
+
+    # 是否预测
+    if args.do_predict:
+        trainer.predict('请问二型糖尿病的临床表现是什么')

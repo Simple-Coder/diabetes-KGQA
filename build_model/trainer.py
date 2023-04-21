@@ -6,6 +6,8 @@ import os
 import torch
 import torch.nn as nn
 from torch.optim import Adam
+from transformers import BertTokenizer
+import numpy as np
 
 
 class Trainer:
@@ -16,6 +18,7 @@ class Trainer:
         self.optimizer = Adam(self.model.parameters(), lr=config.lr)
         self.epoch = config.epoch
         self.device = config.device
+        self.tokenizer = BertTokenizer.from_pretrained(config.bert_dir)
 
     def train(self, train_loader):
         global_step = 0
@@ -54,3 +57,37 @@ class Trainer:
 
     def save(self, save_path, save_name):
         torch.save(self.model.state_dict(), os.path.join(save_path, save_name))
+
+    def predict(self, text):
+        self.model.eval()
+        with torch.no_grad():
+            tmp_text = [i for i in text]
+            inputs = self.tokenizer.encode_plus(
+                text=tmp_text,
+                max_length=self.config.max_len,
+                padding='max_length',
+                truncation='only_first',
+                return_attention_mask=True,
+                return_token_type_ids=True,
+                return_tensors='pt'
+            )
+            for key in inputs.keys():
+                inputs[key] = inputs[key].to(self.device)
+            input_ids = inputs['input_ids']
+            attention_mask = inputs['attention_mask']
+            token_type_ids = inputs['token_type_ids']
+            seq_output, token_output = self.model(
+                input_ids,
+                attention_mask,
+                token_type_ids,
+            )
+            seq_output = seq_output.detach().cpu().numpy()
+            token_output = token_output.detach().cpu().numpy()
+            seq_output = np.argmax(seq_output, -1)
+            token_output = np.argmax(token_output, -1)
+            print(seq_output, token_output)
+            seq_output = seq_output[0]
+            token_output = token_output[0][1:len(text) - 1]
+            # token_output = [self.config.id2nerlabel[i] for i in token_output]
+            print('意图：', self.config.id2seqlabel[seq_output])
+            # print('槽位：', str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]))
