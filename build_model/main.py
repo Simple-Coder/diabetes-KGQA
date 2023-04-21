@@ -13,8 +13,6 @@ from dataset import BertDataset
 
 if __name__ == '__main__':
     args = Args()
-    device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    args.device = device
     tokenizer = BertTokenizer.from_pretrained(args.bert_dir)
 
     model = BertForIntentClassificationAndSlotFilling(args)
@@ -22,7 +20,7 @@ if __name__ == '__main__':
     if args.load_model:
         model.load_state_dict(torch.load(args.load_dir))
 
-    model.to(device)
+    model.to(args.device)
     trainer = Trainer(model, args)
 
     if args.do_train:
