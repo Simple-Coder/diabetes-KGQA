@@ -12,18 +12,22 @@ from process import Processor, get_features
 from dataset import BertDataset
 
 if __name__ == '__main__':
-
+    # 全局配置参数
     args = Args()
+    # 加载bert编码使用
     tokenizer = BertTokenizer.from_pretrained(args.bert_dir)
-
+    # 加载模型
     model = BertForIntentClassificationAndSlotFilling(args)
-
+    # 是否加载本地模型
     if args.load_model:
         model.load_state_dict(torch.load(args.load_dir))
 
+    # CPU or GPUC
     model.to(args.device)
+    # 训练器实例
     trainer = Trainer(model, args)
 
+    # 是否训练
     if args.do_train:
         raw_examples = Processor.get_examples(args.train_texts, args.train_intents, args.train_slots, 'train')
         train_features = get_features(raw_examples, tokenizer, args)
