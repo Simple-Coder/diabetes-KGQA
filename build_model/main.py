@@ -10,7 +10,8 @@ from model import BertForIntentClassificationAndSlotFilling
 from trainer import Trainer
 from process import Processor, get_features
 from dataset import BertDataset
-
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 if __name__ == '__main__':
     # 全局配置参数
     args = Args()
