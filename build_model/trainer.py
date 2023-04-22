@@ -3,6 +3,8 @@ Created by xiedong
 @Date: 2023/4/20 15:28
 """
 import os
+import time
+
 import torch
 import torch.nn as nn
 from torch.optim import Adam
@@ -54,7 +56,7 @@ class Trainer:
                 global_step += 1
 
         if self.config.do_save:
-            self.save(self.config.save_dir, 'model.pt')
+            self.save(self.config.save_dir, str(int(time.time())) + 'model.pt')
 
     def save(self, save_path, save_name):
         torch.save(self.model.state_dict(), os.path.join(save_path, save_name))
