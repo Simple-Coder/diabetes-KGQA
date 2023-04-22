@@ -8,6 +8,7 @@ import random
 from chat_config import gossip_corpus
 import requests
 import json
+from modules import get_answer, medical_robot
 
 
 def parse_text(text):
@@ -31,9 +32,13 @@ def text_reply(msg):
         print("识别出槽位---：", user_slots)
         if user_intent in ["greet", "goodbye", "deny", "isbot"]:
             reply = gossip_robot(user_intent)
+        elif user_intent == "accept":
+            reply = "accept,我的大脑很空~~"
         else:
-            reply = '此时我的大脑很空~~~'
-
+            reply = medical_robot(user_slots, 'user1')
+            # if reply["slot_values"]:
+            # dump_user_dialogue_context(msg.User['NickName'], reply)
+            reply = reply.get("replay_answer")
     else:
         reply = '服务异常啦~~~'
     return reply

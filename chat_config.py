@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/4/5 22:25
 """
 semantic_slot = {
-    "临床表现": {
+    "symptom_disease": {
         "slot_list": ["Disease"],
         "slot_values": None,
         "cql_template": "MATCH(p:疾病)-[r:has_symptom]->(q:症状) WHERE p.name='{Disease}' RETURN q.name",
