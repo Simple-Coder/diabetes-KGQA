@@ -39,9 +39,10 @@ if __name__ == '__main__':
         data = {"sucess": 0}
         result = None
 
-        param = request.args.get('text')
+        param = flask.request.get_json()
         print(param)
-        result = ok_model.predict(param)
+        text = param["text"]
+        result = ok_model.predict(text)
 
         data_data = {}
         data_data["intent"] = result[0]
