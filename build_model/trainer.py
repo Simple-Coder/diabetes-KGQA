@@ -94,3 +94,79 @@ class Trainer:
             token_output = [self.config.id2tokenlabel[i] for i in token_output]
             print('意图：', self.config.id2seqlabel[seq_output])
             print('槽位：', str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]))
+
+    def get_metrices(self, trues, preds, mode):
+        if mode == 'cls':
+            from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+            acc = accuracy_score(trues, preds)
+            precision = precision_score(trues, preds, average='micro')
+            recall = recall_score(trues, preds, average='micro')
+            f1 = f1_score(trues, preds, average='micro')
+        elif mode == 'ner':
+            from seqeval.metrics import accuracy_score, precision_score, recall_score, f1_score
+            acc = accuracy_score(trues, preds)
+            precision = precision_score(trues, preds)
+            recall = recall_score(trues, preds)
+            f1 = f1_score(trues, preds)
+        return acc, precision, recall, f1
+
+    def get_report(self, trues, preds, mode):
+        if mode == 'cls':
+            from sklearn.metrics import classification_report
+            report = classification_report(trues, preds)
+        elif mode == 'ner':
+            from seqeval.metrics import classification_report
+            report = classification_report(trues, preds)
+        return report
+
+    def test(self, test_loader):
+        self.model.eval()
+        seq_preds = []
+        seq_trues = []
+        token_preds = []
+        token_trues = []
+        with torch.no_grad():
+            for step, test_batch in enumerate(test_loader):
+                for key in test_batch.keys():
+                    test_batch[key] = test_batch[key].to(self.device)
+                input_ids = test_batch['input_ids']
+                attention_mask = test_batch['attention_mask']
+                token_type_ids = test_batch['token_type_ids']
+                seq_label_ids = test_batch['seq_label_ids']
+                token_label_ids = test_batch['token_label_ids']
+                seq_output, token_output = self.model(
+                    input_ids,
+                    attention_mask,
+                    token_type_ids,
+                )
+                seq_output = seq_output.detach().cpu().numpy()
+                seq_output = np.argmax(seq_output, -1)
+                seq_label_ids = seq_label_ids.detach().cpu().numpy()
+                seq_label_ids = seq_label_ids.reshape(-1)
+                seq_preds.extend(seq_output)
+                seq_trues.extend(seq_label_ids)
+
+                token_output = token_output.detach().cpu().numpy()
+                token_label_ids = token_label_ids.detach().cpu().numpy()
+                token_output = np.argmax(token_output, -1)
+                active_len = torch.sum(attention_mask, -1).view(-1)
+                for length, t_output, t_label in zip(active_len, token_output, token_label_ids):
+                    t_output = t_output[1:length - 1]
+                    t_label = t_label[1:length - 1]
+                    t_ouput = [self.config.id2tokenlabel[i] for i in t_output]
+                    t_label = [self.config.id2tokenlabel[i] for i in t_label]
+                    token_preds.append(t_ouput)
+                    token_trues.append(t_label)
+
+        acc, precision, recall, f1 = self.get_metrices(seq_trues, seq_preds, 'cls')
+        report = self.get_report(seq_trues, seq_preds, 'cls')
+        ner_acc, ner_precision, ner_recall, ner_f1 = self.get_metrices(token_trues, token_preds, 'ner')
+        ner_report = self.get_report(token_trues, token_preds, 'ner')
+        print('意图识别：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
+            acc, precision, recall, f1
+        ))
+        print(report)
+        print('槽位填充：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
+            ner_acc, ner_precision, ner_recall, ner_f1
+        ))
+        print(ner_report)
