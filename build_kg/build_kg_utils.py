@@ -187,7 +187,8 @@ class DiabetesExtractor():
                             self.test_items_disease.append([head_entity_name, "Test_items_Disease", tail_entity_name])
                         # 临床表现->疾病
                         if "Symptom_Disease" == relation_type_:
-                            self.symptom_disease.append([head_entity_name, "Symptom_Disease", tail_entity_name])
+                            # self.symptom_disease.append([head_entity_name, "Symptom_Disease", tail_entity_name])
+                            self.symptom_disease.append([tail_entity_name, "Symptom_Disease", head_entity_name])
                         # 不良反应->疾病
                         if "ADE_Disease" == relation_type_:
                             self.ade_disease.append([head_entity_name, "ADE_Disease", tail_entity_name])
