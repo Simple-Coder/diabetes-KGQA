@@ -35,7 +35,7 @@ def text_reply(msg):
         elif user_intent == "accept":
             reply = "accept,我的大脑很空~~"
         else:
-            reply = medical_robot(user_slots, 'user1')
+            reply = medical_robot(user_intent, user_slots, 'user1')
             # if reply["slot_values"]:
             # dump_user_dialogue_context(msg.User['NickName'], reply)
             reply = reply.get("replay_answer")
