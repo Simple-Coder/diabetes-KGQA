@@ -1,0 +1,4 @@
+MATCH (n:`临床表现`) RETURN n LIMIT 25
+
+
+match (n) detach delete n
