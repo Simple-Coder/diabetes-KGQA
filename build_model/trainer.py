@@ -12,6 +12,8 @@ from transformers import BertTokenizer
 import numpy as np
 from seqeval.metrics.sequence_labeling import get_entities
 
+import torch.nn.functional as F
+
 
 class Trainer:
     def __init__(self, model, config):
@@ -84,8 +86,15 @@ class Trainer:
                 attention_mask,
                 token_type_ids,
             )
+
+            softmaxSeq = F.softmax(seq_output, dim=1)
+            numpySeq = softmaxSeq.numpy()[0]
+            # 意图强度
+            intent_confidence = numpySeq.max()
+
             seq_output = seq_output.detach().cpu().numpy()
             token_output = token_output.detach().cpu().numpy()
+
             seq_output = np.argmax(seq_output, -1)
             token_output = np.argmax(token_output, -1)
             print(seq_output, token_output)
@@ -97,9 +106,10 @@ class Trainer:
             # slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
             slots = [(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]
             print('意图：', intent)
+            print('意图强度：', intent_confidence)
             print('槽位：', str(slots))
 
-            return intent, slots
+            return intent, intent_confidence, slots
 
     def get_metrices(self, trues, preds, mode):
         if mode == 'cls':
