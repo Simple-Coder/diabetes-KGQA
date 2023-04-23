@@ -44,3 +44,9 @@ gossip_corpus = {
         "我是医疗诊断机器人小朱"
     ],
 }
+
+# 意图强度配置
+intent_threshold_config = {
+    "accept": 0.8,
+    "deny": 0.4
+}
