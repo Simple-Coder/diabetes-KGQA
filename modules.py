@@ -137,4 +137,24 @@ def get_answer(slot_info):
             pattern = reply_template.format(**slot_values)
             slot_info["replay_answer"] = pattern + answer
 
+    elif strategy == "clarify":
+        # 澄清用户是否问该问题
+        pattern = ask_template.format(**slot_values)
+        slot_info["replay_answer"] = pattern
+        # 得到肯定意图之后需要给用户回复的答案
+        cql = []
+        if isinstance(cql_template, list):
+            for cqlt in cql_template:
+                cql.append(cqlt.format(**slot_values))
+        else:
+            cql = cql_template.format(**slot_values)
+        answer = neo4j_searcher(cql)
+        if not answer:
+            slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
+        else:
+            pattern = reply_template.format(**slot_values)
+            slot_info["choice_answer"] = pattern + answer
+    elif strategy == "deny":
+        slot_info["replay_answer"] = slot_info.get("deny_response")
+
     return slot_info
