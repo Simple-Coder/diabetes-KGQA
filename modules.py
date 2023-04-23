@@ -4,6 +4,7 @@ Created by xiedong
 """
 from py2neo import Graph
 from chat_config import semantic_slot
+from utils import load_user_dialogue_context
 
 graph = Graph(host="127.0.0.1",
               http_port=7474,
@@ -54,12 +55,14 @@ def neo4j_searcher(cql_list):
 
     return ress
 
-def entity_link(mention,etype):
+
+def entity_link(mention, etype):
     """
     对于识别到的实体mention,如果其不是知识库中的标准称谓
     则对其进行实体链指，将其指向一个唯一实体（待实现）
     """
     return mention
+
 
 def semantic_parser(user_intent, user_slots, username):
     """
@@ -88,10 +91,10 @@ def semantic_parser(user_intent, user_slots, username):
             #     if slot.lower() == e['type']:
             #         slot_values[slot] = entity_link(e['word'], e['type'])
 
-    # last_slot_values = load_user_dialogue_context(user)["slot_values"]
-    # for k in slot_values.keys():
-    #     if slot_values[k] is None:
-    #         slot_values[k] = last_slot_values.get(k, None)
+    last_slot_values = load_user_dialogue_context(username)["slot_values"]
+    for k in slot_values.keys():
+        if slot_values[k] is None:
+            slot_values[k] = last_slot_values.get(k, None)
 
     slot_info["slot_values"] = slot_values
 
@@ -133,6 +136,5 @@ def get_answer(slot_info):
         else:
             pattern = reply_template.format(**slot_values)
             slot_info["replay_answer"] = pattern + answer
-
 
     return slot_info
