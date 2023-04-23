@@ -109,7 +109,7 @@ class Trainer:
             print('意图强度：', intent_confidence)
             print('槽位：', str(slots))
 
-            return intent, intent_confidence, slots
+            return intent, float(intent_confidence), slots
 
     def get_metrices(self, trues, preds, mode):
         if mode == 'cls':
