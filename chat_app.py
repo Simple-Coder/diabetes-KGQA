@@ -36,7 +36,7 @@ def text_reply(username, msg):
         if user_intent in ["greet", "goodbye", "deny", "isbot"]:
             reply = gossip_robot(user_intent)
         elif user_intent == "accept":
-            reply = load_user_dialogue_context(msg.User['NickName'])
+            reply = load_user_dialogue_context(username)
             reply = reply.get("choice_answer")
         else:
             reply = medical_robot(user_intent, user_slots, confidence, username)
