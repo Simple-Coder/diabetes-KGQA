@@ -94,9 +94,10 @@ class Trainer:
             token_output = [self.config.id2tokenlabel[i] for i in token_output]
 
             intent = self.config.id2seqlabel[seq_output]
-            slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
+            # slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
+            slots = [(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]
             print('意图：', intent)
-            print('槽位：', slots)
+            print('槽位：', str(slots))
 
             return intent, slots
 
