@@ -9,6 +9,7 @@ from chat_config import gossip_corpus
 import requests
 import json
 from modules import get_answer, medical_robot
+from utils import load_user_dialogue_context, dump_user_dialogue_context
 
 
 def parse_text(text):
@@ -23,7 +24,7 @@ def parse_text(text):
         return None
 
 
-def text_reply(msg):
+def text_reply(username, msg):
     predict = parse_text(msg)
     if predict is not None:
         user_intent = predict["intent"]
@@ -33,11 +34,12 @@ def text_reply(msg):
         if user_intent in ["greet", "goodbye", "deny", "isbot"]:
             reply = gossip_robot(user_intent)
         elif user_intent == "accept":
-            reply = "accept,我的大脑很空~~"
+            reply = load_user_dialogue_context(msg.User['NickName'])
+            reply = reply.get("choice_answer")
         else:
-            reply = medical_robot(user_intent, user_slots, 'user1')
-            # if reply["slot_values"]:
-            # dump_user_dialogue_context(msg.User['NickName'], reply)
+            reply = medical_robot(user_intent, user_slots, username)
+            if reply["slot_values"]:
+                dump_user_dialogue_context(username, reply)
             reply = reply.get("replay_answer")
     else:
         reply = '服务异常啦~~~'
@@ -51,10 +53,11 @@ def gossip_robot(intent):
 
 
 if __name__ == '__main__':
+    username = '张三'
     while True:
         line = stdin.readline().strip()  # strip()去掉最后的回车或者是空格
         if line == '':
             break
         # 处理
-        reply = text_reply(line)
+        reply = text_reply(username, line)
         print("应答：", reply)
