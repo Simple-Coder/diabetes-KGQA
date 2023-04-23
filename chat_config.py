@@ -6,7 +6,8 @@ semantic_slot = {
     "symptom_disease": {
         "slot_list": ["Disease"],
         "slot_values": None,
-        "cql_template": "MATCH(p:疾病)-[r:has_symptom]->(q:症状) WHERE p.name='{Disease}' RETURN q.name",
+        # "cql_template": "MATCH(p:疾病)-[r:has_symptom]->(q:症状) WHERE p.name='{Disease}' RETURN q.name",
+        "cql_template": "MATCH(p:`临床表现`)-[r:Symptom_Disease]->(q:`疾病`) where q.name='{Disease}' RETURN p.name",
         "reply_template": "'{Disease}' 疾病的病症表现一般是这样的：\n",
         "ask_template": "您问的是疾病 '{Disease}' 的症状表现吗？",
         "intent_strategy": "",

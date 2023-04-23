@@ -6,6 +6,8 @@ import json
 
 from tqdm import tqdm
 from py2neo import Graph
+
+
 # py2neo==2020.1.1
 
 class DiabetesExtractor():
@@ -57,7 +59,7 @@ class DiabetesExtractor():
         self.ade_disease = []  # 不良反应->疾病
 
     def extract_triples(self, data_path):
-        print("从json文件中转换抽取三元组")
+        print("从json文件中转换抽取三元组开始")
         with open(data_path, 'r', encoding='utf8') as f:
             for line in tqdm(f.readlines()):
                 data_json = json.loads(line, strict=False)
@@ -137,11 +139,11 @@ class DiabetesExtractor():
                         relation_type_ = relation['relation_type']
                         head_entity_id = relation['head_entity_id']
                         tail_entity_id = relation['tail_entity_id']
-                        # head_entity_name = entiDict[head_entity_id]
-                        # tail_entity_name = entiDict[tail_entity_id]
-                        #调整关系
-                        head_entity_name = entiDict[tail_entity_id]
-                        tail_entity_name = entiDict[head_entity_id]
+                        head_entity_name = entiDict[head_entity_id]
+                        tail_entity_name = entiDict[tail_entity_id]
+                        # 调整关系
+                        # head_entity_name = entiDict[tail_entity_id]
+                        # tail_entity_name = entiDict[head_entity_id]
                         # 药品名称->疾病
                         if "Drug_Disease" == relation_type_:
                             self.drug_disease.append([head_entity_name, "Drug_Disease", tail_entity_name])
@@ -196,8 +198,9 @@ class DiabetesExtractor():
                         if "ADE_Disease" == relation_type_:
                             self.ade_disease.append([head_entity_name, "ADE_Disease", tail_entity_name])
 
+        print("从json文件中转换抽取三元组结束")
     def write_nodes(self, entities, entities_type):
-        print("写入 {0} 实体".format(entities_type))
+        print("写入:" + entities_type + "：实体开始\n")
         for node in tqdm(set(entities)):
             cql = """MERGE(n:{label}{{name:'{entity_name}'}})""".format(
                 label=entities_type, entity_name=node.replace("'", "")
@@ -207,6 +210,7 @@ class DiabetesExtractor():
             except Exception as e:
                 print(e)
                 print(cql)
+        print("写入:" + entities_type + "：实体结束\n")
 
     def write_edges(self, triples, head_type, tail_type):
         print("写入{0}关系".format(triples[0][1]))

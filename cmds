@@ -2,3 +2,8 @@ MATCH (n:`临床表现`) RETURN n LIMIT 25
 
 
 match (n) detach delete n
+
+MATCH p=()-[r:Symptom_Disease]->() RETURN p LIMIT 25
+
+
+MATCH(p:`临床表现`)-[r:Symptom_Disease]->(q:`疾病`) where q.name='糖尿病' RETURN p.name
