@@ -6,7 +6,7 @@ import json
 
 from tqdm import tqdm
 from py2neo import Graph
-
+# py2neo==2020.1.1
 
 class DiabetesExtractor():
     def __init__(self):
