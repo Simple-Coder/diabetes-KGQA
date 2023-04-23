@@ -28,8 +28,10 @@ def text_reply(username, msg):
     predict = parse_text(msg)
     if predict is not None:
         user_intent = predict["intent"]
+        confidence = predict["confidence"]
         user_slots = predict["slots"]
         print("识别出意图---：", user_intent)
+        print("识别出意图强度---：", confidence)
         print("识别出槽位---：", user_slots)
         if user_intent in ["greet", "goodbye", "deny", "isbot"]:
             reply = gossip_robot(user_intent)
@@ -37,7 +39,7 @@ def text_reply(username, msg):
             reply = load_user_dialogue_context(msg.User['NickName'])
             reply = reply.get("choice_answer")
         else:
-            reply = medical_robot(user_intent, user_slots, username)
+            reply = medical_robot(user_intent, user_slots, confidence, username)
             if reply["slot_values"]:
                 dump_user_dialogue_context(username, reply)
             reply = reply.get("replay_answer")

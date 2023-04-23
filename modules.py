@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/4/22 21:00
 """
 from py2neo import Graph
-from chat_config import semantic_slot
+from chat_config import semantic_slot, intent_threshold_config
 from utils import load_user_dialogue_context
 
 graph = Graph(host="127.0.0.1",
@@ -12,12 +12,12 @@ graph = Graph(host="127.0.0.1",
               password="123456")
 
 
-def medical_robot(user_intent, user_slots, username):
+def medical_robot(user_intent, user_slots, confidence, username):
     # TODO：携带用户信息
     """
     如果确定是诊断意图则使用该方法进行诊断问答
     """
-    semantic_slot = semantic_parser(user_intent, user_slots, username)
+    semantic_slot = semantic_parser(user_intent, user_slots, confidence, username)
     return get_answer(semantic_slot)
 
 
@@ -64,7 +64,7 @@ def entity_link(mention, etype):
     return mention
 
 
-def semantic_parser(user_intent, user_slots, username):
+def semantic_parser(user_intent, user_slots, conf, username):
     """
     对文本进行解析
     intent = {"name":str,"confidence":float}
@@ -99,14 +99,12 @@ def semantic_parser(user_intent, user_slots, username):
     slot_info["slot_values"] = slot_values
 
     # 根据意图强度来确认回复策略
-    # conf = intent_rst.get("confidence")
-    # if conf >= intent_threshold_config["accept"]:
-    #     slot_info["intent_strategy"] = "accept"
-    # elif conf >= intent_threshold_config["deny"]:
-    #     slot_info["intent_strategy"] = "clarify"
-    # else:
-    #     slot_info["intent_strategy"] = "deny"
-    slot_info["intent_strategy"] = "accept"
+    if conf >= intent_threshold_config["accept"]:
+        slot_info["intent_strategy"] = "accept"
+    elif conf >= intent_threshold_config["deny"]:
+        slot_info["intent_strategy"] = "clarify"
+    else:
+        slot_info["intent_strategy"] = "deny"
     return slot_info
 
 
