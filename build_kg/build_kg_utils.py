@@ -264,7 +264,7 @@ if __name__ == '__main__':
     # cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
     # data_path = os.path.join(cur_dir, './data/kg_data/1.json')
 
-    data_path = "../data/clear_data/clear.json"
+    data_path = "../data/kg/clear_data/clear.json"
 
     extractor = DiabetesExtractor()
     extractor.extract_triples(data_path)
