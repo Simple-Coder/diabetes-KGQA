@@ -46,7 +46,8 @@ if __name__ == '__main__':
 
         data_data = {}
         data_data["intent"] = result[0]
-        data_data["slots"] = result[1]
+        data_data["confidence"] = result[1]
+        data_data["slots"] = result[2]
 
         data["data"] = data_data
         data["sucess"] = 200
