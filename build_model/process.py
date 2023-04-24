@@ -64,7 +64,6 @@ def convert_example_to_feature(ex_idx, example, tokenizer, config):
 
     seq_label_ids = config.seqlabel2id[seq_label]
 
-
     token_label_ids = []
     for s in token_label.split():
         # slot_labels.append(self.slot_labels.index(s) if s in self.slot_labels else self.slot_labels.index("UNK"))
@@ -72,7 +71,7 @@ def convert_example_to_feature(ex_idx, example, tokenizer, config):
             config.token_labels.index(s) if s in config.token_labels else config.token_labels.index("UNK"))
 
     if len(token_label_ids) >= config.max_len - 2:
-        token_label_ids = [0] + token_label_ids + [0]
+        token_label_ids = [0] + token_label_ids[0:config.max_len - 2] + [0]
     else:
         token_label_ids = [0] + token_label_ids + [0] + [0] * (config.max_len - len(token_label_ids) - 2)
     # print(token_label_ids)
