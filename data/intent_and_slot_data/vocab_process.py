@@ -19,7 +19,7 @@ def vocab_process(data_dir):
             line = line.strip()
             intent_vocab.add(line)
 
-        additional_tokens = ["UNK"]
+        additional_tokens = ["others"]
         for token in additional_tokens:
             f_w.write(token + '\n')
 

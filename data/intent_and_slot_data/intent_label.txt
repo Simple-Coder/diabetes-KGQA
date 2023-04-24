@@ -1,7 +1,8 @@
-UNK
+others
 accept
 deny
 goodbye
 greet
 isbot
+others
 symptom_disease
