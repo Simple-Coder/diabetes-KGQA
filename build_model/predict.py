@@ -56,20 +56,26 @@ if __name__ == '__main__':
 
 
     app.run('0.0.0.0', 60062)
-    # # # 全局配置参数
-    # args = Args()
-    # # # 加载模型
-    # # model = BertForIntentClassificationAndSlotFilling(args)
-    # # # 是否加载本地模型
-    # # model.load_state_dict(torch.load(args.load_dir))
-    # # # 训练器实例
-    # # trainer = Trainer(model, args)
-    #
-    # ok_model = OKModel(args)
-    #
-    # predict = ok_model.predict('请问二型糖尿病的临床表现是什么')
-    #
-    # print(predict)
-    #
-    # # trainer.predict('hi')
-    # # trainer.predict('你是谁')
+    # # 全局配置参数
+    args = Args()
+    # # 加载模型
+    # model = BertForIntentClassificationAndSlotFilling(args)
+    # # 是否加载本地模型
+    # model.load_state_dict(torch.load(args.load_dir))
+    # # 训练器实例
+    # trainer = Trainer(model, args)
+
+    ok_model = OKModel(args)
+
+    predict = ok_model.predict('请问二型糖尿病的临床表现是什么')
+    print(predict)
+    predict = ok_model.predict('hi')
+    print(predict)
+    predict = ok_model.predict('你是谁')
+    print(predict)
+    predict = ok_model.predict('请问失眠怎么办')
+    print(predict)
+
+
+    # trainer.predict('hi')
+    # trainer.predict('你是谁')
