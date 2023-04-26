@@ -273,5 +273,103 @@
     "intent": "greet",
     "slots": {
     }
+  },
+  {
+    "id": 40,
+    "text": "再见",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 41,
+    "text": "goodbye",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 42,
+    "text": "bye",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 43,
+    "text": "再见咯",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 44,
+    "text": "再见啦，下次聊",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 45,
+    "text": "回见",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 46,
+    "text": "拜拜",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 47,
+    "text": "拜拜咯",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 48,
+    "text": "先这样吧",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 49,
+    "text": "不聊了",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 50,
+    "text": "我去忙了",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 51,
+    "text": "忙事情去了",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 52,
+    "text": "下次见",
+    "intent": "goodbye",
+    "slots": {
+    }
+  },
+  {
+    "id": 53,
+    "text": "bye",
+    "intent": "goodbye",
+    "slots": {
+    }
   }
 ]
