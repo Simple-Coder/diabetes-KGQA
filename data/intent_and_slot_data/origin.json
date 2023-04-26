@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "text": "验孕棒两杠，是怀孕了吗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 2,
+    "text": "请问二型糖尿病的临床表现是什么",
+    "intent": "symptom_disease",
+    "slots": {
+      "Disease": "二型糖尿病",
+      "Symptom": "临床表现"
+    }
+  }
+]
