@@ -14,5 +14,264 @@
       "Disease": "二型糖尿病",
       "Symptom": "临床表现"
     }
+  },
+  {
+    "id": 3,
+    "text": "hi",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 4,
+    "text": "你好呀",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 5,
+    "text": "哈喽",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 6,
+    "text": "hello",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 7,
+    "text": "早上好呀",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 8,
+    "text": "晚上好",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 9,
+    "text": "下午好啊",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 10,
+    "text": "很高心见到你",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 11,
+    "text": "可以问你问题吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 12,
+    "text": "你有时间吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 13,
+    "text": "有人吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 14,
+    "text": "打扰了",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 15,
+    "text": "hai",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 16,
+    "text": "嗨",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 17,
+    "text": "hey",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 18,
+    "text": "嘿",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 19,
+    "text": "嘿嘿嘿",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 20,
+    "text": "morning",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 21,
+    "text": "nihao",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 22,
+    "text": "你好啊",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 23,
+    "text": "打扰一下",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 24,
+    "text": "有人工服务吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 25,
+    "text": "现在营业吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 26,
+    "text": "你有药吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 27,
+    "text": "您好",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 28,
+    "text": "有个问题请教",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 29,
+    "text": "你好",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 30,
+    "text": "能问诊吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 31,
+    "text": "现在能看病吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 32,
+    "text": "现在有医生吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 33,
+    "text": "有人值班吗",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 34,
+    "text": "good morning",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 35,
+    "text": "good evening",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 36,
+    "text": "good afternoon",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 37,
+    "text": "good night",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 38,
+    "text": "what up",
+    "intent": "greet",
+    "slots": {
+    }
+  },
+  {
+    "id": 39,
+    "text": "hey men",
+    "intent": "greet",
+    "slots": {
+    }
   }
 ]
