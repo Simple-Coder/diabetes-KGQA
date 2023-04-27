@@ -371,5 +371,138 @@
     "intent": "goodbye",
     "slots": {
     }
+  },
+  {
+    "id": 54,
+    "text": "不用了，谢谢",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 55,
+    "text": "不是",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 56,
+    "text": "搞错了",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 57,
+    "text": "不问了",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 58,
+    "text": "不问了",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 59,
+    "text": "不是这样啊",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 60,
+    "text": "你搞错了",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 61,
+    "text": "不可以",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 62,
+    "text": "不能",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 63,
+    "text": "不对",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 64,
+    "text": "不行",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 65,
+    "text": "not",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 66,
+    "text": "no",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 67,
+    "text": "你错了",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 68,
+    "text": "不是这样的",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 69,
+    "text": "你误会了",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 70,
+    "text": "真不是这个意思",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 71,
+    "text": "不是这样的",
+    "intent": "deny",
+    "slots": {
+    }
+  },
+  {
+    "id": 72,
+    "text": "猜错了",
+    "intent": "deny",
+    "slots": {
+    }
   }
 ]
