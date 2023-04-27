@@ -714,5 +714,453 @@
     "intent": "isbot",
     "slots": {
     }
+  },
+  {
+    "id": 103,
+    "text": "是的",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 104,
+    "text": "对的",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 105,
+    "text": "是啊",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 106,
+    "text": "你怎么知道",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 107,
+    "text": "你猜对了",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 108,
+    "text": "bingo",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 109,
+    "text": "真厉害，这都知道",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 110,
+    "text": "厉害呀",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 111,
+    "text": "嗯嗯",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 112,
+    "text": "嗯",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 113,
+    "text": "可以",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 114,
+    "text": "不错",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 115,
+    "text": "好",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 116,
+    "text": "好的",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 117,
+    "text": "点赞",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 118,
+    "text": "对了",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 119,
+    "text": "听你的",
+    "intent": "accept",
+    "slots": {
+    }
+  }
+  {
+    "id": 120,
+    "text": "说得对",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 121,
+    "text": "shia",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 122,
+    "text": "是啊",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 123,
+    "text": "是",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 124,
+    "text": "yes",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 125,
+    "text": "可以的",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 126,
+    "text": "对啊",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 127,
+    "text": "很好",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 128,
+    "text": "好啊",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 129,
+    "text": "是啊",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 130,
+    "text": "是的呢",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 131,
+    "text": "是这样的",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 132,
+    "text": "ok",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 133,
+    "text": "对",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 134,
+    "text": "行",
+    "intent": "accept",
+    "slots": {
+    }
+  },
+  {
+    "id": 135,
+    "text": "怎么检查有强迫症",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 136,
+    "text": "安定门中医院看病怎么样",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 137,
+    "text": "之前中风过，近期有复发的迹象，所以就是每天的都提心吊胆了",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 138,
+    "text": "哪些运动项目适合糖尿病患者",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 139,
+    "text": "我家宝宝这几天有点拉肚子是不是和喝母乳又喝牛奶又喝羊奶有关",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 140,
+    "text": "胸口会痛，但是呼吸正常",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 141,
+    "text": "asdfasdfgdfgqweiruqwigkkzngakdjfqewrkgljz",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 142,
+    "text": "发送卡动静分离去玩儿考虑刚开学租赁费",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 143,
+    "text": "企鹅二气温这次吃早餐去玩儿自行车旅客",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 144,
+    "text": "外痔需要手术治疗吗？用药物可以吗",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 145,
+    "text": "我想请问一下，突然尿频尿急尿血是什么原因，怎样治疗",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 146,
+    "text": "是用来治疗冠心病的该药，是我的主治医生给我开的药的，说该药是较多人在服用的",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 147,
+    "text": "你好，请问糖尿病病人能不能将复方罗布麻片、复方丹参片和曲克芦丁片一起来吃啊",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 148,
+    "text": "糖尿病患者可以使用方斑蝥胶囊吗？价钱不同疗效有差别吗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 149,
+    "text": "长期失眠服用思诺思效果好吗？会有副作用吗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 150,
+    "text": "孩子记忆力差的原因是缺什么微量元素呢？应该怎么补充最好？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 151,
+    "text": "心神不定，寝食难安整天胡思乱想，没精神头白天不想吃东西，也不觉得饿，而且总是很困",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 152,
+    "text": "请问玄宁马来酸左旋氨氯地平片去哪里买呢？谢谢医生！",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 153,
+    "text": "听人家说玉龙油的效果挺不错的，请问可以在哪里买到？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 154,
+    "text": "大肠和直肠有哪些区别?",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 155,
+    "text": "兰州陆军总院内分泌科星期六早上有医生上班吗",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 156,
+    "text": "全国精神病医院排名看病怎么样？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 157,
+    "text": "你好长期吃乳果糖会长胖吗",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 158,
+    "text": "每天屁多，怎么回事！消化不良吗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 159,
+    "text": "上海那里大药房有买右佐匹克隆片",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 160,
+    "text": "做完血栓外痔手术后当天想上厕所怎么办？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 161,
+    "text": "怎么看得出宝宝肚子疼",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 162,
+    "text": "我月经第4天可以用精油做背吗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 163,
+    "text": "我月经第4天可以用精油做背吗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 164,
+    "text": "德巴金丙戊酸钠缓释片的保质期有多久，是不是可以用于癫痫病呢？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 165,
+    "text": "肛裂手术厚的疼痛是怎样的",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 166,
+    "text": "高血压肝油三脂高吃什么药品和日常怎么调养？",
+    "intent": "others",
+    "slots": {
+    }
   }
 ]
