@@ -9,9 +9,10 @@ class Args:
     # bert预训练模型
     bert_dir = 'hfl/chinese-bert-wwm-ext'
     # 模型保存位置
-    save_dir = './checkpoints/'
+    save_dir = 'checkpoints/'
     # 加载模型位置
-    load_dir = './checkpoints/model.pt'
+    # load_dir = './checkpoints/1682135439model.pt'
+    load_dir = 'checkpoints/1682428820model.pt'
 
     # 意图labels
     seq_labels_path = '../data/intent_and_slot_data/intent_label.txt'
@@ -22,10 +23,10 @@ class Args:
     train_intents = '../data/intent_and_slot_data/train/label'
     train_slots = '../data/intent_and_slot_data/train/seq.out'
 
-    load_model = True
-    do_train = False
+    load_model = False
+    do_train = True
     do_eval = False
-    do_test = False
+    do_test = True
     do_save = True
     do_predict = True
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')

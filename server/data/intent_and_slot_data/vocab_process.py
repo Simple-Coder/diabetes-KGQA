@@ -50,4 +50,4 @@ def vocab_process(data_dir):
 
 
 if __name__ == '__main__':
-    vocab_process('./')
+    vocab_process('/')

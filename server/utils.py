@@ -6,7 +6,7 @@ import os
 import re
 import json
 
-LOGS_DIR = "./logs"
+LOGS_DIR = "logs"
 
 
 def dump_user_dialogue_context(user, data):
