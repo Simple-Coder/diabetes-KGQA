@@ -148,7 +148,24 @@ export const constantRoutes = [
       }
     ]
   },
-
+  {
+    path: '/kg',
+    component: Layout,
+    redirect: '/nested/menu1',
+    name: '问答模块',
+    meta: {
+      title: 'Nested',
+      icon: 'nested'
+    },
+    children: [
+      {
+        path: 'question',
+        component: () => import('@/views/kg/question/index'), // Parent router-view
+        name: '知识问答',
+        meta: { title: '知识问答' },
+      },
+    ]
+  },
   {
     path: 'external-link',
     component: Layout,

@@ -1,7 +1,7 @@
 <template>
   <el-card class="box-card">
     <template #header>
-      <span style="font-weight: bold;font-size: 15px">--系统</span>
+      <span style="font-weight: bold;font-size: 15px">基于知识图谱的糖尿病问答系统</span>
     </template>
     <div id="dialog_container">
       <div v-for="oneDialog in text_dialog" :key="oneDialog">
@@ -50,6 +50,8 @@ export default {
       const myDate = new Date();
       this.text_dialog.push({time: myDate.toLocaleString(), question: this.txt_question, answer: "我是一条答案"})
       this.scrollToBottom();
+
+      this.txt_question=''
     }
   },
   data() {
