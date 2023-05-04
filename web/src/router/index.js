@@ -151,19 +151,22 @@ export const constantRoutes = [
   {
     path: '/kg',
     component: Layout,
-    redirect: '/nested/menu1',
-    name: '问答模块',
-    meta: {
-      title: 'Nested',
-      icon: 'nested'
-    },
+    redirect: '/kg/',
+    name: 'Kg',
+    meta: { title: '问答模块', icon: 'el-icon-s-help' },
     children: [
       {
-        path: 'question',
-        component: () => import('@/views/kg/question/index'), // Parent router-view
-        name: '知识问答',
-        meta: { title: '知识问答' },
+        path: 'table',
+        name: 'Table',
+        component: () => import('@/views/table/index'),
+        meta: { title: '可视化', icon: 'table' }
       },
+      {
+        path: 'question',
+        name: 'question',
+        component: () => import('@/views/kg/question/index'),
+        meta: { title: '知识问答', icon: 'tree' }
+      }
     ]
   },
   {
