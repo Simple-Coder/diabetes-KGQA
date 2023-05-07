@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import {doAnswer} from '@/api/answer'
 
 export default {
   name: 'AnswerCard',
@@ -46,12 +47,28 @@ export default {
         alert("输入不能为空")
         return
       }
+      const params = {
+        'text': this.txt_question
+      }
+      console.log(params)
+
+      const question = this.txt_question
       // 添加一条 问答对话
       const myDate = new Date();
-      this.text_dialog.push({time: myDate.toLocaleString(), question: this.txt_question, answer: "我是一条答案"})
-      this.scrollToBottom();
+      let answerText = '我是一条答案'
+      doAnswer(params).then((res) => {
+        console.log('响应成功')
+        console.log(res)
+        answerText = res.data.reply
+        this.text_dialog.push({time: myDate.toLocaleString(), question: question, answer: answerText})
+      }).catch(error => {
+        console.log('响应失败')
+        console.log(error)
+        this.text_dialog.push({time: myDate.toLocaleString(), question: question, answer: '系统异常'})
+      });
 
-      this.txt_question=''
+      this.scrollToBottom();
+      this.txt_question = ''
     }
   },
   data() {
