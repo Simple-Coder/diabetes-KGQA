@@ -17,7 +17,7 @@
     <el-input
       type="textarea"
       :autosize="{ minRows: 2, maxRows: 4}"
-      placeholder="尝试输入，上市公司名称，如：格力空调\海澜之家最近上涨吗？平安银行估值怎么样？"
+      placeholder="尝试输入，糖尿病相关，如：糖尿病的临床表现？糖尿病如何治疗？"
       v-model="txt_question"
     >
     </el-input>
