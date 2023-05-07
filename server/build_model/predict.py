@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
     @app.route("/service/api/predict", methods=["GET", "POST"])
     def predict():
-        data = {"sucess": 0}
+        data = {}
         result = None
 
         param = flask.request.get_json()
@@ -50,7 +50,8 @@ if __name__ == '__main__':
         data_data["slots"] = result[2]
 
         data["data"] = data_data
-        data["sucess"] = 200
+        data["code"] = 20000
+        data["message"] = 'success'
 
         return flask.jsonify(data)
 
