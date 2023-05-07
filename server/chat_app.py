@@ -10,7 +10,7 @@ import requests
 import json
 from modules import get_answer, medical_robot
 from utils import load_user_dialogue_context, dump_user_dialogue_context
-
+import flask
 
 def parse_text(text):
     url = 'http://127.0.0.1:60062/service/api/predict'
@@ -53,13 +53,34 @@ def gossip_robot(intent):
         gossip_corpus.get(intent)
     )
 
-
 if __name__ == '__main__':
-    username = '张三'
-    while True:
-        line = stdin.readline().strip()  # strip()去掉最后的回车或者是空格
-        if line == '':
-            break
-        # 处理
-        reply = text_reply(username, line)
-        print("应答：", reply)
+    app = flask.Flask(__name__)
+    @app.route("/service/api/answer", methods=["GET", "POST"])
+    def predict():
+        data = {}
+        param = flask.request.get_json()
+        print(param)
+        text = param["text"]
+        reply = text_reply('张三', text)
+
+        data_data = {}
+        data_data["reply"] = reply
+
+        data["data"] = data_data
+        data["code"] = 20000
+        data["message"] = 'success'
+
+        return flask.jsonify(data)
+
+
+    app.run('0.0.0.0', 60063)
+
+
+    # username = '张三'
+    # while True:
+    #     line = stdin.readline().strip()  # strip()去掉最后的回车或者是空格
+    #     if line == '':
+    #         break
+    #     # 处理
+    #     reply = text_reply(username, line)
+    #     print("应答：", reply)
