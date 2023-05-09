@@ -102,9 +102,13 @@ def get_word_list(s1):
 
 
 if __name__ == '__main__':
-    intent_path = './test/label'
-    text_path = './test/seq.in'
-    slot_path = './test/seq.out'
+    # intent_path = './test/label'
+    # text_path = './test/seq.in'
+    # slot_path = './test/seq.out'
+
+    intent_path = './train/label'
+    text_path = './train/seq.in'
+    slot_path = './train/seq.out'
     todo_data_path = 'origin.json'
     # 处理抓取数据
     processor = TodoDataProcessor(intent_path, text_path, slot_path, todo_data_path)
