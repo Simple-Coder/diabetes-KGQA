@@ -13,7 +13,8 @@ import numpy as np
 from seqeval.metrics.sequence_labeling import get_entities
 
 import torch.nn.functional as F
-
+from transformers import logging
+logging.set_verbosity_error()
 
 class Trainer:
     def __init__(self, model, config):
