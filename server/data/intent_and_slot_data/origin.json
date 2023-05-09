@@ -11,8 +11,8 @@
     "text": "请问二型糖尿病的临床表现是什么",
     "intent": "symptom_disease",
     "slots": {
-      "Disease": "二型糖尿病",
-      "Symptom": "临床表现"
+      "disease": "二型糖尿病",
+      "symptom": "临床表现"
     }
   },
   {
@@ -1159,6 +1159,200 @@
   {
     "id": 166,
     "text": "高血压肝油三脂高吃什么药品和日常怎么调养？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "糖尿病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "糖尿病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "2型糖尿病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "中度肾功能不全需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "中度肾功能不全"
+    }
+  },
+  {
+    "id": 167,
+    "text": "肾脏事件需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "肾脏事件"
+    }
+  },
+  {
+    "id": 167,
+    "text": "微血管事件需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "微血管事件"
+    }
+  },
+  {
+    "id": 167,
+    "text": "白蛋白尿需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "白蛋白尿"
+    }
+  },
+  {
+    "id": 167,
+    "text": "视网膜病变需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "视网膜病变"
+    }
+  },
+  {
+    "id": 167,
+    "text": "糖尿病肾病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "孕前2型糖尿病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "孕前2型糖尿病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "妊娠期显性糖尿病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "妊娠期显性糖尿病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "妊娠期糖尿病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "妊娠期糖尿病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "低血糖需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "低血糖"
+    }
+  },
+  {
+    "id": 167,
+    "text": "1型糖尿病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "心脑血管疾病需要吃什么药？",
+    "intent": "drug_disease",
+    "slots": {
+      "disease": "心脑血管疾病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "神经系统疾病需要吃什么药？",
+    "intent": "others",
+    "slots": {
+      "disease": "神经系统疾病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "慢性阻塞性肺疾病需要吃什么药？",
+    "intent": "others",
+    "slots": {
+      "disease": "慢性阻塞性肺疾病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "慢性阻塞性肺疾病怎么治疗？",
+    "intent": "others",
+    "slots": {
+      "disease": "慢性阻塞性肺疾病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "癌症怎么治疗？",
+    "intent": "others",
+    "slots": {
+      "disease": "癌症"
+    }
+  },
+  {
+    "id": 167,
+    "text": "肾病怎么治疗？",
+    "intent": "others",
+    "slots": {
+      "disease": "肾病"
+    }
+  },
+  {
+    "id": 167,
+    "text": "心血管疾病怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "心脏病怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "冠心病怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "非致死性心肌梗死怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "超重怎么办？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "大血管并发症怎么治疗？",
     "intent": "others",
     "slots": {
     }
