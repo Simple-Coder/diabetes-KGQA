@@ -4,15 +4,16 @@ Created by xiedong
 """
 semantic_slot = {
     "symptom_disease": {
-        "slot_list": ["Disease"],
+        "slot_list": ["disease"],
         "slot_values": None,
         # "cql_template": "MATCH(p:疾病)-[r:has_symptom]->(q:症状) WHERE p.name='{Disease}' RETURN q.name",
-        "cql_template": "MATCH(p:`临床表现`)-[r:Symptom_Disease]->(q:`疾病`) where q.name='{Disease}' RETURN p.name",
-        "reply_template": "'{Disease}' 疾病的病症表现一般是这样的：\n",
-        "ask_template": "您问的是疾病 '{Disease}' 的症状表现吗？",
+        "cql_template": "MATCH(p:`临床表现`)-[r:Symptom_Disease]->(q:`疾病`) where q.name='{disease}' RETURN p.name",
+        "reply_template": "'{disease}' 疾病的病症表现一般是这样的：\n",
+        "ask_template": "您问的是疾病 '{disease}' 的症状表现吗？",
         "intent_strategy": "",
         "deny_response": "人类的语言太难了！！"
     },
+
     "unrecognized": {
         "slot_values": None,
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
