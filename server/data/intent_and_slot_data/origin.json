@@ -1356,5 +1356,4995 @@
     "intent": "others",
     "slots": {
     }
+  },
+  {
+    "id": 167,
+    "text": "CVD怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "动脉粥样硬化怎么办？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "黑棘皮病怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 167,
+    "text": "黄斑水肿怎么治疗？",
+    "intent": "others",
+    "slots": {
+    }
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKDI~2期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管意外怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心功能NYHAⅡ~Ⅲ级怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "酸-碱平衡功能失调怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性肾小球肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "致死性和非致死性心肌梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围血管病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝功能严重受损怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD3~4期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高甘油三酯血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高TG血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "乙型和丙型肝炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "先兆子痫怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠期DKA怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病大血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "stress-induced hyperglycemia怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "溶血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血管性死亡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛风关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "成年难治性痛风怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性肌萎缩怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多囊肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管等系统疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高尿酸血症(hyperuricemia，HUA)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "创伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "贫血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血脂异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿酸性肾石症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜新生血管性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病前周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "轻度认知功能障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阻塞性睡眠呼吸暂停怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急、慢性代谢性酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "半乳糖不耐受遗传疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "体重过低怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏肥大怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DN怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性肝功能哀竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DR怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "局灶性非对称性周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾积水怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏肾病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD4期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "嵌压性周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝肾功能异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DKA怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DKD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "关节病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "远端对称性多发性神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾实质萎缩怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢废用性肌萎缩怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "全因死亡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心功能不全者怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD5期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "正常、轻、中、重、极重肾功能损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜或视盘的新生血管怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "颈腰椎病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经退化行性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DKD(diabetic kidney disease)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "认知障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经系统疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "假关节怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "出球动脉透明变性怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "不稳定性心绞痛怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "HUA怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "泌尿生殖感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "感染疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非酒精性脂肪性肝病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性心血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "畸形怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "PGDM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管系统疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "铅中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "乳腺癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "癌症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿酸性肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胰腺癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD3期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病急性并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心衰怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "单纯缺血性溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病下肢血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病大血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨质疏松症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血管损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "白血病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高低血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胎儿畸形怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "结石形成怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血运障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "严重心律失常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "早发缺血性心血管病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "IR怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病酮症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "银屑病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠糖尿病(GDM)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝胆疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小管间质纤维化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜内囊肿怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "冠心病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "活动性消化道溃疡／出血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能减退怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多囊卵巢综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "缺血性卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "复发性消化道溃疡／出血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DPN怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "远端对称性多发性周围神经病(distal symmetric polyneuropathy，DSPN)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "酮血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高胆固醇血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病妊娠怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "长度依赖性轴索性周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "精神异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "椎管狭窄怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "老年T2DM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾微血管硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "充血性心衰怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "失代偿期肝硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "孕前2型糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "玻璃体严重增厚眼病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝、肾功能不全者怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD3a期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高渗性脱水怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "混合性坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "腔内介人治疗术后怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "泌尿道感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "收缩期高血压怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "继发性痛风怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "远端对称性多发性周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性心力衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "应激性高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胰岛素分泌障碍疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "充血性心力衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中重度肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾脏病3a期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性肾损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠期糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "电解质系乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "巨大儿怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾病(CKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨关节破坏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血糖高渗状态怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "消瘦怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "子宫内膜癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经根压迫怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性肢体缺血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "原发性或继发性闭经怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿病远端对称性多发性神经病变(DSPN)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "新生儿糖尿病(neonatal diabetes mellitus)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "MS怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝功能障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "老年综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿酸性结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "腹型肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血低怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "A型胰岛素抵抗综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "药物过敏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病慢性并发症状况怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "NAFLD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾脏病变(DKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化性心直管疾病(ASCVD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急慢性肾衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管疾病(cardiovascular disease，CVD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "终末期肾病(end stage renal disease，ESRD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "腹水怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉钙化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "overt diabetes怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "轻中度肾功能异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "无症状性低血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "周围血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛性周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心、脑血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外周血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下盏结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高渗综合症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病酮症酸中毒(DKA)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "微血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "NPDR怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管风险怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中度肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "冠脉事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "间歇性跛行伴静息痛怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "反应性低血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高同型半胱氨酸血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿路梗阻怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "先天性代谢异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖代谢异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "酮症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "深静脉血栓怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "无感知低血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "终末期肾功能衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "冠状动脉或颈动脉或下肢动脉狭窄怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "疝气怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "儿童肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉硬化斑块怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肿瘤溶解综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化性血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视力障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD3、4期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肺部感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外周动脉疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中、重度肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "增殖型糖尿病视网膜病变(proliferative diabetic retinopathy，PDR)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能或肝功能损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围神经病变(DPN)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "自身免疫性多腺体病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "内分泌代谢病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜前出血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "盆腔内占位性病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "失代偿肝硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管疾病(CVD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血糖症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DN(diabetic nephropathy)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病微血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "直肠癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血压病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小管/肾血管损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管及代谢性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脏器功能损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血压怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小球硬化症(基·威氏综合征)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "造影剂相关急性肾损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "别嘌醇过敏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖代谢严重紊乱状态怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代偿期肝硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "腰骶丛病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病微循环障碍疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑功能障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "IgA肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非增殖型糖尿病视网膜病变(non-proli- ferative diabetic retinopathy，NPDR)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨髓炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "微血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "失代偿性心力衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围神经病(diabetic peripheral neuropathy，DPN)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "小纤维神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑死亡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "黄斑水肿怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胰腺炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阴茎包皮炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "无症状性脑梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胰岛素抵抗综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉硬化性心血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心、肺疾患怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脂代谢异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多发性对称性周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非致死性心肌梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "难治性痛风怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "Charcot关节病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病足病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "IFG怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "生殖道和泌尿道感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "一过性类固醇诱导性糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠期高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "HUA血性卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脏器损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "继发性高尿酸血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胃肠道疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外阴阴道炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝脏炎症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "成年型糖尿病(maturity-onset diabetes of the young，MODY)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肥胖症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肥胖病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胰岛素抵抗怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阻塞性睡眠呼吸暂停综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "铍中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "DSPN怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "不稳定型心绞痛怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "重度肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管粥样硬化斑块怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "乳酸酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病前期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病网膜病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "黑棘皮病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "失明怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "认知功能障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "IGT怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "智能障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "坏疽病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "特发性、肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "ASCVD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小球损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化性心脑血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "泌尿系结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "酮症酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "GDM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足或趾发生湿性或干性严重坏疽或坏死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "睡眠呼吸暂停综合征(OSAS)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "遗传病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝肾疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病高危足怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "甲状腺功能减退怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢缺血(CLI)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "T2DM患者怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管和微血管事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性心力衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD1~3a期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "PCOS怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性视网病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血瘀型糖尿病周围神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非酒精性脂肪性肝炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "牵拉性视网膜脱离怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "精神或智力障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病皮肤并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "T2DM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急、慢性尿酸(盐)肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病慢性发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "难治性急性痛风怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾脏病(chronic kidney disease，CKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "围术期高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "甲状腺功能低下怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能受损怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外阴阴道真菌感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "干性坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢的感觉障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高乳酸血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑血管病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢异常疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性心衰怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "NASH怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病高渗状态怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高尿酸血症(HUA)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "真红细胞增多症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经性关节病 (Charcot关节病)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非酒精性脂肪肝病(NAFLD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "单纯肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心功能NYHA Ⅲ-Ⅳ级怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "新生血管性青光眼怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病足溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "自主神经受损怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "湿性或干性坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心、脑血管事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高尿酸怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖调节受损(IGR，即糖尿病前期)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "严重肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "微循环障碍性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾动脉狭窄怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "周围神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性或慢性代谢性酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病心肌病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肢端坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾脏病(CKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD 4~5期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性微血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性冠状动脉综合征(ACS)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "混合性高脂血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性胰腺炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肥胖(obesity)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脊柱与椎管内病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "少肌症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "葡萄糖-半乳糖吸收不良怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾病综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "内脏脂肪存储过多怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "直立性低血压怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "猝死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "颅神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小管间质、肾微血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中度(3b级)和严重肾衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "双下肢同步发生血管缺血性病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中重度慢性肾脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝肾功能减退怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性炎性脱髓鞘性多发性神经根周围神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "酒精性肝病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肉状瘤病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠期显性糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "泌尿生殖道感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高LDL-C血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖黄斑水肿怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肥胖高血压怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能受怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "结石远端器质性梗阻怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾盂结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "T2DDM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "代谢不稳定怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脏自主神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "淋巴瘤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "异常球蛋白血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾脏病(chronic kidney disease)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病单神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿路感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多囊卵巢怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜静脉阻塞怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "恶性大脑中动脉梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脂肪肝怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痤疮怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "关节腔尿酸盐沉积怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "早期急性关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "前列腺癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "NYHA心功能Ⅱ~IV级怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "低氧血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD 1~2期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "Paget’s病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "水、电解质酸碱平衡紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "超重(overweight)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多囊卵巢综合征(PCOS)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "失代偿性肝硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围神经病变 (diabetic peripheral neuropathy，DPN)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高脂血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "ACS怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "出血性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管严重病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "PAD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "遗传性嘌呤代谢异常疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "湿性坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿周围神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD 1~3期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "腹腺炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "重症肌无力怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CHD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中重度认知功能障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脑血管动脉粥样硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CHF怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾石症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性心肌梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "精神病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肌肉存量衰减型肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "单神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "格林-巴利综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "子痫怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝性脑病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肢体残障怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨髓增生性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "玻璃体积血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小球病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "结直肠癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝功能受损怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾脏疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "括糖尿病妊娠怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD4~5期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心肺功能下降怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外周神经病变(DPN)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "老年、严重肝肾疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛风性关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管自主神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经管畸形怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心绞痛怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非致死性卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肺癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "OSAHS怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经退行性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "横纹肌溶解怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痴呆怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "PDR怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病酮症酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病足感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "眼底病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肝炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "混合型血脂异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "癫痫怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "终末期肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动静脉血管性病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "次黄嘌呤-鸟嘌呤磷酸核糖基转移酶(HPRT)缺乏症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾脏疾病(diabetic kidney disease，DKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高糖性高渗透压综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "蜂窝织炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "超重怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管粥样硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心脏事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿路结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "难治性感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病高血糖高渗综合征(HHS)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足或少数趾干性坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "帕金森病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血脂紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病视网膜病变(DR)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "膀胱癌怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "活动性肝病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高尿酸血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "空腹血糖受损(IFG)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性肾小球肾病(diabetic glomerulopathy)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛风性关节怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "单纯高甘油三酯血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "恶性肿瘤伴有转移怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "亚临床周围神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "坏死性筋膜炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非增殖性糖尿病视网膜病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "周围血液供应不足怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病乳酸酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾下盏结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血液系统肿瘤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多发单神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心源性猝死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "严重肝功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "隐匿性糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病合并妊娠怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管、微血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足部溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血糖代谢不稳定怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "靶器官损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病外周神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肿瘤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "饥饿性酮症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "摔伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心源性休克怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉闭塞症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性代谢紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "念珠菌性龟头炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病自主神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小管相关病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "软组织及骨质破坏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病微血管病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨质破坏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中枢神经系统感觉通路病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中枢神经系统退行性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "毒血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "向心性肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "运动神经轴索损害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病视网膜病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑动脉硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "器官功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "微血管病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性缺血性卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜、肾脏及外周神经的微血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "继发性HUA怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心律失常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能损害≥G2期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "早期流产怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高甘油三酯血症(代谢综合征)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经根或丛病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "结缔组织病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性阻塞性肺疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖耐量受损(IGT)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管终点事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑血管损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "静脉栓塞怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "小管间质性肾炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛风石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性痛风性关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "Ⅲ-Ⅳ级充血性心力衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "间歇性行怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "早产怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿毒症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "空腹高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病视网膜病变(diabetic retinopathy，DR)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "老年糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心肌梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉管腔狭窄怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "微血管、大血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾上盏或肾中盏结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "冠状动脉粥样硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脂肪变性和纤维化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "微血管瘤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "缺血性卒中急性期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阿尔茨海默病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "凝血障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急慢性炎症损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "终末期肾脏疾病(ESRD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "甲状腺髓样癌(MTC)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病黄斑水肿怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非致命性心梗怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "周围动脉病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性稳定性心绞痛怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "患足感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多毛怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "巨幼红细胞性贫血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "混合性溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "纽约心脏病协会(NYHA)心功能Ⅱ级以上怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "乳酸性酸中毒怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "小纤维神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胱氨酸结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "遗传性嘌呤代谢异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "恶性肿瘤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "儿童肥胖(childhood obesity)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝、肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病慢性并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CVD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "淋巴增生性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多囊卵巢综合征(polyeystic ovary syndrome，PCOS)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "白蛋白尿怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "儿童青少年肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝肾心肺功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠前糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "胃肠道排空功能减退怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病神经根神经丛病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "风湿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性动脉闭塞性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "草酸钙结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖员贮积症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿酸盐沉积怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管疾怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "甲状腺功能亢进怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "缺血性脑梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心肌缺血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "lGT怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "感染性疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛风怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脂质代谢紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病足怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性HUA怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠中毒症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉粥样硬化性病变(LEAD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢间歇跛行怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经性溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "低血糖昏迷怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病微血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏不良事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高渗状态怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾血管损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高尿酸血症(hyperuricemia)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "大血管事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏结构或功能异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "氮质血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "运动受限怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛风石沉积怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高胰岛素血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏终末期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "唐氏综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜新生血管怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肌病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心肺功能异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "颈腰椎退行性变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "精神疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "复杂性肾结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阴道念珠菌病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "巴特综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "终末期肾病(end-stage renal disease，ESRD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "多毛症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性失代偿性心衰怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脏器功能损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "单基因糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "缺血性心脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "餐后高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠高血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "周围血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "缺血性心脑血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "老年黄斑变性怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阻塞性睡眠呼吸暂停综合征(OSAHS)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性尿酸性肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "Lapp乳糖酶缺乏症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "混合性血脂异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "中心性肥胖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "ASCVD急性期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "间歇性跛行症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管并发症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "黄斑变性怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "重度心衰怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "阴性结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "抑郁症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾脏病(DKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心血管危害怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "维生素B12、叶酸缺乏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脆性糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉缺血性病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "低钾血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性动脉闭塞症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "低高密度脂蛋白血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经-缺血性溃疡怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝或肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血块怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "呼吸衰竭怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "皮肤病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "淋巴管炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢缺血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "复合心血管终点事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "Grave病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "严重肝或肾损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非致死性缺血性脑卒中怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD1~2期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血管事件怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉缺血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非酒精性脂肪肝怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肌肉组织夹心样坏死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性尿酸者肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脏器功能异常怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "营养不良怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "发热怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨筋膜间室综合征怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿酸性肾结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心功能Ⅲ-IV级怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "ESRD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "自主神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "老年痴呆症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能严重减退怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD1~3期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "败血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛性肌萎缩怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢动脉闭塞怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠期低血糖怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急性痛风怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "晚期慢性肾脏病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "尿崩症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾脏黄嘌呤、次黄嘌呤结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足坏疽怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足背动脉搏动缺失怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肝功能损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑梗死怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脂代谢紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD1~4期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "轻中度肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "骨关节病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "单膝关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾性骨营养不良怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "5-磷酸核糖-1-焦磷酸(PRPP)合成酶亢进症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "下肢血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "血液系统恶性肿瘤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "甲状腺功能减退症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经障碍怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "LEAD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖代谢紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "CKD1~5期怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "T1DM怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脊髓病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性肾功能不全怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "晚期CKD怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "全身动脉粥样硬化疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "痛性神经病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病慢性肾脏病(CKD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "营养缺乏怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖调节受损怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠高血压怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "神经根或神经丛病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "自主神经病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "电解质絮乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性周围血管病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "顽固性高血压怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "轻到中度肝功能受损怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "溃疡病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾间质纤维化怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "心功能NYHAII~IV级怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "线粒体基因突变糖尿病(maternally inherited diabetes and deafness怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠期糖尿病(GDM)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "外周动脉疾病(PAD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾功能衰退怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高胆红素血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "脑出血怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "妊娠糖尿病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "视网膜病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "急、慢性心衰怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "水、电解质、酸碱平衡紊乱怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "充血性心力衰竭(CHF)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化性血管病(ASVD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化性心血管疾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "非酒精性脂肪性肝炎(NASH)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高血脂怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性尿酸盐肾病怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病周围神经病变(diabetic peripheral neuropathy，DPN）怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾脏病变怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "动脉粥样硬化性心血管疾病(ASCVD)怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "鹿角形结石怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病肾损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "坏死肢体感染怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "慢性痛风性关节炎怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "糖尿病性周围血管闭塞症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "短暂性脑缺血发作怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "肾小球损伤怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "高雄激素血症怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "others",
+    "slots": {},
+    "text": "足畸形怎么治疗？"
   }
 ]
