@@ -13,7 +13,25 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "人类的语言太难了！！"
     },
-
+    "病因": {
+        "slot_list": ["disease"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`病因`) -[r:Reason_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
+        "reply_template": "'{disease}' 疾病的原因是：\n",
+        "ask_template": "您问的是疾病 '{disease}' 的原因吗？",
+        "intent_strategy": "",
+        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+    },
+    # 暂未使用
+    "drug_disease": {
+        "slot_list": ["disease"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`病因`) -[r:Reason_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
+        "reply_template": " '{disease}' 的治疗药物有以下：\n",
+        "ask_template": "您是想问 '{disease}' 的治疗药物有哪些吗？",
+        "intent_strategy": "",
+        "deny_response": "额~似乎有点不理解你说的是啥呢~~"
+    },
     "unrecognized": {
         "slot_values": None,
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
