@@ -25434,5 +25434,2925 @@
       "disease": "糖尿病"
     },
     "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "双胍类药物"
+    },
+    "text": "双胍类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "甲苯磺丁脲"
+    },
+    "text": "甲苯磺丁脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "ARB"
+    },
+    "text": "ARB有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列吡嗪"
+    },
+    "text": "格列吡嗪有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿利吉仑"
+    },
+    "text": "阿利吉仑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特"
+    },
+    "text": "格列齐特有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "罗格列酮"
+    },
+    "text": "罗格列酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "第一代磺脲类药物"
+    },
+    "text": "第一代磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类(thiazolidinediones，TZDs)"
+    },
+    "text": "噻唑烷二酮类(thiazolidinediones，TZDs)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类"
+    },
+    "text": "磺脲类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列美脲"
+    },
+    "text": "格列美脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "伏格列波糖"
+    },
+    "text": "伏格列波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "促泌剂"
+    },
+    "text": "促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "TZDs"
+    },
+    "text": "TZDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "长效胰岛素"
+    },
+    "text": "长效胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "维格列汀"
+    },
+    "text": "维格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "TZDs"
+    },
+    "text": "TZDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类"
+    },
+    "text": "磺脲类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列奈类促泌剂"
+    },
+    "text": "格列奈类促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特"
+    },
+    "text": "格列齐特有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列奈类口服降糖药"
+    },
+    "text": "格列奈类口服降糖药有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "甲苯磺丁脲"
+    },
+    "text": "甲苯磺丁脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿司匹林"
+    },
+    "text": "阿司匹林有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "嘌呤醇"
+    },
+    "text": "嘌呤醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列奈类药物"
+    },
+    "text": "格列奈类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "枸橼酸合剂"
+    },
+    "text": "枸橼酸合剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列苯脲"
+    },
+    "text": "格列苯脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "普瑞凯希"
+    },
+    "text": "普瑞凯希有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "丙磺舒"
+    },
+    "text": "丙磺舒有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类(TZDs)"
+    },
+    "text": "噻唑烷二酮类(TZDs)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "缓释(格列齐特)"
+    },
+    "text": "缓释(格列齐特)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "双胍类"
+    },
+    "text": "双胍类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "钠-葡萄糖协同转运蛋白2(sodium-glucose co-transporter 2，SGLT-2)抑制剂"
+    },
+    "text": "钠-葡萄糖协同转运蛋白2(sodium-glucose co-transporter 2，SGLT-2)抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "氯磺丙脲"
+    },
+    "text": "氯磺丙脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "华法林"
+    },
+    "text": "华法林有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "维格列汀"
+    },
+    "text": "维格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "伏格列波糖"
+    },
+    "text": "伏格列波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿司匹林"
+    },
+    "text": "阿司匹林有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "螺内酯"
+    },
+    "text": "螺内酯有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "别嘌醇"
+    },
+    "text": "别嘌醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列美脲"
+    },
+    "text": "格列美脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "ACEI"
+    },
+    "text": "ACEI有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "普瑞凯希"
+    },
+    "text": "普瑞凯希有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "泼尼松"
+    },
+    "text": "泼尼松有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝前列素钠"
+    },
+    "text": "贝前列素钠有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "常规胰岛素"
+    },
+    "text": "常规胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "甘精胰岛素"
+    },
+    "text": "甘精胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿利吉仑"
+    },
+    "text": "阿利吉仑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "高强度他汀类药物"
+    },
+    "text": "高强度他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "TZDs"
+    },
+    "text": "TZDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "泼尼松龙"
+    },
+    "text": "泼尼松龙有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "NSAIDs"
+    },
+    "text": "NSAIDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非选择性COX抑制剂"
+    },
+    "text": "非选择性COX抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT2i"
+    },
+    "text": "SGLT2i有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列吡嗪控释片"
+    },
+    "text": "格列吡嗪控释片有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "a-糖苷酶抑制剂"
+    },
+    "text": "a-糖苷酶抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "中长效磺脲类促泌剂"
+    },
+    "text": "中长效磺脲类促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "别嘌醇"
+    },
+    "text": "别嘌醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非布司他"
+    },
+    "text": "非布司他有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4酶抑制剂"
+    },
+    "text": "DPP-4酶抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "NSAIDs类药物"
+    },
+    "text": "NSAIDs类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类"
+    },
+    "text": "噻唑烷二酮类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列美脲"
+    },
+    "text": "格列美脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛"
+    },
+    "text": "胰岛有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "ACEI"
+    },
+    "text": "ACEI有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特缓释片"
+    },
+    "text": "格列齐特缓释片有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿司匹林"
+    },
+    "text": "阿司匹林有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "控释(格列吡嗪)"
+    },
+    "text": "控释(格列吡嗪)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "盐酸二甲双胍"
+    },
+    "text": "盐酸二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT-2抑制剂"
+    },
+    "text": "SGLT-2抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "罗格列酮"
+    },
+    "text": "罗格列酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "别嘌醇"
+    },
+    "text": "别嘌醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "艾塞那肽"
+    },
+    "text": "艾塞那肽有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "人胰岛素"
+    },
+    "text": "人胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "烟酸"
+    },
+    "text": "烟酸有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "ACEI"
+    },
+    "text": "ACEI有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "甘精胰岛素"
+    },
+    "text": "甘精胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列喹酮"
+    },
+    "text": "格列喹酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列本脲"
+    },
+    "text": "格列本脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT2i"
+    },
+    "text": "SGLT2i有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特缓释片"
+    },
+    "text": "格列齐特缓释片有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "促泌剂"
+    },
+    "text": "促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "鲁格列净(Luseogliflozin)"
+    },
+    "text": "鲁格列净(Luseogliflozin)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻氯匹啶"
+    },
+    "text": "噻氯匹啶有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "达格列净(dapagliflozin)"
+    },
+    "text": "达格列净(dapagliflozin)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类药物"
+    },
+    "text": "噻唑烷二酮类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "坎格列净"
+    },
+    "text": "坎格列净有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿司匹林"
+    },
+    "text": "阿司匹林有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药"
+    },
+    "text": "磺脲类药有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列喹酮"
+    },
+    "text": "格列喹酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "巴曲酶"
+    },
+    "text": "巴曲酶有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿利吉仑"
+    },
+    "text": "阿利吉仑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列奈类降糖药"
+    },
+    "text": "格列奈类降糖药有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "COX-2抑制剂"
+    },
+    "text": "COX-2抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "坎格列净"
+    },
+    "text": "坎格列净有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "巴曲酶"
+    },
+    "text": "巴曲酶有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特"
+    },
+    "text": "格列齐特有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非选择性COX抑制剂"
+    },
+    "text": "非选择性COX抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列本脲"
+    },
+    "text": "格列本脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "丙磺舒"
+    },
+    "text": "丙磺舒有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "别嘌醇"
+    },
+    "text": "别嘌醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "瑞格列奈"
+    },
+    "text": "瑞格列奈有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类"
+    },
+    "text": "磺脲类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT-2抑制剂"
+    },
+    "text": "SGLT-2抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列喹酮"
+    },
+    "text": "格列喹酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "艾塞那肽"
+    },
+    "text": "艾塞那肽有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非磺脲类胰岛素促泌剂"
+    },
+    "text": "非磺脲类胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "妥拉磺脲"
+    },
+    "text": "妥拉磺脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类药物"
+    },
+    "text": "噻唑烷二酮类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "NPH"
+    },
+    "text": "NPH有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "ARB"
+    },
+    "text": "ARB有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "第二代磺脲类药物"
+    },
+    "text": "第二代磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列奈类"
+    },
+    "text": "格列奈类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT-2抑制剂"
+    },
+    "text": "SGLT-2抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特缓释片"
+    },
+    "text": "格列齐特缓释片有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "别嘌醇"
+    },
+    "text": "别嘌醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "短效人胰岛素"
+    },
+    "text": "短效人胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "那格列奈"
+    },
+    "text": "那格列奈有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列哇喹"
+    },
+    "text": "格列哇喹有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列本脲"
+    },
+    "text": "格列本脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "NSAIDs类药物"
+    },
+    "text": "NSAIDs类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列美脲"
+    },
+    "text": "格列美脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀"
+    },
+    "text": "他汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类"
+    },
+    "text": "噻唑烷二酮类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "丙磺舒"
+    },
+    "text": "丙磺舒有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非选择性COX抑制剂"
+    },
+    "text": "非选择性COX抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "烟酸"
+    },
+    "text": "烟酸有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "β受体阻滞剂"
+    },
+    "text": "β受体阻滞剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT2i"
+    },
+    "text": "SGLT2i有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特缓释片"
+    },
+    "text": "格列齐特缓释片有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "伏格列波糖"
+    },
+    "text": "伏格列波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类"
+    },
+    "text": "磺脲类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "CLP-1受体激动剂"
+    },
+    "text": "CLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非选择性COX抑制剂"
+    },
+    "text": "非选择性COX抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "罗格列酮"
+    },
+    "text": "罗格列酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "TZDs"
+    },
+    "text": "TZDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "NSAIDs类药物"
+    },
+    "text": "NSAIDs类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻嗪类利尿剂"
+    },
+    "text": "噻嗪类利尿剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "α-糖苷酶抑制剂"
+    },
+    "text": "α-糖苷酶抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "ARB"
+    },
+    "text": "ARB有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列奈类"
+    },
+    "text": "格列奈类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "普瑞凯希"
+    },
+    "text": "普瑞凯希有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "氢氯噻嗪"
+    },
+    "text": "氢氯噻嗪有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列齐特缓释片"
+    },
+    "text": "格列齐特缓释片有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "维格列汀"
+    },
+    "text": "维格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "坎格列净"
+    },
+    "text": "坎格列净有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿司匹林"
+    },
+    "text": "阿司匹林有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT2i"
+    },
+    "text": "SGLT2i有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类"
+    },
+    "text": "磺脲类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "别嘌醇"
+    },
+    "text": "别嘌醇有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "达格列净"
+    },
+    "text": "达格列净有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类促泌剂"
+    },
+    "text": "磺脲类促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "艾塞那肽"
+    },
+    "text": "艾塞那肽有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "高强度他汀类药物"
+    },
+    "text": "高强度他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "丙磺舒"
+    },
+    "text": "丙磺舒有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素类似物"
+    },
+    "text": "胰岛素类似物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4酶抑制剂"
+    },
+    "text": "DPP-4酶抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "甘精胰岛素"
+    },
+    "text": "甘精胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二肽基肽酶-4(dipeptidyl peptidase-4，DPP-4)抑制剂"
+    },
+    "text": "二肽基肽酶-4(dipeptidyl peptidase-4，DPP-4)抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非诺贝特"
+    },
+    "text": "非诺贝特有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "甲苯磺丁脲"
+    },
+    "text": "甲苯磺丁脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SUs"
+    },
+    "text": "SUs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "维格列汀"
+    },
+    "text": "维格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "速效胰岛素"
+    },
+    "text": "速效胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列本脲"
+    },
+    "text": "格列本脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "S GLT-2抑制剂"
+    },
+    "text": "S GLT-2抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "氯吡格雷"
+    },
+    "text": "氯吡格雷有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "贝特类"
+    },
+    "text": "贝特类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "α-糖苷酶抑制剂"
+    },
+    "text": "α-糖苷酶抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "非磺脲类胰岛素促泌剂"
+    },
+    "text": "非磺脲类胰岛素促泌剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "氯吡格雷"
+    },
+    "text": "氯吡格雷有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类"
+    },
+    "text": "他汀类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "利格列汀"
+    },
+    "text": "利格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "他汀类药物"
+    },
+    "text": "他汀类药物有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "烟酸"
+    },
+    "text": "烟酸有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "阿格列汀"
+    },
+    "text": "阿格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "噻唑烷二酮类"
+    },
+    "text": "噻唑烷二酮类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "吡格列酮"
+    },
+    "text": "吡格列酮有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列美脲"
+    },
+    "text": "格列美脲有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "NSAIDs"
+    },
+    "text": "NSAIDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "TZDs"
+    },
+    "text": "TZDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "磺脲类药物(SUs)"
+    },
+    "text": "磺脲类药物(SUs)有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列酮类"
+    },
+    "text": "格列酮类有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "SGLT2i"
+    },
+    "text": "SGLT2i有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "格列吡嗪"
+    },
+    "text": "格列吡嗪有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "TZDs"
+    },
+    "text": "TZDs有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "ade_drug",
+    "slots": {
+      "drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂有哪些不良反应、副作用？"
   }
 ]
