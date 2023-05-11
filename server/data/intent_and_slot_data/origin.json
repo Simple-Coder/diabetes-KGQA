@@ -20218,5 +20218,4925 @@
       "Drug": "格列喹酮"
     },
     "text": "格列喹酮的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾脏疾病(diabetic kidney disease，DKD)"
+    },
+    "text": "糖尿病肾脏疾病(diabetic kidney disease，DKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性尿酸盐肾病"
+    },
+    "text": "慢性尿酸盐肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "甲状腺功能亢进"
+    },
+    "text": "甲状腺功能亢进发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管和微血管事件"
+    },
+    "text": "大血管和微血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病大血管病变"
+    },
+    "text": "糖尿病大血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "严重肝或肾损伤"
+    },
+    "text": "严重肝或肾损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "复杂性肾结石"
+    },
+    "text": "复杂性肾结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾损伤"
+    },
+    "text": "糖尿病肾损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管、微血管病变"
+    },
+    "text": "大血管、微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肌缺血"
+    },
+    "text": "心肌缺血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉闭塞"
+    },
+    "text": "下肢动脉闭塞发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "椎管狭窄"
+    },
+    "text": "椎管狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨疾病"
+    },
+    "text": "骨疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾损伤"
+    },
+    "text": "肾损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "复合心血管终点事件"
+    },
+    "text": "复合心血管终点事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨筋膜间室综合征"
+    },
+    "text": "骨筋膜间室综合征发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "静脉栓塞"
+    },
+    "text": "静脉栓塞发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "腰骶丛病变"
+    },
+    "text": "腰骶丛病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "胃肠道疾病"
+    },
+    "text": "胃肠道疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "念珠菌性龟头炎"
+    },
+    "text": "念珠菌性龟头炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "外阴阴道炎"
+    },
+    "text": "外阴阴道炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝损伤"
+    },
+    "text": "肝损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "严重肝或肾损伤"
+    },
+    "text": "严重肝或肾损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾上盏或肾中盏结石"
+    },
+    "text": "肾上盏或肾中盏结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管风险"
+    },
+    "text": "心血管风险发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "CVD"
+    },
+    "text": "CVD发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肌肉组织夹心样坏死"
+    },
+    "text": "肌肉组织夹心样坏死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "颅神经病变"
+    },
+    "text": "颅神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "远端对称性多发性周围神经病(distal symmetric polyneuropathy，DSPN)"
+    },
+    "text": "远端对称性多发性周围神经病(distal symmetric polyneuropathy，DSPN)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑血管病变"
+    },
+    "text": "脑血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨关节病变"
+    },
+    "text": "骨关节病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心血管疾病(ASCVD)"
+    },
+    "text": "动脉粥样硬化性心血管疾病(ASCVD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脂肪肝"
+    },
+    "text": "脂肪肝发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "血管损伤"
+    },
+    "text": "血管损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "血瘀型糖尿病周围神经病变"
+    },
+    "text": "血瘀型糖尿病周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脏器功能异常"
+    },
+    "text": "脏器功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨质疏松"
+    },
+    "text": "骨质疏松发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "单膝关节炎"
+    },
+    "text": "单膝关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "自主神经病变"
+    },
+    "text": "自主神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经根神经丛病"
+    },
+    "text": "糖尿病神经根神经丛病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "老年、严重肝肾疾病"
+    },
+    "text": "老年、严重肝肾疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病单神经病"
+    },
+    "text": "糖尿病单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小球硬化"
+    },
+    "text": "肾小球硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管病变"
+    },
+    "text": "微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病(T2DM)"
+    },
+    "text": "2型糖尿病(T2DM)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "外阴阴道真菌感染"
+    },
+    "text": "外阴阴道真菌感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管事件"
+    },
+    "text": "大血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "冠心病"
+    },
+    "text": "冠心病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾实质萎缩"
+    },
+    "text": "肾实质萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性关节炎"
+    },
+    "text": "慢性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肌梗死"
+    },
+    "text": "心肌梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "冠状动脉或颈动脉或下肢动脉狭窄"
+    },
+    "text": "冠状动脉或颈动脉或下肢动脉狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性心力衰竭"
+    },
+    "text": "急性心力衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心血管疾病(ASCVD)"
+    },
+    "text": "动脉粥样硬化性心血管疾病(ASCVD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病变(DPN)"
+    },
+    "text": "糖尿病周围神经病变(DPN)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢的感觉障碍"
+    },
+    "text": "下肢的感觉障碍发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "老年、严重肝肾疾病"
+    },
+    "text": "老年、严重肝肾疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "颅神经病变"
+    },
+    "text": "颅神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经根或丛病变"
+    },
+    "text": "神经根或丛病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "长度依赖性轴索性周围神经病"
+    },
+    "text": "长度依赖性轴索性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管系统疾病"
+    },
+    "text": "心血管系统疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨髓炎"
+    },
+    "text": "骨髓炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节炎"
+    },
+    "text": "关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急慢性炎症损伤"
+    },
+    "text": "急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "严重肝功能不全"
+    },
+    "text": "严重肝功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "运动神经轴索损害"
+    },
+    "text": "运动神经轴索损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "小纤维神经病"
+    },
+    "text": "小纤维神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "血管疾病"
+    },
+    "text": "血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "特发性、肾功能不全"
+    },
+    "text": "特发性、肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病(T2DM)"
+    },
+    "text": "2型糖尿病(T2DM)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾盂结石"
+    },
+    "text": "肾盂结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "代偿期肝硬化"
+    },
+    "text": "代偿期肝硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性尿酸者肾病"
+    },
+    "text": "急性尿酸者肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜或视盘的新生血管"
+    },
+    "text": "视网膜或视盘的新生血管发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非酒精性脂肪肝病(NAFLD)"
+    },
+    "text": "非酒精性脂肪肝病(NAFLD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢间歇跛行"
+    },
+    "text": "下肢间歇跛行发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病心肌病变"
+    },
+    "text": "糖尿病心肌病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "终末期肾病"
+    },
+    "text": "终末期肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "CVD"
+    },
+    "text": "CVD发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经根神经丛病"
+    },
+    "text": "糖尿病神经根神经丛病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病变"
+    },
+    "text": "糖尿病周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉粥样硬化性病变(LEAD)"
+    },
+    "text": "下肢动脉粥样硬化性病变(LEAD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝性脑病"
+    },
+    "text": "肝性脑病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "中度(3b级)和严重肾衰竭"
+    },
+    "text": "中度(3b级)和严重肾衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性炎性脱髓鞘性多发性神经根周围神经病"
+    },
+    "text": "慢性炎性脱髓鞘性多发性神经根周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿周围神经病变"
+    },
+    "text": "糖尿周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "失代偿肝硬化"
+    },
+    "text": "失代偿肝硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉钙化"
+    },
+    "text": "下肢动脉钙化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性胰腺炎"
+    },
+    "text": "急性胰腺炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多囊卵巢综合征"
+    },
+    "text": "多囊卵巢综合征发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管事件"
+    },
+    "text": "微血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏病3a期"
+    },
+    "text": "慢性肾脏病3a期发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多囊卵巢"
+    },
+    "text": "多囊卵巢发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾功能不全"
+    },
+    "text": "慢性肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足坏疽"
+    },
+    "text": "足坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "甲状腺功能减退"
+    },
+    "text": "甲状腺功能减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾结石"
+    },
+    "text": "肾结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管病变"
+    },
+    "text": "大血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾脏病"
+    },
+    "text": "糖尿病肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能衰竭"
+    },
+    "text": "肾功能衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急慢性炎症损伤"
+    },
+    "text": "急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风性关节炎"
+    },
+    "text": "痛风性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病黄斑水肿"
+    },
+    "text": "糖尿病黄斑水肿发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心功能不全者"
+    },
+    "text": "心功能不全者发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "严重肾功能不全"
+    },
+    "text": "严重肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝、肾功能不全者"
+    },
+    "text": "肝、肾功能不全者发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "湿性或干性坏疽"
+    },
+    "text": "湿性或干性坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝病"
+    },
+    "text": "肝病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足趾截肢"
+    },
+    "text": "足趾截肢发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨关节破坏"
+    },
+    "text": "骨关节破坏发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化"
+    },
+    "text": "动脉粥样硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏病变"
+    },
+    "text": "肾脏病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能损害"
+    },
+    "text": "肾功能损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉缺血性病变"
+    },
+    "text": "下肢动脉缺血性病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管病"
+    },
+    "text": "心血管病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "黄斑变性"
+    },
+    "text": "黄斑变性发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "尿路梗阻"
+    },
+    "text": "尿路梗阻发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经根或神经丛病变"
+    },
+    "text": "神经根或神经丛病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性肾小球肾病(diabetic glomerulopathy)"
+    },
+    "text": "糖尿病性肾小球肾病(diabetic glomerulopathy)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑卒中"
+    },
+    "text": "脑卒中发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝、肾功能不全者"
+    },
+    "text": "肝、肾功能不全者发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心、肺疾患"
+    },
+    "text": "心、肺疾患发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管自主神经病变"
+    },
+    "text": "心血管自主神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多囊卵巢综合征(PCOS)"
+    },
+    "text": "多囊卵巢综合征(PCOS)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "失代偿性肝硬化"
+    },
+    "text": "失代偿性肝硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏肾病变"
+    },
+    "text": "肾脏肾病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "早发缺血性心血管病"
+    },
+    "text": "早发缺血性心血管病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "玻璃体严重增厚眼病"
+    },
+    "text": "玻璃体严重增厚眼病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "1型糖尿病微血管病变"
+    },
+    "text": "1型糖尿病微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脑血管严重病变"
+    },
+    "text": "心脑血管严重病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脏自主神经病变"
+    },
+    "text": "心脏自主神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜或视盘的新生血管"
+    },
+    "text": "视网膜或视盘的新生血管发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管间质、肾微血管病变"
+    },
+    "text": "肾小管间质、肾微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜前出血"
+    },
+    "text": "视网膜前出血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管/肾血管损伤"
+    },
+    "text": "肾小管/肾血管损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏病"
+    },
+    "text": "肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑功能障碍"
+    },
+    "text": "脑功能障碍发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝性脑病"
+    },
+    "text": "肝性脑病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏病(chronic kidney disease，CKD)"
+    },
+    "text": "慢性肾脏病(chronic kidney disease，CKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "假关节"
+    },
+    "text": "假关节发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肺功能下降"
+    },
+    "text": "心肺功能下降发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能异常"
+    },
+    "text": "肾功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性血管疾病"
+    },
+    "text": "动脉粥样硬化性血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脑血管病变"
+    },
+    "text": "心脑血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "泌尿道感染"
+    },
+    "text": "泌尿道感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性肌萎缩"
+    },
+    "text": "糖尿病性肌萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "外周动脉疾病(PAD)"
+    },
+    "text": "外周动脉疾病(PAD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛性肌萎缩"
+    },
+    "text": "痛性肌萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非增殖性糖尿病视网膜病变"
+    },
+    "text": "非增殖性糖尿病视网膜病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肝炎"
+    },
+    "text": "慢性肝炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "患足感染"
+    },
+    "text": "患足感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "无症状性脑梗死"
+    },
+    "text": "无症状性脑梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "颈腰椎退行性变"
+    },
+    "text": "颈腰椎退行性变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经根压迫"
+    },
+    "text": "神经根压迫发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "直肠癌"
+    },
+    "text": "直肠癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性冠状动脉综合征(ACS)"
+    },
+    "text": "急性冠状动脉综合征(ACS)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "结直肠癌"
+    },
+    "text": "结直肠癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性心血管疾病"
+    },
+    "text": "慢性心血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管间质纤维化"
+    },
+    "text": "肾小管间质纤维化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非酒精性脂肪性肝炎(NASH)"
+    },
+    "text": "非酒精性脂肪性肝炎(NASH)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢缺血(CLI)"
+    },
+    "text": "下肢缺血(CLI)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脊髓病变"
+    },
+    "text": "脊髓病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肿瘤"
+    },
+    "text": "肿瘤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急、慢性尿酸(盐)肾病"
+    },
+    "text": "急、慢性尿酸(盐)肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风性关节炎"
+    },
+    "text": "痛风性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管病变"
+    },
+    "text": "心血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心绞痛"
+    },
+    "text": "心绞痛发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "老年黄斑变性"
+    },
+    "text": "老年黄斑变性发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性肢体缺血"
+    },
+    "text": "急性肢体缺血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑血管损伤"
+    },
+    "text": "脑血管损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能减退"
+    },
+    "text": "肝肾功能减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "终末期肾脏疾病(ESRD)"
+    },
+    "text": "终末期肾脏疾病(ESRD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管间质、肾微血管病变"
+    },
+    "text": "肾小管间质、肾微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脏器损害"
+    },
+    "text": "脏器损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉管腔狭窄"
+    },
+    "text": "下肢动脉管腔狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能不全"
+    },
+    "text": "肝肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "牵拉性视网膜脱离"
+    },
+    "text": "牵拉性视网膜脱离发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "胰腺炎"
+    },
+    "text": "胰腺炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "不稳定型心绞痛"
+    },
+    "text": "不稳定型心绞痛发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多囊肾病"
+    },
+    "text": "多囊肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏终末期"
+    },
+    "text": "肾脏终末期发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "失代偿期肝硬化"
+    },
+    "text": "失代偿期肝硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "黄斑水肿"
+    },
+    "text": "黄斑水肿发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾石"
+    },
+    "text": "肾石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心功能不全"
+    },
+    "text": "心功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "尿病远端对称性多发性神经病变(DSPN)"
+    },
+    "text": "尿病远端对称性多发性神经病变(DSPN)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心绞痛"
+    },
+    "text": "心绞痛发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "骨髓增生性疾病"
+    },
+    "text": "骨髓增生性疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病变 (diabetic peripheral neuropathy，DPN)"
+    },
+    "text": "糖尿病周围神经病变 (diabetic peripheral neuropathy，DPN)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜新生血管"
+    },
+    "text": "视网膜新生血管发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肺癌"
+    },
+    "text": "肺癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病高危足"
+    },
+    "text": "糖尿病高危足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "终末期肾病(end stage renal disease，ESRD)"
+    },
+    "text": "终末期肾病(end stage renal disease，ESRD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑出血"
+    },
+    "text": "脑出血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经性关节病 (Charcot关节病)"
+    },
+    "text": "神经性关节病 (Charcot关节病)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管及代谢性疾病"
+    },
+    "text": "心血管及代谢性疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动静脉血管性病变"
+    },
+    "text": "动静脉血管性病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾脏病变"
+    },
+    "text": "糖尿病肾脏病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管疾病(cardiovascular disease，CVD)"
+    },
+    "text": "心血管疾病(cardiovascular disease，CVD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "失代偿性心力衰竭"
+    },
+    "text": "失代偿性心力衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "深静脉血栓"
+    },
+    "text": "深静脉血栓发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病单神经病"
+    },
+    "text": "糖尿病单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网病变"
+    },
+    "text": "视网病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉缺血"
+    },
+    "text": "下肢动脉缺血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "阴茎包皮炎"
+    },
+    "text": "阴茎包皮炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "腹水"
+    },
+    "text": "腹水发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病网膜病变"
+    },
+    "text": "糖尿病网膜病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管病"
+    },
+    "text": "微血管病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "干性坏疽"
+    },
+    "text": "干性坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "生殖道感染"
+    },
+    "text": "生殖道感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "内脏脂肪存储过多"
+    },
+    "text": "内脏脂肪存储过多发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病"
+    },
+    "text": "糖尿病周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉病变"
+    },
+    "text": "下肢动脉病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "泌尿系尿酸结石"
+    },
+    "text": "泌尿系尿酸结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑梗死"
+    },
+    "text": "脑梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "甲状腺髓样癌(MTC)"
+    },
+    "text": "甲状腺髓样癌(MTC)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "冠状动脉或颈动脉或下肢动脉狭窄"
+    },
+    "text": "冠状动脉或颈动脉或下肢动脉狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "中、重度肾功能不全"
+    },
+    "text": "中、重度肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能减退"
+    },
+    "text": "肝肾功能减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脊柱与椎管内病变"
+    },
+    "text": "脊柱与椎管内病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多发单神经病"
+    },
+    "text": "多发单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非致命性心梗"
+    },
+    "text": "非致命性心梗发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性失代偿性心衰"
+    },
+    "text": "急性失代偿性心衰发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "小管间质性肾炎"
+    },
+    "text": "小管间质性肾炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非酒精性脂肪肝"
+    },
+    "text": "非酒精性脂肪肝发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜病变"
+    },
+    "text": "视网膜病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小球损害"
+    },
+    "text": "肾小球损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "冠状动脉或颈动脉或下肢动脉狭窄"
+    },
+    "text": "冠状动脉或颈动脉或下肢动脉狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非酒精性脂肪性肝病"
+    },
+    "text": "非酒精性脂肪性肝病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "轻到中度肝功能受损"
+    },
+    "text": "轻到中度肝功能受损发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "泌尿生殖道感染"
+    },
+    "text": "泌尿生殖道感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "远端对称性多发性周围神经病"
+    },
+    "text": "远端对称性多发性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "生殖道和泌尿道感染"
+    },
+    "text": "生殖道和泌尿道感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "晚期慢性肾脏病"
+    },
+    "text": "晚期慢性肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "自主神经病"
+    },
+    "text": "自主神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢病变"
+    },
+    "text": "下肢病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "复发性消化道溃疡／出血"
+    },
+    "text": "复发性消化道溃疡／出血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管和微血管事件"
+    },
+    "text": "大血管和微血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝功能异常"
+    },
+    "text": "肝功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "泌尿生殖感染"
+    },
+    "text": "泌尿生殖感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管疾"
+    },
+    "text": "心血管疾发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉硬化性心血管疾病"
+    },
+    "text": "动脉硬化性心血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾脏病变(DKD)"
+    },
+    "text": "糖尿病肾脏病变(DKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑损伤"
+    },
+    "text": "脑损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病慢性肾脏病(CKD)"
+    },
+    "text": "糖尿病慢性肾脏病(CKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜内囊肿"
+    },
+    "text": "视网膜内囊肿发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "终末期肾病(end-stage renal disease，ESRD)"
+    },
+    "text": "终末期肾病(end-stage renal disease，ESRD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管、微血管病变"
+    },
+    "text": "大血管、微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "坏死性筋膜炎"
+    },
+    "text": "坏死性筋膜炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝炎"
+    },
+    "text": "肝炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "泌尿生殖道感染"
+    },
+    "text": "泌尿生殖道感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏肥大"
+    },
+    "text": "肾脏肥大发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾上盏或肾中盏结石"
+    },
+    "text": "肾上盏或肾中盏结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急、慢性心衰"
+    },
+    "text": "急、慢性心衰发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病变"
+    },
+    "text": "糖尿病周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "全身动脉粥样硬化疾病"
+    },
+    "text": "全身动脉粥样硬化疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病微血管病"
+    },
+    "text": "糖尿病微血管病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心、肺疾患"
+    },
+    "text": "心、肺疾患发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病血管疾病"
+    },
+    "text": "糖尿病血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "造影剂相关急性肾损伤"
+    },
+    "text": "造影剂相关急性肾损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛性周围神经病"
+    },
+    "text": "痛性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性肾小球肾病"
+    },
+    "text": "糖尿病性肾小球肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "充血性心力衰竭"
+    },
+    "text": "充血性心力衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛性神经病变"
+    },
+    "text": "痛性神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风性关节炎"
+    },
+    "text": "痛风性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "嵌压性周围神经病"
+    },
+    "text": "嵌压性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肺功能异常"
+    },
+    "text": "心肺功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能衰退"
+    },
+    "text": "肾功能衰退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管萎缩"
+    },
+    "text": "肾小管萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足病"
+    },
+    "text": "糖尿病足病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾石症"
+    },
+    "text": "肾石症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "严重心律失常"
+    },
+    "text": "严重心律失常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脑血管疾病"
+    },
+    "text": "心脑血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病单神经病"
+    },
+    "text": "糖尿病单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肺功能下降"
+    },
+    "text": "心肺功能下降发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病前周围神经病"
+    },
+    "text": "糖尿病前周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "亚临床周围神经病变"
+    },
+    "text": "亚临床周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足溃疡"
+    },
+    "text": "足溃疡发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "中度肾功能不全"
+    },
+    "text": "中度肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "缺血性心脏病"
+    },
+    "text": "缺血性心脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能受损"
+    },
+    "text": "肾功能受损发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心律失常"
+    },
+    "text": "心律失常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏黄嘌呤、次黄嘌呤结石"
+    },
+    "text": "肾脏黄嘌呤、次黄嘌呤结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾性骨营养不良"
+    },
+    "text": "肾性骨营养不良发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾心肺功能不全"
+    },
+    "text": "肝肾心肺功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管相关病变"
+    },
+    "text": "肾小管相关病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾心肺功能不全"
+    },
+    "text": "肝肾心肺功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾病(CKD)"
+    },
+    "text": "慢性肾病(CKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足溃疡"
+    },
+    "text": "糖尿病足溃疡发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝或肾功能不全"
+    },
+    "text": "肝或肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管、大血管病变"
+    },
+    "text": "微血管、大血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病微血管并发症"
+    },
+    "text": "糖尿病微血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脊柱与椎管内病变"
+    },
+    "text": "脊柱与椎管内病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑血管病"
+    },
+    "text": "脑血管病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏不良事件"
+    },
+    "text": "肾脏不良事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能不全"
+    },
+    "text": "肝肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝损害"
+    },
+    "text": "肝损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "生殖道和泌尿道感染"
+    },
+    "text": "生殖道和泌尿道感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "胃肠道排空功能减退"
+    },
+    "text": "胃肠道排空功能减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肢端坏疽"
+    },
+    "text": "肢端坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾积水"
+    },
+    "text": "肾积水发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非致死性心肌梗死"
+    },
+    "text": "非致死性心肌梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经病"
+    },
+    "text": "神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏疾病"
+    },
+    "text": "慢性肾脏疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心功能NYHAII~IV级"
+    },
+    "text": "心功能NYHAII~IV级发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾心肺功能不全"
+    },
+    "text": "肝肾心肺功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管瘤"
+    },
+    "text": "微血管瘤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜静脉阻塞"
+    },
+    "text": "视网膜静脉阻塞发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "轻中度肾功能异常"
+    },
+    "text": "轻中度肾功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围血管病变"
+    },
+    "text": "周围血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "颅神经病变"
+    },
+    "text": "颅神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾血管损伤"
+    },
+    "text": "肾血管损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能不全"
+    },
+    "text": "肝肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管疾病(CVD)"
+    },
+    "text": "心血管疾病(CVD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管粥样硬化斑块"
+    },
+    "text": "大血管粥样硬化斑块发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "尿路感染"
+    },
+    "text": "尿路感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "乳腺癌"
+    },
+    "text": "乳腺癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "泌尿生殖感染"
+    },
+    "text": "泌尿生殖感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "甲状腺功能减退症"
+    },
+    "text": "甲状腺功能减退症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "IgA肾病"
+    },
+    "text": "IgA肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "胃肠道排空功能减退"
+    },
+    "text": "胃肠道排空功能减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能损害≥G2期"
+    },
+    "text": "肾功能损害≥G2期发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足感染"
+    },
+    "text": "糖尿病足感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病皮肤并发症"
+    },
+    "text": "糖尿病皮肤并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "冠状动脉粥样硬化"
+    },
+    "text": "冠状动脉粥样硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能受"
+    },
+    "text": "肾功能受发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾衰竭"
+    },
+    "text": "肾衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病单神经病"
+    },
+    "text": "糖尿病单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节腔尿酸盐沉积"
+    },
+    "text": "关节腔尿酸盐沉积发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性肝功能哀竭"
+    },
+    "text": "急性肝功能哀竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心脑血管疾病"
+    },
+    "text": "动脉粥样硬化性心脑血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "外周神经病变(DPN)"
+    },
+    "text": "外周神经病变(DPN)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾衰竭"
+    },
+    "text": "慢性肾衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病肾脏病"
+    },
+    "text": "2型糖尿病肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾病(CKD)"
+    },
+    "text": "慢性肾病(CKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肌梗死"
+    },
+    "text": "心肌梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝功能损伤"
+    },
+    "text": "肝功能损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非致死性缺血性脑卒中"
+    },
+    "text": "非致死性缺血性脑卒中发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围血管疾病"
+    },
+    "text": "周围血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "充血性心力衰竭(CHF)"
+    },
+    "text": "充血性心力衰竭(CHF)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心血管疾病"
+    },
+    "text": "动脉粥样硬化性心血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏损害"
+    },
+    "text": "肾脏损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脏器功能损伤"
+    },
+    "text": "脏器功能损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足部溃疡"
+    },
+    "text": "足部溃疡发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾微血管硬化"
+    },
+    "text": "肾微血管硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管并发症"
+    },
+    "text": "微血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性肌萎缩"
+    },
+    "text": "糖尿病性肌萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "前列腺癌"
+    },
+    "text": "前列腺癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾损害"
+    },
+    "text": "肾损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脑血管动脉粥样硬化"
+    },
+    "text": "心脑血管动脉粥样硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜新生血管性疾病"
+    },
+    "text": "视网膜新生血管性疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝脏炎症"
+    },
+    "text": "肝脏炎症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "玻璃体积血"
+    },
+    "text": "玻璃体积血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑动脉硬化"
+    },
+    "text": "脑动脉硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "血管并发症"
+    },
+    "text": "血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "中重度慢性肾脏病"
+    },
+    "text": "中重度慢性肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经根神经丛病"
+    },
+    "text": "糖尿病神经根神经丛病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾病"
+    },
+    "text": "慢性肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑死亡"
+    },
+    "text": "脑死亡发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "自主神经受损"
+    },
+    "text": "自主神经受损发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "颅神经病变"
+    },
+    "text": "颅神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "腹腺炎"
+    },
+    "text": "腹腺炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "活动性消化道溃疡／出血"
+    },
+    "text": "活动性消化道溃疡／出血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "致死性和非致死性心肌梗死"
+    },
+    "text": "致死性和非致死性心肌梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性视网病变"
+    },
+    "text": "糖尿病性视网病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "Charcot关节病"
+    },
+    "text": "Charcot关节病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "运动神经轴索损害"
+    },
+    "text": "运动神经轴索损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "重度肾功能不全"
+    },
+    "text": "重度肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "靶器官损伤"
+    },
+    "text": "靶器官损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管粥样硬化"
+    },
+    "text": "大血管粥样硬化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多发单神经病"
+    },
+    "text": "多发单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管危害"
+    },
+    "text": "心血管危害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "Ⅲ-Ⅳ级充血性心力衰竭"
+    },
+    "text": "Ⅲ-Ⅳ级充血性心力衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "单神经病"
+    },
+    "text": "单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病外周神经病变"
+    },
+    "text": "糖尿病外周神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能损伤"
+    },
+    "text": "肾功能损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "血管事件"
+    },
+    "text": "血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "尿酸性肾病"
+    },
+    "text": "尿酸性肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多发单神经病"
+    },
+    "text": "多发单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脏器功能损害"
+    },
+    "text": "脏器功能损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管终点事件"
+    },
+    "text": "心血管终点事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "IGT"
+    },
+    "text": "IGT发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肌病"
+    },
+    "text": "肌病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经障碍"
+    },
+    "text": "神经障碍发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝胆疾病"
+    },
+    "text": "肝胆疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "微血管、大血管病变"
+    },
+    "text": "微血管、大血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足畸形"
+    },
+    "text": "足畸形发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变(diabetic retinopathy，DR)"
+    },
+    "text": "糖尿病视网膜病变(diabetic retinopathy，DR)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "高危足"
+    },
+    "text": "高危足发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "外周动脉疾病"
+    },
+    "text": "外周动脉疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心直管疾病(ASCVD)"
+    },
+    "text": "动脉粥样硬化性心直管疾病(ASCVD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肺部感染"
+    },
+    "text": "肺部感染发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经根或神经丛病变"
+    },
+    "text": "神经根或神经丛病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病视网膜病变"
+    },
+    "text": "2型糖尿病视网膜病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性心肌梗死"
+    },
+    "text": "急性心肌梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管闭塞症"
+    },
+    "text": "糖尿病性周围血管闭塞症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "盆腔内占位性病变"
+    },
+    "text": "盆腔内占位性病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性稳定性心绞痛"
+    },
+    "text": "慢性稳定性心绞痛发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "缺血性心脑血管疾病"
+    },
+    "text": "缺血性心脑血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "非酒精性脂肪性肝炎"
+    },
+    "text": "非酒精性脂肪性肝炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉闭塞症"
+    },
+    "text": "下肢动脉闭塞症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "神经系统疾病"
+    },
+    "text": "神经系统疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "脑血管疾病"
+    },
+    "text": "脑血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能或肝功能损害"
+    },
+    "text": "肾功能或肝功能损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管并发症"
+    },
+    "text": "心血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性尿酸性肾病"
+    },
+    "text": "急性尿酸性肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心衰"
+    },
+    "text": "心衰发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "眼底病变"
+    },
+    "text": "眼底病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心肺功能异常"
+    },
+    "text": "心肺功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足或少数趾干性坏疽"
+    },
+    "text": "足或少数趾干性坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性阻塞性肺疾病"
+    },
+    "text": "慢性阻塞性肺疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾下盏结石"
+    },
+    "text": "肾下盏结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "直立性低血压"
+    },
+    "text": "直立性低血压发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小管/肾血管损伤"
+    },
+    "text": "肾小管/肾血管损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化症"
+    },
+    "text": "动脉粥样硬化症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能或肝功能损害"
+    },
+    "text": "肾功能或肝功能损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性关节炎"
+    },
+    "text": "急性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾间质纤维化"
+    },
+    "text": "肾间质纤维化发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "外周血管疾病"
+    },
+    "text": "外周血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管并发症"
+    },
+    "text": "大血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢动脉管腔狭窄"
+    },
+    "text": "下肢动脉管腔狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝功能严重受损"
+    },
+    "text": "肝功能严重受损发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾心肺功能不全"
+    },
+    "text": "肝肾心肺功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病变(diabetic peripheral neuropathy，DPN）"
+    },
+    "text": "糖尿病周围神经病变(diabetic peripheral neuropathy，DPN）发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "双下肢同步发生血管缺血性病变"
+    },
+    "text": "双下肢同步发生血管缺血性病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "甲状腺功能低下"
+    },
+    "text": "甲状腺功能低下发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "活动性肝病"
+    },
+    "text": "活动性肝病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多发单神经病"
+    },
+    "text": "多发单神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾动脉狭窄"
+    },
+    "text": "肾动脉狭窄发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "酒精性肝病"
+    },
+    "text": "酒精性肝病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围血管病"
+    },
+    "text": "糖尿病周围血管病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "腹型肥胖"
+    },
+    "text": "腹型肥胖发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脑血管等系统疾病"
+    },
+    "text": "心脑血管等系统疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脑血管事件"
+    },
+    "text": "心脑血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝、肾功能不全"
+    },
+    "text": "肝、肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "湿性或干性坏疽"
+    },
+    "text": "湿性或干性坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "正常、轻、中、重、极重肾功能损害"
+    },
+    "text": "正常、轻、中、重、极重肾功能损害发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "冠脉事件"
+    },
+    "text": "冠脉事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管死亡"
+    },
+    "text": "心血管死亡发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "子宫内膜癌"
+    },
+    "text": "子宫内膜癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风性关节炎"
+    },
+    "text": "痛风性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "自主神经病变"
+    },
+    "text": "自主神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏损伤"
+    },
+    "text": "肾脏损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "恶性大脑中动脉梗死"
+    },
+    "text": "恶性大脑中动脉梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "甲状腺功能低下"
+    },
+    "text": "甲状腺功能低下发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性肾小球肾病(diabetic glomerulopathy)"
+    },
+    "text": "糖尿病性肾小球肾病(diabetic glomerulopathy)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急性痛风性关节炎"
+    },
+    "text": "急性痛风性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "间歇性跛行"
+    },
+    "text": "间歇性跛行发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性痛风性关节炎"
+    },
+    "text": "慢性痛风性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足或少数趾干性坏疽"
+    },
+    "text": "足或少数趾干性坏疽发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性肾小球肾病"
+    },
+    "text": "糖尿病性肾小球肾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏病(CKD)"
+    },
+    "text": "慢性肾脏病(CKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "胃肠道疾病"
+    },
+    "text": "胃肠道疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "终末期肾功能衰竭"
+    },
+    "text": "终末期肾功能衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏肾病变"
+    },
+    "text": "肾脏肾病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "皮肤病变"
+    },
+    "text": "皮肤病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝、肾功能不全"
+    },
+    "text": "肝、肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下肢废用性肌萎缩"
+    },
+    "text": "下肢废用性肌萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "颅神经病变"
+    },
+    "text": "颅神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾疾病"
+    },
+    "text": "肝肾疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "痛性肌萎缩"
+    },
+    "text": "痛性肌萎缩发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "尿酸性肾结石"
+    },
+    "text": "尿酸性肾结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "大血管并发症"
+    },
+    "text": "大血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "局灶性非对称性周围神经病"
+    },
+    "text": "局灶性非对称性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肢体缺血"
+    },
+    "text": "肢体缺血发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心功能NYHA Ⅲ-Ⅳ级"
+    },
+    "text": "心功能NYHA Ⅲ-Ⅳ级发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "缺血性脑梗死"
+    },
+    "text": "缺血性脑梗死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节病变"
+    },
+    "text": "关节病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "膀胱癌"
+    },
+    "text": "膀胱癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能异常"
+    },
+    "text": "肝肾功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心脑血管疾病"
+    },
+    "text": "动脉粥样硬化性心脑血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心力衰竭"
+    },
+    "text": "心力衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病肾脏病(DKD)"
+    },
+    "text": "糖尿病肾脏病(DKD)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾病综合征"
+    },
+    "text": "肾病综合征发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变(DR)"
+    },
+    "text": "糖尿病视网膜病变(DR)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾脏事件"
+    },
+    "text": "肾脏事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脏病"
+    },
+    "text": "心脏病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "长度依赖性轴索性周围神经病"
+    },
+    "text": "长度依赖性轴索性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "周围动脉病变"
+    },
+    "text": "周围动脉病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "淋巴管炎"
+    },
+    "text": "淋巴管炎发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "阴道念珠菌病"
+    },
+    "text": "阴道念珠菌病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功不全"
+    },
+    "text": "肾功不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝功能障碍"
+    },
+    "text": "肝功能障碍发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "多发性对称性周围神经病"
+    },
+    "text": "多发性对称性周围神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "软组织及骨质破坏"
+    },
+    "text": "软组织及骨质破坏发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝功能不全"
+    },
+    "text": "肝功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "中重度肾功能不全"
+    },
+    "text": "中重度肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病微血管病变"
+    },
+    "text": "糖尿病微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾功能异常"
+    },
+    "text": "肝肾功能异常发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心脏事件"
+    },
+    "text": "心脏事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "短暂性脑缺血发作"
+    },
+    "text": "短暂性脑缺血发作发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "下盏结石"
+    },
+    "text": "下盏结石发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急慢性炎症损伤"
+    },
+    "text": "急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "腹型肥胖"
+    },
+    "text": "腹型肥胖发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖黄斑水肿"
+    },
+    "text": "糖黄斑水肿发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急慢性炎症损伤"
+    },
+    "text": "急慢性炎症损伤发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病下肢血管病变"
+    },
+    "text": "糖尿病下肢血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心、脑血管疾病"
+    },
+    "text": "心、脑血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "结缔组织病"
+    },
+    "text": "结缔组织病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性心衰"
+    },
+    "text": "慢性心衰发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "视网膜病"
+    },
+    "text": "视网膜病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足病"
+    },
+    "text": "足病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "血管病变"
+    },
+    "text": "血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "不稳定性心绞痛"
+    },
+    "text": "不稳定性心绞痛发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "新生血管性青光眼"
+    },
+    "text": "新生血管性青光眼发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能减退"
+    },
+    "text": "肾功能减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝或肾功能不全"
+    },
+    "text": "肝或肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病性微血管病变"
+    },
+    "text": "糖尿病性微血管病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "腰骶丛病变"
+    },
+    "text": "腰骶丛病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病大血管并发症"
+    },
+    "text": "糖尿病大血管并发症发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "轻中度肾功能不全"
+    },
+    "text": "轻中度肾功能不全发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心、脑血管事件"
+    },
+    "text": "心、脑血管事件发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "重度心衰"
+    },
+    "text": "重度心衰发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "小纤维神经病变"
+    },
+    "text": "小纤维神经病变发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝肾疾病"
+    },
+    "text": "肝肾疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "急慢性肾衰竭"
+    },
+    "text": "急慢性肾衰竭发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肝功能受损"
+    },
+    "text": "肝功能受损发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足背动脉搏动缺失"
+    },
+    "text": "足背动脉搏动缺失发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足或趾发生湿性或干性严重坏疽或坏死"
+    },
+    "text": "足或趾发生湿性或干性严重坏疽或坏死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "心功能NYHAⅡ~Ⅲ级"
+    },
+    "text": "心功能NYHAⅡ~Ⅲ级发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "动脉粥样硬化性心血管疾病"
+    },
+    "text": "动脉粥样硬化性心血管疾病发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾功能严重减退"
+    },
+    "text": "肾功能严重减退发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "糖尿病周围神经病(diabetic peripheral neuropathy，DPN)"
+    },
+    "text": "糖尿病周围神经病(diabetic peripheral neuropathy，DPN)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "慢性肾脏病(chronic kidney disease)"
+    },
+    "text": "慢性肾脏病(chronic kidney disease)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "足或趾发生湿性或干性严重坏疽或坏死"
+    },
+    "text": "足或趾发生湿性或干性严重坏疽或坏死发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "肾小球硬化症(基·威氏综合征)"
+    },
+    "text": "肾小球硬化症(基·威氏综合征)发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "anatomy_disease",
+    "slots": {
+      "disease": "胰腺癌"
+    },
+    "text": "胰腺癌发病的部位是哪里？"
   }
 ]
