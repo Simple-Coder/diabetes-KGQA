@@ -31634,5 +31634,709 @@
       "disease": "肥胖"
     },
     "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "维格列汀"
+    },
+    "text": "维格列汀用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列齐特缓释片"
+    },
+    "text": "格列齐特缓释片用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "盐酸沙格雷酯"
+    },
+    "text": "盐酸沙格雷酯用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列吡嗪控释剂"
+    },
+    "text": "格列吡嗪控释剂用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "贝前列腺素钠"
+    },
+    "text": "贝前列腺素钠用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "dulaglutide"
+    },
+    "text": "dulaglutide用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "控释(格列吡嗪)"
+    },
+    "text": "控释(格列吡嗪)用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列美脲"
+    },
+    "text": "格列美脲用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "阿司匹林"
+    },
+    "text": "阿司匹林用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "短效或速效胰岛素"
+    },
+    "text": "短效或速效胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "阿必鲁肽(albiglutide)"
+    },
+    "text": "阿必鲁肽(albiglutide)用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "基础-餐时胰岛素"
+    },
+    "text": "基础-餐时胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列吡嗪普通剂型"
+    },
+    "text": "格列吡嗪普通剂型用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "恩格列净"
+    },
+    "text": "恩格列净用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "利司那肽(lixisenatide)"
+    },
+    "text": "利司那肽(lixisenatide)用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列喹酮"
+    },
+    "text": "格列喹酮用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "西洛他唑"
+    },
+    "text": "西洛他唑用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "长效胰岛素"
+    },
+    "text": "长效胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "中性鱼精蛋白锌胰岛素"
+    },
+    "text": "中性鱼精蛋白锌胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "脂微球前列地尔注射液"
+    },
+    "text": "脂微球前列地尔注射液用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "缓释(格列齐特)"
+    },
+    "text": "缓释(格列齐特)用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "贝前列素钠"
+    },
+    "text": "贝前列素钠用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "碳酸氢钠(小苏打)"
+    },
+    "text": "碳酸氢钠(小苏打)用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "磺脲类促泌剂"
+    },
+    "text": "磺脲类促泌剂用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "达格列净"
+    },
+    "text": "达格列净用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "非布司他"
+    },
+    "text": "非布司他用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素类做物"
+    },
+    "text": "预混胰岛素类做物用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "艾塞那肽周制剂"
+    },
+    "text": "艾塞那肽周制剂用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列奈类促泌剂"
+    },
+    "text": "格列奈类促泌剂用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "西格列汀"
+    },
+    "text": "西格列汀用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "恩格列净"
+    },
+    "text": "恩格列净用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "沙格列汀"
+    },
+    "text": "沙格列汀用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混人胰岛素"
+    },
+    "text": "预混人胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "中效胰岛素"
+    },
+    "text": "中效胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "硫酸氢氯吡格雷"
+    },
+    "text": "硫酸氢氯吡格雷用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "卡格列净"
+    },
+    "text": "卡格列净用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "基础-餐时胰岛素"
+    },
+    "text": "基础-餐时胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列本脲"
+    },
+    "text": "格列本脲用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "二甲双胍"
+    },
+    "text": "二甲双胍用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "艾塞那肽"
+    },
+    "text": "艾塞那肽用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "格列齐特"
+    },
+    "text": "格列齐特用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "达格列净"
+    },
+    "text": "达格列净用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "胰岛素"
+    },
+    "text": "胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "预混胰岛素类物"
+    },
+    "text": "预混胰岛素类物用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "短效/速效胰岛素"
+    },
+    "text": "短效/速效胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "frequency_drug",
+    "slots": {
+      "drug": "基础+餐时胰岛素"
+    },
+    "text": "基础+餐时胰岛素用药频率是怎样呢？一天吃几次？"
   }
 ]
