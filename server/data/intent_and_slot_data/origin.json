@@ -15810,5 +15810,1397 @@
       "Disease": "孕前2型糖尿病"
     },
     "text": "孕前2型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "别嘌醇"
+    },
+    "text": "别嘌醇怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "基础量胰岛素"
+    },
+    "text": "基础量胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "卡格列净"
+    },
+    "text": "卡格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "别嘌醇"
+    },
+    "text": "别嘌醇怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "氢氯噻嗪"
+    },
+    "text": "氢氯噻嗪怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "50%葡萄糖液"
+    },
+    "text": "50%葡萄糖液怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "恩格列净"
+    },
+    "text": "恩格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列哇喹"
+    },
+    "text": "格列哇喹怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西洛他唑"
+    },
+    "text": "西洛他唑怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "泼尼松龙"
+    },
+    "text": "泼尼松龙怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列喹酮"
+    },
+    "text": "格列喹酮怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列喹酮"
+    },
+    "text": "格列喹酮怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "沙格列汀"
+    },
+    "text": "沙格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净(dapagliflozin)"
+    },
+    "text": "达格列净(dapagliflozin)怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "苯溴马隆"
+    },
+    "text": "苯溴马隆怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "氯吡格雷"
+    },
+    "text": "氯吡格雷怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "匹伐他汀"
+    },
+    "text": "匹伐他汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "苯溴马隆"
+    },
+    "text": "苯溴马隆怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "硫酸氢氯吡格雷"
+    },
+    "text": "硫酸氢氯吡格雷怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿格列汀"
+    },
+    "text": "阿格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "高纯度鱼油"
+    },
+    "text": "高纯度鱼油怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净(dapagliflozin)"
+    },
+    "text": "达格列净(dapagliflozin)怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西格列汀"
+    },
+    "text": "西格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "维格列汀"
+    },
+    "text": "维格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "那格列奈"
+    },
+    "text": "那格列奈怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "恩格列净"
+    },
+    "text": "恩格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "瑞格列奈"
+    },
+    "text": "瑞格列奈怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列美脲"
+    },
+    "text": "格列美脲怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "沙格列汀"
+    },
+    "text": "沙格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西格列汀"
+    },
+    "text": "西格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "50%葡萄糖"
+    },
+    "text": "50%葡萄糖怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "恩格列净"
+    },
+    "text": "恩格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "卡格列净"
+    },
+    "text": "卡格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列哇喹"
+    },
+    "text": "格列哇喹怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "枸橼酸氢钾钠"
+    },
+    "text": "枸橼酸氢钾钠怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西洛他唑"
+    },
+    "text": "西洛他唑怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿托伐他汀"
+    },
+    "text": "阿托伐他汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "恩格列净"
+    },
+    "text": "恩格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "盐酸沙格雷酯"
+    },
+    "text": "盐酸沙格雷酯怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净"
+    },
+    "text": "达格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西洛他唑"
+    },
+    "text": "西洛他唑怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "糖(g)：胰岛素(U)"
+    },
+    "text": "糖(g)：胰岛素(U)怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西格列汀"
+    },
+    "text": "西格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "那格列奈"
+    },
+    "text": "那格列奈怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "别嘌醇"
+    },
+    "text": "别嘌醇怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "短效胰岛素"
+    },
+    "text": "短效胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "恩格列净"
+    },
+    "text": "恩格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "西洛他唑"
+    },
+    "text": "西洛他唑怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净"
+    },
+    "text": "达格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列美脲"
+    },
+    "text": "格列美脲怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "辛伐他汀"
+    },
+    "text": "辛伐他汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "前列腺素E1制剂"
+    },
+    "text": "前列腺素E1制剂怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净"
+    },
+    "text": "达格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "泼尼松"
+    },
+    "text": "泼尼松怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "维格列汀"
+    },
+    "text": "维格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "比索洛尔"
+    },
+    "text": "比索洛尔怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "长效胰岛素类似物"
+    },
+    "text": "长效胰岛素类似物怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "脂微球前列地尔注射液"
+    },
+    "text": "脂微球前列地尔注射液怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "罗格列酮"
+    },
+    "text": "罗格列酮怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列喹酮"
+    },
+    "text": "格列喹酮怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "罗格列酮"
+    },
+    "text": "罗格列酮怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "格列哇喹"
+    },
+    "text": "格列哇喹怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净(dapagliflozin)"
+    },
+    "text": "达格列净(dapagliflozin)怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "生理盐水"
+    },
+    "text": "生理盐水怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "葡萄糖"
+    },
+    "text": "葡萄糖怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "碳酸氢钠(小苏打)"
+    },
+    "text": "碳酸氢钠(小苏打)怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "达格列净"
+    },
+    "text": "达格列净怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿司匹林"
+    },
+    "text": "阿司匹林怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "沙格列汀"
+    },
+    "text": "沙格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "非布司他"
+    },
+    "text": "非布司他怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "苯溴马隆"
+    },
+    "text": "苯溴马隆怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "阿格列汀"
+    },
+    "text": "阿格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "贝前列素钠"
+    },
+    "text": "贝前列素钠怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "别嘌醇"
+    },
+    "text": "别嘌醇怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "维格列汀"
+    },
+    "text": "维格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "苯溴马隆"
+    },
+    "text": "苯溴马隆怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "沙格列汀"
+    },
+    "text": "沙格列汀怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "中长效胰岛素"
+    },
+    "text": "中长效胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "碳酸氢钠"
+    },
+    "text": "碳酸氢钠怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "泼尼松"
+    },
+    "text": "泼尼松怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "长效胰岛素类似物"
+    },
+    "text": "长效胰岛素类似物怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "泼尼松"
+    },
+    "text": "泼尼松怎么吃，怎样的用药剂量？"
+  },
+  {
+    "id": 0,
+    "intent": "amount_drug",
+    "slots": {
+      "Drug": "泼尼松"
+    },
+    "text": "泼尼松怎么吃，怎样的用药剂量？"
   }
 ]
