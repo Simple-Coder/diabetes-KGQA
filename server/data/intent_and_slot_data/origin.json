@@ -28354,5 +28354,885 @@
       "drug": "DPP-4抑制剂"
     },
     "text": "DPP-4抑制剂有哪些不良反应、副作用？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "高脂血症"
+    },
+    "text": "高脂血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "慢性尿酸盐肾病"
+    },
+    "text": "慢性尿酸盐肾病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "动脉粥样硬化"
+    },
+    "text": "动脉粥样硬化发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "代谢异常"
+    },
+    "text": "代谢异常发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "感染"
+    },
+    "text": "感染发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "氮质血症"
+    },
+    "text": "氮质血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "1型糖尿病(type 1 diubetes mellitus)"
+    },
+    "text": "1型糖尿病(type 1 diubetes mellitus)发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "大血管、微血管病变"
+    },
+    "text": "大血管、微血管病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "动脉粥样硬化"
+    },
+    "text": "动脉粥样硬化发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "动脉粥样硬化"
+    },
+    "text": "动脉粥样硬化发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "高脂血症"
+    },
+    "text": "高脂血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "酮症"
+    },
+    "text": "酮症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "CKD3期"
+    },
+    "text": "CKD3期发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "NAFLD"
+    },
+    "text": "NAFLD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "代谢综合征"
+    },
+    "text": "代谢综合征发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病(type 2 diabetesmellius，T2DM)"
+    },
+    "text": "2型糖尿病(type 2 diabetesmellius，T2DM)发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "慢性尿酸盐肾病"
+    },
+    "text": "慢性尿酸盐肾病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病前周围神经病"
+    },
+    "text": "糖尿病前周围神经病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖病"
+    },
+    "text": "2型糖病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "低钾血症"
+    },
+    "text": "低钾血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "慢性尿酸盐肾病"
+    },
+    "text": "慢性尿酸盐肾病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病前周围神经病"
+    },
+    "text": "糖尿病前周围神经病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球病变"
+    },
+    "text": "肾小球病变发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "高脂血症"
+    },
+    "text": "高脂血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾血管损伤"
+    },
+    "text": "肾血管损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "继发性HUA"
+    },
+    "text": "继发性HUA发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "动脉粥样硬化"
+    },
+    "text": "动脉粥样硬化发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "氮质血症"
+    },
+    "text": "氮质血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "慢性尿酸盐肾病"
+    },
+    "text": "慢性尿酸盐肾病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "CVD"
+    },
+    "text": "CVD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾血管损伤"
+    },
+    "text": "肾血管损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "慢性尿酸盐肾病"
+    },
+    "text": "慢性尿酸盐肾病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "pathogenesis_disease",
+    "slots": {
+      "disease": "氮质血症"
+    },
+    "text": "氮质血症发病机制是什么？"
   }
 ]
