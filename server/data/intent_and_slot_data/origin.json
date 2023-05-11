@@ -25138,5 +25138,301 @@
       "disease": "胰腺癌"
     },
     "text": "胰腺癌发病的部位是哪里？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肾功能异常"
+    },
+    "text": "肾功能异常需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "结石"
+    },
+    "text": "结石需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "ASCVD急性期"
+    },
+    "text": "ASCVD急性期需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肢端坏疽"
+    },
+    "text": "肢端坏疽需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "溃疡"
+    },
+    "text": "溃疡需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "ESRD"
+    },
+    "text": "ESRD需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "CKD3、4期"
+    },
+    "text": "CKD3、4期需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "LEAD"
+    },
+    "text": "LEAD需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "肾功能异常"
+    },
+    "text": "肾功能异常需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "operation_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病需要做什么手术才能治疗？"
   }
 ]
