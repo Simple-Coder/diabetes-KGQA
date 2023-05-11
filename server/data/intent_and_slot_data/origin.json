@@ -13914,5 +13914,1901 @@
       "Disease": "CKD1~3a期"
     },
     "text": "CKD1~3a期有什么好治疗方式，可用的治疗药物？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD4~5期"
+    },
+    "text": "CKD4~5期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "妊娠期显性糖尿病"
+    },
+    "text": "妊娠期显性糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "Ⅲ-Ⅳ级充血性心力衰竭"
+    },
+    "text": "Ⅲ-Ⅳ级充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病(T2DM)"
+    },
+    "text": "2型糖尿病(T2DM)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能衰竭"
+    },
+    "text": "肾功能衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型糖尿病(type 1 diubetes mellitus)"
+    },
+    "text": "1型糖尿病(type 1 diubetes mellitus)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "顽固性高血压"
+    },
+    "text": "顽固性高血压有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "恶性肿瘤"
+    },
+    "text": "恶性肿瘤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "一过性类固醇诱导性糖尿病"
+    },
+    "text": "一过性类固醇诱导性糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病(CKD)"
+    },
+    "text": "慢性肾脏病(CKD)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "妊娠期高血糖"
+    },
+    "text": "妊娠期高血糖有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性阻塞性肺疾病"
+    },
+    "text": "慢性阻塞性肺疾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "中心性肥胖"
+    },
+    "text": "中心性肥胖有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能损害"
+    },
+    "text": "肾功能损害有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "重度肾功能不全"
+    },
+    "text": "重度肾功能不全有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3期"
+    },
+    "text": "CKD1~3期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病(type 2 diabetesmellius，T2DM)"
+    },
+    "text": "2型糖尿病(type 2 diabetesmellius，T2DM)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "心功能NYHAII~IV级"
+    },
+    "text": "心功能NYHAII~IV级有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "致死性和非致死性心肌梗死"
+    },
+    "text": "致死性和非致死性心肌梗死有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "纽约心脏病协会(NYHA)心功能Ⅱ级以上"
+    },
+    "text": "纽约心脏病协会(NYHA)心功能Ⅱ级以上有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型多发性内分泌肿瘤综合征患者(MEN2)"
+    },
+    "text": "2型多发性内分泌肿瘤综合征患者(MEN2)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "早期流产"
+    },
+    "text": "早期流产有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "混合型血脂异常"
+    },
+    "text": "混合型血脂异常有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1 型糖尿病"
+    },
+    "text": "1 型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "缺血性卒中急性期"
+    },
+    "text": "缺血性卒中急性期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "心功能NYHAⅡ~Ⅲ级"
+    },
+    "text": "心功能NYHAⅡ~Ⅲ级有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKDI~2期"
+    },
+    "text": "CKDI~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "妊娠期糖尿病"
+    },
+    "text": "妊娠期糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型DN"
+    },
+    "text": "1型DN有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~5期"
+    },
+    "text": "CKD1~5期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾病(CKD)"
+    },
+    "text": "慢性肾病(CKD)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非酒精性脂肪性肝炎(NASH)"
+    },
+    "text": "非酒精性脂肪性肝炎(NASH)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病患者"
+    },
+    "text": "2型糖尿病患者有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "重度心衰"
+    },
+    "text": "重度心衰有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "Ⅲ-Ⅳ级充血性心力衰竭"
+    },
+    "text": "Ⅲ-Ⅳ级充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性肝功能哀竭"
+    },
+    "text": "急性肝功能哀竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "妊娠前糖尿病"
+    },
+    "text": "妊娠前糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非致死性缺血性脑卒中"
+    },
+    "text": "非致死性缺血性脑卒中有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肝损伤"
+    },
+    "text": "肝损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3a期"
+    },
+    "text": "CKD1~3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性代谢紊乱"
+    },
+    "text": "急性代谢紊乱有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病前期"
+    },
+    "text": "糖尿病前期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD3、4期"
+    },
+    "text": "CKD3、4期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "恶性肿瘤"
+    },
+    "text": "恶性肿瘤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "终末期肾功能衰竭"
+    },
+    "text": "终末期肾功能衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾功能不全"
+    },
+    "text": "慢性肾功能不全有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能损害"
+    },
+    "text": "肾功能损害有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3期"
+    },
+    "text": "CKD1~3期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "痛性肌萎缩"
+    },
+    "text": "痛性肌萎缩有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性稳定性心绞痛"
+    },
+    "text": "慢性稳定性心绞痛有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型和1型糖尿病"
+    },
+    "text": "2型和1型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD3a期"
+    },
+    "text": "CKD3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病网膜病变"
+    },
+    "text": "糖尿病网膜病变有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖病"
+    },
+    "text": "2型糖病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "乙型和丙型肝炎"
+    },
+    "text": "乙型和丙型肝炎有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾性骨营养不良"
+    },
+    "text": "肾性骨营养不良有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "心功能Ⅲ-IV级"
+    },
+    "text": "心功能Ⅲ-IV级有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "妊娠期糖尿病(GDM)"
+    },
+    "text": "妊娠期糖尿病(GDM)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "失代偿性肝硬化"
+    },
+    "text": "失代偿性肝硬化有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型和1型糖尿病"
+    },
+    "text": "2型和1型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "代偿期肝硬化"
+    },
+    "text": "代偿期肝硬化有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD 1~2期"
+    },
+    "text": "CKD 1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "中重度慢性肾脏病"
+    },
+    "text": "中重度慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "晚期CKD"
+    },
+    "text": "晚期CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "充血性心力衰竭(CHF)"
+    },
+    "text": "充血性心力衰竭(CHF)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性胰腺炎"
+    },
+    "text": "急性胰腺炎有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型糖尿病微血管病变"
+    },
+    "text": "1型糖尿病微血管病变有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "妊娠糖尿病"
+    },
+    "text": "妊娠糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性心肌梗死"
+    },
+    "text": "急性心肌梗死有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "终末期肾病"
+    },
+    "text": "终末期肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "心功能NYHAⅡ~Ⅲ级"
+    },
+    "text": "心功能NYHAⅡ~Ⅲ级有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "不稳定型心绞痛"
+    },
+    "text": "不稳定型心绞痛有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病(type 2 diabetes mellitus)"
+    },
+    "text": "2型糖尿病(type 2 diabetes mellitus)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "T2DM患者"
+    },
+    "text": "T2DM患者有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "充血性心力衰竭"
+    },
+    "text": "充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "T2DDM"
+    },
+    "text": "T2DDM有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "晚期慢性肾脏病"
+    },
+    "text": "晚期慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "嵌压性周围神经病"
+    },
+    "text": "嵌压性周围神经病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "ASCVD急性期"
+    },
+    "text": "ASCVD急性期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "活动性肝病"
+    },
+    "text": "活动性肝病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病3a期"
+    },
+    "text": "慢性肾脏病3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "腹型肥胖"
+    },
+    "text": "腹型肥胖有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3a期"
+    },
+    "text": "CKD1~3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "混合性血脂异常"
+    },
+    "text": "混合性血脂异常有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "终末期肾脏疾病(ESRD)"
+    },
+    "text": "终末期肾脏疾病(ESRD)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "乙型和丙型肝炎"
+    },
+    "text": "乙型和丙型肝炎有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性稳定性心绞痛"
+    },
+    "text": "慢性稳定性心绞痛有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肝炎"
+    },
+    "text": "慢性肝炎有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD3期"
+    },
+    "text": "CKD3期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD4期"
+    },
+    "text": "CKD4期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "心力衰竭"
+    },
+    "text": "心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "轻中度肾功能不全"
+    },
+    "text": "轻中度肾功能不全有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3a期"
+    },
+    "text": "CKD1~3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD5期"
+    },
+    "text": "CKD5期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾衰竭"
+    },
+    "text": "慢性肾衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖员贮积症"
+    },
+    "text": "糖员贮积症有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "NYHA心功能Ⅱ~IV级"
+    },
+    "text": "NYHA心功能Ⅱ~IV级有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2糖尿病"
+    },
+    "text": "2糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能损害≥G2期"
+    },
+    "text": "肾功能损害≥G2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "高渗性脱水"
+    },
+    "text": "高渗性脱水有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型DM"
+    },
+    "text": "2型DM有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "A型胰岛素抵抗综合征"
+    },
+    "text": "A型胰岛素抵抗综合征有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "收缩期高血压"
+    },
+    "text": "收缩期高血压有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD3~4期"
+    },
+    "text": "CKD3~4期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型糖尿病(type 1 diubetes mellitus)"
+    },
+    "text": "1型糖尿病(type 1 diubetes mellitus)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "失代偿期肝硬化"
+    },
+    "text": "失代偿期肝硬化有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非酒精性脂肪性肝病"
+    },
+    "text": "非酒精性脂肪性肝病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "应激性高血糖"
+    },
+    "text": "应激性高血糖有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型和2型糖尿病"
+    },
+    "text": "1型和2型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病(type 2 diabetes mellitus，T2DM)"
+    },
+    "text": "2型糖尿病(type 2 diabetes mellitus，T2DM)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "缺血性卒中"
+    },
+    "text": "缺血性卒中有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非增殖型糖尿病视网膜病变(non-proli- ferative diabetic retinopathy，NPDR)"
+    },
+    "text": "非增殖型糖尿病视网膜病变(non-proli- ferative ,tic retinopathy，NPDR)有哪些分期类型？"
+  }
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性心力衰竭"
+    },
+    "text": "急性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "长度依赖性轴索性周围神经病"
+    },
+    "text": "长度依赖性轴索性周围神经病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "心功能NYHA Ⅲ-Ⅳ级"
+    },
+    "text": "心功能NYHA Ⅲ-Ⅳ级有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型尿病(type 2 diabetes mellitus，T2DM)"
+    },
+    "text": "2型尿病(type 2 diabetes mellitus，T2DM)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3期"
+    },
+    "text": "CKD1~3期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "中重度认知功能障碍"
+    },
+    "text": "中重度认知功能障碍有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非致死性卒中"
+    },
+    "text": "非致死性卒中有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急、慢性代谢性酸中毒"
+    },
+    "text": "急、慢性代谢性酸中毒有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾小球损伤"
+    },
+    "text": "肾小球损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "T1DM"
+    },
+    "text": "T1DM有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病3a期"
+    },
+    "text": "慢性肾脏病3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性炎性脱髓鞘性多发性神经根周围神经病"
+    },
+    "text": "慢性炎性脱髓鞘性多发性神经根周围神经病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "视网膜病变"
+    },
+    "text": "视网膜病变有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3a期"
+    },
+    "text": "CKD1~3a期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "成年型糖尿病(maturity-onset diabetes of the young，MODY)"
+    },
+    "text": "成年型糖尿病(maturity-onset diabetes of the young,)有哪些分期类型？"
+  }
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急、慢性代谢性酸中毒"
+    },
+    "text": "急、慢性代谢性酸中毒有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "围术期高血糖"
+    },
+    "text": "围术期高血糖有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病慢性肾脏病(CKD)"
+    },
+    "text": "糖尿病慢性肾脏病(CKD)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "一过性类固醇诱导性糖尿病"
+    },
+    "text": "一过性类固醇诱导性糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "视网膜病变"
+    },
+    "text": "视网膜病变有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "轻到中度肝功能受损"
+    },
+    "text": "轻到中度肝功能受损有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾病"
+    },
+    "text": "肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "血管性死亡"
+    },
+    "text": "血管性死亡有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "不稳定性心绞痛"
+    },
+    "text": "不稳定性心绞痛有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖调节受损(IGR，即糖尿病前期)"
+    },
+    "text": "糖调节受损(IGR，即糖尿病前期)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非酒精性脂肪性肝病"
+    },
+    "text": "非酒精性脂肪性肝病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "亚临床周围神经病变"
+    },
+    "text": "亚临床周围神经病变有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "混合性高脂血症"
+    },
+    "text": "混合性高脂血症有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "增殖型糖尿病视网膜病变(proliferative diabetic retinopathy，PDR)"
+    },
+    "text": "增殖型糖尿病视网膜病变(proliferative diabetic retino,，PDR)有哪些分期类型？"
+  }
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾脏终末期"
+    },
+    "text": "肾脏终末期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型多发性内分泌肿瘤综合征"
+    },
+    "text": "2型多发性内分泌肿瘤综合征有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "急性冠状动脉综合征(ACS)"
+    },
+    "text": "急性冠状动脉综合征(ACS)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD 1~2期"
+    },
+    "text": "CKD 1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~4期"
+    },
+    "text": "CKD1~4期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "中重度慢性肾脏病"
+    },
+    "text": "中重度慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "中、重度肾功能不全"
+    },
+    "text": "中、重度肾功能不全有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "多发性对称性周围神经病"
+    },
+    "text": "多发性对称性周围神经病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾功能损害"
+    },
+    "text": "肾功能损害有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "乳酸性酸中毒"
+    },
+    "text": "乳酸性酸中毒有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "充血性心力衰竭"
+    },
+    "text": "充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "短暂性脑缺血发作"
+    },
+    "text": "短暂性脑缺血发作有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "终末期肾病(end stage renal disease，ESRD)"
+    },
+    "text": "终末期肾病(end stage renal disease，ESRD)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "酒精性肝病"
+    },
+    "text": "酒精性肝病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2 型糖尿病"
+    },
+    "text": "2 型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~3期"
+    },
+    "text": "CKD1~3期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "肾损伤"
+    },
+    "text": "肾损伤有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~4期"
+    },
+    "text": "CKD1~4期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病(T2DM)"
+    },
+    "text": "2型糖尿病(T2DM)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "中度(3b级)和严重肾衰竭"
+    },
+    "text": "中度(3b级)和严重肾衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "1型和2型糖尿病"
+    },
+    "text": "1型和2型糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "终末期肾病(end-stage renal disease，ESRD)"
+    },
+    "text": "终末期肾病(end-stage renal disease，ESRD)有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "充血性心力衰竭"
+    },
+    "text": "充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "隐匿性糖尿病"
+    },
+    "text": "隐匿性糖尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "晚期慢性肾脏病"
+    },
+    "text": "晚期慢性肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD 4~5期"
+    },
+    "text": "CKD 4~5期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD1~2期"
+    },
+    "text": "CKD1~2期有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "远端对称性多发性周围神经病"
+    },
+    "text": "远端对称性多发性周围神经病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型尿病"
+    },
+    "text": "2型尿病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "老年T2DM"
+    },
+    "text": "老年T2DM有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "充血性心力衰竭"
+    },
+    "text": "充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "直立性低血压"
+    },
+    "text": "直立性低血压有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非致命性心梗"
+    },
+    "text": "非致命性心梗有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "非致死性心肌梗死"
+    },
+    "text": "非致死性心肌梗死有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "2型糖尿病肾脏病"
+    },
+    "text": "2型糖尿病肾脏病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "充血性心力衰竭"
+    },
+    "text": "充血性心力衰竭有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "局灶性非对称性周围神经病"
+    },
+    "text": "局灶性非对称性周围神经病有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "糖尿病性肌萎缩"
+    },
+    "text": "糖尿病性肌萎缩有哪些分期类型？"
+  },
+  {
+    "id": 0,
+    "intent": "class_disease",
+    "slots": {
+      "Disease": "孕前2型糖尿病"
+    },
+    "text": "孕前2型糖尿病有哪些分期类型？"
   }
 ]
