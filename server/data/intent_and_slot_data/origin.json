@@ -19210,5 +19210,1013 @@
       "Disease": "血管病变"
     },
     "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效胰岛素"
+    },
+    "text": "短效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "GLP-1受体激动剂"
+    },
+    "text": "GLP-1受体激动剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混人胰岛素"
+    },
+    "text": "预混人胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "甘精胰岛素"
+    },
+    "text": "甘精胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "脂微球前列地尔注射液"
+    },
+    "text": "脂微球前列地尔注射液的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "碘化对比剂"
+    },
+    "text": "碘化对比剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "磺脲类胰岛素促泌剂"
+    },
+    "text": "磺脲类胰岛素促泌剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "餐时胰岛素"
+    },
+    "text": "餐时胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "恩格列净"
+    },
+    "text": "恩格列净的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效胰岛素"
+    },
+    "text": "短效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混人胰岛素"
+    },
+    "text": "预混人胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "葡萄糖溶液"
+    },
+    "text": "葡萄糖溶液的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "枸橼酸氢钾钠颗粒"
+    },
+    "text": "枸橼酸氢钾钠颗粒的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "人胰岛素"
+    },
+    "text": "人胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "秋水仙碱"
+    },
+    "text": "秋水仙碱的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰素"
+    },
+    "text": "胰素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "α-葡萄糖苷酶抑制剂"
+    },
+    "text": "α-葡萄糖苷酶抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效或速效胰岛素"
+    },
+    "text": "短效或速效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "α-糖苷酶抑制剂"
+    },
+    "text": "α-糖苷酶抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素促泌剂"
+    },
+    "text": "胰岛素促泌剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "非胰岛素促泌剂类口服降糖药物"
+    },
+    "text": "非胰岛素促泌剂类口服降糖药物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "Xa因子和Ⅱa直接抑制剂"
+    },
+    "text": "Xa因子和Ⅱa直接抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "含糖液体"
+    },
+    "text": "含糖液体的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "贝前列腺素钠片"
+    },
+    "text": "贝前列腺素钠片的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "肠内外营养液"
+    },
+    "text": "肠内外营养液的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "坎格列净"
+    },
+    "text": "坎格列净的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "泼尼松"
+    },
+    "text": "泼尼松的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "枸橼酸合剂"
+    },
+    "text": "枸橼酸合剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "脉岛素"
+    },
+    "text": "脉岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "口服避孕药"
+    },
+    "text": "口服避孕药的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效磺脲类促泌剂"
+    },
+    "text": "短效磺脲类促泌剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二肽基肽酶4(DPP-4)抑制剂"
+    },
+    "text": "二肽基肽酶4(DPP-4)抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "常规胰岛素"
+    },
+    "text": "常规胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "避孕药"
+    },
+    "text": "避孕药的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "艾塞那肽"
+    },
+    "text": "艾塞那肽的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "中效胰岛素"
+    },
+    "text": "中效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "5%~10%葡萄糖液"
+    },
+    "text": "5%~10%葡萄糖液的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "速效胰岛素类似物"
+    },
+    "text": "速效胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "磺脲类"
+    },
+    "text": "磺脲类的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "格列奈类口服降糖药"
+    },
+    "text": "格列奈类口服降糖药的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效胰岛素"
+    },
+    "text": "短效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "效胰岛素似物"
+    },
+    "text": "效胰岛素似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "葡萄糖"
+    },
+    "text": "葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "基础-餐时胰岛素"
+    },
+    "text": "基础-餐时胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效或速效胰岛素"
+    },
+    "text": "短效或速效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "长效胰岛素"
+    },
+    "text": "长效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混胰岛素"
+    },
+    "text": "预混胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "格列奈类促泌剂"
+    },
+    "text": "格列奈类促泌剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "葡萄糖"
+    },
+    "text": "葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "糖皮质激素"
+    },
+    "text": "糖皮质激素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二肽基肽酶-4(dipeptidyl peptidase-4，DPP-4)抑制剂"
+    },
+    "text": "二肽基肽酶-4(dipeptidyl peptidase-4，DPP-4)抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "葡萄糖"
+    },
+    "text": "葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "DPP-4抑制剂"
+    },
+    "text": "DPP-4抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二肽基肽酶一4(DPP-4)抑制剂"
+    },
+    "text": "二肽基肽酶一4(DPP-4)抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "SGLT2抑制剂"
+    },
+    "text": "SGLT2抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "速效胰岛素"
+    },
+    "text": "速效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "50%葡萄糖液"
+    },
+    "text": "50%葡萄糖液的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "噻唑烷二酮类"
+    },
+    "text": "噻唑烷二酮类的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "利拉鲁肽"
+    },
+    "text": "利拉鲁肽的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "50%葡萄糖"
+    },
+    "text": "50%葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "基胰岛素"
+    },
+    "text": "基胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "葡萄糖"
+    },
+    "text": "葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "预混胰岛素类似物"
+    },
+    "text": "预混胰岛素类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰高血糖素样肽1类似物"
+    },
+    "text": "胰高血糖素样肽1类似物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "5%或10%葡萄糖"
+    },
+    "text": "5%或10%葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "糖苷酶抑制剂"
+    },
+    "text": "糖苷酶抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "达格列净"
+    },
+    "text": "达格列净的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效糖皮质激素"
+    },
+    "text": "短效糖皮质激素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "碳酸氢钠(小苏打)"
+    },
+    "text": "碳酸氢钠(小苏打)的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "阿卡波糖"
+    },
+    "text": "阿卡波糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "格列奈类"
+    },
+    "text": "格列奈类的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效胰岛素"
+    },
+    "text": "短效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "中效胰岛素"
+    },
+    "text": "中效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "中长效胰岛素"
+    },
+    "text": "中长效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "尿酸"
+    },
+    "text": "尿酸的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "基础胰岛素"
+    },
+    "text": "基础胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效人胰岛素"
+    },
+    "text": "短效人胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "二甲双胍"
+    },
+    "text": "二甲双胍的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效胰升血糖素样肽-1(GLP-1)受体激动剂"
+    },
+    "text": "短效胰升血糖素样肽-1(GLP-1)受体激动剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效胰岛素"
+    },
+    "text": "短效胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "SGLT2i"
+    },
+    "text": "SGLT2i的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "格列奈类"
+    },
+    "text": "格列奈类的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "钠-葡萄糖共转运蛋白2抑制剂"
+    },
+    "text": "钠-葡萄糖共转运蛋白2抑制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "葡萄糖"
+    },
+    "text": "葡萄糖的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "短效糖皮质激素"
+    },
+    "text": "短效糖皮质激素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "钠-葡萄糖共转运蛋白2抑制剂(SGLT2i)"
+    },
+    "text": "钠-葡萄糖共转运蛋白2抑制剂(SGLT2i)的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "磺脲类药物"
+    },
+    "text": "磺脲类药物的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "胰岛素"
+    },
+    "text": "胰岛素的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "贝前列素钠"
+    },
+    "text": "贝前列素钠的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "碘化造影剂"
+    },
+    "text": "碘化造影剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "前列腺素E1制剂"
+    },
+    "text": "前列腺素E1制剂的用药方法，用药方式是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "drug_method",
+    "slots": {
+      "Drug": "格列喹酮"
+    },
+    "text": "格列喹酮的用药方法，用药方式是什么？"
   }
 ]
