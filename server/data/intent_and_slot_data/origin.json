@@ -29234,5 +29234,2405 @@
       "disease": "氮质血症"
     },
     "text": "氮质血症发病机制是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "IGT"
+    },
+    "text": "IGT有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "视网膜病变"
+    },
+    "text": "视网膜病变有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "感染"
+    },
+    "text": "感染有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "蛋白尿"
+    },
+    "text": "蛋白尿有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病微血管病变"
+    },
+    "text": "糖尿病微血管病变有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "冠心病"
+    },
+    "text": "冠心病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "ESRD"
+    },
+    "text": "ESRD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "lGT"
+    },
+    "text": "lGT有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "妊娠期高血糖"
+    },
+    "text": "妊娠期高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "代谢并发症"
+    },
+    "text": "代谢并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "尿路结石"
+    },
+    "text": "尿路结石有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肿瘤"
+    },
+    "text": "肿瘤有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD4~5期"
+    },
+    "text": "CKD4~5期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "1型糖尿病微血管病变"
+    },
+    "text": "1型糖尿病微血管病变有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "失明"
+    },
+    "text": "失明有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "慢性肾病"
+    },
+    "text": "慢性肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高脂血症"
+    },
+    "text": "高脂血症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "lGT"
+    },
+    "text": "lGT有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾损伤"
+    },
+    "text": "肾损伤有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD3~4期"
+    },
+    "text": "CKD3~4期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "NPDR"
+    },
+    "text": "NPDR有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾石症"
+    },
+    "text": "肾石症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "轻度认知功能障碍"
+    },
+    "text": "轻度认知功能障碍有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "代谢综合征"
+    },
+    "text": "代谢综合征有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖代谢紊乱"
+    },
+    "text": "糖代谢紊乱有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "lGT"
+    },
+    "text": "lGT有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "DR"
+    },
+    "text": "DR有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "直立性低血压"
+    },
+    "text": "直立性低血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病前期"
+    },
+    "text": "糖尿病前期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "妊娠期糖尿病"
+    },
+    "text": "妊娠期糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病前期"
+    },
+    "text": "糖尿病前期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖症"
+    },
+    "text": "肥胖症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "代谢综合征"
+    },
+    "text": "代谢综合征有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肿瘤"
+    },
+    "text": "肿瘤有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高脂血症"
+    },
+    "text": "高脂血症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "DR"
+    },
+    "text": "DR有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "感染"
+    },
+    "text": "感染有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "急性胰腺炎"
+    },
+    "text": "急性胰腺炎有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "下肢动脉病变"
+    },
+    "text": "下肢动脉病变有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD3、4期"
+    },
+    "text": "CKD3、4期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PDR"
+    },
+    "text": "PDR有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病前期"
+    },
+    "text": "糖尿病前期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "lGT"
+    },
+    "text": "lGT有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD5期"
+    },
+    "text": "CKD5期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "间歇性跛行"
+    },
+    "text": "间歇性跛行有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "终末期肾病"
+    },
+    "text": "终末期肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "终末期肾脏疾病(ESRD)"
+    },
+    "text": "终末期肾脏疾病(ESRD)有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "感染"
+    },
+    "text": "感染有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "ESRD"
+    },
+    "text": "ESRD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "白蛋白尿"
+    },
+    "text": "白蛋白尿有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "水、电解质酸碱平衡紊乱"
+    },
+    "text": "水、电解质酸碱平衡紊乱有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高脂血症"
+    },
+    "text": "高脂血症有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病前期"
+    },
+    "text": "糖尿病前期有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肾石"
+    },
+    "text": "肾石有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些不吃药的治疗方法？"
+  },
+  {
+    "id": 0,
+    "intent": "treatment_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些不吃药的治疗方法？"
   }
 ]
