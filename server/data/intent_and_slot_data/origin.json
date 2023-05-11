@@ -36978,5 +36978,2165 @@
       "disease": "肥胖"
     },
     "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "中枢神经系统感觉通路病变"
+    },
+    "text": "中枢神经系统感觉通路病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病心肌病变"
+    },
+    "text": "糖尿病心肌病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "中枢神经系统感觉通路病变"
+    },
+    "text": "中枢神经系统感觉通路病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "足溃疡"
+    },
+    "text": "足溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "中枢神经系统感觉通路病变"
+    },
+    "text": "中枢神经系统感觉通路病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病周围血管病"
+    },
+    "text": "糖尿病周围血管病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞性疾病"
+    },
+    "text": "慢性动脉闭塞性疾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "皮肤病变"
+    },
+    "text": "皮肤病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "心脏自主神经病变"
+    },
+    "text": "心脏自主神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病周围血管病"
+    },
+    "text": "糖尿病周围血管病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围血液供应不足"
+    },
+    "text": "周围血液供应不足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病心肌病变"
+    },
+    "text": "糖尿病心肌病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "蜂窝织炎"
+    },
+    "text": "蜂窝织炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "肾小球硬化"
+    },
+    "text": "肾小球硬化的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "卒中"
+    },
+    "text": "卒中的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "心脏自主神经病变"
+    },
+    "text": "心脏自主神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "脊髓病变"
+    },
+    "text": "脊髓病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石沉积"
+    },
+    "text": "痛风石沉积的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "LEAD"
+    },
+    "text": "LEAD的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞性疾病"
+    },
+    "text": "慢性动脉闭塞性疾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "视网膜病变"
+    },
+    "text": "视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "蜂窝织炎"
+    },
+    "text": "蜂窝织炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足病"
+    },
+    "text": "糖尿病足病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏死性筋膜炎"
+    },
+    "text": "坏死性筋膜炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "血瘀型糖尿病周围神经病变"
+    },
+    "text": "血瘀型糖尿病周围神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "骨筋膜间室综合征"
+    },
+    "text": "骨筋膜间室综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "皮肤病变"
+    },
+    "text": "皮肤病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病周围血管病"
+    },
+    "text": "糖尿病周围血管病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围神经病变"
+    },
+    "text": "周围神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "卒中"
+    },
+    "text": "卒中的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏死肢体感染"
+    },
+    "text": "坏死肢体感染的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "卒中"
+    },
+    "text": "卒中的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "周围血液供应不足"
+    },
+    "text": "周围血液供应不足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "心脏自主神经病变"
+    },
+    "text": "心脏自主神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏疽"
+    },
+    "text": "坏疽的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "血管病变"
+    },
+    "text": "血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石沉积"
+    },
+    "text": "痛风石沉积的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "早期急性关节炎"
+    },
+    "text": "早期急性关节炎的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "肌肉组织夹心样坏死"
+    },
+    "text": "肌肉组织夹心样坏死的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "感染"
+    },
+    "text": "感染的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖代谢紊乱"
+    },
+    "text": "糖代谢紊乱的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "缺血"
+    },
+    "text": "缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏疽"
+    },
+    "text": "坏疽的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "阿尔茨海默病"
+    },
+    "text": "阿尔茨海默病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "湿性或干性坏疽"
+    },
+    "text": "湿性或干性坏疽的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "单纯缺血性溃疡"
+    },
+    "text": "单纯缺血性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石"
+    },
+    "text": "痛风石的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞性疾病"
+    },
+    "text": "慢性动脉闭塞性疾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "足溃疡"
+    },
+    "text": "足溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "尿路梗阻"
+    },
+    "text": "尿路梗阻的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "坏疽"
+    },
+    "text": "坏疽的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "足溃疡"
+    },
+    "text": "足溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "皮肤病变"
+    },
+    "text": "皮肤病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "尿路梗阻"
+    },
+    "text": "尿路梗阻的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "急性心力衰竭"
+    },
+    "text": "急性心力衰竭的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "OSAHS"
+    },
+    "text": "OSAHS的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "脊髓病变"
+    },
+    "text": "脊髓病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "中枢神经系统感觉通路病变"
+    },
+    "text": "中枢神经系统感觉通路病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "颅神经病变"
+    },
+    "text": "颅神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性糖尿病"
+    },
+    "text": "慢性糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "痛风石沉积"
+    },
+    "text": "痛风石沉积的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病神经病变"
+    },
+    "text": "糖尿病神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经病变"
+    },
+    "text": "神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "皮肤病变"
+    },
+    "text": "皮肤病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "老年综合征"
+    },
+    "text": "老年综合征的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "心脏自主神经病变"
+    },
+    "text": "心脏自主神经病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "视网膜病变"
+    },
+    "text": "视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "尿路梗阻"
+    },
+    "text": "尿路梗阻的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "湿性或干性坏疽"
+    },
+    "text": "湿性或干性坏疽的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "皮肤病变"
+    },
+    "text": "皮肤病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "视网膜病变"
+    },
+    "text": "视网膜病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "骨质疏松症"
+    },
+    "text": "骨质疏松症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "神经性溃疡"
+    },
+    "text": "神经性溃疡的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "中枢神经系统感觉通路病变"
+    },
+    "text": "中枢神经系统感觉通路病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "下肢缺血"
+    },
+    "text": "下肢缺血的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病性周围血管病变"
+    },
+    "text": "糖尿病性周围血管病变的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞症"
+    },
+    "text": "慢性动脉闭塞症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "慢性动脉闭塞性疾病"
+    },
+    "text": "慢性动脉闭塞性疾病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病的症状表现是怎样的呢，有哪些临床表现？"
+  },
+  {
+    "id": 0,
+    "intent": "symptom_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA的症状表现是怎样的呢，有哪些临床表现？"
   }
 ]
