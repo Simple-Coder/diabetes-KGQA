@@ -32338,5 +32338,4645 @@
       "drug": "基础+餐时胰岛素"
     },
     "text": "基础+餐时胰岛素用药频率是怎样呢？一天吃几次？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高TG血症"
+    },
+    "text": "高TG血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝炎"
+    },
+    "text": "肝炎有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脏器功能异常"
+    },
+    "text": "脏器功能异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD4~5期"
+    },
+    "text": "CKD4~5期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T1DM"
+    },
+    "text": "T1DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾脏病3a期"
+    },
+    "text": "慢性肾脏病3a期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "冠心病"
+    },
+    "text": "冠心病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "应激性高血糖"
+    },
+    "text": "应激性高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病(type 2 diabetesmellius，T2DM)"
+    },
+    "text": "2型糖尿病(type 2 diabetesmellius，T2DM)有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾病"
+    },
+    "text": "慢性肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心脑血管病变"
+    },
+    "text": "心脑血管病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型尿病"
+    },
+    "text": "2型尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "巨大儿"
+    },
+    "text": "巨大儿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "大血管粥样硬化"
+    },
+    "text": "大血管粥样硬化有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "代谢紊乱"
+    },
+    "text": "代谢紊乱有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ESRD"
+    },
+    "text": "ESRD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "腰骶丛病变"
+    },
+    "text": "腰骶丛病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝损害"
+    },
+    "text": "肝损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T1DM"
+    },
+    "text": "T1DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高胆红素血症"
+    },
+    "text": "高胆红素血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾脏损害"
+    },
+    "text": "肾脏损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "急性胰腺炎"
+    },
+    "text": "急性胰腺炎有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血管事件"
+    },
+    "text": "血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝损害"
+    },
+    "text": "肝损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠前糖尿病"
+    },
+    "text": "妊娠前糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性并发症"
+    },
+    "text": "糖尿病慢性并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "恶性肿瘤"
+    },
+    "text": "恶性肿瘤有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病酮症酸中毒"
+    },
+    "text": "糖尿病酮症酸中毒有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血脂异常"
+    },
+    "text": "血脂异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管死亡"
+    },
+    "text": "心血管死亡有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "氮质血症"
+    },
+    "text": "氮质血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能损害"
+    },
+    "text": "肾功能损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "视力障碍"
+    },
+    "text": "视力障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "甲状腺功能减退症"
+    },
+    "text": "甲状腺功能减退症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型和1型糖尿病"
+    },
+    "text": "2型和1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "冠脉事件"
+    },
+    "text": "冠脉事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病微血管病变"
+    },
+    "text": "糖尿病微血管病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低钾血症"
+    },
+    "text": "低钾血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾功能不全"
+    },
+    "text": "慢性肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "stress-induced hyperglycemia"
+    },
+    "text": "stress-induced hyperglycemia有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心脑血管病变"
+    },
+    "text": "心脑血管病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "IGT"
+    },
+    "text": "IGT有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "大血管事件"
+    },
+    "text": "大血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "严重肾功能不全"
+    },
+    "text": "严重肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CVD"
+    },
+    "text": "CVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "缺血性卒中"
+    },
+    "text": "缺血性卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高TG血症"
+    },
+    "text": "高TG血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "代谢不稳定"
+    },
+    "text": "代谢不稳定有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血脂异常"
+    },
+    "text": "血脂异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心功能NYHA Ⅲ-Ⅳ级"
+    },
+    "text": "心功能NYHA Ⅲ-Ⅳ级有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "单纯高甘油三酯血症"
+    },
+    "text": "单纯高甘油三酯血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "白蛋白尿"
+    },
+    "text": "白蛋白尿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "晚期慢性肾脏病"
+    },
+    "text": "晚期慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "卒中"
+    },
+    "text": "卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病妊娠"
+    },
+    "text": "糖尿病妊娠有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "无感知低血糖"
+    },
+    "text": "无感知低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾病"
+    },
+    "text": "慢性肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "认知功能障碍"
+    },
+    "text": "认知功能障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "蛋白尿"
+    },
+    "text": "蛋白尿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高TG血症"
+    },
+    "text": "高TG血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "白蛋白尿"
+    },
+    "text": "白蛋白尿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD3a期"
+    },
+    "text": "CKD3a期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病患者"
+    },
+    "text": "2型糖尿病患者有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "排尿困难"
+    },
+    "text": "排尿困难有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心脑血管疾病"
+    },
+    "text": "心脑血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖代谢异常"
+    },
+    "text": "糖代谢异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血脂异常"
+    },
+    "text": "血脂异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病(CVD)"
+    },
+    "text": "心血管疾病(CVD)有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD4~5期"
+    },
+    "text": "CKD4~5期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "认知功能障碍"
+    },
+    "text": "认知功能障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能损害≥G2期"
+    },
+    "text": "肾功能损害≥G2期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血管性死亡"
+    },
+    "text": "血管性死亡有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖昏迷"
+    },
+    "text": "低血糖昏迷有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾病(CKD)"
+    },
+    "text": "慢性肾病(CKD)有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾脏病"
+    },
+    "text": "糖尿病肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心力衰竭"
+    },
+    "text": "心力衰竭有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "氮质血症"
+    },
+    "text": "氮质血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "贫血"
+    },
+    "text": "贫血有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病(cardiovascular disease，CVD)"
+    },
+    "text": "心血管疾病(cardiovascular disease，CVD)有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "巨大儿"
+    },
+    "text": "巨大儿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "阿尔茨海默病"
+    },
+    "text": "阿尔茨海默病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性并发症"
+    },
+    "text": "糖尿病慢性并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠前糖尿病"
+    },
+    "text": "妊娠前糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血脂异常"
+    },
+    "text": "血脂异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "冠心病"
+    },
+    "text": "冠心病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病急性并发症"
+    },
+    "text": "糖尿病急性并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠糖尿病"
+    },
+    "text": "妊娠糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "精神或智力障碍"
+    },
+    "text": "精神或智力障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "发热"
+    },
+    "text": "发热有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高尿酸血症"
+    },
+    "text": "高尿酸血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠期糖尿病"
+    },
+    "text": "妊娠期糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管死亡"
+    },
+    "text": "心血管死亡有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝肾功能减退"
+    },
+    "text": "肝肾功能减退有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管及代谢性疾病"
+    },
+    "text": "心血管及代谢性疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "终末期肾病"
+    },
+    "text": "终末期肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "尿酸性肾结石"
+    },
+    "text": "尿酸性肾结石有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高胆红素血症"
+    },
+    "text": "高胆红素血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD4~5期"
+    },
+    "text": "CKD4~5期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD4~5期"
+    },
+    "text": "CKD4~5期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脑梗死"
+    },
+    "text": "脑梗死有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾脏病"
+    },
+    "text": "肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血脂异常"
+    },
+    "text": "血脂异常有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "中、重度肾功能不全"
+    },
+    "text": "中、重度肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性并发症"
+    },
+    "text": "糖尿病慢性并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾脏疾病"
+    },
+    "text": "慢性肾脏疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝功能严重受损"
+    },
+    "text": "肝功能严重受损有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PGDM"
+    },
+    "text": "PGDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高TG血症"
+    },
+    "text": "高TG血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病足"
+    },
+    "text": "糖尿病足有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "酮症"
+    },
+    "text": "酮症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DR"
+    },
+    "text": "DR有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "中度肾功能不全"
+    },
+    "text": "中度肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "应激性高血糖"
+    },
+    "text": "应激性高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "贫血"
+    },
+    "text": "贫血有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性并发症"
+    },
+    "text": "糖尿病慢性并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "卒中"
+    },
+    "text": "卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "急性缺血性卒中"
+    },
+    "text": "急性缺血性卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ESRD"
+    },
+    "text": "ESRD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性发症"
+    },
+    "text": "糖尿病慢性发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病微血管并发症"
+    },
+    "text": "糖尿病微血管并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "IGT"
+    },
+    "text": "IGT有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "难治性感染"
+    },
+    "text": "难治性感染有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "蛋白尿"
+    },
+    "text": "蛋白尿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "腰骶丛病变"
+    },
+    "text": "腰骶丛病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型DN"
+    },
+    "text": "1型DN有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血栓"
+    },
+    "text": "血栓有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "酮血症"
+    },
+    "text": "酮血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脑梗死"
+    },
+    "text": "脑梗死有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病微血管并发症"
+    },
+    "text": "糖尿病微血管并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "精神或智力障碍"
+    },
+    "text": "精神或智力障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "卒中"
+    },
+    "text": "卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脑损伤"
+    },
+    "text": "脑损伤有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高尿酸血症"
+    },
+    "text": "高尿酸血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "冠心病"
+    },
+    "text": "冠心病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠高血糖"
+    },
+    "text": "妊娠高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "下肢动脉钙化"
+    },
+    "text": "下肢动脉钙化有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "神经系统疾病"
+    },
+    "text": "神经系统疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脑血管疾病"
+    },
+    "text": "脑血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "中重度慢性肾脏病"
+    },
+    "text": "中重度慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DDM"
+    },
+    "text": "T2DDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "视力障碍"
+    },
+    "text": "视力障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心肌梗死"
+    },
+    "text": "心肌梗死有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管事件"
+    },
+    "text": "心血管事件有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "晚期CKD"
+    },
+    "text": "晚期CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心功能Ⅲ-IV级"
+    },
+    "text": "心功能Ⅲ-IV级有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝功能障碍"
+    },
+    "text": "肝功能障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "代谢不稳定"
+    },
+    "text": "代谢不稳定有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠前糖尿病"
+    },
+    "text": "妊娠前糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "感染"
+    },
+    "text": "感染有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD3a期"
+    },
+    "text": "CKD3a期有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病并发症"
+    },
+    "text": "糖尿病并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能受损"
+    },
+    "text": "肾功能受损有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性发症"
+    },
+    "text": "糖尿病慢性发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "恶性肿瘤伴有转移"
+    },
+    "text": "恶性肿瘤伴有转移有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "痛风"
+    },
+    "text": "痛风有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "神经退行性疾病"
+    },
+    "text": "神经退行性疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "溶血"
+    },
+    "text": "溶血有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "周围神经病"
+    },
+    "text": "周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DPN"
+    },
+    "text": "DPN有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "冠心病"
+    },
+    "text": "冠心病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "自身免疫性多腺体病"
+    },
+    "text": "自身免疫性多腺体病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝损害"
+    },
+    "text": "肝损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血脂"
+    },
+    "text": "高血脂有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "妊娠前糖尿病"
+    },
+    "text": "妊娠前糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "IFG"
+    },
+    "text": "IFG有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "痛风性关节炎"
+    },
+    "text": "痛风性关节炎有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "单纯高甘油三酯血症"
+    },
+    "text": "单纯高甘油三酯血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "血管损伤"
+    },
+    "text": "血管损伤有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "神经系统疾病"
+    },
+    "text": "神经系统疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能损害"
+    },
+    "text": "肾功能损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ASCVD"
+    },
+    "text": "ASCVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "动脉硬化性心血管疾病"
+    },
+    "text": "动脉硬化性心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "长度依赖性轴索性周围神经病"
+    },
+    "text": "长度依赖性轴索性周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "甲状腺功能低下"
+    },
+    "text": "甲状腺功能低下有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "溶血"
+    },
+    "text": "溶血有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "下肢动脉病变"
+    },
+    "text": "下肢动脉病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝肾功能不全"
+    },
+    "text": "肝肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "嵌压性周围神经病"
+    },
+    "text": "嵌压性周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血压"
+    },
+    "text": "高血压有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病慢性并发症"
+    },
+    "text": "糖尿病慢性并发症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "晚期CKD"
+    },
+    "text": "晚期CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "单神经病"
+    },
+    "text": "单神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "中重度认知功能障碍"
+    },
+    "text": "中重度认知功能障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "慢性心衰"
+    },
+    "text": "慢性心衰有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "急性缺血性卒中"
+    },
+    "text": "急性缺血性卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "氮质血症"
+    },
+    "text": "氮质血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "应激性高血糖"
+    },
+    "text": "应激性高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "急性代谢紊乱"
+    },
+    "text": "急性代谢紊乱有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "轻度认知功能障碍"
+    },
+    "text": "轻度认知功能障碍有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝损害"
+    },
+    "text": "肝损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高尿酸血症"
+    },
+    "text": "高尿酸血症有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "超重"
+    },
+    "text": "超重有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心脑血管病变"
+    },
+    "text": "心脑血管病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "心血管疾病"
+    },
+    "text": "心血管疾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "急性尿酸性肾病"
+    },
+    "text": "急性尿酸性肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾病"
+    },
+    "text": "肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "晚期慢性肾脏病"
+    },
+    "text": "晚期慢性肾脏病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脑梗死"
+    },
+    "text": "脑梗死有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "缺血性卒中"
+    },
+    "text": "缺血性卒中有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "终末期肾病"
+    },
+    "text": "终末期肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病酮症酸中毒"
+    },
+    "text": "糖尿病酮症酸中毒有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "全因死亡"
+    },
+    "text": "全因死亡有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能损害"
+    },
+    "text": "肾功能损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKD"
+    },
+    "text": "DKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血脂"
+    },
+    "text": "高血脂有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肝损害"
+    },
+    "text": "肝损害有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "白蛋白尿"
+    },
+    "text": "白蛋白尿有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "脆性糖尿病"
+    },
+    "text": "脆性糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "GDM"
+    },
+    "text": "GDM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "无症状性脑梗死"
+    },
+    "text": "无症状性脑梗死有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "长度依赖性轴索性周围神经病"
+    },
+    "text": "长度依赖性轴索性周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "低血糖"
+    },
+    "text": "低血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CVD"
+    },
+    "text": "CVD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "NAFLD"
+    },
+    "text": "NAFLD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "动脉粥样硬化"
+    },
+    "text": "动脉粥样硬化有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "帕金森病"
+    },
+    "text": "帕金森病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "HUA"
+    },
+    "text": "HUA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "大血管、微血管病变"
+    },
+    "text": "大血管、微血管病变有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "DKA"
+    },
+    "text": "DKA有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "嵌压性周围神经病"
+    },
+    "text": "嵌压性周围神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "单神经病"
+    },
+    "text": "单神经病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "尿路结石"
+    },
+    "text": "尿路结石有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "T2DM"
+    },
+    "text": "T2DM有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "ACS"
+    },
+    "text": "ACS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "CKD"
+    },
+    "text": "CKD有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "糖尿病"
+    },
+    "text": "糖尿病有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肾功能不全"
+    },
+    "text": "肾功能不全有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "PCOS"
+    },
+    "text": "PCOS有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "高血糖"
+    },
+    "text": "高血糖有哪些检查指标可参考？"
+  },
+  {
+    "id": 0,
+    "intent": "test_items_disease",
+    "slots": {
+      "disease": "肥胖"
+    },
+    "text": "肥胖有哪些检查指标可参考？"
   }
 ]
