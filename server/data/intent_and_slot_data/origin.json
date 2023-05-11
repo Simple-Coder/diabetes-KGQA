@@ -6346,5 +6346,1405 @@
     "intent": "others",
     "slots": {},
     "text": "足畸形怎么治疗？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "体重过低"
+    },
+    "text": "体重过低的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心力衰竭"
+    },
+    "text": "心力衰竭的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "造影剂相关急性肾损伤"
+    },
+    "text": "造影剂相关急性肾损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "出球动脉透明变性"
+    },
+    "text": "出球动脉透明变性的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "骨髓炎"
+    },
+    "text": "骨髓炎的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病急性并发症"
+    },
+    "text": "糖尿病急性并发症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾小球病变"
+    },
+    "text": "肾小球病变的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肌肉存量衰减型肥胖"
+    },
+    "text": "肌肉存量衰减型肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心血管事件"
+    },
+    "text": "心血管事件的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病微血管并发症"
+    },
+    "text": "糖尿病微血管并发症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期DKA"
+    },
+    "text": "妊娠期DKA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "尿路梗阻"
+    },
+    "text": "尿路梗阻的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "体重过低"
+    },
+    "text": "体重过低的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "酮症"
+    },
+    "text": "酮症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期DKA"
+    },
+    "text": "妊娠期DKA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "假关节"
+    },
+    "text": "假关节的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾积水"
+    },
+    "text": "肾积水的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾损伤"
+    },
+    "text": "肾损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "急性胰腺炎"
+    },
+    "text": "急性胰腺炎的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "体重过低"
+    },
+    "text": "体重过低的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心肺功能下降"
+    },
+    "text": "心肺功能下降的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾小管萎缩"
+    },
+    "text": "肾小管萎缩的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾小管间质、肾微血管病变"
+    },
+    "text": "肾小管间质、肾微血管病变的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "少肌症"
+    },
+    "text": "少肌症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾衰竭"
+    },
+    "text": "慢性肾衰竭的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "感染"
+    },
+    "text": "感染的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "早期流产"
+    },
+    "text": "早期流产的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "体重增加"
+    },
+    "text": "体重增加的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "湿性或干性坏疽"
+    },
+    "text": "湿性或干性坏疽的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "高血压"
+    },
+    "text": "高血压的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "Charcot关节病"
+    },
+    "text": "Charcot关节病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "足或趾发生湿性或干性严重坏疽或坏死"
+    },
+    "text": "足或趾发生湿性或干性严重坏疽或坏死的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "大血管和微血管事件"
+    },
+    "text": "大血管和微血管事件的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风性关节炎"
+    },
+    "text": "痛风性关节炎的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "冠心病"
+    },
+    "text": "冠心病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心血管疾病"
+    },
+    "text": "心血管疾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "高血糖"
+    },
+    "text": "高血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期低血糖"
+    },
+    "text": "妊娠期低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期低血糖"
+    },
+    "text": "妊娠期低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "溃疡"
+    },
+    "text": "溃疡的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心血管事件"
+    },
+    "text": "心血管事件的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "卒中"
+    },
+    "text": "卒中的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "急慢性炎症损伤"
+    },
+    "text": "急慢性炎症损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "少肌症"
+    },
+    "text": "少肌症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "干性坏疽"
+    },
+    "text": "干性坏疽的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期DKA"
+    },
+    "text": "妊娠期DKA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "脆性糖尿病"
+    },
+    "text": "脆性糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心肌梗死"
+    },
+    "text": "心肌梗死的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病肾脏病变"
+    },
+    "text": "糖尿病肾脏病变的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "急性肾损伤"
+    },
+    "text": "急性肾损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤"
+    },
+    "text": "关节软骨、骨质、肾脏以及血管内膜等急慢性炎症损伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "胎儿畸形"
+    },
+    "text": "胎儿畸形的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾脏病"
+    },
+    "text": "肾脏病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肢端坏疽"
+    },
+    "text": "肢端坏疽的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "高血糖"
+    },
+    "text": "高血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "干性坏疽"
+    },
+    "text": "干性坏疽的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期DKA"
+    },
+    "text": "妊娠期DKA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "骨质疏松"
+    },
+    "text": "骨质疏松的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病肾脏病变"
+    },
+    "text": "糖尿病肾脏病变的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "猝死"
+    },
+    "text": "猝死的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "内脏脂肪存储过多"
+    },
+    "text": "内脏脂肪存储过多的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期低血糖"
+    },
+    "text": "妊娠期低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "低血糖"
+    },
+    "text": "低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "体重过低"
+    },
+    "text": "体重过低的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "深静脉血栓"
+    },
+    "text": "深静脉血栓的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "骨折"
+    },
+    "text": "骨折的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "骨质破坏"
+    },
+    "text": "骨质破坏的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "卒中"
+    },
+    "text": "卒中的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "缺血性卒中"
+    },
+    "text": "缺血性卒中的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "尿酸结石"
+    },
+    "text": "尿酸结石的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期DKA"
+    },
+    "text": "妊娠期DKA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期DKA"
+    },
+    "text": "妊娠期DKA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心律失常"
+    },
+    "text": "心律失常的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "难治性感染"
+    },
+    "text": "难治性感染的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "继发性HUA"
+    },
+    "text": "继发性HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾间质纤维化"
+    },
+    "text": "肾间质纤维化的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "体重过低"
+    },
+    "text": "体重过低的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾实质萎缩"
+    },
+    "text": "肾实质萎缩的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "糖尿病微血管并发症"
+    },
+    "text": "糖尿病微血管并发症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "摔伤"
+    },
+    "text": "摔伤的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "卒中"
+    },
+    "text": "卒中的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "心血管疾病"
+    },
+    "text": "心血管疾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "骨关节破坏"
+    },
+    "text": "骨关节破坏的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "妊娠期低血糖"
+    },
+    "text": "妊娠期低血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "少肌症"
+    },
+    "text": "少肌症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "CVD"
+    },
+    "text": "CVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "高血糖"
+    },
+    "text": "高血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "CVD"
+    },
+    "text": "CVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "下肢废用性肌萎缩"
+    },
+    "text": "下肢废用性肌萎缩的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "2型糖尿病(type 2 diabetesmellius，T2DM)"
+    },
+    "text": "2型糖尿病(type 2 diabetesmellius，T2DM)的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "骨折"
+    },
+    "text": "骨折的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "少肌症"
+    },
+    "text": "少肌症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "少肌症"
+    },
+    "text": "少肌症的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "结石形成"
+    },
+    "text": "结石形成的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾功能受损"
+    },
+    "text": "肾功能受损的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾病"
+    },
+    "text": "慢性肾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "脑卒中"
+    },
+    "text": "脑卒中的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "卒中"
+    },
+    "text": "卒中的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肾微血管硬化"
+    },
+    "text": "肾微血管硬化的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "代谢综合征"
+    },
+    "text": "代谢综合征的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "高血糖"
+    },
+    "text": "高血糖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "1型糖尿病"
+    },
+    "text": "1型糖尿病的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "肥胖"
+    },
+    "text": "肥胖的病因是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "reason_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病的病因是什么？"
   }
 ]
