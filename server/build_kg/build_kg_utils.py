@@ -165,7 +165,7 @@ class DiabetesExtractor():
                         # 部位->疾病
                         if "Anatomy_Disease" == relation_type_:
                             self.anatomy_disease.append([head_entity_name, "Anatomy_Disease", tail_entity_name])
-                        # 部位->疾病
+                        # 手术->疾病
                         if "Operation_Disease" == relation_type_:
                             self.operation_disease.append([head_entity_name, "Operation_Disease", tail_entity_name])
                         # 不良反应->药品名称
