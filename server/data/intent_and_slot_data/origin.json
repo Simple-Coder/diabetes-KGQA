@@ -17674,5 +17674,1541 @@
       "Drug": "二甲双胍"
     },
     "text": "二甲双胍疗效多久，持续时间？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DR"
+    },
+    "text": "DR要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经病变"
+    },
+    "text": "神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "排尿困难"
+    },
+    "text": "排尿困难要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾小管/肾血管损伤"
+    },
+    "text": "肾小管/肾血管损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾小球损害"
+    },
+    "text": "肾小球损害要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾小管/肾血管损伤"
+    },
+    "text": "肾小管/肾血管损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "致死性和非致死性心肌梗死"
+    },
+    "text": "致死性和非致死性心肌梗死要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病慢性肾脏病(CKD)"
+    },
+    "text": "糖尿病慢性肾脏病(CKD)要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾功能不全"
+    },
+    "text": "肾功能不全要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "失明"
+    },
+    "text": "失明要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病周围神经病变"
+    },
+    "text": "糖尿病周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "GDM"
+    },
+    "text": "GDM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "运动神经轴索损害"
+    },
+    "text": "运动神经轴索损害要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾功能受损"
+    },
+    "text": "肾功能受损要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "小纤维神经病变"
+    },
+    "text": "小纤维神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "周围神经病变"
+    },
+    "text": "周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高血压"
+    },
+    "text": "高血压要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经病变"
+    },
+    "text": "神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "贫血"
+    },
+    "text": "贫血要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "周围神经病变"
+    },
+    "text": "周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肝肾功能减退"
+    },
+    "text": "肝肾功能减退要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "非增殖性糖尿病视网膜病变"
+    },
+    "text": "非增殖性糖尿病视网膜病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "关节炎"
+    },
+    "text": "关节炎要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "急性尿酸性肾病"
+    },
+    "text": "急性尿酸性肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢缺血"
+    },
+    "text": "下肢缺血要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾功能异常"
+    },
+    "text": "肾功能异常要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DKD"
+    },
+    "text": "DKD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肝损伤"
+    },
+    "text": "肝损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾功能不全"
+    },
+    "text": "肾功能不全要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "排尿困难"
+    },
+    "text": "排尿困难要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病周围神经病变"
+    },
+    "text": "糖尿病周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢动脉钙化"
+    },
+    "text": "下肢动脉钙化要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾病"
+    },
+    "text": "肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "CVD"
+    },
+    "text": "CVD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高血压"
+    },
+    "text": "高血压要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管损伤"
+    },
+    "text": "血管损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病(T2DM)"
+    },
+    "text": "2型糖尿病(T2DM)要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高胆红素血症"
+    },
+    "text": "高胆红素血症要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "白蛋白尿"
+    },
+    "text": "白蛋白尿要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "亚临床周围神经病变"
+    },
+    "text": "亚临床周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高血脂"
+    },
+    "text": "高血脂要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肝损伤"
+    },
+    "text": "肝损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "ESRD"
+    },
+    "text": "ESRD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾脏疾病"
+    },
+    "text": "肾脏疾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经病变"
+    },
+    "text": "神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "周围神经病"
+    },
+    "text": "周围神经病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经病变"
+    },
+    "text": "神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病微血管并发症"
+    },
+    "text": "糖尿病微血管并发症要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "尿酸结石"
+    },
+    "text": "尿酸结石要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性肾脏病"
+    },
+    "text": "慢性肾脏病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DR"
+    },
+    "text": "DR要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢缺血"
+    },
+    "text": "下肢缺血要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "周围神经病"
+    },
+    "text": "周围神经病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DR"
+    },
+    "text": "DR要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "脑梗死"
+    },
+    "text": "脑梗死要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "终末期肾病"
+    },
+    "text": "终末期肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "脊柱与椎管内病变"
+    },
+    "text": "脊柱与椎管内病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高LDL-C血症"
+    },
+    "text": "高LDL-C血症要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "NAFLD"
+    },
+    "text": "NAFLD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "心血管疾病"
+    },
+    "text": "心血管疾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "尿酸性肾石症"
+    },
+    "text": "尿酸性肾石症要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾功能不全"
+    },
+    "text": "肾功能不全要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "心血管病"
+    },
+    "text": "心血管病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "周围神经病变"
+    },
+    "text": "周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化性心血管疾病"
+    },
+    "text": "动脉硬化性心血管疾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾病"
+    },
+    "text": "肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经病变"
+    },
+    "text": "神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢血管病变"
+    },
+    "text": "下肢血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "非增殖性糖尿病视网膜病变"
+    },
+    "text": "非增殖性糖尿病视网膜病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经根或丛病变"
+    },
+    "text": "神经根或丛病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性肾脏病(CKD)"
+    },
+    "text": "慢性肾脏病(CKD)要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病肾病"
+    },
+    "text": "糖尿病肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾病"
+    },
+    "text": "肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾小球损害"
+    },
+    "text": "肾小球损害要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "盆腔内占位性病变"
+    },
+    "text": "盆腔内占位性病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DKD"
+    },
+    "text": "DKD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾损伤"
+    },
+    "text": "肾损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "乳酸性酸中毒"
+    },
+    "text": "乳酸性酸中毒要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "神经病变"
+    },
+    "text": "神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肝功能异常"
+    },
+    "text": "肝功能异常要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DR"
+    },
+    "text": "DR要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T1DM"
+    },
+    "text": "T1DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病周围神经病变"
+    },
+    "text": "糖尿病周围神经病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病前期"
+    },
+    "text": "糖尿病前期要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高血压"
+    },
+    "text": "高血压要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢动脉钙化"
+    },
+    "text": "下肢动脉钙化要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "CVD"
+    },
+    "text": "CVD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "下肢动脉病变"
+    },
+    "text": "下肢动脉病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病自主神经病"
+    },
+    "text": "糖尿病自主神经病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "CKD"
+    },
+    "text": "CKD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "ASCVD"
+    },
+    "text": "ASCVD要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "急、慢性尿酸(盐)肾病"
+    },
+    "text": "急、慢性尿酸(盐)肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DR"
+    },
+    "text": "DR要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病视网膜病变"
+    },
+    "text": "糖尿病视网膜病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病肾病"
+    },
+    "text": "2型糖尿病肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "长度依赖性轴索性周围神经病"
+    },
+    "text": "长度依赖性轴索性周围神经病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肝病"
+    },
+    "text": "肝病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "脑血管损伤"
+    },
+    "text": "脑血管损伤要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "动脉硬化斑块"
+    },
+    "text": "动脉硬化斑块要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "高血糖"
+    },
+    "text": "高血糖要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "慢性心力衰竭"
+    },
+    "text": "慢性心力衰竭要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "小纤维神经病"
+    },
+    "text": "小纤维神经病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "肾病"
+    },
+    "text": "肾病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DR"
+    },
+    "text": "DR要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病"
+    },
+    "text": "糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "痛风"
+    },
+    "text": "痛风要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "2型糖尿病"
+    },
+    "text": "2型糖尿病要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "DPN"
+    },
+    "text": "DPN要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T1DM"
+    },
+    "text": "T1DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "HUA"
+    },
+    "text": "HUA要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "糖尿病足"
+    },
+    "text": "糖尿病足要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "T2DM"
+    },
+    "text": "T2DM要做什么检查呀，检查方法是什么？"
+  },
+  {
+    "id": 0,
+    "intent": "test_disease",
+    "slots": {
+      "Disease": "血管病变"
+    },
+    "text": "血管病变要做什么检查呀，检查方法是什么？"
   }
 ]
