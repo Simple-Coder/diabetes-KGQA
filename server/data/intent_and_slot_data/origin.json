@@ -15130,7 +15130,7 @@
       "disease": "非增殖型糖尿病视网膜病变(non-proli- ferative diabetic retinopathy，npdr)"
     },
     "text": "非增殖型糖尿病视网膜病变(non-proli- ferative ,tic retinopathy，npdr)有哪些分期类型？"
-  }
+  },
   {
     "id": 0,
     "intent": "class_disease",
@@ -15274,7 +15274,7 @@
       "disease": "成年型糖尿病(maturity-onset diabetes of the young，mody)"
     },
     "text": "成年型糖尿病(maturity-onset diabetes of the young,)有哪些分期类型？"
-  }
+  },
   {
     "id": 0,
     "intent": "class_disease",
@@ -15442,7 +15442,7 @@
       "disease": "增殖型糖尿病视网膜病变(proliferative diabetic retinopathy，pdr)"
     },
     "text": "增殖型糖尿病视网膜病变(proliferative diabetic retino,，pdr)有哪些分期类型？"
-  }
+  },
   {
     "id": 0,
     "intent": "class_disease",
