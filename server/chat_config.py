@@ -32,7 +32,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "额~似乎有点不理解你说的是啥呢~~"
     },
-    "unrecognized": {
+    "others": {
         "slot_values": None,
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
     }
