@@ -72,8 +72,8 @@ def semantic_parser(user_intent, user_slots, conf, username):
     # intent_rst = intent_classifier(text)
     # slot_rst = slot_recognizer(text)
 
-    if user_intent == "UNK":
-        return semantic_slot.get("unrecognized")
+    if user_intent == "others":
+        return semantic_slot.get("others")
 
     slot_info = semantic_slot.get(user_intent)
 
