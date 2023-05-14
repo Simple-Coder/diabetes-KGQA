@@ -24147,9 +24147,9 @@
     "id": 0,
     "intent": "anatomy_disease",
     "slots": {
-      "disease": "糖尿病周围神经病变(diabetic peripheral neuropathy，dpn）"
+      "disease": "糖尿病周围神经病变"
     },
-    "text": "糖尿病周围神经病变(diabetic peripheral neuropathy，dpn）发病的部位是哪里？"
+    "text": "糖尿病周围神经病变发病的部位是哪里？"
   },
   {
     "id": 0,
@@ -32451,9 +32451,9 @@
     "id": 0,
     "intent": "test_items_disease",
     "slots": {
-      "disease": "2型糖尿病(type 2 diabetesmellius，t2dm)"
+      "disease": "2型糖尿病"
     },
-    "text": "2型糖尿病(type 2 diabetesmellius，t2dm)有哪些检查指标可参考？"
+    "text": "2型糖尿病有哪些检查指标可参考？"
   },
   {
     "id": 0,
@@ -33147,7 +33147,6 @@
     "id": 0,
     "intent": "test_items_disease",
     "slots": {
-      "disease": ""
     },
     "text": "有哪些检查指标可参考？"
   },

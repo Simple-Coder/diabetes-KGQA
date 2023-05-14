@@ -116,5 +116,12 @@ if __name__ == '__main__':
     examples = processor.get_examples()
 
     for i, example in enumerate(examples):
-        processor.write_example_to_data(i, example)
+        try:
+            processor.write_example_to_data(i, example)
+        except Exception as e:
+            print("错误行")
+            print(i)
+            print(example.__dict__)
+            print(e)
+            print(e)
     print()
