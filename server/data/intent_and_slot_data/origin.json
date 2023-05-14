@@ -2985,7 +2985,7 @@
     "id": 0,
     "intent": "others",
     "slots": {},
-    "text": "糖尿病周围神经病(diabetic peripheral neuropathy，dpn)怎么治疗？"
+    "text": "糖尿病周围神经病怎么治疗？"
   },
   {
     "id": 0,
@@ -4071,7 +4071,7 @@
     "id": 0,
     "intent": "others",
     "slots": {},
-    "text": "糖尿病周围神经病变 (diabetic peripheral neuropathy，dpn)怎么治疗？"
+    "text": "糖尿病周围神经病变 怎么治疗？"
   },
   {
     "id": 0,
@@ -21963,9 +21963,9 @@
     "id": 0,
     "intent": "anatomy_disease",
     "slots": {
-      "disease": "糖尿病周围神经病变 (diabetic peripheral neuropathy，dpn)"
+      "disease": "糖尿病周围神经病变 "
     },
-    "text": "糖尿病周围神经病变 (diabetic peripheral neuropathy，dpn)发病的部位是哪里？"
+    "text": "糖尿病周围神经病变 发病的部位是哪里？"
   },
   {
     "id": 0,
@@ -25091,9 +25091,9 @@
     "id": 0,
     "intent": "anatomy_disease",
     "slots": {
-      "disease": "糖尿病周围神经病(diabetic peripheral neuropathy，dpn)"
+      "disease": "糖尿病周围神经病"
     },
-    "text": "糖尿病周围神经病(diabetic peripheral neuropathy，dpn)发病的部位是哪里？"
+    "text": "糖尿病周围神经病发病的部位是哪里？"
   },
   {
     "id": 0,
@@ -33147,9 +33147,9 @@
     "id": 0,
     "intent": "test_items_disease",
     "slots": {
-      "disease": "stress-induced hyperglycemia"
+      "disease": ""
     },
-    "text": "stress-induced hyperglycemia有哪些检查指标可参考？"
+    "text": "有哪些检查指标可参考？"
   },
   {
     "id": 0,
