@@ -1491,12 +1491,6 @@
     "id": 0,
     "intent": "others",
     "slots": {},
-    "text": "stress-induced hyperglycemia怎么治疗？"
-  },
-  {
-    "id": 0,
-    "intent": "others",
-    "slots": {},
     "text": "溶血怎么治疗？"
   },
   {
@@ -6274,12 +6268,6 @@
     "intent": "others",
     "slots": {},
     "text": "慢性尿酸盐肾病怎么治疗？"
-  },
-  {
-    "id": 0,
-    "intent": "others",
-    "slots": {},
-    "text": "糖尿病周围神经病变(diabetic peripheral neuropathy，dpn）怎么治疗？"
   },
   {
     "id": 0,
