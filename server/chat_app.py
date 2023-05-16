@@ -12,6 +12,7 @@ from modules import get_answer, medical_robot
 from utils import load_user_dialogue_context, dump_user_dialogue_context
 import flask
 
+
 def parse_text(text):
     url = 'http://127.0.0.1:60062/service/api/predict'
     data = {"text": text}
@@ -53,8 +54,11 @@ def gossip_robot(intent):
         gossip_corpus.get(intent)
     )
 
+
 if __name__ == '__main__':
     app = flask.Flask(__name__)
+
+
     @app.route("/service/api/answer", methods=["GET", "POST"])
     def predict():
         data = {}
@@ -74,7 +78,6 @@ if __name__ == '__main__':
 
 
     app.run('0.0.0.0', 60063)
-
 
     # username = '张三'
     # while True:
