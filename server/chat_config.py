@@ -85,6 +85,15 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
+    "frequency_drug": {
+        "slot_list": ["drug"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`用药频率`) -[r:Frequency_Drug]->(q:`药品名称`) where q.name='{drug}' return p.name",
+        "reply_template": "'{drug}' 药物的用药频率是：\n",
+        "ask_template": "您问的是药物 '{drug}' 的用药频率吗？",
+        "intent_strategy": "",
+        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+    },
     "others": {
         "slot_values": None,
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
