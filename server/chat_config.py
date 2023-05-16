@@ -31,6 +31,15 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
+    "amount_drug": {
+        "slot_list": ["drug"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`用药剂量`) -[r:Amount_Drug]->(q:`药物名称`) where q.name='{drug}' return p.name",
+        "reply_template": "'{drug}' 药物的用药剂量是：\n",
+        "ask_template": "您问的是药物 '{drug}' 的用药剂量吗？",
+        "intent_strategy": "",
+        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+    },
     # 暂未使用
     "drug_disease": {
         "slot_list": ["disease"],
