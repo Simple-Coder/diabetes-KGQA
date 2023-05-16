@@ -29,7 +29,7 @@ semantic_slot = {
         "reply_template": "'{drug}' 药物的不良反应、副作用是：\n",
         "ask_template": "您问的是药物 '{drug}' 的不良反应、副作用吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "呃，我好像没太听懂，您可以换个问法问我哦~"
     },
     "amount_drug": {
         "slot_list": ["drug"],
@@ -38,7 +38,7 @@ semantic_slot = {
         "reply_template": "'{drug}' 药物的用药剂量是：\n",
         "ask_template": "您问的是药物 '{drug}' 的用药剂量吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "对不起，我听起来似乎有些不太明白，您可以换个问法问我哦~"
     },
     "anatomy_disease": {
         "slot_list": ["disease"],
@@ -47,7 +47,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病发病的部位是：\n",
         "ask_template": "您问的是疾病 '{disease}' 发病的部位吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "我不太明白您的话，您可以换个问法问我哦~"
     },
     "class_disease": {
         "slot_list": ["disease"],
@@ -56,7 +56,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病分期类型是：\n",
         "ask_template": "您问的是疾病 '{disease}' 分期类型吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "我没太明白您刚才的话，有些摸不着头脑，您可以换个问法问我哦~"
     },
     "drug_disease": {
         "slot_list": ["disease"],
@@ -65,7 +65,7 @@ semantic_slot = {
         "reply_template": " '{disease}' 的治疗药物有以下：\n",
         "ask_template": "您是想问 '{disease}' 的治疗药物有哪些吗？",
         "intent_strategy": "",
-        "deny_response": "额~似乎有点不理解你说的是啥呢~~"
+        "deny_response": "额~似乎有点不理解您说的是啥呢~~"
     },
     "method_drug": {
         "slot_list": ["drug"],
@@ -74,7 +74,7 @@ semantic_slot = {
         "reply_template": "'{drug}' 药物的用药方法是：\n",
         "ask_template": "您问的是药物 '{drug}' 用药方法吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "我听起来有点糊涂，您可以换个问法问我哦~"
     },
     "duration_drug": {
         "slot_list": ["drug"],
@@ -92,7 +92,7 @@ semantic_slot = {
         "reply_template": "'{drug}' 药物的用药频率是：\n",
         "ask_template": "您问的是药物 '{drug}' 的用药频率吗？",
         "intent_strategy": "",
-        "deny_response": "很抱歉，我无法领会你的意思，您可以换个问法问我哦~"
+        "deny_response": "很抱歉，我无法领会您的意思，您可以换个问法问我哦~"
     },
     "operation_disease": {
         "slot_list": ["disease"],
@@ -101,7 +101,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病需要的手术是：\n",
         "ask_template": "您问的是疾病 '{disease}' 需要做什么手术吗？",
         "intent_strategy": "",
-        "deny_response": "哦~我有点难以理解你所说的内容，您可以换个问法问我哦~"
+        "deny_response": "哦~我有点难以理解您所说的内容，您可以换个问法问我哦~"
     },
     "pathogenesis_disease": {
         "slot_list": ["disease"],
@@ -128,7 +128,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病的检查指标有：\n",
         "ask_template": "您问的是疾病 '{disease}' 的检查指标吗？",
         "intent_strategy": "",
-        "deny_response": "对不起，我好像没太理解你说的话，请您再换个方式表达一下哦~"
+        "deny_response": "对不起，我好像没太理解您说的话，请您再换个方式表达一下哦~"
     },
     "treatment_disease": {
         "slot_list": ["disease"],
@@ -137,7 +137,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病的非药治疗方式有：\n",
         "ask_template": "您问的是疾病 '{disease}' 的非药治疗方式吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "我不太理解您刚才所说的内容，您可以换个问法问我哦~"
     },
     "others": {
         "slot_values": None,
@@ -148,16 +148,16 @@ semantic_slot = {
 gossip_corpus = {
     "greet": [
         "hi",
-        "你好呀",
-        "我是智能医疗诊断机器人，有什么可以帮助你吗",
-        "hi，你好，你可以叫我小谢",
-        "你好，你可以问我一些关于疾病诊断的问题哦"
+        "您好呀",
+        "我是智能医疗诊断机器人，有什么可以帮助您吗",
+        "hi，您好，您可以叫我小谢",
+        "您好，您可以问我一些关于疾病诊断的问题哦"
     ],
     "goodbye": [
         "再见，很高兴为您服务",
         "bye",
         "再见，感谢使用我的服务",
-        "再见啦，祝你健康"
+        "再见啦，祝您健康"
     ],
     "deny": [
         "很抱歉没帮到您",
@@ -165,8 +165,8 @@ gossip_corpus = {
         "那您可以试着问我其他问题哟"
     ],
     "isbot": [
-        "我是小谢，你的智能健康顾问",
-        "你可以叫我小谢哦~",
+        "我是小谢，您的智能健康顾问",
+        "您可以叫我小谢哦~",
         "我是医疗诊断机器人小谢"
     ],
 }
