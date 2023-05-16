@@ -101,7 +101,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病需要的手术是：\n",
         "ask_template": "您问的是疾病 '{disease}' 需要做什么手术吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "哦~我有点难以理解你所说的内容，您可以换个问法问我哦~"
     },
     "pathogenesis_disease": {
         "slot_list": ["disease"],
