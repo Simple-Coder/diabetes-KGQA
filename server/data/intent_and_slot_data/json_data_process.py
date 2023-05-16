@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
     examples = processor.get_examples()
 
-    for i, example in enumerate(examples):
+    for i, example in tqdm(enumerate(examples)):
         try:
             processor.write_example_to_data(i, example)
         except Exception as e:
