@@ -15,6 +15,7 @@ from seqeval.metrics.sequence_labeling import get_entities
 import torch.nn.functional as F
 from transformers import logging
 logging.set_verbosity_error()
+import time
 
 class Trainer:
     def __init__(self, model, config):
@@ -27,6 +28,7 @@ class Trainer:
         self.tokenizer = BertTokenizer.from_pretrained(config.bert_dir)
 
     def train(self, train_loader):
+        time_start = time.time()
         global_step = 0
         total_step = len(train_loader) * self.epoch
         self.model.train()
@@ -58,8 +60,12 @@ class Trainer:
                 print(f'[train] epoch:{epoch + 1} {global_step}/{total_step} loss:{loss.item()}')
                 global_step += 1
 
+
         if self.config.do_save:
             self.save(self.config.save_dir, str(int(time.time())) + 'model.pt')
+
+        time_end = time.time()
+        print('time cost', time_end - time_start, 's')
 
     def save(self, save_path, save_name):
         torch.save(self.model.state_dict(), os.path.join(save_path, save_name))
