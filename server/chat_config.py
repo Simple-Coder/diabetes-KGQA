@@ -49,6 +49,15 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
+    "class_disease": {
+        "slot_list": ["disease"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`分期类型`) -[r:Class_Disease]->(q:`疾病`) where q.name='{drug}' return p.name",
+        "reply_template": "'{disease}' 疾病分期类型是：\n",
+        "ask_template": "您问的是疾病 '{disease}' 分期类型吗？",
+        "intent_strategy": "",
+        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+    },
     # 暂未使用
     "drug_disease": {
         "slot_list": ["disease"],
