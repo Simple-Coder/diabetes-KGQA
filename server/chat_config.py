@@ -128,7 +128,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病的检查指标有：\n",
         "ask_template": "您问的是疾病 '{disease}' 的检查指标吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "对不起，我好像没太理解你说的话，请您再换个方式表达一下哦~"
     },
     "treatment_disease": {
         "slot_list": ["disease"],
