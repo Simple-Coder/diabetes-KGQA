@@ -103,6 +103,15 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
+    "pathogenesis_disease": {
+        "slot_list": ["disease"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`发病机制`) -[r:Pathogenesis_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
+        "reply_template": "'{disease}' 疾病的发病机制是：\n",
+        "ask_template": "您问的是疾病 '{disease}' 的发病机制吗？",
+        "intent_strategy": "",
+        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+    },
     "others": {
         "slot_values": None,
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
