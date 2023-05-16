@@ -40,6 +40,15 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
+    "anatomy_disease": {
+        "slot_list": ["disease"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`部位`) -[r:Anatomy_Disease]->(q:`疾病`) where q.name='{drug}' return p.name",
+        "reply_template": "'{disease}' 疾病发病的部位是：\n",
+        "ask_template": "您问的是疾病 '{disease}' 发病的部位吗？",
+        "intent_strategy": "",
+        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+    },
     # 暂未使用
     "drug_disease": {
         "slot_list": ["disease"],
