@@ -19201,7 +19201,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效胰岛素"
     },
@@ -19209,7 +19209,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "glp-1受体激动剂"
     },
@@ -19217,7 +19217,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混人胰岛素"
     },
@@ -19225,7 +19225,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "甘精胰岛素"
     },
@@ -19233,7 +19233,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "脂微球前列地尔注射液"
     },
@@ -19241,7 +19241,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "碘化对比剂"
     },
@@ -19249,7 +19249,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "磺脲类胰岛素促泌剂"
     },
@@ -19257,7 +19257,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "餐时胰岛素"
     },
@@ -19265,7 +19265,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19273,7 +19273,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "恩格列净"
     },
@@ -19281,7 +19281,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效胰岛素"
     },
@@ -19289,7 +19289,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混人胰岛素"
     },
@@ -19297,7 +19297,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混胰岛素"
     },
@@ -19305,7 +19305,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "葡萄糖溶液"
     },
@@ -19313,7 +19313,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混胰岛素类似物"
     },
@@ -19321,7 +19321,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "基础胰岛素"
     },
@@ -19329,7 +19329,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19337,7 +19337,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "枸橼酸氢钾钠颗粒"
     },
@@ -19345,7 +19345,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "糖皮质激素"
     },
@@ -19353,7 +19353,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "速效胰岛素类似物"
     },
@@ -19361,7 +19361,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "人胰岛素"
     },
@@ -19369,7 +19369,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19377,7 +19377,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "秋水仙碱"
     },
@@ -19385,7 +19385,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "速效胰岛素类似物"
     },
@@ -19393,7 +19393,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰素"
     },
@@ -19401,7 +19401,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "α-葡萄糖苷酶抑制剂"
     },
@@ -19409,7 +19409,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效或速效胰岛素"
     },
@@ -19417,7 +19417,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "α-糖苷酶抑制剂"
     },
@@ -19425,7 +19425,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19433,7 +19433,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素促泌剂"
     },
@@ -19441,7 +19441,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19449,7 +19449,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "非胰岛素促泌剂类口服降糖药物"
     },
@@ -19457,7 +19457,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19465,7 +19465,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "xa因子和ⅱa直接抑制剂"
     },
@@ -19473,7 +19473,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19481,7 +19481,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "含糖液体"
     },
@@ -19489,7 +19489,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19497,7 +19497,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "贝前列腺素钠片"
     },
@@ -19505,7 +19505,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "肠内外营养液"
     },
@@ -19513,7 +19513,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二甲双胍"
     },
@@ -19521,7 +19521,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "坎格列净"
     },
@@ -19529,7 +19529,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "泼尼松"
     },
@@ -19537,7 +19537,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二甲双胍"
     },
@@ -19545,7 +19545,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "速效胰岛素类似物"
     },
@@ -19553,7 +19553,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "枸橼酸合剂"
     },
@@ -19561,7 +19561,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19569,7 +19569,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "脉岛素"
     },
@@ -19577,7 +19577,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19585,7 +19585,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "口服避孕药"
     },
@@ -19593,7 +19593,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效磺脲类促泌剂"
     },
@@ -19601,7 +19601,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二肽基肽酶4(dpp-4)抑制剂"
     },
@@ -19609,7 +19609,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "常规胰岛素"
     },
@@ -19617,7 +19617,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "避孕药"
     },
@@ -19625,7 +19625,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19633,7 +19633,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "速效胰岛素类似物"
     },
@@ -19641,7 +19641,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "艾塞那肽"
     },
@@ -19649,7 +19649,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "中效胰岛素"
     },
@@ -19657,7 +19657,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "5%~10%葡萄糖液"
     },
@@ -19665,7 +19665,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19673,7 +19673,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19681,7 +19681,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "速效胰岛素类似物"
     },
@@ -19689,7 +19689,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19697,7 +19697,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "磺脲类"
     },
@@ -19705,7 +19705,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "格列奈类口服降糖药"
     },
@@ -19713,7 +19713,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效胰岛素"
     },
@@ -19721,7 +19721,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "效胰岛素似物"
     },
@@ -19729,7 +19729,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "葡萄糖"
     },
@@ -19737,7 +19737,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "基础-餐时胰岛素"
     },
@@ -19745,7 +19745,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效或速效胰岛素"
     },
@@ -19753,7 +19753,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "长效胰岛素"
     },
@@ -19761,7 +19761,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混胰岛素"
     },
@@ -19769,7 +19769,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "基础胰岛素"
     },
@@ -19777,7 +19777,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19785,7 +19785,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "糖皮质激素"
     },
@@ -19793,7 +19793,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "格列奈类促泌剂"
     },
@@ -19801,7 +19801,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "葡萄糖"
     },
@@ -19809,7 +19809,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "糖皮质激素"
     },
@@ -19817,7 +19817,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二肽基肽酶-4(dipeptidyl peptidase-4，dpp-4)抑制剂"
     },
@@ -19825,7 +19825,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19833,7 +19833,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混胰岛素类似物"
     },
@@ -19841,7 +19841,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "葡萄糖"
     },
@@ -19849,7 +19849,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "dpp-4抑制剂"
     },
@@ -19857,7 +19857,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -19865,7 +19865,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二肽基肽酶一4(dpp-4)抑制剂"
     },
@@ -19873,7 +19873,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "sglt2抑制剂"
     },
@@ -19881,7 +19881,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "速效胰岛素"
     },
@@ -19889,7 +19889,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "50%葡萄糖液"
     },
@@ -19897,7 +19897,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "噻唑烷二酮类"
     },
@@ -19905,7 +19905,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "利拉鲁肽"
     },
@@ -19913,7 +19913,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "50%葡萄糖"
     },
@@ -19921,7 +19921,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "基胰岛素"
     },
@@ -19929,7 +19929,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "葡萄糖"
     },
@@ -19937,7 +19937,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混胰岛素类似物"
     },
@@ -19945,7 +19945,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "预混胰岛素类似物"
     },
@@ -19953,7 +19953,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰高血糖素样肽1类似物"
     },
@@ -19961,7 +19961,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "5%或10%葡萄糖"
     },
@@ -19969,7 +19969,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二甲双胍"
     },
@@ -19977,7 +19977,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "糖苷酶抑制剂"
     },
@@ -19985,7 +19985,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "达格列净"
     },
@@ -19993,7 +19993,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效糖皮质激素"
     },
@@ -20001,7 +20001,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "碳酸氢钠(小苏打)"
     },
@@ -20009,7 +20009,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "阿卡波糖"
     },
@@ -20017,7 +20017,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "格列奈类"
     },
@@ -20025,7 +20025,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效胰岛素"
     },
@@ -20033,7 +20033,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "中效胰岛素"
     },
@@ -20041,7 +20041,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "中长效胰岛素"
     },
@@ -20049,7 +20049,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "尿酸"
     },
@@ -20057,7 +20057,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "基础胰岛素"
     },
@@ -20065,7 +20065,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效人胰岛素"
     },
@@ -20073,7 +20073,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "二甲双胍"
     },
@@ -20081,7 +20081,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效胰升血糖素样肽-1(glp-1)受体激动剂"
     },
@@ -20089,7 +20089,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效胰岛素"
     },
@@ -20097,7 +20097,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "sglt2i"
     },
@@ -20105,7 +20105,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "格列奈类"
     },
@@ -20113,7 +20113,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "钠-葡萄糖共转运蛋白2抑制剂"
     },
@@ -20121,7 +20121,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "葡萄糖"
     },
@@ -20129,7 +20129,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "短效糖皮质激素"
     },
@@ -20137,7 +20137,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -20145,7 +20145,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "钠-葡萄糖共转运蛋白2抑制剂(sglt2i)"
     },
@@ -20153,7 +20153,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -20161,7 +20161,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "磺脲类药物"
     },
@@ -20169,7 +20169,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "胰岛素"
     },
@@ -20177,7 +20177,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "贝前列素钠"
     },
@@ -20185,7 +20185,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "碘化造影剂"
     },
@@ -20193,7 +20193,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "前列腺素e1制剂"
     },
@@ -20201,7 +20201,7 @@
   },
   {
     "id": 0,
-    "intent": "drug_method",
+    "intent": "method_drug",
     "slots": {
       "drug": "格列喹酮"
     },
