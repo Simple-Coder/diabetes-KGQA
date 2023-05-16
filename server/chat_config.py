@@ -92,7 +92,7 @@ semantic_slot = {
         "reply_template": "'{drug}' 药物的用药频率是：\n",
         "ask_template": "您问的是药物 '{drug}' 的用药频率吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "很抱歉，我无法领会你的意思，您可以换个问法问我哦~"
     },
     "operation_disease": {
         "slot_list": ["disease"],
