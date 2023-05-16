@@ -110,7 +110,7 @@ semantic_slot = {
         "reply_template": "'{disease}' 疾病的发病机制是：\n",
         "ask_template": "您问的是疾病 '{disease}' 的发病机制吗？",
         "intent_strategy": "",
-        "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
+        "deny_response": "很抱歉，我理解起来有点困难，您可以换个问法问我哦~"
     },
     "test_disease": {
         "slot_list": ["disease"],
