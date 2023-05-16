@@ -13,7 +13,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "人类的语言太难了！！"
     },
-    "病因": {
+    "reason_disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`病因`) -[r:Reason_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -22,6 +22,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
+
     # 暂未使用
     "drug_disease": {
         "slot_list": ["disease"],
