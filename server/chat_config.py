@@ -116,7 +116,7 @@ semantic_slot = {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`检查方法`) -[r:Test_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
-        "reply_template": "'{disease}' 疾病的检查方法是：\n",
+        "reply_template": "'{disease}' 疾病的检查方法有：\n",
         "ask_template": "您问的是疾病 '{disease}' 的检查方法吗？",
         "intent_strategy": "",
         "deny_response": "嗯，我有点迷糊，您可以换个问法问我哦~"
