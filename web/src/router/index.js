@@ -158,7 +158,7 @@ export const constantRoutes = [
       {
         path: 'table',
         name: 'Table',
-        component: () => import('@/views/table/index'),
+        component: () => import('@/views/kg/vision/index'),
         meta: { title: '可视化', icon: 'table' }
       },
       {
