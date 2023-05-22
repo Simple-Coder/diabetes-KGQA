@@ -77,7 +77,9 @@ module.exports = {
       }
     }
   },
+  transpileDependencies: ['@xdh/my'],
   chainWebpack(config) {
+    config.resolve.alias.set('$ui', '@xdh/my/ui/lib')
     // it can improve the speed of the first screen, it is recommended to turn on preload
     config.plugin('preload').tap(() => [
       {

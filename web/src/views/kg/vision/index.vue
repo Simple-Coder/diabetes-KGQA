@@ -39,19 +39,23 @@
       <!-- 知识可视化区域 -->
       <el-col :span="12">
         <div class="kgview">
-          <my-panel theme="border-left" class="kgcard" :border="false" fit>
+          <MyPanel theme="border-left" class="kgcard" :border="false" fit>
             <template v-slot:title>
               <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识卡片</span>
             </template>
-            <my-key-val-list :column="nodecolumn" :data="nodedata" border :columns="1"
-                             style="font-size: 15px; font-weight: 450; font-family: 宋体;"></my-key-val-list>
-          </my-panel>
-          <my-panel theme="border-left" class="kgimg" :border="false" fit>
+            <MyKeyValList
+              :column="nodecolumn"
+              :data="nodedata"
+              border
+              :columns="1"
+              style="font-size: 15px; font-weight: 450; font-family: 宋体;"></MyKeyValList>
+          </MyPanel>
+          <MyPanel theme="border-left" class="kgimg" :border="false" fit>
             <template v-slot:title>
               <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识图谱</span>
             </template>
-            <!--                        <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"></kgecharts>-->
-          </my-panel>
+            <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"></kgecharts>
+          </MyPanel>
         </div>
       </el-col>
     </el-row>
@@ -61,27 +65,28 @@
 <script>
 // import axios from '$ui/utils/axios'
 import dataServerIp from '@/assets/js/dataserverip'
-// import {qaoptions} from '@/assets/js/utilkg'
-// import kgecharts from './kgecharts.vue'
+import {qaoptions} from '@/assets/js/utilkg'
+import kgecharts from './kgecharts.vue'
 // axios.defaults.baseURL = dataServerIp.dataServerIp
 
 import {doAnswer} from '@/api/answer'
+import {MyPanel, MyKeyValList} from '$ui'
 
 export default {
-  // components: {kgecharts},
+  components: {kgecharts, MyPanel, MyKeyValList},
   data() {
     return {
       input: '',
       dialogData: [],
       // echarts知识图谱数据
-      // kgoptions: qaoptions,
+      kgoptions: qaoptions,
       kgwidth: '100%',
       kgheight: '430px',
       kgIdList: new Set(),
       kgEdgeIdSet: new Set(),
       // 知识卡片数据
       nodecolumn: [{label: '功能简介', prop: 'des'}],
-      nodedata: {des: '地学知识图谱服务平台（简称GKGS）是新一代以知识服务为核心的地理信息服务平台。智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。'}
+      nodedata: {des: '智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。'}
     }
   },
   methods: {
@@ -100,6 +105,11 @@ export default {
           console.log(res)
           this.dialogData.push({person: this.input, rot: res.data.reply})
           this.input = ''
+
+          this.nodecolumn = [{label: '功能简介', prop: 'des'}]
+          this.nodedata = {
+            des: 'xx地学知识图谱服务平台（简称GKGS）是新一代以知识服务为核心的地理信息服务平台。智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。'
+          }
         }).catch(error => {
           console.log('响应失败')
           console.log(error)
