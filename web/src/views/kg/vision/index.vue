@@ -91,7 +91,7 @@ export default {
         this.dialogData.push({person: '...', rot: '你啥也没说啊！'})
       } else {
         const params = {
-          'text': this.txt_question
+          'text': this.input
         }
         console.log(params)
 
