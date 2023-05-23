@@ -56,6 +56,33 @@ def neo4j_searcher(cql_list):
     return ress
 
 
+def neo4j_searcher_vision(cql_vision):
+    data = []
+    links = []
+    kgdata = graph.run(cql_vision).data()
+    if not kgdata:
+        return [data, links]
+    count = 0
+    for value in kgdata:
+        count += 1
+        relNode = value['type']
+        Relid = value['Relid']
+        pNode = value['p']
+        qNode = value['q']
+        if count == 1:
+            data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name']})
+        else:
+            data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name']})
+        links.append(
+            {'source': str(qNode.identity), 'target': str(pNode.identity), 'value': relNode,
+             'id': str(Relid)})
+
+    return {
+        'data': data,
+        'links': links
+    }
+
+
 def entity_link(mention, etype):
     """
     对于识别到的实体mention,如果其不是知识库中的标准称谓
@@ -113,6 +140,7 @@ def get_answer(slot_info):
     根据语义槽获取答案回复
     """
     cql_template = slot_info.get("cql_template")
+    cql_template_vision = slot_info.get("cql_template_vision")
     reply_template = slot_info.get("reply_template")
     ask_template = slot_info.get("ask_template")
     slot_values = slot_info.get("slot_values")
@@ -128,7 +156,12 @@ def get_answer(slot_info):
                 cql.append(cqlt.format(**slot_values))
         else:
             cql = cql_template.format(**slot_values)
+
+        cql_vision = cql_template_vision.format(**slot_values)
         answer = neo4j_searcher(cql)
+        # 查询可视化vision
+        visison_data = neo4j_searcher_vision(cql_vision)
+        slot_info["visison_data"] = visison_data
         if not answer:
             slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
         else:

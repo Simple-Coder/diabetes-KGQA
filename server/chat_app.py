@@ -27,6 +27,8 @@ def parse_text(text):
 
 def text_reply(username, msg):
     predict = parse_text(msg)
+    visison_data = []
+    reply = "唔~服务异常啦~"
     if predict is not None:
         user_intent = predict["intent"]
         confidence = predict["confidence"]
@@ -41,12 +43,15 @@ def text_reply(username, msg):
             reply = reply.get("choice_answer")
         else:
             reply = medical_robot(user_intent, user_slots, confidence, username)
+            if 'visison_data' in reply:
+                visison_data = reply.get("visison_data")
             if reply["slot_values"]:
                 dump_user_dialogue_context(username, reply)
             reply = reply.get("replay_answer")
-    else:
-        reply = '服务异常啦~~~'
-    return reply
+    return {
+        'answer': reply,
+        'visison_data': visison_data
+    }
 
 
 def gossip_robot(intent):
