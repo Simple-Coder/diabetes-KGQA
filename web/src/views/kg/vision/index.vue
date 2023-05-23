@@ -70,10 +70,10 @@ import kgecharts from './kgecharts.vue'
 // axios.defaults.baseURL = dataServerIp.dataServerIp
 
 import {doAnswer} from '@/api/answer'
-import {MyPanel, MyKeyValList} from '$ui'
+
 
 export default {
-  components: {kgecharts, MyPanel, MyKeyValList},
+  components: {kgecharts},
   data() {
     return {
       input: '',
