@@ -249,7 +249,8 @@ export const options3 = {
   },
   legend: {
     show: true,
-    data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy', '幼儿园', '小学', '中学', '中专', '大专院校', '驾校', '党校', 'State', 'FreeState'],
+    // data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy', '幼儿园', '小学', '中学', '中专', '大专院校', '驾校', '党校', 'State', 'FreeState'],
+    data: [],
     textStyle: {
       color: '#000'
     },
@@ -376,7 +377,8 @@ export const qaoptions = {
   },
   legend: {
     show: true,
-    data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy', '幼儿园', '小学', '中学', '中专', '大专院校', '驾校', '党校', 'State', 'FreeState'],
+    // data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy', '幼儿园', '小学', '中学', '中专', '大专院校', '驾校', '党校', 'State', 'FreeState'],
+    data: [],
     textStyle: {
       color: '#000'
     },

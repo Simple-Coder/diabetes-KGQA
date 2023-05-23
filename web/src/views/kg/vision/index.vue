@@ -103,13 +103,26 @@ export default {
         doAnswer(params).then((res) => {
           console.log('响应成功')
           console.log(res)
-          this.dialogData.push({person: this.input, rot: res.data.reply})
+          this.dialogData.push({person: this.input, rot: res.data.reply.answer})
           this.input = ''
-
-          this.nodecolumn = [{label: '功能简介', prop: 'des'}]
+          // 知识卡片
+          this.nodecolumn = [{label: '记录', prop: 'record'}]
           this.nodedata = {
-            des: 'xx地学知识图谱服务平台（简称GKGS）是新一代以知识服务为核心的地理信息服务平台。智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。'
+            record: res.data.reply.answer
           }
+          // 知识图谱
+          this.kgIdList.clear()
+          this.kgEdgeIdSet.clear()
+          this.kgoptions.series[0].data = res.data.reply.visison_data.data
+          this.kgoptions.series[0].links = res.data.reply.visison_data.links
+          for (const key1 of res.data.visison_data.data) {
+            this.kgIdList.add(key1.id)
+          }
+          for (const key2 of res.data.visison_data.links) {
+            this.kgEdgeIdSet.add(key2.id)
+          }
+
+
         }).catch(error => {
           console.log('响应失败')
           console.log(error)
