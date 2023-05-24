@@ -110,9 +110,9 @@ export const options2 = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   toolbox: {
     show: true,
@@ -221,9 +221,9 @@ export const options3 = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   toolbox: {
     show: true,
@@ -298,56 +298,58 @@ export const options3 = {
         }
       },
       categories: [
-        {
-          name: 'Country'
+      {
+          name: '疾病'
         },
         {
-          name: 'Province'
+          name: '疾病分期类型'
         },
         {
-          name: 'City'
+          name: '病因'
         },
         {
-          name: 'District'
+          name: '发病机制'
         },
         {
-          name: 'Street'
+          name: '临床表现'
         },
         {
-          name: 'Region'
+          name: '检查方法'
         },
         {
-          name: 'Statistics'
+          name: '检查指标'
         },
         {
-          name: 'Proxy'
+          name: '检查指标值'
         },
         {
-          name: '幼儿园'
+          name: '药物名称'
         },
         {
-          name: '小学'
+          name: '用药频率'
         },
         {
-          name: '中学'
+          name: '用药剂量'
         },
         {
-          name: '中专'
+          name: '用药方法'
         },
         {
-          name: '大专院校'
+          name: '非药治疗'
         },
         {
-          name: '驾校'
+          name: '手术'
         },
         {
-          name: '党校'
+          name: '不良反应'
         },
         {
-          name: 'State'
+          name: '部位'
         },
         {
-          name: 'FreeState'
+          name: '程度'
+        }, {
+          name: '持续时间'
         }
       ],
       data: [],
@@ -361,9 +363,9 @@ export const qaoptions = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   animationDurationUpdate: 1500,
   animationEasingUpdate: 'quinticInOut',
@@ -377,8 +379,8 @@ export const qaoptions = {
   },
   legend: {
     show: true,
-    // data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy', '幼儿园', '小学', '中学', '中专', '大专院校', '驾校', '党校', 'State', 'FreeState'],
-    data: [],
+    data: ['疾病', '疾病分期类型', '病因', '发病机制', '临床表现', '检查方法', '检查指标', '检查指标值', '幼儿园', '药物名称', '用药频率', '用药剂量', '用药方法', '非药治疗', '手术', '不良反应', '部位','程度','持续时间'],
+    // data: [],
     textStyle: {
       color: '#000'
     },
@@ -427,55 +429,57 @@ export const qaoptions = {
       },
       categories: [
         {
-          name: 'Country'
+          name: '疾病'
         },
         {
-          name: 'Province'
+          name: '疾病分期类型'
         },
         {
-          name: 'City'
+          name: '病因'
         },
         {
-          name: 'District'
+          name: '发病机制'
         },
         {
-          name: 'Street'
+          name: '临床表现'
         },
         {
-          name: 'Region'
+          name: '检查方法'
         },
         {
-          name: 'Statistics'
+          name: '检查指标'
         },
         {
-          name: 'Proxy'
+          name: '检查指标值'
         },
         {
-          name: '幼儿园'
+          name: '药物名称'
         },
         {
-          name: '小学'
+          name: '用药频率'
         },
         {
-          name: '中学'
+          name: '用药剂量'
         },
         {
-          name: '中专'
+          name: '用药方法'
         },
         {
-          name: '大专院校'
+          name: '非药治疗'
         },
         {
-          name: '驾校'
+          name: '手术'
         },
         {
-          name: '党校'
+          name: '不良反应'
         },
         {
-          name: 'State'
+          name: '部位'
         },
         {
-          name: 'FreeState'
+          name: '程度'
+        }, {
+          name: '持续时间'
         }
       ],
       data: [],
@@ -489,9 +493,9 @@ export const optionsProduct1 = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   animationDurationUpdate: 1500,
   animationEasingUpdate: 'quinticInOut',
@@ -571,9 +575,9 @@ export const optionsProduct2 = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   animationDurationUpdate: 1500,
   animationEasingUpdate: 'quinticInOut',
@@ -665,7 +669,7 @@ export const kgoptions2 = {
   },
   legend: {
     show: true,
-    data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy'],
+    data: ['疾病', '疾病分期类型', '病因', '发病机制', '临床表现', '检查方法', 'Statistics', 'Proxy'],
     textStyle: {
       color: '#000'
     },
@@ -713,28 +717,57 @@ export const kgoptions2 = {
       },
       categories: [
         {
-          name: 'Country'
+          name: '疾病'
         },
         {
-          name: 'Province'
+          name: '疾病分期类型'
         },
         {
-          name: 'City'
+          name: '病因'
         },
         {
-          name: 'District'
+          name: '发病机制'
         },
         {
-          name: 'Street'
+          name: '临床表现'
         },
         {
-          name: 'Region'
+          name: '检查方法'
         },
         {
-          name: 'Statistics'
+          name: '检查指标'
         },
         {
-          name: 'Proxy'
+          name: '检查指标值'
+        },
+        {
+          name: '药物名称'
+        },
+        {
+          name: '用药频率'
+        },
+        {
+          name: '用药剂量'
+        },
+        {
+          name: '用药方法'
+        },
+        {
+          name: '非药治疗'
+        },
+        {
+          name: '手术'
+        },
+        {
+          name: '不良反应'
+        },
+        {
+          name: '部位'
+        },
+        {
+          name: '程度'
+        }, {
+          name: '持续时间'
         }
       ],
       data: [
@@ -876,9 +909,9 @@ export const optionsKgCompute = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   toolbox: {
     show: true,
@@ -975,9 +1008,9 @@ export const optionsErrorKg = {
     text: ''
   },
   tooltip: {
-    formatter: function(x) {
+    formatter: function (x) {
       return x.data.des;
-  }
+    }
   },
   toolbox: {
     show: true,
