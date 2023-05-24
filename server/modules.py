@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/4/22 21:00
 """
 from py2neo import Graph
-from chat_config import semantic_slot, intent_threshold_config
+from chat_config import semantic_slot, intent_threshold_config, CATEGORY_INDEX
 from utils import load_user_dialogue_context
 
 graph = Graph(host="127.0.0.1",
@@ -69,10 +69,14 @@ def neo4j_searcher_vision(cql_vision):
         Relid = value['Relid']
         pNode = value['p']
         qNode = value['q']
+        plabel_ = value['plabel']
+        qlabel_ = value['qlabel']
         if count == 1:
-            data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name']})
+            data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name'],
+                         'category': CATEGORY_INDEX[qlabel_]})
         else:
-            data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name']})
+            data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name'],
+                         'category': CATEGORY_INDEX[plabel_]})
         links.append(
             {'source': str(qNode.identity), 'target': str(pNode.identity), 'value': relNode,
              'id': str(Relid)})

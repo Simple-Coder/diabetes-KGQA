@@ -16,7 +16,7 @@ class TestTractir():
     def extract_triples(self, label):
         data = []
         links = []
-        gql = f"MATCH(p:`临床表现`)-[r:Symptom_Disease]->(q:`疾病`) where q.name='{label}' RETURN type(r) AS type,id(r) as Relid,p,q"
+        gql = f"MATCH(p:`临床表现`)-[r:Symptom_Disease]->(q:`疾病`) where q.name='{label}' RETURN type(r) AS type,id(r) as Relid,p,q,labels(p)[0] as plabel,labels(q)[0] as qlabel"
 
         kgdata = self.graph.run(gql).data()
 
@@ -27,6 +27,8 @@ class TestTractir():
             Relid = value['Relid']
             pNode = value['p']
             qNode = value['q']
+            plabel_ = value['plabel']
+            qlabel_ = value['qlabel']
             if count == 1:
                 data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name']})
             else:
