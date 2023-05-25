@@ -66,7 +66,7 @@
 // import axios from '$ui/utils/axios'
 import dataServerIp from '@/assets/js/dataserverip'
 import {qaoptions} from '@/assets/js/utilkg'
-import kgecharts from './kgecharts.vue'
+import kgecharts from '@/components/kg/kgecharts.vue'
 // axios.defaults.baseURL = dataServerIp.dataServerIp
 
 import {doAnswer} from '@/api/answer'
