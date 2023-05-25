@@ -249,8 +249,8 @@ export const options3 = {
   },
   legend: {
     show: true,
-    // data: ['Country', 'Province', 'City', 'District', 'Street', 'Region', 'Statistics', 'Proxy', '幼儿园', '小学', '中学', '中专', '大专院校', '驾校', '党校', 'State', 'FreeState'],
-    data: [],
+    data: ['疾病', '疾病分期类型', '病因', '发病机制', '临床表现', '检查方法', '检查指标', '检查指标值', '幼儿园', '药物名称', '用药频率', '用药剂量', '用药方法', '非药治疗', '手术', '不良反应', '部位','程度','持续时间'],
+    // data: [],
     textStyle: {
       color: '#000'
     },
