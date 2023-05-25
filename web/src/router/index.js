@@ -173,7 +173,7 @@ export const constantRoutes = [
       {
         path: 'vision',
         name: 'vision',
-        component: () => import('@/views/kg/question/index'),
+        component: () => import('@/views/kg/vision/kgmanage'),
         meta: {title: '知识图谱', icon: 'form'}
       }
     ]
@@ -188,7 +188,7 @@ export const constantRoutes = [
       {
         path: 'manage',
         name: 'manage',
-        component: () => import('@/views/kg/question/index'),
+        component: () => import('@/views/kg/manage/kgmanage_self'),
         meta: {title: '知识管理', icon: 'form'}
       }
     ]
