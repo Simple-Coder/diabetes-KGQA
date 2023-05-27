@@ -48,7 +48,7 @@ class Predictor:
             slot_probs = torch.softmax(slot_logits, dim=2).squeeze(0).tolist()
 
             intent_result = [(self.args.id2seqlabel[index], value) for index, value in enumerate(intent_probs) if
-                             value > 0.5]
+                             value > self.args.muti_intent_threshold]
             # filtered_values = [value for value in my_list if value > threshold]
 
             # intent_idx = np.where(intent_probs > 0.5)[0]

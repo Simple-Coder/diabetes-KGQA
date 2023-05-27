@@ -58,6 +58,8 @@ class Args:
     # 槽位数量
     token_num_labels = len(token_labels)
 
+    # 多标签分类意图阈值
+    muti_intent_threshold = 0.5
     # 隐层大小
     hidden_size = 768
     # 最大支持长度
