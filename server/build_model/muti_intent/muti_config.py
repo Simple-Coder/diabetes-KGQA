@@ -69,7 +69,7 @@ class Args:
     # 学习率
     lr = 2e-5
     # 训练轮数
-    epoch = 10
+    epoch = 5
     # dropout率
     hidden_dropout_prob = 0.1
 
