@@ -7,9 +7,9 @@ from transformers import BertModel
 from muti_config import Args
 
 
-class BertForIntentClassificationAndSlotFilling(nn.Module):
+class MutiJointModel(nn.Module):
     def __init__(self, num_intents, num_slots):
-        super(BertForIntentClassificationAndSlotFilling, self).__init__()
+        super(MutiJointModel, self).__init__()
         args = Args()
         self.bert = BertModel.from_pretrained(args.bert_dir)
         self.intent_classifier = nn.Linear(self.bert.config.hidden_size, num_intents)
