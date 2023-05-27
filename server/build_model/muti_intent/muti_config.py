@@ -15,13 +15,13 @@ class Args:
     # load_dir = 'checkpoints/1682428820model.pt'
 
     # 意图labels
-    seq_labels_path = '../../data/intent_and_slot_data/intent_label.txt'
+    seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
     # 槽位labels
-    token_labels_path = '../../data/intent_and_slot_data/slot_label.txt'
+    token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
 
-    train_texts = '../../data/intent_and_slot_data/test/seq.in'
-    train_intents = '../../data/intent_and_slot_data/test/label'
-    train_slots = '../../data/intent_and_slot_data/test/seq.out'
+    train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
+    train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
+    train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
 
     load_model = False
     do_train = True

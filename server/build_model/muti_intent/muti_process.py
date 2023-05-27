@@ -94,11 +94,17 @@ def convert_example_to_feature(ex_idx, example, tokenizer, config):
         return_token_type_ids=True,
     )
 
-    input_ids = torch.tensor(inputs['input_ids'], requires_grad=False)
-    attention_mask = torch.tensor(inputs['attention_mask'], requires_grad=False)
-    token_type_ids = torch.tensor(inputs['token_type_ids'], requires_grad=False)
-    seq_label_ids = torch.tensor(seq_label_ids, requires_grad=False)
-    token_label_ids = torch.tensor(token_label_ids, requires_grad=False)
+    # input_ids = torch.tensor(inputs['input_ids'], requires_grad=False)
+    # attention_mask = torch.tensor(inputs['attention_mask'], requires_grad=False)
+    # token_type_ids = torch.tensor(inputs['token_type_ids'], requires_grad=False)
+    # seq_label_ids = torch.tensor(seq_label_ids, requires_grad=False)
+    # token_label_ids = torch.tensor(token_label_ids, requires_grad=False)
+
+    input_ids = torch.tensor(inputs['input_ids'])
+    attention_mask = torch.tensor(inputs['attention_mask'])
+    token_type_ids = torch.tensor(inputs['token_type_ids'])
+    seq_label_ids = torch.tensor(seq_label_ids)
+    token_label_ids = torch.tensor(token_label_ids)
 
     if ex_idx < 3:
         print(f'*** {set_type}_example-{ex_idx} ***')
