@@ -9,9 +9,9 @@ class Args:
     # bert预训练模型
     bert_dir = 'hfl/chinese-bert-wwm-ext'
     # 模型保存位置
-    save_dir = '../checkpoints/'
+    save_dir = 'checkpoints/'
     # 加载模型位置
-    load_dir = '../checkpoints/1684047728model.pt'
+    load_dir = 'checkpoints/1684047728model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
     # 意图labels
@@ -63,7 +63,7 @@ class Args:
     # 最大支持长度
     max_len = 32
     # 批处理大小
-    batchsize = 2
+    batchsize = 10
     # 学习率
     lr = 2e-5
     # 训练轮数
@@ -100,4 +100,3 @@ if __name__ == '__main__':
     train_intent_labels = torch.stack(train_intent_labels)
 
     print(train_intent_labels)
-
