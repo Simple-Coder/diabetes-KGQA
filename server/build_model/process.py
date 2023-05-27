@@ -154,6 +154,6 @@ if __name__ == '__main__':
     slots = Processor.read_file('../data/intent_and_slot_data/train/seq.out')
 
     raw_examples = Processor.get_examples(texts, intents, slots, 'train')
-    tokenizer = BertTokenizer.from_pretrained('../chinese-bert-wwm-ext/')
+    tokenizer = BertTokenizer.from_pretrained(args.bert_dir)
     features = get_features(raw_examples, tokenizer, args)
     print("")
