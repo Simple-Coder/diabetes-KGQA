@@ -1,3 +1,4 @@
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, Dataset
@@ -7,8 +8,10 @@ from muti_dataset import BertDataset
 from muti_process import get_word_list
 from transformers import BertTokenizer
 from transformers import logging
+from seqeval.metrics.sequence_labeling import get_entities
 
 logging.set_verbosity_error()
+
 
 # Test the model
 def test_model(model, input_ids, attention_mask, intent_labels, slot_labels, criterion_intent, criterion_slot):
@@ -55,6 +58,26 @@ def predict(model, input_text):
 
         intent_probs = torch.sigmoid(intent_logits).squeeze(0).tolist()
         slot_probs = torch.softmax(slot_logits, dim=2).squeeze(0).tolist()
+
+        filtered_indices = [(args.id2seqlabel[index],value) for index, value in enumerate(intent_probs) if value > 0.5]
+        # filtered_values = [value for value in my_list if value > threshold]
+
+
+
+        # intent_idx = np.where(intent_probs > 0.5)[0]
+        # intent_result = [(args.id2seqlabel[idx], intent_probs[idx]) for idx in intent_idx]
+
+        token_output = np.argmax(slot_probs, -1)
+
+        token_output = token_output[1:len(input_text) - 1]
+        token_output = [args.id2tokenlabel[i] for i in token_output]
+
+        # intent = self.config.id2seqlabel[seq_output]
+        # slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
+        slots = [(i[0], input_text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]
+        print('意图：', filtered_indices)
+        # print('意图强度：', intent_confidence)
+        print('槽位：', str(slots))
 
         return intent_probs, slot_probs
 
