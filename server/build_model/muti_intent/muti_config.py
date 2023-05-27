@@ -78,3 +78,26 @@ if __name__ == '__main__':
     print('意图2：', args.seqlabel2id)
     print(args.tokenlabel2id)
     print(args.token_labels)
+
+    # Define example data
+    train_sentences = ['预订从上海到北京的机票', '提醒我明天上午8点开会']
+    intent_labels = [['预订', '查询'], ['提醒', '安排会议']]
+
+    # Create a list of all unique intents
+    all_intents = sorted(list(set([intent for intents in intent_labels for intent in intents])))
+
+    # Create a dictionary to map intents to indices
+    intent_to_index = {intent: index for index, intent in enumerate(all_intents)}
+
+    # Convert intent labels to one-hot encoding
+    train_intent_labels = []
+    for intents in intent_labels:
+        intent_indices = [intent_to_index[intent] for intent in intents]
+        one_hot = torch.zeros(len(all_intents))
+        one_hot[intent_indices] = 1
+        train_intent_labels.append(one_hot)
+
+    train_intent_labels = torch.stack(train_intent_labels)
+
+    print(train_intent_labels)
+
