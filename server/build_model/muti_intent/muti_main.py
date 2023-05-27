@@ -76,9 +76,9 @@ if __name__ == '__main__':
         torch.save(model.state_dict(), os.path.join(args.save_dir, str(int(time.time())) + 'muti_model.pt'))
 
     # Predict
-    predictor = Predictor()
+    predictor = Predictor(model)
     input_text = "请问二型糖尿病的临床表现是什么,需要吃什么药啊"
-    intent_probs, slot_probs = predictor.predict(model, input_text)
+    intent_probs, slot_probs = predictor.predict(input_text)
 
     print("Intent probabilities:", intent_probs)
     print("Slot probabilities:", slot_probs)

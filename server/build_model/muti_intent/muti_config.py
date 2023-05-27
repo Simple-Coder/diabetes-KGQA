@@ -11,7 +11,7 @@ class Args:
     # 模型保存位置
     save_dir = 'checkpoints/'
     # 加载模型位置
-    load_dir = 'checkpoints/1684047728model.pt'
+    load_dir = '../checkpoints/1685190371muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
     # 意图labels
@@ -23,7 +23,7 @@ class Args:
     train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
     train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
 
-    load_model = False
+    load_model = True
     do_train = True
     do_eval = False
     do_test = True

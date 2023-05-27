@@ -11,13 +11,14 @@ from muti_process import get_word_list
 
 
 class Predictor:
-    def __init__(self):
+    def __init__(self, model):
         self.args = Args()
         self.tokenizer = BertTokenizer.from_pretrained(self.args.bert_dir)
+        self.model = model
 
     # Predict function
-    def predict(self, model, input_text):
-        model.eval()
+    def predict(self, input_text):
+        self.model.eval()
         with torch.no_grad():
             # Tokenize and convert to input IDs
             # tokens = list(jieba.cut(input_text))
@@ -40,7 +41,7 @@ class Predictor:
             attention_mask = [1] * len(input_ids)
             attention_mask = torch.tensor(attention_mask).unsqueeze(0)
 
-            outputs = model(input_ids, attention_mask)
+            outputs = self.model(input_ids, attention_mask)
             intent_logits, slot_logits = outputs
 
             intent_probs = torch.sigmoid(intent_logits).squeeze(0).tolist()
