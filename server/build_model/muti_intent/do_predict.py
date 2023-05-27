@@ -44,7 +44,9 @@ if __name__ == '__main__':
         result = predict_wrapper.predict(text)
 
         data_data = {}
-        data_data["intents"] = result[0]
+
+        # 1、按意图强度降序排序
+        data_data["intents"] = sorted(result[0], key=lambda x: x[1], reverse=True)
         data_data["slots"] = result[1]
 
         data["data"] = data_data
