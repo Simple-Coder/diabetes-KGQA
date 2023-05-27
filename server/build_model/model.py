@@ -20,7 +20,8 @@ class BertForIntentClassificationAndSlotFilling(nn.Module):
             nn.Dropout(config.hidden_dropout_prob),
             nn.Linear(config.hidden_size, config.token_num_labels),
         )
-
+        # 增加sigmoid实现多标签分类
+        self.sigmoid = nn.Sigmoid()
     def forward(self,
                 input_ids,
                 attention_mask,
