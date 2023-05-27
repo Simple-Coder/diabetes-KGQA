@@ -63,7 +63,7 @@ def convert_example_to_feature(ex_idx, example, tokenizer, config):
     seq_label = example.seq_label
     token_label = example.token_label
 
-    # 1、处理多标签分类
+    # 1、处理多标签分类'method_drug'
     intput_intent_list = seq_label.split('|')
     intent_indices = [config.seqlabel2id[intent] for intent in intput_intent_list]
     seq_label_ids = torch.zeros(config.seq_num_labels)
