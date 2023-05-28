@@ -46,18 +46,25 @@ def medical_robot(user_name, query, query_intent, query_intensity, query_slots):
             #     if slot.lower() == e['type']:
             #         slot_values[slot] = entity_link(e['word'], e['type'])
     last_slot_values = load_user_dialogue_context(user_name)["slot_values"]
-    for k in slot_values.keys():
-        if slot_values[k] is None:
-            slot_values[k] = last_slot_values.get(k, None)
+    if last_slot_values:
+        for k in slot_values.keys():
+            if slot_values.get(k) is None:
+                slot_values[k] = last_slot_values.get(k, None)
 
-    slot_info["slot_values"] = slot_values
-    # 根据意图强度来确认回复策略
-    if query_intensity >= intent_threshold_config["accept"]:
-        slot_info["intent_strategy"] = "accept"
-    elif query_intensity >= intent_threshold_config["deny"]:
-        slot_info["intent_strategy"] = "clarify"
-    else:
+    if None in slot_values.values():
+        none_keys = [k for k, v in slot_values.items() if v is None]
+        none_keys_string = ', '.join(none_keys)
+        logger.info("填槽未完成,未完成key有：", none_keys_string)
         slot_info["intent_strategy"] = "deny"
+    else:
+        slot_info["slot_values"] = slot_values
+        # 根据意图强度来确认回复策略
+        if query_intensity >= intent_threshold_config["accept"]:
+            slot_info["intent_strategy"] = "accept"
+        elif query_intensity >= intent_threshold_config["deny"]:
+            slot_info["intent_strategy"] = "clarify"
+        else:
+            slot_info["intent_strategy"] = "deny"
 
     # 上述填槽完毕，准备查询数据库
     return get_answer(slot_info)
@@ -75,6 +82,8 @@ def get_answer(slot_info):
     strategy = slot_info.get("intent_strategy")
 
     if not slot_values:
+        logger.info("slot填充未完成，采用默认值返回")
+        slot_info["replay_answer"] = slot_info.get("deny_response")
         return slot_info
 
     if strategy == "accept":

@@ -17,14 +17,14 @@ predict_wrapper = MutiPredictWrapper(args)
 def answer_user_query(username, query):
     # 意图识别与槽位识别结果
     query_result = predict_wrapper.predict(query)
-
     # 获取意图列表
-    query_intents = None
+    query_intents = sorted(query_result[0], key=lambda x: x[1], reverse=True)
     # 获取槽位列表
-    query_slots = None
+    query_slots = query_result[1]
 
     # 获取最强烈的意图
-    user_intent = None
+    user_intent = query_intents[0][0] if query_intents else "others"
+    user_intent_intensity = query_intents[0][1] if query_intents else 0
 
     # 闲聊意图
     if user_intent in ["greet", "goodbye", "deny", "isbot"]:
@@ -40,13 +40,14 @@ def answer_user_query(username, query):
         reply = medical_robot(user_name=username,
                               query=query,
                               query_intent=user_intent,
-                              query_intensity=None,
+                              query_intensity=user_intent_intensity,
                               query_slots=query_slots)
         if 'visison_data' in reply:
             visison_data = reply.get("visison_data")
         if reply["slot_values"]:
             dump_user_dialogue_context(username, reply)
         reply = reply.get("replay_answer")
+        return reply
 
 
 def gossip_robot(intent):
