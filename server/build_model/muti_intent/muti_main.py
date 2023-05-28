@@ -55,10 +55,15 @@ if __name__ == '__main__':
     train_dataset = BertDataset('train')
     train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
 
+    model.train()
     for epoch in range(num_epochs):
         train_loss = 0
+
         print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} start")
+        # for b, train_batch in enumerate(train_loader):
         for b, train_batch in enumerate(train_loader):
+
+
             input_ids = train_batch['input_ids'].to(device)
             attention_mask = train_batch['attention_mask']
             token_type_ids = train_batch['token_type_ids']
@@ -69,11 +74,17 @@ if __name__ == '__main__':
             intent_logits, slot_logits = outputs
 
             intent_loss = criterion_intent(intent_logits, seq_label_ids.float())
-            slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features), token_label_ids.view(-1))
+            # slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features), token_label_ids.view(-1))
+
+            active_loss = attention_mask.view(-1) == 1
+            active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
+            active_labels = token_label_ids.view(-1)[active_loss]
+            slot_loss = criterion_slot(active_logits, active_labels)
 
             total_loss = intent_loss + slot_loss
 
-            optimizer.zero_grad()
+            # optimizer.zero_grad()
+            model.zero_grad()
             total_loss.backward()
             optimizer.step()
 
@@ -83,9 +94,9 @@ if __name__ == '__main__':
         print(f"time:{getLastDate()} Train Loss: {train_loss:.4f}")
         print()
 
-        if args.do_save:
-            torch.save(model.state_dict(), os.path.join(args.save_dir, str(int(time.time())) + str(epoch)
-                                                        + '_muti_model.pt'))
+        if args.do_save and epoch % 10 == 0:
+            torch.save(model.state_dict(),
+                       os.path.join(args.save_dir, str(int(time.time())) + '_' + str(epoch) + '_muti_model.pt'))
 
         # Predict
         predictor = Predictor(model)
@@ -94,3 +105,10 @@ if __name__ == '__main__':
 
         print("Intent probabilities:", intent_probs)
         print("Slot probabilities:", slot_probs)
+
+        predictor = Predictor(model)
+        input_text = "再见"
+        intent_probs, slot_probs = predictor.predict(input_text)
+
+        print(input_text + "Intent probabilities:", intent_probs)
+        print(input_text + "Slot probabilities:", slot_probs)
