@@ -8,14 +8,16 @@ import time
 
 from do_predict import MutiPredictWrapper
 from muti_config import Args
-from muti_chat_config import gossip_corpus
+from muti_chat_config import gossip_corpus, semantic_slot
 from muti_utils import setup_logger, load_user_dialogue_context, dump_user_dialogue_context
 from muti_chat_modules import medical_robot
+from logger_conf import MyLog
 
 args = Args()
 predict_wrapper = MutiPredictWrapper(args)
 # 获取日志记录器
-logger = setup_logger()
+# logger = setup_logger()
+logger = MyLog().logger
 
 
 def answer_user_query(username, query, user_intent, user_intent_intensity,
@@ -92,36 +94,40 @@ def message_received(client, server, message):
         # 获取槽位列表
         all_slots = query_result[1]
 
-        # 获取最强烈的意图
-        # user_intent = all_intents[0][0] if all_intents else "others"
-        # user_intent_intensity = all_intents[0][1] if all_intents else 0
+        if not all_intents:
+            logger.info("未识别到用户输入【%s】对应的意图", query_text)
+            server.send_message_to_all(str(semantic_slot["others"].get("replay_answer")))
+        else:
 
-        # 问答上下文
-        answer_context = load_user_dialogue_context(query_username)
+            # 获取最强烈的意图
+            # user_intent = all_intents[0][0] if all_intents else "others"
+            # user_intent_intensity = all_intents[0][1] if all_intents else 0
 
-        # for intentAgg in all_intents:
-        user_intent = all_intents[0][0]
-        user_intent_intensity = all_intents[0][1]
-        logger.info("开始处理intent:%s 意图强度:%f", user_intent, user_intent_intensity)
-        answer = answer_user_query(query_username,
-                                   query_text,
-                                   user_intent,
-                                   user_intent_intensity,
-                                   all_slots,
-                                   all_intents)
-        logger.info("结束处理intent:%s 意图强度:%f 处理结果: %s",
-                    user_intent, user_intent_intensity, answer)
-        # data = {}¬
-        # data["data"] = answer
-        # data["code"] = 20000
-        # data["message"] = 'success'
+            # 问答上下文
+            answer_context = load_user_dialogue_context(query_username)
 
-        server.send_message_to_all(str(answer))
-        # if answer_result == "deny":
-        #     logger.info("user_intent deny,exit: %s", user_intent)
-        #     break
-        time.sleep(2)
+            # for intentAgg in all_intents:
+            user_intent = all_intents[0][0]
+            user_intent_intensity = all_intents[0][1]
+            logger.info("开始处理intent:%s 意图强度:%f", user_intent, user_intent_intensity)
+            answer = answer_user_query(query_username,
+                                       query_text,
+                                       user_intent,
+                                       user_intent_intensity,
+                                       all_slots,
+                                       all_intents)
+            logger.info("结束处理intent:%s 意图强度:%f 处理结果: %s",
+                        user_intent, user_intent_intensity, answer)
+            # data = {}¬
+            # data["data"] = answer
+            # data["code"] = 20000
+            # data["message"] = 'success'
 
+            server.send_message_to_all(str(answer))
+            # if answer_result == "deny":
+            #     logger.info("user_intent deny,exit: %s", user_intent)
+            #     break
+            time.sleep(2)
     except Exception as r:
         logger.error("未知错误 %s " % r)
         # data = {}
@@ -130,6 +136,7 @@ def message_received(client, server, message):
         # data["message"] = 'success'
         # server.send_message_to_all(str(data))
         server.send_message_to_all(str('服务器发生异常啦~~~'))
+
 
 if __name__ == '__main__':
     # start sever
