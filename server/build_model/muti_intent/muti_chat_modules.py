@@ -3,11 +3,15 @@ Created by xiedong
 @Date: 2023/5/28 12:25
 """
 import logging
-from py2neo import Graph
-from muti_chat_config import semantic_slot, intent_threshold_config, CATEGORY_INDEX
-from muti_utils import load_user_dialogue_context, setup_logger
 
-logger = setup_logger()
+from py2neo import Graph
+
+from logger_conf import my_log
+from muti_chat_config import semantic_slot, intent_threshold_config, CATEGORY_INDEX
+from muti_utils import load_user_dialogue_context
+
+# logger = MyLog()
+logger = my_log.logger
 
 graph = Graph(host="127.0.0.1",
               http_port=7474,
@@ -25,8 +29,12 @@ def medical_robot(user_name, query, query_intent, query_intensity, query_slots):
     :param query_slots: 序列标注结果
     :return:
     """
-    logger.info("medical_robot start username:%s query:%s query_intent:%s query_intensity:%d query_slots:%s", user_name,
-                query, query_intent, query_intensity, query_slots)
+    logger.info(
+        "medical_robot start username:{} query:{} query_intent:{} query_intensity:{} query_slots:{}".format(user_name,
+                                                                                                            query,
+                                                                                                            query_intent,
+                                                                                                            query_intensity,
+                                                                                                            query_slots))
     # 1、如果是其他意图则返回未知
     if query_intent == "others":
         return semantic_slot.get("others")

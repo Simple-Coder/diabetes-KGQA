@@ -3,21 +3,27 @@ Created by xiedong
 @Date: 2023/5/28 12:16
 """
 import json
+import logging
 import random
 import time
 
 from do_predict import MutiPredictWrapper
 from muti_config import Args
 from muti_chat_config import gossip_corpus, semantic_slot
-from muti_utils import setup_logger, load_user_dialogue_context, dump_user_dialogue_context
+from muti_utils import load_user_dialogue_context, dump_user_dialogue_context
 from muti_chat_modules import medical_robot
-from logger_conf import MyLog
+from logger_conf import my_log
 
 args = Args()
 predict_wrapper = MutiPredictWrapper(args)
+logger = my_log.logger
+
+
+# myLog = MyLog()
+
+
 # 获取日志记录器
 # logger = setup_logger()
-logger = MyLog().logger
 
 
 def answer_user_query(username, query, user_intent, user_intent_intensity,
@@ -95,7 +101,7 @@ def message_received(client, server, message):
         all_slots = query_result[1]
 
         if not all_intents:
-            logger.info("未识别到用户输入【%s】对应的意图", query_text)
+            logger.info("未识别到用户输入【{}】对应的意图".format(query_text))
             server.send_message_to_all(str(semantic_slot["others"].get("replay_answer")))
         else:
 
@@ -109,15 +115,15 @@ def message_received(client, server, message):
             # for intentAgg in all_intents:
             user_intent = all_intents[0][0]
             user_intent_intensity = all_intents[0][1]
-            logger.info("开始处理intent:%s 意图强度:%f", user_intent, user_intent_intensity)
+            logger.info("开始处理intent:{} 意图强度:{}".format(user_intent, user_intent_intensity))
             answer = answer_user_query(query_username,
                                        query_text,
                                        user_intent,
                                        user_intent_intensity,
                                        all_slots,
                                        all_intents)
-            logger.info("结束处理intent:%s 意图强度:%f 处理结果: %s",
-                        user_intent, user_intent_intensity, answer)
+            logger.info("结束处理intent:{} 意图强度:{} 处理结果: {}".format(
+                user_intent, user_intent_intensity, answer))
             # data = {}¬
             # data["data"] = answer
             # data["code"] = 20000
@@ -129,13 +135,13 @@ def message_received(client, server, message):
             #     break
             time.sleep(2)
     except Exception as r:
+        server.send_message_to_all(str('服务器发生异常啦~~~'))
         logger.error("未知错误 %s " % r)
         # data = {}
         # data["data"] = '服务器发生异常啦~~~'
         # data["code"] = 20000
         # data["message"] = 'success'
         # server.send_message_to_all(str(data))
-        server.send_message_to_all(str('服务器发生异常啦~~~'))
 
 
 if __name__ == '__main__':

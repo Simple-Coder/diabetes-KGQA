@@ -37,3 +37,7 @@ class MyLog(object):
         console_handler = logging.StreamHandler(sys.stdout)
         console_handler.setFormatter(self.formatter)
         return console_handler
+
+
+# 创建全局的MyLog实例
+my_log = MyLog()
