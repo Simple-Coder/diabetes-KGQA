@@ -70,7 +70,7 @@ import kgecharts from '@/components/kg/kgecharts.vue'
 // axios.defaults.baseURL = dataServerIp.dataServerIp
 
 import {doAnswer} from '@/api/answer'
-
+import {mapGetters} from 'vuex'
 
 export default {
   components: {kgecharts},
@@ -100,15 +100,42 @@ export default {
     },
     websockonopen() {
       // this.websocketsend(JSON.stringify(this.textarea))
-      this.websocketsend('vue send something')
+      // this.websocketsend('vue send something')
     },
     websockonerror() {
       this.initWebSocket()
     },
     websockonmessage(e) {
       console.log(e)
+      const message = e.data;
+
       // this.dataList.push(e.data)
-      this.dialogData.push({rot: e.data})
+      // this.dialogData.push({rot: e.data})
+      this.dialogData.push({person: this.input, rot: message})
+      this.input = ''
+      //   // 知识卡片
+      //   this.nodecolumn = [{label: '记录', prop: 'record'}]
+      //   this.nodedata = {
+      //     record: res.data.reply.answer
+      //   }
+      //   // 知识图谱
+      //   this.kgIdList.clear()
+      //   this.kgEdgeIdSet.clear()
+      //   this.kgoptions.series[0].data = res.data.reply.visison_data.data
+      //   this.kgoptions.series[0].links = res.data.reply.visison_data.links
+      //   for (const key1 of res.data.visison_data.data) {
+      //     this.kgIdList.add(key1.id)
+      //   }
+      //   for (const key2 of res.data.visison_data.links) {
+      //     this.kgEdgeIdSet.add(key2.id)
+      //   }
+      //
+      //
+      // }).catch(error => {
+      //   console.log('响应失败')
+      //   console.log(error)
+      // });
+
     },
     websockclose() {
       console.log('连接中断')
@@ -122,43 +149,45 @@ export default {
       this.websocketsend(this.textarea)
     },
     questionSent() {
+      console.log(this.name)
       if (this.input === '' || this.input === undefined) {
         console.log('input error')
         this.dialogData.push({person: '...', rot: '你啥也没说啊！'})
       } else {
         const params = {
-          'text': this.input
+          'query': this.input,
+          'username': this.name
         }
         console.log(params)
-        this.websocketsend('hhhhh')
+        this.websocketsend(JSON.stringify(params))
 
-        doAnswer(params).then((res) => {
-          console.log('响应成功')
-          console.log(res)
-          this.dialogData.push({person: this.input, rot: res.data.reply.answer})
-          this.input = ''
-          // 知识卡片
-          this.nodecolumn = [{label: '记录', prop: 'record'}]
-          this.nodedata = {
-            record: res.data.reply.answer
-          }
-          // 知识图谱
-          this.kgIdList.clear()
-          this.kgEdgeIdSet.clear()
-          this.kgoptions.series[0].data = res.data.reply.visison_data.data
-          this.kgoptions.series[0].links = res.data.reply.visison_data.links
-          for (const key1 of res.data.visison_data.data) {
-            this.kgIdList.add(key1.id)
-          }
-          for (const key2 of res.data.visison_data.links) {
-            this.kgEdgeIdSet.add(key2.id)
-          }
-
-
-        }).catch(error => {
-          console.log('响应失败')
-          console.log(error)
-        });
+        // doAnswer(params).then((res) => {
+        //   console.log('响应成功')
+        //   console.log(res)
+        //   this.dialogData.push({person: this.input, rot: res.data.reply.answer})
+        //   this.input = ''
+        //   // 知识卡片
+        //   this.nodecolumn = [{label: '记录', prop: 'record'}]
+        //   this.nodedata = {
+        //     record: res.data.reply.answer
+        //   }
+        //   // 知识图谱
+        //   this.kgIdList.clear()
+        //   this.kgEdgeIdSet.clear()
+        //   this.kgoptions.series[0].data = res.data.reply.visison_data.data
+        //   this.kgoptions.series[0].links = res.data.reply.visison_data.links
+        //   for (const key1 of res.data.visison_data.data) {
+        //     this.kgIdList.add(key1.id)
+        //   }
+        //   for (const key2 of res.data.visison_data.links) {
+        //     this.kgEdgeIdSet.add(key2.id)
+        //   }
+        //
+        //
+        // }).catch(error => {
+        //   console.log('响应失败')
+        //   console.log(error)
+        // });
 
         // 思知对话接口
         /* axios.get('/bot', {
@@ -266,6 +295,11 @@ export default {
   },
   destroyed() {
     this.websock.close()
+  },
+  computed: {
+    ...mapGetters([
+      'name'
+    ])
   }
 
 }
