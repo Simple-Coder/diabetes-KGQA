@@ -11,7 +11,7 @@ class Args:
     # 模型保存位置
     save_dir = 'checkpoints/'
     # 加载模型位置
-    load_dir = '../checkpoints/1685190371muti_model.pt'
+    load_dir = '../checkpoints/1685273533muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
     # 意图labels
@@ -69,7 +69,7 @@ class Args:
     # 学习率
     lr = 2e-5
     # 训练轮数
-    epoch = 5
+    epoch = 20
     # dropout率
     hidden_dropout_prob = 0.1
 

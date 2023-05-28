@@ -5,9 +5,9 @@ Created by xiedong
 import logging
 from py2neo import Graph
 from muti_chat_config import semantic_slot, intent_threshold_config, CATEGORY_INDEX
-from muti_utils import load_user_dialogue_context
+from muti_utils import load_user_dialogue_context, setup_logger
 
-logger = logging.getLogger(__name__)
+logger = setup_logger()
 
 graph = Graph(host="127.0.0.1",
               http_port=7474,
@@ -25,8 +25,8 @@ def medical_robot(user_name, query, query_intent, query_intensity, query_slots):
     :param query_slots: 序列标注结果
     :return:
     """
-    logger.info("medical_robot start username:{%s} query:{%s} query_intent:{%s} query_intensity:{} query_slots:{}",
-                user_name, query, query_intent, query_intensity, query_slots)
+    logger.info("medical_robot start username:%s query:%s query_intent:%s query_intensity:%d query_slots:%s", user_name,
+                query, query_intent, query_intensity, query_slots)
     # 1、如果是其他意图则返回未知
     if query_intent == "others":
         return semantic_slot.get("others")
@@ -54,7 +54,7 @@ def medical_robot(user_name, query, query_intent, query_intensity, query_slots):
     if None in slot_values.values():
         none_keys = [k for k, v in slot_values.items() if v is None]
         none_keys_string = ', '.join(none_keys)
-        logger.info("填槽未完成,未完成key有：", none_keys_string)
+        logger.info("填槽未完成,未完成key有：%s", none_keys_string)
         slot_info["intent_strategy"] = "deny"
     else:
         slot_info["slot_values"] = slot_values

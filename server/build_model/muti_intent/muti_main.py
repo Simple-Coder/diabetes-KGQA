@@ -25,6 +25,12 @@ logging.set_verbosity_error()
 #     total_loss = intent_loss + slot_loss
 #
 #     return total_loss.item()
+import datetime
+
+
+# 获取时间函数，把当前时间格式化为str类型nowdate.strftime('%Y-%m-%d %H:%M:%S')
+def getLastDate():
+    return datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
 
 if __name__ == '__main__':
@@ -47,6 +53,7 @@ if __name__ == '__main__':
 
     for epoch in range(num_epochs):
         train_loss = 0
+        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} start")
         for b, train_batch in enumerate(train_loader):
             input_ids = train_batch['input_ids'].to(device)
             attention_mask = train_batch['attention_mask']
@@ -68,8 +75,8 @@ if __name__ == '__main__':
 
             train_loss = total_loss.item()
 
-        print(f"Epoch {epoch + 1}/{num_epochs}")
-        print(f"Train Loss: {train_loss:.4f}")
+        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs}")
+        print(f"time:{getLastDate()} Train Loss: {train_loss:.4f}")
         print()
 
     if args.do_save:
