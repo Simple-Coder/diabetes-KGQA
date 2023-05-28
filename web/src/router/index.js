@@ -152,40 +152,22 @@ export const constantRoutes = [
     path: '/kg',
     component: Layout,
     redirect: '/kg/question',
-    name: '智能问答',
-    meta: {title: '智能问答', icon: 'el-icon-s-help'},
+    name: '知识平台',
+    meta: {title: '知识平台', icon: 'el-icon-s-help'},
     children: [
       {
         path: 'question',
         name: 'question',
         component: () => import('@/views/kg/question/index'),
         meta: {title: '智能问答', icon: 'table'}
-      }
-    ]
-  },
-  {
-    path: '/kg',
-    component: Layout,
-    redirect: '/kg/vision',
-    name: '知识图谱',
-    meta: {title: '知识图谱', icon: 'el-icon-s-help'},
-    children: [
+      },
       {
         path: 'vision',
         name: 'vision',
-        component: () => import('@/views/kg/vision/kgmanage'),
+        component: () => import('@/views/kg/vision/index'),
         meta: {title: '知识图谱', icon: 'form'}
-      }
-    ]
-  },
-    {
-    path: '/kg',
-    component: Layout,
-    redirect: '/kg/manage',
-    name: '知识管理',
-    meta: {title: '知识管理', icon: 'el-icon-s-help'},
-    children: [
-      {
+      },
+       {
         path: 'manage',
         name: 'manage',
         component: () => import('@/views/kg/manage/kgmanage_self'),
@@ -193,6 +175,37 @@ export const constantRoutes = [
       }
     ]
   },
+
+  // {
+  //   path: '/kg',
+  //   component: Layout,
+  //   redirect: '/kg/vision',
+  //   name: '知识图谱',
+  //   meta: {title: '知识图谱', icon: 'el-icon-s-help'},
+  //   children: [
+  //     {
+  //       path: 'vision',
+  //       name: 'vision',
+  //       component: () => import('@/views/kg/vision/index'),
+  //       meta: {title: '知识图谱', icon: 'form'}
+  //     }
+  //   ]
+  // },
+  // {
+  //   path: '/kg',
+  //   component: Layout,
+  //   redirect: '/kg/manage',
+  //   name: '知识管理',
+  //   meta: {title: '知识管理', icon: 'el-icon-s-help'},
+  //   children: [
+  //     {
+  //       path: 'manage',
+  //       name: 'manage',
+  //       component: () => import('@/views/kg/manage/kgmanage_self'),
+  //       meta: {title: '知识管理', icon: 'form'}
+  //     }
+  //   ]
+  // },
   // {
   //   path: 'external-link',
   //   component: Layout,
