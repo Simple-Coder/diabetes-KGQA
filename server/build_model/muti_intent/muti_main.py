@@ -41,6 +41,10 @@ if __name__ == '__main__':
     num_slots = args.token_num_labels
 
     model = MutiJointModel(num_intents=num_intents, num_slots=num_slots).to(device)
+
+    if args.load_model:
+        model.load_state_dict(torch.load(args.load_dir))
+
     criterion_intent = nn.BCEWithLogitsLoss()
     criterion_slot = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
@@ -75,17 +79,18 @@ if __name__ == '__main__':
 
             train_loss = total_loss.item()
 
-        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs}")
+        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} end")
         print(f"time:{getLastDate()} Train Loss: {train_loss:.4f}")
         print()
 
-    if args.do_save:
-        torch.save(model.state_dict(), os.path.join(args.save_dir, str(int(time.time())) + 'muti_model.pt'))
+        if args.do_save:
+            torch.save(model.state_dict(), os.path.join(args.save_dir, str(int(time.time())) + str(epoch)
+                                                        + '_muti_model.pt'))
 
-    # Predict
-    predictor = Predictor(model)
-    input_text = "请问二型糖尿病的临床表现是什么,需要吃什么药啊"
-    intent_probs, slot_probs = predictor.predict(input_text)
+        # Predict
+        predictor = Predictor(model)
+        input_text = "你好"
+        intent_probs, slot_probs = predictor.predict(input_text)
 
-    print("Intent probabilities:", intent_probs)
-    print("Slot probabilities:", slot_probs)
+        print("Intent probabilities:", intent_probs)
+        print("Slot probabilities:", slot_probs)
