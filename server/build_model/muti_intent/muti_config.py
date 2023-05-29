@@ -7,23 +7,32 @@ import torch
 
 class Args:
     # bert预训练模型
-    bert_dir = 'hfl/chinese-bert-wwm-ext'
+    bert_dir = 'D://dev//PycharmProjects//diabetes-KGQA//server//chinese-bert-wwm-ext'
     # 模型保存位置
     save_dir = 'checkpoints/'
     # 加载模型位置
     load_dir = '../checkpoints/1685273533muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
+    # # 意图labels
+    # seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
+    # # 槽位labels
+    # token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
+    #
+    # train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
+    # train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
+    # train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
+
     # 意图labels
-    seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
+    seq_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//intent_label.txt'
     # 槽位labels
-    token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
+    token_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//slot_label.txt'
 
-    train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
-    train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
-    train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
+    train_texts = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.in'
+    train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
+    train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
 
-    load_model = True
+    load_model = False
     do_train = True
     do_eval = False
     do_test = True
@@ -65,7 +74,7 @@ class Args:
     # 最大支持长度
     max_len = 32
     # 批处理大小
-    batchsize = 10
+    batchsize = 2
     # 学习率
     lr = 2e-5
     # 训练轮数

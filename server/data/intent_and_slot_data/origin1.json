@@ -20663,7 +20663,7 @@
     },
     "id": 2629,
     "text": "短效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20671,7 +20671,7 @@
     },
     "id": 2630,
     "text": "glp-1受体激动剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20679,7 +20679,7 @@
     },
     "id": 2631,
     "text": "预混人胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20687,7 +20687,7 @@
     },
     "id": 2632,
     "text": "甘精胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20695,7 +20695,7 @@
     },
     "id": 2633,
     "text": "脂微球前列地尔注射液的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20703,7 +20703,7 @@
     },
     "id": 2634,
     "text": "碘化对比剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20711,7 +20711,7 @@
     },
     "id": 2635,
     "text": "磺脲类胰岛素促泌剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20719,7 +20719,7 @@
     },
     "id": 2636,
     "text": "餐时胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20727,7 +20727,7 @@
     },
     "id": 2637,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20735,7 +20735,7 @@
     },
     "id": 2638,
     "text": "恩格列净的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20743,7 +20743,7 @@
     },
     "id": 2639,
     "text": "短效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20751,7 +20751,7 @@
     },
     "id": 2640,
     "text": "预混人胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20759,7 +20759,7 @@
     },
     "id": 2641,
     "text": "预混胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20767,7 +20767,7 @@
     },
     "id": 2642,
     "text": "葡萄糖溶液的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20775,7 +20775,7 @@
     },
     "id": 2643,
     "text": "预混胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20783,7 +20783,7 @@
     },
     "id": 2644,
     "text": "基础胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20791,7 +20791,7 @@
     },
     "id": 2645,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20799,7 +20799,7 @@
     },
     "id": 2646,
     "text": "枸橼酸氢钾钠颗粒的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20807,7 +20807,7 @@
     },
     "id": 2647,
     "text": "糖皮质激素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20815,7 +20815,7 @@
     },
     "id": 2648,
     "text": "速效胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20823,7 +20823,7 @@
     },
     "id": 2649,
     "text": "人胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20831,7 +20831,7 @@
     },
     "id": 2650,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20839,7 +20839,7 @@
     },
     "id": 2651,
     "text": "秋水仙碱的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20847,7 +20847,7 @@
     },
     "id": 2652,
     "text": "速效胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20855,7 +20855,7 @@
     },
     "id": 2653,
     "text": "胰素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20863,7 +20863,7 @@
     },
     "id": 2654,
     "text": "α-葡萄糖苷酶抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20871,7 +20871,7 @@
     },
     "id": 2655,
     "text": "短效或速效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20879,7 +20879,7 @@
     },
     "id": 2656,
     "text": "α-糖苷酶抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20887,7 +20887,7 @@
     },
     "id": 2657,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20895,7 +20895,7 @@
     },
     "id": 2658,
     "text": "胰岛素促泌剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20903,7 +20903,7 @@
     },
     "id": 2659,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20911,7 +20911,7 @@
     },
     "id": 2660,
     "text": "非胰岛素促泌剂类口服降糖药物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20919,7 +20919,7 @@
     },
     "id": 2661,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20927,7 +20927,7 @@
     },
     "id": 2662,
     "text": "xa因子和ⅱa直接抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20935,7 +20935,7 @@
     },
     "id": 2663,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20943,7 +20943,7 @@
     },
     "id": 2664,
     "text": "含糖液体的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20951,7 +20951,7 @@
     },
     "id": 2665,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20959,7 +20959,7 @@
     },
     "id": 2666,
     "text": "贝前列腺素钠片的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20967,7 +20967,7 @@
     },
     "id": 2667,
     "text": "肠内外营养液的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20975,7 +20975,7 @@
     },
     "id": 2668,
     "text": "二甲双胍的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20983,7 +20983,7 @@
     },
     "id": 2669,
     "text": "坎格列净的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20991,7 +20991,7 @@
     },
     "id": 2670,
     "text": "泼尼松的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -20999,7 +20999,7 @@
     },
     "id": 2671,
     "text": "二甲双胍的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21007,7 +21007,7 @@
     },
     "id": 2672,
     "text": "速效胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21015,7 +21015,7 @@
     },
     "id": 2673,
     "text": "枸橼酸合剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21023,7 +21023,7 @@
     },
     "id": 2674,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21031,7 +21031,7 @@
     },
     "id": 2675,
     "text": "脉岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21039,7 +21039,7 @@
     },
     "id": 2676,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21047,7 +21047,7 @@
     },
     "id": 2677,
     "text": "口服避孕药的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21055,7 +21055,7 @@
     },
     "id": 2678,
     "text": "短效磺脲类促泌剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21063,7 +21063,7 @@
     },
     "id": 2679,
     "text": "二肽基肽酶4(dpp-4)抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21071,7 +21071,7 @@
     },
     "id": 2680,
     "text": "常规胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21079,7 +21079,7 @@
     },
     "id": 2681,
     "text": "避孕药的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21087,7 +21087,7 @@
     },
     "id": 2682,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21095,7 +21095,7 @@
     },
     "id": 2683,
     "text": "速效胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21103,7 +21103,7 @@
     },
     "id": 2684,
     "text": "艾塞那肽的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21111,7 +21111,7 @@
     },
     "id": 2685,
     "text": "中效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21119,7 +21119,7 @@
     },
     "id": 2686,
     "text": "5%~10%葡萄糖液的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21127,7 +21127,7 @@
     },
     "id": 2687,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21135,7 +21135,7 @@
     },
     "id": 2688,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21143,7 +21143,7 @@
     },
     "id": 2689,
     "text": "速效胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21151,7 +21151,7 @@
     },
     "id": 2690,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21159,7 +21159,7 @@
     },
     "id": 2691,
     "text": "磺脲类的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21167,7 +21167,7 @@
     },
     "id": 2692,
     "text": "格列奈类口服降糖药的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21175,7 +21175,7 @@
     },
     "id": 2693,
     "text": "短效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21183,7 +21183,7 @@
     },
     "id": 2694,
     "text": "效胰岛素似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21191,7 +21191,7 @@
     },
     "id": 2695,
     "text": "葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21199,7 +21199,7 @@
     },
     "id": 2696,
     "text": "基础-餐时胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21207,7 +21207,7 @@
     },
     "id": 2697,
     "text": "短效或速效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21215,7 +21215,7 @@
     },
     "id": 2698,
     "text": "长效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21223,7 +21223,7 @@
     },
     "id": 2699,
     "text": "预混胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21231,7 +21231,7 @@
     },
     "id": 2700,
     "text": "基础胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21239,7 +21239,7 @@
     },
     "id": 2701,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21247,7 +21247,7 @@
     },
     "id": 2702,
     "text": "糖皮质激素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21255,7 +21255,7 @@
     },
     "id": 2703,
     "text": "格列奈类促泌剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21263,7 +21263,7 @@
     },
     "id": 2704,
     "text": "葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21271,7 +21271,7 @@
     },
     "id": 2705,
     "text": "糖皮质激素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21279,7 +21279,7 @@
     },
     "id": 2706,
     "text": "二肽基肽酶-4(dipeptidyl peptidase-4，dpp-4)抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21287,7 +21287,7 @@
     },
     "id": 2707,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21295,7 +21295,7 @@
     },
     "id": 2708,
     "text": "预混胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21303,7 +21303,7 @@
     },
     "id": 2709,
     "text": "葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21311,7 +21311,7 @@
     },
     "id": 2710,
     "text": "dpp-4抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21319,7 +21319,7 @@
     },
     "id": 2711,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21327,7 +21327,7 @@
     },
     "id": 2712,
     "text": "二肽基肽酶一4(dpp-4)抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21335,7 +21335,7 @@
     },
     "id": 2713,
     "text": "sglt2抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21343,7 +21343,7 @@
     },
     "id": 2714,
     "text": "速效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21351,7 +21351,7 @@
     },
     "id": 2715,
     "text": "50%葡萄糖液的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21359,7 +21359,7 @@
     },
     "id": 2716,
     "text": "噻唑烷二酮类的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21367,7 +21367,7 @@
     },
     "id": 2717,
     "text": "利拉鲁肽的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21375,7 +21375,7 @@
     },
     "id": 2718,
     "text": "50%葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21383,7 +21383,7 @@
     },
     "id": 2719,
     "text": "基胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21391,7 +21391,7 @@
     },
     "id": 2720,
     "text": "葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21399,7 +21399,7 @@
     },
     "id": 2721,
     "text": "预混胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21407,7 +21407,7 @@
     },
     "id": 2722,
     "text": "预混胰岛素类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21415,7 +21415,7 @@
     },
     "id": 2723,
     "text": "胰高血糖素样肽1类似物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21423,7 +21423,7 @@
     },
     "id": 2724,
     "text": "5%或10%葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21431,7 +21431,7 @@
     },
     "id": 2725,
     "text": "二甲双胍的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21439,7 +21439,7 @@
     },
     "id": 2726,
     "text": "糖苷酶抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21447,7 +21447,7 @@
     },
     "id": 2727,
     "text": "达格列净的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21455,7 +21455,7 @@
     },
     "id": 2728,
     "text": "短效糖皮质激素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21463,7 +21463,7 @@
     },
     "id": 2729,
     "text": "碳酸氢钠(小苏打)的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21471,7 +21471,7 @@
     },
     "id": 2730,
     "text": "阿卡波糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21479,7 +21479,7 @@
     },
     "id": 2731,
     "text": "格列奈类的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21487,7 +21487,7 @@
     },
     "id": 2732,
     "text": "短效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21495,7 +21495,7 @@
     },
     "id": 2733,
     "text": "中效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21503,7 +21503,7 @@
     },
     "id": 2734,
     "text": "中长效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21511,7 +21511,7 @@
     },
     "id": 2735,
     "text": "尿酸的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21519,7 +21519,7 @@
     },
     "id": 2736,
     "text": "基础胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21527,7 +21527,7 @@
     },
     "id": 2737,
     "text": "短效人胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21535,7 +21535,7 @@
     },
     "id": 2738,
     "text": "二甲双胍的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21543,7 +21543,7 @@
     },
     "id": 2739,
     "text": "短效胰升血糖素样肽-1(glp-1)受体激动剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21551,7 +21551,7 @@
     },
     "id": 2740,
     "text": "短效胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21559,7 +21559,7 @@
     },
     "id": 2741,
     "text": "sglt2i的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21567,7 +21567,7 @@
     },
     "id": 2742,
     "text": "格列奈类的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21575,7 +21575,7 @@
     },
     "id": 2743,
     "text": "钠-葡萄糖共转运蛋白2抑制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21583,7 +21583,7 @@
     },
     "id": 2744,
     "text": "葡萄糖的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21591,7 +21591,7 @@
     },
     "id": 2745,
     "text": "短效糖皮质激素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21599,7 +21599,7 @@
     },
     "id": 2746,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21607,7 +21607,7 @@
     },
     "id": 2747,
     "text": "钠-葡萄糖共转运蛋白2抑制剂(sglt2i)的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21615,7 +21615,7 @@
     },
     "id": 2748,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21623,7 +21623,7 @@
     },
     "id": 2749,
     "text": "磺脲类药物的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21631,7 +21631,7 @@
     },
     "id": 2750,
     "text": "胰岛素的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21639,7 +21639,7 @@
     },
     "id": 2751,
     "text": "贝前列素钠的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21647,7 +21647,7 @@
     },
     "id": 2752,
     "text": "碘化造影剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21655,7 +21655,7 @@
     },
     "id": 2753,
     "text": "前列腺素e1制剂的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {
@@ -21663,7 +21663,7 @@
     },
     "id": 2754,
     "text": "格列喹酮的用药方法，用药方式是什么？",
-    "intent": "drug_method"
+    "intent": "method_drug"
   },
   {
     "slots": {

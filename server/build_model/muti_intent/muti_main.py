@@ -40,12 +40,14 @@ if __name__ == '__main__':
     num_intents = args.seq_num_labels
     num_slots = args.token_num_labels
 
-    model = MutiJointModel(num_intents=num_intents, num_slots=num_slots).to(device)
-
+    model = MutiJointModel(num_intents=num_intents, num_slots=num_slots)
     if args.load_model:
         model.load_state_dict(torch.load(args.load_dir))
 
-    criterion_intent = nn.BCEWithLogitsLoss()
+    model.to(device)
+
+    # criterion_intent = nn.BCEWithLogitsLoss()
+    criterion_intent = nn.BCELoss()
     criterion_slot = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 
@@ -55,6 +57,8 @@ if __name__ == '__main__':
     train_dataset = BertDataset('train')
     train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
 
+    global_step = 0
+    total_step = len(train_loader) * num_epochs
     model.train()
     for epoch in range(num_epochs):
         train_loss = 0
@@ -62,9 +66,10 @@ if __name__ == '__main__':
         print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} start")
         # for b, train_batch in enumerate(train_loader):
         for b, train_batch in enumerate(train_loader):
+            for key in train_batch.keys():
+                train_batch[key] = train_batch[key].to(device)
 
-
-            input_ids = train_batch['input_ids'].to(device)
+            input_ids = train_batch['input_ids']
             attention_mask = train_batch['attention_mask']
             token_type_ids = train_batch['token_type_ids']
             seq_label_ids = train_batch['seq_label_ids']
@@ -81,6 +86,12 @@ if __name__ == '__main__':
             active_labels = token_label_ids.view(-1)[active_loss]
             slot_loss = criterion_slot(active_logits, active_labels)
 
+            # active_loss = attention_mask.view(-1) == 1
+            # active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
+            # active_labels = token_label_ids.view(-1)[active_loss]
+            #
+            # slot_loss = criterion_slot(active_logits, active_labels)
+
             total_loss = intent_loss + slot_loss
 
             # optimizer.zero_grad()
@@ -90,23 +101,30 @@ if __name__ == '__main__':
 
             train_loss = total_loss.item()
 
-        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} end")
+            print(f'[train] epoch:{epoch + 1} {global_step}/{total_step} loss:{total_loss.item()}')
+            global_step += 1
+
+        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} train end")
         print(f"time:{getLastDate()} Train Loss: {train_loss:.4f}")
         print()
 
-        if args.do_save and epoch % 10 == 0:
-            torch.save(model.state_dict(),
-                       os.path.join(args.save_dir, str(int(time.time())) + '_' + str(epoch) + '_muti_model.pt'))
+        if args.do_save:
+            torch.save(model.state_dict(), os.path.join(args.save_dir, str(int(time.time())) + 'muti_model.pt'))
 
         # Predict
         predictor = Predictor(model)
-        input_text = "你好"
+        input_text = "请问二型糖尿病的临床表现是什么,需要吃什么药啊"
         intent_probs, slot_probs = predictor.predict(input_text)
 
         print("Intent probabilities:", intent_probs)
         print("Slot probabilities:", slot_probs)
 
-        predictor = Predictor(model)
+        input_text = "你好"
+        intent_probs, slot_probs = predictor.predict(input_text)
+
+        print(input_text + "Intent probabilities:", intent_probs)
+        print(input_text + "Slot probabilities:", slot_probs)
+
         input_text = "再见"
         intent_probs, slot_probs = predictor.predict(input_text)
 

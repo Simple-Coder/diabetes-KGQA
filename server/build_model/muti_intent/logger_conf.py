@@ -21,6 +21,9 @@ class MyLog(object):
         self.formatter = logging.Formatter(fmt=FMT, datefmt=DATEFMT)
         self.log_filename = '{0}{1}.log'.format(PATH, strftime("%Y-%m-%d"))
 
+        # 清除已存在的处理程序，避免重复添加
+        self.logger.handlers.clear()
+
         self.logger.addHandler(self.get_file_handler(self.log_filename))
         self.logger.addHandler(self.get_console_handler())
         # 设置日志的默认级别
