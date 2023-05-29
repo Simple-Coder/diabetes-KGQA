@@ -4,8 +4,13 @@ Created by xiedong
 """
 from websocket_server import WebsocketServer
 from logger_conf import my_log
+from do_predict import MutiPredictWrapper
+from muti_config import Args
+import json
 
+args = Args()
 logger = my_log.logger
+predict_wrapper = MutiPredictWrapper(args)
 
 # 创建 WebSocket 服务器
 server = WebsocketServer(host='127.0.0.1', port=8765)
@@ -18,14 +23,14 @@ clients = {}
 def client_connected(client, server):
     # 将新连接的客户端添加到客户端列表，并初始化上下文状态
     clients[client['id']] = {"context": None}
-    logger.info("clientId:{} 连接成功".format(client['id']))
+    logger.info("【Server】clientId:{} 连接成功".format(client['id']))
 
 
 # 处理客户端断开连接事件
 def client_disconnected(client, server):
     # 移除客户端和上下文状态
     clients.pop(client['id'], None)
-    logger.info("clientId:{} 连接断开".format(client['id']))
+    logger.info("【Server】clientId:{} 连接断开".format(client['id']))
 
 
 # 处理客户端消息事件
@@ -79,9 +84,23 @@ def handle_default_intent(client, server):
 
 # 模拟意图识别和上下文处理，返回识别到的意图列表和更新后的上下文
 def recognize_intents(message, context):
+    intents = []
     # 在这里进行意图识别和上下文处理的操作，返回识别到的意图列表和更新后的上下文
     # 例如，可以使用预训练的模型和规则来进行意图识别和上下文处理
-    intents = ["intent1", "intent2", "intent1"]
+    queryJson = json.loads(message)
+    query_username = queryJson['username']
+    query_text = queryJson['query']
+    logger.info("【Server】正在识别username:【{}】输入的query:【{}】".format(query_username, query_text))
+    predict_result = predict_wrapper.predict(query_text)
+
+    # 处理结果
+    all_intents = predict_result[0][:args.muti_intent_threshold_num]
+    all_slots = predict_result[1]
+    logger.info("【Server】识别结束,username:【{}】输入的query:【{}】,识别结果意图集合:【{}】,槽位结果:【{}】"
+                .format(query_username, query_text, ''.join(map(str, all_intents)), ''.join(map(str, all_slots))))
+    if not all_intents:
+        intents = ["others"]
+    # intents = ["intent1", "intent2", "intent1"]
     updated_context = context
     return intents, updated_context
 
@@ -91,6 +110,6 @@ server.set_fn_new_client(client_connected)
 server.set_fn_client_left(client_disconnected)
 server.set_fn_message_received(message_received)
 
-logger.info("[websocket 服务端启动成功!]")
+logger.info("【Server】[websocket 服务端启动成功!]")
 # 启动 WebSocket 服务器
 server.run_forever()
