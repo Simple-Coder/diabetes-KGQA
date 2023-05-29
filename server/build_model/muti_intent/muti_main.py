@@ -41,6 +41,10 @@ if __name__ == '__main__':
     num_slots = args.token_num_labels
 
     model = MutiJointModel(num_intents=num_intents, num_slots=num_slots).to(device)
+    if args.load_model:
+        model.load_state_dict(torch.load(args.load_dir))
+
+
     criterion_intent = nn.BCEWithLogitsLoss()
     criterion_slot = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
