@@ -40,11 +40,14 @@ if __name__ == '__main__':
     num_intents = args.seq_num_labels
     num_slots = args.token_num_labels
 
-    model = MutiJointModel(num_intents=num_intents, num_slots=num_slots).to(device)
+    model = MutiJointModel(num_intents=num_intents, num_slots=num_slots)
     if args.load_model:
         model.load_state_dict(torch.load(args.load_dir))
 
-    criterion_intent = nn.BCEWithLogitsLoss()
+    model.to(device)
+
+    # criterion_intent = nn.BCEWithLogitsLoss()
+    criterion_intent = nn.BCELoss()
     criterion_slot = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 
@@ -74,13 +77,13 @@ if __name__ == '__main__':
             intent_logits, slot_logits = outputs
 
             intent_loss = criterion_intent(intent_logits, seq_label_ids.float())
-            # slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features), token_label_ids.view(-1))
+            slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features), token_label_ids.view(-1))
 
-            active_loss = attention_mask.view(-1) == 1
-            active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
-            active_labels = token_label_ids.view(-1)[active_loss]
-
-            slot_loss = criterion_slot(active_logits, active_labels)
+            # active_loss = attention_mask.view(-1) == 1
+            # active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
+            # active_labels = token_label_ids.view(-1)[active_loss]
+            #
+            # slot_loss = criterion_slot(active_logits, active_labels)
 
             total_loss = intent_loss + slot_loss
 
