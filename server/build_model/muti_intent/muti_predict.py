@@ -35,7 +35,8 @@ class Predictor:
             )
             input_ids = torch.tensor(inputs['input_ids'])
 
-            input_ids = torch.tensor(input_ids).unsqueeze(0)
+            # input_ids = torch.tensor(input_ids).unsqueeze(0)
+            input_ids = input_ids.unsqueeze(0)
 
             # Create attention mask
             attention_mask = [1] * len(input_ids)
@@ -49,6 +50,8 @@ class Predictor:
 
             intent_result = [(self.args.id2seqlabel[index], value) for index, value in enumerate(intent_probs) if
                              value > self.args.muti_intent_threshold]
+
+            intent_result = sorted(intent_result, key=lambda x: x[1], reverse=True)
             # filtered_values = [value for value in my_list if value > threshold]
 
             # intent_idx = np.where(intent_probs > 0.5)[0]
@@ -62,9 +65,9 @@ class Predictor:
             # intent = self.config.id2seqlabel[seq_output]
             # slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
             slots = [(i[0], input_text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]
-            print('意图：', intent_result)
+            # print('意图：', intent_result)
             # print('意图强度：', intent_confidence)
-            print('槽位：', str(slots))
+            # print('槽位：', str(slots))
 
             # return intent_probs, slot_probs
             return intent_result, slots
