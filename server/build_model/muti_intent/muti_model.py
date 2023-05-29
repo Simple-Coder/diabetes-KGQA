@@ -14,7 +14,7 @@ class MutiJointModel(nn.Module):
         self.bert = BertModel.from_pretrained(args.bert_dir)
         self.intent_classifier = nn.Linear(self.bert.config.hidden_size, num_intents)
         self.slot_filler = nn.Linear(self.bert.config.hidden_size, num_slots)
-
+        self.dropout = nn.Dropout(hidden_dropout_prob)
         # self.intent_classifier = nn.Sequential(
         #     nn.Dropout(hidden_dropout_prob),
         #     nn.Linear(self.bert.config.hidden_size, num_intents),
@@ -30,6 +30,8 @@ class MutiJointModel(nn.Module):
     def forward(self, input_ids, attention_mask):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         pooled_output = outputs.pooler_output
+        pooled_output = self.dropout(pooled_output)
+
 
         # 意图分类
         intent_logits = self.intent_classifier(pooled_output)
