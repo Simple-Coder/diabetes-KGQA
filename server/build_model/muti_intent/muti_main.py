@@ -44,7 +44,6 @@ if __name__ == '__main__':
     if args.load_model:
         model.load_state_dict(torch.load(args.load_dir))
 
-
     criterion_intent = nn.BCEWithLogitsLoss()
     criterion_slot = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
@@ -59,7 +58,10 @@ if __name__ == '__main__':
         train_loss = 0
         print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} start")
         for b, train_batch in enumerate(train_loader):
-            input_ids = train_batch['input_ids'].to(device)
+            for key in train_batch.keys():
+                train_batch[key] = train_batch[key].to(device)
+
+            input_ids = train_batch['input_ids']
             attention_mask = train_batch['attention_mask']
             token_type_ids = train_batch['token_type_ids']
             seq_label_ids = train_batch['seq_label_ids']
