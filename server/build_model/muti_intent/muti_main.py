@@ -54,6 +54,9 @@ if __name__ == '__main__':
     train_dataset = BertDataset('train')
     train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
 
+    global_step = 0
+    total_step = len(train_loader) * num_epochs
+    model.train()
     for epoch in range(num_epochs):
         train_loss = 0
         print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} start")
@@ -87,7 +90,10 @@ if __name__ == '__main__':
 
             train_loss = total_loss.item()
 
-        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs}")
+            print(f'[train] epoch:{epoch + 1} {global_step}/{total_step} loss:{total_loss.item()}')
+            global_step += 1
+
+        print(f"time:{getLastDate()} Epoch {epoch + 1}/{num_epochs} train end")
         print(f"time:{getLastDate()} Train Loss: {train_loss:.4f}")
         print()
 
