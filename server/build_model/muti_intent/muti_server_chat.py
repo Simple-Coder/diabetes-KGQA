@@ -2,11 +2,15 @@
 Created by xiedong
 @Date: 2023/5/29 14:29
 """
-from websocket_server import WebsocketServer
-from logger_conf import my_log
-from do_predict import MutiPredictWrapper
-from muti_config import Args
 import json
+import random
+
+from websocket_server import WebsocketServer
+
+from do_predict import MutiPredictWrapper
+from logger_conf import my_log
+from muti_chat_config import gossip_corpus
+from muti_config import Args
 
 args = Args()
 logger = my_log.logger
@@ -44,7 +48,9 @@ def message_received(client, server, message):
 
     # 根据意图进行相应的处理
     handled_intents = set()
-    for intent in intents:
+    for intent_info in intents:
+        intent = intent_info[0]
+        intent_intensity = intent_info[1]
         if intent not in handled_intents:
             handle_intent(client, server, intent)
             handled_intents.add(intent)
@@ -53,12 +59,22 @@ def message_received(client, server, message):
 # 处理意图
 def handle_intent(client, server, intent):
     # 根据意图进行相应的处理
-    if intent == "intent1":
+    if intent in gossip_corpus.keys():
+        handle_gossip_rot(client, server, intent)
+    elif intent == "intent1":
         handle_intent1(client, server)
     elif intent == "intent2":
         handle_intent2(client, server)
     else:
         handle_default_intent(client, server)
+
+
+# 处理闲聊意图
+def handle_gossip_rot(client, server, intent):
+    # 在这里可以编写具体的处理逻辑
+    answer = random.choice(gossip_corpus.get(intent))
+    server.send_message(client, str(answer))
+    logger.info("【Server】intent：【{}】闲聊意图已回答：【{}】", intent, answer)
 
 
 # 处理意图1
@@ -90,7 +106,7 @@ def recognize_intents(message, context):
     queryJson = json.loads(message)
     query_username = queryJson['username']
     query_text = queryJson['query']
-    logger.info("【Server】正在识别username:【{}】输入的query:【{}】".format(query_username, query_text))
+    logger.info("【Server】正在识别 username:【{}】输入的query:【{}】".format(query_username, query_text))
     predict_result = predict_wrapper.predict(query_text)
 
     # 处理结果
@@ -99,17 +115,25 @@ def recognize_intents(message, context):
     logger.info("【Server】识别结束,username:【{}】输入的query:【{}】,识别结果意图集合:【{}】,槽位结果:【{}】"
                 .format(query_username, query_text, ''.join(map(str, all_intents)), ''.join(map(str, all_slots))))
     if not all_intents:
-        intents = ["others"]
+        intents = [('others', 1)]
+
+    # 1、如果都是闲聊意图，则取第一个进行返回
+    all_intents_is_gossip = all(key in gossip_corpus.keys() for key, _ in all_intents)
+    if all_intents_is_gossip:
+        logger.info("【Server】识别到所有意图均为闲聊，采用第一个意图回答")
+        intents = [all_intents[0]]
+
     # intents = ["intent1", "intent2", "intent1"]
     updated_context = context
     return intents, updated_context
 
 
-# 注册事件处理函数
-server.set_fn_new_client(client_connected)
-server.set_fn_client_left(client_disconnected)
-server.set_fn_message_received(message_received)
+if __name__ == '__main__':
+    # 注册事件处理函数
+    server.set_fn_new_client(client_connected)
+    server.set_fn_client_left(client_disconnected)
+    server.set_fn_message_received(message_received)
 
-logger.info("【Server】[websocket 服务端启动成功!]")
-# 启动 WebSocket 服务器
-server.run_forever()
+    logger.info("【Server】[websocket 服务端启动成功!]")
+    # 启动 WebSocket 服务器
+    server.run_forever()
