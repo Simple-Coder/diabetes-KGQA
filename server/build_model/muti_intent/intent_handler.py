@@ -4,13 +4,12 @@ Created by xiedong
 """
 import json
 import random
-from logger_conf import my_log
-from muti_chat_config import gossip_corpus, semantic_slot
 from do_predict import MutiPredictWrapper
 from logger_conf import my_log
 from muti_chat_config import gossip_corpus, semantic_slot
 from muti_config import Args
 from cust_exception import NoIntentsException
+from answer_handler import answer_user_query
 
 args = Args()
 predict_wrapper = MutiPredictWrapper(args)
@@ -37,15 +36,6 @@ def recognize_intents(message, context):
         raise NoIntentsException(semantic_slot['others'])
 
 
-
-
-
-
-    # 1、如果都是闲聊意图，则取第一个进行返回
-    all_intents_is_gossip = all(key in gossip_corpus.keys() for key, _ in all_intents)
-    if all_intents_is_gossip:
-        logger.info("【Server】recognize_intents--识别到所有意图均为闲聊，采用第一个意图回答")
-        intents = [all_intents[0]]
 
     # intents = ["intent1", "intent2", "intent1"]
     updated_context = context

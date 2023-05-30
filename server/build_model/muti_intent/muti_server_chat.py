@@ -9,6 +9,7 @@ from cust_exception import NoIntentsException
 from intent_handler import recognize_intents, handle_default_intent
 from logger_conf import my_log
 from muti_config import Args
+from answer_handler import handle_all_intents
 
 args = Args()
 logger = my_log.logger
@@ -42,17 +43,9 @@ def message_received(client, server, message):
         # 在这里可以根据接收到的消息进行意图识别和上下文处理
         intents, context = recognize_intents(message, clients[client['id']]["context"])
 
-        # 更新客户端的上下文状态
-        clients[client['id']]["context"] = context
+        # 处理意图s
+        handle_all_intents(client, server, intents, context)
 
-        # # 根据意图进行相应的处理
-        # handled_intents = set()
-        # for intent_info in intents:
-        #     intent = intent_info[0]
-        #     intent_intensity = intent_info[1]
-        #     if intent not in handled_intents:
-        #         handle_intent(client, server, intent)
-        #         handled_intents.add(intent)
     except NoIntentsException as noIntents:
         logger.error("【Server】 识别到意图")
         handle_default_intent(client, server, noIntents.message)
