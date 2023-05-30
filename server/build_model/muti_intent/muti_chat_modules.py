@@ -5,9 +5,9 @@ Created by xiedong
 import logging
 
 from py2neo import Graph
-
+import random
 from logger_conf import my_log
-from muti_chat_config import semantic_slot, intent_threshold_config, CATEGORY_INDEX
+from muti_chat_config import semantic_slot, intent_threshold_config, CATEGORY_INDEX, gossip_corpus
 from muti_utils import load_user_dialogue_context
 
 # logger = MyLog()
@@ -17,6 +17,10 @@ graph = Graph(host="127.0.0.1",
               http_port=7474,
               user="neo4j",
               password="123456")
+
+
+def gossip_robot(intent):
+    return random.choice(gossip_corpus.get(intent))
 
 
 def medical_robot(user_name, query, query_intent, query_intensity, query_slots):
