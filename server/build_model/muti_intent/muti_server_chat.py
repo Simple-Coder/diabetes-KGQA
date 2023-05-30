@@ -10,6 +10,8 @@ from intent_handler import recognize_intents, handle_default_intent
 from logger_conf import my_log
 from muti_config import Args
 from answer_handler import handle_all_intents
+from user_context import UserContext
+import json
 
 args = Args()
 logger = my_log.logger
@@ -41,10 +43,19 @@ def message_received(client, server, message):
         logger.info("【Server】 接收到客户端clientId:{} 发来的消息:{}".format(client['id'], message))
 
         # 在这里可以根据接收到的消息进行意图识别和上下文处理
-        intents, context = recognize_intents(message, clients[client['id']]["context"])
+
+        queryJson = json.loads(message)
+        query_username = queryJson['username']
+        query_text = queryJson['query']
+        user_context = UserContext(client['id'], query_username, query_text)
+        clients[client['id']]["context"] = user_context
+
+
+        # 意图识别
+        intents, user_context = recognize_intents(message, user_context)
 
         # 处理意图s
-        handle_all_intents(client, server, intents, context)
+        handle_all_intents(client, server, intents, user_context)
 
     except NoIntentsException as noIntents:
         logger.error("【Server】 识别到意图")

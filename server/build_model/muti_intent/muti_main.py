@@ -109,7 +109,8 @@ if __name__ == '__main__':
         print()
 
         if args.do_save:
-            torch.save(model.state_dict(), os.path.join(args.save_dir, str(int(time.time())) + 'muti_model.pt'))
+            torch.save(model.state_dict(),
+                       os.path.join(args.save_dir, str(int(time.time())) + '_' + str(epoch) + '_muti_model.pt'))
 
         # Predict
         predictor = Predictor(model)

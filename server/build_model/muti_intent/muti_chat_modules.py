@@ -23,22 +23,20 @@ def gossip_robot(intent):
     return random.choice(gossip_corpus.get(intent))
 
 
-def medical_robot(user_name, query, query_intent, query_intensity, query_slots):
+def medical_robot(user_name, query_intent, query_intensity, query_slots):
     """
     诊断用户
     :param user_name:用户username
-    :param query: 原始问句
     :param query_intent: 问句意图
     :param query_intensity: 意图强度
     :param query_slots: 序列标注结果
     :return:
     """
     logger.info(
-        "medical_robot start username:{} query:{} query_intent:{} query_intensity:{} query_slots:{}".format(user_name,
-                                                                                                            query,
-                                                                                                            query_intent,
-                                                                                                            query_intensity,
-                                                                                                            query_slots))
+        "medical_robot start username:{} query_intent:{} query_intensity:{} query_slots:{}".format(user_name,
+                                                                                                   query_intent,
+                                                                                                   query_intensity,
+                                                                                                   query_slots))
     # 1、如果是其他意图则返回未知
     if query_intent == "others":
         return semantic_slot.get("others")
