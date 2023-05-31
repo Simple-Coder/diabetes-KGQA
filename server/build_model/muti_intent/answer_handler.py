@@ -45,7 +45,7 @@ def answer_user_query(username, user_intent, user_intent_intensity, all_slots, u
     elif user_intent == "accept":
         context_slot = user_context.get_context_slot()
         if context_slot:
-            answer = user_context['content'].get("choice_answer")
+            answer = context_slot.get("choice_answer")
             return answer
         else:
             logger.info("username:【{}】输入的:【{}】对应意图：【{}】,上下文不存在，正在学习中...".format(username,
@@ -59,6 +59,6 @@ def answer_user_query(username, user_intent, user_intent_intensity, all_slots, u
                               query_intent=user_intent,
                               query_intensity=user_intent_intensity,
                               query_slots=all_slots)
-        user_context['content'] = reply
+        user_context.set_context_slot(reply)
         answer = reply.get("replay_answer")
         return answer
