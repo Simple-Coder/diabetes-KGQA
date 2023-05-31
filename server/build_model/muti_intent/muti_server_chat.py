@@ -50,12 +50,11 @@ def message_received(client, server, message):
         user_context = UserContext(client['id'], query_username, query_text)
         clients[client['id']]["context"] = user_context
 
-
         # 意图识别
-        intents, user_context = recognize_intents(message, user_context)
+        recognize_intents(message, user_context)
 
         # 处理意图s
-        handle_all_intents(client, server, intents, user_context)
+        handle_all_intents(client, server, user_context)
 
     except NoIntentsException as noIntents:
         logger.error("【Server】 识别到意图")

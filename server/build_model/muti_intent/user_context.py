@@ -10,25 +10,32 @@ class UserContext:
         self.username = username
         self.query = query
         self.all_slots = []
+        self.all_intents = []
         self.slot_info = None
 
-    def getusername(self):
+    def get_username(self):
         return self.username
 
-    def getContextSlot(self):
+    def get_context_slot(self):
         return self.slot_info
 
-    def setContextSlot(self, slot_info):
+    def set_context_slot(self, slot_info):
         self.slot_info = slot_info
 
-    def getquery(self):
+    def get_query(self):
         return self.query
 
-    def setusername(self, username):
+    def set_username(self, username):
         self.username = username
 
-    def setAllSlots(self, all_slots):
+    def set_all_slots(self, all_slots):
         self.all_slots = all_slots
 
-    def getAllSlots(self):
+    def get_all_slots(self):
         return self.all_slots
+
+    def set_all_intents(self, all_intents):
+        self.all_intents = all_intents
+
+    def get_all_intents(self):
+        return self.all_intents
