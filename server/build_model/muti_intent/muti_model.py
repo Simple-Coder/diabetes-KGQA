@@ -5,6 +5,7 @@ Created by xiedong
 import torch.nn as nn
 from transformers import BertModel
 from muti_config import Args
+from torchcrf import CRF
 
 
 class MutiJointModel(nn.Module):
@@ -27,19 +28,20 @@ class MutiJointModel(nn.Module):
         self.sigmoid = nn.Sigmoid()
         self.softmax = nn.Softmax(dim=2)
 
+        # self.crf = CRF(num_tags=num_slots, batch_first=True)
+
     def forward(self, input_ids, attention_mask):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         pooled_output = outputs.pooler_output
         pooled_output = self.dropout(pooled_output)
 
-
         # 意图分类
         intent_logits = self.intent_classifier(pooled_output)
-        intent_probs  = self.sigmoid(intent_logits)
+        intent_probs = self.sigmoid(intent_logits)
 
         # slot标注结果
         slot_logits = self.slot_filler(outputs.last_hidden_state)
         slot_probs = self.softmax(slot_logits)
 
         # return intent_logits, slot_logits
-        return intent_probs , slot_probs
+        return intent_probs, slot_probs

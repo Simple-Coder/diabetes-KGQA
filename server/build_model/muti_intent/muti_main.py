@@ -79,18 +79,18 @@ if __name__ == '__main__':
             intent_logits, slot_logits = outputs
 
             intent_loss = criterion_intent(intent_logits, seq_label_ids.float())
-            # slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features), token_label_ids.view(-1))
+            # if args.use_crf:
+            #     slot_loss = model.crf(slot_logits, token_label_ids, mask=attention_mask.byte(), reduction='mean')
+            #     slot_loss = -1 * slot_loss  # negative log-likelihood
+            # else:
+            #     slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features),
+            #                                token_label_ids.view(-1))
 
             active_loss = attention_mask.view(-1) == 1
             active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
             active_labels = token_label_ids.view(-1)[active_loss]
-            slot_loss = criterion_slot(active_logits, active_labels)
-
-            # active_loss = attention_mask.view(-1) == 1
-            # active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
-            # active_labels = token_label_ids.view(-1)[active_loss]
             #
-            # slot_loss = criterion_slot(active_logits, active_labels)
+            slot_loss = criterion_slot(active_logits, active_labels)
 
             total_loss = intent_loss + slot_loss
 
