@@ -196,3 +196,43 @@ semantic_slot = {
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
     }
 }
+from enum import Enum
+
+
+class AnswerEnum(Enum):
+    # 2个均为闲聊：取第一个回答
+    ANSWER_ALL_GOSSIP = 1
+    # 2个均为诊断：合并答案
+    ANSWER_ALL_MEDICAL = 2
+    # 2个均为澄清：合并澄清
+    ANSWER_ALL_CLARIFY = 3
+    # 2个均为未知：返回学习中
+    ANSWER_ALL_OTHERS = 4
+
+    # 1个闲聊，一个诊断：合并诊断
+    ANSWER_GOSSIP_MEDICAL = 5
+    # 1个闲聊，一个澄清：合并澄清
+    ANSWER_GOSSIP_CLARIFY = 6
+    # 1个闲聊，一个未知：优先闲聊
+    ANSWER_GOSSIP_OTHERS = 7
+
+    # 1个诊断，一个闲聊：只处理诊断
+    ANSWER_MEDICAL_GOSSIP = 8
+    # 1个诊断，一个澄清：先诊断，再澄清
+    ANSWER_MEDICAL_CLARIFY = 9
+    # 1个诊断，一个未知：只诊断
+    ANSWER_MEDICAL_OTHERS = 10
+
+    # 一个澄清，一个闲聊：只处理澄清
+    ANSWER_CLARIY_GOSSIP = 11
+    # 一个澄清，一个诊断：合并诊断后澄清
+    ANSWER_CLARIFY_MEDICAL = 12
+    # 一个澄清，一个未知：只处理澄清
+    ANSWER_CLARIFY_OTHERS = 13
+
+    # 一个未知，一个闲聊：学习中
+    ANSWER_OTHER_GOSSIP = 14
+    # 一个未知，一个澄清：学习中
+    ANSWER_OTHER_CLARIFY = 15
+    # 一个未知，一个诊断：学习中
+    ANSWER_OTHER_MEDICAL = 16
