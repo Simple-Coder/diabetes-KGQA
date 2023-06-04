@@ -199,6 +199,14 @@ semantic_slot = {
 from enum import Enum
 
 
+class IntentEnum(Enum):
+    Gossip = 1
+    Medical = 2
+    Accept = 3
+    Clarify = 4
+    Others = 5
+
+
 class AnswerEnum(Enum):
     # 2个均为闲聊：取第一个回答
     ANSWER_ALL_GOSSIP = 1
