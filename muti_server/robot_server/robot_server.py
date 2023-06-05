@@ -3,11 +3,14 @@ Created by xiedong
 @Date: 2023/6/5 15:31
 """
 import json
+import uuid
 
 from websocket_server import WebsocketServer
+from muti_server.context.context_manager import ContextManager
 from muti_server.dialog_manager.dialog_manager import DialogManager
 from muti_server.bean.user_question import QuestionInfo
 from muti_server.utils.logger_conf import my_log
+from muti_server.context.user_context import UserContext
 
 log = my_log.logger
 
@@ -15,9 +18,13 @@ log = my_log.logger
 class RobotWebSocketHandler:
     def __init__(self):
         self.dialog_manager = DialogManager()
+        self.context_manager = ContextManager()
 
     def new_client(self, client, server):
-        print("New client connected")
+        user_id = client['id']
+        user_context = UserContext(user_id)
+        self.context_manager.add_context(user_id, user_context)
+        log.info("New client connected, user_id:{}".format(user_id))
 
     def client_left(self, client, server):
         print("Client disconnected")
@@ -26,7 +33,7 @@ class RobotWebSocketHandler:
         try:
             print("Received message from client:", message)
             # 1、将用户输入封装为对象，后续使用
-            question_info = self.convert_message(message)
+            question_info = self.convert_message(client, message)
             # 2、处理用户输入消息
             response = self.dialog_manager.process_user_input(question_info)
             # 3、写回客户端
@@ -35,13 +42,13 @@ class RobotWebSocketHandler:
             log.error("服务器异常：{}".format(e))
             server.send_message(client, '服务器异常啦~请找小谢查看！')
 
-    def convert_message(self, message):
+    def convert_message(self, client, message):
         queryJson = json.loads(message)
         query_username = queryJson['username']
         query_text = queryJson['query']
 
-        question_info = QuestionInfo()
-        question_info.user_id = query_username
+        question_info = QuestionInfo(client['id'])
+        question_info.user_name = query_username
         question_info.user_question = query_text
 
         return question_info
