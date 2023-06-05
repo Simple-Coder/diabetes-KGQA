@@ -2,8 +2,14 @@
 Created by xiedong
 @Date: 2023/6/5 15:31
 """
+import json
+
 from websocket_server import WebsocketServer
 from muti_server.dialog_manager.dialog_manager import DialogManager
+from muti_server.bean.user_question import QuestionInfo
+from muti_server.utils.logger_conf import my_log
+
+log = my_log.logger
 
 
 class RobotWebSocketHandler:
@@ -17,11 +23,28 @@ class RobotWebSocketHandler:
         print("Client disconnected")
 
     def message_received(self, client, server, message):
-        print("Received message from client:", message)
+        try:
+            print("Received message from client:", message)
+            # 1、将用户输入封装为对象，后续使用
+            question_info = self.convert_message(message)
+            # 2、处理用户输入消息
+            response = self.dialog_manager.process_user_input(question_info)
+            # 3、写回客户端
+            server.send_message(client, str(response))
+        except Exception as e:
+            log.error("服务器异常：{}".format(e))
+            server.send_message(client, '服务器异常啦~请找小谢查看！')
 
-        # 处理用户输入消息并发送响应
-        response = self.dialog_manager.process_user_input(message)
-        server.send_message(client, response)
+    def convert_message(self, message):
+        queryJson = json.loads(message)
+        query_username = queryJson['username']
+        query_text = queryJson['query']
+
+        question_info = QuestionInfo()
+        question_info.user_id = query_username
+        question_info.user_question = query_text
+
+        return question_info
 
 
 class RobotWebsocketServer:
