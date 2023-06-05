@@ -12,7 +12,7 @@ class Args:
     save_dir = 'checkpoints/'
     # 加载模型位置
     # load_dir = './checkpoints/1682135439model.pt'
-    load_dir = 'checkpoints/1682428820model.pt'
+    load_dir = 'checkpoints/1684221723model.pt'
 
     # 意图labels
     seq_labels_path = '../data/intent_and_slot_data/intent_label.txt'
@@ -67,7 +67,7 @@ class Args:
     # 学习率
     lr = 2e-5
     # 训练轮数
-    epoch = 10
+    epoch = 2
     # dropout率
     hidden_dropout_prob = 0.1
 

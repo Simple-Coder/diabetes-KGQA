@@ -1,6 +1,6 @@
 """
 Created by xiedong
-@Date: 2023/6/5 14:17
+@Date: 2023/6/5 15:11
 """
 
 
@@ -12,4 +12,4 @@ class IntentRecognizer:
         # TODO: 进行意图识别的逻辑
         # intent = ...
 
-        return 'intent'
+        return intent
