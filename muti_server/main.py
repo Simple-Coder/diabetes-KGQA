@@ -4,6 +4,9 @@ Created by xiedong
 """
 import argparse
 from muti_server.robot_server.robot_server import RobotWebsocketServer
+from muti_server.utils.logger_conf import my_log
+
+log = my_log.logger
 
 
 def parse_arguments():
@@ -19,4 +22,5 @@ if __name__ == "__main__":
 
     # 创建 WebSocket 服务器
     server = RobotWebsocketServer(port)
+    log.info("服务端启动成功，端口:{}".format(port))
     server.start()
