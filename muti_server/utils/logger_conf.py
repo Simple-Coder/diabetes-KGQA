@@ -9,7 +9,7 @@ import logging
 from time import strftime
 
 # 输出日志路径
-PATH = os.path.abspath('.') + '/logs/'
+PATH = os.path.abspath('D:\dev\PycharmProjects\diabetes-KGQA\muti_server') + '/logs/'
 # 设置日志格式#和时间格式
 FMT = '%(asctime)s %(filename)s [line:%(lineno)d] %(levelname)s: %(message)s'
 DATEFMT = '%Y-%m-%d %H:%M:%S'
@@ -44,3 +44,7 @@ class MyLog(object):
 
 # 创建全局的MyLog实例
 my_log = MyLog()
+
+if __name__ == '__main__':
+    PATH = os.path.abspath('D:\dev\PycharmProjects\diabetes-KGQA\muti_server') + '/logs/'
+    print(PATH)
