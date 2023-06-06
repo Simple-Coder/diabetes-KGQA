@@ -3,23 +3,26 @@ Created by xiedong
 @Date: 2023/6/5 15:31
 """
 import json
-import uuid
 
 from websocket_server import WebsocketServer
-from muti_server.context.context_manager import ContextManager
-from muti_server.dialog_manager.dialog_manager import DialogManager
-from muti_server.bean.user_question import QuestionInfo
+from muti_server.utils.context_manager import ContextManager
+from muti_server.utils.user_question import QuestionInfo
 from muti_server.utils.logger_conf import my_log
-from muti_server.context.user_context import UserContext
-from muti_server.nlg_module.nlg import NLG
+from muti_server.utils.user_context import UserContext
+from muti_server.nlu.nlu import NLU
+from muti_server.nlg.nlg import NLG
+import muti_server.dm.dialogue_state_tracking as dst
+import muti_server.dm.dialogue_policy_optimization as dpo
 
 log = my_log.logger
 
 
 class RobotWebSocketHandler:
     def __init__(self):
-        self.dialog_manager = DialogManager()
+        self.dialogue_tracker = dst.DialogueStateTracker()
+        self.dialog_policy_optimizer = dpo.DialoguePolicyOptimizer()
         self.context_manager = ContextManager()
+        self.nlu = NLU()
         self.nlg = NLG()
 
     def new_client(self, client, server):
@@ -36,12 +39,30 @@ class RobotWebSocketHandler:
     def message_received(self, client, server, message):
         try:
             log.info("接收到客户端:[{}]，发来的的信息:{}".format(client['id'], message))
-            # 1、将用户输入封装为对象，后续使用
+            # 将用户输入封装为对象，后续使用
             question_info = self.convert_message(client, message)
-            # 2、处理用户输入消息
-            user_context = self.dialog_manager.process_user_input(question_info)
-            # 3、写回客户端
-            self.nlg.answer(client, server, user_context)
+
+            dialogue_state = self.dialogue_tracker.get_dialogue_state()
+
+            # 1、NLU 模块处理用户输入
+            intents = self.nlu.extract_intents(message)
+            entities = self.nlu.extract_entities(message)
+
+            log.info("对应query：{},正在进行nlu识别意图与槽位阶段...识别意图结果:{}，识别槽位结果:{}".format(
+                question_info.userQuestion, intents, entities))
+
+            # DM 模块处理
+            # 使用对话状态追踪模块更新对话状态
+            self.dialogue_tracker.update_dialogue_state(intents, entities)
+
+            log.info("对应query：{},正在进行dst更新用户上下文...".format(question_info.userQuestion))
+
+            log.info("对应query：{},正在进行nlg回答用户...".format(question_info.userQuestion))
+            # NLG 模块处理
+            self.nlg.generate_response(client, server)
+
+
+
         except Exception as e:
             log.error("服务器异常：{}".format(e))
             server.send_message(client, '服务器异常啦~请找小谢查看！')

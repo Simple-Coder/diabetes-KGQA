@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/6/5 15:25
 """
 import argparse
-from muti_server.robot_server.robot_server import RobotWebsocketServer
+from muti_server.web_socket_server.robot_server import RobotWebsocketServer
 from muti_server.utils.logger_conf import my_log
 
 log = my_log.logger
