@@ -24,14 +24,14 @@ class RobotWebSocketHandler:
         user_id = client['id']
         user_context = UserContext(user_id)
         self.context_manager.add_context(user_id, user_context)
-        log.info("New client connected, user_id:{}".format(user_id))
+        log.info("客户端建立连接完成, 客户端id:{}".format(user_id))
 
     def client_left(self, client, server):
-        print("Client disconnected")
+        log.info("客户端断开连接，客户端id：【{}】".format(client['id']))
 
     def message_received(self, client, server, message):
         try:
-            print("Received message from client:", message)
+            log.info("接收到客户端:[{}]，发来的的信息:{}".format(client['id'], message))
             # 1、将用户输入封装为对象，后续使用
             question_info = self.convert_message(client, message)
             # 2、处理用户输入消息
