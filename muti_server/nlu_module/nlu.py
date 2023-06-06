@@ -6,10 +6,10 @@ Created by xiedong
 
 # 自然语言理解（NLU）模块
 class NLU:
-    def extract_intent(self, input_text):
-        # 实现意图提取的逻辑
-        intent = "default_intent"  # 假设默认意图为 "default_intent"
-        return intent
+    def extract_intents(self, input_text):
+        # 实现多意图提取的逻辑
+        intents = ["default_intent"]  # 假设默认意图为 "default_intent"
+        return intents
 
     def extract_entities(self, input_text):
         # 实现实体识别的逻辑

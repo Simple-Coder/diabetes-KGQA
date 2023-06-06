@@ -11,6 +11,7 @@ from muti_server.dialog_manager.dialog_manager import DialogManager
 from muti_server.bean.user_question import QuestionInfo
 from muti_server.utils.logger_conf import my_log
 from muti_server.context.user_context import UserContext
+from muti_server.nlg_module.nlg import NLG
 
 log = my_log.logger
 
@@ -19,15 +20,18 @@ class RobotWebSocketHandler:
     def __init__(self):
         self.dialog_manager = DialogManager()
         self.context_manager = ContextManager()
+        self.nlg = NLG()
 
     def new_client(self, client, server):
-        user_id = client['id']
-        user_context = UserContext(user_id)
-        self.context_manager.add_context(user_id, user_context)
-        log.info("客户端建立连接完成, 客户端id:{}".format(user_id))
+        client_id = client['id']
+        user_context = UserContext(client_id)
+        self.context_manager.add_context(client_id, user_context)
+        log.info("客户端建立连接完成, 客户端id:{},上下文初始化成功...".format(client_id))
 
     def client_left(self, client, server):
-        log.info("客户端断开连接，客户端id：【{}】".format(client['id']))
+        client_id = client['id']
+        self.context_manager.remove_context(client_id)
+        log.info("客户端断开连接，客户端id：【{}】,上下文移除成功".format(client_id))
 
     def message_received(self, client, server, message):
         try:
@@ -35,9 +39,9 @@ class RobotWebSocketHandler:
             # 1、将用户输入封装为对象，后续使用
             question_info = self.convert_message(client, message)
             # 2、处理用户输入消息
-            response = self.dialog_manager.process_user_input(question_info)
+            user_context = self.dialog_manager.process_user_input(question_info)
             # 3、写回客户端
-            server.send_message(client, str(response))
+            self.nlg.answer(client, server, user_context)
         except Exception as e:
             log.error("服务器异常：{}".format(e))
             server.send_message(client, '服务器异常啦~请找小谢查看！')
