@@ -6,7 +6,6 @@ import json
 
 import jsonpickle
 from websocket_server import WebsocketServer
-from muti_server.utils.context_manager import ContextManager
 from muti_server.utils.user_question import QuestionInfo
 from muti_server.utils.logger_conf import my_log
 from muti_server.dm.dialog_context import DialogContext
@@ -22,27 +21,26 @@ class RobotWebSocketHandler:
     def __init__(self):
         self.dialogue_tracker = dst.DialogueStateTracker()
         self.dialog_policy_optimizer = dpo.DialoguePolicyOptimizer()
-        self.context_manager = ContextManager()
         self.nlu = NLU()
         self.nlg = NLG()
 
     def new_client(self, client, server):
         client_id = client['id']
         user_context = DialogContext(client_id)
-        self.context_manager.add_context(client_id, user_context)
+        self.dialogue_tracker.add_context(client_id, user_context)
         log.info("客户端建立连接完成, 客户端id:{},上下文初始化成功...".format(client_id))
 
     def client_left(self, client, server):
         client_id = client['id']
-        self.context_manager.remove_context(client_id)
+        self.dialogue_tracker.remove_context(client_id)
         log.info("客户端断开连接，客户端id：【{}】,上下文移除成功".format(client_id))
 
     def message_received(self, client, server, message):
         try:
-            log.info("接收到客户端:[{}]，发来的的信息:{}".format(client['id'], message))
+            client_id = client['id']
+            log.info("接收到客户端:[{}]，发来的的信息:{}".format(client_id, message))
             # 将用户输入封装为对象，后续使用
             question_info = self.convert_message(client, message)
-            dialog_context = self.dialogue_tracker.get_dialogue_state()
 
             # 1、NLU 模块处理用户输入
             semantic_info = self.nlu.predict(message)
@@ -50,13 +48,14 @@ class RobotWebSocketHandler:
                 question_info.userQuestion, jsonpickle.encode(semantic_info.get_intent_infos()),
                 jsonpickle.encode(semantic_info.get_entities())))
 
-            # DM 模块处理
+            # 2、DM 模块处理
             # 使用对话状态追踪模块更新对话状态
-            # self.dialogue_tracker.update_dialogue_state(intents, entities)
             log.info("对应query：{},正在进行dst更新用户上下文...".format(question_info.userQuestion))
+            self.dialogue_tracker.update_context_sematic_info(client_id, semantic_info)
 
+            # 3、NLG 模块处理
             log.info("对应query：{},正在进行nlg回答用户...".format(question_info.userQuestion))
-            # NLG 模块处理
+            dialog_context = self.dialogue_tracker.get_context(client_id)
             self.nlg.generate_response(client, server, dialog_context)
 
         except Exception as e:

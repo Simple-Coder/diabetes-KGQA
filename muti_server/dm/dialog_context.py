@@ -7,14 +7,14 @@ Created by xiedong
 class DialogContext:
     def __init__(self, client_id):
         self.client_id = client_id
-        self.current_intents = []  # 当前意图列表
+        self.current_semantic = None  # 语义信息
         self.context_data = {}  # 上下文数据
 
-    def add_current_intent(self, intent):
-        self.current_intents.append(intent)
+    def set_current_semantic(self, sematic_info):
+        self.current_semantic = sematic_info
 
-    def get_current_intents(self):
-        return self.current_intents
+    def get_current_semantic(self):
+        return self.current_semantic
 
     def add_context_data(self, key, value):
         self.context_data[key] = value
