@@ -6,8 +6,11 @@ import jieba
 import torch
 import re
 
-from muti_config import Args
+from muti_server.models.muti_config import Args
 from transformers import BertTokenizer
+from transformers import logging
+
+logging.set_verbosity_error()
 
 
 class MutiInputExample:

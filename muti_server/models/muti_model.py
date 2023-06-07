@@ -4,8 +4,11 @@ Created by xiedong
 """
 import torch.nn as nn
 from transformers import BertModel
-from muti_config import Args
+from muti_server.models.muti_config import Args
 from torchcrf import CRF
+from transformers import logging
+
+logging.set_verbosity_error()
 
 
 class MutiJointModel(nn.Module):

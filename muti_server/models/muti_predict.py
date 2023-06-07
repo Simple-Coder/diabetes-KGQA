@@ -7,7 +7,11 @@ import torch
 from seqeval.metrics.sequence_labeling import get_entities
 from transformers import BertTokenizer
 from muti_server.models.muti_config import Args
-from muti_process import get_word_list
+from muti_server.models.muti_process import get_word_list
+
+from transformers import logging
+
+logging.set_verbosity_error()
 
 
 class Predictor:

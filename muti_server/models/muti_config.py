@@ -11,7 +11,7 @@ class Args:
     # 模型保存位置
     save_dir = 'checkpoints/'
     # 加载模型位置
-    load_dir = '../checkpoints/1685273533muti_model.pt'
+    load_dir = 'D://dev//PycharmProjects//diabetes-KGQA//server//build_model//muti_intent//checkpoints//1685507169_0_muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
     # # 意图labels
