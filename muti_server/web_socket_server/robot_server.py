@@ -8,7 +8,7 @@ from websocket_server import WebsocketServer
 from muti_server.utils.context_manager import ContextManager
 from muti_server.utils.user_question import QuestionInfo
 from muti_server.utils.logger_conf import my_log
-from muti_server.utils.user_context import UserContext
+from muti_server.dm.dialog_context import DialogContext
 from muti_server.nlu.nlu import NLU
 from muti_server.nlg.nlg import NLG
 import muti_server.dm.dialogue_state_tracking as dst
@@ -27,7 +27,7 @@ class RobotWebSocketHandler:
 
     def new_client(self, client, server):
         client_id = client['id']
-        user_context = UserContext(client_id)
+        user_context = DialogContext(client_id)
         self.context_manager.add_context(client_id, user_context)
         log.info("客户端建立连接完成, 客户端id:{},上下文初始化成功...".format(client_id))
 
@@ -42,7 +42,7 @@ class RobotWebSocketHandler:
             # 将用户输入封装为对象，后续使用
             question_info = self.convert_message(client, message)
 
-            dialogue_state = self.dialogue_tracker.get_dialogue_state()
+            dialog_context = self.dialogue_tracker.get_dialogue_state()
 
             # 1、NLU 模块处理用户输入
             intents = self.nlu.extract_intents(message)
@@ -59,7 +59,7 @@ class RobotWebSocketHandler:
 
             log.info("对应query：{},正在进行nlg回答用户...".format(question_info.userQuestion))
             # NLG 模块处理
-            self.nlg.generate_response(client, server)
+            self.nlg.generate_response(client, server, dialog_context)
 
 
 

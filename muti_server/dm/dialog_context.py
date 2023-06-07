@@ -4,7 +4,7 @@ Created by xiedong
 """
 
 
-class UserContext:
+class DialogContext:
     def __init__(self, client_id):
         self.client_id = client_id
         self.current_intents = []  # 当前意图列表

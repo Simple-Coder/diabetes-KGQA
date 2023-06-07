@@ -5,6 +5,5 @@ Created by xiedong
 
 
 class NLG():
-    def generate_response(self, client, server):
-
+    def generate_response(self, client, server, dialog_context):
         server.send_message(client, '测试回答！')
