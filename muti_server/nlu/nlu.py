@@ -2,6 +2,9 @@
 Created by xiedong
 @Date: 2023/6/5 15:32
 """
+import json
+
+import jsonpickle
 import torch
 
 from muti_server.models.muti_config import Args
@@ -53,7 +56,7 @@ class NLU:
             semantic_info.add_intent_info(intent_info1)
             semantic_info.add_intent_info(intent_info2)
 
-            log.info("nlu 识别query:{},结果:{}".format(text, semantic_info.__dict__))
+            log.info("nlu 识别query:{},结果:{}".format(text, jsonpickle.encode(semantic_info)))
         except Exception as e:
             log.error("nlu 识别query：{} 将返回默认值error:{}".format(text, e))
         return semantic_info
@@ -71,9 +74,9 @@ class IntentInfo:
 
 
 class SemanticInfo(object):
-    def __init__(self, entities):
+    def __init__(self):
         self.intent_infos = []
-        self.entities = entities
+        self.entities = None
 
     def add_intent_info(self, intent_info):
         self.intent_infos.append(intent_info)
