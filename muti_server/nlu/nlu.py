@@ -9,8 +9,8 @@ import torch
 from muti_server.models.muti_config import Args
 from muti_server.models.muti_model import MutiJointModel
 from muti_server.models.muti_predict import Predictor
-from muti_server.nlg.nlg_config import IntentEnum, intent_threshold_config, gossip_corpus
 from muti_server.utils.logger_conf import my_log
+from muti_server.nlu.nlu_utils import build_intent_strategy
 
 log = my_log.logger
 
@@ -74,24 +74,7 @@ class IntentInfo:
         self.intent = intent
         self.intensity = intensity
 
-        self.intent_strategy = self.build_intent_strategy(self.intent, self.intensity)
-
-    def build_intent_strategy(self, intent, conf):
-        if intent == "others":
-            return IntentEnum.Others
-        if intent in gossip_corpus.keys():
-            return IntentEnum.Gossip
-
-        # 根据意图强度来确认回复策略
-        if conf >= intent_threshold_config["accept"]:
-            # slot_info["intent_strategy"] = "accept"
-            return IntentEnum.Accept
-        elif conf >= intent_threshold_config["deny"]:
-            # slot_info["intent_strategy"] = "clarify"
-            return IntentEnum.Clarify
-        else:
-            # slot_info["intent_strategy"] = "deny"
-            return IntentEnum.DENY
+        self.intent_strategy = build_intent_strategy(self.intent, self.intensity)
 
     def get_intent_strategy(self):
         return self.intent_strategy
