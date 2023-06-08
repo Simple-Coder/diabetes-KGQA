@@ -74,7 +74,7 @@ class IntentInfo:
         self.intent = intent
         self.intensity = intensity
 
-        self.intent_strategy = self.build_intent_strategy(self.intent, self.intent_strategy)
+        self.intent_strategy = self.build_intent_strategy(self.intent, self.intensity)
 
     def build_intent_strategy(self, intent, conf):
         if intent == "others":
