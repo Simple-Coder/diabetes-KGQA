@@ -22,13 +22,14 @@ class NLG():
             intent_infos = dialog_context.get_current_semantic().get_intent_infos()
             intent_info1 = intent_infos[0]
             intent = intent_info1.get_intent()
-            answer = self.get_default_answer()
 
             if intent in gossip_corpus.keys():
-                server.send_message(client, self.gossip_robot(intent))
+                answer = self.gossip_robot(intent)
             else:
-                # 回答不知道
-                server.send_message(client, self.get_default_answer())
+                answer = self.get_default_answer()
+            # 回答不知道
+            log.info("nlg 最终回答:{}".format(answer))
+            server.send_message(client, answer)
         except Exception as e:
             log.error("nlg 生成回答异常:{}".format(e))
             server.send_message(client, 'NLG模块异常啦~~')
