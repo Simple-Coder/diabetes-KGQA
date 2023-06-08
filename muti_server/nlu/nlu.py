@@ -11,6 +11,7 @@ from muti_server.models.muti_config import Args
 from muti_server.models.muti_model import MutiJointModel
 from muti_server.models.muti_predict import Predictor
 from muti_server.utils.logger_conf import my_log
+from muti_server.nlg.nlg_config import IntentEnum, gossip_corpus, semantic_slot
 
 log = my_log.logger
 
@@ -45,11 +46,13 @@ class NLU:
             intent1 = intent_info1[0]
             intent1_intensity = intent_info1[1]
             intent_info1 = IntentInfo(intent1, intent1_intensity)
+            intent_info1.set_intent_enum(intent1)
 
             intent_info2 = all_intents[1]
             intent2 = intent_info2[0]
             intent2_intensity = intent_info2[1]
             intent_info2 = IntentInfo(intent2, intent2_intensity)
+            intent_info2.set_intent_enum(intent2)
 
             # act 返回对象
             semantic_info.set_entities(all_slots)
@@ -71,6 +74,32 @@ class IntentInfo:
         """
         self.intent = intent
         self.intensity = intensity
+        self.intent_enum = IntentEnum.Others
+
+    def convert_intent_to_enum(self, intent):
+        if intent == "others":
+            return IntentEnum.Others
+        elif intent in gossip_corpus.keys():
+            return IntentEnum.Gossip
+        elif intent == "accept":
+            return IntentEnum.Accept
+        elif intent == "clarify":
+            return IntentEnum.Clarify
+        else:
+            return IntentEnum.Medical
+
+    def get_intent_enum(self):
+        return self.intent_enum
+
+    def set_intent_enum(self, intent):
+        enum = self.convert_intent_to_enum(intent)
+        self.intent_enum = enum
+
+    def get_intent(self):
+        return self.intent
+
+    def get_intensity(self):
+        return self.intensity
 
 
 class SemanticInfo(object):
