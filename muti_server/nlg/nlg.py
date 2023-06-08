@@ -21,10 +21,11 @@ class NLG():
             # 获取意图
             intent_infos = dialog_context.get_current_semantic().get_intent_infos()
             intent_info1 = intent_infos[0]
-            intent = intent_info1.get_intent()
+            intent1 = intent_info1.get_intent()
+            strategy1 = intent_info1.get_intent_strategy()
 
-            if intent in gossip_corpus.keys():
-                answer = self.gossip_robot(intent)
+            if strategy1 == IntentEnum.Gossip:
+                answer = self.gossip_robot(intent1)
             else:
                 answer = self.get_default_answer()
             # 回答不知道
