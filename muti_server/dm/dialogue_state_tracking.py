@@ -3,13 +3,15 @@ Created by xiedong
 @Date: 2023/6/6 21:16
 """
 from muti_server.utils.logger_conf import my_log
-from muti_server.nlg.nlg_config import intent_threshold_config, IntentEnum
+from muti_server.nlg.nlg_utils import fill_slot_info
+from muti_server.knowledge_graph.service import KgService
 
 log = my_log.logger
 
 
 class DialogueStateTracker:
     def __init__(self):
+        self.kg_service = KgService()
         self.contexts = {}
 
     def add_context(self, context_name, context_data):
@@ -27,3 +29,27 @@ class DialogueStateTracker:
         if not dialog_context:
             return
         dialog_context.set_current_semantic(semantic_info)
+
+        intent_infos = dialog_context.get_current_semantic().get_intent_infos()
+        entities = dialog_context.get_current_semantic().get_entities()
+
+        intent_info1 = intent_infos[0]
+        intent1 = intent_info1.get_intent()
+        strategy1 = intent_info1.get_intent_strategy()
+
+        slot_info1 = fill_slot_info(intent1, entities)
+        slot_info1 = self.kg_service.search(slot_info1, strategy1)
+
+        if slot_info1:
+            # TODO:存储
+            pass
+
+        intent_info2 = intent_infos[1]
+        intent2 = intent_info2.get_intent()
+        strategy2 = intent_info2.get_intent_strategy()
+
+        slot_info2 = fill_slot_info(intent2, entities)
+        slot_info2 = self.kg_service.search(slot_info2, strategy2)
+        if slot_info2:
+            # TODO:存储
+            pass
