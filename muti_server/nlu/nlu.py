@@ -2,7 +2,6 @@
 Created by xiedong
 @Date: 2023/6/5 15:32
 """
-import json
 
 import jsonpickle
 import torch
@@ -10,8 +9,8 @@ import torch
 from muti_server.models.muti_config import Args
 from muti_server.models.muti_model import MutiJointModel
 from muti_server.models.muti_predict import Predictor
+from muti_server.nlg.nlg_config import IntentEnum, intent_threshold_config, gossip_corpus
 from muti_server.utils.logger_conf import my_log
-from muti_server.nlg.nlg_config import IntentEnum, gossip_corpus, semantic_slot
 
 log = my_log.logger
 
@@ -74,26 +73,28 @@ class IntentInfo:
         """
         self.intent = intent
         self.intensity = intensity
-        # self.intent_enum = IntentEnum.Others
 
-    # def convert_intent_to_enum(self, intent):
-    #     if intent == "others":
-    #         return IntentEnum.Others
-    #     elif intent in gossip_corpus.keys():
-    #         return IntentEnum.Gossip
-    #     elif intent == "accept":
-    #         return IntentEnum.Accept
-    #     elif intent == "clarify":
-    #         return IntentEnum.Clarify
-    #     else:
-    #         return IntentEnum.Medical
-    #
-    # def get_intent_enum(self):
-    #     return self.intent_enum
-    #
-    # def set_intent_enum(self, intent):
-    #     enum = self.convert_intent_to_enum(intent)
-    #     self.intent_enum = enum
+        self.intent_strategy = self.build_intent_strategy(self.intent, self.intent_strategy)
+
+    def build_intent_strategy(self, intent, conf):
+        if intent == "others":
+            return IntentEnum.Others
+        if intent in gossip_corpus.keys():
+            return IntentEnum.Gossip
+
+        # 根据意图强度来确认回复策略
+        if conf >= intent_threshold_config["accept"]:
+            # slot_info["intent_strategy"] = "accept"
+            return IntentEnum.Accept
+        elif conf >= intent_threshold_config["deny"]:
+            # slot_info["intent_strategy"] = "clarify"
+            return IntentEnum.Clarify
+        else:
+            # slot_info["intent_strategy"] = "deny"
+            return IntentEnum.DENY
+
+    def get_intent_strategy(self):
+        return self.intent_strategy
 
     def get_intent(self):
         return self.intent

@@ -201,10 +201,10 @@ from enum import Enum
 
 class IntentEnum(Enum):
     Gossip = 1
-    Medical = 2
+    Others = 2
     Accept = 3
     Clarify = 4
-    Others = 5
+    DENY = 5
 
 
 class AnswerEnum(Enum):
