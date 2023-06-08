@@ -2,6 +2,10 @@
 Created by xiedong
 @Date: 2023/6/6 21:16
 """
+from muti_server.utils.logger_conf import my_log
+from muti_server.nlg.nlg_config import intent_threshold_config, IntentEnum
+
+log = my_log.logger
 
 
 class DialogueStateTracker:
@@ -20,5 +24,6 @@ class DialogueStateTracker:
 
     def update_context_sematic_info(self, client_id, semantic_info):
         dialog_context = self.contexts.get(client_id)
-        if dialog_context:
-            dialog_context.set_current_semantic(semantic_info)
+        if not dialog_context:
+            return
+        dialog_context.set_current_semantic(semantic_info)
