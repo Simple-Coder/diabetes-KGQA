@@ -17,7 +17,8 @@ log = my_log.logger
 
 # 自然语言理解（NLU）模块
 class NLU:
-    def __init__(self):
+    def __init__(self, args):
+        self.run_args = args
         self.args = Args()
         # 加载模型
         self.model = MutiJointModel(self.args.seq_num_labels, self.args.token_num_labels)

@@ -5,7 +5,8 @@ Created by xiedong
 
 
 class DialoguePolicyOptimizer:
-    def __init__(self):
+    def __init__(self, args):
+        self.args = args
         self.policy = {}
 
     def decide_action(self, dialogue_state):

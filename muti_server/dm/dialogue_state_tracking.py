@@ -10,8 +10,9 @@ log = my_log.logger
 
 
 class DialogueStateTracker:
-    def __init__(self):
-        self.kg_service = KgService()
+    def __init__(self, args):
+        self.args = args
+        self.kg_service = KgService(args)
         self.contexts = {}
 
     def add_context(self, context_name, context_data):

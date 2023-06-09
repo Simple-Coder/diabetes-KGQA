@@ -18,11 +18,12 @@ log = my_log.logger
 
 
 class RobotWebSocketHandler:
-    def __init__(self):
-        self.dialogue_tracker = dst.DialogueStateTracker()
-        self.dialog_policy_optimizer = dpo.DialoguePolicyOptimizer()
-        self.nlu = NLU()
-        self.nlg = NLG()
+    def __init__(self, args):
+        self.args = args
+        self.dialogue_tracker = dst.DialogueStateTracker(args)
+        self.dialog_policy_optimizer = dpo.DialoguePolicyOptimizer(args)
+        self.nlu = NLU(args)
+        self.nlg = NLG(args)
 
     def new_client(self, client, server):
         client_id = client['id']
@@ -76,14 +77,15 @@ class RobotWebSocketHandler:
 
 
 class RobotWebsocketServer:
-    def __init__(self, port):
+    def __init__(self, args):
+        self.args = args
         self.server = None
-        self.port = port
+        self.port = args.port
 
     def start(self):
         # 创建 WebSocket 服务器实例，并设置事件处理函数
         self.server = WebsocketServer(port=self.port)
-        handler = RobotWebSocketHandler()
+        handler = RobotWebSocketHandler(self.args)
         self.server.set_fn_new_client(handler.new_client)
         self.server.set_fn_client_left(handler.client_left)
         self.server.set_fn_message_received(handler.message_received)

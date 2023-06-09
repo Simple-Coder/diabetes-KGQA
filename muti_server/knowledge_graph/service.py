@@ -5,13 +5,19 @@ Created by xiedong
 from py2neo import Graph
 from muti_server.nlg.nlg_config import IntentEnum
 
-graph = Graph(host="127.0.0.1",
-              http_port=7474,
-              user="neo4j",
-              password="123456")
-
 
 class KgService:
+    def __init__(self, args):
+        self.args = args
+        self.graph = Graph(host=args.graph_host,
+                           http_port=args.graph_http_port,
+                           user=args.graph_user,
+                           password=args.graph_password)
+        # self.graph = Graph(host="127.0.0.1",
+        #                    http_port=7474,
+        #                    user="neo4j",
+        #                    password="123456")
+
     def search(self, slot_info, strategy):
         """
         根据语义槽获取答案回复
@@ -42,7 +48,7 @@ class KgService:
                 cql = cql_template.format(**slot_values)
 
             cql_vision = cql_template_vision.format(**slot_values)
-            answer = neo4j_searcher(cql)
+            answer = self.neo4j_searcher(cql)
             # 查询可视化vision
             # visison_data = neo4j_searcher_vision(cql_vision)
             # slot_info["visison_data"] = visison_data
@@ -76,15 +82,28 @@ class KgService:
 
         return slot_info
 
+    def neo4j_searcher(self, cql_list):
+        ress = ""
+        if isinstance(cql_list, list):
+            for cql in cql_list:
+                rst = []
+                data = self.graph.run(cql).data()
+                if not data:
+                    continue
+                for d in data:
+                    d = list(d.values())
+                    if isinstance(d[0], list):
+                        rst.extend(d[0])
+                    else:
+                        rst.extend(d)
 
-def neo4j_searcher(cql_list):
-    ress = ""
-    if isinstance(cql_list, list):
-        for cql in cql_list:
-            rst = []
-            data = graph.run(cql).data()
+                data = "、".join([str(i) for i in rst])
+                ress += data + "\n"
+        else:
+            data = self.graph.run(cql_list).data()
             if not data:
-                continue
+                return ress
+            rst = []
             for d in data:
                 d = list(d.values())
                 if isinstance(d[0], list):
@@ -93,20 +112,6 @@ def neo4j_searcher(cql_list):
                     rst.extend(d)
 
             data = "、".join([str(i) for i in rst])
-            ress += data + "\n"
-    else:
-        data = graph.run(cql_list).data()
-        if not data:
-            return ress
-        rst = []
-        for d in data:
-            d = list(d.values())
-            if isinstance(d[0], list):
-                rst.extend(d[0])
-            else:
-                rst.extend(d)
+            ress += data
 
-        data = "、".join([str(i) for i in rst])
-        ress += data
-
-    return ress
+        return ress

@@ -10,6 +10,9 @@ log = my_log.logger
 
 
 class NLG():
+    def __init__(self, args):
+        self.args = args
+
     def gossip_robot(self, intent):
         return random.choice(gossip_corpus.get(intent))
 
