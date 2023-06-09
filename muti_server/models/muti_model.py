@@ -4,7 +4,7 @@ Created by xiedong
 """
 import torch.nn as nn
 from transformers import BertModel
-from muti_server.models.muti_config import Args
+from muti_server.models.muti_config import ModelConfig
 from torchcrf import CRF
 from transformers import logging
 
@@ -14,8 +14,8 @@ logging.set_verbosity_error()
 class MutiJointModel(nn.Module):
     def __init__(self, num_intents, num_slots, hidden_dropout_prob=0.1):
         super(MutiJointModel, self).__init__()
-        args = Args()
-        self.bert = BertModel.from_pretrained(args.bert_dir)
+        model_config = ModelConfig()
+        self.bert = BertModel.from_pretrained(model_config.bert_dir)
         self.intent_classifier = nn.Linear(self.bert.config.hidden_size, num_intents)
         self.slot_filler = nn.Linear(self.bert.config.hidden_size, num_slots)
         self.dropout = nn.Dropout(hidden_dropout_prob)

@@ -5,33 +5,34 @@ Created by xiedong
 import torch
 
 
-class Args:
+class ModelConfig:
+
     # bert预训练模型
     bert_dir = 'hfl/chinese-bert-wwm-ext'
     # 模型保存位置
     save_dir = 'checkpoints/'
     # 加载模型位置
-    # load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/build_model/checkpoints/1685456332_19_muti_model.pt'
-    load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server//build_model\muti_intent\checkpoints//1685507169_0_muti_model.pt'
+    load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/build_model/checkpoints/1685456332_19_muti_model.pt'
+    # load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server//build_model\muti_intent\checkpoints//1685507169_0_muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
     # # 意图labels
-    # seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
-    # # 槽位labels
-    # token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
-    #
-    # train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
-    # train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
-    # train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
+    seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
+    # 槽位labels
+    token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
+
+    train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
+    train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
+    train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
 
     # 意图labels
-    seq_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//intent_label.txt'
-    # 槽位labels
-    token_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//slot_label.txt'
-
-    train_texts = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.in'
-    train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
-    train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
+    # seq_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//intent_label.txt'
+    # # 槽位labels
+    # token_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//slot_label.txt'
+    #
+    # train_texts = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.in'
+    # train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
+    # train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
 
     load_model = False
     do_train = True
@@ -87,7 +88,7 @@ class Args:
 
 
 if __name__ == '__main__':
-    args = Args()
+    args = ModelConfig()
     print('意图：', args.seq_labels)
     print('意图2：', args.seqlabel2id)
     print(args.tokenlabel2id)

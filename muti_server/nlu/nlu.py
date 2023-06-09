@@ -6,7 +6,7 @@ Created by xiedong
 import jsonpickle
 import torch
 
-from muti_server.models.muti_config import Args
+from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_model import MutiJointModel
 from muti_server.models.muti_predict import Predictor
 from muti_server.utils.logger_conf import my_log
@@ -19,11 +19,11 @@ log = my_log.logger
 class NLU:
     def __init__(self, args):
         self.run_args = args
-        self.args = Args()
+        self.model_config = ModelConfig()
         # 加载模型
-        self.model = MutiJointModel(self.args.seq_num_labels, self.args.token_num_labels)
+        self.model = MutiJointModel(self.model_config.seq_num_labels, self.model_config.token_num_labels)
         # 是否加载本地模型
-        self.model.load_state_dict(torch.load(self.args.load_dir))
+        self.model.load_state_dict(torch.load(self.model_config.load_dir))
         # 包装预测
         self.predictor = Predictor(self.model)
 
@@ -39,7 +39,7 @@ class NLU:
             predict_result = self.predictor.predict(text)
 
             # 解析模型识别结果
-            all_intents = predict_result[0][:self.args.muti_intent_threshold_num]
+            all_intents = predict_result[0][:self.model_config.muti_intent_threshold_num]
             all_slots = predict_result[1]
 
             intent_info1 = all_intents[0]

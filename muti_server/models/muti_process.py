@@ -6,7 +6,7 @@ import jieba
 import torch
 import re
 
-from muti_server.models.muti_config import Args
+from muti_server.models.muti_config import ModelConfig
 from transformers import BertTokenizer
 from transformers import logging
 
@@ -165,13 +165,13 @@ if __name__ == '__main__':
     list_word1 = list(jieba.cut(s))
     print(list_word1)
 
-    args = Args()
+    model_config = ModelConfig()
 
     texts = Processor.read_file('../../data/intent_and_slot_data/test/seq.in')
     intents = Processor.read_file('../../data/intent_and_slot_data/test/label')
     slots = Processor.read_file('../../data/intent_and_slot_data/test/seq.out')
 
     raw_examples = Processor.get_examples(texts, intents, slots, 'train')
-    tokenizer = BertTokenizer.from_pretrained(args.bert_dir)
-    features = get_features(raw_examples, tokenizer, args)
+    tokenizer = BertTokenizer.from_pretrained(model_config.bert_dir)
+    features = get_features(raw_examples, tokenizer, model_config)
     print("")

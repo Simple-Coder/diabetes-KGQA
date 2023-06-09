@@ -6,7 +6,7 @@ import numpy as np
 import torch
 from seqeval.metrics.sequence_labeling import get_entities
 from transformers import BertTokenizer
-from muti_server.models.muti_config import Args
+from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_process import get_word_list
 
 from transformers import logging
@@ -16,8 +16,8 @@ logging.set_verbosity_error()
 
 class Predictor:
     def __init__(self, model):
-        self.args = Args()
-        self.tokenizer = BertTokenizer.from_pretrained(self.args.bert_dir)
+        self.model_config = ModelConfig()
+        self.tokenizer = BertTokenizer.from_pretrained(self.model_config.bert_dir)
         self.model = model
 
     # Predict function
@@ -31,7 +31,7 @@ class Predictor:
             # tokenizer = BertTokenizer.from_pretrained(self.args.bert_dir)
             inputs = self.tokenizer.encode_plus(
                 text=tokens,
-                max_length=self.args.max_len,
+                max_length=self.model_config.max_len,
                 padding='max_length',
                 truncation='only_first',
                 return_attention_mask=True,
@@ -52,8 +52,8 @@ class Predictor:
             intent_probs = torch.sigmoid(intent_logits).squeeze(0).tolist()
             slot_probs = torch.softmax(slot_logits, dim=2).squeeze(0).tolist()
 
-            intent_result = [(self.args.id2seqlabel[index], value) for index, value in enumerate(intent_probs) if
-                             value > self.args.muti_intent_threshold]
+            intent_result = [(self.model_config.id2seqlabel[index], value) for index, value in enumerate(intent_probs) if
+                             value > self.model_config.muti_intent_threshold]
 
             intent_result = sorted(intent_result, key=lambda x: x[1], reverse=True)
             # filtered_values = [value for value in my_list if value > threshold]
@@ -64,7 +64,7 @@ class Predictor:
             token_output = np.argmax(slot_probs, -1)
 
             token_output = token_output[1:len(input_text) - 1]
-            token_output = [self.args.id2tokenlabel[i] for i in token_output]
+            token_output = [self.model_config.id2tokenlabel[i] for i in token_output]
 
             # intent = self.config.id2seqlabel[seq_output]
             # slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
