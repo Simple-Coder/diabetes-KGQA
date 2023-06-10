@@ -4,7 +4,6 @@ Created by xiedong
 """
 import json
 
-import jsonpickle
 from websocket_server import WebsocketServer
 from muti_server.utils.user_question import QuestionInfo
 from muti_server.utils.logger_conf import my_log
@@ -13,6 +12,7 @@ from muti_server.nlu.nlu import NLU, SemanticInfo
 from muti_server.nlg.nlg import NLG
 import muti_server.dm.dialogue_state_tracking as dst
 import muti_server.dm.dialogue_policy_optimization as dpo
+from muti_server.utils.json_utils import json_str
 
 log = my_log.logger
 
@@ -46,8 +46,8 @@ class RobotWebSocketHandler:
             # 1、NLU 模块处理用户输入
             semantic_info = self.nlu.predict(message)
             log.info("对应query：{},正在进行nlu识别意图与槽位阶段...识别意图结果:{}，识别槽位结果:{}".format(
-                question_info.userQuestion, jsonpickle.encode(semantic_info.get_intent_infos()),
-                jsonpickle.encode(semantic_info.get_entities())))
+                question_info.userQuestion, json_str(semantic_info.get_intent_infos()),
+                json_str(semantic_info.get_entities())))
 
             # 2、DM 模块处理
             # 使用对话状态追踪模块更新对话状态

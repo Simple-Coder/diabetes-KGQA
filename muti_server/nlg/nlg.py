@@ -20,9 +20,13 @@ class NLG():
         return semantic_slot.get("others")["replay_answer"]
 
     def generate_response(self, client, server, dialog_context):
+        current_semantic = dialog_context.get_current_semantic()
+        current_slots_infos = dialog_context.get_current_slot_infos()
+        history_sematics = dialog_context.get_history_semantics()
+        history_slot_infos = dialog_context.get_history_slot_infos()
         try:
             # 获取意图
-            intent_infos = dialog_context.get_current_semantic().get_intent_infos()
+            intent_infos = current_semantic.get_intent_infos()
             intent_info1 = intent_infos[0]
             intent1 = intent_info1.get_intent()
             strategy1 = intent_info1.get_intent_strategy()
@@ -37,3 +41,6 @@ class NLG():
         except Exception as e:
             log.error("nlg 生成回答异常:{}".format(e))
             server.send_message(client, 'NLG模块异常啦~~')
+        finally:
+            dialog_context.add_history_semantic(current_semantic)
+            dialog_context.add_history_slot_info(current_slots_infos)

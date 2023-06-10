@@ -3,7 +3,6 @@ Created by xiedong
 @Date: 2023/6/5 15:32
 """
 
-import jsonpickle
 import torch
 
 from muti_server.models.muti_config import ModelConfig
@@ -11,6 +10,7 @@ from muti_server.models.muti_model import MutiJointModel
 from muti_server.models.muti_predict import Predictor
 from muti_server.utils.logger_conf import my_log
 from muti_server.nlu.nlu_utils import build_intent_strategy
+from muti_server.utils.json_utils import json_str
 
 log = my_log.logger
 
@@ -59,7 +59,7 @@ class NLU:
             semantic_info.add_intent_info(intent_info1)
             semantic_info.add_intent_info(intent_info2)
 
-            log.info("nlu 识别query:{},结果:{}".format(text, jsonpickle.encode(semantic_info)))
+            log.info("nlu 识别query:{},结果:{}".format(text, json_str(semantic_info)))
         except Exception as e:
             log.error("nlu 识别query：{} 将返回默认值error:{}".format(text, e))
         return semantic_info
