@@ -4,15 +4,21 @@ Created by xiedong
 """
 from py2neo import Graph
 from muti_server.nlg.nlg_config import IntentEnum
+from muti_server.utils.logger_conf import my_log
+
+log = my_log.logger
 
 
 class KgService:
     def __init__(self, args):
         self.args = args
-        self.graph = Graph(host=args.graph_host,
-                           http_port=args.graph_http_port,
-                           user=args.graph_user,
-                           password=args.graph_password)
+        try:
+            self.graph = Graph(host=args.graph_host,
+                               http_port=args.graph_http_port,
+                               user=args.graph_user,
+                               password=args.graph_password)
+        except Exception as e:
+            log.error("初始化链接neo4j失败！将无法查询neo4j...")
         # self.graph = Graph(host="127.0.0.1",
         #                    http_port=7474,
         #                    user="neo4j",
