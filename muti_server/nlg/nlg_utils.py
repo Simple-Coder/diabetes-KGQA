@@ -27,7 +27,9 @@ def get_slot_info(intent):
 def fill_slot_info(intent, recognize_slot_infos, dialog_context):
     try:
         if not can_search_neo4j(intent):
+            log.warn("[dst] fill_slot_info-ext,current intent:{},not search".format(intent))
             return None
+        log.info("[dst] fill_slot_info-start,intent:{},slots:{}".format(intent, json_str(recognize_slot_infos)))
         slot_info = get_slot_info(intent)
         # 填槽
         slots = slot_info.get("slot_list")
@@ -50,8 +52,9 @@ def fill_slot_info(intent, recognize_slot_infos, dialog_context):
 
         slot_info["slot_values"] = slot_values
 
-        log.info("[dst] filling slot end...,slot_info:{}".format(json_str(slot_info)))
+        log.info("[dst] fill_slot_info-intent:{} end...,slot_info:{}".format(intent, json_str(slot_info)))
         return slot_info
     except Exception as e:
-        log.error("[dst] filling slot info error:{}".format(e))
-        return slot_info
+        log.error(
+            "[dst] fill_slot_info-error,intent:{},slots:{} error:{}".format(intent, json_str(recognize_slot_infos), e))
+        return None

@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/6/8 21:11
 """
 from py2neo import Graph
-from muti_server.nlg.nlg_config import IntentEnum
+from muti_server.nlg.nlg_config import IntentEnum, CATEGORY_INDEX
 from muti_server.utils.logger_conf import my_log
 
 log = my_log.logger
@@ -32,6 +32,7 @@ class KgService:
         :return:
         """
         if not slot_info:
+            log.error("[dst] slot_info is none,search exit")
             return None
 
         cql_template = slot_info.get("cql_template")
@@ -42,6 +43,7 @@ class KgService:
         # strategy = slot_info.get("intent_strategy")
 
         if not slot_values:
+            log.error("[dst] slot_values is none,search exit")
             return slot_info
 
         # if strategy == "accept":
@@ -56,8 +58,8 @@ class KgService:
             cql_vision = cql_template_vision.format(**slot_values)
             answer = self.neo4j_searcher(cql)
             # 查询可视化vision
-            # visison_data = neo4j_searcher_vision(cql_vision)
-            # slot_info["visison_data"] = visison_data
+            visison_data = self.neo4j_searcher_vision(cql_vision)
+            slot_info["visison_data"] = visison_data
             if not answer:
                 slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
             else:
@@ -121,3 +123,36 @@ class KgService:
             ress += data
 
         return ress
+
+    def neo4j_searcher_vision(self, cql_vision):
+        try:
+            data = []
+            links = []
+            kgdata = self.graph.run(cql_vision).data()
+            if not kgdata:
+                return [data, links]
+            count = 0
+            for value in kgdata:
+                count += 1
+                relNode = value['type']
+                Relid = value['Relid']
+                pNode = value['p']
+                qNode = value['q']
+                plabel_ = value['plabel']
+                qlabel_ = value['qlabel']
+                if count == 1:
+                    data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name'],
+                                 'category': CATEGORY_INDEX[qlabel_]})
+                else:
+                    data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name'],
+                                 'category': CATEGORY_INDEX[plabel_]})
+                links.append(
+                    {'source': str(qNode.identity), 'target': str(pNode.identity), 'value': relNode,
+                     'id': str(Relid)})
+
+            return {
+                'data': data,
+                'links': links
+            }
+        except Exception as e:
+            log.error("[dst] query vision data error:{}".format(e))
