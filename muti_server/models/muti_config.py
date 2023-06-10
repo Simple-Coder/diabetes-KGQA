@@ -10,7 +10,7 @@ class ModelConfig:
     # bert预训练模型
     bert_dir = 'hfl/chinese-bert-wwm-ext'
     # 模型保存位置
-    save_dir = 'checkpoints/'
+    save_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints'
     # 加载模型位置
     load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/build_model/checkpoints/1685456332_19_muti_model.pt'
     # load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server//build_model\muti_intent\checkpoints//1685507169_0_muti_model.pt'
