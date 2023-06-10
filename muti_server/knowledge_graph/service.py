@@ -76,7 +76,7 @@ class KgService:
                     cql.append(cqlt.format(**slot_values))
             else:
                 cql = cql_template.format(**slot_values)
-            answer = neo4j_searcher(cql)
+            answer = self.neo4j_searcher(cql)
             if not answer:
                 slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
             else:
