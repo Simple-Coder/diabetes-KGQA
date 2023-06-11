@@ -14,4 +14,5 @@ class NoTypeInfoEncoder(jsonpickle.handlers.BaseHandler):
 
 def json_str(obj):
     jsonpickle.handlers.registry.register(object, NoTypeInfoEncoder)
-    return jsonpickle.encode(obj)
+    # return jsonpickle.encode(obj)
+    return jsonpickle.encode(obj, unpicklable=False).encode('utf-8')
