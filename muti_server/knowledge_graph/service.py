@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/6/8 21:11
 """
 from py2neo import Graph
-from muti_server.nlg.nlg_config import IntentEnum, CATEGORY_INDEX
+from muti_server.nlg.nlg_config import IntentEnum, CATEGORY_INDEX, AnswerStretegy
 from muti_server.utils.logger_conf import my_log
 
 log = my_log.logger
@@ -46,9 +46,11 @@ class KgService:
             log.error("[dst] slot_values is none,search exit")
             return slot_info
 
+        slot_info["answer_strategy"] = AnswerStretegy.FindSuccess
+
         # if strategy == "accept":
         if strategy == IntentEnum.Accept:
-        # if strategy == IntentEnum.Medical:
+            # if strategy == IntentEnum.Medical:
             cql = []
             if isinstance(cql_template, list):
                 for cqlt in cql_template:
@@ -63,6 +65,7 @@ class KgService:
             slot_info["visison_data"] = visison_data
             if not answer:
                 slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
+                slot_info["answer_strategy"] = AnswerStretegy.NotFindData
             else:
                 pattern = reply_template.format(**slot_values)
                 slot_info["replay_answer"] = pattern + answer
@@ -82,6 +85,7 @@ class KgService:
             answer = self.neo4j_searcher(cql)
             if not answer:
                 slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
+                slot_info["answer_strategy"] = AnswerStretegy.NotFindData
             else:
                 pattern = reply_template.format(**slot_values)
                 slot_info["choice_answer"] = pattern + answer

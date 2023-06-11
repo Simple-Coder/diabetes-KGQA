@@ -199,6 +199,11 @@ semantic_slot = {
 from enum import Enum
 
 
+class AnswerStretegy(Enum):
+    FindSuccess = 1
+    NotFindData = 2
+
+
 class IntentEnum(Enum):
     Gossip = 1
     Others = 2
