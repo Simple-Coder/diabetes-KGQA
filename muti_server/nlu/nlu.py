@@ -74,8 +74,8 @@ class IntentInfo:
         """
         self.intent = intent
         self.intensity = intensity
-
         self.intent_strategy = build_intent_strategy(self.intent, self.intensity)
+        self.answer_info = None
 
     def get_intent_strategy(self):
         return self.intent_strategy
@@ -85,6 +85,12 @@ class IntentInfo:
 
     def get_intensity(self):
         return self.intensity
+
+    def get_answer_info(self):
+        return self.answer_info
+
+    def set_answer_info(self, answer_info):
+        return self.answer_info
 
 
 class SemanticInfo(object):

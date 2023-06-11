@@ -47,7 +47,8 @@ class KgService:
             return slot_info
 
         # if strategy == "accept":
-        if strategy == IntentEnum.Accept:
+        # if strategy == IntentEnum.Accept:
+        if strategy == IntentEnum.Medical:
             cql = []
             if isinstance(cql_template, list):
                 for cqlt in cql_template:

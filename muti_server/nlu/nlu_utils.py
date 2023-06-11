@@ -10,11 +10,12 @@ def build_intent_strategy(intent, conf):
         return IntentEnum.Others
     if intent in gossip_corpus.keys():
         return IntentEnum.Gossip
-
+    if intent == "accept":
+        return IntentEnum.Accept
     # 根据意图强度来确认回复策略
     if conf >= intent_threshold_config["accept"]:
         # slot_info["intent_strategy"] = "accept"
-        return IntentEnum.Accept
+        return IntentEnum.Medical
     elif conf >= intent_threshold_config["deny"]:
         # slot_info["intent_strategy"] = "clarify"
         return IntentEnum.Clarify

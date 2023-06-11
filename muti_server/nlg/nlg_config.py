@@ -203,8 +203,9 @@ class IntentEnum(Enum):
     Gossip = 1
     Others = 2
     Accept = 3
-    Clarify = 4
-    DENY = 5
+    Medical = 4
+    Clarify = 5
+    DENY = 6
 
 
 class AnswerEnum(Enum):

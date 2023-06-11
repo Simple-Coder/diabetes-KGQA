@@ -39,9 +39,7 @@ class DialogueStateTracker:
             dialog_context = self.contexts.get(client_id)
             if not dialog_context:
                 return
-            dialog_context.set_current_semantic(semantic_info)
 
-            log.info("[dst] update current sematic finish,infos:{}".format(json_str(semantic_info)))
             intent_infos = dialog_context.get_current_semantic().get_intent_infos()
             entities = dialog_context.get_current_semantic().get_entities()
 
@@ -53,7 +51,7 @@ class DialogueStateTracker:
             slot_info1 = self.kg_service.search(slot_info1, strategy1)
 
             if slot_info1:
-                dialog_context.add_current_slot_info(slot_info1)
+                intent_info1.set_answer_info(slot_info1)
 
             intent_info2 = intent_infos[1]
             intent2 = intent_info2.get_intent()
@@ -62,6 +60,9 @@ class DialogueStateTracker:
             slot_info2 = fill_slot_info(intent2, entities, dialog_context)
             slot_info2 = self.kg_service.search(slot_info2, strategy2)
             if slot_info2:
-                dialog_context.add_current_slot_info(slot_info2)
+                intent_info2.set_answer_info(slot_info2)
+
+            dialog_context.set_current_semantic(semantic_info)
+            log.info("[dst] update current sematic finish,infos:{}".format(json_str(semantic_info)))
         except Exception as e:
             log.error("[dst] update dialog context error:{}".format(e))
