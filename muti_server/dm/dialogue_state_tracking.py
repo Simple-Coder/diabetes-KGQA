@@ -40,8 +40,8 @@ class DialogueStateTracker:
             if not dialog_context:
                 return
 
-            intent_infos = dialog_context.get_current_semantic().get_intent_infos()
-            entities = dialog_context.get_current_semantic().get_entities()
+            intent_infos = semantic_info.get_intent_infos()
+            entities = semantic_info.get_entities()
 
             intent_info1 = intent_infos[0]
             intent1 = intent_info1.get_intent()
