@@ -87,11 +87,14 @@ class IntentInfo:
     def get_intensity(self):
         return self.intensity
 
+    def get_intent_enum(self):
+        return self.intent_enum
+
     def get_answer_info(self):
         return self.answer_info
 
     def set_answer_info(self, answer_info):
-        return self.answer_info
+        self.answer_info = answer_info
 
 
 class SemanticInfo(object):
