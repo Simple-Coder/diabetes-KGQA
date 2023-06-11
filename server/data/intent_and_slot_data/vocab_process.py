@@ -17,7 +17,9 @@ def vocab_process(data_dir, data_type):
         intent_vocab = set()
         for line in f_r:
             line = line.strip()
-            intent_vocab.add(line)
+            intents = line.split('|')
+            for intent in intents:
+                intent_vocab.add(intent)
 
         additional_tokens = ["others"]
         for token in additional_tokens:
