@@ -5,11 +5,11 @@ Created by xiedong
 import os
 
 
-def vocab_process(data_dir):
+def vocab_process(data_dir, data_type):
     slot_label_vocab = 'slot_label.txt'
     intent_label_vocab = 'intent_label.txt'
 
-    train_dir = os.path.join(data_dir, 'train')
+    train_dir = os.path.join(data_dir, data_type)
     # intent
     with open(os.path.join(train_dir, 'label'), 'r', encoding='utf-8') as f_r, open(
             os.path.join(data_dir, intent_label_vocab), 'w',
@@ -50,4 +50,5 @@ def vocab_process(data_dir):
 
 
 if __name__ == '__main__':
-    vocab_process('./')
+    vocab_process('./', 'test')
+    # vocab_process('./','train')
