@@ -31,7 +31,7 @@ class MutiJointModel(nn.Module):
         self.sigmoid = nn.Sigmoid()
         self.softmax = nn.Softmax(dim=2)
 
-        # self.crf = CRF(num_tags=num_slots, batch_first=True)
+        self.crf = CRF(num_tags=num_slots, batch_first=True)
 
     def forward(self, input_ids, attention_mask):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
@@ -48,3 +48,20 @@ class MutiJointModel(nn.Module):
 
         # return intent_logits, slot_logits
         return intent_probs, slot_probs
+
+
+# 定义 JointSLU 模型
+# class JointSLU(nn.Module):
+#     def __init__(self, num_intents, num_slots, embedding_dim, hidden_dim, num_embeddings):
+#         super(JointSLU, self).__init__()
+#         self.embedding = nn.Embedding(num_embeddings, embedding_dim)
+#         self.lstm = nn.LSTM(embedding_dim, hidden_dim, bidirectional=True)
+#         self.intent_classifier = nn.Linear(hidden_dim * 2, num_intents)
+#         self.slot_tagger = nn.Linear(hidden_dim * 2, num_slots)
+#
+#     def forward(self, input_seq):
+#         embedded = self.embedding(input_seq)
+#         lstm_out, _ = self.lstm(embedded)
+#         intent_logits = self.intent_classifier(lstm_out[:, -1, :])
+#         slot_logits = self.slot_tagger(lstm_out)
+#         return intent_logits, slot_logits

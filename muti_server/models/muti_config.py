@@ -12,7 +12,7 @@ class ModelConfig:
     # 模型保存位置
     save_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints'
     # 加载模型位置
-    load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/build_model/checkpoints/1685456332_19_muti_model.pt'
+    load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints/1686492325_3_muti_model.pt'
     # load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server//build_model\muti_intent\checkpoints//1685507169_0_muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
@@ -34,13 +34,13 @@ class ModelConfig:
     # train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
     # train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
 
-    load_model = False
+    load_model = True
     do_train = True
     do_eval = False
     do_test = True
     do_save = True
     do_predict = True
-    use_crf = True
+    use_crf = False
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     seqlabel2id = {}
