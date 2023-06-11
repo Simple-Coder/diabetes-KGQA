@@ -9,7 +9,7 @@ from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_model import MutiJointModel
 from muti_server.models.muti_predict import Predictor
 from muti_server.utils.logger_conf import my_log
-from muti_server.nlu.nlu_utils import build_intent_strategy
+from muti_server.nlu.nlu_utils import build_intent_strategy, build_intent_enum
 from muti_server.utils.json_utils import json_str
 
 log = my_log.logger
@@ -73,6 +73,7 @@ class IntentInfo:
         :param intensity: 意图强度  例如：0.6
         """
         self.intent = intent
+        self.intent_enum = build_intent_enum(self.intent)
         self.intensity = intensity
         self.intent_strategy = build_intent_strategy(self.intent, self.intensity)
         self.answer_info = None
