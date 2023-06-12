@@ -36,22 +36,15 @@ class NLU:
             all_intents = intent_probs[:self.model_config.muti_intent_threshold_num]
             all_slots = slot_probs
 
-            intent_info1 = all_intents[0]
-            intent1 = intent_info1[0]
-            intent1_intensity = intent_info1[1]
-            intent_info1 = IntentInfo(intent1, intent1_intensity)
-            # intent_info1.set_intent_enum(intent1)
-
-            intent_info2 = all_intents[1]
-            intent2 = intent_info2[0]
-            intent2_intensity = intent_info2[1]
-            intent_info2 = IntentInfo(intent2, intent2_intensity)
-            # intent_info2.set_intent_enum(intent2)
-
+            log.info("[nlu]理解query:{} 结果:all_intents:{},all_slots:{}".format(text, json_str(all_intents),
+                                                                             json_str(all_slots)))
+            for reg_intent in all_intents:
+                intent = reg_intent[0]
+                intent_intensity = reg_intent[1]
+                intent_info = IntentInfo(intent, intent_intensity)
+                semantic_info.add_intent_info(intent_info)
             # act 返回对象
             semantic_info.set_entities(all_slots)
-            semantic_info.add_intent_info(intent_info1)
-            semantic_info.add_intent_info(intent_info2)
 
             log.info("nlu 识别query:{},结果:{}".format(text, json_str(semantic_info)))
         except Exception as e:
