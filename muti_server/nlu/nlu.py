@@ -7,7 +7,7 @@ import torch
 
 from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_model import MultiJointModel
-from muti_server.models.muti_predict import Predictor
+from muti_server.models.muti_predict import MutiPredictWrapper
 from muti_server.utils.logger_conf import my_log
 from muti_server.nlu.nlu_utils import build_intent_strategy, build_intent_enum
 from muti_server.utils.json_utils import json_str
@@ -25,7 +25,7 @@ class NLU:
         # 是否加载本地模型
         self.model.load_state_dict(torch.load(self.model_config.load_dir))
         # 包装预测
-        self.predictor = Predictor(self.model)
+        self.predictor = MutiPredictWrapper(self.model_config)
 
     def predict(self, text):
         """

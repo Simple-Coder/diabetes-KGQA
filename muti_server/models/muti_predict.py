@@ -8,10 +8,26 @@ from seqeval.metrics.sequence_labeling import get_entities
 from transformers import BertTokenizer
 from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_process import get_word_list
+from muti_server.models.muti_model import MultiJointModel
 
 from transformers import logging
 
 logging.set_verbosity_error()
+
+
+class MutiPredictWrapper:
+    def __init__(self, args):
+        self.args = args
+        # 加载模型
+        self.model = MultiJointModel(self.args.seq_num_labels, self.args.token_num_labels)
+        # 是否加载本地模型
+        self.model.load_state_dict(torch.load(self.args.load_dir))
+
+        #
+        self.predictor = Predictor(self.model)
+
+    def predict(self, text):
+        return self.predictor.predict(text)
 
 
 class Predictor:
@@ -52,7 +68,8 @@ class Predictor:
             intent_probs = torch.sigmoid(intent_logits).squeeze(0).tolist()
             slot_probs = torch.softmax(slot_logits, dim=2).squeeze(0).tolist()
 
-            intent_result = [(self.model_config.id2seqlabel[index], value) for index, value in enumerate(intent_probs) if
+            intent_result = [(self.model_config.id2seqlabel[index], value) for index, value in enumerate(intent_probs)
+                             if
                              value > self.model_config.muti_intent_threshold]
 
             intent_result = sorted(intent_result, key=lambda x: x[1], reverse=True)
@@ -75,3 +92,13 @@ class Predictor:
 
             # return intent_probs, slot_probs
             return intent_result, slots
+
+
+if __name__ == '__main__':
+    args = ModelConfig()
+    predictor = MutiPredictWrapper(args)
+    input_text = "请问二型糖尿病的临床表现是什么,需要吃什么药啊"
+    intent_probs, slot_probs = predictor.predict(input_text)
+
+    print("Intent probabilities:", sorted(intent_probs, key=lambda x: x[1]))
+    print("Slot probabilities:", slot_probs)
