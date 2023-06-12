@@ -27,6 +27,37 @@ class NLG():
         except Exception as e:
             log.error("[nlg] do_answer_client error:{}".format(e))
 
+    def handle_medical(self, client, server, answer_info1):
+        if not answer_info1:
+            self.do_answer_client(client, server, self.get_default_answer())
+        else:
+            self.do_answer_client(client, server, answer_info1.get('replay_answer'))
+
+    def handle_accept_intent(self, dialog_context, client, server):
+        try:
+            log.info("[handle_accept_intent]-start")
+            history_sematics = dialog_context.get_history_semantics()
+            if len(history_sematics) == 0:
+                log.warn("[handle_accept_intent]-no history_sematics")
+                self.do_answer_client(client, server, self.get_default_answer())
+            else:
+                last_sematics = history_sematics[-1]
+                infos = last_sematics.get_intent_infos()
+                last_answer_info = None
+                for intent in infos:
+                    if intent.get_intent_enum() == IntentEnum.Accept:
+                        last_answer_info = intent.get_answer_info()
+
+                if last_answer_info:
+                    log.info("[handle_accept_intent]-last_answer_info find success")
+                    self.do_answer_client(client, server, last_answer_info.get('replay_answer'))
+                else:
+                    log.warn("[handle_accept_intent]-last_answer_info find fail")
+                    self.do_answer_client(client, server, self.get_default_answer())
+        except Exception as e:
+            log.error("handle_accept_intent error:{}".format(e))
+            self.do_answer_client(client, server, self.get_default_answer())
+
     def generate_response(self, client, server, dialog_context):
         current_semantic = dialog_context.get_current_semantic()
         history_sematics = dialog_context.get_history_semantics()
@@ -53,7 +84,7 @@ class NLG():
             intent2 = intent_info2.get_intent()
             intent_enum2 = intent_info2.get_intent_enum()
             answer_info2 = intent_info2.get_answer_info()
-
+            log.info("[nlg] intent_enum1:{} intent_enum2:{} start".format(intent_enum1, intent_enum2))
             # 2个均为闲聊：取第一个回答
             if intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Gossip:
                 self.handle_gossip(intent1, client, server)
@@ -80,7 +111,6 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
             # 1个闲聊，一个澄清：优先闲聊
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Accept:
-                log.info("[nlg] hit Gossip && Accept")
                 self.handle_gossip(intent1, client, server)
                 # 1个诊断，一个闲聊：只处理诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Gossip:
@@ -111,7 +141,7 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
                 # 1为接受，找上下文回答
             elif intent_enum1 == IntentEnum.Accept:
-                self.handle_gossip(intent1, client, server)
+                self.handle_accept_intent(dialog_context, client, server)
                 # 2为接受，找上下文回答
             elif intent_enum2 == IntentEnum.Clarify:
                 self.handle_gossip(intent1, client, server)
@@ -123,11 +153,6 @@ class NLG():
             server.send_message(client, 'NLG模块异常啦~~')
         finally:
             dialog_context.add_history_semantic(current_semantic)
-
-    def handle_medical(self, client, server, answer_info1):
-        if not answer_info1:
-            return self.get_default_answer()
-        return answer_info1.get('replay_answer')
 
     def handle_all_medical(self, client, server, answer_info1, answer_info2):
         default_answer = self.get_default_answer()
