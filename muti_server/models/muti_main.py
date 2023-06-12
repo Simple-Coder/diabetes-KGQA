@@ -9,7 +9,7 @@ import torch.optim as optim
 
 from muti_server.models.muti_config import ModelConfig
 from muti_dataset import BertDataset, SLUDataset
-from muti_model import MutiJointModel
+from muti_server.models.muti_model import MultiJointModel
 from muti_predict import Predictor
 
 logging.set_verbosity_error()
@@ -41,7 +41,7 @@ def train_joint_bert():
     device = args.device
     num_intents = args.seq_num_labels
     num_slots = args.token_num_labels
-    model = MutiJointModel(num_intents=num_intents, num_slots=num_slots)
+    model = MultiJointModel(num_intents=num_intents, num_slots=num_slots)
     if args.load_model:
         model.load_state_dict(torch.load(args.load_dir))
     model.to(device)
@@ -72,29 +72,35 @@ def train_joint_bert():
             token_label_ids = train_batch['token_label_ids']
 
             outputs = model(input_ids, attention_mask)
-            intent_logits, slot_logits = outputs
+            seq_output, token_output = outputs
 
-            intent_loss = criterion_intent(intent_logits, seq_label_ids.float())
-            if args.use_crf:
-                slot_loss = model.crf(slot_logits, token_label_ids, mask=attention_mask.byte(), reduction='mean')
-                slot_loss = -1 * slot_loss  # negative log-likelihood
-            else:
-                # slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features),
-                #                            token_label_ids.view(-1))
-
-                active_loss = attention_mask.view(-1) == 1
-                active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
-                active_labels = token_label_ids.view(-1)[active_loss]
-                #
-                slot_loss = criterion_slot(active_logits, active_labels)
-
-            # active_loss = attention_mask.view(-1) == 1
-            # active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
-            # active_labels = token_label_ids.view(-1)[active_loss]
+            # intent_loss = criterion_intent(intent_logits, seq_label_ids.float())
+            # if args.use_crf:
+            #     slot_loss = model.crf(slot_logits, token_label_ids, mask=attention_mask.byte(), reduction='mean')
+            #     slot_loss = -1 * slot_loss  # negative log-likelihood
+            # else:
+            #     # slot_loss = criterion_slot(slot_logits.view(-1, model.slot_filler.out_features),
+            #     #                            token_label_ids.view(-1))
             #
-            # slot_loss = criterion_slot(active_logits, active_labels)
+            #     active_loss = attention_mask.view(-1) == 1
+            #     active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
+            #     active_labels = token_label_ids.view(-1)[active_loss]
+            #     #
+            #     slot_loss = criterion_slot(active_logits, active_labels)
+            #
+            # # active_loss = attention_mask.view(-1) == 1
+            # # active_logits = slot_logits.view(-1, slot_logits.shape[2])[active_loss]
+            # # active_labels = token_label_ids.view(-1)[active_loss]
+            # #
+            # # slot_loss = criterion_slot(active_logits, active_labels)
+            #
+            # total_loss = intent_loss + slot_loss
 
-            total_loss = intent_loss + slot_loss
+            active_loss = attention_mask.view(-1) == 1
+            active_logits = token_output.view(-1, token_output.shape[2])[active_loss]
+            active_labels = token_label_ids.view(-1)[active_loss]
+
+            total_loss = model.calculate_loss(seq_output, active_logits, seq_label_ids, active_labels)
 
             # optimizer.zero_grad()
             model.zero_grad()
@@ -177,13 +183,13 @@ def train_joint_bert():
 #             optimizer.step()
 #
 #             print(f'[train] epoch:{epoch + 1} loss:{total_loss.item()}')
-    # 预测代码示例
-    # input_seq = torch.tensor([[1, 2, 3, 4]])
-    # intent_logits, slot_logits = model(input_seq)
-    # predicted_intent = torch.sigmoid(intent_logits) > 0.5  # 根据阈值进行判断
-    # _, predicted_slot = torch.max(slot_logits, 2)
-    # print("Predicted Intent:", predicted_intent.squeeze().tolist())
-    # print("Predicted Slot:", predicted_slot.squeeze().tolist())
+# 预测代码示例
+# input_seq = torch.tensor([[1, 2, 3, 4]])
+# intent_logits, slot_logits = model(input_seq)
+# predicted_intent = torch.sigmoid(intent_logits) > 0.5  # 根据阈值进行判断
+# _, predicted_slot = torch.max(slot_logits, 2)
+# print("Predicted Intent:", predicted_intent.squeeze().tolist())
+# print("Predicted Slot:", predicted_slot.squeeze().tolist())
 
 
 if __name__ == '__main__':
