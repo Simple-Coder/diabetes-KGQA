@@ -84,7 +84,7 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
                 # 1个诊断，一个闲聊：只处理诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Gossip:
-                self.handle_gossip(intent1, client, server)
+                self.handle_medical(client, server, answer_info1)
                 # 1个诊断，一个澄清：先诊断，再澄清
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Clarify:
                 self.handle_gossip(intent1, client, server)
