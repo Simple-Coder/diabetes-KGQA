@@ -9,8 +9,10 @@ from transformers import BertTokenizer
 from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_process import get_word_list
 from muti_server.models.muti_model import MultiJointModel
-
+from muti_server.utils.logger_conf import my_log
 from transformers import logging
+
+log = my_log.logger
 
 logging.set_verbosity_error()
 
@@ -27,6 +29,7 @@ class MutiPredictWrapper:
         self.predictor = Predictor(self.model)
 
     def predict(self, text):
+        log.info("[model] predict text:{}".format(text))
         return self.predictor.predict(text)
 
 
