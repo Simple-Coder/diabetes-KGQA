@@ -80,6 +80,7 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
             # 1个闲聊，一个澄清：优先闲聊
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Accept:
+                log.info("[nlg] hit Gossip && Accept")
                 self.handle_gossip(intent1, client, server)
                 # 1个诊断，一个闲聊：只处理诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Gossip:
