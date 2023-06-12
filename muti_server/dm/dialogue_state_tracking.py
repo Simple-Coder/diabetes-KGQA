@@ -43,24 +43,18 @@ class DialogueStateTracker:
             intent_infos = semantic_info.get_intent_infos()
             entities = semantic_info.get_entities()
 
-            intent_info1 = intent_infos[0]
-            intent1 = intent_info1.get_intent()
-            strategy1 = intent_info1.get_intent_strategy()
+            if len(intent_infos) == 0:
+                log.error("[dm] 意图识别为空，不处理查询neo4j")
+                return
 
-            slot_info1 = fill_slot_info(intent1, entities, dialog_context)
-            slot_info1 = self.kg_service.search(slot_info1, strategy1)
+            for intent_info in intent_infos:
+                intent = intent_info.get_intent()
+                strategy = intent_info.get_intent_strategy()
+                slot_info = fill_slot_info(intent, entities, dialog_context)
+                slot_info = self.kg_service.search(slot_info, strategy)
 
-            if slot_info1:
-                intent_info1.set_answer_info(slot_info1)
-
-            intent_info2 = intent_infos[1]
-            intent2 = intent_info2.get_intent()
-            strategy2 = intent_info2.get_intent_strategy()
-
-            slot_info2 = fill_slot_info(intent2, entities, dialog_context)
-            slot_info2 = self.kg_service.search(slot_info2, strategy2)
-            if slot_info2:
-                intent_info2.set_answer_info(slot_info2)
+                if slot_info:
+                    intent_info.set_answer_info(slot_info)
 
             dialog_context.set_current_semantic(semantic_info)
             log.info("[dst] update current sematic finish,infos:{}".format(json_str(semantic_info)))
