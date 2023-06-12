@@ -78,6 +78,9 @@ class NLG():
                 # 1个闲聊，一个未知：优先闲聊
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Others:
                 self.handle_gossip(intent1, client, server)
+            # 1个闲聊，一个澄清：优先闲聊
+            elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Accept:
+                self.handle_gossip(intent1, client, server)
                 # 1个诊断，一个闲聊：只处理诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Gossip:
                 self.handle_gossip(intent1, client, server)
@@ -113,7 +116,7 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
             else:
                 log.info("[nlg]未识别到回答策略，intent1:{},intent2:{}".format(json_str(intent_info1),
-                                                                              json_str(intent_info2)))
+                                                                      json_str(intent_info2)))
         except Exception as e:
             log.error("nlg 生成回答异常:{}".format(e))
             server.send_message(client, 'NLG模块异常啦~~')
