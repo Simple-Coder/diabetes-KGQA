@@ -44,7 +44,7 @@ class RobotWebSocketHandler:
             question_info = self.convert_message(client, message)
 
             # 1、NLU 模块处理用户输入
-            semantic_info = self.nlu.predict(message)
+            semantic_info = self.nlu.predict(question_info.userQuestion)
             log.info("对应query：{},正在进行nlu识别意图与槽位阶段...识别意图结果:{}，识别槽位结果:{}".format(
                 question_info.userQuestion, json_str(semantic_info.get_intent_infos()),
                 json_str(semantic_info.get_entities())))
