@@ -3,10 +3,7 @@ Created by xiedong
 @Date: 2023/6/5 15:32
 """
 
-import torch
-
 from muti_server.models.muti_config import ModelConfig
-from muti_server.models.muti_model import MultiJointModel
 from muti_server.models.muti_predict import MutiPredictWrapper
 from muti_server.utils.logger_conf import my_log
 from muti_server.nlu.nlu_utils import build_intent_strategy, build_intent_enum
@@ -20,10 +17,6 @@ class NLU:
     def __init__(self, args):
         self.run_args = args
         self.model_config = ModelConfig()
-        # 加载模型
-        self.model = MultiJointModel(self.model_config.seq_num_labels, self.model_config.token_num_labels)
-        # 是否加载本地模型
-        self.model.load_state_dict(torch.load(self.model_config.load_dir))
         # 包装预测
         self.predictor = MutiPredictWrapper(self.model_config)
 
@@ -36,11 +29,12 @@ class NLU:
         semantic_info = SemanticInfo()
         try:
             log.info("nlu 正在识别 query:{}".format(text))
-            predict_result = self.predictor.predict(text)
+            # predict_result = self.predictor.predict(text)
+            intent_probs, slot_probs = self.predictor.predict(text)
 
             # 解析模型识别结果
-            all_intents = predict_result[0][:self.model_config.muti_intent_threshold_num]
-            all_slots = predict_result[1]
+            all_intents = intent_probs[:self.model_config.muti_intent_threshold_num]
+            all_slots = slot_probs
 
             intent_info1 = all_intents[0]
             intent1 = intent_info1[0]
