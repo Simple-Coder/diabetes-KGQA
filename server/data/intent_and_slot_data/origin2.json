@@ -4,13 +4,19 @@
     "text": "请问二型糖尿病的临床表现是什么,需要吃什么药啊",
     "intent": "symptom_disease|drug_disease",
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     }
   },
   {
+    "id": 1,
+    "text": "请问糖尿病有什么症状,怎么治疗",
+    "intent": "symptom_disease|drug_disease",
     "slots": {
-      "symptom": "临床表现",
+      "disease": "糖尿病"
+    }
+  },
+  {
+    "slots": {
       "disease": "二型糖尿病"
     },
     "id": 2,
@@ -38955,7 +38961,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 3,
@@ -38964,7 +38969,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 4,
@@ -38973,7 +38977,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 5,
@@ -38982,7 +38985,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 6,
@@ -38991,7 +38993,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 7,
@@ -39000,7 +39001,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 8,
@@ -39009,7 +39009,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 9,
@@ -39018,7 +39017,6 @@
   },
   {
     "slots": {
-      "symptom": "临床表现",
       "disease": "二型糖尿病"
     },
     "id": 10,
