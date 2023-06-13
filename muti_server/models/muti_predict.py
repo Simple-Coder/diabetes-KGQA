@@ -26,7 +26,7 @@ class MutiPredictWrapper:
 if __name__ == '__main__':
     args = ModelConfig()
     predictor = MutiPredictWrapper(args)
-    input_text = "不是这样"
+    input_text = "请问二型糖尿病的临床表现是什么"
     intent_probs, slot_probs = predictor.predict(input_text)
 
     print("Intent probabilities:", sorted(intent_probs, key=lambda x: x[1]))
