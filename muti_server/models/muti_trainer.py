@@ -11,6 +11,7 @@ from muti_server.models.muti_process import get_word_list
 import torch
 import numpy as np
 from transformers import BertTokenizer
+import torch.nn as nn
 
 
 class Trainer:
@@ -25,6 +26,8 @@ class Trainer:
         self.optimizer = torch.optim.Adam(self.model.parameters(), lr=self.model_config.lr)
         self.num_epochs = self.model_config.epoch
         self.tokenizer = BertTokenizer.from_pretrained(self.model_config.bert_dir)
+        self.criterion_intent = nn.BCELoss()
+        self.criterion_slot = nn.CrossEntropyLoss()
 
     # 获取时间函数，把当前时间格式化为str类型nowdate.strftime('%Y-%m-%d %H:%M:%S')
     def get_last_date(self):
@@ -47,18 +50,22 @@ class Trainer:
                 input_ids = train_batch['input_ids']
                 attention_mask = train_batch['attention_mask']
                 token_type_ids = train_batch['token_type_ids']
-                seq_label_ids = train_batch['seq_label_ids']
-                token_label_ids = train_batch['token_label_ids']
+                intent_labels = train_batch['seq_label_ids']
+                slot_labels = train_batch['token_label_ids']
 
                 outputs = self.model(input_ids, attention_mask)
-                seq_output, token_output = outputs
-                # total_loss = intent_loss + slot_loss
+                intent_output, slot_output = outputs
 
-                active_loss = attention_mask.view(-1) == 1  # 标识哪些不是填充位置
-                active_logits = token_output.view(-1, token_output.shape[2])[active_loss]
-                active_labels = token_label_ids.view(-1)[active_loss]
+                # 计算意图分类损失
+                intent_loss = self.criterion_intent(intent_output, intent_labels.float())
 
-                total_loss = self.model.calculate_loss(seq_output, active_logits, seq_label_ids, active_labels)
+                # 计算Slot填充损失
+                active_loss = attention_mask.view(-1) == 1
+                active_logits = slot_output.view(-1, slot_output.shape[2])[active_loss]
+                active_labels = slot_labels.view(-1)[active_loss]
+                slot_loss = self.criterion_slot(active_logits, active_labels)
+
+                total_loss = intent_loss + slot_loss
 
                 # optimizer.zero_grad()
                 # 梯度清零：因为在每次反向传播时，梯度值会累积，如果不清零，梯度值将会一直累加，导致参数更新不正确
@@ -78,15 +85,17 @@ class Trainer:
                 torch.save(self.model.state_dict(),
                            os.path.join(self.model_config.save_dir,
                                         str(int(time.time())) + '_' + str(epoch) + '_muti_model.pt'))
+            if self.model_config.do_predict:
+                self.predict("你好")
+                self.predict("再见")
+                self.predict("不是")
+                self.predict("请问糖尿病的临床表现是什么")
+                self.predict("请问糖尿病的临床表现是什么，需要吃什么药")
 
     def predict(self, input_text):
         self.model.eval()
         with torch.no_grad():
-            # Tokenize and convert to input IDs
-            # tokens = list(jieba.cut(input_text))
             tokens = get_word_list(input_text)
-            # input_ids = tokenizer.convert_tokens_to_ids(tokens)
-            # tokenizer = BertTokenizer.from_pretrained(self.args.bert_dir)
             inputs = self.tokenizer.encode_plus(
                 text=tokens,
                 max_length=self.model_config.max_len,
@@ -95,37 +104,21 @@ class Trainer:
                 return_attention_mask=True,
                 return_token_type_ids=True,
             )
-            input_ids = torch.tensor(inputs['input_ids'])
 
-            # input_ids = torch.tensor(input_ids).unsqueeze(0)
-            input_ids = input_ids.unsqueeze(0)
+            input_ids = torch.tensor(inputs['input_ids']).unsqueeze(0).to(self.device)
+            attention_mask = torch.tensor(inputs['attention_mask']).unsqueeze(0).to(self.device)
 
-            # Create attention mask
-            attention_mask = [1] * len(input_ids)
-            attention_mask = torch.tensor(attention_mask).unsqueeze(0)
-
-            outputs = self.model(input_ids, attention_mask)
-            intent_output, slot_output = outputs
-
-            seq_output = intent_output.detach().cpu().numpy()
-
-
-
-            intent_probs = intent_output.squeeze(0).tolist()
-            slot_output = slot_output.detach().cpu().numpy()
+            intent_output, slot_output = self.model(input_ids, attention_mask)
+            intent_probs = intent_output.squeeze().tolist()
 
             intent_result = [(self.model_config.id2seqlabel[index], value) for index, value in enumerate(intent_probs)
-                             if
-                             value > self.model_config.muti_intent_threshold]
+                             if value > self.model_config.muti_intent_threshold]
 
             intent_result = sorted(intent_result, key=lambda x: x[1], reverse=True)
-            # filtered_values = [value for value in my_list if value > threshold]
 
-            # intent_idx = np.where(intent_probs > 0.5)[0]
-            # intent_result = [(args.id2seqlabel[idx], intent_probs[idx]) for idx in intent_idx]
-
-            token_output = np.argmax(slot_output, -1)
-
+            # 处理槽位
+            token_output = slot_output.detach().cpu().numpy()
+            token_output = np.argmax(token_output, -1)
             token_output = token_output[1:len(input_text) - 1]
             token_output = [self.model_config.id2tokenlabel[i] for i in token_output]
 
