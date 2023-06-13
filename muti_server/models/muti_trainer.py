@@ -119,7 +119,8 @@ class Trainer:
             # 处理槽位
             token_output = slot_output.detach().cpu().numpy()
             token_output = np.argmax(token_output, -1)
-            token_output = token_output[0, 1:len(input_text) - 1]
+            # token_output = token_output[0, 1:len(input_text) - 1]
+            token_output = token_output[0, 1:len(tokens) - 1]
             token_output = [self.model_config.id2tokenlabel[i] for i in token_output]
 
             # intent = self.config.id2seqlabel[seq_output]
