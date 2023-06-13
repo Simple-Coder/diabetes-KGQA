@@ -125,8 +125,8 @@ class Trainer:
             # intent = self.config.id2seqlabel[seq_output]
             # slots = str([(i[0], text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)])
             slots = [(i[0], input_text[i[1]:i[2] + 1], i[1], i[2]) for i in get_entities(token_output)]
-            print('意图：', intent_result)
-            print('槽位：', str(slots))
+            print(input_text + '：意图：', intent_result)
+            print(input_text + '槽位：', str(slots))
 
             # return intent_probs, slot_probs
             return intent_result, slots
