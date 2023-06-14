@@ -16,6 +16,22 @@
     }
   },
   {
+    "id": 1,
+    "text": "请问糖尿病有什么症状,病因是什么",
+    "intent": "symptom_disease|reason_disease",
+    "slots": {
+      "disease": "糖尿病"
+    }
+  },
+  {
+    "id": 1,
+    "text": "请问糖尿病有什么症状,病因有哪些",
+    "intent": "symptom_disease|reason_disease",
+    "slots": {
+      "disease": "糖尿病"
+    }
+  },
+  {
     "slots": {
       "disease": "二型糖尿病"
     },
