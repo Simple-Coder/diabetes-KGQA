@@ -181,6 +181,7 @@ class NLG():
                 final_answer = answer1
                 if answer_strategy2 == AnswerStretegy.FindSuccess:
                     final_answer = final_answer + "\n" + answer2
+                    log.info("[nlg]-answer_strategy2 is success")
                 self.do_answer_client(client, server, final_answer)
 
             elif answer_strategy2 == AnswerStretegy.FindSuccess:
