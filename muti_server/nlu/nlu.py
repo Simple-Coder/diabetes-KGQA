@@ -6,7 +6,8 @@ Created by xiedong
 from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_predict import MutiPredictWrapper
 from muti_server.utils.logger_conf import my_log
-from muti_server.nlu.nlu_utils import build_intent_strategy, build_intent_enum
+# from muti_server.nlu.nlu_utils import build_intent_strategy, build_intent_enum
+from muti_server.nlu.nlu_utils import build_intent_enum
 from muti_server.utils.json_utils import json_str
 
 log = my_log.logger
@@ -40,7 +41,7 @@ class NLU:
             all_slots = slot_probs
 
             log.info("[nlu]理解query:{} 结果:all_intents:{},all_slots:{}".format(text, json_str(all_intents),
-                                                                             json_str(all_slots)))
+                                                                                 json_str(all_slots)))
             for reg_intent in all_intents:
                 intent = reg_intent[0]
                 intent_intensity = reg_intent[1]
@@ -68,13 +69,13 @@ class IntentInfo:
         :param intensity: 意图强度  例如：0.6
         """
         self.intent = intent
-        self.intent_enum = build_intent_enum(self.intent)
         self.intensity = intensity
-        self.intent_strategy = build_intent_strategy(self.intent, self.intensity)
+        self.intent_enum = build_intent_enum(self.intent, intensity)
+        # self.intent_strategy = build_intent_strategy(self.intent, self.intensity)
         self.answer_info = None
 
-    def get_intent_strategy(self):
-        return self.intent_strategy
+    # def get_intent_strategy(self):
+    #     return self.intent_strategy
 
     def get_intent(self):
         return self.intent
