@@ -34,6 +34,9 @@ class NLU:
 
             # 解析模型识别结果
             all_intents = intent_probs[:self.model_config.muti_intent_threshold_num]
+
+            all_intents = self.try_append_default(all_intents)
+
             all_slots = slot_probs
 
             log.info("[nlu]理解query:{} 结果:all_intents:{},all_slots:{}".format(text, json_str(all_intents),
@@ -50,6 +53,11 @@ class NLU:
         except Exception as e:
             log.error("nlu 识别query：{} 将返回默认值error:{}".format(text, e))
         return semantic_info
+
+    def try_append_default(self, all_intents):
+        default = ('others', 1)
+        all_intents.extend([default] * (2 - len(all_intents)))
+        return all_intents
 
 
 # 意图信息

@@ -78,10 +78,6 @@ class NLG():
 
             # 获取意图
             current_intent_infos = current_semantic.get_intent_infos()
-            if len(current_intent_infos) == 0:
-                log.error("[nlg] 识别到意图集合为空，将采用默认回答")
-                self.do_answer_client(client, server, self.get_default_answer())
-                return
 
             intent_info1 = current_intent_infos[0]
             intent1 = intent_info1.get_intent()
