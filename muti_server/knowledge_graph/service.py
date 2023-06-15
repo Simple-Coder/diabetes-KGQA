@@ -5,6 +5,7 @@ Created by xiedong
 from py2neo import Graph
 from muti_server.nlg.nlg_config import IntentEnum, CATEGORY_INDEX, AnswerStretegy
 from muti_server.utils.logger_conf import my_log
+from muti_server.nlu.nlu_utils import recognize_medical
 
 log = my_log.logger
 
@@ -35,6 +36,11 @@ class KgService:
             log.error("[dst] slot_info is none,search exit")
             return None
 
+        if not recognize_medical(strategy):
+            log.error("[dst] recognize_medical false,strategy:{},not search neo4j".format(strategy))
+            return None
+        log.info("[dst] recognize_medical success strategy:{},will search neo4j".format(strategy))
+
         cql_template = slot_info.get("cql_template")
         cql_template_vision = slot_info.get("cql_template_vision")
         reply_template = slot_info.get("reply_template")
@@ -49,7 +55,8 @@ class KgService:
         slot_info["answer_strategy"] = AnswerStretegy.FindSuccess
 
         # if strategy == "accept":
-        if strategy == IntentEnum.Accept:
+        # if strategy == IntentEnum.Accept:
+        if strategy == IntentEnum.Medical:
             # if strategy == IntentEnum.Medical:
             cql = []
             if isinstance(cql_template, list):
