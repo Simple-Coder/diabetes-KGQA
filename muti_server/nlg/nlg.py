@@ -167,7 +167,7 @@ class NLG():
             answer_strategy2 = answer_info2['answer_strategy']
 
             answer1 = answer_info1['replay_answer']
-            answer2 = answer_info1['replay_answer']
+            answer2 = answer_info2['replay_answer']
 
             if answer_strategy1 == AnswerStretegy.NotFindData and answer_strategy2 == AnswerStretegy.NotFindData:
                 log.info("[nlg]发现所有回答策略均为数据库未知")
