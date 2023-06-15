@@ -49,7 +49,8 @@ class DialogueStateTracker:
 
             for intent_info in intent_infos:
                 intent = intent_info.get_intent()
-                strategy = intent_info.get_intent_strategy()
+                # strategy = intent_info.get_intent_strategy()
+                strategy = intent_info.get_intent_enum()
                 slot_info = fill_slot_info(intent, entities, dialog_context)
                 slot_info = self.kg_service.search(slot_info, strategy)
 
