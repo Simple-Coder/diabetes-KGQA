@@ -15,7 +15,7 @@ def build_intent_enum(intent, conf):
     elif intent == "accept":
         return IntentEnum.Accept
 
-        # 根据意图强度来确认回复策略
+    # 到这里一定是诊断意图了，根据意图强度来确认回复策略
     elif conf >= intent_threshold_config["accept"]:
         # slot_info["intent_strategy"] = "accept"
         # return IntentEnum.Accept
