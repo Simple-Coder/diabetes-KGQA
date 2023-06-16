@@ -121,7 +121,7 @@ class NLG():
                 self.handle_medical(client, server, answer_info1)
                 # 1个诊断，一个澄清：先诊断，再澄清
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Clarify:
-                self.handle_gossip(intent1, client, server)
+                self.handle_medical_clarify(client, server, intent_info1, intent_info2)
                 # 1个诊断，一个未知：只诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Others:
                 final_answer_text = self.handle_medical(client, server, answer_info1)
@@ -189,3 +189,18 @@ class NLG():
             else:
                 log.info("[nlg]回答策略未知，返回默认回答")
                 self.do_answer_client(client, server, default_answer)
+
+    def handle_medical_clarify(self, client, server, intent_info1, intent_info2):
+        try:
+            if not intent_info1 and not intent_info2:
+                self.do_answer_client(client, server, self.get_default_answer())
+                return
+            answer_info1 = intent_info1.get_answer_info()
+            answer_info2 = intent_info2.get_answer_info()
+            self.do_answer_client(client, server, answer_info1.get('replay_answer'))
+            log.info("[nlg] handle_medical_clarify,medical-send success")
+            self.do_answer_client(client, server, answer_info2.get('replay_answer'))
+            log.info("[nlg] handle_medical_clarify,clarify-send success")
+        except Exception as e:
+            log.error("[nlg] handle_medical_clarify error:{}".format(e))
+            self.do_answer_client(client, server, self.get_default_answer())
