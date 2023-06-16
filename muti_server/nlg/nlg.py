@@ -34,6 +34,10 @@ class NLG():
             self.do_answer_client(client, server, self.get_default_answer())
         else:
             self.do_answer_client(client, server, answer_info1.get('replay_answer'))
+            # visison_data
+            visison_data = answer_info1.get('visison_data')
+            if visison_data:
+                self.do_answer_client(client, server, visison_data)
 
     def handle_accept_intent(self, dialog_context, client, server):
         try:
@@ -67,6 +71,61 @@ class NLG():
         except Exception as e:
             pass
         return last_answer_info
+
+    def handle_all_medical(self, client, server, answer_info1, answer_info2):
+        default_answer = self.get_default_answer()
+        if not answer_info1 and not answer_info2:
+            self.do_answer_client(client, server, default_answer)
+        else:
+            answer_strategy1 = answer_info1['answer_strategy']
+            answer_strategy2 = answer_info2['answer_strategy']
+
+            answer1 = answer_info1['replay_answer']
+            answer2 = answer_info2['replay_answer']
+
+            if answer_strategy1 == AnswerStretegy.NotFindData and answer_strategy2 == AnswerStretegy.NotFindData:
+                log.info("[nlg]发现所有回答策略均为数据库未知")
+                self.do_answer_client(client, server, answer1)
+            elif answer_strategy1 == AnswerStretegy.FindSuccess:
+                log.info("[nlg]-answer_strategy1 is success")
+                final_answer = answer1
+                if answer_strategy2 == AnswerStretegy.FindSuccess:
+                    final_answer = final_answer + "\n" + answer2
+                    log.info("[nlg]-answer_strategy2 is success")
+                self.do_answer_client(client, server, final_answer)
+
+            elif answer_strategy2 == AnswerStretegy.FindSuccess:
+                log.info("[nlg]-answer_strategy2 is success")
+                final_answer = answer2
+                if answer_strategy1 == AnswerStretegy.FindSuccess:
+                    final_answer = final_answer + "\n" + answer1
+                self.do_answer_client(client, server, final_answer)
+            else:
+                log.info("[nlg]回答策略未知，返回默认回答")
+                self.do_answer_client(client, server, default_answer)
+
+    def handle_medical_clarify(self, client, server, intent_info1, intent_info2):
+        try:
+            if not intent_info1 and not intent_info2:
+                self.do_answer_client(client, server, self.get_default_answer())
+                return
+            answer_info1 = intent_info1.get_answer_info()
+            answer_info2 = intent_info2.get_answer_info()
+            self.do_answer_client(client, server, answer_info1.get('replay_answer'))
+            # visison_data
+            visison_data = answer_info1.get('visison_data')
+            if visison_data:
+                self.do_answer_client(client, server, str(visison_data))
+            log.info("[nlg] handle_medical_clarify,medical-send success,will sleep 1s")
+            time.sleep(1)
+            self.do_answer_client(client, server, answer_info2.get('replay_answer'))
+            log.info("[nlg] handle_medical_clarify,clarify-send success")
+        except Exception as e:
+            log.error("[nlg] handle_medical_clarify error:{}".format(e))
+            self.do_answer_client(client, server, self.get_default_answer())
+
+    def handle_others(self, client, server):
+        self.do_answer_client(client, server, self.get_default_answer())
 
     def generate_response(self, client, server, dialog_context):
         current_semantic = dialog_context.get_current_semantic()
@@ -159,54 +218,3 @@ class NLG():
             server.send_message(client, 'NLG模块异常啦~~')
         finally:
             dialog_context.add_history_semantic(current_semantic)
-
-    def handle_all_medical(self, client, server, answer_info1, answer_info2):
-        default_answer = self.get_default_answer()
-        if not answer_info1 and not answer_info2:
-            self.do_answer_client(client, server, default_answer)
-        else:
-            answer_strategy1 = answer_info1['answer_strategy']
-            answer_strategy2 = answer_info2['answer_strategy']
-
-            answer1 = answer_info1['replay_answer']
-            answer2 = answer_info2['replay_answer']
-
-            if answer_strategy1 == AnswerStretegy.NotFindData and answer_strategy2 == AnswerStretegy.NotFindData:
-                log.info("[nlg]发现所有回答策略均为数据库未知")
-                self.do_answer_client(client, server, answer1)
-            elif answer_strategy1 == AnswerStretegy.FindSuccess:
-                log.info("[nlg]-answer_strategy1 is success")
-                final_answer = answer1
-                if answer_strategy2 == AnswerStretegy.FindSuccess:
-                    final_answer = final_answer + "\n" + answer2
-                    log.info("[nlg]-answer_strategy2 is success")
-                self.do_answer_client(client, server, final_answer)
-
-            elif answer_strategy2 == AnswerStretegy.FindSuccess:
-                log.info("[nlg]-answer_strategy2 is success")
-                final_answer = answer2
-                if answer_strategy1 == AnswerStretegy.FindSuccess:
-                    final_answer = final_answer + "\n" + answer1
-                self.do_answer_client(client, server, final_answer)
-            else:
-                log.info("[nlg]回答策略未知，返回默认回答")
-                self.do_answer_client(client, server, default_answer)
-
-    def handle_medical_clarify(self, client, server, intent_info1, intent_info2):
-        try:
-            if not intent_info1 and not intent_info2:
-                self.do_answer_client(client, server, self.get_default_answer())
-                return
-            answer_info1 = intent_info1.get_answer_info()
-            answer_info2 = intent_info2.get_answer_info()
-            self.do_answer_client(client, server, answer_info1.get('replay_answer'))
-            log.info("[nlg] handle_medical_clarify,medical-send success,will sleep 1s")
-            time.sleep(1)
-            self.do_answer_client(client, server, answer_info2.get('replay_answer'))
-            log.info("[nlg] handle_medical_clarify,clarify-send success")
-        except Exception as e:
-            log.error("[nlg] handle_medical_clarify error:{}".format(e))
-            self.do_answer_client(client, server, self.get_default_answer())
-
-    def handle_others(self, client, server):
-        self.do_answer_client(client, server, self.get_default_answer())
