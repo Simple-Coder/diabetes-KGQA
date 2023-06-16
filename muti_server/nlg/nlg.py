@@ -58,7 +58,7 @@ class NLG():
             for sematic in history_sematics:
                 infos = sematic.get_intent_infos()
                 for intent in infos:
-                    if intent.get_intent_enum() != IntentEnum.Accept:
+                    if intent.get_intent_enum() == IntentEnum.Clarify:
                         if intent.get_answer_info():
                             last_answer_info = intent.get_answer_info()
                             raise Exception('find answer info')
