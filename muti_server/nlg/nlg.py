@@ -2,6 +2,8 @@
 Created by xiedong
 @Date: 2023/6/6 21:52
 """
+import time
+
 from muti_server.nlg.nlg_config import *
 import random
 from muti_server.utils.logger_conf import my_log
@@ -198,7 +200,8 @@ class NLG():
             answer_info1 = intent_info1.get_answer_info()
             answer_info2 = intent_info2.get_answer_info()
             self.do_answer_client(client, server, answer_info1.get('replay_answer'))
-            log.info("[nlg] handle_medical_clarify,medical-send success")
+            log.info("[nlg] handle_medical_clarify,medical-send success,will sleep 1s")
+            time.sleep(1)
             self.do_answer_client(client, server, answer_info2.get('replay_answer'))
             log.info("[nlg] handle_medical_clarify,clarify-send success")
         except Exception as e:
