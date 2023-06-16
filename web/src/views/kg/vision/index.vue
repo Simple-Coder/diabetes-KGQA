@@ -107,35 +107,34 @@ export default {
     },
     websockonmessage(e) {
       console.log(e)
-      const message = e.data;
+      const message = JSON.parse(e.data);
+      console.log(message)
 
-      // this.dataList.push(e.data)
-      // this.dialogData.push({rot: e.data})
-      this.dialogData.push({person: this.input, rot: message})
-      this.input = ''
-      //   // 知识卡片
-      //   this.nodecolumn = [{label: '记录', prop: 'record'}]
-      //   this.nodedata = {
-      //     record: res.data.reply.answer
-      //   }
-      //   // 知识图谱
-      //   this.kgIdList.clear()
-      //   this.kgEdgeIdSet.clear()
-      //   this.kgoptions.series[0].data = res.data.reply.visison_data.data
-      //   this.kgoptions.series[0].links = res.data.reply.visison_data.links
-      //   for (const key1 of res.data.visison_data.data) {
-      //     this.kgIdList.add(key1.id)
-      //   }
-      //   for (const key2 of res.data.visison_data.links) {
-      //     this.kgEdgeIdSet.add(key2.id)
-      //   }
-      //
-      //
-      // }).catch(error => {
-      //   console.log('响应失败')
-      //   console.log(error)
-      // });
+      let answer_type = message.answer_type
+      let answer = message.answer
 
+      if (answer_type === 1) {
+        this.dialogData.push({person: this.input, rot: answer})
+        this.input = ''
+      } else {
+        // const answer = JSON.parse(answer);
+        // 知识卡片
+        this.nodecolumn = [{label: '记录', prop: 'record'}]
+        this.nodedata = {
+          record: answer
+        }
+        // 知识图谱
+        this.kgIdList.clear()
+        this.kgEdgeIdSet.clear()
+        this.kgoptions.series[0].data = answer.data || []
+        this.kgoptions.series[0].links = answer.links|| []
+        for (const key1 of answer.data) {
+          this.kgIdList.add(key1.id)
+        }
+        for (const key2 of answer.links) {
+          this.kgEdgeIdSet.add(key2.id)
+        }
+      }
     },
     websockclose() {
       console.log('连接中断')

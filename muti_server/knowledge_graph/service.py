@@ -152,25 +152,25 @@ class KgService:
             count = 0
             for value in kgdata:
                 count += 1
-                relNode = value['type']
-                Relid = value['Relid']
-                pNode = value['p']
-                qNode = value['q']
-                plabel_ = value['plabel']
-                qlabel_ = value['qlabel']
+                relNode = value["type"]
+                Relid = value["Relid"]
+                pNode = value["p"]
+                qNode = value["q"]
+                plabel_ = value["plabel"]
+                qlabel_ = value["qlabel"]
                 if count == 1:
-                    data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name'],
-                                 'category': CATEGORY_INDEX[qlabel_]})
+                    data.append({"id": str(qNode.identity), "name": qNode["name"], "des": qNode["name"],
+                                 "category": CATEGORY_INDEX[qlabel_]})
                 else:
-                    data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name'],
-                                 'category': CATEGORY_INDEX[plabel_]})
+                    data.append({"id": str(pNode.identity), "name": pNode["name"], "des": pNode["name"],
+                                 "category": CATEGORY_INDEX[plabel_]})
                 links.append(
-                    {'source': str(qNode.identity), 'target': str(pNode.identity), 'value': relNode,
-                     'id': str(Relid)})
+                    {"source": str(qNode.identity), "target": str(pNode.identity), "value": relNode,
+                     "id": str(Relid)})
 
             return {
-                'data': data,
-                'links': links
+                "data": data,
+                "links": links
             }
         except Exception as e:
             log.error("[dst] query vision data error:{}".format(e))
