@@ -102,7 +102,7 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
             # 2个均为未知：返回学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Others:
-                self.handle_gossip(intent1, client, server)
+                self.handle_others(client, server)
             # 1个闲聊，一个诊断：合并诊断
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Medical:
                 self.handle_gossip(intent1, client, server)
@@ -126,7 +126,7 @@ class NLG():
                 self.handle_medical_clarify(client, server, intent_info1, intent_info2)
                 # 1个诊断，一个未知：只诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Others:
-                final_answer_text = self.handle_medical(client, server, answer_info1)
+                self.handle_medical(client, server, answer_info1)
                 # 一个澄清，一个闲聊：只处理澄清
             elif intent_enum1 == IntentEnum.Clarify and intent_enum2 == IntentEnum.Gossip:
                 self.handle_gossip(intent1, client, server)
@@ -138,13 +138,13 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
                 # 一个未知，一个闲聊：学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Gossip:
-                self.handle_gossip(intent1, client, server)
+                self.handle_others(client, server)
                 # 一个未知，一个澄清：学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Clarify:
-                self.handle_gossip(intent1, client, server)
+                self.handle_others(client, server)
                 # 一个未知，一个诊断：学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Medical:
-                self.handle_gossip(intent1, client, server)
+                self.handle_others(client, server)
                 # 1为接受，找上下文回答
             elif intent_enum1 == IntentEnum.Accept:
                 self.handle_accept_intent(dialog_context, client, server)
@@ -207,3 +207,6 @@ class NLG():
         except Exception as e:
             log.error("[nlg] handle_medical_clarify error:{}".format(e))
             self.do_answer_client(client, server, self.get_default_answer())
+
+    def handle_others(self, client, server):
+        self.do_answer_client(client, server, self.get_default_answer())
