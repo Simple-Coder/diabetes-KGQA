@@ -34,6 +34,7 @@ def recognize_medical(intent_enum):
 
     if intent_enum == IntentEnum.Medical \
             or intent_enum == IntentEnum.Accept \
+            or intent_enum == IntentEnum.Clarify \
             or intent_enum == IntentEnum.DENY:
         return True
     return False
