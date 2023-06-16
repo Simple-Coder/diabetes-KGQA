@@ -65,8 +65,8 @@ class KgService:
             else:
                 cql = cql_template.format(**slot_values)
 
-            cql_vision = cql_template_vision.format(**slot_values)
             answer = self.neo4j_searcher(cql)
+            cql_vision = cql_template_vision.format(**slot_values)
             # 查询可视化vision
             visison_data = self.neo4j_searcher_vision(cql_vision)
             slot_info["visison_data"] = visison_data
@@ -90,6 +90,12 @@ class KgService:
             else:
                 cql = cql_template.format(**slot_values)
             answer = self.neo4j_searcher(cql)
+
+            cql_vision = cql_template_vision.format(**slot_values)
+            # 查询可视化vision
+            visison_data = self.neo4j_searcher_vision(cql_vision)
+            slot_info["visison_data"] = visison_data
+
             if not answer:
                 slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
                 slot_info["answer_strategy"] = AnswerStretegy.NotFindData
