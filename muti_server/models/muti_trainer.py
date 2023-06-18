@@ -170,14 +170,14 @@ class Trainer:
                     token_preds.append(t_ouput)
                     token_trues.append(t_label)
 
-        acc, precision, recall, f1 = self.get_metrices(seq_trues, seq_preds, 'cls')
-        report = self.get_report(seq_trues, seq_preds, 'cls')
+        # acc, precision, recall, f1 = self.get_metrices(seq_trues, seq_preds, 'cls')
+        # report = self.get_report(seq_trues, seq_preds, 'cls')
         ner_acc, ner_precision, ner_recall, ner_f1 = self.get_metrices(token_trues, token_preds, 'ner')
         ner_report = self.get_report(token_trues, token_preds, 'ner')
-        print('意图识别：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
-            acc, precision, recall, f1
-        ))
-        print(report)
+        # print('意图识别：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
+        #     acc, precision, recall, f1
+        # ))
+        # print(report)
         print('槽位填充：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
             ner_acc, ner_precision, ner_recall, ner_f1
         ))
