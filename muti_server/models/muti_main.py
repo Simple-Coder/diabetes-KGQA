@@ -17,6 +17,7 @@ if __name__ == '__main__':
 
     if model_config.do_predict:
         trainer.predict("请问二型糖尿病的临床表现是什么,需要吃什么药啊")
+        trainer.predict("请问糖尿病有什么症状,病因是什么")
         trainer.predict("请问二型糖尿病的临床表现是什么")
         trainer.predict("你好")
         trainer.predict("再见")
