@@ -25,6 +25,10 @@ class ModelConfig:
     train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
     train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
 
+    test_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
+    test_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
+    test_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
+
     # 意图labels
     # seq_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//intent_label.txt'
     # # 槽位labels
@@ -34,8 +38,8 @@ class ModelConfig:
     # train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
     # train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
 
-    load_model = True
-    do_train = False
+    load_model = False
+    do_train = True
     do_eval = False
     do_test = True
     do_save = True
