@@ -152,11 +152,17 @@ class Trainer:
                     attention_mask
                 )
                 seq_output = seq_output.detach().cpu().numpy()
-                seq_output = np.argmax(seq_output, -1)
+                # seq_output = np.argmax(seq_output, -1)
                 seq_label_ids = seq_label_ids.detach().cpu().numpy()
-                seq_label_ids = seq_label_ids.reshape(-1)
-                seq_preds.extend(seq_output)
-                seq_trues.extend(seq_label_ids)
+                # seq_label_ids = seq_label_ids.reshape(-1)
+                # 遍历每一行，并将每一行添加到列表中
+                for row in seq_output:
+                    row = np.where(row > 0.5, 1, 0)
+                    seq_preds.append(list(row))
+                for row in seq_label_ids:
+                    seq_trues.append(list(row))
+                # seq_preds.extend(seq_output)
+                # seq_trues.extend(seq_label_ids)
 
                 token_output = token_output.detach().cpu().numpy()
                 token_label_ids = token_label_ids.detach().cpu().numpy()
@@ -170,33 +176,53 @@ class Trainer:
                     token_preds.append(t_ouput)
                     token_trues.append(t_label)
 
-        # acc, precision, recall, f1 = self.get_metrices(seq_trues, seq_preds, 'cls')
+        acc, precision, recall, f1 = self.get_metrices(seq_trues, seq_preds, 'muti')
         # report = self.get_report(seq_trues, seq_preds, 'cls')
         ner_acc, ner_precision, ner_recall, ner_f1 = self.get_metrices(token_trues, token_preds, 'ner')
         ner_report = self.get_report(token_trues, token_preds, 'ner')
-        # print('意图识别：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
-        #     acc, precision, recall, f1
-        # ))
+        print('意图识别：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
+            acc, precision, recall, f1
+        ))
         # print(report)
         print('槽位填充：\naccuracy:{}\nprecision:{}\nrecall:{}\nf1:{}'.format(
             ner_acc, ner_precision, ner_recall, ner_f1
         ))
         print(ner_report)
 
-    def get_metrices(self, trues, preds, mode):
-        if mode == 'cls':
+    def muti_accuracy(self, y_true, y_pred):
+        count = 0
+        for i in range(y_true.shape[0]):
+            p = sum(np.logical_and(y_true[i], y_pred[i]))
+            q = sum(np.logical_or(y_true[i], y_pred[i]))
+            count += p / q
+        return count / y_true.shape[0]
+
+    def get_metrices(self, y_true, y_pred, mode):
+        if mode == "muti":
+            y_true = np.array(y_true)
+            y_pred = np.array(y_pred)
+            from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, hamming_loss
+            acc = self.muti_accuracy(y_true, y_pred)
+
+            # 计算多标签分类的指标
+            precision = precision_score(y_true=y_true, y_pred=y_pred, average='samples')
+            recall = recall_score(y_true, y_pred, average='samples')
+            f1 = f1_score(y_true, y_pred, average='samples')
+
+            return acc, precision, recall, f1
+        elif mode == 'cls':
             from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-            acc = accuracy_score(trues, preds)
-            precision = precision_score(trues, preds, average='micro')
-            recall = recall_score(trues, preds, average='micro')
-            f1 = f1_score(trues, preds, average='micro')
+            acc = accuracy_score(y_true, y_pred)
+            precision = precision_score(y_true, y_pred, average='micro')
+            recall = recall_score(y_true, y_pred, average='micro')
+            f1 = f1_score(y_true, y_pred, average='micro')
             return acc, precision, recall, f1
         elif mode == 'ner':
             from seqeval.metrics import accuracy_score, precision_score, recall_score, f1_score
-            acc = accuracy_score(trues, preds)
-            precision = precision_score(trues, preds)
-            recall = recall_score(trues, preds)
-            f1 = f1_score(trues, preds)
+            acc = accuracy_score(y_true, y_pred)
+            precision = precision_score(y_true, y_pred)
+            recall = recall_score(y_true, y_pred)
+            f1 = f1_score(y_true, y_pred)
             return acc, precision, recall, f1
 
     def get_report(self, trues, preds, mode):

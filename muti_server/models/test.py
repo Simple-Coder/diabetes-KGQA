@@ -44,6 +44,7 @@ from seqeval.metrics import f1_score as ner_f1_score
 from seqeval.metrics import classification_report as ner_classification_report
 import numpy as np
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, hamming_loss
+from sklearn.metrics import multilabel_confusion_matrix, classification_report
 
 y_pred = [['B-name', 'I-name', 'I-name', 'I-name'], ['B-ingredient', 'I-ingredient', 'O', 'O', 'O', 'O'],
           ['O', 'B-startLoc_city', 'I-Dest', 'O', 'O', 'O', 'O', 'B-endLoc_city', 'I-endLoc_city', 'O', 'O', 'O'],
@@ -125,6 +126,37 @@ if __name__ == '__main__':
     y_pred = np.array([[0, 1, 1, 0],
                        [0, 1, 1, 0],
                        [0, 1, 0, 1]])
+
+    # 计算准确度
+    acc = accuracy_score(y_true, y_pred)
+
+    # 计算每个标签的指标（精确度、召回率、F1值）
+    precision = precision_score(y_true, y_pred, average='micro')
+    recall = recall_score(y_true, y_pred, average='micro')
+    f1 = f1_score(y_true, y_pred, average='micro')
+
+    # 计算Hamming Loss
+    hamming_loss = hamming_loss(y_true, y_pred)
+
+    # 计算多标签分类报告
+    classification_report = classification_report(y_true, y_pred)
+
+    # 计算多标签混淆矩阵
+    confusion_matrix = multilabel_confusion_matrix(y_true, y_pred)
+
+    # 打印结果
+    print("Accuracy:", acc)
+    print("Precision:", precision)
+    print("Recall:", recall)
+    print("F1 Score:", f1)
+    print("Hamming Loss:", hamming_loss)
+    print("Classification Report:")
+    print(classification_report)
+    print("Confusion Matrix:")
+    print(confusion_matrix)
+    
+    
+    
     # https://zhuanlan.zhihu.com/p/385475273
     # 准确率
     accuracy = muti_accuracy(y_true, y_pred)
@@ -139,6 +171,6 @@ if __name__ == '__main__':
     print(precision_score(y_true=y_true, y_pred=y_pred, average='samples'))  # 0.6666
     print(recall_score(y_true=y_true, y_pred=y_pred, average='samples'))  # 0.6111
     print(f1_score(y_true, y_pred, average='samples'))  # 0.6333
-    print(hamming_loss(y_true, y_pred))  # 0.4166
+    # print(hamming_loss(y_true, y_pred))  # 0.4166
     # print(accuracy_score(y_true, y_pred))  # 0.33333333
     # print(accuracy_score(np.array([[0, 1], [1, 1]]), np.ones((2, 2))))  # 0.5
