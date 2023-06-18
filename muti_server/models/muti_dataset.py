@@ -11,7 +11,9 @@ logging.set_verbosity_error()
 from muti_server.models.muti_config import ModelConfig
 from transformers import BertTokenizer
 from muti_process import Processor, get_features
-import torch
+from muti_server.utils.logger_conf import my_log
+
+log = my_log.logger
 
 
 class BertDataset(data.Dataset):
@@ -20,10 +22,16 @@ class BertDataset(data.Dataset):
         # self.features = features
         # self.nums = len(self.features)
         tokenizer = BertTokenizer.from_pretrained(args.bert_dir)
-
-        raw_examples = Processor.get_examples(Processor.read_file(args.train_texts),
-                                              Processor.read_file(args.train_intents),
-                                              Processor.read_file(args.train_slots), 'train')
+        if type == "train":
+            log.info("正在加载训练数据集")
+            raw_examples = Processor.get_examples(Processor.read_file(args.train_texts),
+                                                  Processor.read_file(args.train_intents),
+                                                  Processor.read_file(args.train_slots), type)
+        else:
+            log.info("正在加载test数据集")
+            raw_examples = Processor.get_examples(Processor.read_file(args.test_texts),
+                                                  Processor.read_file(args.test_intents),
+                                                  Processor.read_file(args.test_slots), type)
         train_features = get_features(raw_examples, tokenizer, args)
         self.features = train_features
         self.nums = len(self.features)
