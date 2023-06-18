@@ -90,6 +90,7 @@ class Trainer:
                 self.predict("再见")
                 self.predict("不是")
                 self.predict("请问糖尿病的临床表现是什么")
+                self.predict("请问糖尿病有什么症状,病因是什么")
                 self.predict("请问糖尿病的临床表现是什么，需要吃什么药")
 
     def predict(self, input_text):
