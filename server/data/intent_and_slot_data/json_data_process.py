@@ -116,24 +116,8 @@ def train_test_split(all_tata_path, ratio=0.9):
     with open('test_process.json', 'w') as fp:
         json.dump(test_data, fp, ensure_ascii=False)
 
-if __name__ == '__main__':
 
-    train_test_split('./origin2.json')
-
-    # intent_path = './test/label'
-    # text_path = './test/seq.in'
-    # slot_path = './test/seq.out'
-
-    # intent_path = './train/label'
-    # text_path = './train/seq.in'
-    # slot_path = './train/seq.out'
-    # todo_data_path = 'origin.json'
-
-    intent_path = './test/label'
-    text_path = './test/seq.in'
-    slot_path = './test/seq.out'
-    todo_data_path = 'origin2.json'
-
+def build_data(todo_data_path, intent_path, text_path, slot_path):
     # 处理抓取数据
     processor = TodoDataProcessor(intent_path, text_path, slot_path, todo_data_path)
 
@@ -149,3 +133,35 @@ if __name__ == '__main__':
             print(e)
             print(e)
     print()
+
+
+if __name__ == '__main__':
+    train_test_split('./origin2.json')
+
+    intent_path_train = './train/label'
+    text_path_train = './train/seq.in'
+    slot_path_train = './train/seq.out'
+    todo_data_path_train = 'train_process.json'
+
+    build_data(todo_data_path_train, intent_path_train, text_path_train, slot_path_train)
+
+    intent_path_test = './test/label'
+    text_path_test = './test/seq.in'
+    slot_path_test = './test/seq.out'
+    todo_data_path_test = 'test_process.json'
+
+    build_data(todo_data_path_test, intent_path_test, text_path_test, slot_path_test)
+
+    # intent_path = './test/label'
+    # text_path = './test/seq.in'
+    # slot_path = './test/seq.out'
+
+    # intent_path = './train/label'
+    # text_path = './train/seq.in'
+    # slot_path = './train/seq.out'
+    # todo_data_path = 'origin.json'
+
+    # intent_path = './test/label'
+    # text_path = './test/seq.in'
+    # slot_path = './test/seq.out'
+    # todo_data_path = 'origin2.json'
