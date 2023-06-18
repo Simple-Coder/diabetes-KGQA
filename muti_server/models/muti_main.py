@@ -22,3 +22,8 @@ if __name__ == '__main__':
         trainer.predict("再见")
         trainer.predict("是的")
         trainer.predict("不是")
+
+    if model_config.do_test:
+        test_dataset = BertDataset('test')
+        test_loader = DataLoader(test_dataset, batch_size=model_config.batchsize, shuffle=True)
+        trainer.test(test_loader)
