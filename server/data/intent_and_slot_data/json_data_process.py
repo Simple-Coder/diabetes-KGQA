@@ -2,6 +2,9 @@
 Created by xiedong
 @Date: 2023/5/9 15:35
 """
+import json
+import random
+
 """
 Created by xiedong
 @Date: 2023/4/26 12:42
@@ -101,7 +104,22 @@ def get_word_list(s1):
     return list_word1
 
 
+def train_test_split(all_tata_path, ratio=0.9):
+    with open(all_tata_path, 'r') as fp:
+        data = eval(fp.read())
+        random.shuffle(data)
+        total = len(data)
+        train_data = data[:int(total * ratio)]
+        test_data = data[int(total * ratio):]
+    with open('train_process.json', 'w') as fp:
+        json.dump(train_data, fp, ensure_ascii=False)
+    with open('test_process.json', 'w') as fp:
+        json.dump(test_data, fp, ensure_ascii=False)
+
 if __name__ == '__main__':
+
+    train_test_split('./origin2.json')
+
     # intent_path = './test/label'
     # text_path = './test/seq.in'
     # slot_path = './test/seq.out'
