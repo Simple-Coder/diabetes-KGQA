@@ -12,7 +12,7 @@ class ModelConfig:
     # 模型保存位置
     save_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints'
     # 加载模型位置
-    load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints/1686492325_3_muti_model.pt'
+    load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints/1.pt'
     # load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server//build_model\muti_intent\checkpoints//1685507169_0_muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
@@ -35,7 +35,7 @@ class ModelConfig:
     # train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
 
     load_model = True
-    do_train = True
+    do_train = False
     do_eval = False
     do_test = True
     do_save = True
@@ -78,21 +78,21 @@ class ModelConfig:
     # 最大支持长度
     max_len = 32
     # 批处理大小
-    batchsize = 2
+    batchsize = 20
     # 学习率
     lr = 2e-5
     # 训练轮数
-    epoch = 50
+    epoch = 10
     # dropout率
     hidden_dropout_prob = 0.1
 
 
 if __name__ == '__main__':
     args = ModelConfig()
-    print('意图：', args.seq_labels)
-    print('意图2：', args.seqlabel2id)
-    print(args.tokenlabel2id)
-    print(args.token_labels)
+    print('seq_labels:', args.seq_labels)
+    print('seqlabel2id', args.seqlabel2id)
+    print('tokenlabel2id', args.tokenlabel2id)
+    print('token_labels', args.token_labels)
 
     # Define example data
     train_sentences = ['预订从上海到北京的机票', '提醒我明天上午8点开会']
