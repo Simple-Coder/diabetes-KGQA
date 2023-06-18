@@ -165,8 +165,8 @@ class Trainer:
                 for length, t_output, t_label in zip(active_len, token_output, token_label_ids):
                     t_output = t_output[1:length - 1]
                     t_label = t_label[1:length - 1]
-                    t_ouput = [self.model_config.id2nerlabel[i] for i in t_output]
-                    t_label = [self.model_config.id2nerlabel[i] for i in t_label]
+                    t_ouput = [self.model_config.id2tokenlabel[i] for i in t_output]
+                    t_label = [self.model_config.id2tokenlabel[i] for i in t_label]
                     token_preds.append(t_ouput)
                     token_trues.append(t_label)
 
