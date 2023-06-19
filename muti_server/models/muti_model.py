@@ -100,3 +100,4 @@ class MultiJointModel(nn.Module):
 #         intent_logits = self.intent_classifier(lstm_out[:, -1, :])
 #         slot_logits = self.slot_tagger(lstm_out)
 #         return intent_logits, slot_logits
+# TODO:其他模型
