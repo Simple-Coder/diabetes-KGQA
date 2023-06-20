@@ -12,6 +12,7 @@ import torch
 import numpy as np
 from transformers import BertTokenizer
 import torch.nn as nn
+from torch.utils.tensorboard import SummaryWriter
 
 
 class Trainer:
@@ -37,6 +38,7 @@ class Trainer:
         global_step = 0
         total_step = len(train_loader) * self.num_epochs
         self.model.train()
+        writer = SummaryWriter(log_dir=self.model_config.tensorboard_dir)  # 创建一个SummaryWriter对象
         for epoch in range(self.num_epochs):
             train_loss = 0
 
@@ -81,6 +83,7 @@ class Trainer:
                 train_loss = total_loss.item()
 
                 print(f'[train] epoch:{epoch + 1} {global_step}/{total_step} loss:{total_loss.item()}')
+                writer.add_scalar('Loss/train', train_loss, global_step)  # 记录训练损失
                 global_step += 1
 
             print(f"time:{self.get_last_date()} Epoch {epoch + 1}/{self.num_epochs} train end")
@@ -97,6 +100,8 @@ class Trainer:
                 self.predict("请问糖尿病的临床表现是什么")
                 self.predict("请问糖尿病有什么症状,病因是什么")
                 self.predict("请问糖尿病的临床表现是什么，需要吃什么药")
+
+        writer.close()  # 关闭SummaryWriter
 
     def predict(self, input_text):
         self.model.eval()

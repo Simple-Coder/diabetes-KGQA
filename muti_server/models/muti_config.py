@@ -7,44 +7,51 @@ import torch
 
 class ModelConfig:
 
+    tensorboard_dir = 'D:\logs'
     # bert预训练模型
-    bert_dir = 'hfl/chinese-bert-wwm-ext'
+    # bert_dir = 'hfl/chinese-bert-wwm-ext'
+    bert_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext'
     # 模型保存位置
-    save_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints'
+    # save_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints'
+    save_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\muti_server\models\checkpoints'
     # 加载模型位置
-    load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints/1.pt'
+    # load_dir = '/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/models/checkpoints/1686492325_3_muti_model.pt'
+    load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\muti_server\models\checkpoints//1687246188_0_muti_model.pt'
     # load_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server//build_model\muti_intent\checkpoints//1685507169_0_muti_model.pt'
     # load_dir = 'checkpoints/1682428820model.pt'
 
-    # # 意图labels
-    seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
-    # 槽位labels
-    token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
-
-    train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
-    train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
-    train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
-
-    test_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
-    test_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
-    test_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
+    # # # 意图labels
+    # seq_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/intent_label.txt'
+    # # 槽位labels
+    # token_labels_path = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/slot_label.txt'
+    #
+    # train_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
+    # train_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
+    # train_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
+    #
+    # test_texts = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.in'
+    # test_intents = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/label'
+    # test_slots = '/Users/xiedong/PycharmProjects/diabetes-KGQA/server/data/intent_and_slot_data/test/seq.out'
 
     # 意图labels
-    # seq_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//intent_label.txt'
-    # # 槽位labels
-    # token_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//slot_label.txt'
-    #
-    # train_texts = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.in'
-    # train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
-    # train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
+    seq_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//intent_label.txt'
+    # 槽位labels
+    token_labels_path = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//slot_label.txt'
 
-    load_model = False
+    train_texts = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//train/seq.in'
+    train_intents = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//train/label'
+    train_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//train/seq.out'
+    test_texts ='D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.in'
+    test_intents ='D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/label'
+    test_slots = 'D://dev//PycharmProjects//diabetes-KGQA//server//data//intent_and_slot_data//test/seq.out'
+
+    load_model = True
     do_train = True
     do_eval = False
     do_test = True
     do_save = True
     do_predict = True
-    use_crf = False
+    use_crf = True
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
     seqlabel2id = {}
@@ -82,7 +89,7 @@ class ModelConfig:
     # 最大支持长度
     max_len = 32
     # 批处理大小
-    batchsize = 20
+    batchsize = 10
     # 学习率
     lr = 2e-5
     # 训练轮数
