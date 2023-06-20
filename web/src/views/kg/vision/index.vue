@@ -71,11 +71,13 @@ import kgecharts from '@/components/kg/kgecharts.vue'
 
 import {doAnswer} from '@/api/answer'
 import {mapGetters} from 'vuex'
+import {WebSocketModule} from '@/assets/js/mywebsoket'
 
 export default {
   components: {kgecharts},
   data() {
     return {
+      wsuri: 'ws://127.0.0.1:9001',
       input: '',
       dialogData: [],
       // echarts知识图谱数据
@@ -91,12 +93,14 @@ export default {
   },
   methods: {
     initWebSocket() {
-      const wsuri = 'ws://127.0.0.1:9001'
-      this.websock = new WebSocket(wsuri)
-      this.websock.onmessage = this.websockonmessage
-      this.websock.onopen = this.websockonopen
-      this.websock.onerror = this.websockonerror
-      this.websock.onclose = this.websockclose
+     this.websocket = new WebSocketModule(this.wsuri, this.websockonmessage);
+     this.websocket.connect();
+      // const wsuri = 'ws://127.0.0.1:9001'
+      // this.websock = new WebSocket(wsuri)
+      // this.websock.onmessage = this.websockonmessage
+      // this.websock.onopen = this.websockonopen
+      // this.websock.onerror = this.websockonerror
+      // this.websock.onclose = this.websockclose
     },
     websockonopen() {
       // this.websocketsend(JSON.stringify(this.textarea))
@@ -141,7 +145,8 @@ export default {
     },
     websocketsend(Data) {
       // 数据发送
-      this.websock.send(Data)
+      WebSocketModule.send(data);
+      // this.websock.send(Data)
     },
     submit() {
       console.log(this.textarea)
@@ -293,7 +298,8 @@ export default {
     this.getOneSubKg(this.kgoptions, 'country', '中华人民共和国-country')
   },
   destroyed() {
-    this.websock.close()
+    // this.websock.close()
+    WebSocketModule.close();
   },
   computed: {
     ...mapGetters([
