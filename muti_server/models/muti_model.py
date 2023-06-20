@@ -25,7 +25,7 @@ class MultiJointModel(nn.Module):
             nn.Dropout(model_config.hidden_dropout_prob),
             nn.Linear(self.bert.config.hidden_size, num_slots),
         )
-
+        self.crf = CRF(num_slots, batch_first=True)
     def forward(self, input_ids, attention_mask):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
 

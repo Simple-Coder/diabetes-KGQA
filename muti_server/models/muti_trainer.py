@@ -59,11 +59,16 @@ class Trainer:
                 # 计算意图分类损失
                 intent_loss = self.criterion_intent(intent_output, intent_labels.float())
 
-                # 计算Slot填充损失
-                active_loss = attention_mask.view(-1) == 1
-                active_logits = slot_output.view(-1, slot_output.shape[2])[active_loss]
-                active_labels = slot_labels.view(-1)[active_loss]
-                slot_loss = self.criterion_slot(active_logits, active_labels)
+                if self.model_config.use_crf:
+                    # CRF损失函数计算
+                    mask = attention_mask.byte()
+                    slot_loss = -self.model.crf(slot_output, slot_labels, mask=mask)
+                else:
+                    # 计算Slot填充损失
+                    active_loss = attention_mask.view(-1) == 1
+                    active_logits = slot_output.view(-1, slot_output.shape[2])[active_loss]
+                    active_labels = slot_labels.view(-1)[active_loss]
+                    slot_loss = self.criterion_slot(active_logits, active_labels)
 
                 total_loss = intent_loss + slot_loss
 
