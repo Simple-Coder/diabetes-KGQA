@@ -76,5 +76,9 @@ if __name__ == '__main__':
     args = Args()
     print(args.seq_labels)
     print(args.seqlabel2id)
+    sorted_keys = sorted(args.seqlabel2id, key=args.seqlabel2id.get)
+    print(sorted_keys)
+
+
     print(args.tokenlabel2id)
     print(args.token_labels)
