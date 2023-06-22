@@ -14,8 +14,10 @@ from seqeval.metrics.sequence_labeling import get_entities
 
 import torch.nn.functional as F
 from transformers import logging
+
 logging.set_verbosity_error()
 import time
+
 
 class Trainer:
     def __init__(self, model, config):
@@ -60,9 +62,8 @@ class Trainer:
                 print(f'[train] epoch:{epoch + 1} {global_step}/{total_step} loss:{loss.item()}')
                 global_step += 1
 
-
-        if self.config.do_save:
-            self.save(self.config.save_dir, str(int(time.time())) + 'model.pt')
+            if self.config.do_save:
+                self.save(self.config.save_dir, str(int(time.time())) + 'model.pt')
 
         time_end = time.time()
         print('time cost', time_end - time_start, 's')
@@ -136,6 +137,13 @@ class Trainer:
     def get_report(self, trues, preds, mode):
         if mode == 'cls':
             from sklearn.metrics import classification_report
+            # 将 trues 中的标签范围从0-21转换为1-22
+            trues_mapped = [label + 1 for label in trues]
+            preds_mapped = [label + 1 for label in preds]
+
+            # report = classification_report(trues, preds)
+            sorted_keys = sorted(self.config.seqlabel2id, key=self.config.seqlabel2id.get)
+            report = classification_report(trues_mapped, preds_mapped, target_names=sorted_keys)
             report = classification_report(trues, preds)
         elif mode == 'ner':
             from seqeval.metrics import classification_report
