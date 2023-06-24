@@ -27,7 +27,7 @@
           <div class="b-footer">
             <el-row :gutter="10">
               <el-col :span="22">
-                <el-input v-model="input" placeholder="请输入内容(如：糖尿病的临床表现有哪些？)" clearable />
+                <el-input v-model="input" placeholder="请输入内容(如：请问糖尿病有什么症状,病因是什么？)" clearable />
               </el-col>
               <el-col :span="2">
                 <el-button id="btn" type="primary" @click="questionSent">发送</el-button>
