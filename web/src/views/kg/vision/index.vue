@@ -93,8 +93,8 @@ export default {
   },
   methods: {
     initWebSocket() {
-     this.websocket = new WebSocketModule(this.wsuri, this.websockonmessage);
-     this.websocket.connect();
+      this.websocket = new WebSocketModule(this.wsuri, this.websockonmessage);
+      this.websocket.connect();
       // const wsuri = 'ws://127.0.0.1:9001'
       // this.websock = new WebSocket(wsuri)
       // this.websock.onmessage = this.websockonmessage
@@ -111,11 +111,11 @@ export default {
     },
     websockonmessage(e) {
       console.log(e)
-      const message = JSON.parse(e.data);
+      const message = JSON.parse(e.data)
       console.log(message)
 
-      let answer_type = message.answer_type
-      let answer = message.answer
+      const answer_type = message.answer_type
+      const answer = message.answer
 
       if (answer_type === 1) {
         this.dialogData.push({person: this.input, rot: answer})
@@ -131,7 +131,7 @@ export default {
         this.kgIdList.clear()
         this.kgEdgeIdSet.clear()
         this.kgoptions.series[0].data = answer.data || []
-        this.kgoptions.series[0].links = answer.links|| []
+        this.kgoptions.series[0].links = answer.links || []
         for (const key1 of answer.data) {
           this.kgIdList.add(key1.id)
         }
@@ -143,9 +143,9 @@ export default {
     websockclose() {
       console.log('连接中断')
     },
-    websocketsend(Data) {
+    websocketsend(data) {
       // 数据发送
-      WebSocketModule.send(data);
+      WebSocketModule.send(data)
       // this.websock.send(Data)
     },
     submit() {
