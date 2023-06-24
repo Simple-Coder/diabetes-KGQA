@@ -159,20 +159,20 @@ export const constantRoutes = [
         path: 'question',
         name: 'question',
         component: () => import('@/views/kg/question/index'),
-        meta: {title: '智能问答', icon: 'table'}
+        meta: {title: '单意图问答', icon: 'table'}
       },
       {
         path: 'vision',
         name: 'vision',
         component: () => import('@/views/kg/vision/index'),
-        meta: {title: '知识图谱', icon: 'form'}
+        meta: { title: '多意图问答', icon: 'form'}
       },
-       {
-        path: 'manage',
-        name: 'manage',
-        component: () => import('@/views/kg/manage/kgmanage_self'),
-        meta: {title: '知识管理', icon: 'form'}
-      }
+      //  {
+      //   path: 'manage',
+      //   name: 'manage',
+      //   component: () => import('@/views/kg/manage/kgmanage_self'),
+      //   meta: {title: '知识管理', icon: 'form'}
+      // }
     ]
   },
 
