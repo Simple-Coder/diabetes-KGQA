@@ -221,9 +221,10 @@ class NLG():
                 self.handle_gossip(intent1, client, server)
             else:
                 log.info("[nlg]未识别到回答策略，intent1:{},intent2:{}".format(json_str(intent_info1),
-                                                                      json_str(intent_info2)))
+                                                                              json_str(intent_info2)))
         except Exception as e:
             log.error("nlg 生成回答异常:{}".format(e))
-            server.send_message(client, 'NLG模块异常啦~~')
+            # server.send_message(client, 'NLG模块异常啦~~')
+            server.send_message(client, self.get_default_answer())
         finally:
             dialog_context.add_history_semantic(current_semantic)
