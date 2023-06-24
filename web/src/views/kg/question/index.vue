@@ -6,7 +6,7 @@
         <div id="box">
           <div class="b-head">
             <img class="h-img" alt="" src="@/assets/logo.png" width=80; height=60;/>
-            <span class="h_span">小谢智能问答机器人</span>
+            <span class="h_span">小谢智能问答机器人(单意图)</span>
           </div>
           <div class="b-body" id="dialogue_box">
             <div class="rotWord">
