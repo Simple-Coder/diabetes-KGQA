@@ -5,21 +5,21 @@
       <el-col :span="12">
         <div id="box">
           <div class="b-head">
-            <img class="h-img" alt="" src="@/assets/logo.png" width=80; height=60;/>
+            <img class="h-img" alt="" src="@/assets/logo.png" width="80;" height="60;/">
             <span class="h_span">小谢智能问答机器人(多意图)</span>
           </div>
-          <div class="b-body" id="dialogue_box">
+          <div id="dialogue_box" class="b-body">
             <div class="rotWord">
-              <span></span>
+              <span />
               <p>嗨，欢迎使用小谢智能问答系统！</p>
             </div>
             <div v-for="(item, index) in dialogData" :key="index">
-              <div class="mWord" v-if="item.person && item.person.trim() !== ''">
-                <span></span>
+              <div v-if="item.person && item.person.trim() !== ''" class="mWord">
+                <span />
                 <p>{{ item.person }}</p>
               </div>
               <div class="rotWord">
-                <span></span>
+                <span />
                 <p>{{ item.rot }}</p>
               </div>
             </div>
@@ -27,10 +27,10 @@
           <div class="b-footer">
             <el-row :gutter="10">
               <el-col :span="22">
-                <el-input v-model="input" placeholder="请输入内容(如：糖尿病的临床表现有哪些？)" clearable></el-input>
+                <el-input v-model="input" placeholder="请输入内容(如：糖尿病的临床表现有哪些？)" clearable />
               </el-col>
               <el-col :span="2">
-                <el-button type="primary" id="btn" @click="questionSent">发送</el-button>
+                <el-button id="btn" type="primary" @click="questionSent">发送</el-button>
               </el-col>
             </el-row>
           </div>
@@ -48,13 +48,14 @@
               :data="nodedata"
               border
               :columns="1"
-              style="font-size: 15px; font-weight: 450; font-family: 宋体;"></MyKeyValList>
+              style="font-size: 15px; font-weight: 450; font-family: 宋体;"
+            />
           </MyPanel>
           <MyPanel theme="border-left" class="kgimg" :border="false" fit>
             <template v-slot:title>
               <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识图谱</span>
             </template>
-            <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"></kgecharts>
+            <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2" />
           </MyPanel>
         </div>
       </el-col>
@@ -64,20 +65,19 @@
 
 <script>
 // import axios from '$ui/utils/axios'
-import dataServerIp from '@/assets/js/dataserverip'
-import {qaoptions} from '@/assets/js/utilkg'
+import { qaoptions } from '@/assets/js/utilkg'
 import kgecharts from '@/components/kg/kgecharts.vue'
 // axios.defaults.baseURL = dataServerIp.dataServerIp
 
-import {doAnswer} from '@/api/answer'
-import {mapGetters} from 'vuex'
-import {WebSocketModule} from '@/assets/js/mywebsoket'
+import { mapGetters } from 'vuex'
+import { WebSocketModule } from '@/assets/js/mywebsoket'
 
 export default {
-  components: {kgecharts},
+  components: { kgecharts },
   data() {
     return {
       wsuri: 'ws://127.0.0.1:9001',
+      webSocketModule: null,
       input: '',
       dialogData: [],
       // echarts知识图谱数据
@@ -87,112 +87,91 @@ export default {
       kgIdList: new Set(),
       kgEdgeIdSet: new Set(),
       // 知识卡片数据
-      nodecolumn: [{label: '功能简介', prop: 'des'}],
-      nodedata: {des: '智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。'}
+      nodecolumn: [{ label: '功能简介', prop: 'des' }],
+      nodedata: { des: '智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。' }
     }
   },
+  // 每次页面渲染完之后滚动条在最底部
+  updated() {
+    this.$nextTick(() => {
+      const div = document.getElementById('dialogue_box')
+      div.scrollTop = div.scrollHeight
+    })
+  },
+  created() {
+    this.initWebSocket()
+    this.getOneSubKg(this.kgoptions, 'country', '中华人民共和国-country')
+  },
+  destroyed() {
+    // this.websock.close()
+    this.webSocketModule.close()
+  },
   methods: {
+    isValidJSON(str) {
+      try {
+        JSON.parse(str)
+        return true
+      } catch (error) {
+        return false
+      }
+    },
     initWebSocket() {
-      this.websocket = new WebSocketModule(this.wsuri, this.websockonmessage);
-      this.websocket.connect();
-      // const wsuri = 'ws://127.0.0.1:9001'
-      // this.websock = new WebSocket(wsuri)
-      // this.websock.onmessage = this.websockonmessage
-      // this.websock.onopen = this.websockonopen
-      // this.websock.onerror = this.websockonerror
-      // this.websock.onclose = this.websockclose
-    },
-    websockonopen() {
-      // this.websocketsend(JSON.stringify(this.textarea))
-      // this.websocketsend('vue send something')
-    },
-    websockonerror() {
-      this.initWebSocket()
+      this.webSocketModule = new WebSocketModule(this.wsuri, this.websockonmessage)
+      this.webSocketModule.connect()
     },
     websockonmessage(e) {
       console.log(e)
-      const message = JSON.parse(e.data)
-      console.log(message)
 
-      const answer_type = message.answer_type
-      const answer = message.answer
-
-      if (answer_type === 1) {
-        this.dialogData.push({person: this.input, rot: answer})
+      const isJson = this.isValidJSON(e.data)
+      if (!isJson) {
+        this.dialogData.push({ person: this.input, rot: e.data })
         this.input = ''
       } else {
-        // const answer = JSON.parse(answer);
-        // 知识卡片
-        this.nodecolumn = [{label: '记录', prop: 'record'}]
-        this.nodedata = {
-          record: answer
-        }
-        // 知识图谱
-        this.kgIdList.clear()
-        this.kgEdgeIdSet.clear()
-        this.kgoptions.series[0].data = answer.data || []
-        this.kgoptions.series[0].links = answer.links || []
-        for (const key1 of answer.data) {
-          this.kgIdList.add(key1.id)
-        }
-        for (const key2 of answer.links) {
-          this.kgEdgeIdSet.add(key2.id)
+        const message = JSON.parse(e.data)
+        console.log(message)
+
+        const answer_type = message.answer_type
+        const answer = message.answer
+
+        if (answer_type === 1) {
+          this.dialogData.push({ person: this.input, rot: answer })
+          this.input = ''
+        } else {
+          // const answer = JSON.parse(answer);
+          // 知识卡片
+          this.nodecolumn = [{ label: '记录', prop: 'record' }]
+          this.nodedata = {
+            record: answer
+          }
+          // 知识图谱
+          this.kgIdList.clear()
+          this.kgEdgeIdSet.clear()
+          this.kgoptions.series[0].data = answer.data || []
+          this.kgoptions.series[0].links = answer.links || []
+          for (const key1 of answer.data) {
+            this.kgIdList.add(key1.id)
+          }
+          for (const key2 of answer.links) {
+            this.kgEdgeIdSet.add(key2.id)
+          }
         }
       }
     },
-    websockclose() {
-      console.log('连接中断')
-    },
-    websocketsend(data) {
-      // 数据发送
-      WebSocketModule.send(data)
-      // this.websock.send(Data)
-    },
-    submit() {
-      console.log(this.textarea)
-      this.websocketsend(this.textarea)
+    sendMessage(message) {
+      this.webSocketModule.send(message)
     },
     questionSent() {
       console.log(this.name)
       if (this.input === '' || this.input === undefined) {
         console.log('input error')
-        this.dialogData.push({person: '...', rot: '你啥也没说啊！'})
+        this.dialogData.push({ person: '...', rot: '你啥也没说啊！' })
       } else {
         const params = {
           'query': this.input,
           'username': this.name
         }
         console.log(params)
-        this.websocketsend(JSON.stringify(params))
-
-        // doAnswer(params).then((res) => {
-        //   console.log('响应成功')
-        //   console.log(res)
-        //   this.dialogData.push({person: this.input, rot: res.data.reply.answer})
-        //   this.input = ''
-        //   // 知识卡片
-        //   this.nodecolumn = [{label: '记录', prop: 'record'}]
-        //   this.nodedata = {
-        //     record: res.data.reply.answer
-        //   }
-        //   // 知识图谱
-        //   this.kgIdList.clear()
-        //   this.kgEdgeIdSet.clear()
-        //   this.kgoptions.series[0].data = res.data.reply.visison_data.data
-        //   this.kgoptions.series[0].links = res.data.reply.visison_data.links
-        //   for (const key1 of res.data.visison_data.data) {
-        //     this.kgIdList.add(key1.id)
-        //   }
-        //   for (const key2 of res.data.visison_data.links) {
-        //     this.kgEdgeIdSet.add(key2.id)
-        //   }
-        //
-        //
-        // }).catch(error => {
-        //   console.log('响应失败')
-        //   console.log(error)
-        // });
-
+        this.sendMessage(JSON.stringify(params))
         // 思知对话接口
         /* axios.get('/bot', {
              params: {
@@ -286,27 +265,11 @@ export default {
       }
     }
   },
-  // 每次页面渲染完之后滚动条在最底部
-  updated() {
-    this.$nextTick(() => {
-      const div = document.getElementById('dialogue_box');
-      div.scrollTop = div.scrollHeight;
-    })
-  },
-  created() {
-    this.initWebSocket()
-    this.getOneSubKg(this.kgoptions, 'country', '中华人民共和国-country')
-  },
-  destroyed() {
-    // this.websock.close()
-    WebSocketModule.close();
-  },
   computed: {
     ...mapGetters([
       'name'
     ])
   }
-
 }
 </script>
 
