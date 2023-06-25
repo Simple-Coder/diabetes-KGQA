@@ -144,7 +144,7 @@ class Trainer:
             # report = classification_report(trues, preds)
             sorted_keys = sorted(self.config.seqlabel2id, key=self.config.seqlabel2id.get)
             report = classification_report(trues_mapped, preds_mapped, target_names=sorted_keys)
-            report = classification_report(trues, preds)
+            # report = classification_report(trues, preds)
         elif mode == 'ner':
             from seqeval.metrics import classification_report
             report = classification_report(trues, preds)
