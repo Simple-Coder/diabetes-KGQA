@@ -141,16 +141,16 @@ if __name__ == '__main__':
     intent_path_train = './train/label'
     text_path_train = './train/seq.in'
     slot_path_train = './train/seq.out'
-    # todo_data_path_train = 'origin2.json'
-    todo_data_path_train = 'origin.json'
+    todo_data_path_train = 'origin2.json'
+    # todo_data_path_train = 'origin.json'
 
     build_data(todo_data_path_train, intent_path_train, text_path_train, slot_path_train)
 
     intent_path_test = './test/label'
     text_path_test = './test/seq.in'
     slot_path_test = './test/seq.out'
-    todo_data_path_test = 'origin.json'
-    # todo_data_path_test = 'origin2.json'
+    # todo_data_path_test = 'origin.json'
+    todo_data_path_test = 'origin2.json'
 
     build_data(todo_data_path_test, intent_path_test, text_path_test, slot_path_test)
 
