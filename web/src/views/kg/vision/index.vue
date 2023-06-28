@@ -10,16 +10,16 @@
           </div>
           <div id="dialogue_box" class="b-body">
             <div class="rotWord">
-              <span />
+              <span/>
               <p>嗨，欢迎使用小谢智能问答系统！</p>
             </div>
             <div v-for="(item, index) in dialogData" :key="index">
               <div v-if="item.person && item.person.trim() !== ''" class="mWord">
-                <span />
+                <span/>
                 <p>{{ item.person }}</p>
               </div>
               <div class="rotWord">
-                <span />
+                <span/>
                 <p>{{ item.rot }}</p>
               </div>
             </div>
@@ -27,7 +27,8 @@
           <div class="b-footer">
             <el-row :gutter="10">
               <el-col :span="22">
-                <el-input v-model="input" placeholder="请输入内容(如：请问糖尿病有什么症状,病因是什么？)" clearable />
+                <el-input @keyup.native.enter="handleEnterKey" v-model="input" placeholder="请输入内容(如：请问糖尿病有什么症状,病因是什么？)"
+                          clearable/>
               </el-col>
               <el-col :span="2">
                 <el-button id="btn" type="primary" @click="questionSent">发送</el-button>
@@ -55,7 +56,7 @@
             <template v-slot:title>
               <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识图谱</span>
             </template>
-            <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2" />
+            <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"/>
           </MyPanel>
         </div>
       </el-col>
@@ -65,15 +66,15 @@
 
 <script>
 // import axios from '$ui/utils/axios'
-import { qaoptions } from '@/assets/js/utilkg'
+import {qaoptions} from '@/assets/js/utilkg'
 import kgecharts from '@/components/kg/kgecharts.vue'
 // axios.defaults.baseURL = dataServerIp.dataServerIp
 
-import { mapGetters } from 'vuex'
-import { WebSocketModule } from '@/assets/js/mywebsoket'
+import {mapGetters} from 'vuex'
+import {WebSocketModule} from '@/assets/js/mywebsoket'
 
 export default {
-  components: { kgecharts },
+  components: {kgecharts},
   data() {
     return {
       wsuri: 'ws://127.0.0.1:9001',
@@ -87,8 +88,8 @@ export default {
       kgIdList: new Set(),
       kgEdgeIdSet: new Set(),
       // 知识卡片数据
-      nodecolumn: [{ label: '功能简介', prop: 'des' }],
-      nodedata: { des: '智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。' }
+      nodecolumn: [{label: '功能简介', prop: 'des'}],
+      nodedata: {des: '智能问答模块通过自然语言处理与知识图谱的结合提供准确的问答结果，并且模块提供知识图谱的可视化与交互功能，引导用户深入挖掘领域知识。'}
     }
   },
   // 每次页面渲染完之后滚动条在最底部
@@ -124,7 +125,7 @@ export default {
 
       const isJson = this.isValidJSON(e.data)
       if (!isJson) {
-        this.dialogData.push({ person: this.input, rot: e.data })
+        this.dialogData.push({person: this.input, rot: e.data})
         this.input = ''
       } else {
         const message = JSON.parse(e.data)
@@ -134,12 +135,12 @@ export default {
         const answer = message.answer
 
         if (answer_type === 1) {
-          this.dialogData.push({ person: this.input, rot: answer })
+          this.dialogData.push({person: this.input, rot: answer})
           this.input = ''
         } else {
           // const answer = JSON.parse(answer);
           // 知识卡片
-          this.nodecolumn = [{ label: '记录', prop: 'record' }]
+          this.nodecolumn = [{label: '记录', prop: 'record'}]
           this.nodedata = {
             record: answer
           }
@@ -160,11 +161,15 @@ export default {
     sendMessage(message) {
       this.webSocketModule.send(message)
     },
+    handleEnterKey() {
+      // 按下回车键时调用questionSent函数
+      this.questionSent();
+    },
     questionSent() {
       console.log(this.name)
       if (this.input === '' || this.input === undefined) {
         console.log('input error')
-        this.dialogData.push({ person: '...', rot: '你啥也没说啊！' })
+        this.dialogData.push({person: '...', rot: '你啥也没说啊！'})
       } else {
         const params = {
           'query': this.input,
