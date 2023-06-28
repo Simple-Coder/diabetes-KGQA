@@ -171,6 +171,15 @@ export default {
         console.log('input error')
         this.dialogData.push({person: '...', rot: '你啥也没说啊！'})
       } else {
+
+        //判断服务不可用时
+        if (!this.webSocketModule.isConnected) {
+          console.log("连接异常")
+          this.dialogData.push({person: this.input, rot: '服务异常，请稍后再试！'})
+          this.input = ''
+          return
+        }
+
         const params = {
           'query': this.input,
           'username': this.name
