@@ -11,7 +11,7 @@ log = my_log.logger
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Dialog System")
-    parser.add_argument("--port", type=int, default=9000, help="WebSocket server port")
+    parser.add_argument("--port", type=int, default=9001, help="WebSocket server port")
     parser.add_argument("--graph_host", type=str, default="127.0.0.1", help="neo4j host")
     parser.add_argument("--graph_http_port", type=int, default=7474, help="neo4j http_port")
     parser.add_argument("--graph_user", type=str, default="neo4j", help="neo4j user")
