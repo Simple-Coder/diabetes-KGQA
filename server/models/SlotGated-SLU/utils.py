@@ -15,6 +15,61 @@ logging.basicConfig(
 )
 
 
+def get_word_list(s1):
+    # 把句子按字分开，中文按字分，英文按单词，数字按空格
+    # regEx = re.compile('[\\W]*')  # 我们可以使用正则表达式来切分句子，切分的规则是除单词，数字外的任意字符串
+    regEx = re.compile('\W+')  # 我们可以使用正则表达式来切分句子，切分的规则是除单词，数字外的任意字符串
+    res = re.compile(r"([\u4e00-\u9fa5])")  # [\u4e00-\u9fa5]中文范围
+
+    p1 = regEx.split(s1.lower())
+    str1_list = []
+    for str in p1:
+        if res.split(str) == None:
+            str1_list.append(str)
+        else:
+            ret = res.split(str)
+            for ch in ret:
+                str1_list.append(ch)
+
+    list_word1 = [w for w in str1_list if len(w.strip()) > 0]  # 去掉为空的字符
+
+    return list_word1
+
+
+def createVocabulary4Text(input_path, output_path, no_pad=False):
+    if not isinstance(input_path, str):
+        raise TypeError('input_path should be string')
+
+    if not isinstance(output_path, str):
+        raise TypeError('output_path should be string')
+
+    vocab = {}
+    with open(input_path, 'r', encoding="utf-8") as fd, \
+            open(output_path, 'w+', encoding="utf-8") as out:
+        for line in fd:
+            line = line.rstrip('\r\n')
+            # words = line.split()
+            words = get_word_list(line)
+
+            for w in words:
+                if w == '_UNK':
+                    break
+                if str.isdigit(w) == True:
+                    w = '0'
+                if w in vocab:
+                    vocab[w] += 1
+                else:
+                    vocab[w] = 1
+        if no_pad == False:
+            vocab = ['_PAD', '_UNK'] + \
+                    sorted(vocab, key=vocab.get, reverse=True)
+        else:
+            vocab = ['_UNK'] + sorted(vocab, key=vocab.get, reverse=True)
+
+        for v in vocab:
+            out.write(v + '\n')
+
+
 def createVocabulary(input_path, output_path, no_pad=False):
     if not isinstance(input_path, str):
         raise TypeError('input_path should be string')
@@ -62,6 +117,25 @@ def loadVocabulary(path):
 
     return {'vocab': vocab, 'rev': rev}
 
+
+def wordsToIds(data, vocab):
+    if not isinstance(vocab, dict):
+        raise TypeError('vocab should be a dict that contains vocab and rev')
+    vocab = vocab['vocab']
+    if isinstance(data, str):
+        words = get_word_list(data)
+    elif isinstance(data, list):
+        words = data
+    else:
+        raise TypeError('data should be a string or a list contains words')
+
+    ids = []
+    for w in words:
+        if str.isdigit(w) == True:
+            w = '0'
+        ids.append(vocab.get(w, vocab['_UNK']))
+
+    return ids
 
 def sentenceToIds(data, vocab):
     if not isinstance(vocab, dict):
@@ -286,7 +360,8 @@ class DataProcessor(object):
 
             iii = inp
             sss = slot
-            inp = sentenceToIds(inp, self.__in_vocab)
+            # inp = sentenceToIds(inp, self.__in_vocab)
+            inp = wordsToIds(inp, self.__in_vocab)
             slot = sentenceToIds(slot, self.__slot_vocab)
             intent = sentenceToIds(intent, self.__intent_vocab)
             batch_in.append(np.array(inp))
@@ -391,7 +466,7 @@ def create_f1_lists(
         input_words.append(tmp_input)
 
     return pred_intents, correct_intents, slot_outputs_pred, \
-           correct_slots, input_words
+        correct_slots, input_words
 
 
 def validate_model(
@@ -468,7 +543,7 @@ def validate_model(
     intent_avg_loss = epoch_intent_loss / steps_in_epoch
 
     return f1, accuracy, semantic_error, \
-           total_avg_loss, slot_avg_loss, intent_avg_loss
+        total_avg_loss, slot_avg_loss, intent_avg_loss
 
 
 def conv_to_tensor(*args: np.ndarray) -> Tuple[torch.Tensor, ...]:
@@ -526,7 +601,10 @@ def log_in_tensorboard(
     tb_log_writer.add_scalar(f"{type_}/acc", accuracy, epoch)
     tb_log_writer.add_scalar(f"{type_}/semantic_acc", semantic_acc, epoch)
 
+
 import re
+
+
 def get_word_list(s1):
     # 把句子按字分开，中文按字分，英文按单词，数字按空格
     # regEx = re.compile('[\\W]*')  # 我们可以使用正则表达式来切分句子，切分的规则是除单词，数字外的任意字符串

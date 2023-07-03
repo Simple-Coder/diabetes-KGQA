@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/7/3 12:52
 """
 from utils import conv_to_tensor, calculate_loss, log_in_tensorboard
-from utils import createVocabulary, loadVocabulary, validate_model
+from utils import createVocabulary4Text, createVocabulary, loadVocabulary, validate_model
 from utils import DataProcessor, calculate_metrics, create_f1_lists
 from model import BidirectionalRNN
 import os
@@ -95,7 +95,7 @@ full_train_path = os.path.join('./data', arg.dataset, arg.train_data_path)
 full_test_path = os.path.join('./data', arg.dataset, arg.test_data_path)
 full_valid_path = os.path.join('./data', arg.dataset, arg.valid_data_path)
 
-createVocabulary(
+createVocabulary4Text(
     os.path.join(full_train_path, arg.input_file),
     os.path.join(arg.vocab_path, 'in_vocab')
 )
@@ -243,7 +243,7 @@ while True:
 
         # validation
         valid_slot_f1, valid_intent_accuracy, valid_sem_acc, \
-        valid_total_loss, valid_slot_loss, valid_intent_loss \
+            valid_total_loss, valid_slot_loss, valid_intent_loss \
             = validate_model(
             model,
             arg.batch_size,
@@ -264,7 +264,7 @@ while True:
 
         # test set
         test_slot_f1, test_intent_accuracy, test_sem_acc, \
-        test_total_loss, test_slot_loss, test_intent_loss \
+            test_total_loss, test_slot_loss, test_intent_loss \
             = validate_model(
             model,
             arg.batch_size,
