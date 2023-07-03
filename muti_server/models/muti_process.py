@@ -167,9 +167,9 @@ if __name__ == '__main__':
 
     model_config = ModelConfig()
 
-    texts = Processor.read_file('../../data/intent_and_slot_data/test/seq.in')
-    intents = Processor.read_file('../../data/intent_and_slot_data/test/label')
-    slots = Processor.read_file('../../data/intent_and_slot_data/test/seq.out')
+    texts = Processor.read_file(model_config.train_texts)
+    intents = Processor.read_file(model_config.train_intents)
+    slots = Processor.read_file(model_config.train_slots)
 
     raw_examples = Processor.get_examples(texts, intents, slots, 'train')
     tokenizer = BertTokenizer.from_pretrained(model_config.bert_dir)
