@@ -70,7 +70,7 @@ parser.add_argument("--slot_file", type=str, default='seq.out',
 parser.add_argument("--intent_file", type=str, default='label',
                     help="Intent file name."
                     )
-parser.add_argument("--do_train", type=bool, default='True',
+parser.add_argument("--do_train", type=bool, default='False',
                     help="trains."
                     )
 # '
@@ -161,7 +161,8 @@ optim = torch.optim.Adam(model.parameters(), lr=learning_rate)
 slot_loss_fn = torch.nn.CrossEntropyLoss(reduction="none")
 intent_loss_fn = torch.nn.CrossEntropyLoss(reduction="none")
 
-if arg.do_train:
+# if arg.do_train:
+if False:
     # training loop
     while True:
 
@@ -326,7 +327,7 @@ def predict(model, input_sentence, in_vocab, slot_vocab, intent_vocab):
     model.eval()
 
     # Convert input sentence to tensor
-    input_data = [in_vocab.get(token, in_vocab['<unk>']) for token in get_word_list(input_sentence)]
+    input_data = [in_vocab['vocab'].get(token) for token in get_word_list(input_sentence)]
     input_data = torch.tensor(input_data).unsqueeze(0)
 
     # Model prediction
@@ -334,11 +335,11 @@ def predict(model, input_sentence, in_vocab, slot_vocab, intent_vocab):
 
     # Get predicted slots
     slot_predictions = torch.argmax(slot_outputs, dim=-1).squeeze().tolist()
-    predicted_slots = [slot_vocab['itos'][pred] for pred in slot_predictions]
+    predicted_slots = [slot_vocab['rev'][pred] for pred in slot_predictions]
 
     # Get predicted intent
     intent_prediction = torch.argmax(intent_output, dim=-1).squeeze().item()
-    predicted_intent = intent_vocab['itos'][intent_prediction]
+    predicted_intent = intent_vocab['rev'][intent_prediction]
 
     print(predicted_slots)
     print(predicted_intent)
