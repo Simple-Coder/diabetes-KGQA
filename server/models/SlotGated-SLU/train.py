@@ -85,6 +85,8 @@ elif arg.dataset == 'snips':
     print('use snips dataset')
 elif arg.dataset == 'atis':
     print('use atis dataset')
+elif arg.dataset == 'deba':
+    print('use atis dataset')
 else:
     print('use own dataset: ', arg.dataset)
 
