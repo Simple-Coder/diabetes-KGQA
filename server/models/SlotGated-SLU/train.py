@@ -5,6 +5,7 @@ Created by xiedong
 from utils import conv_to_tensor, calculate_loss, log_in_tensorboard
 from utils import createVocabulary4Text, createVocabulary, loadVocabulary, validate_model
 from utils import DataProcessor, calculate_metrics, create_f1_lists
+from utils import get_word_list
 from model import BidirectionalRNN
 import os
 import argparse
@@ -68,6 +69,13 @@ parser.add_argument("--slot_file", type=str, default='seq.out',
                     )
 parser.add_argument("--intent_file", type=str, default='label',
                     help="Intent file name."
+                    )
+parser.add_argument("--do_train", type=bool, default='True',
+                    help="trains."
+                    )
+# '
+parser.add_argument("--load_path", type=str, default=None,
+                    help="trains."
                     )
 
 arg = parser.parse_args()
@@ -144,163 +152,199 @@ model = BidirectionalRNN(
     add_final_state_to_intent=True
 )
 
+if arg.load_path:
+    print('load model...')
+    model.load_state_dict(torch.load(arg.load_path))
+
 learning_rate = 1e-3
 optim = torch.optim.Adam(model.parameters(), lr=learning_rate)
 slot_loss_fn = torch.nn.CrossEntropyLoss(reduction="none")
 intent_loss_fn = torch.nn.CrossEntropyLoss(reduction="none")
 
-# training loop
-while True:
+if arg.do_train:
+    # training loop
+    while True:
 
-    # get data
-    if data_processor is None:
-        data_processor = DataProcessor(
-            os.path.join(full_train_path, arg.input_file),
-            os.path.join(full_train_path, arg.slot_file),
-            os.path.join(full_train_path, arg.intent_file),
-            in_vocab, slot_vocab, intent_vocab
+        # get data
+        if data_processor is None:
+            data_processor = DataProcessor(
+                os.path.join(full_train_path, arg.input_file),
+                os.path.join(full_train_path, arg.slot_file),
+                os.path.join(full_train_path, arg.intent_file),
+                in_vocab, slot_vocab, intent_vocab
+            )
+
+        input_data, slots, slot_weights, seq_length, intent, _, _, _ \
+            = data_processor.get_batch(arg.batch_size)
+
+        input_data, slots, slot_weights, seq_length, intent \
+            = conv_to_tensor(input_data, slots, slot_weights, seq_length, intent)
+
+        # model predict
+        slot_outputs, intent_output = model.forward(input_data=input_data)
+
+        # loss
+        slot_loss, intent_loss, total_loss = calculate_loss(
+            slots, slot_outputs, slot_weights, slot_loss_fn,
+            intent_output, intent, intent_loss_fn, arg.batch_size
         )
 
-    input_data, slots, slot_weights, seq_length, intent, _, _, _ \
-        = data_processor.get_batch(arg.batch_size)
-
-    input_data, slots, slot_weights, seq_length, intent \
-        = conv_to_tensor(input_data, slots, slot_weights, seq_length, intent)
-
-    # model predict
-    slot_outputs, intent_output = model.forward(input_data=input_data)
-
-    # loss
-    slot_loss, intent_loss, total_loss = calculate_loss(
-        slots, slot_outputs, slot_weights, slot_loss_fn,
-        intent_output, intent, intent_loss_fn, arg.batch_size
-    )
-
-    # f1 metrics
-    p_i, c_i, s_o, c_o, i_w = create_f1_lists(
-        slot_outputs, intent_output, intent, slots,
-        input_data, seq_length, slot_vocab, in_vocab
-    )
-    pred_intents.extend(p_i)
-    correct_intents.extend(c_i)
-    slot_outputs_pred.extend(s_o)
-    correct_slots.extend(c_o)
-    input_words.extend(i_w)
-
-    # backprop
-    optim.zero_grad()
-    total_loss.backward()
-    optim.step()
-
-    total_steps += 1
-    steps_in_epoch += 1
-    epoch_loss += total_loss
-    epoch_slot_loss += slot_loss
-    epoch_intent_loss += intent_loss
-
-    # if epoch is finished
-    if data_processor.end == 1:
-
-        epochs += 1
-
-        # clean up data_processor
-        data_processor.close()
-        data_processor = None
-
-        # calculate train metrics
-        f1, precision, recall, accuracy, semantic_acc = calculate_metrics(
-            pred_intents, correct_intents, slot_outputs_pred, correct_slots
+        # f1 metrics
+        p_i, c_i, s_o, c_o, i_w = create_f1_lists(
+            slot_outputs, intent_output, intent, slots,
+            input_data, seq_length, slot_vocab, in_vocab
         )
+        pred_intents.extend(p_i)
+        correct_intents.extend(c_i)
+        slot_outputs_pred.extend(s_o)
+        correct_slots.extend(c_o)
+        input_words.extend(i_w)
 
-        log_in_tensorboard(
-            tb_log_writer, epochs, "train",
-            epoch_loss / steps_in_epoch, epoch_intent_loss / steps_in_epoch,
-            epoch_intent_loss / steps_in_epoch, f1, accuracy, semantic_acc
-        )
+        # backprop
+        optim.zero_grad()
+        total_loss.backward()
+        optim.step()
 
-        # reset steps and epoch loss
-        steps_in_epoch = 0
-        epoch_loss = 0.0
-        epoch_slot_loss = 0.0
-        epoch_intent_loss = 0.0
-        # clean up epoch variables
-        pred_intents = []
-        correct_intents = []
-        slot_outputs_pred = []
-        correct_slots = []
-        input_words = []
+        total_steps += 1
+        steps_in_epoch += 1
+        epoch_loss += total_loss
+        epoch_slot_loss += slot_loss
+        epoch_intent_loss += intent_loss
 
-        # save model
-        save_path = os.path.join(
-            arg.model_path, 'epoch_' + str(epochs) + '.pt'
-        )
-        torch.save({
-            'epoch': epochs,
-            'model_state_dict': model.state_dict(),
-            'optimizer_state_dict': optim.state_dict(),
-            'loss': epoch_loss,
-        }, save_path)
+        # if epoch is finished
+        if data_processor.end == 1:
 
-        # validation
-        valid_slot_f1, valid_intent_accuracy, valid_sem_acc, \
-            valid_total_loss, valid_slot_loss, valid_intent_loss \
-            = validate_model(
-            model,
-            arg.batch_size,
-            os.path.join(full_valid_path, arg.input_file),
-            os.path.join(full_valid_path, arg.slot_file),
-            os.path.join(full_valid_path, arg.intent_file),
-            in_vocab,
-            slot_vocab,
-            intent_vocab,
-            slot_loss_fn,
-            intent_loss_fn
-        )
-        log_in_tensorboard(
-            tb_log_writer, epochs, "valid",
-            valid_total_loss, valid_intent_loss, valid_slot_loss,
-            valid_slot_f1, valid_intent_accuracy, valid_sem_acc
-        )
+            epochs += 1
 
-        # test set
-        test_slot_f1, test_intent_accuracy, test_sem_acc, \
-            test_total_loss, test_slot_loss, test_intent_loss \
-            = validate_model(
-            model,
-            arg.batch_size,
-            os.path.join(full_valid_path, arg.input_file),
-            os.path.join(full_valid_path, arg.slot_file),
-            os.path.join(full_valid_path, arg.intent_file),
-            in_vocab,
-            slot_vocab,
-            intent_vocab,
-            slot_loss_fn,
-            intent_loss_fn
-        )
-        log_in_tensorboard(
-            tb_log_writer, epochs, "test",
-            test_total_loss, test_intent_loss, test_slot_loss,
-            test_slot_f1, test_intent_accuracy, test_sem_acc
-        )
+            # clean up data_processor
+            data_processor.close()
+            data_processor = None
 
-        if test_sem_acc <= valid_acc:
-            no_improve += 1
-        else:
-            valid_acc = test_sem_acc
-            no_improve = 0
+            # calculate train metrics
+            f1, precision, recall, accuracy, semantic_acc = calculate_metrics(
+                pred_intents, correct_intents, slot_outputs_pred, correct_slots
+            )
 
-        if epochs == arg.max_epochs:
-            break
+            log_in_tensorboard(
+                tb_log_writer, epochs, "train",
+                epoch_loss / steps_in_epoch, epoch_intent_loss / steps_in_epoch,
+                epoch_intent_loss / steps_in_epoch, f1, accuracy, semantic_acc
+            )
 
-        if arg.early_stop == True:
-            if no_improve > arg.patience:
+            # reset steps and epoch loss
+            steps_in_epoch = 0
+            epoch_loss = 0.0
+            epoch_slot_loss = 0.0
+            epoch_intent_loss = 0.0
+            # clean up epoch variables
+            pred_intents = []
+            correct_intents = []
+            slot_outputs_pred = []
+            correct_slots = []
+            input_words = []
+
+            # save model
+            save_path = os.path.join(
+                arg.model_path, 'epoch_' + str(epochs) + '.pt'
+            )
+            torch.save({
+                'epoch': epochs,
+                'model_state_dict': model.state_dict(),
+                'optimizer_state_dict': optim.state_dict(),
+                'loss': epoch_loss,
+            }, save_path)
+
+            # validation
+            valid_slot_f1, valid_intent_accuracy, valid_sem_acc, \
+                valid_total_loss, valid_slot_loss, valid_intent_loss \
+                = validate_model(
+                model,
+                arg.batch_size,
+                os.path.join(full_valid_path, arg.input_file),
+                os.path.join(full_valid_path, arg.slot_file),
+                os.path.join(full_valid_path, arg.intent_file),
+                in_vocab,
+                slot_vocab,
+                intent_vocab,
+                slot_loss_fn,
+                intent_loss_fn
+            )
+            log_in_tensorboard(
+                tb_log_writer, epochs, "valid",
+                valid_total_loss, valid_intent_loss, valid_slot_loss,
+                valid_slot_f1, valid_intent_accuracy, valid_sem_acc
+            )
+
+            # test set
+            test_slot_f1, test_intent_accuracy, test_sem_acc, \
+                test_total_loss, test_slot_loss, test_intent_loss \
+                = validate_model(
+                model,
+                arg.batch_size,
+                os.path.join(full_valid_path, arg.input_file),
+                os.path.join(full_valid_path, arg.slot_file),
+                os.path.join(full_valid_path, arg.intent_file),
+                in_vocab,
+                slot_vocab,
+                intent_vocab,
+                slot_loss_fn,
+                intent_loss_fn
+            )
+            log_in_tensorboard(
+                tb_log_writer, epochs, "test",
+                test_total_loss, test_intent_loss, test_slot_loss,
+                test_slot_f1, test_intent_accuracy, test_sem_acc
+            )
+
+            if test_sem_acc <= valid_acc:
+                no_improve += 1
+            else:
+                valid_acc = test_sem_acc
+                no_improve = 0
+
+            if epochs == arg.max_epochs:
                 break
+
+            if arg.early_stop == True:
+                if no_improve > arg.patience:
+                    break
 
 tb_log_writer.close()
 
-torch.save({
-    'epoch': epochs,
-    'model_state_dict': model.state_dict(),
-    'optimizer_state_dict': optim.state_dict(),
-    'loss': epoch_loss,
-}, "./model/final.pt")
+torch.save(model.state_dict(), "./model/final.pt")
+
+
+# torch.save({
+#     'epoch': epochs,
+#     'model_state_dict': model.state_dict(),
+#     'optimizer_state_dict': optim.state_dict(),
+#     'loss': epoch_loss,
+# }, "./model/final.pt")
+
+
+def predict(model, input_sentence, in_vocab, slot_vocab, intent_vocab):
+    model.eval()
+
+    # Convert input sentence to tensor
+    input_data = [in_vocab.get(token, in_vocab['<unk>']) for token in get_word_list(input_sentence)]
+    input_data = torch.tensor(input_data).unsqueeze(0)
+
+    # Model prediction
+    slot_outputs, intent_output = model.forward(input_data=input_data)
+
+    # Get predicted slots
+    slot_predictions = torch.argmax(slot_outputs, dim=-1).squeeze().tolist()
+    predicted_slots = [slot_vocab['itos'][pred] for pred in slot_predictions]
+
+    # Get predicted intent
+    intent_prediction = torch.argmax(intent_output, dim=-1).squeeze().item()
+    predicted_intent = intent_vocab['itos'][intent_prediction]
+
+    print(predicted_slots)
+    print(predicted_intent)
+
+    return predicted_slots, predicted_intent
+
+
+pre_text = '请问二型糖尿病的临床表现是什么'
+predict(model, pre_text, in_vocab, slot_vocab, intent_vocab)
