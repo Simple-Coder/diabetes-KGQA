@@ -154,6 +154,7 @@ if __name__ == '__main__':
 
     build_data(todo_data_path_test, intent_path_test, text_path_test, slot_path_test)
 
+
     # intent_path = './test/label'
     # text_path = './test/seq.in'
     # slot_path = './test/seq.out'
