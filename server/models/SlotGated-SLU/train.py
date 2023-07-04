@@ -326,26 +326,47 @@ torch.save(model.state_dict(), "./model/final.pt")
 def predict(model, input_sentence, in_vocab, slot_vocab, intent_vocab):
     model.eval()
 
-    # Convert input sentence to tensor
+    # 将输入句子转换为张量
     input_data = [in_vocab['vocab'].get(token) for token in get_word_list(input_sentence)]
     input_data = torch.tensor(input_data).unsqueeze(0)
 
-    # Model prediction
+    # 模型预测
     slot_outputs, intent_output = model.forward(input_data=input_data)
 
-    # Get predicted slots
+    # 获取预测的槽位
     slot_predictions = torch.argmax(slot_outputs, dim=-1).squeeze().tolist()
     predicted_slots = [slot_vocab['rev'][pred] for pred in slot_predictions]
 
-    # Get predicted intent
+    # 提取槽位值
+    slot_values = []
+    current_value = ''
+    for slot, token in zip(predicted_slots, get_word_list(input_sentence)):
+        if slot.startswith('B-'):
+            if current_value:
+                slot_values.append(current_value.strip())
+            current_value = token
+        elif slot.startswith('I-'):
+            current_value += token
+        else:
+            if current_value:
+                slot_values.append(current_value.strip())
+            current_value = ''
+    if current_value:
+        slot_values.append(current_value.strip())
+
+    # 获取预测的意图
     intent_prediction = torch.argmax(intent_output, dim=-1).squeeze().item()
     predicted_intent = intent_vocab['rev'][intent_prediction]
 
     print(predicted_slots)
     print(predicted_intent)
 
-    return predicted_slots, predicted_intent
+    return predicted_slots, predicted_intent, slot_values
 
 
 pre_text = '请问二型糖尿病的临床表现是什么'
-predict(model, pre_text, in_vocab, slot_vocab, intent_vocab)
+predicted_slots, predicted_intent, slot_values = predict(model, pre_text, in_vocab, slot_vocab, intent_vocab)
+
+print(slot_values)
+print(predicted_slots)
+print(predicted_intent)
