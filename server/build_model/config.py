@@ -1,6 +1,7 @@
 """
 Created by xiedong
 @Date: 2023/4/19 22:12
+模型配置类
 """
 import torch
 
