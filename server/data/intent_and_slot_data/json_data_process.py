@@ -118,7 +118,7 @@ def train_test_split(all_tata_path, ratio=0.9):
 
 
 def build_data(todo_data_path, intent_path, text_path, slot_path):
-    # 处理抓取数据 ##
+    # 处理抓取数据 ###
     processor = TodoDataProcessor(intent_path, text_path, slot_path, todo_data_path)
 
     examples = processor.get_examples()
