@@ -7,7 +7,7 @@ import torch
 
 
 class Args:
-    # bert预训练模型
+    # bert预训练模型#
     bert_dir = 'hfl/chinese-bert-wwm-ext'
     # 模型保存位置
     save_dir = 'checkpoints/'
