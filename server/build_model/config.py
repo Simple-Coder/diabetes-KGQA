@@ -59,7 +59,7 @@ class Args:
     # 槽位数量
     token_num_labels = len(token_labels)
 
-    # 隐层大小
+    # 隐层大小#
     hidden_size = 768
     # 最大支持长度
     max_len = 32
