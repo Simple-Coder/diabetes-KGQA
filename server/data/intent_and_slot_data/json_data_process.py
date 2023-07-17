@@ -99,7 +99,7 @@ def get_word_list(s1):
             for ch in ret:
                 str1_list.append(ch)
 
-    list_word1 = [w for w in str1_list if len(w.strip()) > 0]  # 去掉为空的字符
+    list_word1 = [w for w in str1_list if len(w.strip()) > 0]  # 去掉为空的字符#
 
     return list_word1
 
