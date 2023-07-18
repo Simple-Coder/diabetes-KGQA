@@ -136,7 +136,7 @@ def build_data(todo_data_path, intent_path, text_path, slot_path):
 
 
 if __name__ == '__main__':
-    # train_test_split('./origin2.json')
+    # train_test_split('./origin2.json') #
 
     intent_path_train = './train/label'
     text_path_train = './train/seq.in'
