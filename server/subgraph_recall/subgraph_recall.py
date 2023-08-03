@@ -53,7 +53,7 @@ class RecallSubGraph:
         for entity in entities:
             # 构建查询语句，根据实体的属性查询与之相关的子图
             cypher_query = "MATCH (n)-[r]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, r, m"
-            result = graph.run(cypher_query, {"entity": entity["name"]})
+            result = graph.run(cypher_query, {"entity": entity})
             for record in result:
                 subgraph = {
                     "node": record["n"]["name"],
@@ -76,10 +76,7 @@ class RecallSubGraph:
         subgraphs = self.retrieve_subgraphs(query)
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs)
         return ranked_subgraphs
-
-
-if __name__ == '__main__':
-    # 使用NER模型识别查询中的实体
+def test():
     # entities = ner_model(query)
     entities = ["糖尿病"]
 
@@ -99,6 +96,11 @@ if __name__ == '__main__':
             subgraphs.append(subgraph)
 
         print("")
+
+
+if __name__ == '__main__':
+    pass
+    # 使用NER模型识别查询中的实体
 # query = "请问糖尿病有哪些临床表现"
 # answers = answer_question(query)
 # for answer in answers:
