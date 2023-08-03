@@ -87,13 +87,13 @@ if __name__ == '__main__':
     subgraphs = []
     for entity in entities:
         # 构建查询语句，根据实体的属性查询与之相关的子图
-        cypher_query = "MATCH (n)-[r]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, r, m"
+        cypher_query = "MATCH (n)-[r]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
         # result = graph.run(cypher_query, {"entity": entity["name"]})
         result = graph.run(cypher_query, {"entity": entity})
         for record in result:
             subgraph = {
                 "node": record["n"]["name"],
-                "relationship": record["r"].type,
+                "relationship": record["relationship"],
                 "related_node": record["m"]["name"]
             }
             subgraphs.append(subgraph)
