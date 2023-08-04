@@ -5,6 +5,7 @@ Created by xiedong
 from py2neo import Graph
 import torch
 from transformers import BertTokenizer, BertModel
+from relation import translate_relation
 
 graph = Graph(
     host="127.0.0.1",
@@ -97,7 +98,7 @@ class RecallSubGraphAnswer:
 
 def test():
     entities = ["糖尿病"]
-    relations = ["Symptom_Disease","Reason_Disease"]  # 这里可以设置为None或空列表来测试兼容性
+    relations = ["Symptom_Disease", "Reason_Disease"]  # 这里可以设置为None或空列表来测试兼容性
 
     subgraphs = []
     for entity in entities:
@@ -112,7 +113,8 @@ def test():
         for record in result:
             subgraph = {
                 "node": record["n"]["name"],
-                "relationship": record["relationship"],
+                # "relationship": record["relationship"],
+                "relationship": translate_relation(record["relationship"]),
                 "related_node": record["m"]["name"]
             }
             subgraphs.append(subgraph)
