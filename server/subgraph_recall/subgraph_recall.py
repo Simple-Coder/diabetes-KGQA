@@ -55,7 +55,8 @@ class RecallSubGraphAnswer:
         return subgraphs
 
     def rank_answers(self, query_embedding, subgraphs):
-        ranked_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]), reverse=True)
+        ranked_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
+                                  reverse=True)
         return ranked_subgraphs
 
     def calculate_similarity(self, query_embedding, subgraph_triplet):
@@ -78,7 +79,7 @@ class RecallSubGraphAnswer:
         subgraphs_with_embedding = []
         for subgraph in subgraphs:
             limit += 1
-            if limit == 10:
+            if limit == 100:
                 break
             subgraph_embedding = self.encode_subgraph(subgraph)
             subgraphs_with_embedding.append({"embedding": subgraph_embedding, "info": subgraph})
@@ -96,11 +97,20 @@ class RecallSubGraphAnswer:
 
 def test():
     entities = ["糖尿病"]
+    relations = ["Symptom_Disease"]  # 这里可以设置为None或空列表来测试兼容性
 
     subgraphs = []
     for entity in entities:
-        cypher_query = "MATCH (n)-[r]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
-        result = graph.run(cypher_query, {"entity": entity})
+        if relations is None:
+            cypher_query = f"MATCH (n)-[r]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
+            result = graph.run(cypher_query, {"entity": entity})
+        elif len(relations) == 0:
+            cypher_query = f"MATCH (n) WHERE n.name CONTAINS $entity RETURN n"
+            result = graph.run(cypher_query, {"entity": entity})
+        else:
+            cypher_query = f"MATCH (n)-[r:{':'.join(relations)}]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
+            result = graph.run(cypher_query, {"entity": entity})
+
         for record in result:
             subgraph = {
                 "node": record["n"]["name"],
@@ -109,12 +119,12 @@ def test():
             }
             subgraphs.append(subgraph)
 
-    print("")
+    print(subgraphs)
 
 
 if __name__ == '__main__':
-    # test()
-    # print()
+    test()
+    print()
 
     entities = ['糖尿病']
     query = "请问糖尿病有哪些临床表现"
