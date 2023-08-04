@@ -97,18 +97,16 @@ class RecallSubGraphAnswer:
 
 def test():
     entities = ["糖尿病"]
-    relations = ["Symptom_Disease"]  # 这里可以设置为None或空列表来测试兼容性
+    relations = ["Symptom_Disease","Reason_Disease"]  # 这里可以设置为None或空列表来测试兼容性
 
     subgraphs = []
     for entity in entities:
-        if relations is None:
+        if not relations:
             cypher_query = f"MATCH (n)-[r]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
             result = graph.run(cypher_query, {"entity": entity})
-        elif len(relations) == 0:
-            cypher_query = f"MATCH (n) WHERE n.name CONTAINS $entity RETURN n"
-            result = graph.run(cypher_query, {"entity": entity})
         else:
-            cypher_query = f"MATCH (n)-[r:{':'.join(relations)}]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
+            relation_clause = "|".join(relations)
+            cypher_query = f"MATCH (n)-[r:{relation_clause}]-(m) WHERE n.name CONTAINS $entity OR m.name CONTAINS $entity RETURN n, type(r) AS relationship, m"
             result = graph.run(cypher_query, {"entity": entity})
 
         for record in result:
