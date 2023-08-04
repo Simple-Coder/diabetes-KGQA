@@ -144,8 +144,10 @@ class InfoRetrieveService(KgService):
         # 4、答案排序
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
 
-        # 5、翻译成子图
+        # 5、按阈值截取结果集
+
+        # 6、翻译成子图
         reverse_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
 
-        # 6、子团填充Context，后续nlg生成回复
+        # 7、子团填充Context，后续nlg生成回复
 
