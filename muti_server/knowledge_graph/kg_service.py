@@ -54,6 +54,7 @@ class InfoRetrieveService(KgService):
                     "related_node": record["m"]["name"]
                 }
                 subgraphs.append(subgraph)
+        return subgraphs
 
     def encode_query(self, query):
         """
@@ -139,7 +140,7 @@ class InfoRetrieveService(KgService):
         subgraphs = self.retrieve_subgraphs(entities, relations)
 
         # 3、子图embedding 与子图映射
-        subgraphs_with_embedding = self.subgraph_mapping(subgraphs)
+        subgraphs_with_embedding = self.subgraph_mapping(subgraphs, 100)
 
         # 4、答案排序
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
@@ -150,4 +151,3 @@ class InfoRetrieveService(KgService):
         reverse_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
 
         # 7、子团填充Context，后续nlg生成回复
-
