@@ -149,7 +149,3 @@ class InfoRetrieveService(KgService):
 
         # 6、子团填充Context，后续nlg生成回复
 
-        # 获取意图
-        # 获取识别到的实体
-        # 查询子图
-        # 答案排序
