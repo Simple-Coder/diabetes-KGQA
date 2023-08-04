@@ -12,7 +12,8 @@ graph = Graph(
     user="neo4j",
     password="123456")
 
-bert_dir = 'hfl/chinese-bert-wwm-ext'
+# bert_dir = 'hfl/chinese-bert-wwm-ext'
+bert_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext'
 
 
 class RecallSubGraphAnswer:
