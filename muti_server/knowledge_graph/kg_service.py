@@ -123,6 +123,14 @@ class InfoRetrieveService(KgService):
     def reverse_subgraphs(self, ranked_subgraphs):
         pass
 
+    def convert_relations(self, current_semantic):
+        current_intent_infos = current_semantic.get_intent_infos()
+        # 使用 lambda 表达式将 intent1 和 intent2 合并为列表
+        combine_intents = lambda intent_info: [intent_info.get_intent(), intent_info.get_intent_enum()]
+        intent_list = list(map(combine_intents, current_intent_infos))
+        relations = intent_list
+        return relations
+
     def search(self, dialog_context):
         """
 
@@ -135,8 +143,8 @@ class InfoRetrieveService(KgService):
         query_embedding = self.encode_query(query)
 
         # 2、子图召回
-        entities = [""]
-        relations = [""]
+        entities = current_semantic.get_entities()
+        relations = self.convert_relations(current_semantic)
         subgraphs = self.retrieve_subgraphs(entities, relations)
 
         # 3、子图embedding 与子图映射
