@@ -163,6 +163,8 @@ class InfoRetrieveService(KgService):
         # 4、答案排序 && 保留大于阈值的
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
         # 5、翻译成子图
-        reverse_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
+        traslate_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
 
         # 6、子团填充Context，后续nlg生成回复
+        current_semantic.set_answer_sub_graphs(traslate_subgraphs)
+        dialog_context.set_current_semantic(current_semantic)
