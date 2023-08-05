@@ -9,6 +9,7 @@ from muti_server.nlu.nlu_utils import recognize_medical
 from muti_server.utils.relation import translate_relation
 import torch
 import muti_server.base.wrapper as wrapper
+from muti_server.base.base_config import SubGraphConfig
 
 log = my_log.logger
 
@@ -16,6 +17,7 @@ log = my_log.logger
 class KgService(object):
     def __init__(self, args):
         self.args = args
+        self.subgraph_config = SubGraphConfig()
         try:
             self.graph = Graph(host=args.graph_host,
                                http_port=args.graph_http_port,
@@ -105,9 +107,17 @@ class InfoRetrieveService(KgService):
         return subgraphs_with_embedding
 
     def rank_answers(self, query_embedding, subgraphs):
-        ranked_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
-                                  reverse=True)
-        return ranked_subgraphs
+        # ranked_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
+        #                           reverse=True)
+        ranked_and_filtered_subgraphs = sorted(
+            (graph for graph in subgraphs if
+             self.calculate_similarity(query_embedding,
+                                       graph["embedding"]) > self.subgraph_config.subgraph_recall_match_threshold),
+            key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
+            reverse=True
+        )
+
+        return ranked_and_filtered_subgraphs
 
     def calculate_similarity(self, query_embedding, subgraph_triplet):
         node_embedding, relationship_embedding, related_node_embedding = subgraph_triplet
@@ -148,13 +158,11 @@ class InfoRetrieveService(KgService):
         subgraphs = self.retrieve_subgraphs(entities, relations)
 
         # 3、子图embedding 与子图映射
-        subgraphs_with_embedding = self.subgraph_mapping(subgraphs, 100)
+        subgraphs_with_embedding = self.subgraph_mapping(subgraphs, self.subgraph_config.subgraph_recall_size_limit)
 
         # 4、答案排序
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
-
-        # 5、按阈值截取结果集
-
+        # 5、
         # 6、翻译成子图
         reverse_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
 
