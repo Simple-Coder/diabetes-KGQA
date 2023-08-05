@@ -79,7 +79,7 @@ class InfoRetrieveService(KgService):
             dim=1)
         relationship_embedding = wrapper.model(**wrapper.tokenizer(subgraph["relationship"], add_special_tokens=True,
                                                                    return_tensors='pt')).last_hidden_state.mean(dim=1)
-        related_node_embedding = wrapper.model(**wrapper.tokenizer(subgraph["related_node"], add_special_tokens=True,
+        related_node_embedding = wrapper.model(**wrapper.tokenizer(subgraph["related_node"], add_special_tokens=True))
 
         return node_embedding, relationship_embedding, related_node_embedding
 
@@ -130,7 +130,8 @@ class InfoRetrieveService(KgService):
         :return:
         """
         # 1、query embedding
-        query = ""
+        current_semantic = dialog_context.get_current_semantic()
+        query = current_semantic.get_query()
         query_embedding = self.encode_query(query)
 
         # 2、子图召回
