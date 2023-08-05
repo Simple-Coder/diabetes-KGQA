@@ -30,6 +30,7 @@ class NLU:
         semantic_info = SemanticInfo()
         try:
             log.info("nlu 正在识别 query:{}".format(text))
+            semantic_info.set_query(text)
             # predict_result = self.predictor.predict(text)
             intent_probs, slot_probs = self.predictor.predict(text)
 
