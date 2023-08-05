@@ -151,9 +151,9 @@ class InfoRetrieveEnhanceService(KgEnhanceService):
 
     def enhance_search(self, current_semantic):
         """
-
-        :param dialog_context:
-        :return:
+        语义信息增强
+        :param current_semantic:
+        :return: 
         """
         try:
             # 1、query embedding
