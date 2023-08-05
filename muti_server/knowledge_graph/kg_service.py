@@ -149,7 +149,7 @@ class InfoRetrieveService(KgService):
         relations = intent_list
         return relations
 
-    def enhanceSearch(self, dialog_context):
+    def enhance_search(self, dialog_context):
         """
 
         :param dialog_context:
@@ -178,4 +178,4 @@ class InfoRetrieveService(KgService):
             current_semantic.set_answer_sub_graphs(traslate_subgraphs)
             dialog_context.set_current_semantic(current_semantic)
         except Exception as e:
-            log.error("[sub_graph_recall] enhanceSearch error:{}".format(e))
+            log.error("[sub_graph_recall] enhance_search error:{}".format(e))
