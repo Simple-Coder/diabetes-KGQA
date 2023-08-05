@@ -5,6 +5,7 @@ Created by xiedong
 from muti_server.utils.logger_conf import my_log
 from muti_server.nlg.nlg_utils import fill_slot_info
 from muti_server.knowledge_graph.service import KgService
+from muti_server.knowledge_graph.kg_service import InfoRetrieveEnhanceService
 from muti_server.utils.json_utils import json_str
 
 log = my_log.logger
@@ -14,6 +15,7 @@ class DialogueStateTracker:
     def __init__(self, args):
         self.args = args
         self.kg_service = KgService(args)
+        self.kg_service_enhance = InfoRetrieveEnhanceService(args)
         self.contexts = {}
 
     def add_context(self, context_name, context_data):
@@ -57,6 +59,10 @@ class DialogueStateTracker:
                 if slot_info:
                     intent_info.set_answer_info(slot_info)
 
+            # 子图召回增强
+            self.kg_service_enhance.enhance_search(semantic_info)
+
+            # 填充语义信息
             dialog_context.set_current_semantic(semantic_info)
             log.info("[dst] update current sematic finish,infos:{}".format(json_str(semantic_info)))
         except Exception as e:
