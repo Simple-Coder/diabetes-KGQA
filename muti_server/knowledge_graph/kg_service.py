@@ -155,24 +155,27 @@ class InfoRetrieveService(KgService):
         :param dialog_context:
         :return:
         """
-        # 1、query embedding
-        current_semantic = dialog_context.get_current_semantic()
-        query = current_semantic.get_query()
-        query_embedding = self.encode_query(query)
+        try:
+            # 1、query embedding
+            current_semantic = dialog_context.get_current_semantic()
+            query = current_semantic.get_query()
+            query_embedding = self.encode_query(query)
 
-        # 2、子图召回
-        entities = current_semantic.get_entities()
-        relations = self.convert_relations(current_semantic)
-        subgraphs = self.retrieve_subgraphs(entities, relations)
+            # 2、子图召回
+            entities = current_semantic.get_entities()
+            relations = self.convert_relations(current_semantic)
+            subgraphs = self.retrieve_subgraphs(entities, relations)
 
-        # 3、子图embedding 与子图映射
-        subgraphs_with_embedding = self.subgraph_mapping(subgraphs, self.subgraph_config.subgraph_recall_size_limit)
+            # 3、子图embedding 与子图映射
+            subgraphs_with_embedding = self.subgraph_mapping(subgraphs, self.subgraph_config.subgraph_recall_size_limit)
 
-        # 4、答案排序 && 保留大于阈值的
-        ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
-        # 5、翻译成子图
-        traslate_subgraphs = self.traslate_subgraphs(ranked_subgraphs)
+            # 4、答案排序 && 保留大于阈值的
+            ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
+            # 5、翻译成子图
+            traslate_subgraphs = self.traslate_subgraphs(ranked_subgraphs)
 
-        # 6、子团填充Context，后续nlg生成回复
-        current_semantic.set_answer_sub_graphs(traslate_subgraphs)
-        dialog_context.set_current_semantic(current_semantic)
+            # 6、子团填充Context，后续nlg生成回复
+            current_semantic.set_answer_sub_graphs(traslate_subgraphs)
+            dialog_context.set_current_semantic(current_semantic)
+        except Exception as e:
+            log.error("[sub_graph_recall]search error:{}".format(e))
