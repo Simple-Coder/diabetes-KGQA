@@ -99,6 +99,7 @@ class SemanticInfo(object):
         self.intent_infos = []
         self.entities = None
         self.query = None
+        self.answer_sub_graphs = None
 
     def add_intent_info(self, intent_info):
         self.intent_infos.append(intent_info)
@@ -117,3 +118,9 @@ class SemanticInfo(object):
 
     def get_query(self):
         return self.query
+
+    def set_answer_sub_graphs(self, answer_sub_graphs):
+        self.answer_sub_graphs = answer_sub_graphs
+
+    def get_answer_sub_graphs(self):
+        return self.answer_sub_graphs
