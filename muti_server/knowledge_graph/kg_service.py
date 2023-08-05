@@ -130,8 +130,16 @@ class InfoRetrieveService(KgService):
         similarity = torch.cosine_similarity(query_embedding, subgraph_embedding, dim=1)
         return similarity
 
-    def reverse_subgraphs(self, ranked_subgraphs):
-        pass
+    def traslate_subgraphs(self, ranked_subgraphs):
+        if not ranked_subgraphs or len(ranked_subgraphs) == 0:
+            log.info("traslate_subgraphs not find ranked_subgraphs ")
+            return []
+        # 提取排序后的子图的原始信息，即node，relationship和related_node
+        sorted_subgraphs_info = []
+        for ranked_subgraph in ranked_subgraphs:
+            subgraph_info = ranked_subgraph["info"]
+            sorted_subgraphs_info.append(subgraph_info)
+        return sorted_subgraphs_info
 
     def convert_relations(self, current_semantic):
         current_intent_infos = current_semantic.get_intent_infos()
@@ -163,7 +171,7 @@ class InfoRetrieveService(KgService):
         # 4、答案排序 && 保留大于阈值的
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
         # 5、翻译成子图
-        traslate_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
+        traslate_subgraphs = self.traslate_subgraphs(ranked_subgraphs)
 
         # 6、子团填充Context，后续nlg生成回复
         current_semantic.set_answer_sub_graphs(traslate_subgraphs)
