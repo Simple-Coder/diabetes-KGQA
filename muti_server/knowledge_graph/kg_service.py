@@ -8,6 +8,7 @@ from muti_server.utils.logger_conf import my_log
 from muti_server.nlu.nlu_utils import recognize_medical
 from muti_server.utils.relation import translate_relation
 import torch
+import muti_server.base.wrapper as wrapper
 
 log = my_log.logger
 
@@ -62,11 +63,10 @@ class InfoRetrieveService(KgService):
         :param query:
         :return:
         """
-        # inputs = self.tokenizer.encode_plus(query, add_special_tokens=True, return_tensors='pt')
-        # outputs = self.model(**inputs)
-        # query_embedding = outputs.last_hidden_state.mean(dim=1)  # 平均池化操作
-        # return query_embedding
-        pass
+        inputs = wrapper.tokenizer.encode_plus(query, add_special_tokens=True, return_tensors='pt')
+        outputs = wrapper.model(**inputs)
+        query_embedding = outputs.last_hidden_state.mean(dim=1)  # 平均池化操作
+        return query_embedding
 
     def encode_subgraph(self, subgraph):
         """
@@ -74,15 +74,14 @@ class InfoRetrieveService(KgService):
         :param subgraph:
         :return:
         """
-        # node_embedding = self.model(
-        #     **self.tokenizer(subgraph["node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
-        #     dim=1)
-        # relationship_embedding = self.model(**self.tokenizer(subgraph["relationship"], add_special_tokens=True,
-        #                                                      return_tensors='pt')).last_hidden_state.mean(dim=1)
-        # related_node_embedding = self.model(**self.tokenizer(subgraph["related_node"], add_special_tokens=True,
-        #
-        # return node_embedding, relationship_embedding, related_node_embedding
-        pass
+        node_embedding = wrapper.model(
+            **wrapper.tokenizer(subgraph["node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
+            dim=1)
+        relationship_embedding = wrapper.model(**wrapper.tokenizer(subgraph["relationship"], add_special_tokens=True,
+                                                                   return_tensors='pt')).last_hidden_state.mean(dim=1)
+        related_node_embedding = wrapper.model(**wrapper.tokenizer(subgraph["related_node"], add_special_tokens=True,
+
+        return node_embedding, relationship_embedding, related_node_embedding
 
     def entity_link(self, dialog_context):
         """
