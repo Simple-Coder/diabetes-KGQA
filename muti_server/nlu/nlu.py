@@ -97,6 +97,7 @@ class SemanticInfo(object):
     def __init__(self):
         self.intent_infos = []
         self.entities = None
+        self.query = None
 
     def add_intent_info(self, intent_info):
         self.intent_infos.append(intent_info)
@@ -109,3 +110,9 @@ class SemanticInfo(object):
 
     def get_entities(self):
         return self.entities
+
+    def set_query(self, query):
+        self.query = query
+
+    def get_query(self):
+        return self.query
