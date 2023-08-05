@@ -149,7 +149,7 @@ class InfoRetrieveEnhanceService(KgEnhanceService):
         relations = intent_list
         return relations
 
-    def enhance_search(self, dialog_context):
+    def enhance_search(self, current_semantic):
         """
 
         :param dialog_context:
@@ -157,7 +157,6 @@ class InfoRetrieveEnhanceService(KgEnhanceService):
         """
         try:
             # 1、query embedding
-            current_semantic = dialog_context.get_current_semantic()
             query = current_semantic.get_query()
             query_embedding = self.encode_query(query)
 
@@ -176,6 +175,7 @@ class InfoRetrieveEnhanceService(KgEnhanceService):
 
             # 6、子团填充Context，后续nlg生成回复
             current_semantic.set_answer_sub_graphs(traslate_subgraphs)
-            dialog_context.set_current_semantic(current_semantic)
         except Exception as e:
             log.error("[sub_graph_recall] enhance_search error:{}".format(e))
+
+        return current_semantic
