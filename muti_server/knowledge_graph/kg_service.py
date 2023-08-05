@@ -14,7 +14,7 @@ from muti_server.base.base_config import SubGraphConfig
 log = my_log.logger
 
 
-class KgService(object):
+class KgEnhanceService(object):
     def __init__(self, args):
         self.args = args
         self.subgraph_config = SubGraphConfig()
@@ -27,9 +27,9 @@ class KgService(object):
             log.error("初始化链接neo4j失败！将无法查询neo4j...")
 
 
-class InfoRetrieveService(KgService):
+class InfoRetrieveEnhanceService(KgEnhanceService):
     def __init__(self, args):
-        super(InfoRetrieveService, self).__init__(args)
+        super(InfoRetrieveEnhanceService, self).__init__(args)
 
     def retrieve_subgraphs(self, entities, relations):
         """
