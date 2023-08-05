@@ -160,10 +160,9 @@ class InfoRetrieveService(KgService):
         # 3、子图embedding 与子图映射
         subgraphs_with_embedding = self.subgraph_mapping(subgraphs, self.subgraph_config.subgraph_recall_size_limit)
 
-        # 4、答案排序
+        # 4、答案排序 && 保留大于阈值的
         ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
-        # 5、
-        # 6、翻译成子图
+        # 5、翻译成子图
         reverse_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
 
-        # 7、子团填充Context，后续nlg生成回复
+        # 6、子团填充Context，后续nlg生成回复
