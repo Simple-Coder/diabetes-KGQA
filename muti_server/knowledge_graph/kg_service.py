@@ -153,7 +153,7 @@ class InfoRetrieveEnhanceService(KgEnhanceService):
         """
         语义信息增强
         :param current_semantic:
-        :return: 
+        :return:
         """
         try:
             # 1、query embedding
