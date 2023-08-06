@@ -9,6 +9,7 @@ from muti_server.nlg.nlg_config import *
 import random
 from muti_server.utils.logger_conf import my_log
 from muti_server.utils.json_utils import json_str
+from muti_server.base.base_config import SystemConfig
 
 log = my_log.logger
 
@@ -16,6 +17,7 @@ log = my_log.logger
 class NLG():
     def __init__(self, args):
         self.args = args
+        self.system_config = SystemConfig()
 
     def handle_gossip(self, intent, client, server):
         answer = random.choice(gossip_corpus.get(intent))
@@ -143,11 +145,16 @@ class NLG():
     def generate_response(self, client, server, dialog_context):
         current_semantic = dialog_context.get_current_semantic()
         history_sematics = dialog_context.get_history_semantics()
-
+        user_id = dialog_context.get_user_id()
         try:
             if not current_semantic:
                 log.error("[nlg] 当前语义识别为null，将采用默认回答")
                 self.do_answer_client_txt(client, server, self.get_default_answer())
+                return
+
+            # 白名单用户使用子图召回方式回答
+            if user_id in self.system_config.sub_graph_white_users:
+                self.do_answer_sub_graph_txt(client, server, dialog_context)
                 return
 
             # 获取意图
