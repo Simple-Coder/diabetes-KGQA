@@ -180,7 +180,7 @@ if __name__ == '__main__':
     formatted_answers = []
     for key, values in merged_answers.items():
         node, relationship = key
-        related_nodes = ', '.join(values)
+        related_nodes = '、 '.join(values)
         formatted_answers.append(f"'{node}'的'{relationship}'如下：{related_nodes}")
 
     # 打印合并后的回答
