@@ -135,6 +135,7 @@ class NLG():
 
     def handle_others(self, client, server):
         self.do_answer_client_txt(client, server, self.get_default_answer())
+        # TODO：增加动态添加知识图谱的能力
 
     def handle_sub_graph_answer(self, client, server, dialog_context):
         self.do_answer_sub_graph_txt(client, server, dialog_context)
