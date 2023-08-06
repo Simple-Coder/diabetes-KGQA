@@ -13,8 +13,10 @@ graph = Graph(
     user="neo4j",
     password="123456")
 
-# bert_dir = 'hfl/chinese-bert-wwm-ext'
-bert_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext'
+bert_dir = 'hfl/chinese-bert-wwm-ext'
+
+
+# bert_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext'
 
 
 class RecallSubGraphAnswer:
@@ -122,7 +124,40 @@ def test():
     print(subgraphs)
 
 
+def testAnswer():
+    from collections import defaultdict
+
+    # 模拟示例数据
+    answers = [
+        {'node': '2型糖尿病', 'relationship': 'Pathogenesis_Disease', 'related_node': '胰岛素分泌相对不足'},
+        {'node': '2型糖尿病', 'relationship': 'Pathogenesis_Disease', 'related_node': '胰岛β细胞功能已明显衰竭'},
+        {'node': '2型糖尿病', 'relationship': 'Pathogenesis_Disease', 'related_node': '后期β细胞功能衰竭'},
+        {'node': '2型糖尿病', 'relationship': 'Pathogenesis_Disease', 'related_node': '胰岛素分泌不足'},
+        {'node': '2型糖尿病', 'relationship': 'Pathogenesis_Disease', 'related_node': '胰岛素作用障碍'},
+        {'node': '2型糖尿病', 'relationship': 'Pathogenesis_Disease', 'related_node': '胰岛素分泌绝对不足'},
+    ]
+
+    # 将相同关系的三元组合并
+    merged_answers = defaultdict(list)
+    for answer in answers:
+        key = (answer['node'], answer['relationship'])
+        merged_answers[key].append(answer['related_node'])
+
+    # 根据合并后的数据生成回答字符串
+    formatted_answers = []
+    for key, values in merged_answers.items():
+        node, relationship = key
+        related_nodes = ', '.join(values)
+        formatted_answers.append(f"{node}的{relationship}有{related_nodes}")
+
+    # 打印合并后的回答
+    for answer in formatted_answers:
+        print(answer)
+
+
 if __name__ == '__main__':
+    testAnswer()
+    print()
     test()
     print()
 
@@ -132,3 +167,17 @@ if __name__ == '__main__':
     answers = sub_graph.answer_question(query)
     for answer in answers:
         print(f"{answer['node']} - {answer['relationship']} - {answer['related_node']}")
+
+    from collections import defaultdict
+
+    merged_answers = defaultdict(list)
+    # 根据合并后的数据生成回答字符串
+    formatted_answers = []
+    for key, values in merged_answers.items():
+        node, relationship = key
+        related_nodes = ', '.join(values)
+        formatted_answers.append(f"{node}的{relationship}有{related_nodes}")
+
+    # 打印合并后的回答
+    for answer in formatted_answers:
+        print(answer)
