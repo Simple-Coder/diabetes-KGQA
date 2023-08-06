@@ -234,13 +234,21 @@ class NLG():
 
     def do_answer_sub_graph_txt(self, client, server, dialog_context):
         try:
+            # 1、获取语义信息
             current_semantic = dialog_context.get_current_semantic()
+            # 2、获取子图信息
             sub_graphs_answers = current_semantic.get_answer_sub_graphs()
+            if not sub_graphs_answers or len(sub_graphs_answers) == 0:
+                log.error("[nlg] sub_graphs_answer is none")
+                server.send_message(client, self.get_default_answer())
+                return
+
+            # 3、打印回答
             for answer in sub_graphs_answers:
                 print(f"{answer['node']} - {answer['relationship']} - {answer['related_node']}")
 
+            # 4、合并回答
             from collections import defaultdict
-
             merged_answers = defaultdict(list)
             for answer in sub_graphs_answers:
                 key = (answer['node'], answer['relationship'])
