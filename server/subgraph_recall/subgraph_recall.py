@@ -51,7 +51,8 @@ class RecallSubGraphAnswer:
             for record in result:
                 subgraph = {
                     "node": record["n"]["name"],
-                    "relationship": record["relationship"],
+                    # "relationship": record["relationship"],
+                     "relationship": translate_relation(record["relationship"]),
                     "related_node": record["m"]["name"]
                 }
                 subgraphs.append(subgraph)
@@ -156,8 +157,8 @@ def testAnswer():
 
 
 if __name__ == '__main__':
-    testAnswer()
-    print()
+    # testAnswer()
+    # print()
     test()
     print()
 
