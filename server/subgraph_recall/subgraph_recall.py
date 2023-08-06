@@ -172,12 +172,16 @@ if __name__ == '__main__':
     from collections import defaultdict
 
     merged_answers = defaultdict(list)
+    for answer in answers:
+        key = (answer['node'], answer['relationship'])
+        merged_answers[key].append(answer['related_node'])
+
     # 根据合并后的数据生成回答字符串
     formatted_answers = []
     for key, values in merged_answers.items():
         node, relationship = key
         related_nodes = ', '.join(values)
-        formatted_answers.append(f"{node}的{relationship}有{related_nodes}")
+        formatted_answers.append(f"'{node}'的'{relationship}'如下：{related_nodes}")
 
     # 打印合并后的回答
     for answer in formatted_answers:
