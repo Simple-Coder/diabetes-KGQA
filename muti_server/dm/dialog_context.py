@@ -7,6 +7,8 @@ Created by xiedong
 class DialogContext:
     def __init__(self, client_id):
         self.client_id = client_id
+        self.user_id = client_id
+        self.user_name = str(client_id)
         self.current_semantic = None  # 语义信息
 
         self.history_semantics = []
@@ -35,3 +37,9 @@ class DialogContext:
     def remove_context_data(self, key):
         if key in self.context_data:
             del self.context_data[key]
+
+    def get_user_id(self):
+        return self.user_id
+
+    def get_user_name(self):
+        return self.user_name
