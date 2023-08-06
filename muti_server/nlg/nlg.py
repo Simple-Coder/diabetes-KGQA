@@ -136,6 +136,9 @@ class NLG():
     def handle_others(self, client, server):
         self.do_answer_client_txt(client, server, self.get_default_answer())
 
+    def handle_sub_graph_answer(self, client, server, dialog_context):
+        self.do_answer_sub_graph_txt(client, server, dialog_context)
+
     def generate_response(self, client, server, dialog_context):
         current_semantic = dialog_context.get_current_semantic()
         history_sematics = dialog_context.get_history_semantics()
@@ -228,3 +231,32 @@ class NLG():
             server.send_message(client, self.get_default_answer())
         finally:
             dialog_context.add_history_semantic(current_semantic)
+
+    def do_answer_sub_graph_txt(self, client, server, dialog_context):
+        try:
+            current_semantic = dialog_context.get_current_semantic()
+            sub_graphs_answers = current_semantic.get_answer_sub_graphs()
+            for answer in sub_graphs_answers:
+                print(f"{answer['node']} - {answer['relationship']} - {answer['related_node']}")
+
+            from collections import defaultdict
+
+            merged_answers = defaultdict(list)
+            for answer in sub_graphs_answers:
+                key = (answer['node'], answer['relationship'])
+                merged_answers[key].append(answer['related_node'])
+
+            # 根据合并后的数据生成回答字符串
+            formatted_answers = []
+            for key, values in merged_answers.items():
+                node, relationship = key
+                related_nodes = '、 '.join(values)
+                formatted_answers.append(f"'{node}'的'{relationship}'如下：{related_nodes}")
+
+            # 打印合并后的回答
+            for answer in formatted_answers:
+                print(answer)
+                self.do_answer_client_txt(client, server, answer)
+        except Exception as e:
+            log.error("[nlg] recall subgraph answer error {}".format(e))
+            server.send_message(client, self.get_default_answer())
