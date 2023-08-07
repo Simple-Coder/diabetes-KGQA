@@ -32,7 +32,9 @@ class RelationMatchingModel(nn.Module):
         combined_representation = torch.cat((encoded_queries, main_entity_embeddings_expanded, relation_embeddings_expanded), dim=-1)
 
         relation_scores = self.relation_classifier(combined_representation).squeeze(-1)
-        return relation_scores
+        sorted_relations = sorted(zip(candidate_relations, relation_scores.tolist()), key=lambda x: x[1], reverse=True)
+        # return relation_scores
+        return sorted_relations
 
 # 示例使用
 bert_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext'
@@ -41,5 +43,7 @@ model = RelationMatchingModel(bert_dir, num_layers=3)
 input_queries = ["法国的首都是什么？", "谁写了哈利波特？"]
 main_entities = ["法国", "谁"]
 candidate_relations = ["的首都是", "写了", "由谁写"]
-relation_scores = model(input_queries, main_entities, candidate_relations)
-print(relation_scores)
+sorted_relations = model(input_queries, main_entities, candidate_relations)
+# print(sorted_relations)
+for relation, score in sorted_relations:
+    print(f"关系: {relation}，匹配分数: {score}")
