@@ -9,6 +9,7 @@ from muti_server.nlg.nlg_config import *
 import random
 from muti_server.utils.logger_conf import my_log
 from muti_server.utils.json_utils import json_str
+from muti_server.base.base_config import SystemConfig
 
 log = my_log.logger
 
@@ -16,6 +17,7 @@ log = my_log.logger
 class NLG():
     def __init__(self, args):
         self.args = args
+        self.system_config = SystemConfig()
 
     def handle_gossip(self, intent, client, server):
         answer = random.choice(gossip_corpus.get(intent))
@@ -135,15 +137,24 @@ class NLG():
 
     def handle_others(self, client, server):
         self.do_answer_client_txt(client, server, self.get_default_answer())
+        # TODO：增加动态添加知识图谱的能力
+
+    def handle_sub_graph_answer(self, client, server, dialog_context):
+        self.do_answer_sub_graph_txt(client, server, dialog_context)
 
     def generate_response(self, client, server, dialog_context):
         current_semantic = dialog_context.get_current_semantic()
         history_sematics = dialog_context.get_history_semantics()
-
+        user_id = dialog_context.get_user_id()
         try:
             if not current_semantic:
                 log.error("[nlg] 当前语义识别为null，将采用默认回答")
                 self.do_answer_client_txt(client, server, self.get_default_answer())
+                return
+
+            # 白名单用户使用子图召回方式回答
+            if user_id in self.system_config.sub_graph_white_users:
+                self.do_answer_sub_graph_txt(client, server, dialog_context)
                 return
 
             # 获取意图
@@ -228,3 +239,40 @@ class NLG():
             server.send_message(client, self.get_default_answer())
         finally:
             dialog_context.add_history_semantic(current_semantic)
+
+    def do_answer_sub_graph_txt(self, client, server, dialog_context):
+        try:
+            # 1、获取语义信息
+            current_semantic = dialog_context.get_current_semantic()
+            # 2、获取子图信息
+            sub_graphs_answers = current_semantic.get_answer_sub_graphs()
+            if not sub_graphs_answers or len(sub_graphs_answers) == 0:
+                log.error("[nlg] sub_graphs_answer is none")
+                server.send_message(client, self.get_default_answer())
+                return
+
+            # 3、打印回答
+            for answer in sub_graphs_answers:
+                print(f"{answer['node']} - {answer['relationship']} - {answer['related_node']}")
+
+            # 4、合并回答
+            from collections import defaultdict
+            merged_answers = defaultdict(list)
+            for answer in sub_graphs_answers:
+                key = (answer['node'], answer['relationship'])
+                merged_answers[key].append(answer['related_node'])
+
+            # 根据合并后的数据生成回答字符串
+            formatted_answers = []
+            for key, values in merged_answers.items():
+                node, relationship = key
+                related_nodes = '、 '.join(values)
+                formatted_answers.append(f"'{node}'的'{relationship}'如下：{related_nodes}")
+
+            # 打印合并后的回答
+            for answer in formatted_answers:
+                print(answer)
+                self.do_answer_client_txt(client, server, answer)
+        except Exception as e:
+            log.error("[nlg] recall subgraph answer error {}".format(e))
+            server.send_message(client, self.get_default_answer())

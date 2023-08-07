@@ -8,13 +8,16 @@ from muti_server.utils.logger_conf import my_log
 from muti_server.nlu.nlu_utils import recognize_medical
 from muti_server.utils.relation import translate_relation
 import torch
+import muti_server.base.wrapper as wrapper
+from muti_server.base.base_config import SubGraphConfig
 
 log = my_log.logger
 
 
-class KgService(object):
+class KgEnhanceService(object):
     def __init__(self, args):
         self.args = args
+        self.subgraph_config = SubGraphConfig()
         try:
             self.graph = Graph(host=args.graph_host,
                                http_port=args.graph_http_port,
@@ -24,9 +27,9 @@ class KgService(object):
             log.error("初始化链接neo4j失败！将无法查询neo4j...")
 
 
-class InfoRetrieveService(KgService):
+class InfoRetrieveEnhanceService(KgEnhanceService):
     def __init__(self, args):
-        super(InfoRetrieveService, self).__init__(args)
+        super(InfoRetrieveEnhanceService, self).__init__(args)
 
     def retrieve_subgraphs(self, entities, relations):
         """
@@ -62,11 +65,10 @@ class InfoRetrieveService(KgService):
         :param query:
         :return:
         """
-        # inputs = self.tokenizer.encode_plus(query, add_special_tokens=True, return_tensors='pt')
-        # outputs = self.model(**inputs)
-        # query_embedding = outputs.last_hidden_state.mean(dim=1)  # 平均池化操作
-        # return query_embedding
-        pass
+        inputs = wrapper.tokenizer.encode_plus(query, add_special_tokens=True, return_tensors='pt')
+        outputs = wrapper.model(**inputs)
+        query_embedding = outputs.last_hidden_state.mean(dim=1)  # 平均池化操作
+        return query_embedding
 
     def encode_subgraph(self, subgraph):
         """
@@ -74,15 +76,14 @@ class InfoRetrieveService(KgService):
         :param subgraph:
         :return:
         """
-        # node_embedding = self.model(
-        #     **self.tokenizer(subgraph["node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
-        #     dim=1)
-        # relationship_embedding = self.model(**self.tokenizer(subgraph["relationship"], add_special_tokens=True,
-        #                                                      return_tensors='pt')).last_hidden_state.mean(dim=1)
-        # related_node_embedding = self.model(**self.tokenizer(subgraph["related_node"], add_special_tokens=True,
-        #
-        # return node_embedding, relationship_embedding, related_node_embedding
-        pass
+        node_embedding = wrapper.model(
+            **wrapper.tokenizer(subgraph["node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
+            dim=1)
+        relationship_embedding = wrapper.model(**wrapper.tokenizer(subgraph["relationship"], add_special_tokens=True,
+                                                                   return_tensors='pt')).last_hidden_state.mean(dim=1)
+        related_node_embedding = wrapper.model(**wrapper.tokenizer(subgraph["related_node"], add_special_tokens=True))
+
+        return node_embedding, relationship_embedding, related_node_embedding
 
     def entity_link(self, dialog_context):
         """
@@ -106,9 +107,17 @@ class InfoRetrieveService(KgService):
         return subgraphs_with_embedding
 
     def rank_answers(self, query_embedding, subgraphs):
-        ranked_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
-                                  reverse=True)
-        return ranked_subgraphs
+        # ranked_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
+        #                           reverse=True)
+        ranked_and_filtered_subgraphs = sorted(
+            (graph for graph in subgraphs if
+             self.calculate_similarity(query_embedding,
+                                       graph["embedding"]) > self.subgraph_config.subgraph_recall_match_threshold),
+            key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
+            reverse=True
+        )
+
+        return ranked_and_filtered_subgraphs
 
     def calculate_similarity(self, query_embedding, subgraph_triplet):
         node_embedding, relationship_embedding, related_node_embedding = subgraph_triplet
@@ -121,33 +130,52 @@ class InfoRetrieveService(KgService):
         similarity = torch.cosine_similarity(query_embedding, subgraph_embedding, dim=1)
         return similarity
 
-    def reverse_subgraphs(self, ranked_subgraphs):
-        pass
+    def traslate_subgraphs(self, ranked_subgraphs):
+        if not ranked_subgraphs or len(ranked_subgraphs) == 0:
+            log.info("traslate_subgraphs not find ranked_subgraphs ")
+            return []
+        # 提取排序后的子图的原始信息，即node，relationship和related_node
+        sorted_subgraphs_info = []
+        for ranked_subgraph in ranked_subgraphs:
+            subgraph_info = ranked_subgraph["info"]
+            sorted_subgraphs_info.append(subgraph_info)
+        return sorted_subgraphs_info
 
-    def search(self, dialog_context):
+    def convert_relations(self, current_semantic):
+        current_intent_infos = current_semantic.get_intent_infos()
+        # 使用 lambda 表达式将 intent1 和 intent2 合并为列表
+        combine_intents = lambda intent_info: [intent_info.get_intent(), intent_info.get_intent_enum()]
+        intent_list = list(map(combine_intents, current_intent_infos))
+        relations = intent_list
+        return relations
+
+    def enhance_search(self, current_semantic):
         """
-
-        :param dialog_context:
+        语义信息增强
+        :param current_semantic:
         :return:
         """
-        # 1、query embedding
-        query = ""
-        query_embedding = self.encode_query(query)
+        try:
+            # 1、query embedding
+            query = current_semantic.get_query()
+            query_embedding = self.encode_query(query)
 
-        # 2、子图召回
-        entities = [""]
-        relations = [""]
-        subgraphs = self.retrieve_subgraphs(entities, relations)
+            # 2、子图召回
+            entities = current_semantic.get_entities()
+            relations = self.convert_relations(current_semantic)
+            subgraphs = self.retrieve_subgraphs(entities, relations)
 
-        # 3、子图embedding 与子图映射
-        subgraphs_with_embedding = self.subgraph_mapping(subgraphs, 100)
+            # 3、子图embedding 与子图映射
+            subgraphs_with_embedding = self.subgraph_mapping(subgraphs, self.subgraph_config.subgraph_recall_size_limit)
 
-        # 4、答案排序
-        ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
+            # 4、答案排序 && 保留大于阈值的
+            ranked_subgraphs = self.rank_answers(query_embedding, subgraphs_with_embedding)
+            # 5、翻译成子图
+            traslate_subgraphs = self.traslate_subgraphs(ranked_subgraphs)
 
-        # 5、按阈值截取结果集
+            # 6、子团填充Context，后续nlg生成回复
+            current_semantic.set_answer_sub_graphs(traslate_subgraphs)
+        except Exception as e:
+            log.error("[sub_graph_recall] enhance_search error:{}".format(e))
 
-        # 6、翻译成子图
-        reverse_subgraphs = self.reverse_subgraphs(ranked_subgraphs)
-
-        # 7、子团填充Context，后续nlg生成回复
+        return current_semantic

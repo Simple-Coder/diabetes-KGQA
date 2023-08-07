@@ -30,6 +30,7 @@ class NLU:
         semantic_info = SemanticInfo()
         try:
             log.info("nlu 正在识别 query:{}".format(text))
+            semantic_info.set_query(text)
             # predict_result = self.predictor.predict(text)
             intent_probs, slot_probs = self.predictor.predict(text)
 
@@ -97,6 +98,8 @@ class SemanticInfo(object):
     def __init__(self):
         self.intent_infos = []
         self.entities = None
+        self.query = None
+        self.answer_sub_graphs = None
 
     def add_intent_info(self, intent_info):
         self.intent_infos.append(intent_info)
@@ -109,3 +112,15 @@ class SemanticInfo(object):
 
     def get_entities(self):
         return self.entities
+
+    def set_query(self, query):
+        self.query = query
+
+    def get_query(self):
+        return self.query
+
+    def set_answer_sub_graphs(self, answer_sub_graphs):
+        self.answer_sub_graphs = answer_sub_graphs
+
+    def get_answer_sub_graphs(self):
+        return self.answer_sub_graphs
