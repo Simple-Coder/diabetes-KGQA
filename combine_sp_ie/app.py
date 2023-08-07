@@ -11,3 +11,37 @@ unite_sematic_parsing_information_extraction
 
 综合这些步骤，语义解析和信息抽取的方法在不同阶段相互结合，以实现整个流程的目标：从用户查询中理解问题、识别关系、召回子图并最终排序答案。这种结合的方式旨在充分利用两种方法的优势，以提高问答系统在知识图谱中的性能。
 """
+# main.py
+
+from combine_sp_ie.nlu.nlu import query_understanding, relation_recognition, calculate_relation_score
+from combine_sp_ie.nlu.subgraph_retrieval import subgraph_retrieval
+from combine_sp_ie.dm.dm import dialog_management
+from combine_sp_ie.nlg.nlg import generate_response
+
+
+def main():
+    query = "故宫周末有学生票吗"
+
+    # 自然语言理解
+    main_entity, domain, question_type = query_understanding(query)
+
+    # 关系识别
+    syntax_analysis = "模拟依存分析结果"  # 实际应用需要进行依存分析
+    sorted_relations = relation_recognition(query, domain, syntax_analysis)
+    top_relation = sorted_relations[0][0]
+
+    # 子图召回
+    subgraphs = subgraph_retrieval(main_entity, top_relation)
+
+    # 对话管理
+    response = dialog_management(query, main_entity, domain, sorted_relations, subgraphs)
+
+    # 自然语言生成
+    generated_response = generate_response(main_entity, sorted_relations, subgraphs, response)
+
+    # 输出生成的回复
+    print("Generated Response:", generated_response)
+
+
+if __name__ == "__main__":
+    main()
