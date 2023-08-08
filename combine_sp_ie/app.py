@@ -13,10 +13,9 @@ unite_sematic_parsing_information_extraction
 """
 # main.py
 
-from combine_sp_ie.nlu.nlu import query_understanding, relation_recognition, calculate_relation_score
-from combine_sp_ie.nlu.subgraph_retrieval import subgraph_retrieval
-from combine_sp_ie.dm.dm import dialog_management
-from combine_sp_ie.nlg.nlg import generate_response
+from combine_sp_ie.nlu.nlu_processor import NLU
+from combine_sp_ie.nlg.nlg_processor import NLG
+from combine_sp_ie.kg.kgqa_processor import KGQAProcessor
 
 import argparse
 
@@ -32,27 +31,27 @@ def parse_arguments():
 
 
 def main():
-    query = "故宫周末有学生票吗"
+    args = parse_arguments()
 
-    # 自然语言理解
-    main_entity, domain, question_type = query_understanding(query)
+    # 初始化 NLU 和 NLG
+    nlu = NLU(args)
+    nlg = NLG(args)
+    kgqa_processor = KGQAProcessor(args)
 
-    # 关系识别
-    syntax_analysis = "模拟依存分析结果"  # 实际应用需要进行依存分析
-    sorted_relations = relation_recognition(query, domain, syntax_analysis)
-    top_relation = sorted_relations[0][0]
+    # 输入查询
+    query = "故宫门票价格是多少？"
 
-    # 子图召回
-    subgraphs = subgraph_retrieval(main_entity, top_relation)
+    # 通过 NLU 进行查询理解和关系识别
+    main_entity, recognized_relation = nlu.process_nlu(query)
 
-    # 对话管理
-    response = dialog_management(query, main_entity, domain, sorted_relations, subgraphs)
+    # 在这里可以根据 recognized_relation 做进一步的处理，例如从数据库中获取相关信息等
+    subgraph = kgqa_processor.search(query, '', main_entity, recognized_relation)
 
-    # 自然语言生成
-    generated_response = generate_response(main_entity, sorted_relations, subgraphs, response)
+    # 通过 NLG 生成回复
+    response = nlg.generate_response(query, subgraph)
 
     # 输出生成的回复
-    print("Generated Response:", generated_response)
+    print(response)
 
 
 if __name__ == "__main__":
