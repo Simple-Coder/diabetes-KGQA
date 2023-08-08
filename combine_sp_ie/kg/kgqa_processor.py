@@ -20,7 +20,8 @@ class KGQAProcessor():
         # 2、答案排序和过滤
         single_sub_graph = self.subgraph_ranker.rank_and_filter_subgraphs(query, constraint, subgraphs_with_embedding)
 
-        return single_sub_graph
+        # return single_sub_graph
+        return ["糖尿病", "症状", ["吃的多", "喝得多", "尿量多"]]
 
 
 def parse_arguments():
