@@ -36,6 +36,6 @@ def parse_arguments():
 
 if __name__ == '__main__':
     args = parse_arguments()
-
-    subgraphs = service.retrieve_subgraphs('糖尿病', 'Reason_Disease')
+    kgqa_processor = KGQAProcessor(args)
+    subgraphs = kgqa_processor.search('', '', '糖尿病', 'Reason_Disease')
     print()
