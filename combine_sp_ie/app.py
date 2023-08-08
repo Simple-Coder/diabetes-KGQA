@@ -18,6 +18,18 @@ from combine_sp_ie.nlu.subgraph_retrieval import subgraph_retrieval
 from combine_sp_ie.dm.dm import dialog_management
 from combine_sp_ie.nlg.nlg import generate_response
 
+import argparse
+
+
+def parse_arguments():
+    parser = argparse.ArgumentParser(description="Dialog System")
+    parser.add_argument("--port", type=int, default=9001, help="WebSocket server port")
+    parser.add_argument("--graph_host", type=str, default="127.0.0.1", help="neo4j host")
+    parser.add_argument("--graph_http_port", type=int, default=7474, help="neo4j http_port")
+    parser.add_argument("--graph_user", type=str, default="neo4j", help="neo4j user")
+    parser.add_argument("--graph_password", type=str, default="123456", help="neo4j password")
+    return parser.parse_args()
+
 
 def main():
     query = "故宫周末有学生票吗"
