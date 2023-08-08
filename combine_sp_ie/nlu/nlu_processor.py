@@ -18,7 +18,8 @@ from combine_sp_ie.nlu.relation_recognize import RelationRecognize
 
 
 class NLU():
-    def __init__(self):
+    def __init__(self, args):
+        self.args = args
         self.model_service = ModelService()
         # Query理解
         self.query_understand = QueryUnderstand()
