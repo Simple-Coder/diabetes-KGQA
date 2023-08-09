@@ -4,6 +4,10 @@ Created by xiedong
 """
 from combine_sp_ie.config.chat_config import semantic_slot
 
+from combine_sp_ie.config.logger_conf import my_log
+
+log = my_log.logger
+
 
 class NLG():
     def __init__(self, args):
