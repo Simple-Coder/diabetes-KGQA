@@ -7,6 +7,10 @@ from combine_sp_ie.utils.relation import translate_relation
 from combine_sp_ie.config.base_config import SubGraphConfig
 import combine_sp_ie.config.wrapper as wrapper
 
+from combine_sp_ie.config.logger_conf import my_log
+
+log = my_log.logger
+
 
 class SubgraphRetriever:
     def __init__(self, args):
@@ -19,6 +23,11 @@ class SubgraphRetriever:
         # 执行查询，召回与主实体和关系匹配的子图
         query = f"MATCH (subject)-[relation:{relation}]-(object) WHERE subject.name = '{main_entity}' RETURN subject, type(relation) AS relation, object"
         result = self.neo4j_client.execute(query)
+
+        # 异常check
+        if not result:
+            log.info("[子图召回] 结果为空,main_entity:{},relation:{}".format(main_entity, relation))
+            return None
 
         # 处理查询结果，将子图以三元组形式返回
         subgraphs = []
