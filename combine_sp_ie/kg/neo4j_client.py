@@ -21,5 +21,9 @@ class Neo4jClient():
             log.error("初始化链接neo4j失败！将无法查询neo4j...")
 
     def execute(self, cql):
-        result = self.graph.run(cql)
-        return result
+        try:
+            result = self.graph.run(cql)
+            return result
+        except Exception as e:
+            log.error("[Neo4jClient]执行异常,cql:{} error:{}".format(cql, e))
+            return None
