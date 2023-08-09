@@ -13,7 +13,7 @@ class KGQAProcessor():
         self.subgraph_retriever = SubgraphRetriever(args)
         self.subgraph_ranker = SubgraphRanker(args)
 
-    def search(self, query, constraint, main_entity, relation):
+    def search_sub_graph(self, query, constraint, main_entity, relation):
         # 1、子图召回
         subgraphs_with_embedding = self.subgraph_retriever.retrieve_subgrapsh_with_embedding(main_entity, relation)
 
