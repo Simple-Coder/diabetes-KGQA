@@ -24,7 +24,7 @@ class NLU():
         # Query理解
         self.query_understand = QueryUnderstand()
         # 关系识别
-        self.relation_recognize = RelationRecognize()
+        self.relation_recognize = RelationRecognize(args)
 
     def process_nlu(self, query):
         # 1、Query理解
