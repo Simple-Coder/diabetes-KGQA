@@ -37,5 +37,5 @@ def parse_arguments():
 if __name__ == '__main__':
     args = parse_arguments()
     kgqa_processor = KGQAProcessor(args)
-    subgraphs = kgqa_processor.search_sub_graph('', '', '糖尿病', 'Reason_Disease')
-    print()
+    subgraphs = kgqa_processor.search_sub_graph('', '', '糖尿病', 'Symptom_Disease')
+    print(subgraphs)

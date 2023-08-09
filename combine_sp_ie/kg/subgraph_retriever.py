@@ -21,7 +21,8 @@ class SubgraphRetriever:
 
     def retrieve_subgraphs(self, main_entity, relation):
         # 执行查询，召回与主实体和关系匹配的子图
-        query = f"MATCH (subject)-[relation:{relation}]-(object) WHERE subject.name = '{main_entity}' RETURN subject, type(relation) AS relation, object"
+        query = f"MATCH (n)-[r:{relation}]-(m) WHERE n.name CONTAINS '{main_entity}' OR m.name CONTAINS '{main_entity}' RETURN n, type(r) AS relationship, m"
+
         result = self.neo4j_client.execute(query)
 
         # 异常check
@@ -32,12 +33,12 @@ class SubgraphRetriever:
         # 处理查询结果，将子图以三元组形式返回
         subgraphs = []
         for record in result:
-            translated_relation_cn, translated_relation_en = translate_relation(record["relation"])
+            translated_relation_cn, translated_relation_en = translate_relation(record["relationship"])
             subgraph = {
-                "subject": record["subject"]["name"],
+                "node": record["n"]["name"],
                 # "relationship": record["relationship"],
-                "relation": translated_relation_cn,
-                "object": record["object"]["name"]
+                "relationship": translated_relation_cn,
+                "related_node": record["m"]["name"]
             }
             subgraphs.append(subgraph)
         return subgraphs
@@ -48,12 +49,23 @@ class SubgraphRetriever:
         :param subgraph:
         :return:
         """
-        node_embedding = wrapper.model(
-            **wrapper.tokenizer(subgraph["node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
+        # 使用正确的模型和分词器对象
+        model = wrapper.model
+        tokenizer = wrapper.tokenizer
+
+        # 编码节点
+        node_embedding = model(
+            **tokenizer(subgraph["node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(dim=1)
+
+        # 编码关系
+        relationship_embedding = model(
+            **tokenizer(subgraph["relationship"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
             dim=1)
-        relationship_embedding = wrapper.model(**wrapper.tokenizer(subgraph["relationship"], add_special_tokens=True,
-                                                                   return_tensors='pt')).last_hidden_state.mean(dim=1)
-        related_node_embedding = wrapper.model(**wrapper.tokenizer(subgraph["related_node"], add_special_tokens=True))
+
+        # 编码相关节点
+        related_node_embedding = model(
+            **tokenizer(subgraph["related_node"], add_special_tokens=True, return_tensors='pt')).last_hidden_state.mean(
+            dim=1)
 
         return node_embedding, relationship_embedding, related_node_embedding
 
