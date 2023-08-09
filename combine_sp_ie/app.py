@@ -32,6 +32,7 @@ def parse_arguments():
 
 
 def main():
+    # args
     args = parse_arguments()
 
     # 初始化 NLU 和 NLG
