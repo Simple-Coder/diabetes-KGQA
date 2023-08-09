@@ -69,6 +69,10 @@ class SubgraphRetriever:
     def retrieve_subgrapsh_with_embedding(self, main_entity, relation):
         # 1、查询原始子图
         subgraphs = self.retrieve_subgraphs(main_entity, relation)
+        if not subgraphs or len(subgraphs) == 0:
+            log.warn("[子图召回embedding] 子图为空，embedding exit")
+            return None
+
         subgraphs = subgraphs[:self.subgraph_config.subgraph_recall_size_limit]
 
         # 2、子团转embedding
