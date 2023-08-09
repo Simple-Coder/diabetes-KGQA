@@ -6,8 +6,9 @@ from combine_sp_ie.models.relation_matching_model import RelationMatchingModel
 
 
 class RelationRecognize():
-    def __init__(self):
-        self.relation_match_model = RelationMatchingModel()
+    def __init__(self, args):
+        self.args = args
+        self.relation_match_model = RelationMatchingModel(args.bert_dir)
 
     def relation_recognition(self, query, domain, syntax_analysis):
         candidate_relations = ["门票", "位置", "游览", "时间", "价格"]  # 假设的候选关系
