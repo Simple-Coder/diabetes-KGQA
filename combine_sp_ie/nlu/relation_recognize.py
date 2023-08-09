@@ -16,9 +16,12 @@ class RelationRecognize():
 
         # 基于依存分析等信息，对候选关系进行评分
         for relation in candidate_relations:
-            score = calculate_relation_score(query, domain, relation, syntax_analysis)
+            score = self.calculate_relation_score(query, domain, relation, syntax_analysis)
             relation_scores[relation] = score
 
         # 根据分数对关系进行排序
         sorted_relations = sorted(relation_scores.items(), key=lambda x: x[1], reverse=True)
         return sorted_relations
+
+    def calculate_relation_score(self, query, domain, relation, syntax_analysis):
+        return 0.9
