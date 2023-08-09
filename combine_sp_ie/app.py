@@ -45,7 +45,7 @@ def main():
     main_entity, recognized_relation = nlu.process_nlu(query)
 
     # 在这里可以根据 recognized_relation 做进一步的处理，例如从数据库中获取相关信息等
-    subgraph = kgqa_processor.search(query, '', main_entity, recognized_relation)
+    subgraph = kgqa_processor.search_sub_graph(query, '', main_entity, recognized_relation)
 
     # 通过 NLG 生成回复
     response = nlg.generate_response(query, subgraph)
