@@ -5,6 +5,9 @@ Created by xiedong
 import combine_sp_ie.config.wrapper as wrapper
 import torch
 from combine_sp_ie.config.base_config import SubGraphConfig
+from muti_server.utils.logger_conf import my_log
+
+log = my_log.logger
 
 
 class SubgraphRanker:
@@ -35,6 +38,9 @@ class SubgraphRanker:
         return similarity
 
     def rank_and_filter_subgraphs(self, query, constraint, subgraphs):
+        if not subgraphs or len(subgraphs) == 0:
+            log.warn("[答案排序] query:{}召回子图为空，排序结束".format(query))
+            return None
         # 1、query_embedding
         query_embedding = self.encode_query(query)
 
