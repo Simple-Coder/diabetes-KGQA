@@ -26,4 +26,4 @@ class ModelService():
         return intent, intent_conf, ner_result
 
     def dependency_analysis(self, query):
-        return None
+        return '', '', ''
