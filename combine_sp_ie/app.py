@@ -27,6 +27,7 @@ def parse_arguments():
     parser.add_argument("--graph_http_port", type=int, default=7474, help="neo4j http_port")
     parser.add_argument("--graph_user", type=str, default="neo4j", help="neo4j user")
     parser.add_argument("--graph_password", type=str, default="123456", help="neo4j password")
+    parser.add_argument("--bert_dir", type=str, default="D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext", help="neo4j password")
     return parser.parse_args()
 
 
