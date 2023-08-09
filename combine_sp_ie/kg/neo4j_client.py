@@ -17,6 +17,7 @@ class Neo4jClient():
                                http_port=args.graph_http_port,
                                user=args.graph_user,
                                password=args.graph_password)
+            log.info("初始化链接neo4j成功！等待查询neo4j...")
         except Exception as e:
             log.error("初始化链接neo4j失败！将无法查询neo4j...")
 
