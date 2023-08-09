@@ -16,6 +16,7 @@ class NLG():
     def generate_response(self, query, subgraph):
         # check
         if not subgraph:
+            log.warn("【NLG】子图不存在，返回默认回复")
             return semantic_slot.get("others").get("replay_answer")
 
         # 1、根据 {子图关系} 查询回复模板
