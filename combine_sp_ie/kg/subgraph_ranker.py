@@ -44,15 +44,19 @@ class SubgraphRanker:
         # 1、query_embedding
         query_embedding = self.encode_query(query)
 
-        ranked_and_filtered_subgraphs = sorted(
-            (graph for graph in subgraphs if
-             self.calculate_similarity(query_embedding,
-                                       graph["embedding"]) > self.subgraph_config.subgraph_recall_match_threshold),
-            key=lambda x: self.calculate_similarity(query_embedding, x["embedding"]),
-            reverse=True
-        )
+        ranked_and_filtered_subgraphs = []
+        for graph in subgraphs:
+            similarity = self.calculate_similarity(query_embedding, graph["embedding"])
+            if similarity > self.subgraph_config.subgraph_recall_match_threshold:
+                graph["score"] = similarity
+                ranked_and_filtered_subgraphs.append(graph)
+
+        ranked_and_filtered_subgraphs = sorted(ranked_and_filtered_subgraphs,
+                                               key=lambda x: x["score"],
+                                               reverse=True)
 
         return ranked_and_filtered_subgraphs
+
         # # 假设相关性分数已经计算好，可以根据实际情况替换为实际的分数计算方法
         # sorted_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_subgraph_score(query, x), reverse=True)
         #
