@@ -3,7 +3,7 @@ Created by xiedong
 @Date: 2023/4/5 22:25
 """
 semantic_slot = {
-    "symptom_disease": {
+    "Symptom_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         # "cql_template": "MATCH(p:疾病)-[r:has_symptom]->(q:症状) WHERE p.name='{Disease}' RETURN q.name",
@@ -15,7 +15,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "人类的语言太难了！！"
     },
-    "reason_disease": {
+    "Reason_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`病因`) -[r:Reason_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -26,7 +26,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "您说的我有点不明白，您可以换个问法问我哦~"
     },
-    "ade_drug": {
+    "ADE_Drug": {
         "slot_list": ["drug"],
         "slot_values": None,
         "cql_template": "MATCH (p:`不良反应`) -[r:ADE_Drug]->(q:`药物名称`) where q.name='{drug}' return p.name",
@@ -37,7 +37,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "呃，我好像没太听懂，您可以换个问法问我哦~"
     },
-    "amount_drug": {
+    "Amount_Drug": {
         "slot_list": ["drug"],
         "slot_values": None,
         "cql_template": "MATCH (p:`用药剂量`) -[r:Amount_Drug]->(q:`药物名称`) where q.name='{drug}' return p.name",
@@ -48,7 +48,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "对不起，我听起来似乎有些不太明白，您可以换个问法问我哦~"
     },
-    "anatomy_disease": {
+    "Anatomy_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`部位`) -[r:Anatomy_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -59,7 +59,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "我不太明白您的话，您可以换个问法问我哦~"
     },
-    "class_disease": {
+    "Class_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`分期类型`) -[r:Class_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -70,7 +70,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "我没太明白您刚才的话，有些摸不着头脑，您可以换个问法问我哦~"
     },
-    "drug_disease": {
+    "Drug_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`药品名称`) -[r:Drug_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -81,7 +81,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "额~似乎有点不理解您说的是啥呢~~"
     },
-    "method_drug": {
+    "Method_Drug": {
         "slot_list": ["drug"],
         "slot_values": None,
         "cql_template": "MATCH (p:`用药方法`) -[r:Method_Drug]->(q:`药品名称`) where q.name='{drug}' return p.name",
@@ -92,7 +92,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "我听起来有点糊涂，您可以换个问法问我哦~"
     },
-    "duration_drug": {
+    "Duration_Drug": {
         "slot_list": ["drug"],
         "slot_values": None,
         "cql_template": "MATCH (p:`持续时间`) -[r:Duration_Drug]->(q:`药品名称`) where q.name='{drug}' return p.name",
@@ -103,7 +103,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "很抱歉，我听不太懂，您可以换个问法问我哦~"
     },
-    "frequency_drug": {
+    "Frequency_Drug": {
         "slot_list": ["drug"],
         "slot_values": None,
         "cql_template": "MATCH (p:`用药频率`) -[r:Frequency_Drug]->(q:`药品名称`) where q.name='{drug}' return p.name",
@@ -125,7 +125,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "哦~我有点难以理解您所说的内容，您可以换个问法问我哦~"
     },
-    "pathogenesis_disease": {
+    "Pathogenesis_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`发病机制`) -[r:Pathogenesis_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -136,7 +136,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "很抱歉，我理解起来有点困难，您可以换个问法问我哦~"
     },
-    "test_disease": {
+    "Test_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`检查方法`) -[r:Test_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -147,7 +147,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "嗯，我有点迷糊，您可以换个问法问我哦~"
     },
-    "test_items_disease": {
+    "Test_items_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`检查指标`) -[r:Test_items_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
@@ -158,7 +158,7 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "对不起，我好像没太理解您说的话，请您再换个方式表达一下哦~"
     },
-    "treatment_disease": {
+    "Treatment_Disease": {
         "slot_list": ["disease"],
         "slot_values": None,
         "cql_template": "MATCH (p:`非药治疗`) -[r:Treatment_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
