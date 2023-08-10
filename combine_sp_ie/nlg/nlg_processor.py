@@ -5,6 +5,7 @@ Created by xiedong
 from combine_sp_ie.config.chat_config import semantic_slot
 
 from combine_sp_ie.config.logger_conf import my_log
+from combine_sp_ie.utils.relation import translate_relation
 
 log = my_log.logger
 
@@ -33,7 +34,7 @@ class NLG():
         grouped_results = [[group["related_node"], group["relation"], group["subgraphs"]] for group in
                            grouped_subgraphs.values()]
 
-        return grouped_results
+        return grouped_results[0]
 
     def generate_response(self, query, subgraph):
         # check
@@ -50,7 +51,8 @@ class NLG():
 
     def select_response_template(self, subgraph):
         relation = subgraph[1]
-        response_info = semantic_slot.get(relation)
+        translated_relation_cn, translated_relation_en = translate_relation(relation)
+        response_info = semantic_slot.get(translated_relation_en)
         if not response_info:
             return semantic_slot.get("others").get("replay_answer")
 
