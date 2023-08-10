@@ -34,4 +34,4 @@ class NLU():
         recognize_relation = self.relation_recognize.relation_recognition(query, intent, dependency_analysis)
 
         # return main_entity, recognize_relation
-        return '糖尿病', 'symptom_disease'
+        return '糖尿病', 'Symptom_Disease'
