@@ -61,7 +61,7 @@ class NLG():
     def fill_response_template(self, template, subgraph):
         # 根据子图内容填充回复模板
         if isinstance(subgraph[-1], list):
-            filled_response = template.format(", ".join(subgraph[-1]))
+            filled_response = template.format(subgraph[0], ", ".join(subgraph[-1]))
         else:
             filled_response = template.format(*subgraph[1:])  # 忽略第一个元素（主题实体）
         return filled_response
