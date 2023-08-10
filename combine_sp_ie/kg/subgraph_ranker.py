@@ -35,7 +35,7 @@ class SubgraphRanker:
 
         # 计算余弦相似度
         similarity = torch.cosine_similarity(query_embedding, subgraph_embedding, dim=1)
-        return similarity
+        return similarity.item()
 
     def rank_and_filter_subgraphs(self, query, constraint, subgraphs):
         if not subgraphs or len(subgraphs) == 0:
@@ -54,8 +54,13 @@ class SubgraphRanker:
         ranked_and_filtered_subgraphs = sorted(ranked_and_filtered_subgraphs,
                                                key=lambda x: x["score"],
                                                reverse=True)
+        # 创建一个新的列表，保留除了 "embedding" 字段之外的所有字段
+        result = []
+        for graph in ranked_and_filtered_subgraphs:
+            filtered_graph = {key: value for key, value in graph.items() if key != "embedding"}
+            result.append(filtered_graph)
 
-        return ranked_and_filtered_subgraphs
+        return result
 
         # # 假设相关性分数已经计算好，可以根据实际情况替换为实际的分数计算方法
         # sorted_subgraphs = sorted(subgraphs, key=lambda x: self.calculate_subgraph_score(query, x), reverse=True)
