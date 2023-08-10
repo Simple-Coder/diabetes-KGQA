@@ -27,7 +27,7 @@ subgraphs = [
     {"info": {"node": "失明", "relationship": "临床表现", "related_node": "糖尿病"}, "score": 0.632},
     {"info": {"node": "再狭窄", "relationship": "临床表现", "related_node": "糖尿病"}, "score": 0.628},
     {"info": {"node": "内疚感", "relationship": "临床表现", "related_node": "糖尿病"}, "score": 0.615},
-    {"info": {"node": "创面", "relationship": "临床表现", "related_node": "糖尿病"}, "score": 0.574}
+    {"info": {"node": "创面", "relationship": "临床表现1", "related_node": "糖尿病"}, "score": 0.574}
 ]
 
 grouped_results = group_subgraphs_by_relation(subgraphs)
