@@ -41,7 +41,7 @@ def main():
     kgqa_processor = KGQAProcessor(args)
 
     # 输入查询
-    query = "故宫门票价格是多少？"
+    query = "糖尿病的临床表现有哪些？"
 
     # 通过 NLU 进行查询理解和关系识别
     main_entity, recognized_relation = nlu.process_nlu(query)
@@ -50,6 +50,7 @@ def main():
     subgraph = kgqa_processor.search_sub_graph(query, '', main_entity, recognized_relation)
 
     # 通过 NLG 生成回复
+    subgraph = nlg.group_subgraphs_by_relation(subgraph)
     response = nlg.generate_response(query, subgraph)
 
     # 输出生成的回复
