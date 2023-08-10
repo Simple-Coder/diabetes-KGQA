@@ -17,19 +17,22 @@ class NLG():
         if not subgraphs or len(subgraphs) == 0:
             log.warn("[nlg]子图为空，合并子图结束,ext")
             return None
-        grouped_subgraphs = {}  # 创建一个空的字典用于分组
+        grouped_subgraphs = {}
 
         for graph in subgraphs:
             relation_info = graph["info"]["relationship"]
             related_node = graph["info"]["related_node"]
+            node = graph["info"]["node"]
 
             key = (relation_info, related_node)  # 使用关系和关联节点作为组合的键
             if key not in grouped_subgraphs:
                 grouped_subgraphs[key] = {"relation": relation_info, "related_node": related_node, "subgraphs": []}
 
-            grouped_subgraphs[key]["subgraphs"].append(graph)
+            grouped_subgraphs[key]["subgraphs"].append(node)
 
-        grouped_results = list(grouped_subgraphs.values())
+        grouped_results = [[group["related_node"], group["relation"], group["subgraphs"]] for group in
+                           grouped_subgraphs.values()]
+
         return grouped_results
 
     def generate_response(self, query, subgraph):
