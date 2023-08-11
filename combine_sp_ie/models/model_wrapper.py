@@ -22,7 +22,7 @@ class ModelService():
         """
         intent = 'Reason_Disease'
         intent_conf = 0.5
-        ner_result = []
+        ner_result = ["糖尿病"]
         return intent, intent_conf, ner_result
 
     def dependency_analysis(self, query):
