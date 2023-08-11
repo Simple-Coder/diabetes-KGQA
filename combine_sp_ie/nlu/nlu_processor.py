@@ -22,7 +22,7 @@ class NLU():
         self.args = args
         self.model_service = ModelService()
         # Query理解
-        self.query_understand = QueryUnderstand()
+        self.query_understand = QueryUnderstand(args)
         # 关系识别
         self.relation_recognize = RelationRecognize(args)
 

@@ -9,9 +9,10 @@ from combine_sp_ie.nlu.entity_link import EntityLinkService
 
 
 class QueryUnderstand():
-    def __init__(self):
+    def __init__(self, args):
+        self.args = args
         self.model_service = ModelService()
-        self.entity_link_service = EntityLinkService()
+        self.entity_link_service = EntityLinkService(args)
 
     def query_understanding(self, query):
         # main_entity = None  # 初始化主实体
