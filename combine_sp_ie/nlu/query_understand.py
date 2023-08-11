@@ -6,6 +6,9 @@ Created by xiedong
 import re
 from combine_sp_ie.models.model_wrapper import ModelService
 from combine_sp_ie.nlu.entity_link import EntityLinkService
+from combine_sp_ie.config.logger_conf import my_log
+
+log = my_log.logger
 
 
 class QueryUnderstand():
