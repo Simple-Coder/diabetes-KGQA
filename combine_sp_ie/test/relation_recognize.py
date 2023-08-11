@@ -40,15 +40,16 @@ class RelationMatchingModel(nn.Module):
         return relation_scores
 
 
-# 示例使用
-model = RelationMatchingModel(num_layers=3)
+if __name__ == '__main__':
+    # 示例使用
+    model = RelationMatchingModel(num_layers=3)
 
-input_queries = ["法国的首都是什么？", "谁写了哈利波特？"]
-input_features = {
-    "domain": torch.tensor([[0.1, 0.2]]),  # 示例领域特征
-    "syntax": torch.tensor([[0.3, 0.4]])  # 示例句法特征
-}
+    input_queries = ["法国的首都是什么？", "谁写了哈利波特？"]
+    input_features = {
+        "domain": torch.tensor([[0.1, 0.2]]),  # 示例领域特征
+        "syntax": torch.tensor([[0.3, 0.4]])  # 示例句法特征
+    }
 
-candidate_relations = ["的首都是", "写了", "由谁写"]
-relation_scores = model(input_queries, input_features, candidate_relations)
-print(relation_scores)
+    candidate_relations = ["的首都是", "写了", "由谁写"]
+    relation_scores = model(input_queries, input_features, candidate_relations)
+    print(relation_scores)
