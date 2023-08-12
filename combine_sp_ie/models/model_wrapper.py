@@ -4,11 +4,15 @@ Created by xiedong
 模型包装类
 """
 from ltp import LTP
+from transformers import BertTokenizer, BertModel
+from combine_sp_ie.config.base_config import GlobalConfig
 
 
 class ModelService():
     def __init__(self):
-        self.model = LTP()
+        self.ltp_model = LTP()
+        self.tokenizer = BertTokenizer.from_pretrained(GlobalConfig.bert_dir)
+        self.model = BertModel.from_pretrained(GlobalConfig.bert_dir)
 
     def ner(self, query):
         result = self.model.pipeline([query], tasks=["cws", "ner"])
@@ -27,3 +31,6 @@ class ModelService():
 
     def dependency_analysis(self, query):
         return '', '', ''
+
+
+model_service = ModelService()
