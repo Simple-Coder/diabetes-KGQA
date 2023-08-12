@@ -21,7 +21,7 @@ class MyLog(object):
     def __init__(self):
         self.logger = logging.getLogger()
         self.formatter = logging.Formatter(fmt=FMT, datefmt=DATEFMT)
-        self.log_filename = '{0}{1}.log'.format(GlobalConfig.logs_dir, strftime("%Y-%m-%d"))
+        self.log_filename = '{0}/{1}.log'.format(GlobalConfig.logs_dir, strftime("%Y-%m-%d"))
 
         # 清除已存在的处理程序，避免重复添加
         self.logger.handlers.clear()
