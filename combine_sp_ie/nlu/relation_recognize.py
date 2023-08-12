@@ -2,14 +2,10 @@
 Created by xiedong
 @Date: 2023/8/8 17:36
 """
-from combine_sp_ie.models.relation_matching_model import RelationMatchingModel
+from combine_sp_ie.models.relation_matching_model import relation_matching_model
 
 
 class RelationRecognize():
-    def __init__(self, args):
-        self.args = args
-        self.relation_match_model = RelationMatchingModel(args.bert_dir)
-
     def relation_recognition(self, query, domain, syntax_analysis):
         candidate_relations = ["门票", "位置", "游览", "时间", "价格"]  # 假设的候选关系
         relation_scores = {}  # 存储关系及其分数的字典

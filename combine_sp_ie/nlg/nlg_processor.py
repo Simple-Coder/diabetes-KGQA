@@ -11,9 +11,6 @@ log = my_log.logger
 
 
 class NLG():
-    def __init__(self, args):
-        self.args = args
-
     def group_subgraphs_by_relation(self, subgraphs):
         if not subgraphs or len(subgraphs) == 0:
             log.warn("[nlg]子图为空，合并子图结束,ext")

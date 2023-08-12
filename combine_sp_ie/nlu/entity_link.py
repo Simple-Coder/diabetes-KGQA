@@ -7,8 +7,8 @@ from combine_sp_ie.kg.neo4j_client import Neo4jClient
 
 
 class EntityLinkService():
-    def __init__(self, args):
-        self.neo4j_Client = Neo4jClient(args)
+    def __init__(self):
+        self.neo4j_Client = Neo4jClient()
 
     def link_entity(self, named_entity):
         # 使用Cypher查询在Neo4j中查找实体，并计算相似度

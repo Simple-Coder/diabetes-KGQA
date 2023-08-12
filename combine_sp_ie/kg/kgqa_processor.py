@@ -8,10 +8,9 @@ from combine_sp_ie.kg.subgraph_ranker import SubgraphRanker
 
 
 class KGQAProcessor():
-    def __init__(self, args):
-        self.args = args
-        self.subgraph_retriever = SubgraphRetriever(args)
-        self.subgraph_ranker = SubgraphRanker(args)
+    def __init__(self):
+        self.subgraph_retriever = SubgraphRetriever()
+        self.subgraph_ranker = SubgraphRanker()
 
     def search_sub_graph(self, query, constraint, main_entity, relation):
         # 1、子图召回

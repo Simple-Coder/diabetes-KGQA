@@ -4,18 +4,17 @@ Created by xiedong
 """
 
 import re
-from combine_sp_ie.models.model_wrapper import ModelService
-from combine_sp_ie.nlu.entity_link import EntityLinkService
+
 from combine_sp_ie.config.logger_conf import my_log
+from combine_sp_ie.models.model_wrapper import model_service
+from combine_sp_ie.nlu.entity_link import EntityLinkService
 
 log = my_log.logger
 
 
 class QueryUnderstand():
-    def __init__(self, args):
-        self.args = args
-        self.model_service = ModelService()
-        self.entity_link_service = EntityLinkService(args)
+    def __init__(self):
+        self.entity_link_service = EntityLinkService()
 
     def query_understanding(self, query):
         # main_entity = None  # 初始化主实体
@@ -25,7 +24,7 @@ class QueryUnderstand():
         dependency_analysis = None  # 初始化问题类型
 
         # 1、意图识别、意图强度、ner结果
-        intent, intent_conf, ner_result = self.model_service.ner_and_recognize_intent(query)
+        intent, intent_conf, ner_result = model_service.ner_and_recognize_intent(query)
 
         # 2、实体链接
         linked_entity_result = self.entity_link_service.entity_links(ner_result)
@@ -36,7 +35,7 @@ class QueryUnderstand():
                                                 query_with_linked_entities)
 
         # 3、依存分析
-        main_entity, question_info, constraints = self.model_service.dependency_analysis(query_with_linked_entities)
+        main_entity, question_info, constraints = model_service.dependency_analysis(query_with_linked_entities)
 
         # main_entity = "故宫"  # 模拟直接识别出主实体
         # domain = "旅游"  # 模拟直接识别出业务领域

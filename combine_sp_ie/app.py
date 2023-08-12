@@ -13,32 +13,17 @@ unite_sematic_parsing_information_extraction
 """
 # main.py
 
-from combine_sp_ie.nlu.nlu_processor import NLU
-from combine_sp_ie.nlg.nlg_processor import NLG
 from combine_sp_ie.kg.kgqa_processor import KGQAProcessor
-
-import argparse
-
-
-def parse_arguments():
-    parser = argparse.ArgumentParser(description="Dialog System")
-    parser.add_argument("--port", type=int, default=9001, help="WebSocket server port")
-    parser.add_argument("--graph_host", type=str, default="127.0.0.1", help="neo4j host")
-    parser.add_argument("--graph_http_port", type=int, default=7474, help="neo4j http_port")
-    parser.add_argument("--graph_user", type=str, default="neo4j", help="neo4j user")
-    parser.add_argument("--graph_password", type=str, default="123456", help="neo4j password")
-    parser.add_argument("--bert_dir", type=str, default="D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext", help="neo4j password")
-    return parser.parse_args()
+from combine_sp_ie.nlg.nlg_processor import NLG
+from combine_sp_ie.nlu.nlu_processor import NLU
 
 
 def main():
-    # args
-    args = parse_arguments()
 
     # 初始化 NLU 和 NLG
-    nlu = NLU(args)
-    nlg = NLG(args)
-    kgqa_processor = KGQAProcessor(args)
+    nlu = NLU()
+    nlg = NLG()
+    kgqa_processor = KGQAProcessor()
 
     # 输入查询
     query = "糖尿病的临床表现有哪些？"
