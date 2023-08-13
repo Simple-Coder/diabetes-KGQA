@@ -14,3 +14,6 @@ class GlobalConfig:
     web_socket_port = 9999
     subgraph_recall_size_limit = 100
     subgraph_recall_match_threshold = 0.5
+    # 多标签分类意图阈值
+    muti_intent_threshold = 0.5
+    muti_intent_threshold_num = 2
