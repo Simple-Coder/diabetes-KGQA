@@ -216,6 +216,20 @@ CATEGORY_INDEX = {'疾病': 0, '疾病分期类型': 1, '病因': 2, '发病机�
 from enum import Enum
 
 
+class AnswerStretegy(Enum):
+    FindSuccess = 1
+    NotFindData = 2
+
+
+class IntentEnum(Enum):
+    Gossip = 1
+    Others = 2
+    Accept = 3
+    Medical = 4
+    Clarify = 5
+    DENY = 6
+
+
 class AnswerEnum(Enum):
     # 2个均为闲聊：取第一个回答
     ANSWER_ALL_GOSSIP = 1
