@@ -29,11 +29,10 @@ class NLU():
     def process_nlu(self, query):
         log.info("【NLU】Query:{}理解开始".format(query))
         # 1、Query理解
-        main_entity, intent, intent_conf, question_type, dependency_analysis \
-            = self.query_understand.query_understanding(query)
+        semantic_info = self.query_understand.query_understanding(query)
         # 2、关系识别
-        recognize_relation = self.relation_recognize.relation_recognition(query, intent, dependency_analysis)
+        semantic_info = self.relation_recognize.relation_recognition(semantic_info)
 
         # return main_entity, recognize_relation
         log.info("【NLU】Query:{}理解结束".format(query))
-        return '糖尿病', 'Symptom_Disease'
+        return semantic_info

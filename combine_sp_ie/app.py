@@ -16,10 +16,14 @@ unite_sematic_parsing_information_extraction
 from combine_sp_ie.kg.kgqa_processor import KGQAProcessor
 from combine_sp_ie.nlg.nlg_processor import NLG
 from combine_sp_ie.nlu.nlu_processor import NLU
+from combine_sp_ie.config.logger_conf import my_log
+from combine_sp_ie.config.base_config import GlobalConfig
+from combine_sp_ie.web.robot_server import RobotWebsocketServer
+
+log = my_log.logger
 
 
 def main():
-
     # 初始化 NLU 和 NLG #
     nlu = NLU()
     nlg = NLG()
@@ -42,5 +46,13 @@ def main():
     print(response)
 
 
+def mainWebSocket():
+    # 创建 WebSocket 服务器
+    server = RobotWebsocketServer()
+    log.info("服务端启动成功,端口:{}".format(GlobalConfig.web_socket_port))
+    server.start()
+
+
 if __name__ == "__main__":
-    main()
+    # main()
+    mainWebSocket()
