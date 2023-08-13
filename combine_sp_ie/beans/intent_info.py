@@ -3,6 +3,8 @@ Created by xiedong
 @Date: 2023/8/13 12:02
 """
 
+from combine_sp_ie.nlu.nlu_utils import build_intent_enum
+
 
 class IntentInfo:
     def __init__(self, intent, intensity):
