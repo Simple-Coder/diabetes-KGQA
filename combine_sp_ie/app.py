@@ -20,7 +20,7 @@ from combine_sp_ie.nlu.nlu_processor import NLU
 
 def main():
 
-    # 初始化 NLU 和 NLG
+    # 初始化 NLU 和 NLG #
     nlu = NLU()
     nlg = NLG()
     kgqa_processor = KGQAProcessor()
