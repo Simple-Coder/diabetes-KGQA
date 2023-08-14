@@ -126,8 +126,32 @@ def main():
         # 生成回答
         response = "；".join([generate_answer(entity, relation) for entity, relation in zip(path, path[1:])])
         print("答案:", response)
+
+        # 在 main 函数中调用 generate_detailed_answer
+        if path:
+            response = "；".join([generate_answer(entity, relation) for entity, relation in zip(path, path[1:])])
+            print("答案:", response)
+            response_templates = {
+                "治疗": "'{}' 的治疗方式一般是这样的：{}",
+                "剂量和频率": "'{}' 的剂量和频率一般是这样的：{}",
+                "不良反应": "'{}' 的不良反应可能包括：{}",
+                # 在这里添加更多关系和对应的回复模板
+            }
+            detailed_answer = generate_detailed_answer(path, response_templates)
+            print("详细回答:", detailed_answer)
     else:
         print("无法识别问题中的实体")
+
+
+def generate_detailed_answer(path, response_templates):
+    detailed_answers = []
+    for i in range(len(path) - 1):
+        current_relation = path[i]
+        next_relation = path[i + 1]
+        response_template = response_templates.get(current_relation, "'{}'的信息为：{}")
+        detailed_answer = response_template.format(current_relation, next_relation)
+        detailed_answers.append(detailed_answer)
+    return "；".join(detailed_answers)
 
 
 if __name__ == "__main__":
