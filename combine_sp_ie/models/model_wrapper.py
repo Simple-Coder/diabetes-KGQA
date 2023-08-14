@@ -45,16 +45,16 @@ class ModelService():
     def dependency_analysis(self, query):
         return '', '', ''
 
-    def calculate_similarity_scores(self, bert_model, question, candidate_texts):
+    def calculate_similarity_scores(self, question, candidate_texts):
         question_tokens = self.tokenizer.tokenize(question)
         question_inputs = self.tokenizer.encode_plus(question_tokens, add_special_tokens=True, return_tensors='pt')
-        question_embedding = bert_model(**question_inputs).last_hidden_state.mean(dim=1)  # 使用平均池化
+        question_embedding = self.model(**question_inputs).last_hidden_state.mean(dim=1)  # 使用平均池化
 
         candidate_embeddings = []
         for text in candidate_texts:
             text_tokens = self.tokenizer.tokenize(text)
             text_inputs = self.tokenizer.encode_plus(text_tokens, add_special_tokens=True, return_tensors='pt')
-            text_embedding = bert_model(**text_inputs).last_hidden_state.mean(dim=1)
+            text_embedding = self.model(**text_inputs).last_hidden_state.mean(dim=1)
             candidate_embeddings.append(text_embedding)
 
         similarity_scores = []
