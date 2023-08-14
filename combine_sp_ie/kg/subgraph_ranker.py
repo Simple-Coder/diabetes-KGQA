@@ -2,27 +2,23 @@
 Created by xiedong
 @Date: 2023/8/8 12:49
 """
-import combine_sp_ie.config.wrapper as wrapper
+from combine_sp_ie.models.model_wrapper import model_service
 import torch
-from combine_sp_ie.config.base_config import SubGraphConfig
+from combine_sp_ie.config.base_config import GlobalConfig
 from muti_server.utils.logger_conf import my_log
 
 log = my_log.logger
 
 
 class SubgraphRanker:
-    def __init__(self, args):
-        self.args = args
-        self.subgraph_config = SubGraphConfig()
-
     def encode_query(self, query):
         """
         对用户query进行编码，后续计算相似度时使用
         :param query:
         :return:
         """
-        inputs = wrapper.tokenizer.encode_plus(query, add_special_tokens=True, return_tensors='pt')
-        outputs = wrapper.model(**inputs)
+        inputs = model_service.tokenizer.encode_plus(query, add_special_tokens=True, return_tensors='pt')
+        outputs = model_service.model(**inputs)
         query_embedding = outputs.last_hidden_state.mean(dim=1)  # 平均池化操作
         return query_embedding
 
@@ -47,7 +43,7 @@ class SubgraphRanker:
         ranked_and_filtered_subgraphs = []
         for graph in subgraphs:
             similarity = self.calculate_similarity(query_embedding, graph["embedding"])
-            if similarity > self.subgraph_config.subgraph_recall_match_threshold:
+            if similarity > GlobalConfig.subgraph_recall_match_threshold:
                 graph["score"] = similarity
                 ranked_and_filtered_subgraphs.append(graph)
 

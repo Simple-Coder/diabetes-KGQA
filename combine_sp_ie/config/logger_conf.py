@@ -7,9 +7,10 @@ import os
 import sys
 import logging
 from time import strftime
+from combine_sp_ie.config.base_config import GlobalConfig
 
 # 输出日志路径
-PATH = os.path.abspath('D:\dev\PycharmProjects\diabetes-KGQA\combine_sp_ie') + '/logs/'
+# PATH = os.path.abspath('D:\dev\PycharmProjects\diabetes-KGQA\combine_sp_ie') + '/logs/'
 # PATH = os.path.abspath('/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server') + '/logs/'
 # 设置日志格式#和时间格式
 FMT = '%(asctime)s %(filename)s [line:%(lineno)d] %(levelname)s: %(message)s'
@@ -20,7 +21,7 @@ class MyLog(object):
     def __init__(self):
         self.logger = logging.getLogger()
         self.formatter = logging.Formatter(fmt=FMT, datefmt=DATEFMT)
-        self.log_filename = '{0}{1}.log'.format(PATH, strftime("%Y-%m-%d"))
+        self.log_filename = '{0}/{1}.log'.format(GlobalConfig.logs_dir, strftime("%Y-%m-%d"))
 
         # 清除已存在的处理程序，避免重复添加
         self.logger.handlers.clear()
@@ -47,5 +48,6 @@ class MyLog(object):
 my_log = MyLog()
 
 if __name__ == '__main__':
-    PATH = os.path.abspath('D:\dev\PycharmProjects\diabetes-KGQA\muti_server') + '/logs/'
-    print(PATH)
+    # PATH = os.path.abspath('D:\dev\PycharmProjects\diabetes-KGQA\muti_server') + '/logs/'
+    # print(PATH)
+    pass

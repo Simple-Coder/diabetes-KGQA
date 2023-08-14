@@ -1,14 +1,15 @@
 import torch
 import torch.nn as nn
 from transformers import BertModel, BertTokenizer
+from combine_sp_ie.config.base_config import GlobalConfig
 
 
 class RelationMatchingModel(nn.Module):
-    def __init__(self, bert_dir, num_layers=3):
+    def __init__(self, num_layers=3):
         super(RelationMatchingModel, self).__init__()
         self.num_layers = num_layers
-        self.bert = BertModel.from_pretrained(bert_dir)
-        self.tokenizer = BertTokenizer.from_pretrained(bert_dir)
+        self.bert = BertModel.from_pretrained(GlobalConfig.bert_dir)
+        self.tokenizer = BertTokenizer.from_pretrained(GlobalConfig.bert_dir)
         self.relation_classifier = nn.Linear(self.bert.config.hidden_size * 3, 1)
 
     def forward(self, input_queries, main_entities, candidate_relations):
@@ -18,7 +19,7 @@ class RelationMatchingModel(nn.Module):
         main_entities_ids = self.tokenizer(main_entities, padding=True, truncation=True, return_tensors="pt")[
             "input_ids"]
         candidate_relations_ids = \
-        self.tokenizer(candidate_relations, padding=True, truncation=True, return_tensors="pt")["input_ids"]
+            self.tokenizer(candidate_relations, padding=True, truncation=True, return_tensors="pt")["input_ids"]
 
         # 使用BERT编码输入的查询、主实体和候选关系
         encoded_queries = self.bert(input_queries_ids)[0]
@@ -43,10 +44,12 @@ class RelationMatchingModel(nn.Module):
         return sorted_relations
 
 
+relation_matching_model = RelationMatchingModel()
+
+
 if __name__ == '__main__':
     # 示例使用
-    bert_dir = 'D:\dev\PycharmProjects\diabetes-KGQA\server\chinese-bert-wwm-ext'
-    model = RelationMatchingModel(bert_dir, num_layers=3)
+    model = RelationMatchingModel(num_layers=3)
 
     input_queries = ["法国的首都是什么？", "谁写了哈利波特？"]
     main_entities = ["法国", "谁"]

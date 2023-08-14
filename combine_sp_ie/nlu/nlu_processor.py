@@ -12,26 +12,27 @@ Query理解是KBQA的第一个核心模块，负责对句子的各个成分进�
 
 """
 
-from combine_sp_ie.models.model_wrapper import ModelService
+from combine_sp_ie.config.logger_conf import my_log
 from combine_sp_ie.nlu.query_understand import QueryUnderstand
 from combine_sp_ie.nlu.relation_recognize import RelationRecognize
 
+log = my_log.logger
+
 
 class NLU():
-    def __init__(self, args):
-        self.args = args
-        self.model_service = ModelService()
+    def __init__(self):
         # Query理解
-        self.query_understand = QueryUnderstand(args)
+        self.query_understand = QueryUnderstand()
         # 关系识别
-        self.relation_recognize = RelationRecognize(args)
+        self.relation_recognize = RelationRecognize()
 
     def process_nlu(self, query):
+        log.info("【NLU】Query:{}理解开始".format(query))
         # 1、Query理解
-        main_entity, intent, intent_conf, question_type, dependency_analysis \
-            = self.query_understand.query_understanding(query)
+        semantic_info = self.query_understand.query_understanding(query)
         # 2、关系识别
-        recognize_relation = self.relation_recognize.relation_recognition(query, intent, dependency_analysis)
+        semantic_info = self.relation_recognize.relation_recognition(semantic_info)
 
         # return main_entity, recognize_relation
-        return '糖尿病', 'Symptom_Disease'
+        log.info("【NLU】Query:{}理解结束".format(query))
+        return semantic_info
