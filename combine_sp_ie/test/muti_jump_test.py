@@ -25,40 +25,48 @@ class SimilarityModel(torch.nn.Module):
         cos_sim = torch.nn.functional.cosine_similarity(input_embedding_mapped, entity_embedding, dim=0)
         return cos_sim
 
-def calculate_similarity_scores(bert_model, input_text, candidate_text_list):
-    input_tokens = tokenizer.tokenize(input_text)
-    input_inputs = tokenizer.encode_plus(input_tokens, add_special_tokens=True, return_tensors='pt')
-    input_embedding = bert_model(**input_inputs).last_hidden_state.mean(dim=1)  # 使用平均池化
+
+def calculate_similarity_scores(bert_model, question, candidate_texts):
+    question_tokens = tokenizer.tokenize(question)
+    question_inputs = tokenizer.encode_plus(question_tokens, add_special_tokens=True, return_tensors='pt')
+    question_embedding = bert_model(**question_inputs).last_hidden_state.mean(dim=1)  # 使用平均池化
 
     candidate_embeddings = []
-    for candidate_text in candidate_text_list:
-        candidate_tokens = tokenizer.tokenize(candidate_text)
-        candidate_inputs = tokenizer.encode_plus(candidate_tokens, add_special_tokens=True, return_tensors='pt')
-        candidate_embedding = bert_model(**candidate_inputs).last_hidden_state.mean(dim=1)  # 使用平均池化
-        candidate_embeddings.append(candidate_embedding)
+    for text in candidate_texts:
+        text_tokens = tokenizer.tokenize(text)
+        text_inputs = tokenizer.encode_plus(text_tokens, add_special_tokens=True, return_tensors='pt')
+        text_embedding = bert_model(**text_inputs).last_hidden_state.mean(dim=1)
+        candidate_embeddings.append(text_embedding)
 
     similarity_scores = []
-    for candidate_embedding in candidate_embeddings:
-        score = torch.nn.functional.cosine_similarity(input_embedding, candidate_embedding, dim=1)
-        similarity_scores.append(score.item())
+    for embedding in candidate_embeddings:
+        # 计算余弦相似度得分
+        cos_sim = torch.nn.functional.cosine_similarity(question_embedding, embedding, dim=1)
+        similarity_scores.append(cos_sim.item())  # 将相似度得分添加到列表中
 
     return similarity_scores
 
-def select_next_relation_and_entities(neighbors, current_relation):
+
+def select_next_relation_and_entities(question, neighbors, current_relation):
     next_relation = None
     next_entities = []
 
+    max_score = -1  # 初始化最大得分
     for relation, next_entity_list in neighbors.items():
         if relation != current_relation and next_entity_list:
-            candidate_texts = [relation] + next_entity_list
-            similarity_scores = calculate_similarity_scores(bert_model, current_relation, candidate_texts)
-            max_score_idx = similarity_scores.index(max(similarity_scores))
+            # 将当前关系与下一步关系拼接，以区分不同关系的候选实体
+            candidate_texts = [current_relation] + [relation] + next_entity_list
+            similarity_scores = calculate_similarity_scores(bert_model, question, candidate_texts)
 
-            next_relation = relation
-            next_entities = next_entity_list
-            break
+            # 选择与当前关系最相似的关系和实体
+            current_max_score = max(similarity_scores)
+            if current_max_score > max_score:
+                max_score = current_max_score
+                next_relation = relation
+                next_entities = next_entity_list
 
     return next_relation, next_entities
+
 
 def generate_answer(entity, relation):
     if relation.endswith("剂量和频率"):
@@ -75,9 +83,12 @@ def main():
     # 构建问题和知识图谱
     question = "对于患有高血压的患者，有哪些药物可以治疗？药物的剂量和频率是多少？"
     knowledge_graph = {
-        "高血压": {"治疗": ["药物A"]},
-        "药物A": {"剂量和频率": ["剂量X每天一次"]},
-        "剂量X每天一次": {"剂量和频率": ["频率每天一次"]}
+        "高血压": {"治疗": ["药物A", "药物B"], "病因": ["病因1", "病因2"]},
+        "药物A": {"剂量和频率": ["剂量X每天一次"], "不良反应": ["头痛", "恶心"]},
+        "药物B": {"剂量和频率": ["剂量Y每天一次"], "不良反应": ["头痛", "胃痛"]},
+        "剂量X每天一次": {"剂量和频率": ["频率每天一次"]},
+        "剂量Y每天一次": {"剂量和频率": ["频率每天一次"]},
+        # 可以继续添加更多关系
     }
 
     # 解析问题中的实体
@@ -102,7 +113,7 @@ def main():
                 break
 
             # 选择下一步关系和实体
-            next_relation, next_entities = select_next_relation_and_entities(neighbors, path[-1])
+            next_relation, next_entities = select_next_relation_and_entities(question, neighbors, path[-1])
 
             if next_relation and next_entities:
                 # 更新当前实体和路径
