@@ -62,6 +62,7 @@ def translate_relation(relation):
     return relation_map.get(relation, relation), reverse_relation_map.get(relation, relation)
 
 
+relations_map_service = Relations()
 # 测试翻译到中文
 # translated_relation_cn, translated_relation_en = translate_relation("Symptom_Disease")
 
