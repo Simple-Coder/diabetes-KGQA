@@ -4,6 +4,8 @@ Created by xiedong
 模型包装类
 """
 from ltp import LTP
+import torch
+import torch.nn as nn
 from transformers import BertTokenizer, BertModel
 from combine_sp_ie.config.base_config import GlobalConfig
 from transformers import logging
@@ -42,6 +44,26 @@ class ModelService():
 
     def dependency_analysis(self, query):
         return '', '', ''
+
+    def calculate_similarity_scores(self, bert_model, question, candidate_texts):
+        question_tokens = self.tokenizer.tokenize(question)
+        question_inputs = self.tokenizer.encode_plus(question_tokens, add_special_tokens=True, return_tensors='pt')
+        question_embedding = bert_model(**question_inputs).last_hidden_state.mean(dim=1)  # 使用平均池化
+
+        candidate_embeddings = []
+        for text in candidate_texts:
+            text_tokens = self.tokenizer.tokenize(text)
+            text_inputs = self.tokenizer.encode_plus(text_tokens, add_special_tokens=True, return_tensors='pt')
+            text_embedding = bert_model(**text_inputs).last_hidden_state.mean(dim=1)
+            candidate_embeddings.append(text_embedding)
+
+        similarity_scores = []
+        for embedding in candidate_embeddings:
+            # 计算余弦相似度得分
+            cos_sim = torch.nn.functional.cosine_similarity(question_embedding, embedding, dim=1)
+            similarity_scores.append(cos_sim.item())  # 将相似度得分添加到列表中
+
+        return similarity_scores
 
 
 model_service = ModelService()
