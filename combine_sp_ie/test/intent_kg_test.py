@@ -4,42 +4,63 @@ Created by xiedong
 """
 
 
-class Entity:
+class IntentEntity:
     def __init__(self, name):
         self.name = name
-        self.dependencies = []
+        self.related_intents = []
 
-    def add_dependency(self, entity):
-        self.dependencies.append(entity)
+    def add_related_intent(self, intent, relationship):
+        self.related_intents.append((intent, relationship))
 
-# 创建实体
-entities = {
-    "Disease": Entity("疾病"),
-    "Drug": Entity("药物名称"),
-    "ADE": Entity("不良反应"),
+# 创建意图实体
+intents = {
+    "Symptom_Disease": IntentEntity("临床表现"),
+    "Reason_Disease": IntentEntity("病因"),
+    "ADE_Drug": IntentEntity("不良反应"),
+    "Amount_Drug": IntentEntity("用药剂量"),
+    "Anatomy_Disease": IntentEntity("部位"),
+    "Class_Disease": IntentEntity("分期类型"),
+    "Drug_Disease": IntentEntity("药品名称"),
+    "Method_Drug": IntentEntity("用药方法"),
+    "Duration_Drug": IntentEntity("持续时间"),
+    "Frequency_Drug": IntentEntity("用药频率"),
+    "Operation_Disease": IntentEntity("手术"),
+    "Pathogenesis_Disease": IntentEntity("发病机制"),
+    "Test_Disease": IntentEntity("检查方法"),
+    "Test_items_Disease": IntentEntity("检查指标"),
+    "Treatment_Disease": IntentEntity("非药治疗"),
 }
 
-# 建立关联关系
-# entities["Drug"].add_dependency(entities["Disease"])
-# entities["ADE"].add_dependency(entities["Drug"])
-
-# 示例关联关系
-entities["Disease"].add_dependency(entities["Drug"])  # 将疾病与药物关联
-entities["Drug"].add_dependency(entities["ADE"])  # 将药物与不良反应关联
+# 建立意图之间的关联关系
+intents["Symptom_Disease"].add_related_intent(intents["Drug_Disease"], "临床表现->药品名称")
+intents["Reason_Disease"].add_related_intent(intents["Drug_Disease"], "病因->药品名称")
+intents["ADE_Drug"].add_related_intent(intents["Drug_Disease"], "不良反应->药品名称")
+intents["Amount_Drug"].add_related_intent(intents["Drug_Disease"], "用药剂量->药品名称")
+intents["Anatomy_Disease"].add_related_intent(intents["Drug_Disease"], "部位->药品名称")
+intents["Class_Disease"].add_related_intent(intents["Drug_Disease"], "分期类型->药品名称")
+intents["Drug_Disease"].add_related_intent(intents["Drug_Disease"], "药品名称->疾病")
+intents["Method_Drug"].add_related_intent(intents["Drug_Disease"], "用药方法->药品名称")
+intents["Duration_Drug"].add_related_intent(intents["Drug_Disease"], "持续时间->药品名称")
+intents["Frequency_Drug"].add_related_intent(intents["Drug_Disease"], "用药频率->药品名称")
+intents["Operation_Disease"].add_related_intent(intents["Drug_Disease"], "手术->药品名称")
+intents["Pathogenesis_Disease"].add_related_intent(intents["Drug_Disease"], "发病机制->药品名称")
+intents["Test_Disease"].add_related_intent(intents["Drug_Disease"], "检查方法->药品名称")
+intents["Test_items_Disease"].add_related_intent(intents["Drug_Disease"], "检查指标->药品名称")
+intents["Treatment_Disease"].add_related_intent(intents["Drug_Disease"], "非药治疗->药品名称")
 
 # 示例查询
-def find_related_entities(entity_name):
-    if entity_name in entities:
-        related_entities = entities[entity_name].dependencies
-        return [entity.name for entity in related_entities]
+def find_related_intents(intent_name):
+    if intent_name in intents:
+        related_intents = intents[intent_name].related_intents
+        return [(intent.name, relationship) for intent, relationship in related_intents]
     return None
 
-# 查询疾病对应的药物
-disease = "某疾病"
-related_drugs = find_related_entities("Disease")
-print(f"与疾病 {disease} 相关的药物：", related_drugs)
+# 查询临床表现相关的意图
+symptom_intent = "Symptom_Disease"
+related_intents = find_related_intents(symptom_intent)
+print(f"与{symptom_intent}相关的意图：", related_intents)
 
-# 查询药物对应的不良反应
-drug = "某药物"
-related_ades = find_related_entities("Drug")
-print(f"与药物 {drug} 相关的不良反应：", related_ades)
+# 查询药品名称相关的意图
+drug_intent = "Drug_Disease"
+related_intents = find_related_intents(drug_intent)
+print(f"与{drug_intent}相关的意图：", related_intents)
