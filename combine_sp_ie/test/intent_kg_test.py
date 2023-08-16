@@ -20,8 +20,8 @@ entities = {
 }
 
 # 建立关联关系
-entities["Drug"].add_dependency(entities["Disease"])
-entities["ADE"].add_dependency(entities["Drug"])
+# entities["Drug"].add_dependency(entities["Disease"])
+# entities["ADE"].add_dependency(entities["Drug"])
 
 # 示例关联关系
 entities["Disease"].add_dependency(entities["Drug"])  # 将疾病与药物关联
