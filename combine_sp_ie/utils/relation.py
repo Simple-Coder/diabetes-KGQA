@@ -45,6 +45,43 @@ class IntentEntity:
         self.related_intents.append((intent, relationship))
 
 
+# 创建意图实体
+intents = {
+    "Symptom_Disease": IntentEntity("临床表现"),
+    "Reason_Disease": IntentEntity("病因"),
+    "ADE_Drug": IntentEntity("不良反应"),
+    "Amount_Drug": IntentEntity("用药剂量"),
+    "Anatomy_Disease": IntentEntity("部位"),
+    "Class_Disease": IntentEntity("分期类型"),
+    "Drug_Disease": IntentEntity("药品名称"),
+    "Method_Drug": IntentEntity("用药方法"),
+    "Duration_Drug": IntentEntity("持续时间"),
+    "Frequency_Drug": IntentEntity("用药频率"),
+    "Operation_Disease": IntentEntity("手术"),
+    "Pathogenesis_Disease": IntentEntity("发病机制"),
+    "Test_Disease": IntentEntity("检查方法"),
+    "Test_items_Disease": IntentEntity("检查指标"),
+    "Treatment_Disease": IntentEntity("非药治疗"),
+}
+
+# 建立意图之间的关联关系
+intents["Symptom_Disease"].add_related_intent(intents["Drug_Disease"], "临床表现->药品名称")
+intents["Reason_Disease"].add_related_intent(intents["Drug_Disease"], "病因->药品名称")
+intents["ADE_Drug"].add_related_intent(intents["Drug_Disease"], "不良反应->药品名称")
+intents["Amount_Drug"].add_related_intent(intents["Drug_Disease"], "用药剂量->药品名称")
+intents["Anatomy_Disease"].add_related_intent(intents["Drug_Disease"], "部位->药品名称")
+intents["Class_Disease"].add_related_intent(intents["Drug_Disease"], "分期类型->药品名称")
+intents["Drug_Disease"].add_related_intent(intents["Drug_Disease"], "药品名称->疾病")
+intents["Method_Drug"].add_related_intent(intents["Drug_Disease"], "用药方法->药品名称")
+intents["Duration_Drug"].add_related_intent(intents["Drug_Disease"], "持续时间->药品名称")
+intents["Frequency_Drug"].add_related_intent(intents["Drug_Disease"], "用药频率->药品名称")
+intents["Operation_Disease"].add_related_intent(intents["Drug_Disease"], "手术->药品名称")
+intents["Pathogenesis_Disease"].add_related_intent(intents["Drug_Disease"], "发病机制->药品名称")
+intents["Test_Disease"].add_related_intent(intents["Drug_Disease"], "检查方法->药品名称")
+intents["Test_items_Disease"].add_related_intent(intents["Drug_Disease"], "检查指标->药品名称")
+intents["Treatment_Disease"].add_related_intent(intents["Drug_Disease"], "非药治疗->药品名称")
+
+
 def translate_relation(relation):
     # 实现关系类型的翻译逻辑，你可以自行定义关系类型到中文的映射
     relation_map = {
