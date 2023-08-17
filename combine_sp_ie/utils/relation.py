@@ -36,6 +36,15 @@ class Relations():
         return relation_map.get(relation, relation), reverse_relation_map.get(relation, relation)
 
 
+class IntentEntity:
+    def __init__(self, name):
+        self.name = name
+        self.related_intents = []
+
+    def add_related_intent(self, intent, relationship):
+        self.related_intents.append((intent, relationship))
+
+
 def translate_relation(relation):
     # 实现关系类型的翻译逻辑，你可以自行定义关系类型到中文的映射
     relation_map = {
