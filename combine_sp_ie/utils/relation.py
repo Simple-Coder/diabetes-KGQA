@@ -41,6 +41,16 @@ class Relations():
             return [(intent.name, relationship) for intent, relationship in related_intents]
         return None
 
+    def find_related_intents_en(self, intent_name):
+        intent = self.find_related_intents(intent_name)
+        if not intent:
+            return None
+        #
+        intent = intent[0][0]
+        translated_relation_cn, translated_relation_en = self.translate_relation(intent)
+
+        return translated_relation_cn, translated_relation_en
+
 
 class IntentEntity:
     def __init__(self, name):
@@ -135,8 +145,13 @@ if __name__ == '__main__':
     symptom_intent = "Symptom_Disease"
     related_intents = relations.find_related_intents(symptom_intent)
     print(f"与{symptom_intent}相关的意图：", related_intents)
+    cn1, en1 = relations.find_related_intents_en(symptom_intent)
+    print(f"与{symptom_intent}相关的意图1：", cn1, en1)
 
     # 查询药品名称相关的意图
     drug_intent = "Drug_Disease"
     related_intents = relations.find_related_intents(drug_intent)
     print(f"与{drug_intent}相关的意图：", related_intents)
+
+    cn2, en2 = relations.find_related_intents_en(drug_intent)
+    print(f"与{symptom_intent}相关的意图1：", cn2, en2)
