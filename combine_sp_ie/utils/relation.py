@@ -35,6 +35,12 @@ class Relations():
         # 实现关系类型的翻译逻辑，你可以自行定义关系类型到中文的映射
         return relation_map.get(relation, relation), reverse_relation_map.get(relation, relation)
 
+    def find_related_intents(self, intent_name):
+        if intent_name in intents:
+            related_intents = intents[intent_name].related_intents
+            return [(intent.name, relationship) for intent, relationship in related_intents]
+        return None
+
 
 class IntentEntity:
     def __init__(self, name):
@@ -124,3 +130,13 @@ if __name__ == '__main__':
 
     print("翻译到中文:", translated_relation_cn)
     print("翻译回英文:", translated_relation_en)
+
+    # 查询临床表现相关的意图
+    symptom_intent = "Symptom_Disease"
+    related_intents = relations.find_related_intents(symptom_intent)
+    print(f"与{symptom_intent}相关的意图：", related_intents)
+
+    # 查询药品名称相关的意图
+    drug_intent = "Drug_Disease"
+    related_intents = relations.find_related_intents(drug_intent)
+    print(f"与{drug_intent}相关的意图：", related_intents)
