@@ -194,8 +194,6 @@ class NLGV2():
 
     def generate_response(self, client, server, dialog_context):
         current_semantic = dialog_context.get_current_semantic()
-        history_sematics = dialog_context.get_history_semantics()
-        user_id = dialog_context.get_user_id()
         try:
             if not current_semantic:
                 log.error("[nlg] 当前语义识别为null，将采用默认回答")
