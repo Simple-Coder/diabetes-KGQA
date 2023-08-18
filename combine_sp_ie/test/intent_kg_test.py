@@ -12,6 +12,7 @@ class IntentEntity:
     def add_related_intent(self, intent, relationship):
         self.related_intents.append((intent, relationship))
 
+
 # 创建意图实体
 intents = {
     "Symptom_Disease": IntentEntity("临床表现"),
@@ -32,21 +33,23 @@ intents = {
 }
 
 # 建立意图之间的关联关系
-intents["Symptom_Disease"].add_related_intent(intents["Drug_Disease"], "临床表现->药品名称")
-intents["Reason_Disease"].add_related_intent(intents["Drug_Disease"], "病因->药品名称")
-intents["ADE_Drug"].add_related_intent(intents["Drug_Disease"], "不良反应->药品名称")
-intents["Amount_Drug"].add_related_intent(intents["Drug_Disease"], "用药剂量->药品名称")
-intents["Anatomy_Disease"].add_related_intent(intents["Drug_Disease"], "部位->药品名称")
-intents["Class_Disease"].add_related_intent(intents["Drug_Disease"], "分期类型->药品名称")
+intents["Test_Disease"].add_related_intent(intents["Drug_Disease"], "检查方法->疾病")
+intents["Symptom_Disease"].add_related_intent(intents["Drug_Disease"], "临床表现->疾病")
+intents["Treatment_Disease"].add_related_intent(intents["Drug_Disease"], "非药治疗->疾病")
 intents["Drug_Disease"].add_related_intent(intents["Drug_Disease"], "药品名称->疾病")
-intents["Method_Drug"].add_related_intent(intents["Drug_Disease"], "用药方法->药品名称")
-intents["Duration_Drug"].add_related_intent(intents["Drug_Disease"], "持续时间->药品名称")
+intents["Anatomy_Disease"].add_related_intent(intents["Drug_Disease"], "部位->疾病")
+intents["Reason_Disease"].add_related_intent(intents["Drug_Disease"], "病因->疾病")
+intents["Pathogenesis_Disease"].add_related_intent(intents["Drug_Disease"], "发病机制->疾病")
+intents["Operation_Disease"].add_related_intent(intents["Drug_Disease"], "手术->疾病")
+intents["Class_Disease"].add_related_intent(intents["Drug_Disease"], "分期类型->疾病")
+intents["Test_items_Disease"].add_related_intent(intents["Drug_Disease"], "检查指标->疾病")
+
 intents["Frequency_Drug"].add_related_intent(intents["Drug_Disease"], "用药频率->药品名称")
-intents["Operation_Disease"].add_related_intent(intents["Drug_Disease"], "手术->药品名称")
-intents["Pathogenesis_Disease"].add_related_intent(intents["Drug_Disease"], "发病机制->药品名称")
-intents["Test_Disease"].add_related_intent(intents["Drug_Disease"], "检查方法->药品名称")
-intents["Test_items_Disease"].add_related_intent(intents["Drug_Disease"], "检查指标->药品名称")
-intents["Treatment_Disease"].add_related_intent(intents["Drug_Disease"], "非药治疗->药品名称")
+intents["Duration_Drug"].add_related_intent(intents["Drug_Disease"], "持续时间->药品名称")
+intents["Amount_Drug"].add_related_intent(intents["Drug_Disease"], "用药剂量->药品名称")
+intents["Method_Drug"].add_related_intent(intents["Drug_Disease"], "用药方法->药品名称")
+intents["ADE_Drug"].add_related_intent(intents["Drug_Disease"], "不良反应->药品名称")
+
 
 # 示例查询
 def find_related_intents(intent_name):
@@ -54,6 +57,7 @@ def find_related_intents(intent_name):
         related_intents = intents[intent_name].related_intents
         return [(intent.name, relationship) for intent, relationship in related_intents]
     return None
+
 
 # 查询临床表现相关的意图
 symptom_intent = "Symptom_Disease"
