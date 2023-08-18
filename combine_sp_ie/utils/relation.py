@@ -154,4 +154,4 @@ if __name__ == '__main__':
     print(f"与{drug_intent}相关的意图：", related_intents)
 
     cn2, en2 = relations.find_related_intents_en(drug_intent)
-    print(f"与{symptom_intent}相关的意图1：", cn2, en2)
+    print(f"与{drug_intent}相关的意图：", cn2, en2)
