@@ -52,11 +52,11 @@ intents["Drug_Disease"].add_related_intent(intents["Amount_Drug"], "用药剂量
 # intents["Class_Disease"].add_related_intent(intents["Drug_Disease"], "分期类型->疾病")
 # intents["Test_items_Disease"].add_related_intent(intents["Drug_Disease"], "检查指标->疾病")
 
-intents["Frequency_Drug"].add_related_intent(intents["Drug_Disease"], "用药频率->药品名称")
-intents["Duration_Drug"].add_related_intent(intents["Drug_Disease"], "持续时间->药品名称")
-intents["Amount_Drug"].add_related_intent(intents["Drug_Disease"], "用药剂量->药品名称")
-intents["Method_Drug"].add_related_intent(intents["Drug_Disease"], "用药方法->药品名称")
-intents["ADE_Drug"].add_related_intent(intents["Drug_Disease"], "不良反应->药品名称")
+# intents["Frequency_Drug"].add_related_intent(intents["Drug_Disease"], "用药频率->药品名称")
+# intents["Duration_Drug"].add_related_intent(intents["Drug_Disease"], "持续时间->药品名称")
+# intents["Amount_Drug"].add_related_intent(intents["Drug_Disease"], "用药剂量->药品名称")
+# intents["Method_Drug"].add_related_intent(intents["Drug_Disease"], "用药方法->药品名称")
+# intents["ADE_Drug"].add_related_intent(intents["Drug_Disease"], "不良反应->药品名称")
 
 
 # 示例查询
