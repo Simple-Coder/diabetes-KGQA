@@ -80,6 +80,13 @@ intents = {
     "Test_Disease": IntentEntity("检查方法"),
     "Test_items_Disease": IntentEntity("检查指标"),
     "Treatment_Disease": IntentEntity("非药治疗"),
+
+    # 闲聊
+    "greet": IntentEntity("greet"),
+    "goodbye": IntentEntity("goodbye"),
+    "deny": IntentEntity("deny"),
+    "isbot": IntentEntity("isbot"),
+
 }
 
 # 建立意图之间的关联关系
@@ -88,6 +95,8 @@ intents["Drug_Disease"].add_related_intent(intents["Duration_Drug"], "持续时�
 intents["Drug_Disease"].add_related_intent(intents["Frequency_Drug"], "用药频率->药品名称")
 intents["Drug_Disease"].add_related_intent(intents["ADE_Drug"], "不良反应->药品名称")
 intents["Drug_Disease"].add_related_intent(intents["Amount_Drug"], "用药剂量->药品名称")
+
+
 
 
 def translate_relation(relation):
