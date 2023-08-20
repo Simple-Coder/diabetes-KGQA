@@ -74,6 +74,7 @@ def get_all_req_graph(nodes):
 # 创建一个有向图
 graph = nx.DiGraph()
 graph.add_node('Pathogenesis_Disease')
+graph.add_node('Pathogenesis_Disease1')
 graph.add_edge("Drug_Disease", "Duration_Drug")
 graph.add_edge("Drug_Disease", "Method_Drug")
 graph.add_edge("Drug_Disease", "Frequency_Drug")
@@ -82,7 +83,7 @@ graph.add_edge("Drug_Disease", "Amount_Drug")
 graph.add_edge("Symptom_Disease", "Drug_Disease")
 graph.add_edge("Drug_Disease", "Reason_Disease")
 
-intents = ["Drug_Disease", "Method_Drug", "Pathogenesis_Disease"]
+intents = ["Drug_Disease", "Pathogenesis_Disease", "Pathogenesis_Disease"]
 
 # 查找拓扑关系链并返回
 chains = find_topological_chains(intents, graph)
