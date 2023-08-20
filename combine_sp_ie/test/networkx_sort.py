@@ -98,9 +98,18 @@ for chain in chains:
     if chain in req_graph:
         desired_chains.append(chain)
 
+result = []
 if desired_chains:
     print("拓扑关系链：")
-    for chain in desired_chains:
-        print(chain)
+    for intent in intents:
+        intentExits = False
+        for chain in desired_chains:
+            print(chain)
+            chain_parts = chain.split("->")
+            if intent in chain_parts and not intentExits:
+                intentExits = True
+                result.append(chain)
+
+    print("结果：", set(result))
 else:
     print("没有足够的关系链满足输入的意图。")
