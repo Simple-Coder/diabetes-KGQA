@@ -36,6 +36,7 @@ Created by xiedong
 
 
 import networkx as nx
+from itertools import combinations, permutations
 
 
 def find_topological_chains(intents, graph):
@@ -57,6 +58,19 @@ def find_topological_chains(intents, graph):
     return chains
 
 
+def get_all_req_graph(nodes):
+    result = []
+    for r in range(1, len(nodes) + 1):
+        permutations_set = set(permutations(nodes, r))
+        # 输出所有可能的无序排列
+        for perm in permutations_set:
+            perm_str = '->'.join(perm)
+            # print(perm_str)
+            result.append(perm_str)
+        # print("层级结束:", r)
+    return result
+
+
 # 创建一个有向图
 graph = nx.DiGraph()
 graph.add_node('Pathogenesis_Disease')
@@ -73,14 +87,20 @@ intents = ["Drug_Disease", "Method_Drug", "Pathogenesis_Disease"]
 # 查找拓扑关系链并返回
 chains = find_topological_chains(intents, graph)
 
-filtered_chains = []
-for chain in chains:
-    chain_parts = chain.split("->")
-    if set(intents) == set(chain_parts):
-        filtered_chains.append(chain)
+desired_intent_set = set(intents)
+desired_chains = []
 
-if filtered_chains:
-    for chain in filtered_chains:
-        print("拓扑关系链：", chain)
+req_graph = get_all_req_graph(intents)
+
+for chain in chains:
+    # chain_parts = chain.split("->")
+    # if desired_intent_set.issubset(chain_parts):
+    if chain in req_graph:
+        desired_chains.append(chain)
+
+if desired_chains:
+    print("拓扑关系链：")
+    for chain in desired_chains:
+        print(chain)
 else:
     print("没有足够的关系链满足输入的意图。")
