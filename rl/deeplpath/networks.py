@@ -1,11 +1,13 @@
 """
 Created by xiedong
-@Date: 2023/9/19 15:46
+@Date: 2023/9/19 17:17
 """
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
+# TODO: Add regularization
 
 class PolicyNN(nn.Module):
 
@@ -17,9 +19,7 @@ class PolicyNN(nn.Module):
         self.softmax = nn.Softmax(action_dim)
 
     def forward(self, state):
-        x = F.relu(self.fc1(state))
-        x = F.relu(self.fc2(x))
-        action_probs = self.softmax(self.fc3(x))
+        action_probs = self.softmax(F.relu(self.fc3(F.relu(self.fc2(F.relu(self.fc1(state)))))))
         return action_probs
 
 
@@ -31,8 +31,7 @@ class ValueNN(nn.Module):
         self.fc2 = nn.Linear(64, 1, bias=True)
 
     def forward(self, state):
-        x = F.relu(self.fc1(state))
-        value_estimated = self.fc2(x)
+        value_estimated = self.fc2(F.relu(self.fc1(state)))
         return torch.squeeze(value_estimated)
 
 
@@ -45,7 +44,5 @@ class QNetwork(nn.Module):
         self.fc3 = nn.Linear(64, action_space)
 
     def forward(self, state):
-        x = F.relu(self.fc1(state))
-        x = F.relu(self.fc2(x))
-        action_values = self.fc3(x)
+        action_values = self.fc3(F.relu(self.fc2(F.relu(self.fc1(state)))))
         return action_values
