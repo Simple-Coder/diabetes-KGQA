@@ -21,7 +21,7 @@ target_update_freq = 1000
 max_steps = 50
 max_steps_test = 50
 
-dataPath = '../NELL-995/'
+dataPath = '../../../NELL-995/'
 
 # 定义状态转换的命名元组
 Transition = namedtuple('Transition', ('state', 'action', 'next_state', 'reward'))
