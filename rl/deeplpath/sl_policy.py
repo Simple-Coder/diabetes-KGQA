@@ -1,4 +1,5 @@
 import sys
+from itertools import count
 
 import torch
 import torch.nn as nn
@@ -52,3 +53,94 @@ class SupervisedPolicy(nn.Module):
         loss.backward()  # 反向传播
         self.optimizer.step()  # 更新模型参数
         return loss.item()  # 返回损失值
+
+
+def train():
+    torch.manual_seed(seed=0)  # 设置随机种子以确保结果的可重复性
+    policy_nn = SupervisedPolicy(state_dim, action_space)
+
+    with open(relationPath, 'r') as f:
+        train_data = f.readlines()
+
+    num_samples = len(train_data)
+
+    if num_samples > 500:
+        num_samples = 500
+    else:
+        num_samples = num_samples
+
+    for episode in range(num_samples):
+        print("Episode %d" % episode)
+        print('Training Sample:', train_data[episode % num_samples][:-1])
+
+        env = Env(dataPath, train_data[episode % num_samples])
+        sample = train_data[episode % num_samples].split()
+
+        try:
+            good_episodes = teacher(sample[0], sample[1], 5, env, graphpath)
+        except Exception as e:
+            print('无法找到路径')
+            continue
+
+        for item in good_episodes:
+            state_batch = []
+            action_batch = []
+            for t, transition in enumerate(item):
+                state_batch.append(transition.state)
+                action_batch.append(transition.action)
+            state_batch = np.squeeze(state_batch)
+            state_batch = np.reshape(state_batch, [-1, state_dim])
+
+            loss = policy_nn.update(torch.Tensor(state_batch), torch.LongTensor(action_batch))
+            print('Loss:', loss)
+
+    torch.save(policy_nn.state_dict(), 'models/policy_supervised_' + relation + '.pt')
+    print('模型已保存')
+
+
+def test(test_episodes):
+    torch.manual_seed(0)  # 设置随机种子以确保结果的可重复性
+    policy_nn = SupervisedPolicy(state_dim, action_space)
+
+    with open(relationPath, 'r') as f:
+        test_data = f.readlines()
+
+    test_num = len(test_data)
+
+    test_data = test_data[-test_episodes:]
+    print(len(test_data))
+
+    success = 0
+
+    # 加载已经训练好的模型
+    policy_nn.load_state_dict(torch.load('models/policy_supervised_' + relation + '.pt'))
+    policy_nn.eval()  # 将模型设置为评估模式
+    print('模型已加载')
+
+    for episode in range(len(test_data)):
+        print('测试样本 %d: %s' % (episode, test_data[episode][:-1]))
+        env = Env(dataPath, test_data[episode])
+        sample = test_data[episode].split()
+        state_idx = [env.entity2id_[sample[0]], env.entity2id_[sample[1]], 0]
+
+        for t in count():
+            state_vec = env.idx_state(state_idx)
+            action_probs = policy_nn.predict(torch.Tensor(state_vec))
+            action_chosen = np.random.choice(np.arange(action_space), p=np.squeeze(action_probs.numpy()))
+            reward, new_state, done = env.interact(state_idx, action_chosen)
+
+            if done or t == max_steps_test:
+                if done:
+                    print('成功')
+                    success += 1
+                print('本轮结束\n')
+                break
+
+            state_idx = new_state
+
+    print('成功百分比:', success / test_episodes)
+
+
+if __name__ == "__main__":
+    train()
+    # test(50)
