@@ -51,29 +51,29 @@ class QNetwork(nn.Module):
         return action_values
 
 
-# 创建PolicyNN、ValueNN和QNetwork的实例
-state_dim = 200  # 请填入state_dim的值
-action_dim = 400  # 请填入action_dim的值
-action_space = 200  # 请填入action_space的值
-
-policy_nn = PolicyNN(state_dim, action_dim)
-value_nn = ValueNN(state_dim)
-q_network = QNetwork(state_dim, action_space)
-
-# 创建一个虚拟输入张量（示例）
-dummy_state = torch.randn(1, state_dim)  # 使用随机数据创建一个虚拟状态张量
-
-# 前向传播示例
-policy_output = policy_nn(dummy_state)
-value_output = value_nn(dummy_state)
-q_values = q_network(dummy_state)
-
-# 打印模型输出
-print("Policy Output:")
-print(policy_output)
-
-print("Value Output:")
-print(value_output)
-
-print("Q Values:")
-print(q_values)
+# # 创建PolicyNN、ValueNN和QNetwork的实例
+# state_dim = 200  # 请填入state_dim的值
+# action_dim = 400  # 请填入action_dim的值
+# action_space = 200  # 请填入action_space的值
+#
+# policy_nn = PolicyNN(state_dim, action_dim)
+# value_nn = ValueNN(state_dim)
+# q_network = QNetwork(state_dim, action_space)
+#
+# # 创建一个虚拟输入张量（示例）
+# dummy_state = torch.randn(1, state_dim)  # 使用随机数据创建一个虚拟状态张量
+#
+# # 前向传播示例
+# policy_output = policy_nn(dummy_state)
+# value_output = value_nn(dummy_state)
+# q_values = q_network(dummy_state)
+#
+# # 打印模型输出
+# print("Policy Output:")
+# print(policy_output)
+#
+# print("Value Output:")
+# print(value_output)
+#
+# print("Q Values:")
+# print(q_values)
