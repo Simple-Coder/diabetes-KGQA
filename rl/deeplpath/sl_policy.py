@@ -1,3 +1,4 @@
+import os
 import sys
 from itertools import count
 
@@ -99,6 +100,53 @@ def train_deep_path():
     print('Model saved')
 
 
+def test(test_episodes):
+    policy_network = SupervisedPolicy(state_dim, action_space)
+
+    f = open(relationPath)
+    test_data = f.readlines()
+    f.close()
+
+    test_num = len(test_data)
+
+    test_data = test_data[-test_episodes:]
+    print(len(test_data))
+
+    success = 0
+
+    # 加载模型参数
+    model_path = os.path.join('models', 'policy_supervised_' + relation)
+    policy_network.load_state_dict(torch.load(model_path))
+    policy_network.eval()  # 设置模型为评估模式
+
+    for episode, test_sample in enumerate(test_data):
+        print(f'Test sample {episode}: {test_sample[:-1]}')
+        env = Env(dataPath, test_sample)  # 请确保定义 Env 类
+        sample = test_sample.split()
+        state_idx = [env.entity2id_[sample[0]], env.entity2id_[sample[1]], 0]
+
+        for t in count():
+            state_vec = env.idx_state(state_idx)
+            state_tensor = torch.FloatTensor(state_vec)
+
+            with torch.no_grad():
+                action_probs = policy_network(state_tensor)
+
+            action_chosen = np.random.choice(np.arange(action_space), p=action_probs.numpy()[0])
+
+            reward, new_state, done = env.interact(state_idx, action_chosen)
+
+            if done or t == max_steps_test:
+                if done:
+                    print('Success')
+                    success += 1
+                print('Episode ends\n')
+                break
+            state_idx = new_state
+
+    print(f'Success percentage: {success / test_episodes}')
+
+
 if __name__ == '__main__':
     # 示例用法:
     # state_dim = 4  # 替换为实际状态维度
@@ -112,4 +160,5 @@ if __name__ == '__main__':
     #
     # print(loss)
 
-    train_deep_path()
+    # train_deep_path()
+    test(50)
