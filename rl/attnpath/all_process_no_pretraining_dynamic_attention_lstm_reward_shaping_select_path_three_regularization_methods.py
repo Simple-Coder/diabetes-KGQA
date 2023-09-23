@@ -1,4 +1,5 @@
 import argparse
+import datetime
 import math
 
 
@@ -25,6 +26,30 @@ def get_args():
     return argparser.parse_args()
     # args = argparser.parse_args()
     # print("Relation: ", args.relation)
+
+
+def get_save_file_header(args):
+    time_str = datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')
+    save_file_header = '_'.join([
+        time_str,
+        'a', str(args.attn_dim),
+        'wr', str(args.wrong_reward),
+        'ur', str(args.useless_reward),
+        'tr', str(args.teacher_reward),
+        'gw', str(args.global_reward_weight),
+        'lw', str(args.length_reward_weight),
+        'dw', str(args.diverse_reward_weight),
+        'np', str(args.num_episodes),
+        'wd', str(args.weight_decay),
+        'd2', str(args.dropout2),
+        'adr', str(args.action_dropout_rate),
+        'eb', "%.4f" % args.exp_base,
+        'hue', str(args.hidden_update_everytime),
+        'mo', str(args.model),
+        'remo', str(args.reward_shaping_model),
+        'no_pretraining_dynamic_attention_lstm_reward_shaping_select_path_three_regularization_methods', ])
+
+    return save_file_header
 
 
 def main():
