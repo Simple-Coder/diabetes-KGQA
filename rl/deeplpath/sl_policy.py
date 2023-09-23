@@ -161,4 +161,4 @@ if __name__ == '__main__':
     # print(loss)
 
     # train_deep_path()
-    test(50)
+    test(500)
