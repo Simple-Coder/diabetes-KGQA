@@ -36,12 +36,8 @@ class PolicyNetwork(nn.Module):
         return action_prob
 
     def compute_loss(self, action_prob, target, action):
-        # 将action从整数转换为PyTorch Tensor
-        action = torch.tensor(action, dtype=torch.int64)
-
-        # 使用F.one_hot创建action_mask
-        action_mask = F.one_hot(action, num_classes=self.action_space).to(torch.bool)
-
+        # TODO: Add regularization loss
+        action_mask = F.one_hot(action, num_classes=self.action_space) > 0
         picked_action_prob = action_prob[action_mask]
         loss = torch.sum(-torch.log(picked_action_prob) * target)
         return loss
@@ -70,13 +66,15 @@ def train_test():
             action_prob = policy_net(state_tensor)
 
             # 根据概率选择动作
+            # 根据概率选择动作
             action = np.random.choice(action_space, p=action_prob.detach().numpy())
+            action_tensor = torch.tensor(action, dtype=torch.int64)  # 将action转换为PyTorch张量
 
             # 模拟环境，生成示例奖励
             reward = random.uniform(0, 1)
 
             # 计算损失并更新策略网络
-            loss = policy_net.compute_loss(action_prob, reward, action)
+            loss = policy_net.compute_loss(action_prob, reward, action_tensor)
             policy_net.optimizer.zero_grad()
             loss.backward()
             policy_net.optimizer.step()
