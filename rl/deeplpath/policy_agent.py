@@ -84,5 +84,27 @@ def train_test():
 
     print("训练完成！")
 
+
+def retrain():
+    print('Start retraining')
+    policy_network = PolicyNetwork(state_dim, action_space)
+
+    f = open(relationPath)
+    training_pairs = f.readlines()
+    f.close()
+
+    # 加载预训练的模型
+    policy_network.load_state_dict(torch.load('models/policy_supervised_' + relation))
+    print("sl_policy restored")
+
+    episodes = len(training_pairs)
+    if episodes > 300:
+        episodes = 300
+    # REINFORCE(training_pairs, policy_network, episodes)
+    # saver.save(sess, 'models/policy_retrained' + relation)
+    # print('Retrained model saved')
+
+
 if __name__ == "__main__":
-    train_test()
+    # train_test()
+    retrain()
