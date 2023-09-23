@@ -230,6 +230,106 @@ def REINFORCE(training_pairs, policy_nn, num_episodes):
     return
 
 
+def test():
+    policy_network = PolicyNetwork(state_dim, action_space)
+
+    f = open(relationPath)
+    all_data = f.readlines()
+    f.close()
+
+    test_data = all_data
+    test_num = len(test_data)
+
+    success = 0
+
+    path_found = []
+    path_relation_found = []
+    path_set = set()
+    # 加载预训练的模型
+    policy_network.load_state_dict(torch.load('models/policy_supervised_' + relation))
+    print("sl_policy restored")
+
+    if test_num > 500:
+        test_num = 500
+
+    for episode in range(test_num):
+        print('Test sample %d: %s' % (episode, test_data[episode][:-1]))
+        env = Env(dataPath, test_data[episode])
+        sample = test_data[episode].split()
+        state_idx = [env.entity2id_[sample[0]], env.entity2id_[sample[1]], 0]
+
+        transitions = []
+
+        for t in count():
+            state_vec = env.idx_state(state_idx)
+            action_probs = policy_network.predict(state_vec)
+
+            action_probs = np.squeeze(action_probs)
+
+            action_chosen = np.random.choice(np.arange(action_space), p=action_probs)
+            reward, new_state, done = env.interact(state_idx, action_chosen)
+            new_state_vec = env.idx_state(new_state)
+            transitions.append(
+                Transition(state=state_vec, action=action_chosen, next_state=new_state_vec, reward=reward))
+
+            if done or t == max_steps_test:
+                if done:
+                    success += 1
+                    print("Success\n")
+                    path = path_clean(' -> '.join(env.path))
+                    path_found.append(path)
+                else:
+                    print('Episode ends due to step limit\n')
+                break
+            state_idx = new_state
+
+        if done:
+            if len(path_set) != 0:
+                path_found_embedding = [env.path_embedding(path.split(' -> ')) for path in path_set]
+                curr_path_embedding = env.path_embedding(env.path_relations)
+                path_found_embedding = np.reshape(path_found_embedding, (-1, embedding_dim))
+                cos_sim = cosine_similarity(path_found_embedding, curr_path_embedding)
+                diverse_reward = -np.mean(cos_sim)
+                print('diverse_reward', diverse_reward)
+                # total_reward = 0.1*global_reward + 0.8*length_reward + 0.1*diverse_reward
+                state_batch = []
+                action_batch = []
+                for t, transition in enumerate(transitions):
+                    if transition.reward == 0:
+                        state_batch.append(transition.state)
+                        action_batch.append(transition.action)
+                policy_network.update(np.reshape(state_batch, (-1, state_dim)), 0.1 * diverse_reward, action_batch)
+            path_set.add(' -> '.join(env.path_relations))
+
+    for path in path_found:
+        rel_ent = path.split(' -> ')
+        path_relation = []
+        for idx, item in enumerate(rel_ent):
+            if idx % 2 == 0:
+                path_relation.append(item)
+        path_relation_found.append(' -> '.join(path_relation))
+
+    # path_stats = collections.Counter(path_found).items()
+    relation_path_stats = collections.Counter(path_relation_found).items()
+    relation_path_stats = sorted(relation_path_stats, key=lambda x: x[1], reverse=True)
+
+    ranking_path = []
+    for item in relation_path_stats:
+        path = item[0]
+        length = len(path.split(' -> '))
+        ranking_path.append((path, length))
+
+    ranking_path = sorted(ranking_path, key=lambda x: x[1])
+    print('Success persentage:', success / test_num)
+
+    f = open(dataPath + 'tasks/' + relation + '/' + 'path_to_use.txt', 'w')
+    for item in ranking_path:
+        f.write(item[0] + '\n')
+    f.close()
+    print('path to use saved')
+    return
+
+
 def retrain():
     print('Start retraining')
     policy_network = PolicyNetwork(state_dim, action_space)
@@ -253,4 +353,12 @@ def retrain():
 
 if __name__ == "__main__":
     # train_test()
-    retrain()
+    if task == 'test':
+        test()
+    elif task == 'retrain':
+        retrain()
+    else:
+        retrain()
+        test()
+    # retrain()
+
