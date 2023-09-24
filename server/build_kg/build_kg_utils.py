@@ -12,11 +12,15 @@ from py2neo import Graph
 
 class DiabetesExtractor():
     def __init__(self):
-        self.graph = Graph(
-            host="127.0.0.1",
-            http_port=7474,
-            user="neo4j",
-            password="123456")
+        try:
+            self.graph = Graph(
+                host="127.0.0.1",
+                http_port=7474,
+                user="neo4j",
+                password="123456")
+        except:
+            pass
+        self.triples = set()
 
         # 18类节点
         self.diseases = []  # 疾病
@@ -141,6 +145,10 @@ class DiabetesExtractor():
                         tail_entity_id = relation['tail_entity_id']
                         head_entity_name = entiDict[head_entity_id]
                         tail_entity_name = entiDict[tail_entity_id]
+
+                        triple = (head_entity_name, relation_type_, tail_entity_name)
+                        self.triples.add(triple)
+
                         # 调整关系
                         # head_entity_name = entiDict[tail_entity_id]
                         # tail_entity_name = entiDict[head_entity_id]
@@ -267,6 +275,13 @@ class DiabetesExtractor():
 
 # self.write_edges(self.rels_department, '科室', '科室')
 
+    def generate_graph_file(self, output_file):
+        print("Generating graph.txt file...")
+        with open(output_file, 'w', encoding='utf8') as f:
+            # Define your own format for writing triples
+            for triple in self.triples:
+                f.write('\t'.join(triple) + '\n')
+        print("graph.txt file generation complete.")
 
 if __name__ == '__main__':
     # cur_dir = '/'.join(os.path.abspath(__file__).split('/')[:-1])
@@ -277,13 +292,17 @@ if __name__ == '__main__':
     extractor = DiabetesExtractor()
     extractor.extract_triples(data_path)
 
-    # 创建实体节点
-    extractor.create_entities()
-
-    # 创建关系
-    extractor.create_relations()
+    # # 创建实体节点
+    # extractor.create_entities()
+    #
+    # # 创建关系
+    # extractor.create_relations()
 
     print()
+
+    # 生成graph.txt文件
+    graph_file_path = "graph.txt"
+    extractor.generate_graph_file(graph_file_path)
 '''
 发现实体记录：{"Drug":"Drug","ADE":"ADE","Disease":"Disease","Pathogenesis":"Pathogenesis","Amount":"Amount","Duration":"Duration","Method":"Method","Operation":"Operation","Anatomy":"Anatomy","Reason":"Reason","Treatment":"Treatment","Test":"Test","Frequency":"Frequency","Class":"Class","Level":"Level","Test_Value":"Test_Value","Symptom":"Symptom","Test_items":"Test_items"}
 发现关系记录：{"Amount_Drug":"Amount_Drug","Duration_Drug":"Duration_Drug","Test_Disease":"Test_Disease","Method_Drug":"Method_Drug","Anatomy_Disease":"Anatomy_Disease","Operation_Disease":"Operation_Disease","ADE_Drug":"ADE_Drug","Reason_Disease":"Reason_Disease","Pathogenesis_Disease":"Pathogenesis_Disease","ADE_Disease":"ADE_Disease","Treatment_Disease":"Treatment_Disease","Drug_Disease":"Drug_Disease","Frequency_Drug":"Frequency_Drug","Test_items_Disease":"Test_items_Disease","Symptom_Disease":"Symptom_Disease","Class_Disease":"Class_Disease"}
