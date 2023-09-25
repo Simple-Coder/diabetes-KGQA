@@ -38,7 +38,7 @@ class Env(object):
             for line in kb_all:
                 rel = line.split()[2]
                 if rel != relation and rel != relation + '_inv':
-                    self.kb.append(line)
+                    self.kb.append(line) #筛选出知识图谱中与该关系相关的三元组，以便在环境中只考虑与任务相关的知识。这有助于减少环境的复杂性，提高代理在特定任务上的效率。
 
         self.die = 0  # 记录代理选择无效路径的次数
 
