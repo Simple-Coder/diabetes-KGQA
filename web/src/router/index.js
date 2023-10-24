@@ -30,13 +30,27 @@ import Layout from '@/layout'
  * a base page that does not have permission requirements
  * all roles can be accessed
  */
-export const constantRoutes = [
+export const constantRoutes = [  {
+    path: '/redirect',
+    component: Layout,
+    hidden: true,
+    children: [
+      {
+        path: '/redirect/:path(.*)',
+        component: () => import('@/views/redirect')
+      }
+    ]
+  },
   {
     path: '/login',
     component: () => import('@/views/login/index'),
     hidden: true
   },
-
+  {
+    path: '/register',
+    component: () => import('@/views/register'),
+    hidden: true
+  },
   {
     path: '/404',
     component: () => import('@/views/404'),
