@@ -29,20 +29,20 @@
           <svg-icon slot="prefix" icon-class="password" class="el-input__icon input-icon" />
         </el-input>
       </el-form-item>
-      <el-form-item prop="code" v-if="captchaEnabled">
-        <el-input
-          v-model="registerForm.code"
-          auto-complete="off"
-          placeholder="验证码"
-          style="width: 63%"
-          @keyup.enter.native="handleRegister"
-        >
-          <svg-icon slot="prefix" icon-class="validCode" class="el-input__icon input-icon" />
-        </el-input>
-        <div class="register-code">
-          <img :src="codeUrl" @click="getCode" class="register-code-img"/>
-        </div>
-      </el-form-item>
+<!--      <el-form-item prop="code" v-if="captchaEnabled">-->
+<!--        <el-input-->
+<!--          v-model="registerForm.code"-->
+<!--          auto-complete="off"-->
+<!--          placeholder="验证码"-->
+<!--          style="width: 63%"-->
+<!--          @keyup.enter.native="handleRegister"-->
+<!--        >-->
+<!--          <svg-icon slot="prefix" icon-class="validCode" class="el-input__icon input-icon" />-->
+<!--        </el-input>-->
+<!--        <div class="register-code">-->
+<!--          <img :src="codeUrl" @click="getCode" class="register-code-img"/>-->
+<!--        </div>-->
+<!--      </el-form-item>-->
       <el-form-item style="width:100%;">
         <el-button
           :loading="loading"
@@ -101,7 +101,7 @@ export default {
           { required: true, trigger: "blur", message: "请再次输入您的密码" },
           { required: true, validator: equalToPassword, trigger: "blur" }
         ],
-        code: [{ required: true, trigger: "change", message: "请输入验证码" }]
+        // code: [{ required: true, trigger: "change", message: "请输入验证码" }]
       },
       loading: false,
       captchaEnabled: true
