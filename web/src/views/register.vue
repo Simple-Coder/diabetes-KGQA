@@ -1,7 +1,7 @@
 <template>
   <div class="register">
     <el-form ref="registerForm" :model="registerForm" :rules="registerRules" class="register-form">
-      <h3 class="title">若依后台管理系统</h3>
+      <h3 class="title">糖尿病智能问答系统</h3>
       <el-form-item prop="username">
         <el-input v-model="registerForm.username" type="text" auto-complete="off" placeholder="账号">
           <svg-icon slot="prefix" icon-class="user" class="el-input__icon input-icon" />
@@ -67,7 +67,7 @@
 </template>
 
 <script>
-// import { getCodeImg, register } from "@/api/login";
+import { getCodeImg, register } from "@/api/login";
 
 export default {
   name: "Register",
@@ -108,7 +108,7 @@ export default {
     };
   },
   created() {
-    this.getCode();
+    // this.getCode();
   },
   methods: {
     getCode() {
