@@ -111,15 +111,15 @@ export default {
     // this.getCode();
   },
   methods: {
-    getCode() {
-      getCodeImg().then(res => {
-        this.captchaEnabled = res.captchaEnabled === undefined ? true : res.captchaEnabled;
-        if (this.captchaEnabled) {
-          this.codeUrl = "data:image/gif;base64," + res.img;
-          this.registerForm.uuid = res.uuid;
-        }
-      });
-    },
+    // getCode() {
+    //   getCodeImg().then(res => {
+    //     this.captchaEnabled = res.captchaEnabled === undefined ? true : res.captchaEnabled;
+    //     if (this.captchaEnabled) {
+    //       this.codeUrl = "data:image/gif;base64," + res.img;
+    //       this.registerForm.uuid = res.uuid;
+    //     }
+    //   });
+    // },
     handleRegister() {
       this.$refs.registerForm.validate(valid => {
         if (valid) {
@@ -134,9 +134,9 @@ export default {
             }).catch(() => {});
           }).catch(() => {
             this.loading = false;
-            if (this.captchaEnabled) {
-              this.getCode();
-            }
+            // if (this.captchaEnabled) {
+            //   this.getCode();
+            // }
           })
         }
       });

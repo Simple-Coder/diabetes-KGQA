@@ -48,6 +48,10 @@ module.exports = {
         },
         // 用于测试 代理时打印的数据如下：
         onProxyReq(proxyReq, req, res) {
+           if (req.url.includes('vue-admin-template')) {
+            // If the URL contains 'vue-admin-template', use the mock server
+            return;
+          }
           // console.log('proxyReq ---- http://127.0.0.1:60062/service/api/predict', proxyReq, req, res)
           if (req.body) {
             console.log('请求体如下')
