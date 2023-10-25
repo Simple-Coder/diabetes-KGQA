@@ -18,17 +18,23 @@
           {{ scope.row.name }}
         </template>
       </el-table-column>
+      <el-table-column label="密码" align="center">
+        <template slot-scope="scope">
+          <span>{{ scope.row.pwd }}</span>
+        </template>
+      </el-table-column>
 <!--      <el-table-column label="Introduction" width="110" align="center">-->
-      <el-table-column label="Introduction" align="center">
+<!--      <el-table-column label="Introduction" align="center">-->
+<!--        <template slot-scope="scope">-->
+<!--          <span>{{ scope.row.introduction }}</span>-->
+<!--        </template>-->
+<!--      </el-table-column>-->
+      <el-table-column label="角色"  align="center">
         <template slot-scope="scope">
-          <span>{{ scope.row.introduction }}</span>
+          {{ scope.row.roleNames }}
         </template>
       </el-table-column>
-      <el-table-column label="角色" width="110" align="center">
-        <template slot-scope="scope">
-          {{ scope.row.roles }}
-        </template>
-      </el-table-column>
+
 <!--      <el-table-column class-name="status-col" label="Status" width="110" align="center">-->
 <!--        <template slot-scope="scope">-->
 <!--          <el-tag :type="scope.row.status | statusFilter">{{ scope.row.status }}</el-tag>-->

@@ -10,15 +10,19 @@ const tokens = {
 const users = {
   'admin-token': {
     roles: ['admin'],
+    roleNames: ['超级管理员'],
     introduction: 'I am a super administrator',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-    name: 'Super Admin'
+    name: 'admin',
+    pwd: 123456
   },
   'editor-token': {
-    roles: ['editor'],
+    roles: ['common'],
+    roleNames: ['普通用户'],
     introduction: 'I am an editor',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-    name: 'Normal Editor'
+    name: 'common',
+    pwd: 123456
   }
 }
 
@@ -35,9 +39,10 @@ module.exports = [
       if (!token) {
         return {
           code: 60204,
-          message: 'Account and password are incorrect.'
+          message: '用户名或密码不正确'
         }
       }
+
 
       return {
         code: 20000,
@@ -90,7 +95,8 @@ module.exports = [
     url: '/vue-admin-template/user/register',
     type: 'post',
     response: config => {
-      const {username, password, role} = config.body;
+      const {username, password} = config.body;
+      // const {username, password, role} = config.body;
 
       // Check if the username is already taken
       if (tokens[username]) {
@@ -102,13 +108,16 @@ module.exports = [
 
       // Generate a new token for the registered user
       const newToken = `${username}-token`;
-
+      const role = 'common'
+      const roleName = '普通用户'
       // Create a new user entry
       users[newToken] = {
         roles: [role],
+        roleNames: [roleName],
         introduction: `I am a ${role}`,
         avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-        name: username
+        name: username,
+        pwd: password
       };
 
       // Add the new user's token to the tokens object
