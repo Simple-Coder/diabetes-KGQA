@@ -68,6 +68,23 @@ module.exports = [
       }
     }
   },
+
+  // get all users
+  {
+    url: '/vue-admin-template/user/all',
+    type: 'get',
+    response: () => {
+      // Convert the 'users' object into an array of user objects
+      const allUsers = Object.keys(users).map(token => users[token]);
+
+      return {
+        code: 20000,
+        data: allUsers
+      };
+    }
+  },
+
+
   // user register
   {
     url: '/vue-admin-template/user/register',
