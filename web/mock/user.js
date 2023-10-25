@@ -14,7 +14,7 @@ const users = {
     introduction: 'I am a super administrator',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'admin',
-    pwd: 123456
+    pwd: '123456'
   },
   'editor-token': {
     roles: ['common'],
@@ -22,17 +22,16 @@ const users = {
     introduction: 'I am an editor',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'common',
-    pwd: 123456
+    pwd: '123456'
   }
 }
-
 module.exports = [
   // user login
   {
     url: '/vue-admin-template/user/login',
     type: 'post',
     response: config => {
-      const {username} = config.body
+      const {username, password} = config.body
       const token = tokens[username]
 
       // mock error
@@ -43,6 +42,20 @@ module.exports = [
         }
       }
 
+      // Get the user's information
+      const user = users[token.token];
+     // Debugging: Add console logs
+      console.log('Input Password:', password);
+      console.log('Stored Password:', user.pwd);
+      console.log(user.pwd === password);
+
+      // Check the password
+      if (user && user.pwd !== password) {
+        return {
+          code: 60204,
+          message: '用户名或密码不正确'
+        };
+      }
 
       return {
         code: 20000,
