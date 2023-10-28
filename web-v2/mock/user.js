@@ -98,8 +98,8 @@ module.exports = [
       }
 
       // Generate a new token for the registered user
-      const newToken = `${username}-token`;
-      const role = 'common'
+      const newToken = `${username}-token`
+      const role = 'editor'
       const roleName = '普通用户'
       // Create a new user entry
       users[newToken] = {

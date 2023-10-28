@@ -175,7 +175,43 @@ export const asyncRoutes = [
       }
     ]
   },
-
+  {
+    path: '/kg',
+    component: Layout,
+    redirect: '/kg/question',
+    name: '知识平台',
+    meta: {
+      title: '知识平台',
+      icon: 'el-icon-s-help'
+    },
+    children: [
+      {
+        path: 'question',
+        name: 'question',
+        component: () => import('@/views/kg/question/index'),
+        meta: {
+          title: '单意图问答',
+          icon: 'table',
+          roles: ['admin'] // you can set roles in root nav
+        }
+      }, {
+        path: 'vision',
+        name: 'vision',
+        component: () => import('@/views/kg/vision/index'),
+        meta: {
+          title: '多意图问答',
+          icon: 'form',
+          roles: ['admin', 'editor'] // you can set roles in root nav
+        }
+      }
+      //  {
+      //   path: 'manage',
+      //   name: 'manage',
+      //   component: () => import('@/views/kg/manage/kgmanage_self'),
+      //   meta: {title: '知识管理', icon: 'form'}
+      // }
+    ]
+  },
   {
     path: '/icon',
     component: Layout,
