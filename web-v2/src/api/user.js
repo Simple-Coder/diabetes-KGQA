@@ -22,3 +22,15 @@ export function logout() {
     method: 'post'
   })
 }
+
+// 注册方法
+export function register(data) {
+  return request({
+    url: '/vue-element-admin/user/register',
+    headers: {
+      isToken: false
+    },
+    method: 'post',
+    data: data
+  })
+}

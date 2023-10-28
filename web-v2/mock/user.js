@@ -1,4 +1,3 @@
-
 const tokens = {
   admin: {
     token: 'admin-token'
@@ -29,7 +28,7 @@ module.exports = [
     url: '/vue-element-admin/user/login',
     type: 'post',
     response: config => {
-      const { username } = config.body
+      const {username} = config.body
       const token = tokens[username]
 
       // mock error
@@ -52,7 +51,7 @@ module.exports = [
     url: '/vue-element-admin/user/info\.*',
     type: 'get',
     response: config => {
-      const { token } = config.query
+      const {token} = config.query
       const info = users[token]
 
       // mock error
@@ -80,5 +79,49 @@ module.exports = [
         data: 'success'
       }
     }
-  }
+  },
+
+  // user register
+  {
+    url: '/vue-element-admin/user/register',
+    type: 'post',
+    response: config => {
+      const {username, password} = config.body;
+      // const {username, password, role} = config.body;
+
+      // Check if the username is already taken
+      if (tokens[username]) {
+        return {
+          code: 60205,
+          message: '用户名已存在！请重新输入用户名!'
+        };
+      }
+
+      // Generate a new token for the registered user
+      const newToken = `${username}-token`;
+      const role = 'common'
+      const roleName = '普通用户'
+      // Create a new user entry
+      users[newToken] = {
+        roles: [role],
+        roleNames: [roleName],
+        introduction: `I am a ${role}`,
+        avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+        name: username,
+        pwd: password
+      };
+
+      // Add the new user's token to the tokens object
+      tokens[username] = {
+        token: newToken
+      };
+
+      return {
+        code: 20000,
+        data: newToken
+      };
+    }
+  },
+
+
 ]
