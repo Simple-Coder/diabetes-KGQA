@@ -1,16 +1,16 @@
 import router from './router'
 import store from './store'
-import { Message } from 'element-ui'
+import {Message} from 'element-ui'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
-import { getToken } from '@/utils/auth' // get token from cookie
+import {getToken} from '@/utils/auth' // get token from cookie
 import getPageTitle from '@/utils/get-page-title'
 
-NProgress.configure({ showSpinner: false }) // NProgress Configuration
+NProgress.configure({showSpinner: false}) // NProgress Configuration
 
-const whiteList = ['/login','/register'] // no redirect whitelist
+const whiteList = ['/login', '/register'] // no redirect whitelist
 
-router.beforeEach(async(to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   // start progress bar
   NProgress.start()
 
@@ -23,7 +23,7 @@ router.beforeEach(async(to, from, next) => {
   if (hasToken) {
     if (to.path === '/login') {
       // if is logged in, redirect to the home page
-      next({ path: '/' })
+      next({path: '/'})
       NProgress.done()
     } else {
       const hasGetUserInfo = store.getters.name
@@ -32,9 +32,15 @@ router.beforeEach(async(to, from, next) => {
       } else {
         try {
           // get user info
-          await store.dispatch('user/getInfo')
+          store.dispatch('user/getInfo').then(() => {
+            store.dispatch('GenerateRoutes').then(accessRoutes => {
+              // 根据roles权限生成可访问的路由表
+              router.addRoutes(accessRoutes) // 动态添加可访问路由表
+              next({...to, replace: true}) // hack方法 确保addRoutes已完成
+            })
+          })
 
-          next()
+          // next()
         } catch (error) {
           // remove token and go to login page to re-login
           await store.dispatch('user/resetToken')
