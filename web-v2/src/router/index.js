@@ -87,7 +87,7 @@ export const constantRoutes = [
         meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
       }
     ]
-  },
+  }/*,
   {
     path: '/documentation',
     component: Layout,
@@ -126,7 +126,7 @@ export const constantRoutes = [
         meta: { title: 'Profile', icon: 'user', noCache: true }
       }
     ]
-  }
+  }*/
 ]
 
 /**
@@ -134,7 +134,7 @@ export const constantRoutes = [
  * the routes that need to be dynamically loaded based on user roles
  */
 export const asyncRoutes = [
-  {
+ /* {
     path: '/permission',
     component: Layout,
     redirect: '/permission/page',
@@ -174,7 +174,7 @@ export const asyncRoutes = [
         }
       }
     ]
-  },
+  },*/
   {
     path: '/kg',
     component: Layout,
@@ -220,7 +220,7 @@ export const asyncRoutes = [
       //   meta: {title: '知识管理', icon: 'form'}
       // }
     ]
-  },
+  }, /*
   {
     path: '/icon',
     component: Layout,
@@ -232,15 +232,15 @@ export const asyncRoutes = [
         meta: { title: 'Icons', icon: 'icon', noCache: true }
       }
     ]
-  },
+  }, */
 
   /** when your routing map is too long, you can split it into small modules **/
-  componentsRouter,
-  chartsRouter,
-  nestedRouter,
-  tableRouter,
+  // componentsRouter,
+  // chartsRouter,
+  // nestedRouter,
+  // tableRouter,
 
-  {
+/*  {
     path: '/example',
     component: Layout,
     redirect: '/example/list',
@@ -431,7 +431,7 @@ export const asyncRoutes = [
         meta: { title: 'External Link', icon: 'link' }
       }
     ]
-  },
+  },*/
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
