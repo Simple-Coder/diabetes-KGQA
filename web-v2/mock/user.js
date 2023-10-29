@@ -12,13 +12,15 @@ const users = {
     roles: ['admin'],
     introduction: 'I am a super administrator',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-    name: 'Super Admin'
+    name: 'Super Admin',
+    pwd: '123456'
   },
   'editor-token': {
     roles: ['editor'],
     introduction: 'I am an editor',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
-    name: 'Normal Editor'
+    name: 'Normal Editor',
+    pwd: '123456'
   }
 }
 
@@ -69,6 +71,22 @@ module.exports = [
     }
   },
 
+  // get all users
+  {
+    url: '/vue-element-admin/user/all',
+    type: 'get',
+    response: config => {
+      console.log(config.query)
+      // Convert the 'users' object into an array of user objects
+      const allUsers = Object.keys(users).map(token => users[token])
+
+      return {
+        code: 20000,
+        data: allUsers
+      }
+    }
+  },
+
   // user logout
   {
     url: '/vue-element-admin/user/logout',
@@ -100,11 +118,9 @@ module.exports = [
       // Generate a new token for the registered user
       const newToken = `${username}-token`
       const role = 'editor'
-      const roleName = '普通用户'
       // Create a new user entry
       users[newToken] = {
         roles: [role],
-        roleNames: [roleName],
         introduction: `I am a ${role}`,
         avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
         name: username,

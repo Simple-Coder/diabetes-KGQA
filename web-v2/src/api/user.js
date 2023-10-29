@@ -34,3 +34,11 @@ export function register(data) {
     data: data
   })
 }
+
+export function getAllUsers(query) {
+  return request({
+    url: '/vue-element-admin/user/all',
+    method: 'get',
+    params: query
+  })
+}

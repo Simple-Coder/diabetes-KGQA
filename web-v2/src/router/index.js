@@ -203,6 +203,15 @@ export const asyncRoutes = [
           icon: 'form',
           roles: ['admin', 'editor'] // you can set roles in root nav
         }
+      }, {
+        path: 'user',
+        name: 'user',
+        component: () => import('@/views/kg/user/inline-edit-table.vue'),
+        meta: {
+          title: '用户管理',
+          icon: 'form',
+          roles: ['admin'] // you can set roles in root nav
+        }
       }
       //  {
       //   path: 'manage',
