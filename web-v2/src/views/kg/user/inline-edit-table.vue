@@ -11,11 +11,30 @@
           {{ scope.row.name }}
         </template>
       </el-table-column>
-      <el-table-column label="密码" align="center">
+
+      <el-table-column min-width="100px" label="密码">
+        <template slot-scope="{row}">
+          <template v-if="row.edit">
+            <el-input v-model="row.pwd" class="edit-input" size="small" />
+            <el-button
+              class="cancel-btn"
+              size="small"
+              icon="el-icon-refresh"
+              type="warning"
+              @click="cancelEdit(row)"
+            >
+              cancel
+            </el-button>
+          </template>
+          <span v-else>{{ row.pwd }}</span>
+        </template>
+      </el-table-column>
+
+      <!--      <el-table-column label="密码" align="center">
         <template slot-scope="scope">
           <span>{{ scope.row.pwd }}</span>
         </template>
-      </el-table-column>
+      </el-table-column>-->
 
       <el-table-column label="角色" align="center">
         <template slot-scope="scope">
@@ -66,7 +85,7 @@
         </template>
       </el-table-column>-->
 
-      <el-table-column align="center" label="Actions" width="120">
+      <el-table-column align="center" label="操作" width="120">
         <template slot-scope="{row}">
           <el-button
             v-if="row.edit"
@@ -130,23 +149,25 @@ export default {
       this.list = items.map(v => {
         this.$set(v, 'edit', false) // https://vuejs.org/v2/guide/reactivity.html
         // v.originalTitle = v.title //  will be used when user click the cancel botton
+        v.originalPwd = v.pwd //  will be used when user click the cancel botton
         return v
       })
       this.listLoading = false
     },
     cancelEdit(row) {
-      row.title = row.originalTitle
+      // row.title = row.originalTitle
+      row.pwd = row.originalPwd
       row.edit = false
       this.$message({
-        message: 'The title has been restored to the original value',
+        message: '取消成功',
         type: 'warning'
       })
     },
     confirmEdit(row) {
       row.edit = false
-      row.originalTitle = row.title
+      row.originalPwd = row.pwd
       this.$message({
-        message: 'The title has been edited',
+        message: '修改成功！',
         type: 'success'
       })
     }
