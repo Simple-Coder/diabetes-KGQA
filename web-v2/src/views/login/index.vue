@@ -164,8 +164,10 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url('~@/assets/bg.jpg');
-  background-size: cover;
+  background-image: url('~@/assets/2.jpg');
+  background-size: cover; /* 使用'cover'以使背景图片覆盖整个容器 */
+  background-repeat: no-repeat; /* 防止平铺 */
+  background-position: center; /* 居中背景图片 */
 }
 .title {
   margin: 0px auto 30px auto;

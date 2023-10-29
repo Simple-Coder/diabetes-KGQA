@@ -152,7 +152,7 @@ export default {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url('~@/assets/bg.jpg');
+  background-image: url('~@/assets/2.jpg');
   background-size: cover;
 }
 
