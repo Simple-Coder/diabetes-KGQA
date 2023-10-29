@@ -103,7 +103,7 @@
             icon="el-icon-edit"
             @click="row.edit=!row.edit"
           >
-            Edit
+            编辑
           </el-button>
         </template>
       </el-table-column>
