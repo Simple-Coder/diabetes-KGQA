@@ -134,7 +134,7 @@ export const constantRoutes = [
  * the routes that need to be dynamically loaded based on user roles
  */
 export const asyncRoutes = [
- /* {
+  /* {
     path: '/permission',
     component: Layout,
     redirect: '/permission/page',
@@ -212,6 +212,16 @@ export const asyncRoutes = [
           icon: 'form',
           roles: ['admin'] // you can set roles in root nav
         }
+      },
+      {
+        path: 'chat',
+        name: 'chat',
+        component: () => import('@/views/kg/chat/index'),
+        meta: {
+          title: '聊天',
+          icon: 'form',
+          roles: ['admin'] // you can set roles in root nav
+        }
       }
       //  {
       //   path: 'manage',
@@ -240,7 +250,7 @@ export const asyncRoutes = [
   // nestedRouter,
   // tableRouter,
 
-/*  {
+  /*  {
     path: '/example',
     component: Layout,
     redirect: '/example/list',
