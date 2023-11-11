@@ -12,7 +12,7 @@
           Add Data
         </button>
       </div> -->
-      <span
+      <!--      <span
         v-if="showOptions"
         class="user-logged"
         :class="{ 'user-logged-dark': theme === 'dark' }"
@@ -37,7 +37,7 @@
             <img src="@/assets/github.svg">
           </a>
         </button>
-      </div>
+      </div>-->
 
       <chat-container
         v-if="showChat"
@@ -73,29 +73,30 @@ export default {
       showChat: true,
       users: [
         {
-          _id: '6R0MijpK6M4AIrwaaCY2',
+          _id: 'Luke',
           username: 'Luke',
           avatar: 'https://66.media.tumblr.com/avatar_c6a8eae4303e_512.pnj'
         },
         {
-          _id: 'SGmFnBZB4xxMv9V4CVlW',
+          _id: 'Leia',
           username: 'Leia',
           avatar: 'https://avatarfiles.alphacoders.com/184/thumb-184913.jpg'
         },
         {
-          _id: '6jMsIXUrBHBj7o2cRlau',
+          _id: 'Yoda',
           username: 'Yoda',
           avatar:
             'https://vignette.wikia.nocookie.net/teamavatarone/images/4/45/Yoda.jpg/revision/latest?cb=20130224160049'
         },
         {
-          _id: '7jMsIXUrBHBj7o2cRlau',
+          _id: 'Robot',
           username: 'Robot',
           avatar:
             'https://vignette.wikia.nocookie.net/teamavatarone/images/4/45/Yoda.jpg/revision/latest?cb=20130224160049'
         }
       ],
-      currentUserId: '6R0MijpK6M4AIrwaaCY2',
+      // currentUserId: 'Robot',
+      // currentUserId: name,
       isDevice: false,
       showDemoOptions: true,
       updatingData: false
@@ -106,6 +107,9 @@ export default {
     ...mapGetters([
       'name'
     ]),
+    currentUserId: function() {
+      return this.name // 将currentUserId赋值为name
+    },
     showOptions() {
       return !this.isDevice || this.showDemoOptions
     }

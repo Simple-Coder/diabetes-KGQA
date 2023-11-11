@@ -4,6 +4,15 @@ const tokens = {
   },
   editor: {
     token: 'editor-token'
+  },
+  tom: {
+    token: 'tom-token'
+  },
+  jerry: {
+    token: 'jerry-token'
+  },
+  robot: {
+    token: 'robot-token'
   }
 }
 
@@ -24,37 +33,27 @@ const users = {
     name: 'Normal Editor',
     pwd: '123456'
   },
-  'Luke': {
-    _id: '6R0MijpK6M4AIrwaaCY2',
-    username: 'Luke',
+  'tom': {
+    _id: 'tom',
+    username: 'tom',
     roles: ['editor'],
-    name: 'Luke',
+    name: 'tom',
     avatar: 'https://66.media.tumblr.com/avatar_c6a8eae4303e_512.pnj',
     pwd: '123456'
   },
-  'Leia': {
-    _id: 'SGmFnBZB4xxMv9V4CVlW',
-    username: 'Leia',
+  'jerry': {
+    _id: 'jerry',
+    username: 'jerry',
     roles: ['editor'],
-    name: 'Leia',
+    name: 'jerry',
     introduction: 'I am Leia',
     avatar: 'https://avatarfiles.alphacoders.com/184/thumb-184913.jpg',
     pwd: '123456'
   },
-  'Yoda': {
-    _id: '6jMsIXUrBHBj7o2cRlau',
-    username: 'Yoda',
-    name: 'Yoda',
-    roles: ['editor'],
-    introduction: 'I am Yoda',
-    avatar:
-      'https://vignette.wikia.nocookie.net/teamavatarone/images/4/45/Yoda.jpg/revision/latest?cb=20130224160049',
-    pwd: '123456'
-  },
-  'Robot': {
-    _id: '7jMsIXUrBHBj7o2cRlau',
-    username: 'Robot',
-    name: 'Robot',
+  'robot': {
+    _id: 'robot',
+    username: 'robot',
+    name: 'robot',
     roles: ['editor'],
     introduction: 'I am Robot',
     avatar:
@@ -69,7 +68,9 @@ module.exports = [
     url: '/vue-element-admin/user/login',
     type: 'post',
     response: config => {
+      console.log(config)
       const {username} = config.body
+      console.log(username)
       const token = tokens[username]
 
       // mock error
