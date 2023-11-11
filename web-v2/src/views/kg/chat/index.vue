@@ -57,8 +57,10 @@
 <script>
 import * as firestoreService from '@/database/firestore'
 import * as storageService from '@/database/storage'
+import { mapGetters } from 'vuex'
 
 import ChatContainer from './ChatContainer'
+import { getAllUsers } from '@/api/user'
 
 export default {
   components: {
@@ -101,6 +103,9 @@ export default {
   },
 
   computed: {
+    ...mapGetters([
+      'name'
+    ]),
     showOptions() {
       return !this.isDevice || this.showDemoOptions
     }
@@ -113,6 +118,10 @@ export default {
     }
   },
 
+  created() {
+    this.getList()
+  },
+
   mounted() {
     this.isDevice = window.innerWidth < 500
     window.addEventListener('resize', ev => {
@@ -121,6 +130,16 @@ export default {
   },
 
   methods: {
+    async getList() {
+      const { data } = await getAllUsers()
+      this.users = data.map(user => {
+        return {
+          _id: user._id,
+          username: user.name, // 这里假设你希望使用name字段作为用户名
+          avatar: user.avatar
+        }
+      })
+    },
     resetData() {
       firestoreService.getAllRooms().then(({ data }) => {
         data.forEach(async room => {

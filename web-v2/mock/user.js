@@ -9,6 +9,7 @@ const tokens = {
 
 const users = {
   'admin-token': {
+    _id: 'admin',
     roles: ['admin'],
     introduction: 'I am a super administrator',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
@@ -16,10 +17,48 @@ const users = {
     pwd: '123456'
   },
   'editor-token': {
+    _id: 'editor',
     roles: ['editor'],
     introduction: 'I am an editor',
     avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'Normal Editor',
+    pwd: '123456'
+  },
+  'Luke': {
+    _id: '6R0MijpK6M4AIrwaaCY2',
+    username: 'Luke',
+    roles: ['editor'],
+    name: 'Luke',
+    avatar: 'https://66.media.tumblr.com/avatar_c6a8eae4303e_512.pnj',
+    pwd: '123456'
+  },
+  'Leia': {
+    _id: 'SGmFnBZB4xxMv9V4CVlW',
+    username: 'Leia',
+    roles: ['editor'],
+    name: 'Leia',
+    introduction: 'I am Leia',
+    avatar: 'https://avatarfiles.alphacoders.com/184/thumb-184913.jpg',
+    pwd: '123456'
+  },
+  'Yoda': {
+    _id: '6jMsIXUrBHBj7o2cRlau',
+    username: 'Yoda',
+    name: 'Yoda',
+    roles: ['editor'],
+    introduction: 'I am Yoda',
+    avatar:
+      'https://vignette.wikia.nocookie.net/teamavatarone/images/4/45/Yoda.jpg/revision/latest?cb=20130224160049',
+    pwd: '123456'
+  },
+  'Robot': {
+    _id: '7jMsIXUrBHBj7o2cRlau',
+    username: 'Robot',
+    name: 'Robot',
+    roles: ['editor'],
+    introduction: 'I am Robot',
+    avatar:
+      'https://vignette.wikia.nocookie.net/teamavatarone/images/4/45/Yoda.jpg/revision/latest?cb=20130224160049',
     pwd: '123456'
   }
 }
@@ -120,6 +159,7 @@ module.exports = [
       const role = 'editor'
       // Create a new user entry
       users[newToken] = {
+        _id: username,
         roles: [role],
         introduction: `I am a ${role}`,
         avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
