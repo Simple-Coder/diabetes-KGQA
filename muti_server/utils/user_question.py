@@ -48,8 +48,7 @@ class QuestionInfo:
 
 
 class AnswerInfo:
-    def __init__(self, client_id, room_id, user_name, answer_text, answer_type=1):
-        self.clientId = client_id
+    def __init__(self, room_id, user_name, answer_text, answer_type=1):
         self.roomId = room_id
         self.userName = user_name
         self.answer = answer_text
@@ -57,7 +56,6 @@ class AnswerInfo:
 
     def to_dict(self):
         return {
-            'client_id': self.clientId,
             'room_id': self.roomId,
             'user_name': self.userName,
             'answer': self.answer,
@@ -66,7 +64,7 @@ class AnswerInfo:
 
 
 if __name__ == '__main__':
-    info = AnswerInfo(1, 2, 3, 4, 5)
+    info = AnswerInfo(2, 3, 4, 5)
 
     # 使用 to_dict 方法将对象转换为字典
     json_string = json.dumps(info.to_dict())

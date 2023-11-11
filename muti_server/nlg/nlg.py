@@ -10,6 +10,7 @@ import random
 from muti_server.utils.logger_conf import my_log
 from muti_server.utils.json_utils import json_str
 from muti_server.base.base_config import SystemConfig
+from muti_server.utils.user_question import AnswerInfo
 
 log = my_log.logger
 
@@ -19,55 +20,59 @@ class NLG():
         self.args = args
         self.system_config = SystemConfig()
 
-    def handle_gossip(self, intent, client, server):
+    def handle_gossip(self, intent, client, server, question_info):
         answer = random.choice(gossip_corpus.get(intent))
-        self.do_answer_client_txt(client, server, answer)
+        self.do_answer_client_txt(client, server, answer, question_info)
 
     def get_default_answer(self):
         return semantic_slot.get("others")["replay_answer"]
 
-    def do_answer_client_txt(self, client, server, answer):
+    def do_answer_client_txt(self, client, server, answer, question_info):
+        room_id = question_info.room_id
+        user_name = question_info.user_name
         try:
-            result = {'answer_type': 1, 'answer': answer}
-            server.send_message(client, json.dumps(result, ensure_ascii=False))
+            answer_info = AnswerInfo(room_id, user_name, answer, answer_type=1)
+            server.send_message(client, json.dumps(answer_info.to_dict()))
         except Exception as e:
             log.error("[nlg] do_answer_client error:{}".format(e))
 
-    def do_answer_client_json(self, client, server, answer):
+    def do_answer_client_json(self, client, server, answer, question_info):
+        room_id = question_info.room_id
+        user_name = question_info.user_name
         try:
-            result = {'answer_type': 2, 'answer': answer}
-            server.send_message(client, json.dumps(result, ensure_ascii=False))
+            answer_info = AnswerInfo(room_id, user_name, answer, answer_type=2)
+            server.send_message(client, json.dumps(answer_info.to_dict()))
         except Exception as e:
             log.error("[nlg] do_answer_client error:{}".format(e))
 
-    def handle_medical(self, client, server, answer_info1):
+    def handle_medical(self, client, server, answer_info1, question_info):
         if not answer_info1:
-            self.do_answer_client_txt(client, server, self.get_default_answer())
+            self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
         else:
-            self.do_answer_client_txt(client, server, answer_info1.get('replay_answer'))
+            self.do_answer_client_txt(client, server, answer_info1.get('replay_answer'), question_info)
             # visison_data
             visison_data = answer_info1.get('visison_data')
             if visison_data:
-                self.do_answer_client_json(client, server, visison_data)
+                self.do_answer_client_json(client, server, visison_data, question_info)
 
-    def handle_accept_intent(self, dialog_context, client, server):
+    def handle_accept_intent(self, dialog_context, client, server, question_info):
         try:
             log.info("[handle_accept_intent]-start")
             history_sematics = dialog_context.get_history_semantics()
             if len(history_sematics) == 0:
                 log.warn("[handle_accept_intent]-no history_sematics")
-                self.do_answer_client_txt(client, server, self.get_default_answer())
+                self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
             else:
                 last_answer_info = self.find_last_accept_answer(history_sematics)
                 if last_answer_info:
                     log.info("[handle_accept_intent]-last_answer_info find success")
-                    self.do_answer_client_txt(client, server, last_answer_info.get('choice_answer'))
+                    self.do_answer_client_txt(client, server, last_answer_info.get('choice_answer'), question_info)
                 else:
                     log.warn("[handle_accept_intent]-last_answer_info find fail")
-                    self.do_answer_client_txt(client, server, self.get_default_answer())
+                    self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
         except Exception as e:
             log.error("handle_accept_intent error:{}".format(e))
-            self.do_answer_client_txt(client, server, self.get_default_answer())
+            self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
 
     def find_last_accept_answer(self, history_sematics):
         last_answer_info = None
@@ -83,10 +88,10 @@ class NLG():
             pass
         return last_answer_info
 
-    def handle_all_medical(self, client, server, answer_info1, answer_info2):
+    def handle_all_medical(self, client, server, answer_info1, answer_info2, question_info):
         default_answer = self.get_default_answer()
         if not answer_info1 and not answer_info2:
-            self.do_answer_client_txt(client, server, default_answer)
+            self.do_answer_client_txt(client, server, default_answer, question_info)
         else:
             answer_strategy1 = answer_info1['answer_strategy']
             answer_strategy2 = answer_info2['answer_strategy']
@@ -96,65 +101,67 @@ class NLG():
 
             if answer_strategy1 == AnswerStretegy.NotFindData and answer_strategy2 == AnswerStretegy.NotFindData:
                 log.info("[nlg]发现所有回答策略均为数据库未知")
-                self.do_answer_client_txt(client, server, answer1)
+                self.do_answer_client_txt(client, server, answer1, question_info)
             elif answer_strategy1 == AnswerStretegy.FindSuccess:
                 log.info("[nlg]-answer_strategy1 is success")
                 final_answer = answer1
                 if answer_strategy2 == AnswerStretegy.FindSuccess:
                     final_answer = final_answer + "\n" + answer2
                     log.info("[nlg]-answer_strategy2 is success")
-                self.do_answer_client_txt(client, server, final_answer)
+                self.do_answer_client_txt(client, server, final_answer, question_info)
 
             elif answer_strategy2 == AnswerStretegy.FindSuccess:
                 log.info("[nlg]-answer_strategy2 is success")
                 final_answer = answer2
                 if answer_strategy1 == AnswerStretegy.FindSuccess:
                     final_answer = final_answer + "\n" + answer1
-                self.do_answer_client_txt(client, server, final_answer)
+                self.do_answer_client_txt(client, server, final_answer, question_info)
             else:
                 log.info("[nlg]回答策略未知，返回默认回答")
-                self.do_answer_client_txt(client, server, default_answer)
+                self.do_answer_client_txt(client, server, default_answer, question_info)
 
-    def handle_medical_clarify(self, client, server, intent_info1, intent_info2):
+    def handle_medical_clarify(self, client, server, intent_info1, intent_info2, question_info):
         try:
             if not intent_info1 and not intent_info2:
-                self.do_answer_client_txt(client, server, self.get_default_answer())
+                self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
                 return
             answer_info1 = intent_info1.get_answer_info()
             answer_info2 = intent_info2.get_answer_info()
-            self.do_answer_client_txt(client, server, answer_info1.get('replay_answer'))
+            self.do_answer_client_txt(client, server, answer_info1.get('replay_answer'), question_info)
             # visison_data
             visison_data = answer_info1.get('visison_data')
             if visison_data:
-                self.do_answer_client_json(client, server, visison_data)
+                self.do_answer_client_json(client, server, visison_data, question_info)
             log.info("[nlg] handle_medical_clarify,medical-send success,will sleep 1s")
             time.sleep(1)
-            self.do_answer_client_txt(client, server, answer_info2.get('replay_answer'))
+            self.do_answer_client_txt(client, server, answer_info2.get('replay_answer'), question_info)
             log.info("[nlg] handle_medical_clarify,clarify-send success")
         except Exception as e:
             log.error("[nlg] handle_medical_clarify error:{}".format(e))
-            self.do_answer_client_txt(client, server, self.get_default_answer())
+            self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
 
-    def handle_others(self, client, server):
-        self.do_answer_client_txt(client, server, self.get_default_answer())
+    def handle_others(self, client, server, question_info):
+        self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
         # TODO：增加动态添加知识图谱的能力
 
-    def handle_sub_graph_answer(self, client, server, dialog_context):
-        self.do_answer_sub_graph_txt(client, server, dialog_context)
+    def handle_sub_graph_answer(self, client, server, dialog_context, question_info):
+        self.do_answer_sub_graph_txt(client, server, dialog_context, question_info)
 
-    def generate_response(self, client, server, dialog_context):
+    def generate_response(self, client, server, dialog_context, question_info):
         current_semantic = dialog_context.get_current_semantic()
         history_sematics = dialog_context.get_history_semantics()
         user_id = dialog_context.get_user_id()
+        room_id = question_info.room_id
+        user_name = question_info.user_name
         try:
             if not current_semantic:
                 log.error("[nlg] 当前语义识别为null，将采用默认回答")
-                self.do_answer_client_txt(client, server, self.get_default_answer())
+                self.do_answer_client_txt(client, server, self.get_default_answer(), question_info)
                 return
 
             # 白名单用户使用子图召回方式回答
             if user_id in self.system_config.sub_graph_white_users:
-                self.do_answer_sub_graph_txt(client, server, dialog_context)
+                self.do_answer_sub_graph_txt(client, server, dialog_context, question_info)
                 return
 
             # 获取意图
@@ -172,75 +179,77 @@ class NLG():
             log.info("[nlg] intent_enum1:{} intent_enum2:{} start".format(intent_enum1, intent_enum2))
             # 2个均为闲聊：取第一个回答
             if intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Gossip:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
             # 2个均为诊断：合并答案
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Medical:
-                self.handle_all_medical(client, server, answer_info1, answer_info2)
+                self.handle_all_medical(client, server, answer_info1, answer_info2, question_info)
             # 2个均为澄清：合并澄清
             elif intent_enum1 == IntentEnum.Clarify and intent_enum2 == IntentEnum.Clarify:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
             # 2个均为未知：返回学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Others:
-                self.handle_others(client, server)
+                self.handle_others(client, server, question_info)
             # 1个闲聊，一个诊断：合并诊断
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Medical:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 2个均为澄清：合并澄清
             elif intent_enum1 == IntentEnum.Clarify and intent_enum2 == IntentEnum.Clarify:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 1个闲聊，一个澄清：合并澄清
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Clarify:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 1个闲聊，一个未知：优先闲聊
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Others:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
             # 1个闲聊，一个澄清：优先闲聊
             elif intent_enum1 == IntentEnum.Gossip and intent_enum2 == IntentEnum.Accept:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 1个诊断，一个闲聊：只处理诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Gossip:
-                self.handle_medical(client, server, answer_info1)
+                self.handle_medical(client, server, answer_info1, question_info)
                 # 1个诊断，一个澄清：先诊断，再澄清
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Clarify:
-                self.handle_medical_clarify(client, server, intent_info1, intent_info2)
+                self.handle_medical_clarify(client, server, intent_info1, intent_info2, question_info)
                 # 1个诊断，一个未知：只诊断
             elif intent_enum1 == IntentEnum.Medical and intent_enum2 == IntentEnum.Others:
-                self.handle_medical(client, server, answer_info1)
+                self.handle_medical(client, server, answer_info1, question_info)
                 # 一个澄清，一个闲聊：只处理澄清
             elif intent_enum1 == IntentEnum.Clarify and intent_enum2 == IntentEnum.Gossip:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 一个澄清，一个诊断：合并诊断后澄清
             elif intent_enum1 == IntentEnum.Clarify and intent_enum2 == IntentEnum.Medical:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 一个澄清，一个未知：只处理澄清
             elif intent_enum1 == IntentEnum.Clarify and intent_enum2 == IntentEnum.Others:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
                 # 一个未知，一个闲聊：学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Gossip:
-                self.handle_others(client, server)
+                self.handle_others(client, server, question_info)
                 # 一个未知，一个澄清：学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Clarify:
-                self.handle_others(client, server)
+                self.handle_others(client, server, question_info)
                 # 一个未知，一个诊断：学习中
             elif intent_enum1 == IntentEnum.Others and intent_enum2 == IntentEnum.Medical:
-                self.handle_others(client, server)
+                self.handle_others(client, server, question_info)
                 # 1为接受，找上下文回答
             elif intent_enum1 == IntentEnum.Accept:
-                self.handle_accept_intent(dialog_context, client, server)
+                self.handle_accept_intent(dialog_context, client, server, question_info)
                 # 2为接受，找上下文回答
             elif intent_enum2 == IntentEnum.Clarify:
-                self.handle_gossip(intent1, client, server)
+                self.handle_gossip(intent1, client, server, question_info)
             else:
                 log.info("[nlg]未识别到回答策略，intent1:{},intent2:{}".format(json_str(intent_info1),
                                                                               json_str(intent_info2)))
         except Exception as e:
             log.error("nlg 生成回答异常:{}".format(e))
-            # server.send_message(client, 'NLG模块异常啦~~')
-            server.send_message(client, self.get_default_answer())
+            answer_info = AnswerInfo(room_id, user_name, self.get_default_answer(), answer_type=-1)
+            server.send_message(client, json.dumps(answer_info.to_dict()))
         finally:
             dialog_context.add_history_semantic(current_semantic)
 
-    def do_answer_sub_graph_txt(self, client, server, dialog_context):
+    def do_answer_sub_graph_txt(self, client, server, dialog_context, question_info):
+        room_id = question_info.room_id
+        user_name = question_info.user_name
         try:
             # 1、获取语义信息
             current_semantic = dialog_context.get_current_semantic()
@@ -248,7 +257,8 @@ class NLG():
             sub_graphs_answers = current_semantic.get_answer_sub_graphs()
             if not sub_graphs_answers or len(sub_graphs_answers) == 0:
                 log.error("[nlg] sub_graphs_answer is none")
-                server.send_message(client, self.get_default_answer())
+                answer_info = AnswerInfo(room_id, user_name, self.get_default_answer(), answer_type=-1)
+                server.send_message(client, json.dumps(answer_info.to_dict()))
                 return
 
             # 3、打印回答
@@ -272,7 +282,8 @@ class NLG():
             # 打印合并后的回答
             for answer in formatted_answers:
                 print(answer)
-                self.do_answer_client_txt(client, server, answer)
+                self.do_answer_client_txt(client, server, answer, question_info)
         except Exception as e:
             log.error("[nlg] recall subgraph answer error {}".format(e))
-            server.send_message(client, self.get_default_answer())
+            answer_info = AnswerInfo(room_id, user_name, self.get_default_answer(), answer_type=-1)
+            server.send_message(client, json.dumps(answer_info.to_dict()))

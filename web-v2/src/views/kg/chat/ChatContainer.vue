@@ -81,6 +81,8 @@ import * as storageService from '@/database/storage'
 import { parseTimestamp, formatTimestamp } from '@/utils/dates'
 import logoAvatar from '@/assets/logo.png'
 
+import { WebSocketModule } from '@/assets/js/mywebsoket'
+
 import { register } from 'vue-advanced-chat'
 // import { register } from './../../dist/vue-advanced-chat.es.js'
 // import { register } from './../../src/lib/index.js'
@@ -97,6 +99,8 @@ export default {
 
   data() {
     return {
+      wsuri: 'ws://127.0.0.1:9001',
+      webSocketModule: null,
       roomsPerPage: 15,
       rooms: [],
       roomId: '',
@@ -165,6 +169,13 @@ export default {
     }
   },
 
+  created() {
+    this.initWebSocket()
+  },
+  destroyed() {
+    // this.websock.close()
+    this.webSocketModule.close()
+  },
   mounted() {
     this.addCss()
 
@@ -477,6 +488,8 @@ export default {
         content,
         timestamp: new Date()
       }
+      console.log('test')
+      console.log(message)
 
       if (files) {
         message.files = this.formattedFiles(files)
@@ -501,6 +514,10 @@ export default {
           await this.uploadFile({ file: files[index], messageId: id, roomId })
         }
       }
+
+      // websocket开始回复
+      // 判断服务不可用时
+      await this.sendWsMessage(this.currentUserId, content, roomId)
 
       firestoreService.updateRoom(roomId, { lastUpdated: new Date() })
     },
@@ -863,13 +880,116 @@ export default {
       this.invitedUsername = ''
       this.removeRoomId = null
       this.removeUserId = ''
-    }
-
+    },
     // ,incrementDbCounter(type, size) {
     // 	size = size || 1
     // 	this.dbRequestCount += size
     // 	console.log(type, size)
     // }
+
+    // 以下是新增的websocket
+    isValidJSON(str) {
+      try {
+        JSON.parse(str)
+        return true
+      } catch (error) {
+        return false
+      }
+    },
+    initWebSocket() {
+      this.webSocketModule = new WebSocketModule(this.wsuri, this.websockonmessage)
+      this.webSocketModule.connect()
+    },
+    websockonmessage(e) {
+      console.log(e)
+
+      const message = JSON.parse(e.data)
+      const roomId = message.room_id
+      // const sendUserId = message.user_name
+      const RobotUserId = '7jMsIXUrBHBj7o2cRlau'
+      const content = message.answer
+
+      const revmessage = {
+        sender_id: RobotUserId,
+        content,
+        timestamp: new Date()
+      }
+
+      const { id } = firestoreService.addMessage(roomId, revmessage)
+
+      firestoreService.updateRoom(roomId, { lastUpdated: new Date() })
+
+      // const isJson = this.isValidJSON(e.data)
+      //
+      // if (!isJson) {
+      //   // this.dialogData.push({person: this.input, rot: e.data})
+      //   // this.input = ''
+      //   console.log(e.data)
+      //   const content = e.data
+      //
+      //   const message = {
+      //     sender_id: this.currentUserId,
+      //     content,
+      //     timestamp: new Date()
+      //   }
+      //   const {id} = firestoreService.addMessage(roomId, message)
+      //
+      //   firestoreService.updateRoom(roomId, {lastUpdated: new Date()})
+      //
+      //
+      // } else {
+      //   const message = JSON.parse(e.data)
+      //   console.log(message)
+      //
+      //   const answer_type = message.answer_type
+      //   const answer = message.answer
+      //
+      //   /*        if (answer_type === 1) {
+      //             this.dialogData.push({person: this.input, rot: answer})
+      //             this.input = ''
+      //           } else {
+      //             // const answer = JSON.parse(answer);
+      //             // 知识卡片
+      //             this.nodecolumn = [{label: '记录', prop: 'record'}]
+      //             this.nodedata = {
+      //               record: answer
+      //             }
+      //             // 知识图谱
+      //             this.kgIdList.clear()
+      //             this.kgEdgeIdSet.clear()
+      //             this.kgoptions.series[0].data = answer.data || []
+      //             this.kgoptions.series[0].links = answer.links || []
+      //             for (const key1 of answer.data) {
+      //               this.kgIdList.add(key1.id)
+      //             }
+      //             for (const key2 of answer.links) {
+      //               this.kgEdgeIdSet.add(key2.id)
+      //             }
+      //           }*/
+      // }
+    },
+    sendWsMessage(currentUserId, content, roomId) {
+      try {
+        if (!this.webSocketModule.isConnected) {
+          console.log('连接异常')
+          // this.dialogData.push({person: this.input, rot: '服务异常，请稍后再试！'})
+          // this.input = ''
+          return
+        }
+        const params = {
+          'query': content,
+          'username': this.currentUserId,
+          'roomId': roomId
+        }
+        console.log('准备发送ws')
+        console.log(params)
+        const sendData = JSON.stringify(params)
+        this.webSocketModule.send(sendData)
+      } catch (e) {
+        console.log(e)
+        console.log(' ws发送异常！')
+      }
+    }
   }
 }
 </script>
