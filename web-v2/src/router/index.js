@@ -218,9 +218,19 @@ export const asyncRoutes = [
         name: 'chat',
         component: () => import('@/views/kg/chat/index'),
         meta: {
-          title: '聊天',
+          title: '问诊',
           icon: 'form',
           roles: ['admin', 'editor'] // you can set roles in root nav
+        }
+      },
+      {
+        path: 'online',
+        name: 'online',
+        component: () => import('@/views/kg/user/online.vue'),
+        meta: {
+          title: '在线用户',
+          icon: 'form',
+          roles: ['admin'] // you can set roles in root nav
         }
       }
       //  {
