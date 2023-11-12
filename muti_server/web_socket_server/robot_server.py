@@ -65,11 +65,13 @@ class RobotWebSocketHandler:
                 user_infos = []
                 for client in clients:
                     if 'userId' in client:
-                        user_info = client['userId']
+                        user_info = {}
+                        user_info['userId'] = client['userId']
+                        user_info['address'] = client['address']
                         user_infos.append(user_info)
                 onlineData = {
                     'type': MsgType.GetAllUserIds_Up,
-                    'data': user_infos
+                    'data': user_infos,
                 }
                 server.send_message(client, json.dumps(onlineData))
                 return
