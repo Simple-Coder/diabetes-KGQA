@@ -5,6 +5,8 @@ Created by xiedong
 import json
 
 from websocket_server import WebsocketServer
+
+from muti_server.base.base_config import *
 from muti_server.utils.user_question import QuestionInfo, AnswerInfo
 from muti_server.utils.logger_conf import my_log
 from muti_server.dm.dialog_context import DialogContext
@@ -29,17 +31,54 @@ class RobotWebSocketHandler:
         client_id = client['id']
         # user_context = DialogContext(room_id)
         # self.dialogue_tracker.add_context(room_id, user_context)
-        log.info("客户端建立连接完成, 客户端id:{},上下文初始化成功...".format(client_id))
         log.info("客户端建立连接完成, 客户端id:{}".format(client_id))
+        self.update_online_users_count(server)
 
     def client_left(self, client, server):
         client_id = client['id']
         # self.dialogue_tracker.remove_context(client_id)
         # log.info("客户端断开连接，客户端id：【{}】,上下文移除成功".format(client_id))
         log.info("客户端断开连接，客户端id：【{}】".format(client_id))
+        self.update_online_users_count(server)
+
+    def update_online_users_count(self, server):
+        # 更新在线用户数并广播给所有客户端
+        online_count = len(server.clients)
+        clients = server.clients
+        print(f"在线用户数：{online_count}")
+        # server.send_message_to_all(f"在线用户数：{online_count}")
 
     def message_received(self, client, server, message):
-        # 将用户输入封装为对象，后续使用
+        try:
+            log.info("rev msg:{}".format(message))
+            query_json = json.loads(message)
+            msgType = query_json['type']
+            # register
+            if msgType == MsgType.Login_Up:
+                userId = query_json['userId']
+                client['userId'] = userId
+                log.info("clientId:{} register ok..".format(client['id']))
+                return
+            # online userIds
+            if msgType == MsgType.GetAllUserIds_Up:
+                clients = server.clients
+                user_infos = []
+                for client in clients:
+                    if 'userId' in client:
+                        user_info = client['userId']
+                        user_infos.append(user_info)
+                onlineData = {
+                    'type': MsgType.GetAllUserIds_Up,
+                    'data': user_infos
+                }
+                server.send_message(client, json.dumps(onlineData))
+                return
+
+        except Exception as e:
+            log.error("rev msg error:{}".format(e))
+            return
+
+            # 将用户输入封装为对象，后续使用
         question_info = self.convert_message(client, message)
         room_id = question_info.room_id
         user_name = question_info.user_name
@@ -48,7 +87,6 @@ class RobotWebSocketHandler:
             user_context = DialogContext(room_id)
             self.dialogue_tracker.add_context(room_id, user_context)
             log.info("roomId:{},上下文初始化成功...".format(room_id))
-
 
             # 1、NLU 模块处理用户输入
             semantic_info = self.nlu.predict(question_info.userQuestion)

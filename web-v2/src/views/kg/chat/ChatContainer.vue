@@ -81,7 +81,7 @@ import * as storageService from '@/database/storage'
 import { parseTimestamp, formatTimestamp } from '@/utils/dates'
 import logoAvatar from '@/assets/logo.png'
 
-import { WebSocketModule } from '@/assets/js/mywebsoket'
+import { WebSocketModule } from '@/assets/js/mywebsoket-v2'
 
 import { register } from 'vue-advanced-chat'
 // import { register } from './../../dist/vue-advanced-chat.es.js'
@@ -897,7 +897,7 @@ export default {
       }
     },
     initWebSocket() {
-      this.webSocketModule = new WebSocketModule(this.wsuri, this.websockonmessage)
+      this.webSocketModule = new WebSocketModule(this.currentUserId, this.wsuri, this.websockonmessage)
       this.webSocketModule.connect()
     },
     websockonmessage(e) {
@@ -977,6 +977,7 @@ export default {
           return
         }
         const params = {
+          'type': 99,
           'query': content,
           'username': this.currentUserId,
           'roomId': roomId
