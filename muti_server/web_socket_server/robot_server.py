@@ -72,6 +72,7 @@ class RobotWebSocketHandler:
                 onlineData = {
                     'type': MsgType.GetAllUserIds_Up,
                     'data': user_infos,
+                    'length': len(user_infos)
                 }
                 server.send_message(client, json.dumps(onlineData))
                 return
