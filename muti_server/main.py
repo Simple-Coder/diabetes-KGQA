@@ -26,4 +26,4 @@ if __name__ == "__main__":
     # 创建 WebSocket 服务器
     server = RobotWebsocketServer(args)
     log.info("服务端启动成功，端口:{}".format(args.port))
-    server.start()
+    server.start_all()

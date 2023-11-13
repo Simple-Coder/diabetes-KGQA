@@ -180,8 +180,10 @@ class RobotWebsocketServer:
                     user_info['address'] = client['address']
                     user_infos.append(user_info)
             onlineData = {
-                'type': MsgType.GetAllUserIds_Up,
-                'data': user_infos,
+                'code': 20000,
+                'msg': 'success',
+                # 'type': MsgType.GetAllUserIds_Up,
+                'rows': user_infos,
                 'total': len(user_infos)
             }
             return onlineData

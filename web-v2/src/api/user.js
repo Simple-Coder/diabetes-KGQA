@@ -12,7 +12,7 @@ export function getInfo(token) {
   return request({
     url: '/vue-element-admin/user/info',
     method: 'get',
-    params: { token }
+    params: {token}
   })
 }
 
@@ -38,6 +38,14 @@ export function register(data) {
 export function getAllUsers(query) {
   return request({
     url: '/vue-element-admin/user/all',
+    method: 'get',
+    params: query
+  })
+}
+
+export function doGetOnlineList(query) {
+  return request({
+    url: '/user/online/get',
     method: 'get',
     params: query
   })

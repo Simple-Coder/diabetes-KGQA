@@ -36,6 +36,39 @@ module.exports = {
       warnings: false,
       errors: true
     },
+    proxy: {
+      // change xxx-api/login => mock/login
+      // detail: https://cli.vuejs.org/config/#devserver-proxy
+      [process.env.VUE_APP_BASE_API]: {
+        target: 'http://127.0.0.1:5000',
+        changeOrigin: true,
+        logLevel: 'debug',
+        pathRewrite: {
+          ['^' + process.env.VUE_APP_BASE_API]: ''
+        },
+        // 用于测试 代理时打印的数据如下：
+        onProxyReq(proxyReq, req, res) {
+          if (req.url.includes('vue-element-admin')) {
+            // If the URL contains 'vue-admin-template', use the mock server
+            return;
+          }
+          console.log('proxyReq ---- http://127.0.0.1:5000', proxyReq, req, res)
+          // if (req.body) {
+          //   console.log('请求体如下')
+          //   console.log(req.body)
+          //   const reg = new RegExp('application/json')
+          //   if (reg.test(proxyReq.getHeader('Content-Type'))) {
+          //     const bodyData = JSON.stringify(req.body)
+          //     proxyReq.setHeader('Content-Length', Buffer.byteLength(bodyData))
+          //     // stream the content
+          //     proxyReq.write(bodyData)
+          //   }
+          // } else {
+          //   console.log('请求体不存在')
+          // }
+        }
+      }
+    },
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {

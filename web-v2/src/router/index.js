@@ -230,7 +230,7 @@ export const asyncRoutes = [
         meta: {
           title: '在线用户',
           icon: 'form',
-          roles: ['admin'] // you can set roles in root nav
+          roles: ['admin','editor'] // you can set roles in root nav
         }
       }
       //  {
