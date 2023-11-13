@@ -904,6 +904,13 @@ export default {
       console.log(e)
 
       const message = JSON.parse(e.data)
+      const msgType = message.type
+
+      if (msgType !== undefined) {
+        console.log('未知消息', message)
+        return
+      }
+
       const roomId = message.room_id
       // const sendUserId = message.user_name
       const RobotUserId = '7jMsIXUrBHBj7o2cRlau'
