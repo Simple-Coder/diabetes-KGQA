@@ -15,8 +15,10 @@ from muti_server.nlg.nlg import NLG
 import muti_server.dm.dialogue_state_tracking as dst
 import muti_server.dm.dialogue_policy_optimization as dpo
 from muti_server.utils.json_utils import json_str
+from threading import Thread
 
 log = my_log.logger
+import flask
 
 
 class RobotWebSocketHandler:
@@ -135,6 +137,7 @@ class RobotWebsocketServer:
         self.args = args
         self.server = None
         self.port = args.port
+        self.flask_app = flask.Flask(__name__)
 
     def start(self):
         # 创建 WebSocket 服务器实例，并设置事件处理函数
@@ -146,6 +149,45 @@ class RobotWebsocketServer:
 
         # 启动 WebSocket 服务器
         self.server.run_forever()
+
+    def start_all(self):
+        # 同时启动WebSocket服务器和Flask应用程序
+        websocket_thread = Thread(target=self.start)
+        websocket_thread.start()
+
+        self.start_flask_app()
+
+    def start_flask_app(self):
+        # 在这里定义Flask路由和逻辑
+        @self.flask_app.route('/monitor/online/list')
+        def index():
+            log.info("rev http monitor online req")
+            clients = self.server.clients
+            user_infos = []
+            for client in clients:
+                if 'userId' in client:
+                    user_info = {}
+                    user_info['tokenId'] = '8855e2e0-2bff-4250-9d9e-7dfd7ee5a1e9'
+                    user_info['deptName'] = '研发部门'
+                    user_info['userName'] = client['userId']
+                    user_info['ipaddr'] = '182.137.106.29'
+                    user_info['loginLocation'] = '四川省 绵阳市'
+                    user_info['browser'] = 'Chrome 10'
+                    user_info['os'] = 'Windows 10'
+                    user_info['loginTime'] = '1699855873385'
+
+                    user_info['userId'] = client['userId']
+                    user_info['address'] = client['address']
+                    user_infos.append(user_info)
+            onlineData = {
+                'type': MsgType.GetAllUserIds_Up,
+                'data': user_infos,
+                'total': len(user_infos)
+            }
+            return onlineData
+
+        # 启动Flask应用程序
+        self.flask_app.run(port=5000, threaded=True)
 
 
 if __name__ == '__main__':
