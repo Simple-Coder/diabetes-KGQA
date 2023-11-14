@@ -8,7 +8,7 @@ import atexit
 
 
 class IP2RegionSearcher:
-    def __init__(self, db_path):
+    def __init__(self, db_path='ip//data//ip2region.xdb'):
         # 预先加载整个 xdb
         self.cb = XdbSearcher.loadContentFromFile(dbfile=db_path)
 
@@ -29,8 +29,8 @@ class IP2RegionSearcher:
 
 
 # 在程序中创建 IP2RegionSearcher 对象
-db_path = 'D://dev//PycharmProjects//diabetes-KGQA//muti_server//utils//ip//data//ip2region.xdb'
-ip_searcher = IP2RegionSearcher(db_path)
+
+ip_searcher = IP2RegionSearcher()
 
 # 使用查询方法
 # ip_result = ip_searcher.search("114.114.114.114")
