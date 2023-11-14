@@ -3,6 +3,7 @@ Created by xiedong
 @Date: 2023/6/5 15:31
 """
 import json
+import time
 
 from websocket_server import WebsocketServer
 
@@ -15,6 +16,7 @@ from muti_server.nlg.nlg import NLG
 import muti_server.dm.dialogue_state_tracking as dst
 import muti_server.dm.dialogue_policy_optimization as dpo
 from muti_server.utils.json_utils import json_str
+from muti_server.utils.ip_utils import IP2RegionSearcher
 from threading import Thread
 
 log = my_log.logger
@@ -31,6 +33,7 @@ class RobotWebSocketHandler:
 
     def new_client(self, client, server):
         client_id = client['id']
+        client['loginTime'] = time.time()
         # user_context = DialogContext(room_id)
         # self.dialogue_tracker.add_context(room_id, user_context)
         log.info("客户端建立连接完成, 客户端id:{}".format(client_id))
@@ -138,6 +141,7 @@ class RobotWebsocketServer:
         self.server = None
         self.port = args.port
         self.flask_app = flask.Flask(__name__)
+        self.ip_searcher = IP2RegionSearcher()
 
     def start(self):
         # 创建 WebSocket 服务器实例，并设置事件处理函数
@@ -167,17 +171,19 @@ class RobotWebsocketServer:
             for client in clients:
                 if 'userId' in client:
                     user_info = {}
-                    user_info['tokenId'] = '8855e2e0-2bff-4250-9d9e-7dfd7ee5a1e9'
-                    user_info['deptName'] = '研发部门'
-                    user_info['userName'] = client['userId']
-                    user_info['ipaddr'] = '182.137.106.29'
-                    user_info['loginLocation'] = '四川省 绵阳市'
-                    user_info['browser'] = 'Chrome 10'
-                    user_info['os'] = 'Windows 10'
-                    user_info['loginTime'] = '1699855873385'
+                    # user_info['tokenId'] = '8855e2e0-2bff-4250-9d9e-7dfd7ee5a1e9'
+                    # user_info['deptName'] = '研发部门'
+                    # user_info['browser'] = 'Chrome 10'
+                    # user_info['os'] = 'Windows 10'
 
                     user_info['userId'] = client['userId']
-                    user_info['address'] = client['address']
+                    user_info['userName'] = client['userId']
+                    ip = client['address']
+                    ip_addr = self.ip_searcher.search(ip)
+                    user_info['address'] = ip
+                    user_info['ipaddr'] = ip
+                    user_info['loginLocation'] = ip_addr
+                    user_info['loginTime'] = client['loginTime']
                     user_infos.append(user_info)
             onlineData = {
                 'code': 20000,

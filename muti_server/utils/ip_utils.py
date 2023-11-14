@@ -28,13 +28,14 @@ class IP2RegionSearcher:
         self.searcher.close()
 
 
-# 在程序中创建 IP2RegionSearcher 对象
+if __name__ == '__main__':
+    # 在程序中创建 IP2RegionSearcher 对象
 
-ip_searcher = IP2RegionSearcher()
+    ip_searcher = IP2RegionSearcher()
 
-# 使用查询方法
-# ip_result = ip_searcher.search("114.114.114.114")
-ip_result = ip_searcher.search("127.0.0.1")
-print(ip_result)
+    # 使用查询方法
+    # ip_result = ip_searcher.search("114.114.114.114")
+    ip_result = ip_searcher.search("127.0.0.1")
+    print(ip_result)
 
-# 程序退出时会自动调用 ip_searcher.close()，释放资源
+    # 程序退出时会自动调用 ip_searcher.close()，释放资源
