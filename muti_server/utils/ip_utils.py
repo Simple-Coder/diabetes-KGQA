@@ -8,7 +8,7 @@ import atexit
 
 
 class IP2RegionSearcher:
-    def __init__(self, db_path='ip//data//ip2region.xdb'):
+    def __init__(self, db_path='ip/data/ip2region.xdb'):
         # 预先加载整个 xdb
         self.cb = XdbSearcher.loadContentFromFile(dbfile=db_path)
 
