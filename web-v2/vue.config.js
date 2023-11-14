@@ -52,7 +52,7 @@ module.exports = {
             // If the URL contains 'vue-admin-template', use the mock server
             return;
           }
-          console.log('proxyReq ---- http://127.0.0.1:5000', proxyReq, req, res)
+          // console.log('proxyReq ---- http://127.0.0.1:5000',  res)
           // if (req.body) {
           //   console.log('请求体如下')
           //   console.log(req.body)
