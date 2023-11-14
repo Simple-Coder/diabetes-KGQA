@@ -2,13 +2,14 @@
 Created by xiedong
 @Date: 2023/11/14 16:30
 """
-from xdbSearcher import XdbSearcher
+from muti_server.utils.xdbSearcher import XdbSearcher
 
 import atexit
 
 
 class IP2RegionSearcher:
-    def __init__(self, db_path='ip/data/ip2region.xdb'):
+    # def __init__(self, db_path='ip/data/ip2region.xdb'):
+    def __init__(self, db_path='/Users/xiedong/PycharmProjects/diabetes-KGQA/muti_server/utils/ip/data/ip2region.xdb'):
         # 预先加载整个 xdb
         self.cb = XdbSearcher.loadContentFromFile(dbfile=db_path)
 

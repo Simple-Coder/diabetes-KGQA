@@ -16,6 +16,7 @@ from muti_server.nlg.nlg import NLG
 import muti_server.dm.dialogue_state_tracking as dst
 import muti_server.dm.dialogue_policy_optimization as dpo
 from muti_server.utils.json_utils import json_str
+from muti_server.utils.ip_utils import IP2RegionSearcher
 from threading import Thread
 
 log = my_log.logger
@@ -140,7 +141,7 @@ class RobotWebsocketServer:
         self.server = None
         self.port = args.port
         self.flask_app = flask.Flask(__name__)
-        # self.ip_searcher = IP2RegionSearcher()
+        self.ip_searcher = IP2RegionSearcher()
 
     def start(self):
         # 创建 WebSocket 服务器实例，并设置事件处理函数
@@ -184,8 +185,8 @@ class RobotWebsocketServer:
                     user_info['userName'] = userId
                     ip_info = client['address']
                     ip = ip_info[0]
-                    # ip_addr = self.ip_searcher.search(ip)
-                    user_info['address'] = ip
+                    ip_addr = self.ip_searcher.search(ip)
+                    user_info['loginLocation'] = ip_addr
                     user_info['ipaddr'] = ip
                     # user_info['loginLocation'] = ip_addr
                     user_info['loginTime'] = client['loginTime']
