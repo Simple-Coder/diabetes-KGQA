@@ -185,7 +185,7 @@ export const asyncRoutes = [
       icon: 'el-icon-s-help'
     },
     children: [
-      {
+      /* {
         path: 'question',
         name: 'question',
         component: () => import('@/views/kg/question/index'),
@@ -203,7 +203,7 @@ export const asyncRoutes = [
           icon: 'form',
           roles: ['admin', 'editor'] // you can set roles in root nav
         }
-      }, {
+      },*/ {
         path: 'user',
         name: 'user',
         component: () => import('@/views/kg/user/inline-edit-table.vue'),
@@ -214,25 +214,26 @@ export const asyncRoutes = [
         }
       },
       {
-        path: 'chat',
-        name: 'chat',
-        component: () => import('@/views/kg/chat/index'),
-        meta: {
-          title: '问诊',
-          icon: 'form',
-          roles: ['admin', 'editor'] // you can set roles in root nav
-        }
-      },
-      {
         path: 'online',
         name: 'online',
         component: () => import('@/views/kg/user/online.vue'),
         meta: {
           title: '在线用户',
           icon: 'form',
-          roles: ['admin','editor'] // you can set roles in root nav
+          roles: ['admin'] // you can set roles in root nav
+        }
+      },
+      {
+        path: 'chat',
+        name: 'chat',
+        component: () => import('@/views/kg/chat/index'),
+        meta: {
+          title: '在线问诊',
+          icon: 'form',
+          roles: ['admin', 'editor'] // you can set roles in root nav
         }
       }
+
       //  {
       //   path: 'manage',
       //   name: 'manage',
