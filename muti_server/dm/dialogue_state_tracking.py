@@ -9,7 +9,6 @@ from muti_server.knowledge_graph.multi_hop_service import find_answer
 from muti_server.knowledge_graph.kg_service import InfoRetrieveEnhanceService
 from muti_server.utils.json_utils import json_str
 
-
 log = my_log.logger
 
 
@@ -57,15 +56,16 @@ class DialogueStateTracker:
             for intent_info in intent_infos:
                 intent = intent_info.get_intent()
                 intent_hop = intent.get_intent_hop()
+                strategy = intent_info.get_intent_enum()
+                slot_info = fill_slot_info(intent, entities, dialog_context)
+
                 if intent_hop > 1:
                     log.info("intent_hop>1,will rl start")
-                    #TODO:
+                    # TODO:
                     # find_answer(,,intent_hop)
                 else:
                     log.info("intent_hop==1")
                     # strategy = intent_info.get_intent_strategy()
-                    strategy = intent_info.get_intent_enum()
-                    slot_info = fill_slot_info(intent, entities, dialog_context)
                     slot_info = self.kg_service.search(slot_info, strategy)
 
                     if slot_info:
