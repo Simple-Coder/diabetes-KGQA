@@ -60,6 +60,8 @@ class DialogueStateTracker:
                 strategy = intent_info.get_intent_enum()
                 slot_info = fill_slot_info(intent, entities, dialog_context)
 
+                # self.multi_hop_service.search(slot_info, intent_info, strategy)
+
                 if intent_hop > 1:
                     log.info("intent_hop>1,will rl start")
                     # TODO:
