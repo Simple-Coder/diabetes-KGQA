@@ -19,7 +19,10 @@ class DialogueStateTracker:
         self.contexts = {}
 
     def add_context(self, context_name, context_data):
-        self.contexts[context_name] = context_data
+        if context_name not in self.contexts:
+            self.contexts[context_name] = context_data
+        else:
+            log.info("context_name:{} exist!", context_name)
 
     def get_context(self, context_name):
         return self.contexts.get(context_name)
