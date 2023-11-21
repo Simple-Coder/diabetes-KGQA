@@ -183,10 +183,11 @@ def convert_answer(head, reltion, template, answer):
     print(description)
 
 
-answer = find_answer('糖尿病', '生产厂商', 2)
-convert_answer('糖尿病', '生产厂商', '糖尿病治疗药物的生产厂商有:\n', answer)
-print('---')
-answer = find_answer('糖尿病', '替代品', 2)
-convert_answer('糖尿病', '替代品', '糖尿病忌吃食物的替代品有:\n', answer)
-# find_answer('糖尿病', 'aa', 2)
-print()
+if __name__ == '__main__':
+    answer = find_answer('糖尿病', '生产厂商', 2)
+    convert_answer('糖尿病', '生产厂商', '糖尿病治疗药物的生产厂商有:\n', answer)
+    print('---')
+    answer = find_answer('糖尿病', '替代品', 2)
+    convert_answer('糖尿病', '替代品', '糖尿病忌吃食物的替代品有:\n', answer)
+    # find_answer('糖尿病', 'aa', 2)
+    print()
