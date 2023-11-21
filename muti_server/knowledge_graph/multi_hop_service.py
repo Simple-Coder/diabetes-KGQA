@@ -196,6 +196,8 @@ class MultiHopService():
 
         intent_hop = intent.get_intent_hop()
         intent_ = intent.get_intent()
+        # intent_hop = 2
+        # intent_ = '替代品'
         translated_relation_cn, translated_relation_en = translate_relation(intent_)
         find_answers = self.find_answer(disease, translated_relation_cn, intent_hop)
 
@@ -204,7 +206,7 @@ class MultiHopService():
             slot_info["answer_strategy"] = AnswerStretegy.NotFindData
         else:
             pattern = reply_template.format(**slot_values)
-            convert_answer = self.convert_answer(disease, translated_relation_cn, pattern, answer)
+            convert_answer = self.convert_answer(disease, translated_relation_cn, pattern, find_answers)
             slot_info["replay_answer"] = convert_answer
 
 
