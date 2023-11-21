@@ -64,13 +64,14 @@ class NLU:
 
 # 意图信息
 class IntentInfo:
-    def __init__(self, intent, intensity):
+    def __init__(self, intent, intensity, intent_hop=1):
         """
         :param intent: 意图 如：greep、goodbye等
         :param intensity: 意图强度  例如：0.6
         """
         self.intent = intent
         self.intensity = intensity
+        self.intent_hop = intent_hop
         self.intent_enum = build_intent_enum(self.intent, intensity)
         # self.intent_strategy = build_intent_strategy(self.intent, self.intensity)
         self.answer_info = None
@@ -83,6 +84,9 @@ class IntentInfo:
 
     def get_intensity(self):
         return self.intensity
+
+    def get_intent_hop(self):
+        return self.intent_hop
 
     def get_intent_enum(self):
         return self.intent_enum
