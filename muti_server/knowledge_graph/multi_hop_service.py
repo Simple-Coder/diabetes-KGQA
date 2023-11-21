@@ -3,6 +3,11 @@ Created by xiedong
 @Date: 2023/11/21 17:45
 """
 from muti_server.utils.relation import translate_relation
+from muti_server.utils.logger_conf import my_log
+from muti_server.nlu.nlu_utils import recognize_medical
+from muti_server.nlg.nlg_config import IntentEnum, CATEGORY_INDEX, AnswerStretegy
+
+log = my_log.logger
 
 all_path_str = [(['糖尿病', '二甲双胍', '二甲双胍', '糖尿病'], ['治疗药物', 'Equal', 'inv_治疗药物']),
                 (['鱼', '鱼', '鱼', '鱼'], ['Equal', 'Equal', 'Equal']),
@@ -136,7 +141,7 @@ class MultiHopService():
             path_elements = path.split('->')
             elements_one = path_elements[1]
             split_e_ones = elements_one.split(',')
-            if split_e_ones[1] == relation:
+            if len(split_e_ones) > 1 and split_e_ones[1] == relation:
                 answer.append(path)
 
         print(answer)
@@ -179,6 +184,28 @@ class MultiHopService():
         print('----')
         print('生成回答：\n')
         print(description)
+        return description
+
+    def search(self, slot_info, intent, strategy):
+        reply_template = slot_info.get("reply_template")
+
+        slot_info["answer_strategy"] = AnswerStretegy.FindSuccess
+        slot_values = slot_info.get("slot_values")
+
+        disease = slot_values.get('disease', '')
+
+        intent_hop = intent.get_intent_hop()
+        intent_ = intent.get_intent()
+        translated_relation_cn, translated_relation_en = translate_relation(intent_)
+        find_answers = self.find_answer(disease, translated_relation_cn, intent_hop)
+
+        if len(find_answers) == 0:
+            slot_info["replay_answer"] = "唔~我装满知识的大脑此刻很贫瘠"
+            slot_info["answer_strategy"] = AnswerStretegy.NotFindData
+        else:
+            pattern = reply_template.format(**slot_values)
+            convert_answer = self.convert_answer(disease, translated_relation_cn, pattern, answer)
+            slot_info["replay_answer"] = convert_answer
 
 
 if __name__ == '__main__':
