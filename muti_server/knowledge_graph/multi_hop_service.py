@@ -2,6 +2,8 @@
 Created by xiedong
 @Date: 2023/11/21 17:45
 """
+from muti_server.utils.relation import translate_relation
+
 all_path_str = [(['糖尿病', '二甲双胍', '二甲双胍', '糖尿病'], ['治疗药物', 'Equal', 'inv_治疗药物']),
                 (['鱼', '鱼', '鱼', '鱼'], ['Equal', 'Equal', 'Equal']),
                 (['糖尿病', '二甲双胍', '二甲双胍', '糖尿病'], ['治疗药物', 'Equal', 'inv_治疗药物']),
@@ -184,10 +186,14 @@ def convert_answer(head, reltion, template, answer):
 
 
 if __name__ == '__main__':
-    answer = find_answer('糖尿病', '生产厂商', 2)
+    # answer = find_answer('糖尿病', '生产厂商', 2)
+    translated_relation_cn, translated_relation_en = translate_relation("Drug_Product")
+    answer = find_answer('糖尿病', translated_relation_cn, 2)
     convert_answer('糖尿病', '生产厂商', '糖尿病治疗药物的生产厂商有:\n', answer)
     print('---')
-    answer = find_answer('糖尿病', '替代品', 2)
+
+    translated_relation_cn, translated_relation_en = translate_relation("替代品")
+    answer = find_answer('糖尿病', translated_relation_cn, 2)
     convert_answer('糖尿病', '替代品', '糖尿病忌吃食物的替代品有:\n', answer)
     # find_answer('糖尿病', 'aa', 2)
     print()
