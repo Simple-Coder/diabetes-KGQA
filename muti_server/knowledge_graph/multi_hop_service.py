@@ -140,8 +140,8 @@ def find_answer(head, relation, jump_num):
         if split_e_ones[1] == relation:
             answer.append(path)
 
-    return answer
     print(answer)
+    return answer
 
 
 def convert_answer(head, reltion, template, answer):
