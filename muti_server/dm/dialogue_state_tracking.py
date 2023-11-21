@@ -5,7 +5,7 @@ Created by xiedong
 from muti_server.utils.logger_conf import my_log
 from muti_server.nlg.nlg_utils import fill_slot_info
 from muti_server.knowledge_graph.service import KgService
-from muti_server.knowledge_graph.multi_hop_service import find_answer
+from muti_server.knowledge_graph.multi_hop_service import MultiHopService
 from muti_server.knowledge_graph.kg_service import InfoRetrieveEnhanceService
 from muti_server.utils.json_utils import json_str
 
@@ -17,6 +17,7 @@ class DialogueStateTracker:
         self.args = args
         self.kg_service = KgService(args)
         self.kg_service_enhance = InfoRetrieveEnhanceService(args)
+        self.multi_hop_service = MultiHopService(args)
         self.contexts = {}
 
     def add_context(self, context_name, context_data):
@@ -62,17 +63,17 @@ class DialogueStateTracker:
                 if intent_hop > 1:
                     log.info("intent_hop>1,will rl start")
                     # TODO:
-                    # find_answer(,,intent_hop)
+                    self.multi_hop_service.search(slot_info, intent, strategy)
                 else:
                     log.info("intent_hop==1")
                     # strategy = intent_info.get_intent_strategy()
                     slot_info = self.kg_service.search(slot_info, strategy)
 
-                    if slot_info:
-                        intent_info.set_answer_info(slot_info)
+                if slot_info:
+                    intent_info.set_answer_info(slot_info)
 
             # 子图召回增强
-            self.kg_service_enhance.enhance_search(semantic_info)
+            # self.kg_service_enhance.enhance_search(semantic_info)
 
             # 填充语义信息
             dialog_context.set_current_semantic(semantic_info)
