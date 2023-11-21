@@ -36,3 +36,9 @@ def translate_relation(relation):
 translated_relation_cn, translated_relation_en = translate_relation("Symptom_Disease")
 print("翻译到中文:", translated_relation_cn)
 print("翻译回英文:", translated_relation_en)
+
+
+# 测试翻译到英文
+translated_relation_cn, translated_relation_en = translate_relation("替代品")
+print("翻译到中文:", translated_relation_cn)
+print("翻译回英文:", translated_relation_en)
