@@ -44,156 +44,153 @@ all_path_str = [(['糖尿病', '二甲双胍', '二甲双胍', '糖尿病'], ['�
                 (['甜叶菊', '甜叶菊', '甜叶菊', '甜叶菊'], ['Equal', 'Equal', 'Equal'])]
 
 
-def print_paths(all_path):
-    path_set = set()
-    for idx, element in enumerate(all_path):
-        entities = element[0]
-        relations = element[1]
+class MultiHopService():
+    def __init__(self):
+        pass
 
-        for i, entity in enumerate(entities):
-            if i > 0 and i <= len(relations):
-                rel = relations[i - 1]
+    def print_paths(self, all_path):
+        path_set = set()
+        for idx, element in enumerate(all_path):
+            entities = element[0]
+            relations = element[1]
 
-                head = entities[i - 1]
-                tail = entities[i]
+            for i, entity in enumerate(entities):
+                if i > 0 and i <= len(relations):
+                    rel = relations[i - 1]
 
-                if head == tail:
-                    continue
+                    head = entities[i - 1]
+                    tail = entities[i]
 
-                path = head + ',' + rel + '->' + tail
+                    if head == tail:
+                        continue
 
-                history_paths = is_path_exists(path_set, head)
-                if history_paths and rel.find('inv') < 0:
-                    for path in history_paths:
-                        path += ',' + rel + '->' + tail
-                path_set.add(path)
-    return path_set
+                    path = head + ',' + rel + '->' + tail
 
+                    history_paths = self.is_path_exists(path_set, head)
+                    if history_paths and rel.find('inv') < 0:
+                        for path in history_paths:
+                            path += ',' + rel + '->' + tail
+                    path_set.add(path)
+        return path_set
 
-def is_path_exists(path_set, head):
-    matching_paths = []
-    for path in path_set:
-        if path.endswith(head) and path.find("inv_") < 0:
-            # if path.endswith(head):
-            matching_paths.append(path)
-    return matching_paths
+    def is_path_exists(self, path_set, head):
+        matching_paths = []
+        for path in path_set:
+            if path.endswith(head) and path.find("inv_") < 0:
+                # if path.endswith(head):
+                matching_paths.append(path)
+        return matching_paths
 
+    def print_paths1(self, path):
+        current_path = []
+        count_total = 0
+        for element in path:
+            count_total += 1
+            # if element != 'Equal' and not count_total % 4 == 0:
+            if element != 'Equal':
+                current_path.append(element)
+                # current_path.append('->')
+            else:
+                if current_path:
+                    print("->".join(current_path))
+                    # print(current_path)
+                current_path = []
+        if current_path:
+            print("->".join(current_path))
 
-def print_paths1(path):
-    current_path = []
-    count_total = 0
-    for element in path:
-        count_total += 1
-        # if element != 'Equal' and not count_total % 4 == 0:
-        if element != 'Equal':
-            current_path.append(element)
-            # current_path.append('->')
-        else:
-            if current_path:
-                print("->".join(current_path))
-                # print(current_path)
-            current_path = []
-    if current_path:
-        print("->".join(current_path))
+    def collect_result(self, paths):
+        result = []
+        for i, pathi in enumerate(paths):
+            head = pathi.split(',')[0]
+            usePathi = True
+            for j, pathj in enumerate(paths):
+                splitj = pathj.split('->')
+                headj_relj = splitj[0]
+                tail = splitj[-1]
+                if head == tail and pathj.find('inv') < 0 and pathi.find('inv') < 0:
+                    print("find")
+                    headj_relj += '->' + pathi
+                    usePathi = False
+                    result.append(headj_relj)
 
+            if usePathi:
+                result.append(pathi)
 
-def collect_result(paths):
-    result = []
-    for i, pathi in enumerate(paths):
-        head = pathi.split(',')[0]
-        usePathi = True
-        for j, pathj in enumerate(paths):
-            splitj = pathj.split('->')
-            headj_relj = splitj[0]
-            tail = splitj[-1]
-            if head == tail and pathj.find('inv') < 0 and pathi.find('inv') < 0:
-                print("find")
-                headj_relj += '->' + pathi
-                usePathi = False
-                result.append(headj_relj)
+        for ret in result:
+            print(ret)
 
-        if usePathi:
-            result.append(pathi)
+        return result
 
-    for ret in result:
-        print(ret)
+    # paths_sets = print_paths(paths_sets)
+    # for path in paths_sets:
+    #     print(path)
 
-    return result
+    def find_answer(self, head, relation, jump_num):
+        paths_sets = self.print_paths(all_path_str)
+        result = self.collect_result(paths_sets)
+        filtered_list = [item for item in result if item.count("->") == jump_num]
 
+        answer = []
 
-paths_sets = print_paths(all_path_str)
-result = collect_result(paths_sets)
+        for path in filtered_list:
+            path_elements = path.split('->')
+            elements_one = path_elements[1]
+            split_e_ones = elements_one.split(',')
+            if split_e_ones[1] == relation:
+                answer.append(path)
 
+        print(answer)
+        return answer
 
-# paths_sets = print_paths(paths_sets)
-# for path in paths_sets:
-#     print(path)
+    def convert_answer(self, head, reltion, template, answer):
+        if len(answer) == 0:
+            print('不知道如何回答~')
 
+        group_path = {}
+        for ans in answer:
+            path_elements = ans.split('->')
+            e1 = path_elements[1]
+            e1_split = e1.split(',')
+            e1 = e1_split[0]
+            e2 = path_elements[2]
 
-def find_answer(head, relation, jump_num):
-    filtered_list = [item for item in result if item.count("->") == jump_num]
+            if e2 not in group_path:
+                group_path[e2] = []
 
-    answer = []
+            group_path[e2].append(e1)
 
-    for path in filtered_list:
-        path_elements = path.split('->')
-        elements_one = path_elements[1]
-        split_e_ones = elements_one.split(',')
-        if split_e_ones[1] == relation:
-            answer.append(path)
+        # print(group_path)
+        # 创建一个空字符串，用于存储描述信息
+        description = template
 
-    print(answer)
-    return answer
+        # 遍历字典中的键值对，生成描述信息
+        for head, relations in group_path.items():
+            # 生成描述信息的一部分，包括 head 和对应的 relations
+            relation_description = f"{head}({reltion})："
 
+            # 添加每个关系到描述信息中
+            relation_description += "、".join(relations)
 
-def convert_answer(head, reltion, template, answer):
-    if len(answer) == 0:
-        print('不知道如何回答~')
+            # 将该部分描述信息添加到总的描述信息中
+            description += relation_description
+            description += "\n"
 
-    group_path = {}
-    for ans in answer:
-        path_elements = ans.split('->')
-        e1 = path_elements[1]
-        e1_split = e1.split(',')
-        e1 = e1_split[0]
-        e2 = path_elements[2]
-
-        if e2 not in group_path:
-            group_path[e2] = []
-
-        group_path[e2].append(e1)
-
-    # print(group_path)
-    # 创建一个空字符串，用于存储描述信息
-    description = template
-
-    # 遍历字典中的键值对，生成描述信息
-    for head, relations in group_path.items():
-        # 生成描述信息的一部分，包括 head 和对应的 relations
-        relation_description = f"{head}({reltion})："
-
-        # 添加每个关系到描述信息中
-        relation_description += "、".join(relations)
-
-        # 将该部分描述信息添加到总的描述信息中
-        description += relation_description
-        description += "\n"
-
-    # 打印生成的自然语言描述
-    print('----')
-    print('生成回答：\n')
-    print(description)
+        # 打印生成的自然语言描述
+        print('----')
+        print('生成回答：\n')
+        print(description)
 
 
 if __name__ == '__main__':
+    service = MultiHopService()
     # answer = find_answer('糖尿病', '生产厂商', 2)
     translated_relation_cn, translated_relation_en = translate_relation("Drug_Product")
-    answer = find_answer('糖尿病', translated_relation_cn, 2)
-    convert_answer('糖尿病', '生产厂商', '糖尿病治疗药物的生产厂商有:\n', answer)
+    answer = service.find_answer('糖尿病', translated_relation_cn, 2)
+    service.convert_answer('糖尿病', '生产厂商', '糖尿病治疗药物的生产厂商有:\n', answer)
     print('---')
 
     translated_relation_cn, translated_relation_en = translate_relation("替代品")
-    answer = find_answer('糖尿病', translated_relation_cn, 2)
-    convert_answer('糖尿病', '替代品', '糖尿病忌吃食物的替代品有:\n', answer)
+    answer = service.find_answer('糖尿病', translated_relation_cn, 2)
+    service.convert_answer('糖尿病', '替代品', '糖尿病忌吃食物的替代品有:\n', answer)
     # find_answer('糖尿病', 'aa', 2)
     print()
