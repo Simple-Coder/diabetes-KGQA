@@ -45,8 +45,8 @@ all_path_str = [(['糖尿病', '二甲双胍', '二甲双胍', '糖尿病'], ['�
 
 
 class MultiHopService():
-    def __init__(self):
-        pass
+    def __init__(self, args=None):
+        self.args = args
 
     def print_paths(self, all_path):
         path_set = set()
