@@ -31,6 +31,9 @@ class IntentInfo:
     def get_intent_enum(self):
         return self.intent_enum
 
+    def get_intent_hop(self):
+        return self.intent_hop
+
     def get_answer_info(self):
         return self.answer_info
 
