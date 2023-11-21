@@ -2,6 +2,8 @@
 Created by xiedong
 @Date: 2023/8/4 15:14
 """
+
+
 def translate_relation(relation):
     # 实现关系类型的翻译逻辑，你可以自行定义关系类型到中文的映射
     relation_map = {
@@ -20,6 +22,8 @@ def translate_relation(relation):
         "Test_Disease": "检查方法",
         "Test_items_Disease": "检查指标",
         "Treatment_Disease": "非药治疗",
+        "Drug_Product": "生产厂商",
+        "Food_Replace": "替代品",
     }
 
     # 创建反向映射字典
