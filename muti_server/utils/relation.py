@@ -27,6 +27,7 @@ def translate_relation(relation):
         "Food_Replace": "替代品",
 
         "symptom_disease": "临床表现",
+        "disease_food_replace": "替代品",
     }
 
     # 创建反向映射字典
