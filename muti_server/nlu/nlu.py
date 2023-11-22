@@ -7,7 +7,7 @@ from muti_server.models.muti_config import ModelConfig
 from muti_server.models.muti_predict import MutiPredictWrapper
 from muti_server.utils.logger_conf import my_log
 # from muti_server.nlu.nlu_utils import build_intent_strategy, build_intent_enum
-from muti_server.nlu.nlu_utils import build_intent_enum
+from muti_server.nlu.nlu_utils import build_intent_enum, get_white_multi_hop_nlu
 from muti_server.utils.json_utils import json_str
 
 log = my_log.logger
@@ -37,16 +37,23 @@ class NLU:
             # 解析模型识别结果
             all_intents = intent_probs[:self.model_config.muti_intent_threshold_num]
 
+            # TODO:处理多跳白名单识别
+            all_intents, slot_probs = get_white_multi_hop_nlu(text, all_intents, slot_probs)
+
             all_intents = self.try_append_default(all_intents)
 
             all_slots = slot_probs
 
             log.info("[nlu]理解query:{} 结果:all_intents:{},all_slots:{}".format(text, json_str(all_intents),
-                                                                                 json_str(all_slots)))
+                                                                             json_str(all_slots)))
             for reg_intent in all_intents:
                 intent = reg_intent[0]
                 intent_intensity = reg_intent[1]
-                intent_info = IntentInfo(intent, intent_intensity)
+                intent_hop = 1
+                if len(reg_intent) > 2:
+                    intent_hop = reg_intent[2]
+
+                intent_info = IntentInfo(intent, intent_intensity, intent_hop)
                 semantic_info.add_intent_info(intent_info)
             # act 返回对象
             semantic_info.set_entities(all_slots)
