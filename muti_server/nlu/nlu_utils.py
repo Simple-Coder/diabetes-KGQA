@@ -38,6 +38,8 @@ def recognize_medical(intent_enum):
             or intent_enum == IntentEnum.DENY:
         return True
     return False
+
+
 # def build_intent_strategy(intent_enum, conf):
 #     if intent_enum == IntentEnum.Others:
 #         return IntentEnum.DENY
@@ -54,3 +56,13 @@ def recognize_medical(intent_enum):
 #     else:
 #         # slot_info["intent_strategy"] = "deny"
 #         return IntentEnum.DENY
+
+
+def get_white_multi_hop_nlu(query, all_intents, all_slots):
+    white_querys_multi_hop = ["糖尿病忌吃食物的替代品有哪些?"]
+
+    if query not in white_querys_multi_hop:
+        return all_intents, all_slots
+    # TODO:处理多跳，数据结构长什么样
+
+    return ('disease_food_replace', 0.9, 2), ('糖尿病')
