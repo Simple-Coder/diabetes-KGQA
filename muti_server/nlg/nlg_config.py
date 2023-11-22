@@ -191,6 +191,16 @@ semantic_slot = {
         "intent_strategy": "",
         "deny_response": "我不太理解您刚才所说的内容，您可以换个问法问我哦~"
     },
+    "disease_food_replace": {
+        "slot_list": ["disease"],
+        "slot_values": None,
+        "cql_template": "MATCH (p:`非药治疗`) -[r:Treatment_Disease]->(q:`疾病`) where q.name='{disease}' return p.name",
+        "cql_template_vision": "MATCH (p:`非药治疗`) -[r:Treatment_Disease]->(q:`疾病`) where q.name='{disease}' return type(r) AS type,id(r) as Relid,p,q,labels(p)[0] as plabel,labels(q)[0] as qlabel",
+        "reply_template": "'{disease}' 疾病忌吃食物的替代品有：\n",
+        "ask_template": "您问的是疾病 '{disease}' 忌吃食物的替代品吗？",
+        "intent_strategy": "",
+        "deny_response": "我不太理解您刚才所说的内容，您可以换个问法问我哦~"
+    },
     "others": {
         "slot_values": None,
         "replay_answer": "非常抱歉，我还不知道如何回答您，我正在努力学习中~",
