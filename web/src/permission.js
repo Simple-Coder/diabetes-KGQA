@@ -31,16 +31,10 @@ router.beforeEach(async (to, from, next) => {
         next()
       } else {
         try {
-          // get user info
-          store.dispatch('user/getInfo').then(() => {
-            store.dispatch('GenerateRoutes').then(accessRoutes => {
-              // 根据roles权限生成可访问的路由表
-              router.addRoutes(accessRoutes) // 动态添加可访问路由表
-              next({...to, replace: true}) // hack方法 确保addRoutes已完成
-            })
-          })
+           // get user info
+          await store.dispatch('user/getInfo')
 
-          // next()
+          next()
         } catch (error) {
           // remove token and go to login page to re-login
           await store.dispatch('user/resetToken')

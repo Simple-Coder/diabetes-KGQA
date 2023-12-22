@@ -6,12 +6,12 @@
         <div id="box">
           <div class="b-head">
             <img class="h-img" alt="" src="@/assets/logo.png" width=80; height=60;/>
-            <span class="h_span">小谢智能问答机器人(单意图)</span>
+            <span class="h_span">糖尿病智能问答机器人</span>
           </div>
           <div class="b-body" id="dialogue_box">
             <div class="rotWord">
               <span></span>
-              <p>嗨，欢迎使用小谢智能问答系统！</p>
+              <p>嗨，欢迎使用糖尿病智能问答系统！</p>
             </div>
             <div v-for="(item, index) in dialogData" :key="index">
               <div class="mWord">
