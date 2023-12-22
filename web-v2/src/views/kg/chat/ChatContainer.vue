@@ -911,6 +911,12 @@ export default {
         return
       }
 
+      const answer_type = message.answer_type
+      if (answer_type !== 1) {
+        console.log('answer_type不满足', message)
+        return
+      }
+
       const roomId = message.room_id
       // const sendUserId = message.user_name
       const RobotUserId = '7jMsIXUrBHBj7o2cRlau'
