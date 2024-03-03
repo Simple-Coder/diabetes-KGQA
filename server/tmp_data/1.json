@@ -1,0 +1,579 @@
+{
+  "code": 20000,
+  "data": {
+    "reply": {
+      "answer": "'\u7cd6\u5c3f\u75c5' \u75be\u75c5\u7684\u75c5\u75c7\u8868\u73b0\u4e00\u822c\u662f\u8fd9\u6837\u7684\uff1a\n\u80a2\u4f53\u808c\u8089\u65e0\u529b\u3001\u667a\u80fd\u969c\u788d\u3001\u7f3a\u8840\u3001\u7532\u7663\u3001\u7cd6\u5c3f\u3001\u5b64\u72ec\u611f\u3001\u6613\u6012\u3001\u632b\u8d25\u611f\u3001\u65e0\u75c7\u72b6\u5fc3\u808c\u6897\u6b7b\u3001\u75bc\u75db\u3001\u8dcc\u5012\u3001\u591a\u8651\u3001\u60c5\u7eea\u53cd\u5e94\u3001\u591a\u5c3f\u3001\u6c34\u80bf\u3001\u7cd6\u4ee3\u8c22\u6c34\u5e73\u5f02\u5e38\u3001\u591c\u5c3f\u591a\u3001\u5185\u759a\u611f\u3001\u60c5\u7eea\u969c\u788d\u3001\u8425\u517b\u8d1f\u5e73\u8861\u3001\u4e0d\u826f\u598a\u5a20\u3001\u5931\u660e\u3001\u4e4f\u529b\u3001\u521b\u9762\u3001\u5fc3\u60b8\u3001\u5c3f\u7cd6\u3001\u591a\u98df\u3001\u6cae\u4e27\u3001\u5c0f\u52a8\u8109\u7ca5\u6837\u786c\u5316\u3001\u9ad8\u8840\u7cd6\u6e17\u900f\u6027\u5229\u5c3f\u3001\u81f4\u6b8b\u3001\u4ee3\u8c22\u5f02\u5e38\u3001\u8db3\u90e8\u76ae\u80a4\u7834\u635f\u3001\u4f4e\u8840\u7cd6\u4e8b\u4ef6\u3001\u7ba1\u8154\u72ed\u7a84\u6216\u95ed\u585e\u3001\u5fae\u969c\u788d\u3001\u8db3\u8e1d\u4ee5\u4e0b\u90e8\u4f4d\u7684\u611f\u67d3\u3001\u518d\u72ed\u7a84\u3001\u521b\u9762\u611f\u67d3\u3001\u8db3\u7663\u3001\u8db3\u6e83\u75a1\u3001\u5fae\u5faa\u73af\u969c\u788d\u3001\u4f53\u91cd\u4e0b\u964d\u3001\u8840\u5bb9\u91cf\u51cf\u5c11\u3001\u840e\u7f29\u3001\u591a\u996e\u3001\u4e0b\u80a2\u7f3a\u8840",
+      "visison_data": {
+        "data": [
+          {
+            "category": 0,
+            "des": "\u7cd6\u5c3f\u75c5",
+            "id": "749",
+            "name": "\u7cd6\u5c3f\u75c5"
+          },
+          {
+            "category": 4,
+            "des": "\u667a\u80fd\u969c\u788d",
+            "id": "1308",
+            "name": "\u667a\u80fd\u969c\u788d"
+          },
+          {
+            "category": 4,
+            "des": "\u7f3a\u8840",
+            "id": "1316",
+            "name": "\u7f3a\u8840"
+          },
+          {
+            "category": 4,
+            "des": "\u7532\u7663",
+            "id": "1322",
+            "name": "\u7532\u7663"
+          },
+          {
+            "category": 4,
+            "des": "\u7cd6\u5c3f",
+            "id": "1326",
+            "name": "\u7cd6\u5c3f"
+          },
+          {
+            "category": 4,
+            "des": "\u5b64\u72ec\u611f",
+            "id": "1328",
+            "name": "\u5b64\u72ec\u611f"
+          },
+          {
+            "category": 4,
+            "des": "\u6613\u6012",
+            "id": "1332",
+            "name": "\u6613\u6012"
+          },
+          {
+            "category": 4,
+            "des": "\u632b\u8d25\u611f",
+            "id": "1343",
+            "name": "\u632b\u8d25\u611f"
+          },
+          {
+            "category": 4,
+            "des": "\u65e0\u75c7\u72b6\u5fc3\u808c\u6897\u6b7b",
+            "id": "1356",
+            "name": "\u65e0\u75c7\u72b6\u5fc3\u808c\u6897\u6b7b"
+          },
+          {
+            "category": 4,
+            "des": "\u75bc\u75db",
+            "id": "1365",
+            "name": "\u75bc\u75db"
+          },
+          {
+            "category": 4,
+            "des": "\u8dcc\u5012",
+            "id": "1372",
+            "name": "\u8dcc\u5012"
+          },
+          {
+            "category": 4,
+            "des": "\u591a\u8651",
+            "id": "1378",
+            "name": "\u591a\u8651"
+          },
+          {
+            "category": 4,
+            "des": "\u60c5\u7eea\u53cd\u5e94",
+            "id": "1381",
+            "name": "\u60c5\u7eea\u53cd\u5e94"
+          },
+          {
+            "category": 4,
+            "des": "\u591a\u5c3f",
+            "id": "1410",
+            "name": "\u591a\u5c3f"
+          },
+          {
+            "category": 4,
+            "des": "\u6c34\u80bf",
+            "id": "1412",
+            "name": "\u6c34\u80bf"
+          },
+          {
+            "category": 4,
+            "des": "\u7cd6\u4ee3\u8c22\u6c34\u5e73\u5f02\u5e38",
+            "id": "1440",
+            "name": "\u7cd6\u4ee3\u8c22\u6c34\u5e73\u5f02\u5e38"
+          },
+          {
+            "category": 4,
+            "des": "\u591c\u5c3f\u591a",
+            "id": "1444",
+            "name": "\u591c\u5c3f\u591a"
+          },
+          {
+            "category": 4,
+            "des": "\u5185\u759a\u611f",
+            "id": "1456",
+            "name": "\u5185\u759a\u611f"
+          },
+          {
+            "category": 4,
+            "des": "\u60c5\u7eea\u969c\u788d",
+            "id": "1459",
+            "name": "\u60c5\u7eea\u969c\u788d"
+          },
+          {
+            "category": 4,
+            "des": "\u8425\u517b\u8d1f\u5e73\u8861",
+            "id": "1465",
+            "name": "\u8425\u517b\u8d1f\u5e73\u8861"
+          },
+          {
+            "category": 4,
+            "des": "\u4e0d\u826f\u598a\u5a20",
+            "id": "1471",
+            "name": "\u4e0d\u826f\u598a\u5a20"
+          },
+          {
+            "category": 4,
+            "des": "\u5931\u660e",
+            "id": "1475",
+            "name": "\u5931\u660e"
+          },
+          {
+            "category": 4,
+            "des": "\u4e4f\u529b",
+            "id": "1483",
+            "name": "\u4e4f\u529b"
+          },
+          {
+            "category": 4,
+            "des": "\u521b\u9762",
+            "id": "1485",
+            "name": "\u521b\u9762"
+          },
+          {
+            "category": 4,
+            "des": "\u5fc3\u60b8",
+            "id": "1486",
+            "name": "\u5fc3\u60b8"
+          },
+          {
+            "category": 4,
+            "des": "\u5c3f\u7cd6",
+            "id": "1487",
+            "name": "\u5c3f\u7cd6"
+          },
+          {
+            "category": 4,
+            "des": "\u591a\u98df",
+            "id": "1489",
+            "name": "\u591a\u98df"
+          },
+          {
+            "category": 4,
+            "des": "\u6cae\u4e27",
+            "id": "1494",
+            "name": "\u6cae\u4e27"
+          },
+          {
+            "category": 4,
+            "des": "\u5c0f\u52a8\u8109\u7ca5\u6837\u786c\u5316",
+            "id": "1499",
+            "name": "\u5c0f\u52a8\u8109\u7ca5\u6837\u786c\u5316"
+          },
+          {
+            "category": 4,
+            "des": "\u9ad8\u8840\u7cd6\u6e17\u900f\u6027\u5229\u5c3f",
+            "id": "1509",
+            "name": "\u9ad8\u8840\u7cd6\u6e17\u900f\u6027\u5229\u5c3f"
+          },
+          {
+            "category": 4,
+            "des": "\u81f4\u6b8b",
+            "id": "1510",
+            "name": "\u81f4\u6b8b"
+          },
+          {
+            "category": 4,
+            "des": "\u4ee3\u8c22\u5f02\u5e38",
+            "id": "1511",
+            "name": "\u4ee3\u8c22\u5f02\u5e38"
+          },
+          {
+            "category": 4,
+            "des": "\u8db3\u90e8\u76ae\u80a4\u7834\u635f",
+            "id": "1514",
+            "name": "\u8db3\u90e8\u76ae\u80a4\u7834\u635f"
+          },
+          {
+            "category": 4,
+            "des": "\u4f4e\u8840\u7cd6\u4e8b\u4ef6",
+            "id": "1529",
+            "name": "\u4f4e\u8840\u7cd6\u4e8b\u4ef6"
+          },
+          {
+            "category": 4,
+            "des": "\u7ba1\u8154\u72ed\u7a84\u6216\u95ed\u585e",
+            "id": "1534",
+            "name": "\u7ba1\u8154\u72ed\u7a84\u6216\u95ed\u585e"
+          },
+          {
+            "category": 4,
+            "des": "\u5fae\u969c\u788d",
+            "id": "1539",
+            "name": "\u5fae\u969c\u788d"
+          },
+          {
+            "category": 4,
+            "des": "\u8db3\u8e1d\u4ee5\u4e0b\u90e8\u4f4d\u7684\u611f\u67d3",
+            "id": "1540",
+            "name": "\u8db3\u8e1d\u4ee5\u4e0b\u90e8\u4f4d\u7684\u611f\u67d3"
+          },
+          {
+            "category": 4,
+            "des": "\u518d\u72ed\u7a84",
+            "id": "1542",
+            "name": "\u518d\u72ed\u7a84"
+          },
+          {
+            "category": 4,
+            "des": "\u521b\u9762\u611f\u67d3",
+            "id": "1546",
+            "name": "\u521b\u9762\u611f\u67d3"
+          },
+          {
+            "category": 4,
+            "des": "\u8db3\u7663",
+            "id": "1556",
+            "name": "\u8db3\u7663"
+          },
+          {
+            "category": 4,
+            "des": "\u8db3\u6e83\u75a1",
+            "id": "1558",
+            "name": "\u8db3\u6e83\u75a1"
+          },
+          {
+            "category": 4,
+            "des": "\u5fae\u5faa\u73af\u969c\u788d",
+            "id": "1584",
+            "name": "\u5fae\u5faa\u73af\u969c\u788d"
+          },
+          {
+            "category": 4,
+            "des": "\u4f53\u91cd\u4e0b\u964d",
+            "id": "1589",
+            "name": "\u4f53\u91cd\u4e0b\u964d"
+          },
+          {
+            "category": 4,
+            "des": "\u8840\u5bb9\u91cf\u51cf\u5c11",
+            "id": "1605",
+            "name": "\u8840\u5bb9\u91cf\u51cf\u5c11"
+          },
+          {
+            "category": 4,
+            "des": "\u840e\u7f29",
+            "id": "1614",
+            "name": "\u840e\u7f29"
+          },
+          {
+            "category": 4,
+            "des": "\u591a\u996e",
+            "id": "1616",
+            "name": "\u591a\u996e"
+          },
+          {
+            "category": 4,
+            "des": "\u4e0b\u80a2\u7f3a\u8840",
+            "id": "1619",
+            "name": "\u4e0b\u80a2\u7f3a\u8840"
+          }
+        ],
+        "links": [
+          {
+            "id": "326",
+            "source": "749",
+            "target": "1306",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "430",
+            "source": "749",
+            "target": "1308",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "280",
+            "source": "749",
+            "target": "1316",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "457",
+            "source": "749",
+            "target": "1322",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "435",
+            "source": "749",
+            "target": "1326",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "196",
+            "source": "749",
+            "target": "1328",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "194",
+            "source": "749",
+            "target": "1332",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "197",
+            "source": "749",
+            "target": "1343",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "449",
+            "source": "749",
+            "target": "1356",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "413",
+            "source": "749",
+            "target": "1365",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "460",
+            "source": "749",
+            "target": "1372",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "195",
+            "source": "749",
+            "target": "1378",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "192",
+            "source": "749",
+            "target": "1381",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "235",
+            "source": "749",
+            "target": "1410",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "448",
+            "source": "749",
+            "target": "1412",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "434",
+            "source": "749",
+            "target": "1440",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "438",
+            "source": "749",
+            "target": "1444",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "198",
+            "source": "749",
+            "target": "1456",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "199",
+            "source": "749",
+            "target": "1459",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "439",
+            "source": "749",
+            "target": "1465",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "243",
+            "source": "749",
+            "target": "1471",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "428",
+            "source": "749",
+            "target": "1475",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "446",
+            "source": "749",
+            "target": "1483",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "281",
+            "source": "749",
+            "target": "1485",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "447",
+            "source": "749",
+            "target": "1486",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "440",
+            "source": "749",
+            "target": "1487",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "236",
+            "source": "749",
+            "target": "1489",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "193",
+            "source": "749",
+            "target": "1494",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "278",
+            "source": "749",
+            "target": "1499",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "436",
+            "source": "749",
+            "target": "1509",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "429",
+            "source": "749",
+            "target": "1510",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "431",
+            "source": "749",
+            "target": "1511",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "455",
+            "source": "749",
+            "target": "1514",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "241",
+            "source": "749",
+            "target": "1529",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "277",
+            "source": "749",
+            "target": "1534",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "359",
+            "source": "749",
+            "target": "1539",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "263",
+            "source": "749",
+            "target": "1540",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "305",
+            "source": "749",
+            "target": "1542",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "279",
+            "source": "749",
+            "target": "1546",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "456",
+            "source": "749",
+            "target": "1556",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "244",
+            "source": "749",
+            "target": "1558",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "358",
+            "source": "749",
+            "target": "1584",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "237",
+            "source": "749",
+            "target": "1589",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "437",
+            "source": "749",
+            "target": "1605",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "327",
+            "source": "749",
+            "target": "1614",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "234",
+            "source": "749",
+            "target": "1616",
+            "value": "Symptom_Disease"
+          },
+          {
+            "id": "307",
+            "source": "749",
+            "target": "1619",
+            "value": "Symptom_Disease"
+          }
+        ]
+      }
+    }
+  },
+  "message": "success"
+}
