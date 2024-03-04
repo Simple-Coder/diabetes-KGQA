@@ -5,7 +5,7 @@ Created by xiedong
 from sys import stdin
 
 import random
-from chat_config import gossip_corpus,DEFAULT_CHAT,DEFAULT_MH_DATA,DEFAULT_CHAT_ABSWER
+from chat_config import gossip_corpus,DEFAULT_CHAT,DEFAULT_MH_DATA,DEFAULT_CHAT_ABSWER,DEFAULT_DESC
 import requests
 import json
 from modules import get_answer, medical_robot
@@ -53,7 +53,8 @@ def text_reply(username, msg):
             reply = reply.get("replay_answer")
     return {
         'answer': reply,
-        'visison_data': visison_data
+        'visison_data': visison_data,
+        'desc':DEFAULT_DESC
     }
 
 

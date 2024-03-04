@@ -106,9 +106,10 @@ export default {
           this.dialogData.push({person: this.input, rot: res.data.reply.answer})
           this.input = ''
           // 知识卡片
-          this.nodecolumn = [{label: '记录', prop: 'record'}]
+          this.nodecolumn = [{label: '疾病简介', prop: 'record'}]
           this.nodedata = {
-            record: res.data.reply.answer
+            // record: res.data.reply.answer
+            record: res.data.reply.desc
           }
           // 知识图谱
           this.kgIdList.clear()
