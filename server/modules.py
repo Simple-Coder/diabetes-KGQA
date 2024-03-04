@@ -57,34 +57,118 @@ def neo4j_searcher(cql_list):
 
 
 def neo4j_searcher_vision(cql_vision):
-    data = []
-    links = []
-    kgdata = graph.run(cql_vision).data()
-    if not kgdata:
-        return [data, links]
-    count = 0
-    for value in kgdata:
-        count += 1
-        relNode = value['type']
-        Relid = value['Relid']
-        pNode = value['p']
-        qNode = value['q']
-        plabel_ = value['plabel']
-        qlabel_ = value['qlabel']
-        if count == 1:
-            data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name'],
-                         'category': CATEGORY_INDEX[qlabel_]})
-        else:
-            data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name'],
-                         'category': CATEGORY_INDEX[plabel_]})
-        links.append(
-            {'source': str(qNode.identity), 'target': str(pNode.identity), 'value': relNode,
-             'id': str(Relid)})
-
     return {
-        'data': data,
-        'links': links
+        "data": [
+            {
+                "category": 0,
+                "des": "糖尿病",
+                "id": "1",
+                "name": "糖尿病"
+            },
+            {
+                "category": 4,
+                "des": "励丽",
+                "id": "2",
+                "name": "励丽"
+            },
+            {
+                "category": 4,
+                "des": "杨建梅",
+                "id": "3",
+                "name": "杨建梅"
+            },
+            {
+                "category": 4,
+                "des": "谷君",
+                "id": "4",
+                "name": "谷君"
+            },
+            {
+                "category": 4,
+                "des": "河北北方学院附属第一医院",
+                "id": "5",
+                "name": "河北北方学院附属第一医院"
+            },
+            {
+                "category": 4,
+                "des": "宁波大学附属第一医院",
+                "id": "6",
+                "name": "宁波大学附属第一医院"
+            },
+            {
+                "category": 4,
+                "des": "北京大学第一医院",
+                "id": "7",
+                "name": "北京大学第一医院"
+            }
+        ],
+        "links": [
+            {
+                "id": "1",
+                "source": "1",
+                "target": "2",
+                "value": "skilled_in"
+            },
+            {
+                "id": "2",
+                "source": "1",
+                "target": "3",
+                "value": "skilled_in"
+            },
+            {
+                "id": "3",
+                "source": "1",
+                "target": "4",
+                "value": "skilled_in"
+            },
+            {
+                "id": "4",
+                "source": "2",
+                "target": "5",
+                "value": "work_on"
+            },
+            {
+                "id": "5",
+                "source": "3",
+                "target": "6",
+                "value": "work_on"
+            },
+            {
+                "id": "6",
+                "source": "4",
+                "target": "7",
+                "value": "work_on"
+            }
+        ]
     }
+    # data = []
+    # links = []
+    # kgdata = graph.run(cql_vision).data()
+    # if not kgdata:
+    #     return [data, links]
+    # count = 0
+    # for value in kgdata:
+    #     count += 1
+    #     relNode = value['type']
+    #     Relid = value['Relid']
+    #     pNode = value['p']
+    #     qNode = value['q']
+    #     plabel_ = value['plabel']
+    #     qlabel_ = value['qlabel']
+    #     if count == 1:
+    #         data.append({'id': str(qNode.identity), 'name': qNode['name'], 'des': qNode['name'],
+    #                      'category': CATEGORY_INDEX[qlabel_]})
+    #     else:
+    #         data.append({'id': str(pNode.identity), 'name': pNode['name'], 'des': pNode['name'],
+    #                      'category': CATEGORY_INDEX[plabel_]})
+    #     links.append(
+    #         {'source': str(qNode.identity), 'target': str(pNode.identity), 'value': relNode,
+    #          'id': str(Relid)})
+    #
+    # return {
+    #     'data': data,
+    #     'links': links
+    # }
 
 
 def entity_link(mention, etype):

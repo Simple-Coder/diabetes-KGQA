@@ -5,7 +5,7 @@ Created by xiedong
 from sys import stdin
 
 import random
-from chat_config import gossip_corpus
+from chat_config import gossip_corpus,DEFAULT_CHAT,DEFAULT_MH_DATA,DEFAULT_CHAT_ABSWER
 import requests
 import json
 from modules import get_answer, medical_robot
@@ -45,6 +45,9 @@ def text_reply(username, msg):
             reply = medical_robot(user_intent, user_slots, confidence, username)
             if 'visison_data' in reply:
                 visison_data = reply.get("visison_data")
+            if msg in DEFAULT_CHAT:
+                visison_data = DEFAULT_MH_DATA
+                reply["replay_answer"] = DEFAULT_CHAT_ABSWER
             if reply["slot_values"]:
                 dump_user_dialogue_context(username, reply)
             reply = reply.get("replay_answer")
