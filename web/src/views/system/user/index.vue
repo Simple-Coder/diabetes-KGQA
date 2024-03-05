@@ -46,6 +46,28 @@
 <!--          <span>{{ scope.row.display_time }}</span>-->
 <!--        </template>-->
 <!--      </el-table-column>-->
+            <el-table-column align="center" label="操作" width="120">
+        <template slot-scope="{row}">
+          <el-button
+            v-if="row.edit"
+            type="success"
+            size="small"
+            icon="el-icon-circle-check-outline"
+            @click="confirmEdit(row)"
+          >
+            Ok
+          </el-button>
+          <el-button
+            v-else
+            type="primary"
+            size="small"
+            icon="el-icon-edit"
+            @click="row.edit=!row.edit"
+          >
+            编辑
+          </el-button>
+        </template>
+      </el-table-column>
     </el-table>
   </div>
 </template>
