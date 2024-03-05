@@ -12,13 +12,18 @@ def read_data_from_file(filename):
     medical_institutions = {}  # 医疗结构字典，key为orgId，value为医疗结构名称
     doctor_to_org = {}  # 医生到医疗结构的映射，key为医生id，value为医疗结构id
 
+    start_docId = 10
+    start_orgId = 100
+
     with open(filename, 'r', encoding='utf-8') as file:
         for line in file:
             line = line.strip()
             if line:
                 medical_institution, doctor = line.split(' ', 1)
-                doctor_id = abs(hash(doctor))  # 取医生名字哈希值的绝对值
-                org_id = abs(hash(medical_institution))  # 取医疗结构名字哈希值的绝对值
+                doctor_id = start_docId  # 取医生名字哈希值的绝对值
+                start_docId += 1
+                org_id = start_orgId  # 取医疗结构名字哈希值的绝对值
+                start_orgId += 1
 
                 doctors[doctor_id] = doctor
                 medical_institutions[org_id] = medical_institution
@@ -31,6 +36,7 @@ def generate_doctors_json(doctors, doctor_to_org):
     doctors_json = []
 
     datalink = []
+    datalink_id = 1000
     for doctor_id, doctor_name in doctors.items():
         doctor_info = {
             "category": 7,
@@ -41,18 +47,20 @@ def generate_doctors_json(doctors, doctor_to_org):
         doctors_json.append(doctor_info)
 
         link_info = {
-            "id": str(uuid.uuid4()),
+            "id": datalink_id,
             "source": "1",
             "target": str(doctor_id),
             "value": "skilled_in"
         }
+        datalink_id += 1
         datalink.append(link_info)
         link_info = {
-            "id": str(uuid.uuid4()),
+            "id": datalink_id,
             "source": str(doctor_id),
-            "target": doctor_to_org.get(doctor_id),
+            "target": str(doctor_to_org.get(doctor_id)),
             "value": "work_on"
         }
+        datalink_id += 1
         datalink.append(link_info)
     doctors_json.append({
         "category": 2,
@@ -89,12 +97,9 @@ print(json.dumps(datalink, indent=2, ensure_ascii=False))
 print("\n医疗结构 JSON 数据：")
 print(json.dumps(medical_institutions_json, indent=2, ensure_ascii=False))
 
-data_data = []
-data_data.append(doctors_json)
-data_data.append(medical_institutions_json)
 data = {
-    'data': data_data,
-    'link': datalink
+    'data': doctors_json + medical_institutions_json,
+    'links': datalink
 }
 print("-----")
 print(json.dumps(data, indent=2, ensure_ascii=False))

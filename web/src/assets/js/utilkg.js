@@ -434,7 +434,7 @@ export const qaoptions = {
         fontSize: 12
       },
       force: {
-        repulsion: 400,
+        repulsion: 550,
         friction: 0.2
       },
       edgeSymbol: ['circle', 'arrow'], // 设置边两端的形状
