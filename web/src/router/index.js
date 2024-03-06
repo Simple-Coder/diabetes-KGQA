@@ -17,12 +17,12 @@ import Layout from '@/layout'
  * redirect: noRedirect           if set noRedirect will no redirect in the breadcrumb
  * name:'router-name'             the name is used by <keep-alive> (must set!!!)
  * meta : {
-    roles: ['admin','editor']    control the page roles (you can set multiple roles)
-    title: 'title'               the name show in sidebar and breadcrumb (recommend set)
-    icon: 'svg-name'/'el-icon-x' the icon show in the sidebar
-    breadcrumb: false            if set false, the item will hidden in breadcrumb(default is true)
-    activeMenu: '/example/list'  if set path, the sidebar will highlight the path you set
-  }
+ roles: ['admin','editor']    control the page roles (you can set multiple roles)
+ title: 'title'               the name show in sidebar and breadcrumb (recommend set)
+ icon: 'svg-name'/'el-icon-x' the icon show in the sidebar
+ breadcrumb: false            if set false, the item will hidden in breadcrumb(default is true)
+ activeMenu: '/example/list'  if set path, the sidebar will highlight the path you set
+ }
  */
 
 /**
@@ -59,85 +59,33 @@ export const constantRoutes = [{
   children: [{
     path: 'dashboard',
     name: 'Dashboard',
-    component: () => import('@/views/dashboard/index'),
+    component: () => import('@/views/system/user/index'),
     meta: {
-      title: 'Dashboard', icon: 'dashboard'
+      title: '用户管理', icon: 'dashboard'
     }
   }]
-}, {
-  path: '/system',
-  component: Layout,
-  redirect: '/system',
-  name: '系统管理',
-  meta: {
-    title: '系统管理', icon: 'el-icon-s-help'
-  },
-  children: [
-    {
-      path: '/user/table',
-      name: 'user',
-      component: () => import('@/views/system/user/index'),
-      meta: {
-        title: '用户管理', icon: 'table'
-      }
-    },
-    {
-      path: '/notice/table',
-      name: 'user',
-      component: () => import('@/views/system/user/index'),
-      meta: {
-        title: '通知管理', icon: 'table'
-      }
-    }
-  ]
-}, {
-  path: '/example',
-  component: Layout,
-  redirect: '/example/table',
-  name: 'Example',
-  meta: {
-    title: 'Example', icon: 'el-icon-s-help'
-  },
-  children: [
-    {
-      path: 'table',
-      name: 'Table',
-      component: () => import('@/views/table/index'),
-      meta: {
-        title: 'Table', icon: 'table'
-      }
-    },
-    {
-      path: 'tree',
-      name: 'Tree',
-      component: () => import('@/views/tree/index'),
-      meta: {
-        title: 'Tree', icon: 'tree'
-      }
-    }
-  ]
 }, {
   path: '/kg',
   component: Layout,
   redirect: '/kg/question',
   name: '知识平台',
-  meta: {
-    title: '知识平台', icon: 'el-icon-s-help'
-  },
+  /* meta: {
+     title: '知识平台', icon: 'el-icon-s-help'
+   },*/
   children: [
-    {
-      path: 'question',
-      name: 'question',
-      component: () => import('@/views/kg/question/index'),
-      meta: {
-        title: '单意图问答', icon: 'table'
-      }
-    }, {
+    /* {
+       path: 'question',
+       name: 'question',
+       component: () => import('@/views/kg/question/index'),
+       meta: {
+         title: '单意图问答', icon: 'table'
+       }
+     },*/ {
       path: 'vision',
       name: 'vision',
-      component: () => import('@/views/kg/vision/index'),
+      component: () => import('@/views/kg/question/index'),
       meta: {
-        title: '多意图问答', icon: 'form'
+        title: '在线问诊', icon: 'form'
       }
     }
     //  {
