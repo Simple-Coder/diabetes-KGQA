@@ -1,0 +1,10 @@
+has_symptom,1
+cure_department,2
+need_check,3
+accompany_with,4
+cure_medicine,5
+medicine_product,6
+do_eat,7
+not_eat,8
+skilled_in,9
+work_on,10
