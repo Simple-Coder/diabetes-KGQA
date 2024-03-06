@@ -1,8 +1,8 @@
 <template>
-  <div class="body">
+  <div class="body" >
     <!-- 对话区域 -->
     <el-row>
-      <el-col :span="12">
+      <el-col :span="8">
         <div id="box">
           <div class="b-head">
             <img class="h-img" alt="" src="@/assets/logo.png" width=80; height=60;/>
@@ -26,7 +26,7 @@
           </div>
           <div class="b-footer">
             <el-row :gutter="10">
-              <el-col :span="22">
+              <el-col :span="20">
                 <el-input v-model="input" placeholder="请输入内容(如：糖尿病的临床表现有哪些？)" clearable></el-input>
               </el-col>
               <el-col :span="2">
@@ -37,22 +37,22 @@
         </div>
       </el-col>
       <!-- 知识可视化区域 -->
-      <el-col :span="12">
+      <el-col :span="8">
         <div class="kgview">
-          <MyPanel theme="border-left" class="kgcard" :border="false" fit>
-            <template v-slot:title>
-              <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识卡片</span>
-            </template>
-            <MyKeyValList
-              :column="nodecolumn"
-              :data="nodedata"
-              border
-              :columns="1"
-              style="font-size: 15px; font-weight: 450; font-family: 宋体;"></MyKeyValList>
-          </MyPanel>
+<!--          <MyPanel theme="border-left" class="kgcard" :border="false" fit>-->
+<!--            <template v-slot:title>-->
+<!--              <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识卡片</span>-->
+<!--            </template>-->
+<!--            <MyKeyValList-->
+<!--              :column="nodecolumn"-->
+<!--              :data="nodedata"-->
+<!--              border-->
+<!--              :columns="1"-->
+<!--              style="font-size: 15px; font-weight: 450; font-family: 宋体;"></MyKeyValList>-->
+<!--          </MyPanel>-->
           <MyPanel theme="border-left" class="kgimg" :border="false" fit>
             <template v-slot:title>
-              <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识图谱</span>
+              <span style="font-size: 18px; font-weight: 550; font-family: Microsoft YaHei;">知识可视化</span>
             </template>
             <kgecharts :options="kgoptions" :width="kgwidth" :height="kgheight" @clickNode="clickNode2"></kgecharts>
           </MyPanel>
@@ -263,7 +263,7 @@ export default {
 }
 
 .kgimg {
-  height: 495px;
+  height: 810px;
   background-color: rgba(255, 255, 255, .5);
 }
 
@@ -271,7 +271,8 @@ export default {
   position: absolute;
   font-size: 12px;
   font-family: "微软雅黑";
-  background: url('~@/assets/bg.jpg') no-repeat;
+  //background: url('~@/assets/bg.jpg') no-repeat;
+  background: url('~@/assets/img.png') no-repeat;
   width: 100%;
   height: 100%;
   background-size: cover;
