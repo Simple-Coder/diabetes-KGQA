@@ -93,7 +93,7 @@ def fuzzy_match_dict(query):
 
 if __name__ == '__main__':
 
-    graph = Graph(host="127.0.0.1", http_port=7474, user="neo4j", password="123456")
+    graph = Graph(host="www.xdblog.site", http_port=7474, user="neo4j", password="123456")
 
     directory = './entities'
     # 读取实体、关系
@@ -111,4 +111,4 @@ if __name__ == '__main__':
 
     # 关系写入
 
-    print()
+    print('写入完成...')

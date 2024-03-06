@@ -1,1 +1,13 @@
 胰岛素,Medicine1
+司美格鲁肽,Medicine2
+度拉鲁肽,Medicine3
+恩格列净,Medicine4
+达格列净,Medicine5
+西格列汀,Medicine6
+甘精胰岛素,Medicine7
+门冬胰岛素,Medicine8
+利格列汀,Medicine9
+利拉鲁肽,Medicine10
+二甲双胍,Medicine11
+人胰岛素,Medicine12
+预混胰岛素,Medicine13

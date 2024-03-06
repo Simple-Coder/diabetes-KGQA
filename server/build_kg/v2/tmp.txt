@@ -1,0 +1,12 @@
+disease1,5,Medicine1
+disease1,5,Medicine2
+disease1,5,Medicine3
+disease1,5,Medicine4
+disease1,5,Medicine5
+disease1,5,Medicine6
+disease1,5,Medicine7
+disease1,5,Medicine8
+disease1,5,Medicine9
+disease1,5,Medicine10
+disease1,5,Medicine11
+disease1,5,Medicine12

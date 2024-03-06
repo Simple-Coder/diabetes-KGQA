@@ -1,1 +1,6 @@
 默沙东,producer1
+诺和诺德,producer2
+礼来,producer3
+赛诺菲,producer4
+默克雪兰诺,producer5
+阿斯利康,producer6
