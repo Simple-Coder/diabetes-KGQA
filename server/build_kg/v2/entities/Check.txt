@@ -1,0 +1,5 @@
+血糖检查,check1
+血压检查,check2
+口服糖耐量检查,check3
+肾功能检查,check4
+眼底神经检查,check5

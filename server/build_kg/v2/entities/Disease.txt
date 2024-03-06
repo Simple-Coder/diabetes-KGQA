@@ -1,0 +1,9 @@
+糖尿病,disease1
+1型糖尿病,disease2
+2型糖尿病,disease3
+妊娠期糖尿病,disease4
+糖尿病神经病变,disease5
+糖尿病足,disease6
+糖尿病性脑血管病,disease7
+糖尿病性视网膜病变,disease8
+糖尿病性白内障,disease9
