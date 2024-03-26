@@ -46,5 +46,5 @@ plt.xlim(0, iterations[-1])  # 设置x轴范围为最后一个迭代次数
 plt.legend(loc='lower right')
 
 # 保存图像到D盘
-plt.savefig('D:/NELL-995_Pic.png')
+plt.savefig('./NELL-995_Pic.png')
 plt.show()
