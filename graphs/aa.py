@@ -9,8 +9,9 @@ available_fonts = findSystemFonts()
 for font in available_fonts:
     print(font)
 
-# 设置中文字体
-plt.rcParams['font.sans-serif'] = ['SimSun']  # 使用simkai.ttf字体
+# 设置中文字体为宋体，英文字体为新罗马
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 中文字体设置为宋体
+plt.rcParams['font.family'] = 'Times New Roman'  # 英文字体设置为新罗马字体
 plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 
 # 迭代次数
@@ -28,11 +29,12 @@ mrr_model_C = [0.610, 0.615, 0.639, 0.640, 0.625, 0.628, 0.633, 0.634, 0.672, 0.
 
 # 绘制MRR随迭代次数变化的图表
 plt.plot(iterations[:len(mrr_model_A)], mrr_model_A, color='#FF5733', label='RLKRMIPI')  # 模型A的折线，红色
-plt.plot(iterations[:len(mrr_model_B)], mrr_model_B, color='#3399FF', label='RLKRMIPI-dropout')  # 模型B的折线，绿色虚线
-plt.plot(iterations[:len(mrr_model_C)], mrr_model_C, color='#FFD700', label='RLKRMIPI-reward')  # 模型C的折线，蓝色点划线
+plt.plot(iterations[:len(mrr_model_B)], mrr_model_B, color='#3399FF', label='RLKRMIPI-ActionDropout')  # 模型B的折线，绿色虚线
+plt.plot(iterations[:len(mrr_model_C)], mrr_model_C, color='#FFD700', label='RLKRMIPI-Reward')  # 模型C的折线，蓝色点划线
 
-plt.title('NELL-995')
-plt.xlabel('迭代次数')
+# plt.title('NELL-995')
+# plt.xlabel('迭代次数')
+plt.xlabel('Iterations')
 plt.ylabel('MRR')
 plt.legend()  # 添加图例
 plt.xticks(ticks=range(0, 201, 50))  # 设置x轴刻度，每隔50个单位显示一个刻度
