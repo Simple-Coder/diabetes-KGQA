@@ -32,7 +32,7 @@ plt.plot(iterations[:len(mrr_model_A)], mrr_model_A, color='#FF5733', label='RLK
 plt.plot(iterations[:len(mrr_model_B)], mrr_model_B, color='#3399FF', label='RLKRMIPI-ActionDropout')  # 模型B的折线，绿色虚线
 plt.plot(iterations[:len(mrr_model_C)], mrr_model_C, color='#FFD700', label='RLKRMIPI-Reward')  # 模型C的折线，蓝色点划线
 
-plt.title('NELL-995')
+plt.title('DiabKG')
 # plt.xlabel('迭代次数')
 plt.xlabel('Iterations')
 plt.ylabel('MRR')
@@ -46,5 +46,5 @@ plt.xlim(0, iterations[-1])  # 设置x轴范围为最后一个迭代次数
 plt.legend(loc='lower right')
 
 # 保存图像到D盘
-plt.savefig('D:/NELL-995_Pic.png')
+plt.savefig('D:/DiabKG_pic.png')
 plt.show()
